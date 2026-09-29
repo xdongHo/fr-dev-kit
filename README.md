@@ -44,7 +44,9 @@ python kfgj/init_user_env.py    # 私有环境落 ~/.fr_dev_kit/，不进仓库
 python kfgj/guard.py --selftest # 全 PASS 即就绪
 ```
 
-环境要求：Python 3.11+；FineReport 10.0.19 设计器（可选——无设计器也能模板生成/检索）；JDK 8（跑 FR Java API 时）。
+环境要求：Python 3.11+；**FineReport 10/11 设计器（必需）**——10.0.19 与 11.x 均实测可用
+（FR11 用 `python kfgj/fr-agent/inject_fr11.py` 注入）；JDK 8（跑 FR Java API 时）。
+无设计器时仅知识检索/离线骨架生成可用，开发闭环（探表真执行、无头转 cpt、部署预览）需要设计器在线。
 
 ## Agent 工作区用法（推荐场景）
 
@@ -52,7 +54,7 @@ python kfgj/guard.py --selftest # 全 PASS 即就绪
 
 **一次性准备：**
 
-1. **打开设计器**（可选但推荐）：`FineReport_10.0/bin/designer.bat` 启动后执行
+1. **打开设计器**（开发闭环必需）：`FineReport_10.0/bin/designer.bat` 启动后执行
    `python kfgj/fr-agent/inject.py` → `:18999` GUI 事件流（把人的设计器操作翻译成 Java API）、
    `:19000 /exec` 无头脚本执行（Excel 转 cpt、公式引擎验证）。
 2. **数据连接**：设计器 `服务器 → 定义数据连接` 建好（如 `demo_dw`），把连接名告诉 Agent。
