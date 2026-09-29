@@ -1,0 +1,1119 @@
+{
+  "meta": {
+    "name": "doc_id_registry",
+    "purpose": "R5 写前白名单门禁数据源：只防『编造从未存在的 doc-ID』，不防真 ID 引错内容（清单B §3.2）",
+    "method": "正则抽取 doc-\\d+ → 归一（小写）→ 字面量精确比对；零 embedding 零网络",
+    "builder": "kfgj/fzpy/build_doc_id_registry.py",
+    "built_at": "2026-09-15",
+    "sources": {
+      "S1": {
+        "file": "ckzl/gf/FR_HEADLESS_GUIDE.md",
+        "zone": "L73-L461",
+        "marker": "## 全局铁律 → 下一 ## 节前",
+        "unique": 74,
+        "occurrences": 115
+      },
+      "S2": {
+        "file": "ckzl/bb/外部依赖与归档声明.md",
+        "column": "来源 doc",
+        "rows": 0,
+        "unique": 0,
+        "note": "多值格 doc-A/B 拆分；行号=B 版可溯源锚"
+      }
+    },
+    "counts": {
+      "total_unique": 74
+    },
+    "verification": {
+      "verified_false_all": true,
+      "note": "verified 联动销项规则属设计A §6.3 开放依赖，一期全部 false"
+    },
+    "expected_anchors": {
+      "S1_unique": 76,
+      "S2_rows": 54
+    },
+    "anchor_check": {
+      "S1_unique_ok": false,
+      "S2_rows_ok": false
+    },
+    "boundary": "独立于 api_kb.sqlite（闸门1裁决1：不混职责）"
+  },
+  "ids": {
+    "doc-1071": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          322,
+          327
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-1086": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          426
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-1108": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          356,
+          357,
+          361,
+          363
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-1191": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          415
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-1197": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          327
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-1206": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          324,
+          327
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-1213": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          327,
+          386,
+          388
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-1342": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          394
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-1387": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          244
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-1457": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          253,
+          320,
+          327
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-159": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          313
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-1672": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          294
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-1816": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          382,
+          388
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-1839": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          294
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-195": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          398,
+          399
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-1953": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          406,
+          407
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-1985": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          385,
+          388
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2005": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          327
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2122": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          360,
+          363
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2194": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          303
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2208": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          272
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2209": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          272
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2210": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          272
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2219": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          428
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2238": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          383,
+          384,
+          388
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-228": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          409
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2305": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          327
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2332": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          253
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2336": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          345,
+          346,
+          350
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2369": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          319,
+          327
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2393": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          323,
+          327
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2425": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          419
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2487": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          335,
+          338
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2560": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          369
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2563": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          369,
+          374
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2637": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          427
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2699": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          344,
+          350
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2804": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          395,
+          396,
+          397
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2931": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          372,
+          374
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-2938": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          321,
+          327
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-299": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          313
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-3245": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          336,
+          338
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-3274": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          370,
+          371,
+          374
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-3315": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          272
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-3342": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          261
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-3474": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          347,
+          350
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-3475": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          425
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-3531": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          334,
+          338
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-3550": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          303
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-3556": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          294
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-3713": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          380,
+          388
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-3898": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          350
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-3927": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          325,
+          327
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-4039": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          406
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-4063": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          408
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-4068": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          333,
+          338
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-4086": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          417,
+          418
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-4143": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          327
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-4152": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          282
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-4204": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          294
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-4418": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          294
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-4508": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          359,
+          363
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-567": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          348,
+          350
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-575": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          381,
+          388
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-576": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          406
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-615": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          405
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-663": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          358,
+          363
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-684": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          313
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-695": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          272
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-786": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          261
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-810": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          416
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-865": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          282
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-866": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          282
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    },
+    "doc-996": {
+      "src": [
+        "ckzl/gf/FR_HEADLESS_GUIDE.md#全局铁律(L73-L461)"
+      ],
+      "src_lines": {
+        "ckzl/gf/FR_HEADLESS_GUIDE.md": [
+          244
+        ],
+        "ckzl/bb/外部依赖与归档声明.md": []
+      },
+      "src_sections": {},
+      "verified": false,
+      "date": "2026-09-15"
+    }
+  }
+}

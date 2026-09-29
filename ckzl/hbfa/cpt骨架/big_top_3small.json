@@ -1,0 +1,54 @@
+{
+ "id": "big_top_3small",
+ "name": "大图上+三小下",
+ "engine": "cpt",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1200,
+  "height": 800,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "120列×60行×5px格, 合并单元格布局",
+ "containers": [
+  {
+   "title": "主图-地图",
+   "type": "chart_group",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 60,
+   "components": "地图"
+  },
+  {
+   "title": "柱形",
+   "type": "chart",
+   "x": 0,
+   "y": 60,
+   "w": 40,
+   "h": 40,
+   "components": "柱形图"
+  },
+  {
+   "title": "饼图",
+   "type": "chart",
+   "x": 40,
+   "y": 60,
+   "w": 30,
+   "h": 40,
+   "components": "饼图"
+  },
+  {
+   "title": "条形",
+   "type": "chart",
+   "x": 70,
+   "y": 60,
+   "w": 30,
+   "h": 40,
+   "components": "条形图"
+  }
+ ],
+ "file": "big_top_3small.cpt",
+ "note": "主图60%高+下三栏",
+ "structure": "cpt(可导出): 120×60细网格(5px格,格值190500=FU.valueOfPix(5,96))合并单元格布局, 每容器=标题带6行+图表区, 剩余细格可加元素"
+}

@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "schema": "fr-gate-lint-rules/1",
+    "schema_spec": "B 竞标 22 字段/规则（设计A-事前门禁-B竞标.md §1.2）：顶层 12（rule_id/version/enabled/severity/action/layers/trigger/predicate/recall/message/attest/fallback）＋嵌套 10（trigger 3: tools/path_glob/content_regex；predicate 3: type/params/data_source；recall 2: keywords/digest；attest 2: dir/fields）",
+    "predicate_types": ["literal_set", "regex_ban", "struct_seq", "threshold", "exists"],
+    "predicate_batch1_usage": "本批 5 规则使用 literal_set/regex_ban/struct_seq/exists 四型；threshold 判定器已在 fr_lint_write.py 实现（metrics: max_line_length/min_hits），首批无铁律条目需要它，仅测试夹具可旁证——不造裁决书外规则",
+    "trigger_semantics": "tools 匹配调用面（CLI 恒为 write/edit）且（path_glob 命中 或 content_regex 命中）→ 执行 predicate。B 竞标 §1.1『三判据任一命中』的 CLI 落法：tools 是宿主层判据（CLI 恒真），path_glob/content_regex 是内容路由判据——path_glob 用绝对路径 fnmatch（Windows 反斜杠分隔符归一为正斜杠后匹配），另试 basename；均不命中→规则 SKIP 不出判定",
+    "verdicts": ["PASS", "WARN", "FAIL"],
+    "exit_codes": {"0": "参与判定的闸门规则全 PASS（或无规则命中）", "1": "存在 FAIL（action=deny/ask 且判违）", "2": "无 FAIL 但有 WARN（--draft 降级或遥测规则未命中）", "3": "执行器内部错误（规则表/registry 不可读等）"},
+    "draft_mode": "--draft 把 action=deny 规则的 FAIL 降级 WARN（沿用 kfgj/guard.py --draft 语义；正式交付禁止连续使用）",
+    "attest_contract": {"dir": "_runs/gate/", "filename": "<ts>_<rule_id>.json", "fields": ["rule_id", "basis", "target", "verdict", "evidence", "ts", "operator"], "note": "每条命中(engaged)规则判定即落盘，收尾 guard 复核留痕存在且判定=PASS（Z1-guard-with-lint 提案）"},
+    "batch1_scope": "首批规则=铁律改造清单-A §2 表『写前可执行(前移)』类映射＋闸门1裁决清单 §3 P-1/P-2 立案项＋闸门1裁决1 数据源裁决：AC5 widgetName 选择器大写｜P-2 类重复标题｜P-1/G06 KB_INDEX 头存在性｜R5 doc-\\d+ 白名单比对｜四要素关键词(L2 条件层遥测)",
+    "anti_anchoring_notes": [
+      "AC5 判据严格取 ckzl/gf/FR_HEADLESS_GUIDE.md:422 原文口径：只拦『JS DOM 选择器 widgetname=NAME』引用形态的未大写名字；不拦 XML 属性 WidgetName=\"...\"——实测库内 2452 个 .cpt/.frm 属性值小写为常态（para_year 等），属性形态禁写属裁决书外推测规则，禁止",
+      "P-2 判据取闸门1裁决清单.md:25 立案实证（ckzl/lc/04_参数面板.md L312/L317 同名 H2），推广为『单文件内同级标题文本唯一』；只查 md 标题结构，不推测其它重复形态",
+      "R5 白名单只防『编造从未存在的 doc-ID』（必要性门禁），不防『真 ID 引错文档内容』——语义核验留铁律 Y 人工通道（清单B §3.2 边界保留）",
+      "registry 独立于 api_kb.sqlite（闸门1裁决1：该库 0 字节、职责是 FR Java API 知识，不混用）"
+    ],
+    "provenance": {
+      "inputs_sha256_16": {
+        "铁律改造清单-A.md": "B7A4F044882E7C16",
+        "铁律改造清单-B.md": "A7ABFF0E7B1B2153",
+        "raw-sql-boundary-audit消化卡.md": "AC6FC1CF79581365",
+        "coding-guide消化卡.md": "446C67F1291BEFBD",
+        "code-fix消化卡.md": "DC6F741F2F568F0D"
+      },
+      "design_refs": ["设计A-事前门禁.md §1/§2/§4", "设计A-事前门禁-B竞标.md §1.2/§1.3", "闸门1裁决清单.md 裁决1/§3", "铁律改造清单-A.md §1/§2/§3"],
+      "created": "2026-09-01",
+      "owner": "历史批次3·战役Z1·一期(乙形态先行)"
+    }
+  },
+  "rules": [
+    {
+      "rule_id": "AC5-WIDGETNAME-UPPER",
+      "version": 1,
+      "enabled": true,
+      "severity": "hard",
+      "action": "deny",
+      "layers": ["L2"],
+      "trigger": {
+        "tools": ["write", "edit"],
+        "path_glob": ["**/*.cpt", "**/*.frm", "**/*.js", "**/*.py", "**/*.md", "**/*.html"],
+        "content_regex": ["(?i)widgetname\\s*="]
+      },
+      "predicate": {
+        "type": "regex_ban",
+        "params": {
+          "patterns": [
+            {
+              "regex": "(?i)widgetname\\s*=\\s*(\"|')?([A-Za-z0-9_\\-.\\u4e00-\\u9fff]*[a-z][A-Za-z0-9_\\-.\\u4e00-\\u9fff]*)(\"|')?\\s*\\]",
+              "hint": "DOM 选择器 widgetname=NAME] 的 NAME 含小写字母"
+            }
+          ],
+          "flags": "",
+          "scope_note": "仅拦选择器引用形态『widgetname=NAME]』；XML 属性 WidgetName=\"...\" 形态不在判据内（见 meta.anti_anchoring_notes[0]）"
+        },
+        "data_source": null
+      },
+      "recall": {
+        "keywords": ["widgetName", "widgetname", "选择器", "toUpperCase", "控件名", "DOM 选择", "createJSONConfig"],
+        "digest": true
+      },
+      "message": "铁律 AC5：JS 选择器控件名必须 toUpperCase()——Widget#createJSONConfig 把 widgetName 转大写下发而 .frm XML 保留原大小写，小写选择器恒选不中且零报错。修复：选择器内名字改全大写后重跑",
+      "attest": {
+        "dir": "_runs/gate/",
+        "fields": ["rule_id", "basis", "target", "verdict", "evidence", "ts", "operator"]
+      },
+      "fallback": "确属例外：--draft 降级 WARN 留痕（正式交付禁止连续使用）"
+    },
+    {
+      "rule_id": "P2-MD-DUP-HEADING",
+      "version": 1,
+      "enabled": true,
+      "severity": "hard",
+      "action": "deny",
+      "layers": ["L2"],
+      "trigger": {
+        "tools": ["write", "edit"],
+        "path_glob": ["**/*.md"],
+        "content_regex": ["^#{1,6} "]
+      },
+      "predicate": {
+        "type": "struct_seq",
+        "params": {
+          "kind": "md_heading_unique",
+          "levels": [2, 3],
+          "normalize": "strip",
+          "evidence_note": "实证原型：ckzl/lc/04_参数面板.md L312/L317 两处『## 19. 标签宽度自适应（Ver0.3 新增）』（闸门1裁决清单 P-2）；推广判据=单文件内同级(同 level)标题文本须唯一"
+        },
+        "data_source": null
+      },
+      "recall": {
+        "keywords": ["重复标题", "标题重复", "章节", "目录", "heading", "md 结构"],
+        "digest": true
+      },
+      "message": "P-2 类缺陷：单文件内存在同级重复标题（原型=04_参数面板.md §19 双标题）。修复：合并或改序号后重跑",
+      "attest": {
+        "dir": "_runs/gate/",
+        "fields": ["rule_id", "basis", "target", "verdict", "evidence", "ts", "operator"]
+      },
+      "fallback": "确属例外：--draft 降级 WARN 留痕（正式交付禁止连续使用）"
+    },
+    {
+      "rule_id": "G06-KB-INDEX-HEAD",
+      "version": 1,
+      "enabled": true,
+      "severity": "hard",
+      "action": "deny",
+      "layers": ["L2", "L4"],
+      "trigger": {
+        "tools": ["write", "edit"],
+        "path_glob": ["**/*.md"],
+        "content_regex": []
+      },
+      "predicate": {
+        "type": "exists",
+        "params": {
+          "kind": "substring",
+          "needle": "KB_INDEX",
+          "within_chars": 2000,
+          "judge_note": "与 kfgj/guard.py gate_kb_index 同判（读前 2000 字符找 KB_INDEX 子串）——设计A §4 验收线『与 G06 判定一致』；P-1 立案=47/62 pipeline md 缺头，本规则把 G06 判定前移到写盘时点"
+        },
+        "data_source": null
+      },
+      "recall": {
+        "keywords": ["KB_INDEX", "元数据头", "知识文件", "新建 md", "知识沉淀"],
+        "digest": true
+      },
+      "message": "G06/P-1：知识文件必须带 KB_INDEX 元数据头（前 2000 字符内），否则收尾 guard G06 必 FAIL。修复：文件头部补 <!-- KB_INDEX: {...} --> 后重跑",
+      "attest": {
+        "dir": "_runs/gate/",
+        "fields": ["rule_id", "basis", "target", "verdict", "evidence", "ts", "operator"]
+      },
+      "fallback": "非知识文件误拦：--draft 降级 WARN 留痕，或收尾时不走 kb 任务"
+    },
+    {
+      "rule_id": "R5-DOCID-REGISTRY-GATE",
+      "version": 1,
+      "enabled": true,
+      "severity": "hard",
+      "action": "deny",
+      "layers": ["L2", "L3"],
+      "trigger": {
+        "tools": ["write", "edit"],
+        "path_glob": ["**/*"],
+        "content_regex": ["(?i)doc-\\d+"]
+      },
+      "predicate": {
+        "type": "literal_set",
+        "params": {
+          "extract": "(?i)doc-\\d+",
+          "normalize": ["nfkc", "lowercase"],
+          "match": "exact",
+          "mode": "whitelist",
+          "empty_candidates": "PASS（无 doc-ID 引用，不加载 registry）",
+          "boundary_note": "白名单只防编造 ID，不防真 ID 引错内容（清单B §3.2）；未命中禁止绕过，走 fallback 登记扩容流（铁律 R5 同构）"
+        },
+        "data_source": "ckzl/zsk/gczsk/doc_id_registry.json"
+      },
+      "recall": {
+        "keywords": ["doc-ID", "doc-view", "官方文档", "知识条目", "沉淀引用", "文档核验待办"],
+        "digest": true
+      },
+      "message": "铁律 R5＋闸门1裁决1：存在未登记 doc-ID，禁写。流程：登记 ckzl/bb/外部依赖与归档声明.md → 人工核验 → 入库(registry) → 重跑本门禁",
+      "attest": {
+        "dir": "_runs/gate/",
+        "fields": ["rule_id", "basis", "target", "verdict", "evidence", "ts", "operator"]
+      },
+      "fallback": "未命中→登记扩容流；紧急豁免 --draft 降级 WARN 留痕（禁连续使用）"
+    },
+    {
+      "rule_id": "TRIG-4ELEM-CONDITION",
+      "version": 1,
+      "enabled": true,
+      "severity": "info",
+      "action": "log",
+      "layers": ["L1", "L2"],
+      "trigger": {
+        "tools": ["write", "edit"],
+        "path_glob": ["**/*.cpt", "**/*.frm", "**/*.md", "**/*.py", "**/*.js"],
+        "content_regex": []
+      },
+      "predicate": {
+        "type": "exists",
+        "params": {
+          "kind": "any_group",
+          "case_insensitive": true,
+          "group_source": "设计A §1：四要素关键词（动作词/操作对象词/文件特征词/需求语义词）＝铁律改造清单-A §1 L1 三组触发词＋L2 三路判据（操作对象/文件特征/需求语义）的合并机械化；词表为 FR 语境参数化（妙搭触发词原文见清单A §1 L6-L7）",
+          "groups": {
+            "动作词": ["写入", "写盘", "生成", "修改", "编辑", "沉淀", "新增", "落盘", "writing", "editing", "generating", "modifying"],
+            "操作对象词": [".cpt", ".frm", ".cptx", "模板", "知识文件", "知识条目", "生成器", "参数面板", "决策报表"],
+            "文件特征词": ["widgetname", "doc-", "kb_index", "cdata", "listener", "parameter", "cellelement", "tabledatamap", "widgetattr"],
+            "需求语义词": ["统计", "报表", "趋势", "排行", "周期范围", "截止时间", "汇总", "聚合"]
+          },
+          "verdict_semantics": "PASS=任一组命中（写前审计条件在场，evidence 记命中组）；WARN=四要素未命中（仅路径规则兜底）——本规则是条件层遥测，action=log 永不计入退出码"
+        },
+        "data_source": null
+      },
+      "recall": {
+        "keywords": ["写入", "生成", "修改", "模板", "知识文件", "统计", "报表", "widgetname", "doc-ID", "事前门禁", "写前审计"],
+        "digest": true
+      },
+      "message": "L2 条件层：四要素关键词任一命中＝本次写入需过写前审计；未命中仅记遥测不阻断",
+      "attest": {
+        "dir": "_runs/gate/",
+        "fields": ["rule_id", "basis", "target", "verdict", "evidence", "ts", "operator"]
+      },
+      "fallback": "无（条件层遥测规则，永不 deny）"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+# golden: panel ② 多控件类型（combo/date/number/text）+ 无字典（TableDataMap 空）+ lock_js 关
+skill: panel
+name: panel_g2_controls_no_dict
+expect: ok
+spec:
+  widgets:
+    - {type: label,  name: lb_year, text: "年度："}
+    - {type: date,   name: para_year}
+    - {type: label,  name: lb_adj,  text: "ADJ："}
+    - {type: combo,  name: para_adj}
+    - {type: label,  name: lb_unit, text: "单位："}
+    - {type: number, name: para_unit}
+    - {type: label,  name: lb_ext,  text: "备注："}
+    - {type: text,   name: para_ext1}
+  lock_js: false
+assert_contains:
+  - 'class="com.fr.form.ui.DateEditor"'
+  - 'class="com.fr.form.ui.ComboBox"'
+  - 'class="com.fr.form.ui.NumberEditor"'
+  - 'class="com.fr.form.ui.TextEditor"'
+  - '<WidgetName name="para_year"/>'
+  - '<WidgetName name="para_ext1"/>'
+  - '<TableDataMap></TableDataMap>'
+assert_not_contains:
+  - "afterinit"                 # lock_js=false：不渲染 Listener
+  - "${{"

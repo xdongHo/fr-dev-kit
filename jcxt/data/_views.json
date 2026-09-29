@@ -1,0 +1,3411 @@
+{
+ "generated_at": "2026-09-29 16:58:14",
+ "tree_generated_at": "2026-09-29 16:58:14",
+ "page_count": 218,
+ "ref_scan": {
+  "sources": 219,
+  "links_resolved": 509,
+  "pages_referenced": 170
+ },
+ "views": {
+  "scenario_ops": {
+   "key": "scenario_ops",
+   "dim": "scenario",
+   "name": "运维维护",
+   "desc": "部署/集群/性能/权限/调度/备份/监控/升级/迁移与运行期治理",
+   "rules_summary": "目录前缀×4；显式路径×3；元数据正则/部署|集群|性能优化|权限|定时调度|备份|监控|升级|迁移|平台配置",
+   "external": [],
+   "count": 49,
+   "pages": [
+    {
+     "id": "gf/jcfz",
+     "path": "ckzl/gf/jcfz.md",
+     "title": "任务决策树-扩展分支(官方文档沉淀)",
+     "summary": "从 AGENTS.md §2 拆出的官方文档持续学习沉淀的决策分支:排序/打印/权限/图表/定时调度/联动/公式/扩展图表等。日常开发按需查对应分支。",
+     "lines": 165
+    },
+    {
+     "id": "gf/xjqx",
+     "path": "ckzl/gf/xjqx.md",
+     "title": "行级数据权限控制模式",
+     "summary": "按登录用户工厂(plant)授权的行级数据权限三层防护模式（原 AGENTS.md §2.1，2026-08-12 实战验证，2026-08-20 v3 拆出）：SQL WHERE 权限子查询 + FormulaCondition 提交条件 + TopVerifier 校验提示",
+     "lines": 147
+    },
+    {
+     "id": "gf/zxzt",
+     "path": "ckzl/gf/zxzt.md",
+     "title": "任务路由-专项主题",
+     "summary": "专项主题路由表+kit边界外主题清单+非核心目录速查（原 AGENTS.md §3 后半+§3.1+§6 非核心行，2026-08-20 v3 拆出）。查专项功能路由或判定主题是否 kit 边界外时读",
+     "lines": 200
+    },
+    {
+     "id": "gf/铁律速查",
+     "path": "ckzl/gf/铁律速查.md",
+     "title": "全局铁律速查（A-K核心档 + L-AH专项档）",
+     "summary": "全局铁律唯一权威正文（自 FR_HEADLESS_GUIDE.md 拆出 2026-09-29）：A-K 核心档每任务必读 + L-AH 专项档按主题命中；主路由保留分节速查目录",
+     "lines": 402
+    },
+    {
+     "id": "lc/00_需求分析流水线",
+     "path": "ckzl/lc/00_需求分析流水线.md",
+     "title": "Stage 0: 需求分析流水线 (Excel 需求确认清单)",
+     "summary": "开发工艺流程(Stage 1-11)前置的需求分析流水线: Excel 需求确认清单为单一事实源, 且是运维交付文档(frdoc 归档盘点)的种子(交付反推矩阵§1.2)。结构: 需求总览九区(项目与责任三方/报表清单/表资源表结构实测/数据集/参数/填报交互权限/业务口径/运行运维要素/确认记录) + 实体表样例页T_(字段类型+原始数据) + 数据集示例数据页 + SQL逻辑页 + 表样页(cpt=网格+顶部5行参数面板; frm=画布式合并单元格)。req_workbook.py 逆向生成: FS预算940公式引用+352905行实测/detail填报主键超链提取/dashboard 63组件 实证。",
+     "lines": 139
+    },
+    {
+     "id": "lc/01_环境与工具链",
+     "path": "ckzl/lc/01_环境与工具链.md",
+     "title": "Stage 1: 环境与工具链（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 4 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 40
+    },
+    {
+     "id": "lc/01_选型矩阵与定时调度",
+     "path": "ckzl/lc/01_选型矩阵与定时调度.md",
+     "title": "Stage 8 · 技术选型矩阵与定时调度边界",
+     "summary": "Java API vs Python XML 能力矩阵、定时调度生成边界与约束（模板侧vs平台侧/公式判断/通道约束/FTP）、模板外部依赖清单",
+     "lines": 238
+    },
+    {
+     "id": "lc/02_单元格构建_基础",
+     "path": "ckzl/lc/02_单元格构建_基础.md",
+     "title": "Stage 3 · 单元格构建（基础与条件属性）",
+     "summary": "通配规则总纲、Java API / Python XML 双路单元格构建、隔行换色、条件属性动作族与运行期语义、权限超链、明细格式化、冻结表头、预览打印导出开关、单元格形态与权限锚点",
+     "lines": 385
+    },
+    {
+     "id": "lc/02_环境前置与外部依赖",
+     "path": "ckzl/lc/02_环境前置与外部依赖.md",
+     "title": "Stage 1 · 环境前置与外部依赖",
+     "summary": "连接名契约、Excel 导出环境前提、扩展图表工程硬前置、自动化账号权限、模板外部依赖（数据连接分册）、Linux 图表导出门槛、四层时区链、FineDB 外接库、contextPath 常量",
+     "lines": 202
+    },
+    {
+     "id": "lc/03_Java导出与平台配置",
+     "path": "ckzl/lc/03_Java导出与平台配置.md",
+     "title": "Stage 8 · Java API 导出与平台类配置",
+     "summary": "Java API 导出（无头产物落盘）、Java API 运行前提、平台类配置的 Java 写法（Configuration 类）",
+     "lines": 101
+    },
+    {
+     "id": "lc/03_报表构建",
+     "path": "ckzl/lc/03_报表构建.md",
+     "title": "Stage 3: 报表构建（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 9 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 55
+    },
+    {
+     "id": "lc/03_排序联动_连接权限_模板转换",
+     "path": "ckzl/lc/03_排序联动_连接权限_模板转换.md",
+     "title": "Stage 2 · 排序 / 联动 / 连接权限 / 模板转换",
+     "summary": "排序选型与 ORDER BY 安全构造、联动场景数据集分工与参数双声明、数据连接名与权限、方言级 SQL 约束、模板转换管道",
+     "lines": 264
+    },
+    {
+     "id": "lc/04_自检API与部署治理",
+     "path": "ckzl/lc/04_自检API与部署治理.md",
+     "title": "Stage 1 · 环境自检 API 与部署治理",
+     "summary": "环境自检 API 面、绕开 Workspace 读模板的 FD 纪律、离线/内网外联治理、平台账号与身份认证（FSConfig/Passport）、集群与共享存储",
+     "lines": 107
+    },
+    {
+     "id": "lc/07_FRM决策报表",
+     "path": "ckzl/lc/07_FRM决策报表.md",
+     "title": "Stage 7: FRM 决策报表",
+     "summary": "FRM 决策报表/驾驶舱的构建要点与与普通 CPT 的差异、图表轮播联动、组件间联动(FormHyperlink/DynamicParamHyperlink)、扩展图表数据绑定、组件级导出、导出与定时调度约束",
+     "lines": 376
+    },
+    {
+     "id": "lc/07_超级链接_调度_移动端",
+     "path": "ckzl/lc/07_超级链接_调度_移动端.md",
+     "title": "Stage 3 · 超级链接 / 定时调度 / 移动端属性",
+     "summary": "六类超级链接总表 + 动态参数 / JavaScript 详解、定时调度结果单元格、模板级与报表级移动端属性",
+     "lines": 285
+    },
+    {
+     "id": "lc/08_层级坐标_平台配置",
+     "path": "ckzl/lc/08_层级坐标_平台配置.md",
+     "title": "Stage 3 · 层级坐标 / JS 契约 / 平台配置",
+     "summary": "层级坐标构建、JS 契约（名字与常量由生成器供给）、CacheConfig 平台类配置单例、单元格样式按数据类型规范",
+     "lines": 131
+    },
+    {
+     "id": "lc/08_技术选型与调试",
+     "path": "ckzl/lc/08_技术选型与调试.md",
+     "title": "Stage 8: 技术选型与调试（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 3 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 32
+    },
+    {
+     "id": "lc/fr10_deep_learn/FineReport企业级应用架构设计模式与最佳实践",
+     "path": "ckzl/lc/fr10_deep_learn/FineReport企业级应用架构设计模式与最佳实践.md",
+     "title": "FineReport 企业级应用架构设计模式与最佳实践",
+     "summary": "1. 从LDAP/AD/HR系统同步用户组织架构2. 字段映射：外部字段 → FR平台字段",
+     "lines": 555
+    },
+    {
+     "id": "lc/fr11_knowledge/README",
+     "path": "ckzl/lc/fr11_knowledge/README.md",
+     "title": "FR11 知识库索引（2289 篇离线文档 → 21 篇笔记）",
+     "summary": "FR11 离线文档（D:\\fr11_docs，2289 篇 doc-view HTML）解析重建的 21 篇知识笔记索引：15 分类 + 5 专题补充 + 本索引。",
+     "lines": 77
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/SKILL.md",
+     "title": "FR11 部署与集群 核心结论",
+     "summary": "--- name: fr11-deploy-cluster description: 何时使用：需要在服务器上部署（deploy）FR11 报表工程、配置 Tomcat/WebLogic/Nginx/Redis 集群（cluster）、负载",
+     "lines": 46
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/01_集群与负载均衡",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/01_集群与负载均衡.md",
+     "title": "FR11 · 部署与集群 · 集群 / 负载均衡 / 会话与文件服务器",
+     "summary": "集群方案、Nginx/Redis/Keepalived/Traefik、状态与文件服务器、智能运维条目（49 条 doc-view 条目，ID 2221~5073）；deploy_cluster_summary.md 拆分页 1/6，条目原样保留。",
+     "lines": 191
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/02_服务器部署与安装",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/02_服务器部署与安装.md",
+     "title": "FR11 · 部署与集群 · 服务器部署与安装升级",
+     "summary": "独立部署/嵌入式部署、Tomcat/WebLogic/WebSphere/JBoss/Resin/TongWeb、迁移升级与端口条目（87 条 doc-view 条目，ID 69~5120）；deploy_cluster_summary.md 拆分页 2/6，条目原样保留。",
+     "lines": 327
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/03_运维配置与日志",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/03_运维配置与日志.md",
+     "title": "FR11 · 部署与集群 · 运维配置 / 内存 / 日志",
+     "summary": "服务器配置、内存与线程、日志、编码字体、备份还原、Linux/Windows/云运维条目（57 条 doc-view 条目，ID 361~5133）；deploy_cluster_summary.md 拆分页 3/6，条目原样保留。",
+     "lines": 241
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/04_安全与认证",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/04_安全与认证.md",
+     "title": "FR11 · 部署与集群 · 安全 / SSL / CAS 认证",
+     "summary": "SSL 证书与 HTTPS、CAS 单点、加密与注册、安全防护条目（19 条 doc-view 条目，ID 275~4833）；deploy_cluster_summary.md 拆分页 4/6，条目原样保留。",
+     "lines": 96
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/05_平台管理与工程",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/05_平台管理与工程.md",
+     "title": "FR11 · 部署与集群 · 平台管理 / 工程与数据连接",
+     "summary": "数据决策系统与平台管理、目录、用户、工程访问路径、Servlet、FineDB 与平台数据连接条目（32 条 doc-view 条目，ID 195~4998）；deploy_cluster_summary.md 拆分页 5/6，条目原样保留。",
+     "lines": 140
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/06_综合与其他",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/06_综合与其他.md",
+     "title": "FR11 · 部署与集群 · 综合与其他",
+     "summary": "未归入上述主题的条目（含通用报错、浏览器配置等）（71 条 doc-view 条目，ID 66~5001）；deploy_cluster_summary.md 拆分页 6/6，条目原样保留。",
+     "lines": 294
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/README",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/README.md",
+     "title": "部署与集群 references 导航",
+     "summary": "deploy-cluster部署集群/references 目录导航：deploy_cluster_summary.md 已按主题拆为 6 页；原文件保留为导航页。SKILL.md 为核心结论入口。",
+     "lines": 34
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/deploy_cluster_summary",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/deploy_cluster_summary.md",
+     "title": "FR11 知识库 · 部署与集群总结（导航）",
+     "summary": "deploy_cluster_summary.md（315 条）主题拆分导航页：主题速览 + 6 个分页入口 + 总结（全量 doc-view ID 清单）。",
+     "lines": 70
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/fr11_install_survey_report",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/fr11_install_survey_report.md",
+     "title": "FR11 安装调研报告（基于离线文档）",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：21 篇（标题含 安装/部署环境/环境准备/系统要求/配置要求） > 生成时间：2026-08-26",
+     "lines": 136
+    },
+    {
+     "id": "lc/fr11_knowledge/js-api二次开发/references/08_Java引擎与平台",
+     "path": "ckzl/lc/fr11_knowledge/js-api二次开发/references/08_Java引擎与平台.md",
+     "title": "FR11 · 二次开发与JS API · Java 引擎与平台 API",
+     "summary": "引擎 API、Java 编译与 classpath、上传 FTP、定时调度平台侧条目（18 条 doc-view 条目，ID 597~5076）；js_api_summary.md 拆分页 8/10，条目原样保留。",
+     "lines": 98
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/SKILL.md",
+     "title": "FR11 移动端 核心结论",
+     "summary": "--- name: fr11-mobile description: FR11 移动端开发/预览问题时使用。触发词：移动端、App、HTML5/H5、微信、钉钉、企业微信、小程序、OEM/Custom App 打包、NFC 读卡、移动端填报",
+     "lines": 49
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/references/01_App客户端",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/references/01_App客户端.md",
+     "title": "FR11 · 移动端 · App 客户端",
+     "summary": "[App] 系列接口与功能、App 打包与证书、iOS/Android 专项条目（55 条 doc-view 条目，ID 563~5025）；mobile_summary.md 拆分页 1/6，条目原样保留。",
+     "lines": 219
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/references/02_微信钉钉集成",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/references/02_微信钉钉集成.md",
+     "title": "FR11 · 移动端 · 微信 / 钉钉 / 小程序集成",
+     "summary": "企业微信、钉钉、微信小程序集成与推送条目（10 条 doc-view 条目，ID 1981~5018）；mobile_summary.md 拆分页 2/6，条目原样保留。",
+     "lines": 63
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/references/03_HTML5与H5",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/references/03_HTML5与H5.md",
+     "title": "FR11 · 移动端 · HTML5 / H5",
+     "summary": "[H5] 系列与 HTML5 端预览、H5 悬浮工具栏等条目（9 条 doc-view 条目，ID 1649~4574）；mobile_summary.md 拆分页 3/6，条目原样保留。",
+     "lines": 55
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/references/04_移动端填报与交互",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/references/04_移动端填报与交互.md",
+     "title": "FR11 · 移动端 · 移动端填报与交互",
+     "summary": "移动端填报、JS 交互、图表控件超链在移动端的适配条目（6 条 doc-view 条目，ID 942~3781）；mobile_summary.md 拆分页 4/6，条目原样保留。",
+     "lines": 52
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/references/05_移动端平台与通用",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/references/05_移动端平台与通用.md",
+     "title": "FR11 · 移动端 · 移动端平台管理与通用方案",
+     "summary": "移动平台管理、设备绑定、单点登录、定时调度到移动端、[通用] 方案条目（36 条 doc-view 条目，ID 549~5043）；mobile_summary.md 拆分页 5/6，条目原样保留。",
+     "lines": 153
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/references/06_综合与其他",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/references/06_综合与其他.md",
+     "title": "FR11 · 移动端 · 综合与其他",
+     "summary": "未归入上述主题的条目（含通用报表制作类文档）（76 条 doc-view 条目，ID 147~5078）；mobile_summary.md 拆分页 6/6，条目原样保留。",
+     "lines": 312
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/references/README",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/references/README.md",
+     "title": "移动端 references 导航",
+     "summary": "mobile移动端/references 目录导航：mobile_summary.md 已按主题拆为 6 页；原文件保留为导航页。SKILL.md 为核心结论入口。",
+     "lines": 32
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/references/mobile_summary",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/references/mobile_summary.md",
+     "title": "FR11 知识库 · 移动端总结（导航）",
+     "summary": "mobile_summary.md（192 条）主题拆分导航页：主题速览 + 6 个分页入口 + 总结（全量 doc-view ID 清单）。",
+     "lines": 69
+    },
+    {
+     "id": "lc/fr11_knowledge/performance性能优化/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/performance性能优化/SKILL.md",
+     "title": "FR11 性能优化 核心结论",
+     "summary": "--- name: fr11-performance description: 何时使用：排查与优化 FR11 报表性能（performance）——模板加载慢、取数慢、内存溢出（OOM/Java heap space）、并发卡顿、大数据量",
+     "lines": 46
+    },
+    {
+     "id": "lc/fr11_knowledge/performance性能优化/references/performance_summary",
+     "path": "ckzl/lc/fr11_knowledge/performance性能优化/references/performance_summary.md",
+     "title": "FR11 知识库 · 性能优化总结",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：31 篇 > 生成时间：2026-08-26 > 主题范围：性能/优化/内存/缓存/并发/大数据量",
+     "lines": 187
+    },
+    {
+     "id": "lc/fr11_knowledge/permission权限/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/permission权限/SKILL.md",
+     "title": "FR11 权限 核心结论",
+     "summary": "--- name: fr11-permission description: FR11 权限与认证问题时使用。触发词：权限、角色、用户管理、数据权限、认证、单点登录 SSO、Oauth2、LtpaToken、密码加密、数据脱敏、上报审核。",
+     "lines": 42
+    },
+    {
+     "id": "lc/fr11_knowledge/permission权限/references/permission_summary",
+     "path": "ckzl/lc/fr11_knowledge/permission权限/references/permission_summary.md",
+     "title": "FR11 知识库 · 权限总结",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：92 篇 > 生成时间：2026-08-26 > 主题范围：权限/角色/用户/认证/单点登录/数据权限",
+     "lines": 461
+    },
+    {
+     "id": "zsk/csff/设计器重启预检",
+     "path": "ckzl/zsk/csff/设计器重启预检.md",
+     "title": "设计器重启预检清单",
+     "summary": "部署 4 个复刻插件目录后首次重启设计器的 5 点验证清单：插件在列/图表类型/公式提示/管理页 console/日志无错",
+     "lines": 40
+    },
+    {
+     "id": "zsk/qdjk/references/前端交互指南_3_问题与高级主题",
+     "path": "ckzl/zsk/qdjk/references/前端交互指南_3_问题与高级主题.md",
+     "title": "FR前端交互指南 3/3：常见交互问题排查与高级主题（.frm 对比/Web 事件/挂载点/权限参数/跨域/图表插件协议）",
+     "summary": "FineReport 前端交互高级实现指南第 3/3 页：常见交互问题与解决方案（事件不触发/控件操作/样式/超链/图表前端坑）、高级主题（决策报表 .frm vs 普通报表 .cpt、Web 事件名全集、JS 挂载点、内置权限参数、跨域 iframe 调 FR JS、图表插件前端协议）——原指南五~六章",
+     "lines": 152
+    },
+    {
+     "id": "zsk/tbcw/CPT全部打开提示无法查看该页面排查",
+     "path": "ckzl/zsk/tbcw/CPT全部打开提示无法查看该页面排查.md",
+     "title": "所有CPT打开提示「非常抱歉您无法查看该页面」排查",
+     "summary": "报错『非常抱歉，您无法查看该页面，如需访问请联系管理员』的判位与排查链：先按全员/单人对分平台级或模板级，再查目录权限、全局权限项、模板加密(doc-863)、license。源自社区问题 231582",
+     "lines": 27
+    },
+    {
+     "id": "zsk/tbcw/公式函数不存在-no function found",
+     "path": "ckzl/zsk/tbcw/公式函数不存在-no function found.md",
+     "title": "公式函数不存在致no function found刷屏分析",
+     "summary": "高亮条件公式写 AND(ISNUMBER($$$),$$$>0.002)，FR10 引擎 187 个注册函数类中根本没有 ISNUMBER（Excel 思维迁移陷阱）——XML 合法+fr_check 通过但每次计算服务端刷 no function found（实测单日 6120 条），单元格高亮静默失效；三层证据定位法（jar 扫描/官方清单/日志计数）、NVL($$$,0)>0.002 替换样板与公式函数白名单检查工具化（check_cpt_integrity.py 检查2；2026-09-06/07 示例实际表/预算 各 204 处实战）",
+     "lines": 114
+    },
+    {
+     "id": "zsk/tbcw/附-实体列名值域核对方法论-entity vs entity_code",
+     "path": "ckzl/zsk/tbcw/附-实体列名值域核对方法论-entity vs entity_code.md",
+     "title": "实体列名与值域错配排查方法论(entity vs entity_code)",
+     "summary": "视图里 entity=中文厂名、entity_code=编码两列并存，权限门/层级过滤拿名字字段比编码值→恒不匹配→扩展行全空白且零报错；沉淀'空白列五步定位法'与'过滤条件两侧列名-值域核对表'方法论（2026-09-06 示例实际表 ds_cr_lta/pact 102 处引用空白实战）；供主控裁决单独成条或并入 DSColumn悬空数据集引用.md",
+     "lines": 65
+    },
+    {
+     "id": "zsk/xtgt/patterns/复杂模板改造协议",
+     "path": "ckzl/zsk/xtgt/patterns/复杂模板改造协议.md",
+     "title": "复杂模板改造协议(标注-确认-删除实战 playbook)",
+     "summary": "五步改造流程:转换清源→三色标注→红标确认→依赖扫描→备份执行,附示例项目 12MB 五sheet实战数据",
+     "lines": 102
+    }
+   ]
+  },
+  "scenario_build": {
+   "key": "scenario_build",
+   "dim": "scenario",
+   "name": "新构建",
+   "desc": "从零建模板：流程A/F 全链路（需求判定→数据建模→参数面板→主体样式→填报→Web 呈现）",
+   "rules_summary": "目录前缀×3；显式路径×3；路径正则/^lc/0[0-6]_；元数据正则/流程A|流程F",
+   "external": [],
+   "count": 55,
+   "pages": [
+    {
+     "id": "gf/bjys",
+     "path": "ckzl/gf/bjys.md",
+     "title": "布局样式美化-统一规范(最终版)",
+     "summary": "FRM驾驶舱+CPT报表的布局/样式/美化统一规范,收敛散落各处的样式定稿。开发前期专注功能,样式收尾阶段按本规范统一应用。默认样式已落地为脚本(见kfgj/fzpy/frm_apply_style)。",
+     "lines": 129
+    },
+    {
+     "id": "gzjd/00_工作流节点导航",
+     "path": "ckzl/gzjd/00_工作流节点导航.md",
+     "title": "ckzl/gzjd导航(操作指南入口)",
+     "summary": "报表开发按ckzl/gzjd加载知识:判定题定向 → 节点自包含(知识点/Java API/错误/验证) → 弱关联按需加载,不一次性关联无关知识",
+     "lines": 101
+    },
+    {
+     "id": "gzjd/01_需求与数据判定",
+     "path": "ckzl/gzjd/01_需求与数据判定.md",
+     "title": "需求与数据判定",
+     "summary": "判断报表类型与业务形态,理清数据/字段/想要什么",
+     "lines": 94
+    },
+    {
+     "id": "gzjd/02_数据集",
+     "path": "ckzl/gzjd/02_数据集.md",
+     "title": "数据集",
+     "summary": "SQL 设计、级联参数、数据字典、数据集类型选型",
+     "lines": 108
+    },
+    {
+     "id": "gzjd/03_参数面板",
+     "path": "ckzl/gzjd/03_参数面板.md",
+     "title": "参数面板",
+     "summary": "控件选型、布局、默认值、标签宽度、级联控件",
+     "lines": 109
+    },
+    {
+     "id": "gzjd/04_报表主体_明细展示",
+     "path": "ckzl/gzjd/04_报表主体_明细展示.md",
+     "title": "报表主体-明细展示",
+     "summary": "单元格构建、样式、行高、冻结、分页、排序",
+     "lines": 118
+    },
+    {
+     "id": "gzjd/05_填报模块",
+     "path": "ckzl/gzjd/05_填报模块.md",
+     "title": "填报模块",
+     "summary": "填报控件、提交配置、校验、导入、去重",
+     "lines": 96
+    },
+    {
+     "id": "gzjd/06_图表模块",
+     "path": "ckzl/gzjd/06_图表模块.md",
+     "title": "图表模块",
+     "summary": "图表类型选型、数据绑定、样式、联动",
+     "lines": 158
+    },
+    {
+     "id": "gzjd/07_导入导出",
+     "path": "ckzl/gzjd/07_导入导出.md",
+     "title": "导入导出",
+     "summary": "Excel/Word/PDF 导出、大数据导出、导入",
+     "lines": 112
+    },
+    {
+     "id": "gzjd/08_交互联动",
+     "path": "ckzl/gzjd/08_交互联动.md",
+     "title": "交互联动",
+     "summary": "超链、JS 回调、单元格/图表联动、动态参数",
+     "lines": 117
+    },
+    {
+     "id": "gzjd/09_FRM决策报表",
+     "path": "ckzl/gzjd/09_FRM决策报表.md",
+     "title": "FRM 决策报表",
+     "summary": "组件化布局、跨块联动、决策报表对象",
+     "lines": 116
+    },
+    {
+     "id": "gzjd/10_预览与验证",
+     "path": "ckzl/gzjd/10_预览与验证.md",
+     "title": "预览与验证",
+     "summary": "验证清单、错误排查、移动端适配",
+     "lines": 114
+    },
+    {
+     "id": "hbfa/README",
+     "path": "ckzl/hbfa/README.md",
+     "title": "ckzl/hbfa(报表骨架库)",
+     "summary": "60套可视化报表骨架(cpt20+frm自适应20+frm绝对20)+配置JSON:agent开发可视化报表/图表/驾驶舱时从此选骨架,标题用表格/标题栏承载(非图表自身标题)",
+     "lines": 158
+    },
+    {
+     "id": "lc/00_需求分析流水线",
+     "path": "ckzl/lc/00_需求分析流水线.md",
+     "title": "Stage 0: 需求分析流水线 (Excel 需求确认清单)",
+     "summary": "开发工艺流程(Stage 1-11)前置的需求分析流水线: Excel 需求确认清单为单一事实源, 且是运维交付文档(frdoc 归档盘点)的种子(交付反推矩阵§1.2)。结构: 需求总览九区(项目与责任三方/报表清单/表资源表结构实测/数据集/参数/填报交互权限/业务口径/运行运维要素/确认记录) + 实体表样例页T_(字段类型+原始数据) + 数据集示例数据页 + SQL逻辑页 + 表样页(cpt=网格+顶部5行参数面板; frm=画布式合并单元格)。req_workbook.py 逆向生成: FS预算940公式引用+352905行实测/detail填报主键超链提取/dashboard 63组件 实证。",
+     "lines": 139
+    },
+    {
+     "id": "lc/01_Java_API包名速查",
+     "path": "ckzl/lc/01_Java_API包名速查.md",
+     "title": "Stage 3 · Java API 正确包名速查",
+     "summary": "验证过的 Java API 正确包名速查表（报表构建选型第一步）",
+     "lines": 174
+    },
+    {
+     "id": "lc/01_Web属性",
+     "path": "ckzl/lc/01_Web属性.md",
+     "title": "Stage 6 · Web 属性",
+     "summary": "Web 属性配置（ReportWebAttr）：分页预览/填报页面/数据分析三态设置、工具栏按钮、页面框架",
+     "lines": 286
+    },
+    {
+     "id": "lc/01_参数面板基础与布局",
+     "path": "ckzl/lc/01_参数面板基础与布局.md",
+     "title": "Stage 4 · 参数面板基础与布局自动化",
+     "summary": "参数面板结构（水印无 Label 默认方案、Label 分支、YearControl 模板）与 LAYOUT_SPEC 布局自动化规范",
+     "lines": 207
+    },
+    {
+     "id": "lc/01_填报提交",
+     "path": "ckzl/lc/01_填报提交.md",
+     "title": "Stage 5 · 填报提交",
+     "summary": "填报提交配置：Insert/Delete/IntelliDML、delete_flag 先删后插、审计字段、智能提交",
+     "lines": 166
+    },
+    {
+     "id": "lc/01_开发环境搭建",
+     "path": "ckzl/lc/01_开发环境搭建.md",
+     "title": "Stage 1 · 开发环境搭建",
+     "summary": "FR 安装目录、JDK、编译 Java 扩展的 classpath 与常用工具链",
+     "lines": 248
+    },
+    {
+     "id": "lc/01_数据集构建",
+     "path": "ckzl/lc/01_数据集构建.md",
+     "title": "Stage 2 · 数据集构建",
+     "summary": "EmbeddedTableData/DBTableData 数据集构建、字段映射、SQL 数据集规范",
+     "lines": 168
+    },
+    {
+     "id": "lc/01_环境与工具链",
+     "path": "ckzl/lc/01_环境与工具链.md",
+     "title": "Stage 1: 环境与工具链（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 4 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 40
+    },
+    {
+     "id": "lc/01_选型矩阵与定时调度",
+     "path": "ckzl/lc/01_选型矩阵与定时调度.md",
+     "title": "Stage 8 · 技术选型矩阵与定时调度边界",
+     "summary": "Java API vs Python XML 能力矩阵、定时调度生成边界与约束（模板侧vs平台侧/公式判断/通道约束/FTP）、模板外部依赖清单",
+     "lines": 238
+    },
+    {
+     "id": "lc/02_JS交互与回调",
+     "path": "ckzl/lc/02_JS交互与回调.md",
+     "title": "Stage 5 · JS 交互回调与单元格控件联动",
+     "summary": "JS 回调 / 提交后事件 / callback 回调函数、填报单元格控件联动与自动默认值、自定义提交按钮",
+     "lines": 354
+    },
+    {
+     "id": "lc/02_单元格构建_基础",
+     "path": "ckzl/lc/02_单元格构建_基础.md",
+     "title": "Stage 3 · 单元格构建（基础与条件属性）",
+     "summary": "通配规则总纲、Java API / Python XML 双路单元格构建、隔行换色、条件属性动作族与运行期语义、权限超链、明细格式化、冻结表头、预览打印导出开关、单元格形态与权限锚点",
+     "lines": 385
+    },
+    {
+     "id": "lc/02_参数面板CSS注入",
+     "path": "ckzl/lc/02_参数面板CSS注入.md",
+     "title": "Stage 6 · 参数面板 CSS 注入",
+     "summary": "CSSImport 注入位置、afterinit 事件、参数面板样式覆盖",
+     "lines": 135
+    },
+    {
+     "id": "lc/02_控件类型规范",
+     "path": "ckzl/lc/02_控件类型规范.md",
+     "title": "Stage 4 · 控件类型规范（年/日期控件与标签宽度）",
+     "summary": "年/日期控件类型规范（Ver0.3）、标签宽度自适应（Ver0.3）：控件选型与布局规格",
+     "lines": 183
+    },
+    {
+     "id": "lc/02_数据建模",
+     "path": "ckzl/lc/02_数据建模.md",
+     "title": "Stage 2: 数据建模（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 3 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 40
+    },
+    {
+     "id": "lc/02_环境前置与外部依赖",
+     "path": "ckzl/lc/02_环境前置与外部依赖.md",
+     "title": "Stage 1 · 环境前置与外部依赖",
+     "summary": "连接名契约、Excel 导出环境前提、扩展图表工程硬前置、自动化账号权限、模板外部依赖（数据连接分册）、Linux 图表导出门槛、四层时区链、FineDB 外接库、contextPath 常量",
+     "lines": 202
+    },
+    {
+     "id": "lc/02_级联参数与参数选型",
+     "path": "ckzl/lc/02_级联参数与参数选型.md",
+     "title": "Stage 2 · 级联参数与参数选型",
+     "summary": "级联参数 SQL 规范（WHERE 1=1 + ${if()}）、数据集参数 vs 模板参数选型、分页 SQL / 行式引擎",
+     "lines": 285
+    },
+    {
+     "id": "lc/02_调试技巧",
+     "path": "ckzl/lc/02_调试技巧.md",
+     "title": "Stage 8 · 调试技巧",
+     "summary": "diff 定位、常见问题表（§16.2）、回退策略等调试方法论",
+     "lines": 295
+    },
+    {
+     "id": "lc/03_Java导出与平台配置",
+     "path": "ckzl/lc/03_Java导出与平台配置.md",
+     "title": "Stage 8 · Java API 导出与平台类配置",
+     "summary": "Java API 导出（无头产物落盘）、Java API 运行前提、平台类配置的 Java 写法（Configuration 类）",
+     "lines": 101
+    },
+    {
+     "id": "lc/03_产物分类_体检与无头上下文",
+     "path": "ckzl/lc/03_产物分类_体检与无头上下文.md",
+     "title": "Stage 1 · 产物分类 / 运行体检 / 无头上下文",
+     "summary": "产物分类（模板/平台实体/配置项）、运行环境体检、无头运行上下文与 Workspace、classpath 官方定义、PID 标记与幂等、Java 编译时机、架构与 OS 判定口径",
+     "lines": 203
+    },
+    {
+     "id": "lc/03_单元格构建_公式与进阶",
+     "path": "ckzl/lc/03_单元格构建_公式与进阶.md",
+     "title": "Stage 3 · 单元格构建（公式与进阶）",
+     "summary": "公式分组、公式构建铁律、公式槽与多条件赋值、内置公式函数、Excel 导入匹配、单元格元素 8 类、可伸展性、固定行数页内合计、条码二维码、富文本、控件装配、动态列",
+     "lines": 203
+    },
+    {
+     "id": "lc/03_导出下载与定时刷新",
+     "path": "ckzl/lc/03_导出下载与定时刷新.md",
+     "title": "Stage 6 · 导出下载与决策报表定时刷新",
+     "summary": "导出/下载（URL/分Sheet/大数据集/sessionID 复用）、ShortCut 按钮对照、决策报表定时刷新（表单级事件）",
+     "lines": 191
+    },
+    {
+     "id": "lc/03_报表构建",
+     "path": "ckzl/lc/03_报表构建.md",
+     "title": "Stage 3: 报表构建（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 9 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 55
+    },
+    {
+     "id": "lc/03_排序联动_连接权限_模板转换",
+     "path": "ckzl/lc/03_排序联动_连接权限_模板转换.md",
+     "title": "Stage 2 · 排序 / 联动 / 连接权限 / 模板转换",
+     "summary": "排序选型与 ORDER BY 安全构造、联动场景数据集分工与参数双声明、数据连接名与权限、方言级 SQL 约束、模板转换管道",
+     "lines": 264
+    },
+    {
+     "id": "lc/03_级联_事件_作用域",
+     "path": "ckzl/lc/03_级联_事件_作用域.md",
+     "title": "Stage 4 · 参数面板级联 / 控件事件 / 参数三层作用域",
+     "summary": "参数面板级联（模板参数驱动）、控件事件（doc-3120/doc-1434/doc-1197）、参数三层作用域与模板参数定义",
+     "lines": 252
+    },
+    {
+     "id": "lc/03_预览_图表联动_移动端上报",
+     "path": "ckzl/lc/03_预览_图表联动_移动端上报.md",
+     "title": "Stage 5 · 预览模式 / 图表联动 / 移动端填报 / 多级上报",
+     "summary": "op 预览参数、图表联动交互（超链传参+自动刷新）、移动端填报入口、多级上报工作流",
+     "lines": 153
+    },
+    {
+     "id": "lc/04_参数面板",
+     "path": "ckzl/lc/04_参数面板.md",
+     "title": "Stage 4: 参数面板（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 6 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 45
+    },
+    {
+     "id": "lc/04_填报页面设置与数据校验",
+     "path": "ckzl/lc/04_填报页面设置与数据校验.md",
+     "title": "Stage 5 · 填报页面设置与数据校验",
+     "summary": "填报页面单独设置（禁用工具栏）、强制数据校验（校验不通过不允许提交）、填报选型前置检查",
+     "lines": 249
+    },
+    {
+     "id": "lc/04_多选_路由_移动端_附录B",
+     "path": "ckzl/lc/04_多选_路由_移动端_附录B.md",
+     "title": "Stage 4 · 多选控件 / 路由面板 / 移动端样式 / 附录B",
+     "summary": "多选控件字符串返回值+分隔符铁律、报表路由面板、移动端样式插件作用范围、参数面板标准布局引擎（G2 双段式）与批量处理脚本",
+     "lines": 139
+    },
+    {
+     "id": "lc/04_样式_行高_冻结",
+     "path": "ckzl/lc/04_样式_行高_冻结.md",
+     "title": "Stage 3 · 样式 / 行高列宽 / 冻结窗格",
+     "summary": "样式构建 fix_styles、行高 FU 换算、冻结窗格构建",
+     "lines": 218
+    },
+    {
+     "id": "lc/04_移动端H5_集成与前端JS",
+     "path": "ckzl/lc/04_移动端H5_集成与前端JS.md",
+     "title": "Stage 6 · 移动端 H5 / 集成 / 前端 JS",
+     "summary": "移动端与 H5 预览、嵌入与被嵌入（集成）、集成 URL 参数字典、超链接装配补充、图表 JS 接口速查、FR.ajax 前端请求",
+     "lines": 219
+    },
+    {
+     "id": "lc/04_自检API与部署治理",
+     "path": "ckzl/lc/04_自检API与部署治理.md",
+     "title": "Stage 1 · 环境自检 API 与部署治理",
+     "summary": "环境自检 API 面、绕开 Workspace 读模板的 FD 纪律、离线/内网外联治理、平台账号与身份认证（FSConfig/Passport）、集群与共享存储",
+     "lines": 107
+    },
+    {
+     "id": "lc/05_下拉树_联动_默认值_按钮",
+     "path": "ckzl/lc/05_下拉树_联动_默认值_按钮.md",
+     "title": "Stage 4 · 下拉树 / 控件联动 / 默认值 / 动作按钮",
+     "summary": "下拉树控件与树数据集自动构建、构建方式对照、控件间赋值联动、WidgetValue 默认值配方、FreeButton 动作按钮",
+     "lines": 140
+    },
+    {
+     "id": "lc/05_填报与交互",
+     "path": "ckzl/lc/05_填报与交互.md",
+     "title": "Stage 5: 填报与交互（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 5 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 52
+    },
+    {
+     "id": "lc/05_复选批量_Excel导入_暂存",
+     "path": "ckzl/lc/05_复选批量_Excel导入_暂存.md",
+     "title": "Stage 5 · 复选批量 / Excel 导入 / 暂存",
+     "summary": "复选框全选与批量操作、Excel 标记导入插件、显示值转换（形态数据字典）、填报暂存（自动/手动/清空）",
+     "lines": 87
+    },
+    {
+     "id": "lc/05_扩展后排序",
+     "path": "ckzl/lc/05_扩展后排序.md",
+     "title": "Stage 3 · 扩展后排序",
+     "summary": "扩展后排序 doc-897 基础与多变体、单元格高级排序公式（排序交给公式而非 SQL ORDER BY）",
+     "lines": 220
+    },
+    {
+     "id": "lc/06_Web呈现层",
+     "path": "ckzl/lc/06_Web呈现层.md",
+     "title": "Stage 6: Web 呈现层（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 4 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 34
+    },
+    {
+     "id": "lc/06_图表与导出",
+     "path": "ckzl/lc/06_图表与导出.md",
+     "title": "Stage 3 · 图表与导出",
+     "summary": "图表配置正交三分 + 数据绑定 + 样式总纲；Excel / Word 导出硬约束",
+     "lines": 356
+    },
+    {
+     "id": "lc/06_面板行为与控件杂项",
+     "path": "ckzl/lc/06_面板行为与控件杂项.md",
+     "title": "Stage 4 · 面板折叠 / 显示隐藏 / 控件杂项",
+     "summary": "参数面板折叠与高度联动、显示/隐藏两条路径、单元格控件查询、控件属性三方对照、GUI 复选框哨兵值、下拉框全选默认",
+     "lines": 134
+    },
+    {
+     "id": "lc/10_Excel骨架正向工艺",
+     "path": "ckzl/lc/10_Excel骨架正向工艺.md",
+     "title": "流程F: Excel骨架正向工艺(示例数据→xlsx→cpt→数据集→图表)",
+     "summary": "示例数据+业务需求→Excel表样骨架(gen_skeleton)→无头转cpt(Excel2007ReportImporter,52ms实证)→SQL/参数(NODE-02/03)→数据集替换示例行;图表管线1280×768抽取(extract_charts)→hbfa容器JSON→cpt CC/frm网页框。含openpyxl合并区『先merge后样式』铁律与importer选型表(全反射+反编译实证2026-09-29)",
+     "lines": 128
+    },
+    {
+     "id": "lc/README",
+     "path": "ckzl/lc/README.md",
+     "title": "Pipeline — 流水线知识库",
+     "summary": "流水线知识库总览：11 个阶段文档的索引与读取顺序（创建报表按 01→06 顺序读，调试/追踪按需跳读；11=工艺流程感知与自动化地图）",
+     "lines": 104
+    },
+    {
+     "id": "zsk/xqfx/README",
+     "path": "ckzl/zsk/xqfx/README.md",
+     "title": "ckzl/zsk/xqfx",
+     "summary": "ckzl/zsk/xqfx论：用户输入→开发规格，报表类型决策树（查看/填报/导入）、字段清单、提交逻辑设计",
+     "lines": 150
+    },
+    {
+     "id": "zsk/xqfx/填报报表设计决策清单",
+     "path": "ckzl/zsk/xqfx/填报报表设计决策清单.md",
+     "title": "填报报表设计决策清单",
+     "summary": "创建填报报表前必须确认的设计决策：主键/提交逻辑/控件顺序/格式化/分页",
+     "lines": 191
+    }
+   ]
+  },
+  "scenario_modify": {
+   "key": "scenario_modify",
+   "dim": "scenario",
+   "name": "修改改造",
+   "desc": "已有模板修改/格式化/复杂改造（通配脚本优先，勿手写）",
+   "rules_summary": "显式路径×2；路径正则/^lc/0[34]_；元数据正则/改造|格式化|通配",
+   "external": [
+    "kfgj/tygs/ 格式化通配脚本索引目录（改样式先查此处，通配脚本优先）"
+   ],
+   "count": 22,
+   "pages": [
+    {
+     "id": "frapi/doc/README",
+     "path": "ckzl/frapi/doc/README.md",
+     "title": "ckzl/frapi/doc",
+     "summary": "FR 10.0 Java API 文档索引：包名速查表、验证记录、参数面板格式化 API 清单、设计器建表 SQL 执行",
+     "lines": 80
+    },
+    {
+     "id": "frapi/doc/参数面板格式化API清单",
+     "path": "ckzl/frapi/doc/参数面板格式化API清单.md",
+     "title": "FR 10.0 Java API — 参数面板格式化脚本参考",
+     "summary": "参数面板格式化的 FR Java API 清单：读取→重排 bounds→设置面板尺寸→保存的完整方法签名",
+     "lines": 349
+    },
+    {
+     "id": "frapi/doc/参数面板格式化器/README",
+     "path": "ckzl/frapi/doc/参数面板格式化器/README.md",
+     "title": "参数面板格式化器（FR Java API 版）",
+     "summary": "> 2026-08-05 新增。目的：用 FR Java API 操作模板对象完成参数面板格式化， > 替代 Python 正则脚本（正则改 XML 易损坏模板完整性）。",
+     "lines": 58
+    },
+    {
+     "id": "gf/FR_HEADLESS_GUIDE",
+     "path": "ckzl/gf/FR_HEADLESS_GUIDE.md",
+     "title": "FR Headless 模板开发指南 — 主路由",
+     "summary": "FR 模板开发知识库总入口：全局铁律 A-AH（A-K 核心 + L-AH 专项）+ 任务路由表 + 流水线全景；收尾强制项见 kfgj/EXEC_CONTRACT.md",
+     "lines": 181
+    },
+    {
+     "id": "gf/bjys",
+     "path": "ckzl/gf/bjys.md",
+     "title": "布局样式美化-统一规范(最终版)",
+     "summary": "FRM驾驶舱+CPT报表的布局/样式/美化统一规范,收敛散落各处的样式定稿。开发前期专注功能,样式收尾阶段按本规范统一应用。默认样式已落地为脚本(见kfgj/fzpy/frm_apply_style)。",
+     "lines": 129
+    },
+    {
+     "id": "lc/02_单元格构建_基础",
+     "path": "ckzl/lc/02_单元格构建_基础.md",
+     "title": "Stage 3 · 单元格构建（基础与条件属性）",
+     "summary": "通配规则总纲、Java API / Python XML 双路单元格构建、隔行换色、条件属性动作族与运行期语义、权限超链、明细格式化、冻结表头、预览打印导出开关、单元格形态与权限锚点",
+     "lines": 385
+    },
+    {
+     "id": "lc/03_Java导出与平台配置",
+     "path": "ckzl/lc/03_Java导出与平台配置.md",
+     "title": "Stage 8 · Java API 导出与平台类配置",
+     "summary": "Java API 导出（无头产物落盘）、Java API 运行前提、平台类配置的 Java 写法（Configuration 类）",
+     "lines": 101
+    },
+    {
+     "id": "lc/03_产物分类_体检与无头上下文",
+     "path": "ckzl/lc/03_产物分类_体检与无头上下文.md",
+     "title": "Stage 1 · 产物分类 / 运行体检 / 无头上下文",
+     "summary": "产物分类（模板/平台实体/配置项）、运行环境体检、无头运行上下文与 Workspace、classpath 官方定义、PID 标记与幂等、Java 编译时机、架构与 OS 判定口径",
+     "lines": 203
+    },
+    {
+     "id": "lc/03_单元格构建_公式与进阶",
+     "path": "ckzl/lc/03_单元格构建_公式与进阶.md",
+     "title": "Stage 3 · 单元格构建（公式与进阶）",
+     "summary": "公式分组、公式构建铁律、公式槽与多条件赋值、内置公式函数、Excel 导入匹配、单元格元素 8 类、可伸展性、固定行数页内合计、条码二维码、富文本、控件装配、动态列",
+     "lines": 203
+    },
+    {
+     "id": "lc/03_导出下载与定时刷新",
+     "path": "ckzl/lc/03_导出下载与定时刷新.md",
+     "title": "Stage 6 · 导出下载与决策报表定时刷新",
+     "summary": "导出/下载（URL/分Sheet/大数据集/sessionID 复用）、ShortCut 按钮对照、决策报表定时刷新（表单级事件）",
+     "lines": 191
+    },
+    {
+     "id": "lc/03_报表构建",
+     "path": "ckzl/lc/03_报表构建.md",
+     "title": "Stage 3: 报表构建（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 9 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 55
+    },
+    {
+     "id": "lc/03_排序联动_连接权限_模板转换",
+     "path": "ckzl/lc/03_排序联动_连接权限_模板转换.md",
+     "title": "Stage 2 · 排序 / 联动 / 连接权限 / 模板转换",
+     "summary": "排序选型与 ORDER BY 安全构造、联动场景数据集分工与参数双声明、数据连接名与权限、方言级 SQL 约束、模板转换管道",
+     "lines": 264
+    },
+    {
+     "id": "lc/03_级联_事件_作用域",
+     "path": "ckzl/lc/03_级联_事件_作用域.md",
+     "title": "Stage 4 · 参数面板级联 / 控件事件 / 参数三层作用域",
+     "summary": "参数面板级联（模板参数驱动）、控件事件（doc-3120/doc-1434/doc-1197）、参数三层作用域与模板参数定义",
+     "lines": 252
+    },
+    {
+     "id": "lc/03_预览_图表联动_移动端上报",
+     "path": "ckzl/lc/03_预览_图表联动_移动端上报.md",
+     "title": "Stage 5 · 预览模式 / 图表联动 / 移动端填报 / 多级上报",
+     "summary": "op 预览参数、图表联动交互（超链传参+自动刷新）、移动端填报入口、多级上报工作流",
+     "lines": 153
+    },
+    {
+     "id": "lc/04_参数面板",
+     "path": "ckzl/lc/04_参数面板.md",
+     "title": "Stage 4: 参数面板（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 6 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 45
+    },
+    {
+     "id": "lc/04_填报页面设置与数据校验",
+     "path": "ckzl/lc/04_填报页面设置与数据校验.md",
+     "title": "Stage 5 · 填报页面设置与数据校验",
+     "summary": "填报页面单独设置（禁用工具栏）、强制数据校验（校验不通过不允许提交）、填报选型前置检查",
+     "lines": 249
+    },
+    {
+     "id": "lc/04_多选_路由_移动端_附录B",
+     "path": "ckzl/lc/04_多选_路由_移动端_附录B.md",
+     "title": "Stage 4 · 多选控件 / 路由面板 / 移动端样式 / 附录B",
+     "summary": "多选控件字符串返回值+分隔符铁律、报表路由面板、移动端样式插件作用范围、参数面板标准布局引擎（G2 双段式）与批量处理脚本",
+     "lines": 139
+    },
+    {
+     "id": "lc/04_样式_行高_冻结",
+     "path": "ckzl/lc/04_样式_行高_冻结.md",
+     "title": "Stage 3 · 样式 / 行高列宽 / 冻结窗格",
+     "summary": "样式构建 fix_styles、行高 FU 换算、冻结窗格构建",
+     "lines": 218
+    },
+    {
+     "id": "lc/04_移动端H5_集成与前端JS",
+     "path": "ckzl/lc/04_移动端H5_集成与前端JS.md",
+     "title": "Stage 6 · 移动端 H5 / 集成 / 前端 JS",
+     "summary": "移动端与 H5 预览、嵌入与被嵌入（集成）、集成 URL 参数字典、超链接装配补充、图表 JS 接口速查、FR.ajax 前端请求",
+     "lines": 219
+    },
+    {
+     "id": "lc/04_自检API与部署治理",
+     "path": "ckzl/lc/04_自检API与部署治理.md",
+     "title": "Stage 1 · 环境自检 API 与部署治理",
+     "summary": "环境自检 API 面、绕开 Workspace 读模板的 FD 纪律、离线/内网外联治理、平台账号与身份认证（FSConfig/Passport）、集群与共享存储",
+     "lines": 107
+    },
+    {
+     "id": "zsk/xqfx/填报报表设计决策清单",
+     "path": "ckzl/zsk/xqfx/填报报表设计决策清单.md",
+     "title": "填报报表设计决策清单",
+     "summary": "创建填报报表前必须确认的设计决策：主键/提交逻辑/控件顺序/格式化/分页",
+     "lines": 191
+    },
+    {
+     "id": "zsk/xtgt/patterns/复杂模板改造协议",
+     "path": "ckzl/zsk/xtgt/patterns/复杂模板改造协议.md",
+     "title": "复杂模板改造协议(标注-确认-删除实战 playbook)",
+     "summary": "五步改造流程:转换清源→三色标注→红标确认→依赖扫描→备份执行,附示例项目 12MB 五sheet实战数据",
+     "lines": 102
+    }
+   ]
+  },
+  "scenario_debug": {
+   "key": "scenario_debug",
+   "dim": "scenario",
+   "name": "排错",
+   "desc": "报错排查：tbcw 错误案例全库 + 调试方法 + 无头铁律",
+   "rules_summary": "目录前缀×1；显式路径×4；元数据正则/报错|排查|排错；标签∈['错误案例']",
+   "external": [],
+   "count": 23,
+   "pages": [
+    {
+     "id": "gf/FR_HEADLESS_GUIDE",
+     "path": "ckzl/gf/FR_HEADLESS_GUIDE.md",
+     "title": "FR Headless 模板开发指南 — 主路由",
+     "summary": "FR 模板开发知识库总入口：全局铁律 A-AH（A-K 核心 + L-AH 专项）+ 任务路由表 + 流水线全景；收尾强制项见 kfgj/EXEC_CONTRACT.md",
+     "lines": 181
+    },
+    {
+     "id": "gzjd/10_预览与验证",
+     "path": "ckzl/gzjd/10_预览与验证.md",
+     "title": "预览与验证",
+     "summary": "验证清单、错误排查、移动端适配",
+     "lines": 114
+    },
+    {
+     "id": "lc/02_调试技巧",
+     "path": "ckzl/lc/02_调试技巧.md",
+     "title": "Stage 8 · 调试技巧",
+     "summary": "diff 定位、常见问题表（§16.2）、回退策略等调试方法论",
+     "lines": 295
+    },
+    {
+     "id": "lc/08_技术选型与调试",
+     "path": "ckzl/lc/08_技术选型与调试.md",
+     "title": "Stage 8: 技术选型与调试（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 3 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 32
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/06_综合与其他",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/06_综合与其他.md",
+     "title": "FR11 · 部署与集群 · 综合与其他",
+     "summary": "未归入上述主题的条目（含通用报错、浏览器配置等）（71 条 doc-view 条目，ID 66~5001）；deploy_cluster_summary.md 拆分页 6/6，条目原样保留。",
+     "lines": 294
+    },
+    {
+     "id": "lc/fr11_knowledge/formula公式函数/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/formula公式函数/SKILL.md",
+     "title": "FR11 公式与函数 核心结论",
+     "summary": "--- name: fr11-formula description: 何时使用：编写 FR11 公式（formula）与函数（function）、层次坐标、动态格间运算、自定义函数，或排查公式报错、环比同比累计占比计算时使用。触发词：函数",
+     "lines": 46
+    },
+    {
+     "id": "lc/fr11_knowledge/fvs-dashboard大屏/FVS图表空数据自定义提示",
+     "path": "ckzl/lc/fr11_knowledge/fvs-dashboard大屏/FVS图表空数据自定义提示.md",
+     "title": "FVS/图表空数据自定义提示（暂无数据文案）",
+     "summary": "图表空数据提示两条正解：全局（设计器菜单>服务器>图表空数据提示，自定义提示图片，作用于所有图表）；单个图表/自定义文字（条件属性控制图表与提示组件显隐 + ROWCOUNT(\"ds1\")==0 判空）。FVS 图表组件设置项与普通报表基本一致，思路同适用；不生效排查走 ckzl/lc/08 §16.6 四步判定序。",
+     "lines": 57
+    },
+    {
+     "id": "lc/fr11_knowledge/js-api二次开发/references/09_综合与其他",
+     "path": "ckzl/lc/fr11_knowledge/js-api二次开发/references/09_综合与其他.md",
+     "title": "FR11 · 二次开发与JS API · 综合与其他",
+     "summary": "未归入上述主题的条目（含通用报错、产品说明等）（84 条 doc-view 条目，ID 386~3713）；js_api_summary.md 拆分页 9/10，条目原样保留。",
+     "lines": 386
+    },
+    {
+     "id": "lc/fr11_knowledge/js-api二次开发/references/09_综合与其他_2",
+     "path": "ckzl/lc/fr11_knowledge/js-api二次开发/references/09_综合与其他_2.md",
+     "title": "FR11 · 二次开发与JS API · 综合与其他",
+     "summary": "未归入上述主题的条目（含通用报错、产品说明等）（51 条 doc-view 条目，ID 3727~5104）；js_api_summary.md 拆分页 10/10，条目原样保留。",
+     "lines": 229
+    },
+    {
+     "id": "lc/fr11_knowledge/performance性能优化/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/performance性能优化/SKILL.md",
+     "title": "FR11 性能优化 核心结论",
+     "summary": "--- name: fr11-performance description: 何时使用：排查与优化 FR11 报表性能（performance）——模板加载慢、取数慢、内存溢出（OOM/Java heap space）、并发卡顿、大数据量",
+     "lines": 46
+    },
+    {
+     "id": "lc/fr11_knowledge/print打印/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/print打印/SKILL.md",
+     "title": "FR11 打印 核心结论",
+     "summary": "--- name: fr11-print description: 何时使用：实现 FR11 报表打印（print）——零客户端/本地/服务器端打印、静默打印、套打、批量或传参打印、水印控制，以及排查打印偏移与打印失败时使用。触发词：打印、",
+     "lines": 45
+    },
+    {
+     "id": "zsk/csff/设计器重启预检",
+     "path": "ckzl/zsk/csff/设计器重启预检.md",
+     "title": "设计器重启预检清单",
+     "summary": "部署 4 个复刻插件目录后首次重启设计器的 5 点验证清单：插件在列/图表类型/公式提示/管理页 console/日志无错",
+     "lines": 40
+    },
+    {
+     "id": "zsk/qdjk/references/前端交互指南_3_问题与高级主题",
+     "path": "ckzl/zsk/qdjk/references/前端交互指南_3_问题与高级主题.md",
+     "title": "FR前端交互指南 3/3：常见交互问题排查与高级主题（.frm 对比/Web 事件/挂载点/权限参数/跨域/图表插件协议）",
+     "summary": "FineReport 前端交互高级实现指南第 3/3 页：常见交互问题与解决方案（事件不触发/控件操作/样式/超链/图表前端坑）、高级主题（决策报表 .frm vs 普通报表 .cpt、Web 事件名全集、JS 挂载点、内置权限参数、跨域 iframe 调 FR JS、图表插件前端协议）——原指南五~六章",
+     "lines": 152
+    },
+    {
+     "id": "zsk/tbcw/CPT全部打开提示无法查看该页面排查",
+     "path": "ckzl/zsk/tbcw/CPT全部打开提示无法查看该页面排查.md",
+     "title": "所有CPT打开提示「非常抱歉您无法查看该页面」排查",
+     "summary": "报错『非常抱歉，您无法查看该页面，如需访问请联系管理员』的判位与排查链：先按全员/单人对分平台级或模板级，再查目录权限、全局权限项、模板加密(doc-863)、license。源自社区问题 231582",
+     "lines": 27
+    },
+    {
+     "id": "zsk/tbcw/DSColumn悬空数据集引用",
+     "path": "ckzl/zsk/tbcw/DSColumn悬空数据集引用.md",
+     "title": "DSColumn悬空数据集引用与超链死链分析",
+     "summary": "格子 DSColumn 绑定的 dsName 不在 TableDataMap 定义集内即悬空数据集——被列显隐遮蔽时页面零报错，版本参数一选中列展开即整列空白（示例预算表副本版实测 403 处）；同族问题：删除目标页而主表 ReportletName 超链漏摘即死链（钻取明细 172+41 处已同步摘除的对照、FS ADJ填报.cpt 21 处历史死链实锤）；fr_check 无引用完整性检查，check_cpt_integrity.py 检查1/3 工具化 + 408/2175 等事故数字勘误（2026-09-06/07 示例实际表/预算 实战）",
+     "lines": 94
+    },
+    {
+     "id": "zsk/tbcw/README",
+     "path": "ckzl/zsk/tbcw/README.md",
+     "title": "ckzl/zsk/tbcw — 错误案例索引",
+     "summary": "填报开发错误案例索引表：现象→原因→解法，排错时先查此表再搜全库；2026-09-04 夜间批新增静默类专节（历史脚本教训 30 条，其中静默 14 条：XML/SQL 合法≠功能正确）；2026-09-15 夜间批次 批新增误报类专节（fr_check doc-299/template_param 误报面已修复 + 残留真实缺陷判读法）",
+     "lines": 199
+    },
+    {
+     "id": "zsk/tbcw/事件CDATA裸换行-SyntaxError",
+     "path": "ckzl/zsk/tbcw/事件CDATA裸换行-SyntaxError.md",
+     "title": "事件CDATA裸换行致页面SyntaxError分析",
+     "summary": "程序化往 cpt 事件 <Content> CDATA 写 JS 时把含 CSS 的多行文本拼进单引号字符串字面量、段间残留真实换行(0x0A/0x0D0A)→字符串未闭合，浏览器打开页面即 SyntaxError: Invalid or unexpected token 且整页不可用；XML 合法+fr_check 通过但上线即崩（两道校验都不查 JS 语法）；含 node --check 批量定位脚本、修复样板与预防三原则（2026-09-04 示例实际表/预算 实战）",
+     "lines": 118
+    },
+    {
+     "id": "zsk/tbcw/事件环递归-Maximum call stack size exceeded",
+     "path": "ckzl/zsk/tbcw/事件环递归-Maximum call stack size exceeded.md",
+     "title": "事件环递归致Maximum call stack size exceeded分析",
+     "summary": "FR 的 widget.setValue() 会触发目标控件自身的编辑后(afteredit)事件；多控件互清构成环(para_legal↔para_bu↔para_region)时链式点火直至爆栈 RangeError: Maximum call stack size exceeded；node --check 只查语法、fr_check 无事件调用图规则，两道校验都检不出；含堆栈帧特征、静态调用图环检测工具(check_cpt_events.py)、'先判值再清'护栏样板与 fr_check 待补规则建议(2026-09-06 示例实际表/预算 实战)",
+     "lines": 140
+    },
+    {
+     "id": "zsk/tbcw/公式函数不存在-no function found",
+     "path": "ckzl/zsk/tbcw/公式函数不存在-no function found.md",
+     "title": "公式函数不存在致no function found刷屏分析",
+     "summary": "高亮条件公式写 AND(ISNUMBER($$$),$$$>0.002)，FR10 引擎 187 个注册函数类中根本没有 ISNUMBER（Excel 思维迁移陷阱）——XML 合法+fr_check 通过但每次计算服务端刷 no function found（实测单日 6120 条），单元格高亮静默失效；三层证据定位法（jar 扫描/官方清单/日志计数）、NVL($$$,0)>0.002 替换样板与公式函数白名单检查工具化（check_cpt_integrity.py 检查2；2026-09-06/07 示例实际表/预算 各 204 处实战）",
+     "lines": 114
+    },
+    {
+     "id": "zsk/tbcw/填报报表开发错误分析",
+     "path": "ckzl/zsk/tbcw/填报报表开发错误分析.md",
+     "title": "填报报表开发错误分析",
+     "summary": "典型填报开发错误：ORDER BY 出现在 ${if()} 前的 SQL 语法错误、数据集参数过滤引用不存在字段（埋雷）等",
+     "lines": 154
+    },
+    {
+     "id": "zsk/tbcw/夜间提炼_历史脚本教训_20260904",
+     "path": "ckzl/zsk/tbcw/夜间提炼_历史脚本教训_20260904.md",
+     "title": "夜间提炼 — 历史脚本教训 30 条（示例项目 tmp_*.py）",
+     "summary": "2026-09-04 夜间从 _runs/ 122 个历史 tmp_*.py（示例项目取数/生成/修复脚本）批量提炼的 30 条错误案例：场景/报错/根因/正确做法/出处脚本；静默类权威口径 14 条（R31 消歧定版，见附注）",
+     "lines": 341
+    },
+    {
+     "id": "zsk/tbcw/渲染报错-PageRWorkSheet强转AnalyReport",
+     "path": "ckzl/zsk/tbcw/渲染报错-PageRWorkSheet强转AnalyReport.md",
+     "title": "PageRWorkSheet cannot be cast to AnalyReport 渲染报错分析",
+     "summary": "程序化生成 cpt 时非默认单元格分页属性组合（repeat/HR 退化/冻结盖扩展行）触发 view_content 数据分析管道对分页结果 PageRWorkSheet 做 (AnalyReport) 强转失败；含字节码证据链、已验证骨架与排查方法论（2026-09-04 示例明细表B实战）",
+     "lines": 127
+    },
+    {
+     "id": "zsk/tbcw/附-实体列名值域核对方法论-entity vs entity_code",
+     "path": "ckzl/zsk/tbcw/附-实体列名值域核对方法论-entity vs entity_code.md",
+     "title": "实体列名与值域错配排查方法论(entity vs entity_code)",
+     "summary": "视图里 entity=中文厂名、entity_code=编码两列并存，权限门/层级过滤拿名字字段比编码值→恒不匹配→扩展行全空白且零报错；沉淀'空白列五步定位法'与'过滤条件两侧列名-值域核对表'方法论（2026-09-06 示例实际表 ds_cr_lta/pact 102 处引用空白实战）；供主控裁决单独成条或并入 DSColumn悬空数据集引用.md",
+     "lines": 65
+    }
+   ]
+  },
+  "scenario_api": {
+   "key": "scenario_api",
+   "dim": "scenario",
+   "name": "API查询",
+   "desc": "Java API / 包名速查 / 零件库结构化查询 / 官方文档入口",
+   "rules_summary": "目录前缀×2；显式路径×2；元数据正则/Java.?API|包名速查|API清单",
+   "external": [
+    "P-\\d+ 零件编号与 com.fr.* 全限定类名不入向量/FTS 索引，走: python ckzl/zsk/gczsk/query_kb.py part <编号或关键字>"
+   ],
+   "count": 28,
+   "pages": [
+    {
+     "id": "frapi/doc/API验证记录_2026-07-31",
+     "path": "ckzl/frapi/doc/API验证记录_2026-07-31.md",
+     "title": "FR 10.0 API 验证记录（2026-07-31）",
+     "summary": "| 条目 | 结论 | |------|------| | `JavaScriptImpl.getContent()` | ✅ 返回 `String` | | `Button.getText()` | ✅ 继承自 `Button`，返回 `",
+     "lines": 51
+    },
+    {
+     "id": "frapi/doc/ChartPainter图表画笔_API条目",
+     "path": "ckzl/frapi/doc/ChartPainter图表画笔_API条目.md",
+     "title": "ChartPainter 图表画笔 API 条目",
+     "summary": "ChartPainter（图表画笔）API 零件条目：类名/方法签名/坑位与验证标记，供查询 com.fr 图表绘制 API 时命中。",
+     "lines": 62
+    },
+    {
+     "id": "frapi/doc/JavaAPI构建速查",
+     "path": "ckzl/frapi/doc/JavaAPI构建速查.md",
+     "title": "Java API 构建速查",
+     "summary": "FR Java API 构建要点速查:类名 com.fr.* / 方法签名 / 与 .cpt/.frm XML 的对应关系,按 doc 分节",
+     "lines": 880
+    },
+    {
+     "id": "frapi/doc/README",
+     "path": "ckzl/frapi/doc/README.md",
+     "title": "ckzl/frapi/doc",
+     "summary": "FR 10.0 Java API 文档索引：包名速查表、验证记录、参数面板格式化 API 清单、设计器建表 SQL 执行",
+     "lines": 80
+    },
+    {
+     "id": "frapi/doc/参数面板格式化API清单",
+     "path": "ckzl/frapi/doc/参数面板格式化API清单.md",
+     "title": "FR 10.0 Java API — 参数面板格式化脚本参考",
+     "summary": "参数面板格式化的 FR Java API 清单：读取→重排 bounds→设置面板尺寸→保存的完整方法签名",
+     "lines": 349
+    },
+    {
+     "id": "frapi/doc/参数面板格式化器/README",
+     "path": "ckzl/frapi/doc/参数面板格式化器/README.md",
+     "title": "参数面板格式化器（FR Java API 版）",
+     "summary": "> 2026-08-05 新增。目的：用 FR Java API 操作模板对象完成参数面板格式化， > 替代 Python 正则脚本（正则改 XML 易损坏模板完整性）。",
+     "lines": 58
+    },
+    {
+     "id": "frapi/doc/设计器建表SQL执行",
+     "path": "ckzl/frapi/doc/设计器建表SQL执行.md",
+     "title": "设计器内执行 SQL（含建表）的 UI 路径与 Java API",
+     "summary": "数据连接→SQL 编辑器→预览执行建表的 GUI 路径与对应 Java API 链路，以及 extra session 自动化的硬限制",
+     "lines": 89
+    },
+    {
+     "id": "frapi/ex/README",
+     "path": "ckzl/frapi/ex/README.md",
+     "title": "ckzl/frapi/ex",
+     "summary": "FR Java API 可编译示例代码（AltRowTest/CptStyleOptimizer），含编译与运行说明",
+     "lines": 29
+    },
+    {
+     "id": "gf/yspj",
+     "path": "ckzl/gf/yspj.md",
+     "title": "官方文档沉淀增补-验收与判级",
+     "summary": "官方文档持续学习沉淀的验收断言与判级强化细则（原 AGENTS.md §1.2 2026-08 增补块，2026-08-20 v3 拆出）。创建/导出/插件交付任务验收前必读",
+     "lines": 83
+    },
+    {
+     "id": "gzjd/00_工作流节点导航",
+     "path": "ckzl/gzjd/00_工作流节点导航.md",
+     "title": "ckzl/gzjd导航(操作指南入口)",
+     "summary": "报表开发按ckzl/gzjd加载知识:判定题定向 → 节点自包含(知识点/Java API/错误/验证) → 弱关联按需加载,不一次性关联无关知识",
+     "lines": 101
+    },
+    {
+     "id": "lc/01_Java_API包名速查",
+     "path": "ckzl/lc/01_Java_API包名速查.md",
+     "title": "Stage 3 · Java API 正确包名速查",
+     "summary": "验证过的 Java API 正确包名速查表（报表构建选型第一步）",
+     "lines": 174
+    },
+    {
+     "id": "lc/01_选型矩阵与定时调度",
+     "path": "ckzl/lc/01_选型矩阵与定时调度.md",
+     "title": "Stage 8 · 技术选型矩阵与定时调度边界",
+     "summary": "Java API vs Python XML 能力矩阵、定时调度生成边界与约束（模板侧vs平台侧/公式判断/通道约束/FTP）、模板外部依赖清单",
+     "lines": 238
+    },
+    {
+     "id": "lc/02_单元格构建_基础",
+     "path": "ckzl/lc/02_单元格构建_基础.md",
+     "title": "Stage 3 · 单元格构建（基础与条件属性）",
+     "summary": "通配规则总纲、Java API / Python XML 双路单元格构建、隔行换色、条件属性动作族与运行期语义、权限超链、明细格式化、冻结表头、预览打印导出开关、单元格形态与权限锚点",
+     "lines": 385
+    },
+    {
+     "id": "lc/03_Java导出与平台配置",
+     "path": "ckzl/lc/03_Java导出与平台配置.md",
+     "title": "Stage 8 · Java API 导出与平台类配置",
+     "summary": "Java API 导出（无头产物落盘）、Java API 运行前提、平台类配置的 Java 写法（Configuration 类）",
+     "lines": 101
+    },
+    {
+     "id": "lc/03_报表构建",
+     "path": "ckzl/lc/03_报表构建.md",
+     "title": "Stage 3: 报表构建（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 9 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 55
+    },
+    {
+     "id": "lc/09_GUI操作追踪",
+     "path": "ckzl/lc/09_GUI操作追踪.md",
+     "title": "Stage 9: GUI 操作追踪",
+     "summary": "通过动态注入 Java Agent 捕获 Designer AWT 事件并映射到 Java API 的方法论（fr-agent 配套）",
+     "lines": 122
+    },
+    {
+     "id": "lc/09_附录A_决策报表构建",
+     "path": "ckzl/lc/09_附录A_决策报表构建.md",
+     "title": "Stage 3 · 附录A 完整示例与决策报表构建补充",
+     "summary": "完整 Java API 示例（附录A）、决策报表(.frm) 组件树约束 / 允许全屏 / 重叠模式",
+     "lines": 128
+    },
+    {
+     "id": "lc/fr11_knowledge/i18n国际化/references/fr10_i18n_verification_report",
+     "path": "ckzl/lc/fr11_knowledge/i18n国际化/references/fr10_i18n_verification_report.md",
+     "title": "FR11 离线文档 i18n 验证报告",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，共 2289 篇） > 生成时间：2026-08-26 > 验证方法：全量 2289 篇正文扫描关键词 i18n / 国际化 / 多语言",
+     "lines": 59
+    },
+    {
+     "id": "lc/fr11_knowledge/i18n国际化/references/fr11_java_api_i18n",
+     "path": "ckzl/lc/fr11_knowledge/i18n国际化/references/fr11_java_api_i18n.md",
+     "title": "FR11 Java API 国际化（i18n）接口整理",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 生成时间：2026-08-26 > 文档范围：全量 2289 篇中命中 i18n 关键词（i18n/国际化/多语言/语",
+     "lines": 157
+    },
+    {
+     "id": "zsk/frwd/资源索引",
+     "path": "ckzl/zsk/frwd/资源索引.md",
+     "title": "ckzl/zsk/frwd",
+     "summary": "帆软官方资源入口：在线文档/社区/账号凭据/SDK 链接，需要外部资料时先查此表",
+     "lines": 95
+    },
+    {
+     "id": "zsk/gczsk/README",
+     "path": "ckzl/zsk/gczsk/README.md",
+     "title": "ckzl/zsk/gczsk（SQLite）— 人机料法环5M1E 零件表/BOM表/工艺表",
+     "summary": "人机料法环(5M1E)ckzl/zsk/gczsk:personnel人(2)/materials料(43)/machines机(52)/environments环(11)/parts零件(14588)/bom关系(3589)/routing工艺(13条路线75道工序已机械化26道)。查询用 query_kb.py",
+     "lines": 130
+    },
+    {
+     "id": "zsk/gczsk/i18n_词汇表",
+     "path": "ckzl/zsk/gczsk/i18n_词汇表.md",
+     "title": "FR 设计器 i18n 词汇表（3776 条·总导航）",
+     "summary": "FR 设计器 i18n 词汇表总导航（原 1615 行/3776 条单文件 2026-09-29 拆分为 6 页，按分类分册）；来源 main_zh+chart_zh+dimension_zh，供界面文案比对/控件名定位；机读数据源 i18n_zh.json 不受影响",
+     "lines": 64
+    },
+    {
+     "id": "zsk/gczsk/i18n_词汇表_1_图表与基础通用",
+     "path": "ckzl/zsk/gczsk/i18n_词汇表_1_图表与基础通用.md",
+     "title": "FR设计器i18n词汇表 1/5：图表(Chart 874条)与基础通用(Basic 789条)",
+     "summary": "FR 设计器 i18n 词汇表第 1/5 页（中英对照 1663 条）：图表 Chart 分类 874 条 + 基础通用 Basic 分类 789 条，供界面文案/结构快照比对与控件名定位",
+     "lines": 280
+    },
+    {
+     "id": "zsk/gczsk/i18n_词汇表_2_报表与其他",
+     "path": "ckzl/zsk/gczsk/i18n_词汇表_2_报表与其他.md",
+     "title": "FR设计器i18n词汇表 2/5：报表(Report 654条)与其他(Other 382条)",
+     "summary": "FR 设计器 i18n 词汇表第 2/5 页（中英对照 1036 条）：报表 Report 分类 654 条 + 其他 Other 分类 382 条",
+     "lines": 280
+    },
+    {
+     "id": "zsk/gczsk/i18n_词汇表_3_表单与控件",
+     "path": "ckzl/zsk/gczsk/i18n_词汇表_3_表单与控件.md",
+     "title": "FR设计器i18n词汇表 3/6：表单(213条)与控件(129条)",
+     "summary": "表单 Form 213 条 + 控件 Widget 129 条（中英对照）",
+     "lines": 278
+    },
+    {
+     "id": "zsk/gczsk/i18n_词汇表_4_样式导出与数据",
+     "path": "ckzl/zsk/gczsk/i18n_词汇表_4_样式导出与数据.md",
+     "title": "FR设计器i18n词汇表 4/6：样式(126)/导出打印(100)/数据(91)",
+     "summary": "样式 Style 126 条 + 导出打印 Export/Print 100 条 + 数据/数据集 Data 91 条（中英对照）",
+     "lines": 355
+    },
+    {
+     "id": "zsk/gczsk/i18n_词汇表_5_移动背景单元格参数字体",
+     "path": "ckzl/zsk/gczsk/i18n_词汇表_5_移动背景单元格参数字体.md",
+     "title": "FR设计器i18n词汇表 5/6：移动端(58)/背景(53)/单元格(48)/参数(42)/字体(42)",
+     "summary": "移动端 Mobile 58 条 + 背景 Background 53 条 + 单元格 Cell 48 条 + 参数 Parameter 42 条 + 字体 Font 42 条（中英对照）",
+     "lines": 299
+    },
+    {
+     "id": "zsk/gczsk/i18n_词汇表_6_杂项小类",
+     "path": "ckzl/zsk/gczsk/i18n_词汇表_6_杂项小类.md",
+     "title": "FR设计器i18n词汇表 6/6：Action/按钮/预览/超链接/边框/控件类型/布局/编辑器/工具栏/核心/菜单",
+     "summary": "Action 菜单动作 41 + 按钮 30 + 预览 25 + 超链接 22 + 边框 21 + 控件类型 15 + 布局 10 + 编辑器 4 + 工具栏 4 + 核心 2 + 菜单 1（中英对照 213 条）",
+     "lines": 263
+    }
+   ]
+  },
+  "scenario_accept": {
+   "key": "scenario_accept",
+   "dim": "scenario",
+   "name": "验收交付",
+   "desc": "交付验收断言/判级/验证清单/预览体检",
+   "rules_summary": "目录前缀×1；显式路径×4；元数据正则/验收|判级|交付",
+   "external": [],
+   "count": 9,
+   "pages": [
+    {
+     "id": "gf/FR_HEADLESS_GUIDE",
+     "path": "ckzl/gf/FR_HEADLESS_GUIDE.md",
+     "title": "FR Headless 模板开发指南 — 主路由",
+     "summary": "FR 模板开发知识库总入口：全局铁律 A-AH（A-K 核心 + L-AH 专项）+ 任务路由表 + 流水线全景；收尾强制项见 kfgj/EXEC_CONTRACT.md",
+     "lines": 181
+    },
+    {
+     "id": "gf/yspj",
+     "path": "ckzl/gf/yspj.md",
+     "title": "官方文档沉淀增补-验收与判级",
+     "summary": "官方文档持续学习沉淀的验收断言与判级强化细则（原 AGENTS.md §1.2 2026-08 增补块，2026-08-20 v3 拆出）。创建/导出/插件交付任务验收前必读",
+     "lines": 83
+    },
+    {
+     "id": "gzjd/10_预览与验证",
+     "path": "ckzl/gzjd/10_预览与验证.md",
+     "title": "预览与验证",
+     "summary": "验证清单、错误排查、移动端适配",
+     "lines": 114
+    },
+    {
+     "id": "lc/00_需求分析流水线",
+     "path": "ckzl/lc/00_需求分析流水线.md",
+     "title": "Stage 0: 需求分析流水线 (Excel 需求确认清单)",
+     "summary": "开发工艺流程(Stage 1-11)前置的需求分析流水线: Excel 需求确认清单为单一事实源, 且是运维交付文档(frdoc 归档盘点)的种子(交付反推矩阵§1.2)。结构: 需求总览九区(项目与责任三方/报表清单/表资源表结构实测/数据集/参数/填报交互权限/业务口径/运行运维要素/确认记录) + 实体表样例页T_(字段类型+原始数据) + 数据集示例数据页 + SQL逻辑页 + 表样页(cpt=网格+顶部5行参数面板; frm=画布式合并单元格)。req_workbook.py 逆向生成: FS预算940公式引用+352905行实测/detail填报主键超链提取/dashboard 63组件 实证。",
+     "lines": 139
+    },
+    {
+     "id": "lc/03_产物分类_体检与无头上下文",
+     "path": "ckzl/lc/03_产物分类_体检与无头上下文.md",
+     "title": "Stage 1 · 产物分类 / 运行体检 / 无头上下文",
+     "summary": "产物分类（模板/平台实体/配置项）、运行环境体检、无头运行上下文与 Workspace、classpath 官方定义、PID 标记与幂等、Java 编译时机、架构与 OS 判定口径",
+     "lines": 203
+    },
+    {
+     "id": "zsk/csff/README",
+     "path": "ckzl/zsk/csff/README.md",
+     "title": "ckzl/zsk/csff",
+     "summary": "FR 模板开发全流程测试与验证方法：交付前必查清单、浏览器预览流程、填报/导入功能测试",
+     "lines": 64
+    },
+    {
+     "id": "zsk/csff/模板验证清单",
+     "path": "ckzl/zsk/csff/模板验证清单.md",
+     "title": "模板验证清单",
+     "summary": "FR 模板交付前的标准化验证清单，覆盖 XML/结构/功能/样式四层检查",
+     "lines": 81
+    },
+    {
+     "id": "zsk/csff/表单控件插件验收测试单",
+     "path": "ckzl/zsk/csff/表单控件插件验收测试单.md",
+     "title": "表单控件插件验收测试单",
+     "summary": "自研表单控件插件的分层验收测试单 v2：静态/启动三前置/设计器/持久化/预览/移动端/运行时七层，每项标注自动化等级与脚本思路",
+     "lines": 217
+    },
+    {
+     "id": "zsk/csff/设计器重启预检",
+     "path": "ckzl/zsk/csff/设计器重启预检.md",
+     "title": "设计器重启预检清单",
+     "summary": "部署 4 个复刻插件目录后首次重启设计器的 5 点验证清单：插件在列/图表类型/公式提示/管理页 console/日志无错",
+     "lines": 40
+    }
+   ]
+  },
+  "scenario_data": {
+   "key": "scenario_data",
+   "dim": "scenario",
+   "name": "数据开发",
+   "desc": "数据建模/数据集 SQL/级联参数/数仓（DWS）/数据分析",
+   "rules_summary": "目录前缀×2；显式路径×7；元数据正则/数据集|SQL|数仓|级联参数",
+   "external": [],
+   "count": 34,
+   "pages": [
+    {
+     "id": "frapi/doc/README",
+     "path": "ckzl/frapi/doc/README.md",
+     "title": "ckzl/frapi/doc",
+     "summary": "FR 10.0 Java API 文档索引：包名速查表、验证记录、参数面板格式化 API 清单、设计器建表 SQL 执行",
+     "lines": 80
+    },
+    {
+     "id": "frapi/doc/设计器建表SQL执行",
+     "path": "ckzl/frapi/doc/设计器建表SQL执行.md",
+     "title": "设计器内执行 SQL（含建表）的 UI 路径与 Java API",
+     "summary": "数据连接→SQL 编辑器→预览执行建表的 GUI 路径与对应 Java API 链路，以及 extra session 自动化的硬限制",
+     "lines": 89
+    },
+    {
+     "id": "gf/FR_HEADLESS_GUIDE",
+     "path": "ckzl/gf/FR_HEADLESS_GUIDE.md",
+     "title": "FR Headless 模板开发指南 — 主路由",
+     "summary": "FR 模板开发知识库总入口：全局铁律 A-AH（A-K 核心 + L-AH 专项）+ 任务路由表 + 流水线全景；收尾强制项见 kfgj/EXEC_CONTRACT.md",
+     "lines": 181
+    },
+    {
+     "id": "gf/xjqx",
+     "path": "ckzl/gf/xjqx.md",
+     "title": "行级数据权限控制模式",
+     "summary": "按登录用户工厂(plant)授权的行级数据权限三层防护模式（原 AGENTS.md §2.1，2026-08-12 实战验证，2026-08-20 v3 拆出）：SQL WHERE 权限子查询 + FormulaCondition 提交条件 + TopVerifier 校验提示",
+     "lines": 147
+    },
+    {
+     "id": "gzjd/01_需求与数据判定",
+     "path": "ckzl/gzjd/01_需求与数据判定.md",
+     "title": "需求与数据判定",
+     "summary": "判断报表类型与业务形态,理清数据/字段/想要什么",
+     "lines": 94
+    },
+    {
+     "id": "gzjd/02_数据集",
+     "path": "ckzl/gzjd/02_数据集.md",
+     "title": "数据集",
+     "summary": "SQL 设计、级联参数、数据字典、数据集类型选型",
+     "lines": 108
+    },
+    {
+     "id": "gzjd/05_填报模块",
+     "path": "ckzl/gzjd/05_填报模块.md",
+     "title": "填报模块",
+     "summary": "填报控件、提交配置、校验、导入、去重",
+     "lines": 96
+    },
+    {
+     "id": "lc/00_需求分析流水线",
+     "path": "ckzl/lc/00_需求分析流水线.md",
+     "title": "Stage 0: 需求分析流水线 (Excel 需求确认清单)",
+     "summary": "开发工艺流程(Stage 1-11)前置的需求分析流水线: Excel 需求确认清单为单一事实源, 且是运维交付文档(frdoc 归档盘点)的种子(交付反推矩阵§1.2)。结构: 需求总览九区(项目与责任三方/报表清单/表资源表结构实测/数据集/参数/填报交互权限/业务口径/运行运维要素/确认记录) + 实体表样例页T_(字段类型+原始数据) + 数据集示例数据页 + SQL逻辑页 + 表样页(cpt=网格+顶部5行参数面板; frm=画布式合并单元格)。req_workbook.py 逆向生成: FS预算940公式引用+352905行实测/detail填报主键超链提取/dashboard 63组件 实证。",
+     "lines": 139
+    },
+    {
+     "id": "lc/01_数据集构建",
+     "path": "ckzl/lc/01_数据集构建.md",
+     "title": "Stage 2 · 数据集构建",
+     "summary": "EmbeddedTableData/DBTableData 数据集构建、字段映射、SQL 数据集规范",
+     "lines": 168
+    },
+    {
+     "id": "lc/02_数据建模",
+     "path": "ckzl/lc/02_数据建模.md",
+     "title": "Stage 2: 数据建模（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 3 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 40
+    },
+    {
+     "id": "lc/02_级联参数与参数选型",
+     "path": "ckzl/lc/02_级联参数与参数选型.md",
+     "title": "Stage 2 · 级联参数与参数选型",
+     "summary": "级联参数 SQL 规范（WHERE 1=1 + ${if()}）、数据集参数 vs 模板参数选型、分页 SQL / 行式引擎",
+     "lines": 285
+    },
+    {
+     "id": "lc/03_导出下载与定时刷新",
+     "path": "ckzl/lc/03_导出下载与定时刷新.md",
+     "title": "Stage 6 · 导出下载与决策报表定时刷新",
+     "summary": "导出/下载（URL/分Sheet/大数据集/sessionID 复用）、ShortCut 按钮对照、决策报表定时刷新（表单级事件）",
+     "lines": 191
+    },
+    {
+     "id": "lc/03_排序联动_连接权限_模板转换",
+     "path": "ckzl/lc/03_排序联动_连接权限_模板转换.md",
+     "title": "Stage 2 · 排序 / 联动 / 连接权限 / 模板转换",
+     "summary": "排序选型与 ORDER BY 安全构造、联动场景数据集分工与参数双声明、数据连接名与权限、方言级 SQL 约束、模板转换管道",
+     "lines": 264
+    },
+    {
+     "id": "lc/05_下拉树_联动_默认值_按钮",
+     "path": "ckzl/lc/05_下拉树_联动_默认值_按钮.md",
+     "title": "Stage 4 · 下拉树 / 控件联动 / 默认值 / 动作按钮",
+     "summary": "下拉树控件与树数据集自动构建、构建方式对照、控件间赋值联动、WidgetValue 默认值配方、FreeButton 动作按钮",
+     "lines": 140
+    },
+    {
+     "id": "lc/05_填报与交互",
+     "path": "ckzl/lc/05_填报与交互.md",
+     "title": "Stage 5: 填报与交互（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 5 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 52
+    },
+    {
+     "id": "lc/05_扩展后排序",
+     "path": "ckzl/lc/05_扩展后排序.md",
+     "title": "Stage 3 · 扩展后排序",
+     "summary": "扩展后排序 doc-897 基础与多变体、单元格高级排序公式（排序交给公式而非 SQL ORDER BY）",
+     "lines": 220
+    },
+    {
+     "id": "lc/10_Excel骨架正向工艺",
+     "path": "ckzl/lc/10_Excel骨架正向工艺.md",
+     "title": "流程F: Excel骨架正向工艺(示例数据→xlsx→cpt→数据集→图表)",
+     "summary": "示例数据+业务需求→Excel表样骨架(gen_skeleton)→无头转cpt(Excel2007ReportImporter,52ms实证)→SQL/参数(NODE-02/03)→数据集替换示例行;图表管线1280×768抽取(extract_charts)→hbfa容器JSON→cpt CC/frm网页框。含openpyxl合并区『先merge后样式』铁律与importer选型表(全反射+反编译实证2026-09-29)",
+     "lines": 128
+    },
+    {
+     "id": "lc/11_感知与自动化",
+     "path": "ckzl/lc/11_感知与自动化.md",
+     "title": "Stage 11: 感知与自动化地图 (工艺流程自动化三档分类)",
+     "summary": "以机械自动化(校正/报警/数据收集)类比, 模拟真实报表开发走查 10 阶段工艺流程, 产出自动化三档分类地图: 完全自动(骨架初始化/生成自检/环境探针)、默认自动(参数面板排布/SQL美化/冻结表头/隔行变色/CSS注入)、参数配置(SkinStudio schema/明细表生成器缺口P0)。含感知脚本挂载表与缺口优先级清单。",
+     "lines": 120
+    },
+    {
+     "id": "lc/fr11_knowledge/data-source数据源/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/data-source数据源/SKILL.md",
+     "title": "FR11 数据源 核心结论",
+     "summary": "--- name: fr11-data-source description: FR11 数据源/data source 场景使用：定义数据连接（JDBC/JNDI/ODBC）、创建数据集（SQL/内置/文件/程序/树数据集）、驱动管理、F",
+     "lines": 50
+    },
+    {
+     "id": "lc/fr11_knowledge/data-source数据源/references/02_数据集类型",
+     "path": "ckzl/lc/fr11_knowledge/data-source数据源/references/02_数据集类型.md",
+     "title": "FR11 · 数据源 · 数据集类型（SQL/程序/文件等）",
+     "summary": "SQL 数据集、内置/关联/树/服务器数据集、程序数据源、文件与 JSON 等数据集条目（68 条 doc-view 条目，ID 103~5130）；data_source_summary.md 拆分页 2/5，条目原样保留。",
+     "lines": 276
+    },
+    {
+     "id": "lc/fr11_knowledge/data-source数据源/references/03_各数据库连接",
+     "path": "ckzl/lc/fr11_knowledge/data-source数据源/references/03_各数据库连接.md",
+     "title": "FR11 · 数据源 · 各数据库数据连接",
+     "summary": "Oracle/MySQL/SQL Server/达梦/华为云等各数据库数据连接条目（46 条 doc-view 条目，ID 290~4905）；data_source_summary.md 拆分页 3/5，条目原样保留。",
+     "lines": 192
+    },
+    {
+     "id": "lc/fr11_knowledge/data-source数据源/references/data_source_summary",
+     "path": "ckzl/lc/fr11_knowledge/data-source数据源/references/data_source_summary.md",
+     "title": "FR11 知识库 · 数据源总结（导航）",
+     "summary": "data_source_summary.md（179 条）主题拆分导航页：主题速览 + 5 个分页入口 + 总结（全量 doc-view ID 清单）。",
+     "lines": 67
+    },
+    {
+     "id": "lc/fr11_knowledge/fill-submit填报提交/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/fill-submit填报提交/SKILL.md",
+     "title": "FR11 填报与提交 核心结论",
+     "summary": "--- name: fr11-fill-submit description: FR11 填报/提交（fill/submit）场景使用：设计填报报表、内置 SQL/智能/自定义提交、数据校验、Excel 导入、填报暂存、多级上报、填报性能与",
+     "lines": 51
+    },
+    {
+     "id": "lc/fr11_knowledge/param-control参数控件/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/param-control参数控件/SKILL.md",
+     "title": "FR11 参数与控件 核心结论",
+     "summary": "--- name: fr11-param-control description: FR11 参数查询与控件问题时使用。触发词：参数、参数面板、控件、下拉框、下拉复选框、日期控件、查询按钮、参数联动、参数为空、控件接口、FVS 控件。 co",
+     "lines": 44
+    },
+    {
+     "id": "lc/fr11_knowledge/param-control参数控件/references/01_参数基础与作用域",
+     "path": "ckzl/lc/fr11_knowledge/param-control参数控件/references/01_参数基础与作用域.md",
+     "title": "FR11 · 参数与控件 · 参数基础 / 作用域 / 传参",
+     "summary": "参数分类与作用域、模板/数据集/全局参数、URL 与跨模板传参条目（27 条 doc-view 条目，ID 155~5115）；param_control_summary.md 拆分页 1/5，条目原样保留。",
+     "lines": 140
+    },
+    {
+     "id": "lc/fr11_knowledge/performance性能优化/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/performance性能优化/SKILL.md",
+     "title": "FR11 性能优化 核心结论",
+     "summary": "--- name: fr11-performance description: 何时使用：排查与优化 FR11 报表性能（performance）——模板加载慢、取数慢、内存溢出（OOM/Java heap space）、并发卡顿、大数据量",
+     "lines": 46
+    },
+    {
+     "id": "lc/fr11_knowledge/performance性能优化/references/performance_summary",
+     "path": "ckzl/lc/fr11_knowledge/performance性能优化/references/performance_summary.md",
+     "title": "FR11 知识库 · 性能优化总结",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：31 篇 > 生成时间：2026-08-26 > 主题范围：性能/优化/内存/缓存/并发/大数据量",
+     "lines": 187
+    },
+    {
+     "id": "zsk/gczsk/README",
+     "path": "ckzl/zsk/gczsk/README.md",
+     "title": "ckzl/zsk/gczsk（SQLite）— 人机料法环5M1E 零件表/BOM表/工艺表",
+     "summary": "人机料法环(5M1E)ckzl/zsk/gczsk:personnel人(2)/materials料(43)/machines机(52)/environments环(11)/parts零件(14588)/bom关系(3589)/routing工艺(13条路线75道工序已机械化26道)。查询用 query_kb.py",
+     "lines": 130
+    },
+    {
+     "id": "zsk/gczsk/i18n_词汇表_4_样式导出与数据",
+     "path": "ckzl/zsk/gczsk/i18n_词汇表_4_样式导出与数据.md",
+     "title": "FR设计器i18n词汇表 4/6：样式(126)/导出打印(100)/数据(91)",
+     "summary": "样式 Style 126 条 + 导出打印 Export/Print 100 条 + 数据/数据集 Data 91 条（中英对照）",
+     "lines": 355
+    },
+    {
+     "id": "zsk/sjfx/README",
+     "path": "ckzl/zsk/sjfx/README.md",
+     "title": "ckzl/zsk/sjfx",
+     "summary": "数据设计方法论：业务字段→数据库列→数据集列的映射、SQL 设计规范、数据质量校验（知识主体在 ckzl/lc/02）",
+     "lines": 75
+    },
+    {
+     "id": "zsk/tbcw/DSColumn悬空数据集引用",
+     "path": "ckzl/zsk/tbcw/DSColumn悬空数据集引用.md",
+     "title": "DSColumn悬空数据集引用与超链死链分析",
+     "summary": "格子 DSColumn 绑定的 dsName 不在 TableDataMap 定义集内即悬空数据集——被列显隐遮蔽时页面零报错，版本参数一选中列展开即整列空白（示例预算表副本版实测 403 处）；同族问题：删除目标页而主表 ReportletName 超链漏摘即死链（钻取明细 172+41 处已同步摘除的对照、FS ADJ填报.cpt 21 处历史死链实锤）；fr_check 无引用完整性检查，check_cpt_integrity.py 检查1/3 工具化 + 408/2175 等事故数字勘误（2026-09-06/07 示例实际表/预算 实战）",
+     "lines": 94
+    },
+    {
+     "id": "zsk/tbcw/README",
+     "path": "ckzl/zsk/tbcw/README.md",
+     "title": "ckzl/zsk/tbcw — 错误案例索引",
+     "summary": "填报开发错误案例索引表：现象→原因→解法，排错时先查此表再搜全库；2026-09-04 夜间批新增静默类专节（历史脚本教训 30 条，其中静默 14 条：XML/SQL 合法≠功能正确）；2026-09-15 夜间批次 批新增误报类专节（fr_check doc-299/template_param 误报面已修复 + 残留真实缺陷判读法）",
+     "lines": 199
+    },
+    {
+     "id": "zsk/tbcw/填报报表开发错误分析",
+     "path": "ckzl/zsk/tbcw/填报报表开发错误分析.md",
+     "title": "填报报表开发错误分析",
+     "summary": "典型填报开发错误：ORDER BY 出现在 ${if()} 前的 SQL 语法错误、数据集参数过滤引用不存在字段（埋雷）等",
+     "lines": 154
+    },
+    {
+     "id": "zsk/tbcw/附-实体列名值域核对方法论-entity vs entity_code",
+     "path": "ckzl/zsk/tbcw/附-实体列名值域核对方法论-entity vs entity_code.md",
+     "title": "实体列名与值域错配排查方法论(entity vs entity_code)",
+     "summary": "视图里 entity=中文厂名、entity_code=编码两列并存，权限门/层级过滤拿名字字段比编码值→恒不匹配→扩展行全空白且零报错；沉淀'空白列五步定位法'与'过滤条件两侧列名-值域核对表'方法论（2026-09-06 示例实际表 ds_cr_lta/pact 102 处引用空白实战）；供主控裁决单独成条或并入 DSColumn悬空数据集引用.md",
+     "lines": 65
+    }
+   ]
+  },
+  "temperature_hot": {
+   "key": "temperature_hot",
+   "dim": "temperature",
+   "name": "热视图",
+   "desc": "AGENTS.md 与铁律主路由直链页 + 全库引用 top30 + 零件库/JavaAPI速查/铁律六件",
+   "rules_summary": "显式路径×8；直链引用源:AGENTS.md+ckzl/gf/FR_HEADLESS_GUIDE.md；引用top30",
+   "external": [],
+   "count": 45,
+   "pages": [
+    {
+     "id": "gf/铁律速查",
+     "path": "ckzl/gf/铁律速查.md",
+     "title": "全局铁律速查（A-K核心档 + L-AH专项档）",
+     "summary": "全局铁律唯一权威正文（自 FR_HEADLESS_GUIDE.md 拆出 2026-09-29）：A-K 核心档每任务必读 + L-AH 专项档按主题命中；主路由保留分节速查目录",
+     "lines": 402,
+     "hot_score": 39
+    },
+    {
+     "id": "lc/03_报表构建",
+     "path": "ckzl/lc/03_报表构建.md",
+     "title": "Stage 3: 报表构建（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 9 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 55,
+     "hot_score": 35
+    },
+    {
+     "id": "lc/08_技术选型与调试",
+     "path": "ckzl/lc/08_技术选型与调试.md",
+     "title": "Stage 8: 技术选型与调试（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 3 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 32,
+     "hot_score": 27
+    },
+    {
+     "id": "gf/FR_HEADLESS_GUIDE",
+     "path": "ckzl/gf/FR_HEADLESS_GUIDE.md",
+     "title": "FR Headless 模板开发指南 — 主路由",
+     "summary": "FR 模板开发知识库总入口：全局铁律 A-AH（A-K 核心 + L-AH 专项）+ 任务路由表 + 流水线全景；收尾强制项见 kfgj/EXEC_CONTRACT.md",
+     "lines": 181,
+     "hot_score": 25
+    },
+    {
+     "id": "lc/02_数据建模",
+     "path": "ckzl/lc/02_数据建模.md",
+     "title": "Stage 2: 数据建模（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 3 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 40,
+     "hot_score": 25
+    },
+    {
+     "id": "lc/04_参数面板",
+     "path": "ckzl/lc/04_参数面板.md",
+     "title": "Stage 4: 参数面板（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 6 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 45,
+     "hot_score": 25
+    },
+    {
+     "id": "lc/05_填报与交互",
+     "path": "ckzl/lc/05_填报与交互.md",
+     "title": "Stage 5: 填报与交互（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 5 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 52,
+     "hot_score": 23
+    },
+    {
+     "id": "lc/01_环境与工具链",
+     "path": "ckzl/lc/01_环境与工具链.md",
+     "title": "Stage 1: 环境与工具链（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 4 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 40,
+     "hot_score": 18
+    },
+    {
+     "id": "lc/06_Web呈现层",
+     "path": "ckzl/lc/06_Web呈现层.md",
+     "title": "Stage 6: Web 呈现层（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 4 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 34,
+     "hot_score": 18
+    },
+    {
+     "id": "zsk/tbcw/README",
+     "path": "ckzl/zsk/tbcw/README.md",
+     "title": "ckzl/zsk/tbcw — 错误案例索引",
+     "summary": "填报开发错误案例索引表：现象→原因→解法，排错时先查此表再搜全库；2026-09-04 夜间批新增静默类专节（历史脚本教训 30 条，其中静默 14 条：XML/SQL 合法≠功能正确）；2026-09-15 夜间批次 批新增误报类专节（fr_check doc-299/template_param 误报面已修复 + 残留真实缺陷判读法）",
+     "lines": 199,
+     "hot_score": 17
+    },
+    {
+     "id": "lc/fr11_knowledge/fvs-dashboard大屏/references/fvs_dashboard_summary",
+     "path": "ckzl/lc/fr11_knowledge/fvs-dashboard大屏/references/fvs_dashboard_summary.md",
+     "title": "FR11 知识库 · FVS 可视化看板（大屏）总结",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：65 篇（标题含 FVS，独立于 15 分类的专题篇） > 生成时间：2026-08-26",
+     "lines": 359,
+     "hot_score": 13
+    },
+    {
+     "id": "lc/fr11_knowledge/js-api二次开发/references/js_api_summary",
+     "path": "ckzl/lc/fr11_knowledge/js-api二次开发/references/js_api_summary.md",
+     "title": "FR11 知识库 · 二次开发与JS API总结（导航）",
+     "summary": "js_api_summary.md（436 条）主题拆分导航页：主题速览 + 10 个分页入口 + 总结（全量 doc-view ID 清单）；条目正文在各分页。",
+     "lines": 73,
+     "hot_score": 13
+    },
+    {
+     "id": "zsk/csff/README",
+     "path": "ckzl/zsk/csff/README.md",
+     "title": "ckzl/zsk/csff",
+     "summary": "FR 模板开发全流程测试与验证方法：交付前必查清单、浏览器预览流程、填报/导入功能测试",
+     "lines": 64,
+     "hot_score": 11
+    },
+    {
+     "id": "lc/fr11_knowledge/chart图表/references/chart_summary",
+     "path": "ckzl/lc/fr11_knowledge/chart图表/references/chart_summary.md",
+     "title": "FR11 知识库 · 图表总结（导航）",
+     "summary": "chart_summary.md（240 条）主题拆分导航页：主题速览 + 6 个分页入口 + 总结（全量 doc-view ID 清单）。",
+     "lines": 68,
+     "hot_score": 9
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/deploy_cluster_summary",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/deploy_cluster_summary.md",
+     "title": "FR11 知识库 · 部署与集群总结（导航）",
+     "summary": "deploy_cluster_summary.md（315 条）主题拆分导航页：主题速览 + 6 个分页入口 + 总结（全量 doc-view ID 清单）。",
+     "lines": 70,
+     "hot_score": 9
+    },
+    {
+     "id": "zsk/qdjk/references/api_widgets_3_日期与按钮控件",
+     "path": "ckzl/zsk/qdjk/references/api_widgets_3_日期与按钮控件.md",
+     "title": "FR控件JS API：日期与按钮控件（DatePicker/DateTimeEditor/FreeButton/FormSubmitButton）+ 继承总览",
+     "summary": "FR 10.0 控件 JS API 第 3/3 页：日期选择器 DatePicker（22 方法）、日期时间 DateTimeEditor（44 方法）、自由按钮 FreeButton（36 方法/8 配置项）、查询提交按钮 FormSubmitButton；附继承关系总览图与核心通用方法速查（所有控件可用）",
+     "lines": 378,
+     "hot_score": 9
+    },
+    {
+     "id": "lc/07_FRM决策报表",
+     "path": "ckzl/lc/07_FRM决策报表.md",
+     "title": "Stage 7: FRM 决策报表",
+     "summary": "FRM 决策报表/驾驶舱的构建要点与与普通 CPT 的差异、图表轮播联动、组件间联动(FormHyperlink/DynamicParamHyperlink)、扩展图表数据绑定、组件级导出、导出与定时调度约束",
+     "lines": 376,
+     "hot_score": 8
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/02_服务器部署与安装",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/02_服务器部署与安装.md",
+     "title": "FR11 · 部署与集群 · 服务器部署与安装升级",
+     "summary": "独立部署/嵌入式部署、Tomcat/WebLogic/WebSphere/JBoss/Resin/TongWeb、迁移升级与端口条目（87 条 doc-view 条目，ID 69~5120）；deploy_cluster_summary.md 拆分页 2/6，条目原样保留。",
+     "lines": 327,
+     "hot_score": 8
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/references/mobile_summary",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/references/mobile_summary.md",
+     "title": "FR11 知识库 · 移动端总结（导航）",
+     "summary": "mobile_summary.md（192 条）主题拆分导航页：主题速览 + 6 个分页入口 + 总结（全量 doc-view ID 清单）。",
+     "lines": 69,
+     "hot_score": 8
+    },
+    {
+     "id": "zsk/qdjk/references/api_report_2_报表面板与填报接口",
+     "path": "ckzl/zsk/qdjk/references/api_report_2_报表面板与填报接口.md",
+     "title": "FR填报JS API：报表面板与填报接口（Elementcase/PagePane/WLGP/Write/WriteEditor）",
+     "summary": "FR 10.0 填报核心 JS API 第 2/2 页：FR.Elementcase 报表内容基类（31 方法）、FR.PagePane 分页预览（33 方法）、FR.WLGP 填报逻辑页面（getTDCell 等 19 方法）、FR.Write 填报控件管理（21 方法）、FR.WriteEditor 填报编辑器接口（36 方法）+ 通用基类方法速查附录——原 api_report.md §4-§8+附录",
+     "lines": 390,
+     "hot_score": 8
+    },
+    {
+     "id": "zsk/qdjk/references/api_widgets_1_基类与文本数字编辑器",
+     "path": "ckzl/zsk/qdjk/references/api_widgets_1_基类与文本数字编辑器.md",
+     "title": "FR控件JS API：基类与文本/数字/触发编辑器（FR.OB/Widget/TextEditor/NumberEditor/TriggerEditor）",
+     "summary": "FR 10.0 控件 JS API 第 1/3 页：观察者基类 FR.OB（事件系统 5 方法）、控件基类 FR.Widget（22 方法：getValue/setValue/setVisible/setEnabled/reset 等）、文本框 TextEditor（32 方法）、数字框 NumberEditor（31 方法）、触发编辑器 TriggerEditor（39 方法，抽象）；含 HIERARCHY/SUBCLASSES/继承方法表与 2026-09-04 实测标注",
+     "lines": 385,
+     "hot_score": 8
+    },
+    {
+     "id": "zsk/xqfx/README",
+     "path": "ckzl/zsk/xqfx/README.md",
+     "title": "ckzl/zsk/xqfx",
+     "summary": "ckzl/zsk/xqfx论：用户输入→开发规格，报表类型决策树（查看/填报/导入）、字段清单、提交逻辑设计",
+     "lines": 150,
+     "hot_score": 8
+    },
+    {
+     "id": "lc/fr11_knowledge/data-source数据源/references/data_source_summary",
+     "path": "ckzl/lc/fr11_knowledge/data-source数据源/references/data_source_summary.md",
+     "title": "FR11 知识库 · 数据源总结（导航）",
+     "summary": "data_source_summary.md（179 条）主题拆分导航页：主题速览 + 5 个分页入口 + 总结（全量 doc-view ID 清单）。",
+     "lines": 67,
+     "hot_score": 7
+    },
+    {
+     "id": "lc/fr11_knowledge/formula公式函数/references/formula_summary",
+     "path": "ckzl/lc/fr11_knowledge/formula公式函数/references/formula_summary.md",
+     "title": "FR11 知识库 · 公式与函数总结（导航）",
+     "summary": "formula_summary.md（164 条）主题拆分导航页：主题速览 + 5 个分页入口 + 公式×Word 报告跨域节 + 总结（全量 doc-view ID 清单）。",
+     "lines": 77,
+     "hot_score": 7
+    },
+    {
+     "id": "lc/fr11_knowledge/frm-decision决策报表/references/frm_decision_summary",
+     "path": "ckzl/lc/fr11_knowledge/frm-decision决策报表/references/frm_decision_summary.md",
+     "title": "FR11 知识库 · 决策报表总结（导航）",
+     "summary": "frm_decision_summary.md（123 条）主题拆分导航页：主题速览 + 5 个分页入口 + 总结（全量 doc-view ID 清单）。",
+     "lines": 68,
+     "hot_score": 7
+    },
+    {
+     "id": "lc/fr11_knowledge/param-control参数控件/references/param_control_summary",
+     "path": "ckzl/lc/fr11_knowledge/param-control参数控件/references/param_control_summary.md",
+     "title": "FR11 知识库 · 参数与控件总结（导航）",
+     "summary": "param_control_summary.md（287 条）主题拆分导航页：主题速览 + 5 个分页入口 + 总结（全量 doc-view ID 清单）。",
+     "lines": 68,
+     "hot_score": 7
+    },
+    {
+     "id": "zsk/sjfx/README",
+     "path": "ckzl/zsk/sjfx/README.md",
+     "title": "ckzl/zsk/sjfx",
+     "summary": "数据设计方法论：业务字段→数据库列→数据集列的映射、SQL 设计规范、数据质量校验（知识主体在 ckzl/lc/02）",
+     "lines": 75,
+     "hot_score": 7
+    },
+    {
+     "id": "zsk/gczsk/i18n_词汇表",
+     "path": "ckzl/zsk/gczsk/i18n_词汇表.md",
+     "title": "FR 设计器 i18n 词汇表（3776 条·总导航）",
+     "summary": "FR 设计器 i18n 词汇表总导航（原 1615 行/3776 条单文件 2026-09-29 拆分为 6 页，按分类分册）；来源 main_zh+chart_zh+dimension_zh，供界面文案比对/控件名定位；机读数据源 i18n_zh.json 不受影响",
+     "lines": 64,
+     "hot_score": 6
+    },
+    {
+     "id": "zsk/qdjk/references/api_widgets_2_下拉框与复选控件",
+     "path": "ckzl/zsk/qdjk/references/api_widgets_2_下拉框与复选控件.md",
+     "title": "FR控件JS API：下拉框与复选控件（ComboBoxEditor/CheckBoxEditor/CheckBoxGroup）",
+     "summary": "FR 10.0 控件 JS API 第 2/3 页：下拉框 ComboBoxEditor（55 方法/7 配置项）、下拉复选框 CheckBoxEditor（58 方法）、复选按钮组 CheckBoxGroup（32 方法）；含 HIERARCHY/SUBCLASSES/示例/继承方法表与 2026-09-04 实测标注",
+     "lines": 389,
+     "hot_score": 6
+    },
+    {
+     "id": "zsk/qdjk/references/verified_20260904",
+     "path": "ckzl/zsk/qdjk/references/verified_20260904.md",
+     "title": "FR10 前端 JS API 实测验证报告（verified_20260904）",
+     "summary": "# FR10 前端 JS API 实测验证报告（verified_20260904）",
+     "lines": 249,
+     "hot_score": 6
+    },
+    {
+     "id": "zsk/frwd/资源索引",
+     "path": "ckzl/zsk/frwd/资源索引.md",
+     "title": "ckzl/zsk/frwd",
+     "summary": "帆软官方资源入口：在线文档/社区/账号凭据/SDK 链接，需要外部资料时先查此表",
+     "lines": 95,
+     "hot_score": 5
+    },
+    {
+     "id": "frapi/doc/README",
+     "path": "ckzl/frapi/doc/README.md",
+     "title": "ckzl/frapi/doc",
+     "summary": "FR 10.0 Java API 文档索引：包名速查表、验证记录、参数面板格式化 API 清单、设计器建表 SQL 执行",
+     "lines": 80,
+     "hot_score": 4
+    },
+    {
+     "id": "gf/zxzt",
+     "path": "ckzl/gf/zxzt.md",
+     "title": "任务路由-专项主题",
+     "summary": "专项主题路由表+kit边界外主题清单+非核心目录速查（原 AGENTS.md §3 后半+§3.1+§6 非核心行，2026-08-20 v3 拆出）。查专项功能路由或判定主题是否 kit 边界外时读",
+     "lines": 200,
+     "hot_score": 4
+    },
+    {
+     "id": "lc/09_GUI操作追踪",
+     "path": "ckzl/lc/09_GUI操作追踪.md",
+     "title": "Stage 9: GUI 操作追踪",
+     "summary": "通过动态注入 Java Agent 捕获 Designer AWT 事件并映射到 Java API 的方法论（fr-agent 配套）",
+     "lines": 122,
+     "hot_score": 4
+    },
+    {
+     "id": "gzjd/00_工作流节点导航",
+     "path": "ckzl/gzjd/00_工作流节点导航.md",
+     "title": "ckzl/gzjd导航(操作指南入口)",
+     "summary": "报表开发按ckzl/gzjd加载知识:判定题定向 → 节点自包含(知识点/Java API/错误/验证) → 弱关联按需加载,不一次性关联无关知识",
+     "lines": 101,
+     "hot_score": 3
+    },
+    {
+     "id": "bb/外部依赖与归档声明",
+     "path": "ckzl/bb/外部依赖与归档声明.md",
+     "title": "外部依赖与归档声明",
+     "summary": "",
+     "lines": 44,
+     "hot_score": 2
+    },
+    {
+     "id": "gf/xjqx",
+     "path": "ckzl/gf/xjqx.md",
+     "title": "行级数据权限控制模式",
+     "summary": "按登录用户工厂(plant)授权的行级数据权限三层防护模式（原 AGENTS.md §2.1，2026-08-12 实战验证，2026-08-20 v3 拆出）：SQL WHERE 权限子查询 + FormulaCondition 提交条件 + TopVerifier 校验提示",
+     "lines": 147,
+     "hot_score": 2
+    },
+    {
+     "id": "lc/README",
+     "path": "ckzl/lc/README.md",
+     "title": "Pipeline — 流水线知识库",
+     "summary": "流水线知识库总览：11 个阶段文档的索引与读取顺序（创建报表按 01→06 顺序读，调试/追踪按需跳读；11=工艺流程感知与自动化地图）",
+     "lines": 104,
+     "hot_score": 2
+    },
+    {
+     "id": "bb/CHANGELOG",
+     "path": "ckzl/bb/CHANGELOG.md",
+     "title": "CHANGELOG — fr_dev_kit 能力面变更日志",
+     "summary": "> 本文件管**能力面变更**（新增/变更/废弃/兼容声明/实验能力），每版一节，节标题用日期版号。 > 版本号规则：v<大版本>-<YYYYMMDD>；实验能力连续两个版本无变更且通过周体检 → 转 stable。",
+     "lines": 168,
+     "hot_score": 1
+    },
+    {
+     "id": "frapi/doc/JavaAPI构建速查",
+     "path": "ckzl/frapi/doc/JavaAPI构建速查.md",
+     "title": "Java API 构建速查",
+     "summary": "FR Java API 构建要点速查:类名 com.fr.* / 方法签名 / 与 .cpt/.frm XML 的对应关系,按 doc 分节",
+     "lines": 880,
+     "hot_score": 1
+    },
+    {
+     "id": "gf/bjys",
+     "path": "ckzl/gf/bjys.md",
+     "title": "布局样式美化-统一规范(最终版)",
+     "summary": "FRM驾驶舱+CPT报表的布局/样式/美化统一规范,收敛散落各处的样式定稿。开发前期专注功能,样式收尾阶段按本规范统一应用。默认样式已落地为脚本(见kfgj/fzpy/frm_apply_style)。",
+     "lines": 129,
+     "hot_score": 1
+    },
+    {
+     "id": "gf/jcfz",
+     "path": "ckzl/gf/jcfz.md",
+     "title": "任务决策树-扩展分支(官方文档沉淀)",
+     "summary": "从 AGENTS.md §2 拆出的官方文档持续学习沉淀的决策分支:排序/打印/权限/图表/定时调度/联动/公式/扩展图表等。日常开发按需查对应分支。",
+     "lines": 165,
+     "hot_score": 1
+    },
+    {
+     "id": "gf/yspj",
+     "path": "ckzl/gf/yspj.md",
+     "title": "官方文档沉淀增补-验收与判级",
+     "summary": "官方文档持续学习沉淀的验收断言与判级强化细则（原 AGENTS.md §1.2 2026-08 增补块，2026-08-20 v3 拆出）。创建/导出/插件交付任务验收前必读",
+     "lines": 83,
+     "hot_score": 1
+    },
+    {
+     "id": "lc/10_Excel骨架正向工艺",
+     "path": "ckzl/lc/10_Excel骨架正向工艺.md",
+     "title": "流程F: Excel骨架正向工艺(示例数据→xlsx→cpt→数据集→图表)",
+     "summary": "示例数据+业务需求→Excel表样骨架(gen_skeleton)→无头转cpt(Excel2007ReportImporter,52ms实证)→SQL/参数(NODE-02/03)→数据集替换示例行;图表管线1280×768抽取(extract_charts)→hbfa容器JSON→cpt CC/frm网页框。含openpyxl合并区『先merge后样式』铁律与importer选型表(全反射+反编译实证2026-09-29)",
+     "lines": 128,
+     "hot_score": 1
+    },
+    {
+     "id": "zsk/gczsk/README",
+     "path": "ckzl/zsk/gczsk/README.md",
+     "title": "ckzl/zsk/gczsk（SQLite）— 人机料法环5M1E 零件表/BOM表/工艺表",
+     "summary": "人机料法环(5M1E)ckzl/zsk/gczsk:personnel人(2)/materials料(43)/machines机(52)/environments环(11)/parts零件(14588)/bom关系(3589)/routing工艺(13条路线75道工序已机械化26道)。查询用 query_kb.py",
+     "lines": 130,
+     "hot_score": 0
+    }
+   ]
+  },
+  "temperature_warm": {
+   "key": "temperature_warm",
+   "dim": "temperature",
+   "name": "温视图",
+   "desc": "其余主题参考页（引用不多但常态可查：fr11 references、tbcw、qdjk 等）",
+   "rules_summary": "补集(全库−temperature_hot,temperature_cold)",
+   "external": [],
+   "count": 154,
+   "pages": [
+    {
+     "id": "frapi/doc/API验证记录_2026-07-31",
+     "path": "ckzl/frapi/doc/API验证记录_2026-07-31.md",
+     "title": "FR 10.0 API 验证记录（2026-07-31）",
+     "summary": "| 条目 | 结论 | |------|------| | `JavaScriptImpl.getContent()` | ✅ 返回 `String` | | `Button.getText()` | ✅ 继承自 `Button`，返回 `",
+     "lines": 51
+    },
+    {
+     "id": "frapi/doc/ChartPainter图表画笔_API条目",
+     "path": "ckzl/frapi/doc/ChartPainter图表画笔_API条目.md",
+     "title": "ChartPainter 图表画笔 API 条目",
+     "summary": "ChartPainter（图表画笔）API 零件条目：类名/方法签名/坑位与验证标记，供查询 com.fr 图表绘制 API 时命中。",
+     "lines": 62
+    },
+    {
+     "id": "frapi/doc/参数面板格式化API清单",
+     "path": "ckzl/frapi/doc/参数面板格式化API清单.md",
+     "title": "FR 10.0 Java API — 参数面板格式化脚本参考",
+     "summary": "参数面板格式化的 FR Java API 清单：读取→重排 bounds→设置面板尺寸→保存的完整方法签名",
+     "lines": 349
+    },
+    {
+     "id": "frapi/doc/参数面板格式化器/README",
+     "path": "ckzl/frapi/doc/参数面板格式化器/README.md",
+     "title": "参数面板格式化器（FR Java API 版）",
+     "summary": "> 2026-08-05 新增。目的：用 FR Java API 操作模板对象完成参数面板格式化， > 替代 Python 正则脚本（正则改 XML 易损坏模板完整性）。",
+     "lines": 58
+    },
+    {
+     "id": "frapi/doc/设计器建表SQL执行",
+     "path": "ckzl/frapi/doc/设计器建表SQL执行.md",
+     "title": "设计器内执行 SQL（含建表）的 UI 路径与 Java API",
+     "summary": "数据连接→SQL 编辑器→预览执行建表的 GUI 路径与对应 Java API 链路，以及 extra session 自动化的硬限制",
+     "lines": 89
+    },
+    {
+     "id": "frapi/ex/README",
+     "path": "ckzl/frapi/ex/README.md",
+     "title": "ckzl/frapi/ex",
+     "summary": "FR Java API 可编译示例代码（AltRowTest/CptStyleOptimizer），含编译与运行说明",
+     "lines": 29
+    },
+    {
+     "id": "gzjd/01_需求与数据判定",
+     "path": "ckzl/gzjd/01_需求与数据判定.md",
+     "title": "需求与数据判定",
+     "summary": "判断报表类型与业务形态,理清数据/字段/想要什么",
+     "lines": 94
+    },
+    {
+     "id": "gzjd/02_数据集",
+     "path": "ckzl/gzjd/02_数据集.md",
+     "title": "数据集",
+     "summary": "SQL 设计、级联参数、数据字典、数据集类型选型",
+     "lines": 108
+    },
+    {
+     "id": "gzjd/03_参数面板",
+     "path": "ckzl/gzjd/03_参数面板.md",
+     "title": "参数面板",
+     "summary": "控件选型、布局、默认值、标签宽度、级联控件",
+     "lines": 109
+    },
+    {
+     "id": "gzjd/04_报表主体_明细展示",
+     "path": "ckzl/gzjd/04_报表主体_明细展示.md",
+     "title": "报表主体-明细展示",
+     "summary": "单元格构建、样式、行高、冻结、分页、排序",
+     "lines": 118
+    },
+    {
+     "id": "gzjd/05_填报模块",
+     "path": "ckzl/gzjd/05_填报模块.md",
+     "title": "填报模块",
+     "summary": "填报控件、提交配置、校验、导入、去重",
+     "lines": 96
+    },
+    {
+     "id": "gzjd/06_图表模块",
+     "path": "ckzl/gzjd/06_图表模块.md",
+     "title": "图表模块",
+     "summary": "图表类型选型、数据绑定、样式、联动",
+     "lines": 158
+    },
+    {
+     "id": "gzjd/07_导入导出",
+     "path": "ckzl/gzjd/07_导入导出.md",
+     "title": "导入导出",
+     "summary": "Excel/Word/PDF 导出、大数据导出、导入",
+     "lines": 112
+    },
+    {
+     "id": "gzjd/08_交互联动",
+     "path": "ckzl/gzjd/08_交互联动.md",
+     "title": "交互联动",
+     "summary": "超链、JS 回调、单元格/图表联动、动态参数",
+     "lines": 117
+    },
+    {
+     "id": "gzjd/09_FRM决策报表",
+     "path": "ckzl/gzjd/09_FRM决策报表.md",
+     "title": "FRM 决策报表",
+     "summary": "组件化布局、跨块联动、决策报表对象",
+     "lines": 116
+    },
+    {
+     "id": "gzjd/10_预览与验证",
+     "path": "ckzl/gzjd/10_预览与验证.md",
+     "title": "预览与验证",
+     "summary": "验证清单、错误排查、移动端适配",
+     "lines": 114
+    },
+    {
+     "id": "hbfa/README",
+     "path": "ckzl/hbfa/README.md",
+     "title": "ckzl/hbfa(报表骨架库)",
+     "summary": "60套可视化报表骨架(cpt20+frm自适应20+frm绝对20)+配置JSON:agent开发可视化报表/图表/驾驶舱时从此选骨架,标题用表格/标题栏承载(非图表自身标题)",
+     "lines": 158
+    },
+    {
+     "id": "lc/00_需求分析流水线",
+     "path": "ckzl/lc/00_需求分析流水线.md",
+     "title": "Stage 0: 需求分析流水线 (Excel 需求确认清单)",
+     "summary": "开发工艺流程(Stage 1-11)前置的需求分析流水线: Excel 需求确认清单为单一事实源, 且是运维交付文档(frdoc 归档盘点)的种子(交付反推矩阵§1.2)。结构: 需求总览九区(项目与责任三方/报表清单/表资源表结构实测/数据集/参数/填报交互权限/业务口径/运行运维要素/确认记录) + 实体表样例页T_(字段类型+原始数据) + 数据集示例数据页 + SQL逻辑页 + 表样页(cpt=网格+顶部5行参数面板; frm=画布式合并单元格)。req_workbook.py 逆向生成: FS预算940公式引用+352905行实测/detail填报主键超链提取/dashboard 63组件 实证。",
+     "lines": 139
+    },
+    {
+     "id": "lc/01_Java_API包名速查",
+     "path": "ckzl/lc/01_Java_API包名速查.md",
+     "title": "Stage 3 · Java API 正确包名速查",
+     "summary": "验证过的 Java API 正确包名速查表（报表构建选型第一步）",
+     "lines": 174
+    },
+    {
+     "id": "lc/01_Web属性",
+     "path": "ckzl/lc/01_Web属性.md",
+     "title": "Stage 6 · Web 属性",
+     "summary": "Web 属性配置（ReportWebAttr）：分页预览/填报页面/数据分析三态设置、工具栏按钮、页面框架",
+     "lines": 286
+    },
+    {
+     "id": "lc/01_参数面板基础与布局",
+     "path": "ckzl/lc/01_参数面板基础与布局.md",
+     "title": "Stage 4 · 参数面板基础与布局自动化",
+     "summary": "参数面板结构（水印无 Label 默认方案、Label 分支、YearControl 模板）与 LAYOUT_SPEC 布局自动化规范",
+     "lines": 207
+    },
+    {
+     "id": "lc/01_填报提交",
+     "path": "ckzl/lc/01_填报提交.md",
+     "title": "Stage 5 · 填报提交",
+     "summary": "填报提交配置：Insert/Delete/IntelliDML、delete_flag 先删后插、审计字段、智能提交",
+     "lines": 166
+    },
+    {
+     "id": "lc/01_开发环境搭建",
+     "path": "ckzl/lc/01_开发环境搭建.md",
+     "title": "Stage 1 · 开发环境搭建",
+     "summary": "FR 安装目录、JDK、编译 Java 扩展的 classpath 与常用工具链",
+     "lines": 248
+    },
+    {
+     "id": "lc/01_数据集构建",
+     "path": "ckzl/lc/01_数据集构建.md",
+     "title": "Stage 2 · 数据集构建",
+     "summary": "EmbeddedTableData/DBTableData 数据集构建、字段映射、SQL 数据集规范",
+     "lines": 168
+    },
+    {
+     "id": "lc/01_选型矩阵与定时调度",
+     "path": "ckzl/lc/01_选型矩阵与定时调度.md",
+     "title": "Stage 8 · 技术选型矩阵与定时调度边界",
+     "summary": "Java API vs Python XML 能力矩阵、定时调度生成边界与约束（模板侧vs平台侧/公式判断/通道约束/FTP）、模板外部依赖清单",
+     "lines": 238
+    },
+    {
+     "id": "lc/02_JS交互与回调",
+     "path": "ckzl/lc/02_JS交互与回调.md",
+     "title": "Stage 5 · JS 交互回调与单元格控件联动",
+     "summary": "JS 回调 / 提交后事件 / callback 回调函数、填报单元格控件联动与自动默认值、自定义提交按钮",
+     "lines": 354
+    },
+    {
+     "id": "lc/02_单元格构建_基础",
+     "path": "ckzl/lc/02_单元格构建_基础.md",
+     "title": "Stage 3 · 单元格构建（基础与条件属性）",
+     "summary": "通配规则总纲、Java API / Python XML 双路单元格构建、隔行换色、条件属性动作族与运行期语义、权限超链、明细格式化、冻结表头、预览打印导出开关、单元格形态与权限锚点",
+     "lines": 385
+    },
+    {
+     "id": "lc/02_参数面板CSS注入",
+     "path": "ckzl/lc/02_参数面板CSS注入.md",
+     "title": "Stage 6 · 参数面板 CSS 注入",
+     "summary": "CSSImport 注入位置、afterinit 事件、参数面板样式覆盖",
+     "lines": 135
+    },
+    {
+     "id": "lc/02_控件类型规范",
+     "path": "ckzl/lc/02_控件类型规范.md",
+     "title": "Stage 4 · 控件类型规范（年/日期控件与标签宽度）",
+     "summary": "年/日期控件类型规范（Ver0.3）、标签宽度自适应（Ver0.3）：控件选型与布局规格",
+     "lines": 183
+    },
+    {
+     "id": "lc/02_环境前置与外部依赖",
+     "path": "ckzl/lc/02_环境前置与外部依赖.md",
+     "title": "Stage 1 · 环境前置与外部依赖",
+     "summary": "连接名契约、Excel 导出环境前提、扩展图表工程硬前置、自动化账号权限、模板外部依赖（数据连接分册）、Linux 图表导出门槛、四层时区链、FineDB 外接库、contextPath 常量",
+     "lines": 202
+    },
+    {
+     "id": "lc/02_级联参数与参数选型",
+     "path": "ckzl/lc/02_级联参数与参数选型.md",
+     "title": "Stage 2 · 级联参数与参数选型",
+     "summary": "级联参数 SQL 规范（WHERE 1=1 + ${if()}）、数据集参数 vs 模板参数选型、分页 SQL / 行式引擎",
+     "lines": 285
+    },
+    {
+     "id": "lc/02_调试技巧",
+     "path": "ckzl/lc/02_调试技巧.md",
+     "title": "Stage 8 · 调试技巧",
+     "summary": "diff 定位、常见问题表（§16.2）、回退策略等调试方法论",
+     "lines": 295
+    },
+    {
+     "id": "lc/03_Java导出与平台配置",
+     "path": "ckzl/lc/03_Java导出与平台配置.md",
+     "title": "Stage 8 · Java API 导出与平台类配置",
+     "summary": "Java API 导出（无头产物落盘）、Java API 运行前提、平台类配置的 Java 写法（Configuration 类）",
+     "lines": 101
+    },
+    {
+     "id": "lc/03_产物分类_体检与无头上下文",
+     "path": "ckzl/lc/03_产物分类_体检与无头上下文.md",
+     "title": "Stage 1 · 产物分类 / 运行体检 / 无头上下文",
+     "summary": "产物分类（模板/平台实体/配置项）、运行环境体检、无头运行上下文与 Workspace、classpath 官方定义、PID 标记与幂等、Java 编译时机、架构与 OS 判定口径",
+     "lines": 203
+    },
+    {
+     "id": "lc/03_单元格构建_公式与进阶",
+     "path": "ckzl/lc/03_单元格构建_公式与进阶.md",
+     "title": "Stage 3 · 单元格构建（公式与进阶）",
+     "summary": "公式分组、公式构建铁律、公式槽与多条件赋值、内置公式函数、Excel 导入匹配、单元格元素 8 类、可伸展性、固定行数页内合计、条码二维码、富文本、控件装配、动态列",
+     "lines": 203
+    },
+    {
+     "id": "lc/03_导出下载与定时刷新",
+     "path": "ckzl/lc/03_导出下载与定时刷新.md",
+     "title": "Stage 6 · 导出下载与决策报表定时刷新",
+     "summary": "导出/下载（URL/分Sheet/大数据集/sessionID 复用）、ShortCut 按钮对照、决策报表定时刷新（表单级事件）",
+     "lines": 191
+    },
+    {
+     "id": "lc/03_排序联动_连接权限_模板转换",
+     "path": "ckzl/lc/03_排序联动_连接权限_模板转换.md",
+     "title": "Stage 2 · 排序 / 联动 / 连接权限 / 模板转换",
+     "summary": "排序选型与 ORDER BY 安全构造、联动场景数据集分工与参数双声明、数据连接名与权限、方言级 SQL 约束、模板转换管道",
+     "lines": 264
+    },
+    {
+     "id": "lc/03_级联_事件_作用域",
+     "path": "ckzl/lc/03_级联_事件_作用域.md",
+     "title": "Stage 4 · 参数面板级联 / 控件事件 / 参数三层作用域",
+     "summary": "参数面板级联（模板参数驱动）、控件事件（doc-3120/doc-1434/doc-1197）、参数三层作用域与模板参数定义",
+     "lines": 252
+    },
+    {
+     "id": "lc/03_预览_图表联动_移动端上报",
+     "path": "ckzl/lc/03_预览_图表联动_移动端上报.md",
+     "title": "Stage 5 · 预览模式 / 图表联动 / 移动端填报 / 多级上报",
+     "summary": "op 预览参数、图表联动交互（超链传参+自动刷新）、移动端填报入口、多级上报工作流",
+     "lines": 153
+    },
+    {
+     "id": "lc/04_填报页面设置与数据校验",
+     "path": "ckzl/lc/04_填报页面设置与数据校验.md",
+     "title": "Stage 5 · 填报页面设置与数据校验",
+     "summary": "填报页面单独设置（禁用工具栏）、强制数据校验（校验不通过不允许提交）、填报选型前置检查",
+     "lines": 249
+    },
+    {
+     "id": "lc/04_多选_路由_移动端_附录B",
+     "path": "ckzl/lc/04_多选_路由_移动端_附录B.md",
+     "title": "Stage 4 · 多选控件 / 路由面板 / 移动端样式 / 附录B",
+     "summary": "多选控件字符串返回值+分隔符铁律、报表路由面板、移动端样式插件作用范围、参数面板标准布局引擎（G2 双段式）与批量处理脚本",
+     "lines": 139
+    },
+    {
+     "id": "lc/04_样式_行高_冻结",
+     "path": "ckzl/lc/04_样式_行高_冻结.md",
+     "title": "Stage 3 · 样式 / 行高列宽 / 冻结窗格",
+     "summary": "样式构建 fix_styles、行高 FU 换算、冻结窗格构建",
+     "lines": 218
+    },
+    {
+     "id": "lc/04_移动端H5_集成与前端JS",
+     "path": "ckzl/lc/04_移动端H5_集成与前端JS.md",
+     "title": "Stage 6 · 移动端 H5 / 集成 / 前端 JS",
+     "summary": "移动端与 H5 预览、嵌入与被嵌入（集成）、集成 URL 参数字典、超链接装配补充、图表 JS 接口速查、FR.ajax 前端请求",
+     "lines": 219
+    },
+    {
+     "id": "lc/04_自检API与部署治理",
+     "path": "ckzl/lc/04_自检API与部署治理.md",
+     "title": "Stage 1 · 环境自检 API 与部署治理",
+     "summary": "环境自检 API 面、绕开 Workspace 读模板的 FD 纪律、离线/内网外联治理、平台账号与身份认证（FSConfig/Passport）、集群与共享存储",
+     "lines": 107
+    },
+    {
+     "id": "lc/05_下拉树_联动_默认值_按钮",
+     "path": "ckzl/lc/05_下拉树_联动_默认值_按钮.md",
+     "title": "Stage 4 · 下拉树 / 控件联动 / 默认值 / 动作按钮",
+     "summary": "下拉树控件与树数据集自动构建、构建方式对照、控件间赋值联动、WidgetValue 默认值配方、FreeButton 动作按钮",
+     "lines": 140
+    },
+    {
+     "id": "lc/05_复选批量_Excel导入_暂存",
+     "path": "ckzl/lc/05_复选批量_Excel导入_暂存.md",
+     "title": "Stage 5 · 复选批量 / Excel 导入 / 暂存",
+     "summary": "复选框全选与批量操作、Excel 标记导入插件、显示值转换（形态数据字典）、填报暂存（自动/手动/清空）",
+     "lines": 87
+    },
+    {
+     "id": "lc/05_扩展后排序",
+     "path": "ckzl/lc/05_扩展后排序.md",
+     "title": "Stage 3 · 扩展后排序",
+     "summary": "扩展后排序 doc-897 基础与多变体、单元格高级排序公式（排序交给公式而非 SQL ORDER BY）",
+     "lines": 220
+    },
+    {
+     "id": "lc/06_图表与导出",
+     "path": "ckzl/lc/06_图表与导出.md",
+     "title": "Stage 3 · 图表与导出",
+     "summary": "图表配置正交三分 + 数据绑定 + 样式总纲；Excel / Word 导出硬约束",
+     "lines": 356
+    },
+    {
+     "id": "lc/06_面板行为与控件杂项",
+     "path": "ckzl/lc/06_面板行为与控件杂项.md",
+     "title": "Stage 4 · 面板折叠 / 显示隐藏 / 控件杂项",
+     "summary": "参数面板折叠与高度联动、显示/隐藏两条路径、单元格控件查询、控件属性三方对照、GUI 复选框哨兵值、下拉框全选默认",
+     "lines": 134
+    },
+    {
+     "id": "lc/07_超级链接_调度_移动端",
+     "path": "ckzl/lc/07_超级链接_调度_移动端.md",
+     "title": "Stage 3 · 超级链接 / 定时调度 / 移动端属性",
+     "summary": "六类超级链接总表 + 动态参数 / JavaScript 详解、定时调度结果单元格、模板级与报表级移动端属性",
+     "lines": 285
+    },
+    {
+     "id": "lc/08_层级坐标_平台配置",
+     "path": "ckzl/lc/08_层级坐标_平台配置.md",
+     "title": "Stage 3 · 层级坐标 / JS 契约 / 平台配置",
+     "summary": "层级坐标构建、JS 契约（名字与常量由生成器供给）、CacheConfig 平台类配置单例、单元格样式按数据类型规范",
+     "lines": 131
+    },
+    {
+     "id": "lc/09_附录A_决策报表构建",
+     "path": "ckzl/lc/09_附录A_决策报表构建.md",
+     "title": "Stage 3 · 附录A 完整示例与决策报表构建补充",
+     "summary": "完整 Java API 示例（附录A）、决策报表(.frm) 组件树约束 / 允许全屏 / 重叠模式",
+     "lines": 128
+    },
+    {
+     "id": "lc/10_前端滚动与焦点恢复",
+     "path": "ckzl/lc/10_前端滚动与焦点恢复.md",
+     "title": "前端滚动与焦点恢复",
+     "summary": "FR 冻结表头报表的前端滚动/焦点恢复终极方案：底部隐藏行 script 标签 + 按钮唯一 id + 单元格前缀匹配",
+     "lines": 164
+    },
+    {
+     "id": "lc/11_感知与自动化",
+     "path": "ckzl/lc/11_感知与自动化.md",
+     "title": "Stage 11: 感知与自动化地图 (工艺流程自动化三档分类)",
+     "summary": "以机械自动化(校正/报警/数据收集)类比, 模拟真实报表开发走查 10 阶段工艺流程, 产出自动化三档分类地图: 完全自动(骨架初始化/生成自检/环境探针)、默认自动(参数面板排布/SQL美化/冻结表头/隔行变色/CSS注入)、参数配置(SkinStudio schema/明细表生成器缺口P0)。含感知脚本挂载表与缺口优先级清单。",
+     "lines": 120
+    },
+    {
+     "id": "lc/fr11_knowledge/README",
+     "path": "ckzl/lc/fr11_knowledge/README.md",
+     "title": "FR11 知识库索引（2289 篇离线文档 → 21 篇笔记）",
+     "summary": "FR11 离线文档（D:\\fr11_docs，2289 篇 doc-view HTML）解析重建的 21 篇知识笔记索引：15 分类 + 5 专题补充 + 本索引。",
+     "lines": 77
+    },
+    {
+     "id": "lc/fr11_knowledge/chart图表/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/chart图表/SKILL.md",
+     "title": "FR11 图表 核心结论",
+     "summary": "--- name: fr11-chart description: FR11 图表/chart 开发时使用：选择图表类型、配置图表样式（标题/图例/标签/坐标轴）、地图钻取、ECharts/扩展图表、图表特效与超级链接联动时查阅。 keyw",
+     "lines": 68
+    },
+    {
+     "id": "lc/fr11_knowledge/chart图表/references/01_图表类型",
+     "path": "ckzl/lc/fr11_knowledge/chart图表/references/01_图表类型.md",
+     "title": "FR11 · 图表 · 图表类型",
+     "summary": "柱形/条形/折线/饼图/面积/散点/气泡/雷达/仪表/甘特/矩形树/漏斗/词云等类型条目（70 条 doc-view 条目，ID 776~4867）；chart_summary.md 拆分页 1/6，条目原样保留。",
+     "lines": 277
+    },
+    {
+     "id": "lc/fr11_knowledge/chart图表/references/02_地图",
+     "path": "ckzl/lc/fr11_knowledge/chart图表/references/02_地图.md",
+     "title": "FR11 · 图表 · 地图与 GIS",
+     "summary": "地图类型、钻取地图、GIS 点地图、3D 地球与边界条目（43 条 doc-view 条目，ID 1583~5011）；chart_summary.md 拆分页 2/6，条目原样保留。",
+     "lines": 182
+    },
+    {
+     "id": "lc/fr11_knowledge/chart图表/references/03_图表样式与属性",
+     "path": "ckzl/lc/fr11_knowledge/chart图表/references/03_图表样式与属性.md",
+     "title": "FR11 · 图表 · 图表样式与属性",
+     "summary": "图表样式、图例标签标题、坐标轴、颜色背景、提示与特效、条件显示条目（44 条 doc-view 条目，ID 922~4792）；chart_summary.md 拆分页 3/6，条目原样保留。",
+     "lines": 191
+    },
+    {
+     "id": "lc/fr11_knowledge/chart图表/references/04_数据与交互",
+     "path": "ckzl/lc/fr11_knowledge/chart图表/references/04_数据与交互.md",
+     "title": "FR11 · 图表 · 图表数据与交互",
+     "summary": "图表数据源与数据绑定、刷新、联动钻取、切换排序、图表对象与 JS 接口条目（37 条 doc-view 条目，ID 175~5016）；chart_summary.md 拆分页 4/6，条目原样保留。",
+     "lines": 179
+    },
+    {
+     "id": "lc/fr11_knowledge/chart图表/references/05_扩展图表与轮播组件",
+     "path": "ckzl/lc/fr11_knowledge/chart图表/references/05_扩展图表与轮播组件.md",
+     "title": "FR11 · 图表 · 扩展图表 / ECharts / 轮播组件",
+     "summary": "扩展图表插件、ECharts、轮播器与轮播类组件条目（3 条 doc-view 条目，ID 2474~4425）；chart_summary.md 拆分页 5/6，条目原样保留。",
+     "lines": 39
+    },
+    {
+     "id": "lc/fr11_knowledge/chart图表/references/06_综合与其他",
+     "path": "ckzl/lc/fr11_knowledge/chart图表/references/06_综合与其他.md",
+     "title": "FR11 · 图表 · 综合与其他",
+     "summary": "未归入上述主题的条目（含大屏实例、H5 图表影响等）（43 条 doc-view 条目，ID 173~5116）；chart_summary.md 拆分页 6/6，条目原样保留。",
+     "lines": 179
+    },
+    {
+     "id": "lc/fr11_knowledge/chart图表/references/README",
+     "path": "ckzl/lc/fr11_knowledge/chart图表/references/README.md",
+     "title": "图表 references 导航",
+     "summary": "chart图表/references 目录导航：chart_summary.md 已按主题拆为 6 页；原文件保留为导航页。SKILL.md 为核心结论入口。",
+     "lines": 32
+    },
+    {
+     "id": "lc/fr11_knowledge/data-source数据源/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/data-source数据源/SKILL.md",
+     "title": "FR11 数据源 核心结论",
+     "summary": "--- name: fr11-data-source description: FR11 数据源/data source 场景使用：定义数据连接（JDBC/JNDI/ODBC）、创建数据集（SQL/内置/文件/程序/树数据集）、驱动管理、F",
+     "lines": 50
+    },
+    {
+     "id": "lc/fr11_knowledge/data-source数据源/references/01_数据连接基础",
+     "path": "ckzl/lc/fr11_knowledge/data-source数据源/references/01_数据连接基础.md",
+     "title": "FR11 · 数据源 · 数据连接基础（JDBC/JNDI/连接池）",
+     "summary": "数据连接概述与定义、JDBC/JNDI/ODBC、连接池与驱动、连接高级设置条目（16 条 doc-view 条目，ID 100~4439）；data_source_summary.md 拆分页 1/5，条目原样保留。",
+     "lines": 87
+    },
+    {
+     "id": "lc/fr11_knowledge/data-source数据源/references/02_数据集类型",
+     "path": "ckzl/lc/fr11_knowledge/data-source数据源/references/02_数据集类型.md",
+     "title": "FR11 · 数据源 · 数据集类型（SQL/程序/文件等）",
+     "summary": "SQL 数据集、内置/关联/树/服务器数据集、程序数据源、文件与 JSON 等数据集条目（68 条 doc-view 条目，ID 103~5130）；data_source_summary.md 拆分页 2/5，条目原样保留。",
+     "lines": 276
+    },
+    {
+     "id": "lc/fr11_knowledge/data-source数据源/references/03_各数据库连接",
+     "path": "ckzl/lc/fr11_knowledge/data-source数据源/references/03_各数据库连接.md",
+     "title": "FR11 · 数据源 · 各数据库数据连接",
+     "summary": "Oracle/MySQL/SQL Server/达梦/华为云等各数据库数据连接条目（46 条 doc-view 条目，ID 290~4905）；data_source_summary.md 拆分页 3/5，条目原样保留。",
+     "lines": 192
+    },
+    {
+     "id": "lc/fr11_knowledge/data-source数据源/references/04_FineDB与专项插件",
+     "path": "ckzl/lc/fr11_knowledge/data-source数据源/references/04_FineDB与专项插件.md",
+     "title": "FR11 · 数据源 · FineDB / LogDB / 专项数据库插件",
+     "summary": "FineDB 外接、LogDB、MongoDB/SAP/多维等专项数据库插件与身份验证条目（5 条 doc-view 条目，ID 120~2944）；data_source_summary.md 拆分页 4/5，条目原样保留。",
+     "lines": 50
+    },
+    {
+     "id": "lc/fr11_knowledge/data-source数据源/references/05_综合与其他",
+     "path": "ckzl/lc/fr11_knowledge/data-source数据源/references/05_综合与其他.md",
+     "title": "FR11 · 数据源 · 综合与其他",
+     "summary": "未归入上述主题的条目（含通用报表、单元格扩展等）（44 条 doc-view 条目，ID 129~5068）；data_source_summary.md 拆分页 5/5，条目原样保留。",
+     "lines": 200
+    },
+    {
+     "id": "lc/fr11_knowledge/data-source数据源/references/README",
+     "path": "ckzl/lc/fr11_knowledge/data-source数据源/references/README.md",
+     "title": "数据源 references 导航",
+     "summary": "data-source数据源/references 目录导航：data_source_summary.md 已按主题拆为 5 页；原文件保留为导航页。SKILL.md 为核心结论入口。",
+     "lines": 32
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/SKILL.md",
+     "title": "FR11 部署与集群 核心结论",
+     "summary": "--- name: fr11-deploy-cluster description: 何时使用：需要在服务器上部署（deploy）FR11 报表工程、配置 Tomcat/WebLogic/Nginx/Redis 集群（cluster）、负载",
+     "lines": 46
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/01_集群与负载均衡",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/01_集群与负载均衡.md",
+     "title": "FR11 · 部署与集群 · 集群 / 负载均衡 / 会话与文件服务器",
+     "summary": "集群方案、Nginx/Redis/Keepalived/Traefik、状态与文件服务器、智能运维条目（49 条 doc-view 条目，ID 2221~5073）；deploy_cluster_summary.md 拆分页 1/6，条目原样保留。",
+     "lines": 191
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/03_运维配置与日志",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/03_运维配置与日志.md",
+     "title": "FR11 · 部署与集群 · 运维配置 / 内存 / 日志",
+     "summary": "服务器配置、内存与线程、日志、编码字体、备份还原、Linux/Windows/云运维条目（57 条 doc-view 条目，ID 361~5133）；deploy_cluster_summary.md 拆分页 3/6，条目原样保留。",
+     "lines": 241
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/04_安全与认证",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/04_安全与认证.md",
+     "title": "FR11 · 部署与集群 · 安全 / SSL / CAS 认证",
+     "summary": "SSL 证书与 HTTPS、CAS 单点、加密与注册、安全防护条目（19 条 doc-view 条目，ID 275~4833）；deploy_cluster_summary.md 拆分页 4/6，条目原样保留。",
+     "lines": 96
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/05_平台管理与工程",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/05_平台管理与工程.md",
+     "title": "FR11 · 部署与集群 · 平台管理 / 工程与数据连接",
+     "summary": "数据决策系统与平台管理、目录、用户、工程访问路径、Servlet、FineDB 与平台数据连接条目（32 条 doc-view 条目，ID 195~4998）；deploy_cluster_summary.md 拆分页 5/6，条目原样保留。",
+     "lines": 140
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/06_综合与其他",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/06_综合与其他.md",
+     "title": "FR11 · 部署与集群 · 综合与其他",
+     "summary": "未归入上述主题的条目（含通用报错、浏览器配置等）（71 条 doc-view 条目，ID 66~5001）；deploy_cluster_summary.md 拆分页 6/6，条目原样保留。",
+     "lines": 294
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/README",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/README.md",
+     "title": "部署与集群 references 导航",
+     "summary": "deploy-cluster部署集群/references 目录导航：deploy_cluster_summary.md 已按主题拆为 6 页；原文件保留为导航页。SKILL.md 为核心结论入口。",
+     "lines": 34
+    },
+    {
+     "id": "lc/fr11_knowledge/deploy-cluster部署集群/references/fr11_install_survey_report",
+     "path": "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/fr11_install_survey_report.md",
+     "title": "FR11 安装调研报告（基于离线文档）",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：21 篇（标题含 安装/部署环境/环境准备/系统要求/配置要求） > 生成时间：2026-08-26",
+     "lines": 136
+    },
+    {
+     "id": "lc/fr11_knowledge/export导出/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/export导出/SKILL.md",
+     "title": "FR11 导出 核心结论",
+     "summary": "--- name: fr11-export description: FR11 导出/export 场景使用：Excel/PDF/Word/图片/CSV 导出、大数据量导出、分页分 sheet、URL 直接导出、导出水印与密码、导出异常（0",
+     "lines": 68
+    },
+    {
+     "id": "lc/fr11_knowledge/export导出/references/export_summary",
+     "path": "ckzl/lc/fr11_knowledge/export导出/references/export_summary.md",
+     "title": "FR11 知识库 · 导出总结",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：48 篇 > 生成时间：2026-08-26 > 主题范围：Excel导出/PDF导出/Word导出/图片导出",
+     "lines": 274
+    },
+    {
+     "id": "lc/fr11_knowledge/fill-submit填报提交/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/fill-submit填报提交/SKILL.md",
+     "title": "FR11 填报与提交 核心结论",
+     "summary": "--- name: fr11-fill-submit description: FR11 填报/提交（fill/submit）场景使用：设计填报报表、内置 SQL/智能/自定义提交、数据校验、Excel 导入、填报暂存、多级上报、填报性能与",
+     "lines": 51
+    },
+    {
+     "id": "lc/fr11_knowledge/fill-submit填报提交/references/fill_submit_summary",
+     "path": "ckzl/lc/fr11_knowledge/fill-submit填报提交/references/fill_submit_summary.md",
+     "title": "FR11 知识库 · 填报与提交总结",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：103 篇 > 生成时间：2026-08-26 > 主题范围：填报/提交/智能提交/数据校验/Excel导入/",
+     "lines": 545
+    },
+    {
+     "id": "lc/fr11_knowledge/formula公式函数/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/formula公式函数/SKILL.md",
+     "title": "FR11 公式与函数 核心结论",
+     "summary": "--- name: fr11-formula description: 何时使用：编写 FR11 公式（formula）与函数（function）、层次坐标、动态格间运算、自定义函数，或排查公式报错、环比同比累计占比计算时使用。触发词：函数",
+     "lines": 46
+    },
+    {
+     "id": "lc/fr11_knowledge/formula公式函数/references/01_层次坐标与累计排名",
+     "path": "ckzl/lc/fr11_knowledge/formula公式函数/references/01_层次坐标与累计排名.md",
+     "title": "FR11 · 公式与函数 · 层次坐标 / 累计 / 排名",
+     "summary": "层次坐标概念与绝对相对引用、累计逐层跨层汇总、环比占比排名序号条目（31 条 doc-view 条目，ID 149~4580）；formula_summary.md 拆分页 1/5，条目原样保留。",
+     "lines": 155
+    },
+    {
+     "id": "lc/fr11_knowledge/formula公式函数/references/02_自定义函数与引擎",
+     "path": "ckzl/lc/fr11_knowledge/formula公式函数/references/02_自定义函数与引擎.md",
+     "title": "FR11 · 公式与函数 · 自定义函数 / 计算引擎",
+     "summary": "自定义函数开发（AbstractFunction）、函数管理器、新计算引擎与公式编辑器条目（16 条 doc-view 条目，ID 236~5089）；formula_summary.md 拆分页 2/5，条目原样保留。",
+     "lines": 95
+    },
+    {
+     "id": "lc/fr11_knowledge/formula公式函数/references/03_日期与字符串处理",
+     "path": "ckzl/lc/fr11_knowledge/formula公式函数/references/03_日期与字符串处理.md",
+     "title": "FR11 · 公式与函数 · 日期时间与字符串处理",
+     "summary": "日期函数应用、星期与工作日、字符串截取拼接、大小写与数字转中文条目（27 条 doc-view 条目，ID 422~4855）；formula_summary.md 拆分页 3/5，条目原样保留。",
+     "lines": 143
+    },
+    {
+     "id": "lc/fr11_knowledge/formula公式函数/references/04_函数速查",
+     "path": "ckzl/lc/fr11_knowledge/formula公式函数/references/04_函数速查.md",
+     "title": "FR11 · 公式与函数 · 函数速查（各类函数概述与用法）",
+     "summary": "各函数概述（文本/数学/逻辑/数组/报表等）、具体函数用法、公式形态与运算符条目（48 条 doc-view 条目，ID 116~5040）；formula_summary.md 拆分页 4/5，条目原样保留。",
+     "lines": 233
+    },
+    {
+     "id": "lc/fr11_knowledge/formula公式函数/references/05_公式应用综合",
+     "path": "ckzl/lc/fr11_knowledge/formula公式函数/references/05_公式应用综合.md",
+     "title": "FR11 · 公式与函数 · 公式应用综合",
+     "summary": "未归入上述主题的公式应用条目（报表过程、页面展示等）（42 条 doc-view 条目，ID 152~4869）；formula_summary.md 拆分页 5/5，条目原样保留。",
+     "lines": 193
+    },
+    {
+     "id": "lc/fr11_knowledge/formula公式函数/references/README",
+     "path": "ckzl/lc/fr11_knowledge/formula公式函数/references/README.md",
+     "title": "公式与函数 references 导航",
+     "summary": "formula公式函数/references 目录导航：formula_summary.md 已按主题拆为 5 页；原文件保留为导航页。SKILL.md 为核心结论入口。",
+     "lines": 32
+    },
+    {
+     "id": "lc/fr11_knowledge/fr11_knowledge_复核报告_2026-08-22",
+     "path": "ckzl/lc/fr11_knowledge/fr11_knowledge_复核报告_2026-08-22.md",
+     "title": "fr11_knowledge 复核报告（i18n 记录问题 + FR11 探针落地）",
+     "summary": "2026-08-22 对其他机器生成的 fr11_knowledge（i18n 线）做本机双 FR 实证复核：键数基本属实，17 个新增类名全部臆造，LocaleFinder 论断被推翻；同时补齐 FR11 fr-agent 探针（inject_fr11.py）并完成注入+运行时 getLocText 实证。",
+     "lines": 107
+    },
+    {
+     "id": "lc/fr11_knowledge/frm-decision决策报表/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/frm-decision决策报表/SKILL.md",
+     "title": "FR11 决策报表 核心结论",
+     "summary": "--- name: fr11-frm-decision description: 何时使用：制作 FR11 决策报表（FRM）大屏/驾驶舱/移动端看板、处理 body 布局与 PC 端自适应、组件（报表块/图表块/Tab块）联动、JS 接口",
+     "lines": 65
+    },
+    {
+     "id": "lc/fr11_knowledge/frm-decision决策报表/references/01_基础与布局自适应",
+     "path": "ckzl/lc/fr11_knowledge/frm-decision决策报表/references/01_基础与布局自适应.md",
+     "title": "FR11 · 决策报表 · 决策报表基础与布局自适应",
+     "summary": "决策报表简介与入门、body 与布局方式、自适应属性、重复冻结、新旧版本说明条目（22 条 doc-view 条目，ID 132~5022）；frm_decision_summary.md 拆分页 1/5，条目原样保留。",
+     "lines": 109
+    },
+    {
+     "id": "lc/fr11_knowledge/frm-decision决策报表/references/02_FVS与大屏组件",
+     "path": "ckzl/lc/fr11_knowledge/frm-decision决策报表/references/02_FVS与大屏组件.md",
+     "title": "FR11 · 决策报表 · FVS 与大屏",
+     "summary": "FVS 画布/分页/组件与轮播器、3D/Unity、大屏常见问题条目（20 条 doc-view 条目，ID 1652~5059）；frm_decision_summary.md 拆分页 2/5，条目原样保留。",
+     "lines": 114
+    },
+    {
+     "id": "lc/fr11_knowledge/frm-decision决策报表/references/03_组件与报表块",
+     "path": "ckzl/lc/fr11_knowledge/frm-decision决策报表/references/03_组件与报表块.md",
+     "title": "FR11 · 决策报表 · 组件 / 报表块 / Tab 块",
+     "summary": "决策报表组件操作与属性、报表块工具栏与分页、Tab 块接口与轮播、网页框/日历/图片等组件条目（51 条 doc-view 条目，ID 633~5121）；frm_decision_summary.md 拆分页 3/5，条目原样保留。",
+     "lines": 233
+    },
+    {
+     "id": "lc/fr11_knowledge/frm-decision决策报表/references/04_交互JS与接口",
+     "path": "ckzl/lc/fr11_knowledge/frm-decision决策报表/references/04_交互JS与接口.md",
+     "title": "FR11 · 决策报表 · 交互联动 / JS / 接口 / 导出",
+     "summary": "JS 实现系列（刷新/隐藏/排序/定时翻页）、组件联动、超链、导出与参数条目（9 条 doc-view 条目，ID 1457~5091）；frm_decision_summary.md 拆分页 4/5，条目原样保留。",
+     "lines": 67
+    },
+    {
+     "id": "lc/fr11_knowledge/frm-decision决策报表/references/05_综合与其他",
+     "path": "ckzl/lc/fr11_knowledge/frm-decision决策报表/references/05_综合与其他.md",
+     "title": "FR11 · 决策报表 · 综合与其他",
+     "summary": "未归入上述主题的条目（含模板预览调试、跨报表块过滤等）（21 条 doc-view 条目，ID 223~5017）；frm_decision_summary.md 拆分页 5/5，条目原样保留。",
+     "lines": 98
+    },
+    {
+     "id": "lc/fr11_knowledge/frm-decision决策报表/references/README",
+     "path": "ckzl/lc/fr11_knowledge/frm-decision决策报表/references/README.md",
+     "title": "决策报表 references 导航",
+     "summary": "frm-decision决策报表/references 目录导航：frm_decision_summary.md 已按主题拆为 5 页；原文件保留为导航页。SKILL.md 为核心结论入口。",
+     "lines": 32
+    },
+    {
+     "id": "lc/fr11_knowledge/js-api二次开发/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/js-api二次开发/SKILL.md",
+     "title": "FR11 二次开发与 JS API 核心结论",
+     "summary": "--- name: fr11-js-api description: 何时使用：FR11 报表二次开发与前端 JS API 问题——写 JS 事件、调用 _g()/FR/FS 接口、填报提交与插删行、单元格取值赋值、工具栏/参数面板/Tab",
+     "lines": 72
+    },
+    {
+     "id": "lc/fr11_knowledge/js-api二次开发/references/01_填报与提交接口",
+     "path": "ckzl/lc/fr11_knowledge/js-api二次开发/references/01_填报与提交接口.md",
+     "title": "FR11 · 二次开发与JS API · 填报 / 提交 / 插删行 / 校验",
+     "summary": "填报提交接口、插删行、暂存、填报校验与上报类条目（31 条 doc-view 条目，ID 526~4817）；js_api_summary.md 拆分页 1/10，条目原样保留。",
+     "lines": 154
+    },
+    {
+     "id": "lc/fr11_knowledge/js-api二次开发/references/02_单元格与表格接口",
+     "path": "ckzl/lc/fr11_knowledge/js-api二次开发/references/02_单元格与表格接口.md",
+     "title": "FR11 · 二次开发与JS API · 单元格与表格接口",
+     "summary": "单元格取值赋值、表格对象三级接口、折叠树/视图树、分页与 sheet 条目（52 条 doc-view 条目，ID 928~5125）；js_api_summary.md 拆分页 2/10，条目原样保留。",
+     "lines": 275
+    },
+    {
+     "id": "lc/fr11_knowledge/js-api二次开发/references/03_控件参数面板与工具栏",
+     "path": "ckzl/lc/fr11_knowledge/js-api二次开发/references/03_控件参数面板与工具栏.md",
+     "title": "FR11 · 二次开发与JS API · 控件 / 参数面板 / 工具栏",
+     "summary": "参数面板与控件 JS、工具栏自定义、按钮与菜单条目（36 条 doc-view 条目，ID 910~5102）；js_api_summary.md 拆分页 3/10，条目原样保留。",
+     "lines": 180
+    },
+    {
+     "id": "lc/fr11_knowledge/js-api二次开发/references/04_图表与大屏FVS",
+     "path": "ckzl/lc/fr11_knowledge/js-api二次开发/references/04_图表与大屏FVS.md",
+     "title": "FR11 · 二次开发与JS API · 图表 / 大屏 / FVS",
+     "summary": "图表 JS 接口、FVS(duchamp) 大屏、轮播与跑马灯条目（35 条 doc-view 条目，ID 1741~5131）；js_api_summary.md 拆分页 4/10，条目原样保留。",
+     "lines": 192
+    },
+    {
+     "id": "lc/fr11_knowledge/js-api二次开发/references/05_打印与导出",
+     "path": "ckzl/lc/fr11_knowledge/js-api二次开发/references/05_打印与导出.md",
+     "title": "FR11 · 二次开发与JS API · 打印 / 导出 / 导入",
+     "summary": "JS 打印调用、导出（Excel/CSV/PDF）、Excel 导入条目（15 条 doc-view 条目，ID 624~4488）；js_api_summary.md 拆分页 5/10，条目原样保留。",
+     "lines": 85
+    },
+    {
+     "id": "lc/fr11_knowledge/js-api二次开发/references/06_Web集成与安全",
+     "path": "ckzl/lc/fr11_knowledge/js-api二次开发/references/06_Web集成与安全.md",
+     "title": "FR11 · 二次开发与JS API · Web 集成 / 单点登录 / 安全",
+     "summary": "iframe 集成、跨域与乱码、单点登录、cookie/session、防盗链条目（49 条 doc-view 条目，ID 602~5086）；js_api_summary.md 拆分页 6/10，条目原样保留。",
+     "lines": 224
+    },
+    {
+     "id": "lc/fr11_knowledge/js-api二次开发/references/07_插件与自定义",
+     "path": "ckzl/lc/fr11_knowledge/js-api二次开发/references/07_插件与自定义.md",
+     "title": "FR11 · 二次开发与JS API · 插件与自定义开发",
+     "summary": "官方/功能插件、自定义按钮与自定义开发条目（65 条 doc-view 条目，ID 113~5014）；js_api_summary.md 拆分页 7/10，条目原样保留。",
+     "lines": 261
+    },
+    {
+     "id": "lc/fr11_knowledge/js-api二次开发/references/08_Java引擎与平台",
+     "path": "ckzl/lc/fr11_knowledge/js-api二次开发/references/08_Java引擎与平台.md",
+     "title": "FR11 · 二次开发与JS API · Java 引擎与平台 API",
+     "summary": "引擎 API、Java 编译与 classpath、上传 FTP、定时调度平台侧条目（18 条 doc-view 条目，ID 597~5076）；js_api_summary.md 拆分页 8/10，条目原样保留。",
+     "lines": 98
+    },
+    {
+     "id": "lc/fr11_knowledge/js-api二次开发/references/09_综合与其他",
+     "path": "ckzl/lc/fr11_knowledge/js-api二次开发/references/09_综合与其他.md",
+     "title": "FR11 · 二次开发与JS API · 综合与其他",
+     "summary": "未归入上述主题的条目（含通用报错、产品说明等）（84 条 doc-view 条目，ID 386~3713）；js_api_summary.md 拆分页 9/10，条目原样保留。",
+     "lines": 386
+    },
+    {
+     "id": "lc/fr11_knowledge/js-api二次开发/references/09_综合与其他_2",
+     "path": "ckzl/lc/fr11_knowledge/js-api二次开发/references/09_综合与其他_2.md",
+     "title": "FR11 · 二次开发与JS API · 综合与其他",
+     "summary": "未归入上述主题的条目（含通用报错、产品说明等）（51 条 doc-view 条目，ID 3727~5104）；js_api_summary.md 拆分页 10/10，条目原样保留。",
+     "lines": 229
+    },
+    {
+     "id": "lc/fr11_knowledge/js-api二次开发/references/README",
+     "path": "ckzl/lc/fr11_knowledge/js-api二次开发/references/README.md",
+     "title": "二次开发与JS API references 导航",
+     "summary": "js-api二次开发/references 目录导航：js_api_summary.md 已按主题拆为 10 页；原文件保留为导航页。SKILL.md 为核心结论入口。",
+     "lines": 37
+    },
+    {
+     "id": "lc/fr11_knowledge/other_summary",
+     "path": "ckzl/lc/fr11_knowledge/other_summary.md",
+     "title": "FR11 知识库 · 其他总结",
+     "summary": "FR11 知识库 · 其他总结：全文 41 行、3 个 H2 章节（主题速览（标题关键词频次）、文档条目、总结），条目型检索语料。",
+     "lines": 52
+    },
+    {
+     "id": "lc/fr11_knowledge/param-control参数控件/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/param-control参数控件/SKILL.md",
+     "title": "FR11 参数与控件 核心结论",
+     "summary": "--- name: fr11-param-control description: FR11 参数查询与控件问题时使用。触发词：参数、参数面板、控件、下拉框、下拉复选框、日期控件、查询按钮、参数联动、参数为空、控件接口、FVS 控件。 co",
+     "lines": 44
+    },
+    {
+     "id": "lc/fr11_knowledge/param-control参数控件/references/01_参数基础与作用域",
+     "path": "ckzl/lc/fr11_knowledge/param-control参数控件/references/01_参数基础与作用域.md",
+     "title": "FR11 · 参数与控件 · 参数基础 / 作用域 / 传参",
+     "summary": "参数分类与作用域、模板/数据集/全局参数、URL 与跨模板传参条目（27 条 doc-view 条目，ID 155~5115）；param_control_summary.md 拆分页 1/5，条目原样保留。",
+     "lines": 140
+    },
+    {
+     "id": "lc/fr11_knowledge/param-control参数控件/references/02_下拉与树控件",
+     "path": "ckzl/lc/fr11_knowledge/param-control参数控件/references/02_下拉与树控件.md",
+     "title": "FR11 · 参数与控件 · 下拉框 / 下拉树 / 数据字典 / 单复选",
+     "summary": "下拉框、下拉复选框、下拉树与视图树、数据字典、单选复选条目（71 条 doc-view 条目，ID 255~4994）；param_control_summary.md 拆分页 2/5，条目原样保留。",
+     "lines": 312
+    },
+    {
+     "id": "lc/fr11_knowledge/param-control参数控件/references/03_基础控件与校验",
+     "path": "ckzl/lc/fr11_knowledge/param-control参数控件/references/03_基础控件与校验.md",
+     "title": "FR11 · 参数与控件 · 日期/文本/基础控件与校验",
+     "summary": "日期时间控件、文本数字控件、控件管理与默认值、控件校验与水印条目（79 条 doc-view 条目，ID 232~5107）；param_control_summary.md 拆分页 3/5，条目原样保留。",
+     "lines": 340
+    },
+    {
+     "id": "lc/fr11_knowledge/param-control参数控件/references/04_按钮查询与面板交互",
+     "path": "ckzl/lc/fr11_knowledge/param-control参数控件/references/04_按钮查询与面板交互.md",
+     "title": "FR11 · 参数与控件 · 按钮 / 查询 / 面板交互",
+     "summary": "查询按钮、参数面板显示隐藏、控件联动与 JS 交互、定时任务参数条目（59 条 doc-view 条目，ID 72~5088）；param_control_summary.md 拆分页 4/5，条目原样保留。",
+     "lines": 256
+    },
+    {
+     "id": "lc/fr11_knowledge/param-control参数控件/references/05_综合与其他",
+     "path": "ckzl/lc/fr11_knowledge/param-control参数控件/references/05_综合与其他.md",
+     "title": "FR11 · 参数与控件 · 综合与其他",
+     "summary": "未归入上述主题的条目（含通用报表、上报等）（51 条 doc-view 条目，ID 141~5041）；param_control_summary.md 拆分页 5/5，条目原样保留。",
+     "lines": 216
+    },
+    {
+     "id": "lc/fr11_knowledge/param-control参数控件/references/README",
+     "path": "ckzl/lc/fr11_knowledge/param-control参数控件/references/README.md",
+     "title": "参数与控件 references 导航",
+     "summary": "param-control参数控件/references 目录导航：param_control_summary.md 已按主题拆为 5 页；原文件保留为导航页。SKILL.md 为核心结论入口。",
+     "lines": 32
+    },
+    {
+     "id": "lc/fr11_knowledge/performance性能优化/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/performance性能优化/SKILL.md",
+     "title": "FR11 性能优化 核心结论",
+     "summary": "--- name: fr11-performance description: 何时使用：排查与优化 FR11 报表性能（performance）——模板加载慢、取数慢、内存溢出（OOM/Java heap space）、并发卡顿、大数据量",
+     "lines": 46
+    },
+    {
+     "id": "lc/fr11_knowledge/performance性能优化/references/performance_summary",
+     "path": "ckzl/lc/fr11_knowledge/performance性能优化/references/performance_summary.md",
+     "title": "FR11 知识库 · 性能优化总结",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：31 篇 > 生成时间：2026-08-26 > 主题范围：性能/优化/内存/缓存/并发/大数据量",
+     "lines": 187
+    },
+    {
+     "id": "lc/fr11_knowledge/permission权限/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/permission权限/SKILL.md",
+     "title": "FR11 权限 核心结论",
+     "summary": "--- name: fr11-permission description: FR11 权限与认证问题时使用。触发词：权限、角色、用户管理、数据权限、认证、单点登录 SSO、Oauth2、LtpaToken、密码加密、数据脱敏、上报审核。",
+     "lines": 42
+    },
+    {
+     "id": "lc/fr11_knowledge/permission权限/references/permission_summary",
+     "path": "ckzl/lc/fr11_knowledge/permission权限/references/permission_summary.md",
+     "title": "FR11 知识库 · 权限总结",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：92 篇 > 生成时间：2026-08-26 > 主题范围：权限/角色/用户/认证/单点登录/数据权限",
+     "lines": 461
+    },
+    {
+     "id": "zsk/csff/模板验证清单",
+     "path": "ckzl/zsk/csff/模板验证清单.md",
+     "title": "模板验证清单",
+     "summary": "FR 模板交付前的标准化验证清单，覆盖 XML/结构/功能/样式四层检查",
+     "lines": 81
+    },
+    {
+     "id": "zsk/csff/表单控件插件验收测试单",
+     "path": "ckzl/zsk/csff/表单控件插件验收测试单.md",
+     "title": "表单控件插件验收测试单",
+     "summary": "自研表单控件插件的分层验收测试单 v2：静态/启动三前置/设计器/持久化/预览/移动端/运行时七层，每项标注自动化等级与脚本思路",
+     "lines": 217
+    },
+    {
+     "id": "zsk/csff/设计器重启预检",
+     "path": "ckzl/zsk/csff/设计器重启预检.md",
+     "title": "设计器重启预检清单",
+     "summary": "部署 4 个复刻插件目录后首次重启设计器的 5 点验证清单：插件在列/图表类型/公式提示/管理页 console/日志无错",
+     "lines": 40
+    },
+    {
+     "id": "zsk/frwd/报表平台BOM拆解",
+     "path": "ckzl/zsk/frwd/报表平台BOM拆解.md",
+     "title": "报表平台BOM拆解",
+     "summary": "> 0 级定点 = **报表平台三大组成部分：设计器 / 服务器 / 数据库**（用户 2026-08-11 定稿）。 > 1 级分支 = 各定点的界面区域/子系统；2 级 = 面板；3 级 = 组件/功能。 > 名称一律采用**用户可见名",
+     "lines": 195
+    },
+    {
+     "id": "zsk/gczsk/i18n_词汇表_1_图表与基础通用",
+     "path": "ckzl/zsk/gczsk/i18n_词汇表_1_图表与基础通用.md",
+     "title": "FR设计器i18n词汇表 1/5：图表(Chart 874条)与基础通用(Basic 789条)",
+     "summary": "FR 设计器 i18n 词汇表第 1/5 页（中英对照 1663 条）：图表 Chart 分类 874 条 + 基础通用 Basic 分类 789 条，供界面文案/结构快照比对与控件名定位",
+     "lines": 280
+    },
+    {
+     "id": "zsk/gczsk/i18n_词汇表_2_报表与其他",
+     "path": "ckzl/zsk/gczsk/i18n_词汇表_2_报表与其他.md",
+     "title": "FR设计器i18n词汇表 2/5：报表(Report 654条)与其他(Other 382条)",
+     "summary": "FR 设计器 i18n 词汇表第 2/5 页（中英对照 1036 条）：报表 Report 分类 654 条 + 其他 Other 分类 382 条",
+     "lines": 280
+    },
+    {
+     "id": "zsk/gczsk/i18n_词汇表_3_表单与控件",
+     "path": "ckzl/zsk/gczsk/i18n_词汇表_3_表单与控件.md",
+     "title": "FR设计器i18n词汇表 3/6：表单(213条)与控件(129条)",
+     "summary": "表单 Form 213 条 + 控件 Widget 129 条（中英对照）",
+     "lines": 278
+    },
+    {
+     "id": "zsk/gczsk/i18n_词汇表_4_样式导出与数据",
+     "path": "ckzl/zsk/gczsk/i18n_词汇表_4_样式导出与数据.md",
+     "title": "FR设计器i18n词汇表 4/6：样式(126)/导出打印(100)/数据(91)",
+     "summary": "样式 Style 126 条 + 导出打印 Export/Print 100 条 + 数据/数据集 Data 91 条（中英对照）",
+     "lines": 355
+    },
+    {
+     "id": "zsk/gczsk/i18n_词汇表_5_移动背景单元格参数字体",
+     "path": "ckzl/zsk/gczsk/i18n_词汇表_5_移动背景单元格参数字体.md",
+     "title": "FR设计器i18n词汇表 5/6：移动端(58)/背景(53)/单元格(48)/参数(42)/字体(42)",
+     "summary": "移动端 Mobile 58 条 + 背景 Background 53 条 + 单元格 Cell 48 条 + 参数 Parameter 42 条 + 字体 Font 42 条（中英对照）",
+     "lines": 299
+    },
+    {
+     "id": "zsk/gczsk/i18n_词汇表_6_杂项小类",
+     "path": "ckzl/zsk/gczsk/i18n_词汇表_6_杂项小类.md",
+     "title": "FR设计器i18n词汇表 6/6：Action/按钮/预览/超链接/边框/控件类型/布局/编辑器/工具栏/核心/菜单",
+     "summary": "Action 菜单动作 41 + 按钮 30 + 预览 25 + 超链接 22 + 边框 21 + 控件类型 15 + 布局 10 + 编辑器 4 + 工具栏 4 + 核心 2 + 菜单 1（中英对照 213 条）",
+     "lines": 263
+    },
+    {
+     "id": "zsk/qdjk/README",
+     "path": "ckzl/zsk/qdjk/README.md",
+     "title": "帆软ckzl/zsk/qdjk总览",
+     "summary": "帆软 FR 10.0 前端 JS API 文档总览：90+ 类的命名空间分类、控件/报表/窗口/布局 API 速查",
+     "lines": 318
+    },
+    {
+     "id": "zsk/qdjk/references/FineReport前端交互高级实现指南",
+     "path": "ckzl/zsk/qdjk/references/FineReport前端交互高级实现指南.md",
+     "title": "FineReport 前端交互高级实现指南（总导航）",
+     "summary": "FineReport 前端交互高级实现指南总导航（原 729 行单文件 2026-09-29 拆分为 3 页）：JS API / 交互样式与填报 / 问题与高级主题；速查版见 ../../FineReport前端交互高级实现速查表.md（同日拆分）",
+     "lines": 31
+    },
+    {
+     "id": "zsk/qdjk/references/api_report",
+     "path": "ckzl/zsk/qdjk/references/api_report.md",
+     "title": "帆软 FR 10.0 填报开发核心 JS API 清单（总导航）",
+     "summary": "FR 10.0 填报核心 JS API 总导航（原 653 行单文件 2026-09-29 拆分为 2 页）：弹窗与填报面板（Msg/Dialog/Window/WritePane，原 §1-§3）/ 报表面板与填报接口（Elementcase/PagePane/WLGP/Write/WriteEditor+附录，原 §4-§8）",
+     "lines": 44
+    },
+    {
+     "id": "zsk/qdjk/references/api_report_1_弹窗与填报面板",
+     "path": "ckzl/zsk/qdjk/references/api_report_1_弹窗与填报面板.md",
+     "title": "FR填报JS API：消息弹窗/对话框/填报面板（FR.Msg/Dialog/Window/WritePane）",
+     "summary": "FR 10.0 填报核心 JS API 第 1/2 页：FR.Msg（confirm/alert/prompt/toast 4 静态方法）、FR.Dialog 与 FR.Window（对话框属性/方法）、FR.WritePane 填报面板（1 属性 + 41 方法：提交/校验/单元格取值赋值等）——原 api_report.md §1-§3",
+     "lines": 317
+    },
+    {
+     "id": "zsk/qdjk/references/api_utils",
+     "path": "ckzl/zsk/qdjk/references/api_utils.md",
+     "title": "帆软 FR 10.0 JS API — 通用类方法清单",
+     "summary": "> 数据来源：http://dev.fanruan.com/jsdoc/ > 抓取范围：jQuery、String、Array、Function、FR.Keys 五个通用类的全部公开 Methods。 > 🧪 **2026-09-04 实测",
+     "lines": 139
+    },
+    {
+     "id": "zsk/qdjk/references/api_widgets",
+     "path": "ckzl/zsk/qdjk/references/api_widgets.md",
+     "title": "帆软 FR 10.0 控件 JS API 方法清单（总导航）",
+     "summary": "FR 10.0 控件 JS API 方法清单总导航（原 1083 行单文件 2026-09-29 拆分为 3 页）：基类与文本编辑器 / 下拉复选控件 / 日期按钮控件+继承总览；数据来源 dev.fanruan.com/jsdoc，实测标注见 verified_20260904.md",
+     "lines": 49
+    },
+    {
+     "id": "zsk/qdjk/references/前端交互指南_1_JS_API",
+     "path": "ckzl/zsk/qdjk/references/前端交互指南_1_JS_API.md",
+     "title": "FR前端交互指南 1/3：JavaScript API 速查（contentPane/Msg/Dialog/Widget/WritePane/PagePane/Elementcase/Chart/AJAX/工具类）",
+     "summary": "FineReport 前端交互高级实现指南第 1/3 页：JavaScript API 速查——核心对象层次、contentPane 核心方法、FR.Msg 消息弹窗、FR.Dialog/FR.Window 对话框、FR.Widget 控件基类、FR.WritePane 填报面板、FR.PagePane 分页预览、FR.Elementcase 报表块、FR.Chart 图表 API、AJAX 请求、工具类扩展——原指南一章",
+     "lines": 272
+    },
+    {
+     "id": "zsk/qdjk/references/前端交互指南_2_交互样式与填报",
+     "path": "ckzl/zsk/qdjk/references/前端交互指南_2_交互样式与填报.md",
+     "title": "FR前端交互指南 2/3：交互设计模式/样式定制/填报交互优化",
+     "summary": "FineReport 前端交互高级实现指南第 2/3 页：交互设计模式（钻取/联动/弹窗/动态参数排序筛选/超链跳 Sheet）、样式定制方案（CSS 注入方式/参数面板注入位置/自定义按钮 CSS 选择器/动态样式/全站资源注入 WebResourceProvider）、填报交互优化（提交前校验/填报入库/快捷键/单击编辑/Excel 导入）——原指南二~四章",
+     "lines": 387
+    },
+    {
+     "id": "zsk/qdjk/references/前端交互指南_3_问题与高级主题",
+     "path": "ckzl/zsk/qdjk/references/前端交互指南_3_问题与高级主题.md",
+     "title": "FR前端交互指南 3/3：常见交互问题排查与高级主题（.frm 对比/Web 事件/挂载点/权限参数/跨域/图表插件协议）",
+     "summary": "FineReport 前端交互高级实现指南第 3/3 页：常见交互问题与解决方案（事件不触发/控件操作/样式/超链/图表前端坑）、高级主题（决策报表 .frm vs 普通报表 .cpt、Web 事件名全集、JS 挂载点、内置权限参数、跨域 iframe 调 FR JS、图表插件前端协议）——原指南五~六章",
+     "lines": 152
+    },
+    {
+     "id": "zsk/qdjk/前端交互速查卡",
+     "path": "ckzl/zsk/qdjk/前端交互速查卡.md",
+     "title": "FR前端交互速查卡（指针页，详版见 references/前端交互指南 三篇）",
+     "summary": "原《前端交互速查表》1-3 与 references/前端交互指南 1-3 为平行双写（语义相似度0.88-0.95，20260929 勘察证实），速查表已归档，本页为指针卡；权威详版=指南三篇，控件/报表面板 API 另见 api_widgets/api_report 系列",
+     "lines": 21
+    },
+    {
+     "id": "zsk/tbcw/CPT全部打开提示无法查看该页面排查",
+     "path": "ckzl/zsk/tbcw/CPT全部打开提示无法查看该页面排查.md",
+     "title": "所有CPT打开提示「非常抱歉您无法查看该页面」排查",
+     "summary": "报错『非常抱歉，您无法查看该页面，如需访问请联系管理员』的判位与排查链：先按全员/单人对分平台级或模板级，再查目录权限、全局权限项、模板加密(doc-863)、license。源自社区问题 231582",
+     "lines": 27
+    },
+    {
+     "id": "zsk/tbcw/DSColumn悬空数据集引用",
+     "path": "ckzl/zsk/tbcw/DSColumn悬空数据集引用.md",
+     "title": "DSColumn悬空数据集引用与超链死链分析",
+     "summary": "格子 DSColumn 绑定的 dsName 不在 TableDataMap 定义集内即悬空数据集——被列显隐遮蔽时页面零报错，版本参数一选中列展开即整列空白（示例预算表副本版实测 403 处）；同族问题：删除目标页而主表 ReportletName 超链漏摘即死链（钻取明细 172+41 处已同步摘除的对照、FS ADJ填报.cpt 21 处历史死链实锤）；fr_check 无引用完整性检查，check_cpt_integrity.py 检查1/3 工具化 + 408/2175 等事故数字勘误（2026-09-06/07 示例实际表/预算 实战）",
+     "lines": 94
+    },
+    {
+     "id": "zsk/tbcw/事件CDATA裸换行-SyntaxError",
+     "path": "ckzl/zsk/tbcw/事件CDATA裸换行-SyntaxError.md",
+     "title": "事件CDATA裸换行致页面SyntaxError分析",
+     "summary": "程序化往 cpt 事件 <Content> CDATA 写 JS 时把含 CSS 的多行文本拼进单引号字符串字面量、段间残留真实换行(0x0A/0x0D0A)→字符串未闭合，浏览器打开页面即 SyntaxError: Invalid or unexpected token 且整页不可用；XML 合法+fr_check 通过但上线即崩（两道校验都不查 JS 语法）；含 node --check 批量定位脚本、修复样板与预防三原则（2026-09-04 示例实际表/预算 实战）",
+     "lines": 118
+    },
+    {
+     "id": "zsk/tbcw/事件环递归-Maximum call stack size exceeded",
+     "path": "ckzl/zsk/tbcw/事件环递归-Maximum call stack size exceeded.md",
+     "title": "事件环递归致Maximum call stack size exceeded分析",
+     "summary": "FR 的 widget.setValue() 会触发目标控件自身的编辑后(afteredit)事件；多控件互清构成环(para_legal↔para_bu↔para_region)时链式点火直至爆栈 RangeError: Maximum call stack size exceeded；node --check 只查语法、fr_check 无事件调用图规则，两道校验都检不出；含堆栈帧特征、静态调用图环检测工具(check_cpt_events.py)、'先判值再清'护栏样板与 fr_check 待补规则建议(2026-09-06 示例实际表/预算 实战)",
+     "lines": 140
+    },
+    {
+     "id": "zsk/tbcw/公式函数不存在-no function found",
+     "path": "ckzl/zsk/tbcw/公式函数不存在-no function found.md",
+     "title": "公式函数不存在致no function found刷屏分析",
+     "summary": "高亮条件公式写 AND(ISNUMBER($$$),$$$>0.002)，FR10 引擎 187 个注册函数类中根本没有 ISNUMBER（Excel 思维迁移陷阱）——XML 合法+fr_check 通过但每次计算服务端刷 no function found（实测单日 6120 条），单元格高亮静默失效；三层证据定位法（jar 扫描/官方清单/日志计数）、NVL($$$,0)>0.002 替换样板与公式函数白名单检查工具化（check_cpt_integrity.py 检查2；2026-09-06/07 示例实际表/预算 各 204 处实战）",
+     "lines": 114
+    },
+    {
+     "id": "zsk/tbcw/填报报表开发错误分析",
+     "path": "ckzl/zsk/tbcw/填报报表开发错误分析.md",
+     "title": "填报报表开发错误分析",
+     "summary": "典型填报开发错误：ORDER BY 出现在 ${if()} 前的 SQL 语法错误、数据集参数过滤引用不存在字段（埋雷）等",
+     "lines": 154
+    },
+    {
+     "id": "zsk/tbcw/夜间提炼_历史脚本教训_20260904",
+     "path": "ckzl/zsk/tbcw/夜间提炼_历史脚本教训_20260904.md",
+     "title": "夜间提炼 — 历史脚本教训 30 条（示例项目 tmp_*.py）",
+     "summary": "2026-09-04 夜间从 _runs/ 122 个历史 tmp_*.py（示例项目取数/生成/修复脚本）批量提炼的 30 条错误案例：场景/报错/根因/正确做法/出处脚本；静默类权威口径 14 条（R31 消歧定版，见附注）",
+     "lines": 341
+    },
+    {
+     "id": "zsk/tbcw/渲染报错-PageRWorkSheet强转AnalyReport",
+     "path": "ckzl/zsk/tbcw/渲染报错-PageRWorkSheet强转AnalyReport.md",
+     "title": "PageRWorkSheet cannot be cast to AnalyReport 渲染报错分析",
+     "summary": "程序化生成 cpt 时非默认单元格分页属性组合（repeat/HR 退化/冻结盖扩展行）触发 view_content 数据分析管道对分页结果 PageRWorkSheet 做 (AnalyReport) 强转失败；含字节码证据链、已验证骨架与排查方法论（2026-09-04 示例明细表B实战）",
+     "lines": 127
+    },
+    {
+     "id": "zsk/tbcw/附-实体列名值域核对方法论-entity vs entity_code",
+     "path": "ckzl/zsk/tbcw/附-实体列名值域核对方法论-entity vs entity_code.md",
+     "title": "实体列名与值域错配排查方法论(entity vs entity_code)",
+     "summary": "视图里 entity=中文厂名、entity_code=编码两列并存，权限门/层级过滤拿名字字段比编码值→恒不匹配→扩展行全空白且零报错；沉淀'空白列五步定位法'与'过滤条件两侧列名-值域核对表'方法论（2026-09-06 示例实际表 ds_cr_lta/pact 102 处引用空白实战）；供主控裁决单独成条或并入 DSColumn悬空数据集引用.md",
+     "lines": 65
+    },
+    {
+     "id": "zsk/xqfx/填报报表设计决策清单",
+     "path": "ckzl/zsk/xqfx/填报报表设计决策清单.md",
+     "title": "填报报表设计决策清单",
+     "summary": "创建填报报表前必须确认的设计决策：主键/提交逻辑/控件顺序/格式化/分页",
+     "lines": 191
+    },
+    {
+     "id": "zsk/xtgt/README",
+     "path": "ckzl/zsk/xtgt/README.md",
+     "title": "AI↔用户ckzl/zsk/xtgt框架",
+     "summary": "AI 与用户的标准化ckzl/zsk/xtgt方式：标注/判断/选择/填空/问答五级沟通效率 + 破坏性操作三步协议 + 证据式沟通",
+     "lines": 379
+    },
+    {
+     "id": "zsk/xtgt/patterns/复杂模板改造协议",
+     "path": "ckzl/zsk/xtgt/patterns/复杂模板改造协议.md",
+     "title": "复杂模板改造协议(标注-确认-删除实战 playbook)",
+     "summary": "五步改造流程:转换清源→三色标注→红标确认→依赖扫描→备份执行,附示例项目 12MB 五sheet实战数据",
+     "lines": 102
+    },
+    {
+     "id": "zsk/xtgt/questionnaires/填报报表需求问卷",
+     "path": "ckzl/zsk/xtgt/questionnaires/填报报表需求问卷.md",
+     "title": "填报报表需求问卷",
+     "summary": "填报报表开发前的标准化需求问卷，确保设计决策不被遗漏",
+     "lines": 131
+    }
+   ]
+  },
+  "temperature_cold": {
+   "key": "temperature_cold",
+   "dim": "temperature",
+   "name": "冷视图",
+   "desc": "低频深水区（fvs/i18n/print/skin/mobile 小众主题、bb 变更与归档声明、fr10_deep_learn 深水页）",
+   "rules_summary": "目录前缀×7",
+   "external": [],
+   "count": 19,
+   "pages": [
+    {
+     "id": "lc/fr10_deep_learn/FineReport企业级应用架构设计模式与最佳实践",
+     "path": "ckzl/lc/fr10_deep_learn/FineReport企业级应用架构设计模式与最佳实践.md",
+     "title": "FineReport 企业级应用架构设计模式与最佳实践",
+     "summary": "1. 从LDAP/AD/HR系统同步用户组织架构2. 字段映射：外部字段 → FR平台字段",
+     "lines": 555
+    },
+    {
+     "id": "lc/fr11_knowledge/fvs-dashboard大屏/FVS图表空数据自定义提示",
+     "path": "ckzl/lc/fr11_knowledge/fvs-dashboard大屏/FVS图表空数据自定义提示.md",
+     "title": "FVS/图表空数据自定义提示（暂无数据文案）",
+     "summary": "图表空数据提示两条正解：全局（设计器菜单>服务器>图表空数据提示，自定义提示图片，作用于所有图表）；单个图表/自定义文字（条件属性控制图表与提示组件显隐 + ROWCOUNT(\"ds1\")==0 判空）。FVS 图表组件设置项与普通报表基本一致，思路同适用；不生效排查走 ckzl/lc/08 §16.6 四步判定序。",
+     "lines": 57
+    },
+    {
+     "id": "lc/fr11_knowledge/fvs-dashboard大屏/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/fvs-dashboard大屏/SKILL.md",
+     "title": "FR11 FVS 可视化看板（大屏）核心结论",
+     "summary": "--- name: fr11-fvs description: FR11 FVS 大屏/可视化看板开发时使用。触发词：FVS、大屏、可视化看板、三维城市、自定义模型、轮播器、分页、组件动画、FVS 插件、大屏接口。 keywords: [三",
+     "lines": 62
+    },
+    {
+     "id": "lc/fr11_knowledge/i18n国际化/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/i18n国际化/SKILL.md",
+     "title": "FR11 国际化（i18n）核心结论",
+     "summary": "--- name: fr11-i18n description: 何时使用：FR11 报表国际化/多语言问题——报表中英文等多语言切换、i18n 键值映射、前端文字国际化、fr_locale 语言参数、平台语言配置、海外场景本地化公式与控件",
+     "lines": 52
+    },
+    {
+     "id": "lc/fr11_knowledge/i18n国际化/references/fr10_i18n_verification_report",
+     "path": "ckzl/lc/fr11_knowledge/i18n国际化/references/fr10_i18n_verification_report.md",
+     "title": "FR11 离线文档 i18n 验证报告",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，共 2289 篇） > 生成时间：2026-08-26 > 验证方法：全量 2289 篇正文扫描关键词 i18n / 国际化 / 多语言",
+     "lines": 59
+    },
+    {
+     "id": "lc/fr11_knowledge/i18n国际化/references/fr11_i18n_api_optimization",
+     "path": "ckzl/lc/fr11_knowledge/i18n国际化/references/fr11_i18n_api_optimization.md",
+     "title": "FR11 i18n 优化建议（基于离线文档实际约束）",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档） > 生成时间：2026-08-26 > 纪律：每条建议均标注依据的文档 ID 与原文约束，不做文档之外的推测。",
+     "lines": 58
+    },
+    {
+     "id": "lc/fr11_knowledge/i18n国际化/references/fr11_java_api_i18n",
+     "path": "ckzl/lc/fr11_knowledge/i18n国际化/references/fr11_java_api_i18n.md",
+     "title": "FR11 Java API 国际化（i18n）接口整理",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 生成时间：2026-08-26 > 文档范围：全量 2289 篇中命中 i18n 关键词（i18n/国际化/多语言/语",
+     "lines": 157
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/SKILL.md",
+     "title": "FR11 移动端 核心结论",
+     "summary": "--- name: fr11-mobile description: FR11 移动端开发/预览问题时使用。触发词：移动端、App、HTML5/H5、微信、钉钉、企业微信、小程序、OEM/Custom App 打包、NFC 读卡、移动端填报",
+     "lines": 49
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/references/01_App客户端",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/references/01_App客户端.md",
+     "title": "FR11 · 移动端 · App 客户端",
+     "summary": "[App] 系列接口与功能、App 打包与证书、iOS/Android 专项条目（55 条 doc-view 条目，ID 563~5025）；mobile_summary.md 拆分页 1/6，条目原样保留。",
+     "lines": 219
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/references/02_微信钉钉集成",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/references/02_微信钉钉集成.md",
+     "title": "FR11 · 移动端 · 微信 / 钉钉 / 小程序集成",
+     "summary": "企业微信、钉钉、微信小程序集成与推送条目（10 条 doc-view 条目，ID 1981~5018）；mobile_summary.md 拆分页 2/6，条目原样保留。",
+     "lines": 63
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/references/03_HTML5与H5",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/references/03_HTML5与H5.md",
+     "title": "FR11 · 移动端 · HTML5 / H5",
+     "summary": "[H5] 系列与 HTML5 端预览、H5 悬浮工具栏等条目（9 条 doc-view 条目，ID 1649~4574）；mobile_summary.md 拆分页 3/6，条目原样保留。",
+     "lines": 55
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/references/04_移动端填报与交互",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/references/04_移动端填报与交互.md",
+     "title": "FR11 · 移动端 · 移动端填报与交互",
+     "summary": "移动端填报、JS 交互、图表控件超链在移动端的适配条目（6 条 doc-view 条目，ID 942~3781）；mobile_summary.md 拆分页 4/6，条目原样保留。",
+     "lines": 52
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/references/05_移动端平台与通用",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/references/05_移动端平台与通用.md",
+     "title": "FR11 · 移动端 · 移动端平台管理与通用方案",
+     "summary": "移动平台管理、设备绑定、单点登录、定时调度到移动端、[通用] 方案条目（36 条 doc-view 条目，ID 549~5043）；mobile_summary.md 拆分页 5/6，条目原样保留。",
+     "lines": 153
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/references/06_综合与其他",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/references/06_综合与其他.md",
+     "title": "FR11 · 移动端 · 综合与其他",
+     "summary": "未归入上述主题的条目（含通用报表制作类文档）（76 条 doc-view 条目，ID 147~5078）；mobile_summary.md 拆分页 6/6，条目原样保留。",
+     "lines": 312
+    },
+    {
+     "id": "lc/fr11_knowledge/mobile移动端/references/README",
+     "path": "ckzl/lc/fr11_knowledge/mobile移动端/references/README.md",
+     "title": "移动端 references 导航",
+     "summary": "mobile移动端/references 目录导航：mobile_summary.md 已按主题拆为 6 页；原文件保留为导航页。SKILL.md 为核心结论入口。",
+     "lines": 32
+    },
+    {
+     "id": "lc/fr11_knowledge/print打印/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/print打印/SKILL.md",
+     "title": "FR11 打印 核心结论",
+     "summary": "--- name: fr11-print description: 何时使用：实现 FR11 报表打印（print）——零客户端/本地/服务器端打印、静默打印、套打、批量或传参打印、水印控制，以及排查打印偏移与打印失败时使用。触发词：打印、",
+     "lines": 45
+    },
+    {
+     "id": "lc/fr11_knowledge/print打印/references/print_summary",
+     "path": "ckzl/lc/fr11_knowledge/print打印/references/print_summary.md",
+     "title": "FR11 知识库 · 打印总结",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：18 篇 > 生成时间：2026-08-26 > 主题范围：打印/分页预览/打印机/纸张/水印",
+     "lines": 125
+    },
+    {
+     "id": "lc/fr11_knowledge/skin-theme主题样式/SKILL",
+     "path": "ckzl/lc/fr11_knowledge/skin-theme主题样式/SKILL.md",
+     "title": "FR11 主题与样式 核心结论",
+     "summary": "--- name: fr11-skin-theme description: FR11 外观样式与主题问题时使用。触发词：主题、皮肤、样式、配色、外观、单元格样式、跟随主题、FVS 模板主题、菜单主题、style 属性、控件风格。 keyw",
+     "lines": 42
+    },
+    {
+     "id": "lc/fr11_knowledge/skin-theme主题样式/references/skin_theme_summary",
+     "path": "ckzl/lc/fr11_knowledge/skin-theme主题样式/references/skin_theme_summary.md",
+     "title": "FR11 知识库 · 主题与样式总结",
+     "summary": "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：58 篇 > 生成时间：2026-08-26 > 主题范围：主题/皮肤/配色/样式/外观",
+     "lines": 309
+    }
+   ]
+  },
+  "practice_flow_f": {
+   "key": "practice_flow_f",
+   "dim": "practice",
+   "name": "流程F实战",
+   "desc": "2026-09-29 Excel 骨架正向工艺实战链（示例数据→xlsx 骨架→cpt→数据集→图表）",
+   "rules_summary": "显式路径×4",
+   "external": [
+    "kfgj/excelgy/ 三件套: gen_skeleton.py（示例数据→xlsx 表样骨架）/ excel2cpt.js（无头转 cpt，Excel2007ReportImporter 52ms 实证）/ extract_charts.py（图表管线 1280x768 抽取）",
+    "kfgj/excelgy/README.md 为三件套用法说明；JavaAPI构建速查 内查 Excel2007ReportImporter 段",
+    "lc/10 铁律节: openpyxl 合并区域必须「先 merge 后样式」（--page lc/10_Excel骨架正向工艺 看 L77 章节）"
+   ],
+   "count": 4,
+   "pages": [
+    {
+     "id": "frapi/doc/JavaAPI构建速查",
+     "path": "ckzl/frapi/doc/JavaAPI构建速查.md",
+     "title": "Java API 构建速查",
+     "summary": "FR Java API 构建要点速查:类名 com.fr.* / 方法签名 / 与 .cpt/.frm XML 的对应关系,按 doc 分节",
+     "lines": 880
+    },
+    {
+     "id": "hbfa/README",
+     "path": "ckzl/hbfa/README.md",
+     "title": "ckzl/hbfa(报表骨架库)",
+     "summary": "60套可视化报表骨架(cpt20+frm自适应20+frm绝对20)+配置JSON:agent开发可视化报表/图表/驾驶舱时从此选骨架,标题用表格/标题栏承载(非图表自身标题)",
+     "lines": 158
+    },
+    {
+     "id": "lc/10_Excel骨架正向工艺",
+     "path": "ckzl/lc/10_Excel骨架正向工艺.md",
+     "title": "流程F: Excel骨架正向工艺(示例数据→xlsx→cpt→数据集→图表)",
+     "summary": "示例数据+业务需求→Excel表样骨架(gen_skeleton)→无头转cpt(Excel2007ReportImporter,52ms实证)→SQL/参数(NODE-02/03)→数据集替换示例行;图表管线1280×768抽取(extract_charts)→hbfa容器JSON→cpt CC/frm网页框。含openpyxl合并区『先merge后样式』铁律与importer选型表(全反射+反编译实证2026-09-29)",
+     "lines": 128
+    },
+    {
+     "id": "zsk/xtgt/patterns/复杂模板改造协议",
+     "path": "ckzl/zsk/xtgt/patterns/复杂模板改造协议.md",
+     "title": "复杂模板改造协议(标注-确认-删除实战 playbook)",
+     "summary": "五步改造流程:转换清源→三色标注→红标确认→依赖扫描→备份执行,附示例项目 12MB 五sheet实战数据",
+     "lines": 102
+    }
+   ]
+  },
+  "practice_hfm_v2": {
+   "key": "practice_hfm_v2",
+   "dim": "practice",
+   "name": "HFM V2 改造实战",
+   "desc": "HFM V2 填报改造链：填报模块→填报交互与校验→填报类错误→验收",
+   "rules_summary": "显式路径×13",
+   "external": [],
+   "count": 13,
+   "pages": [
+    {
+     "id": "gzjd/05_填报模块",
+     "path": "ckzl/gzjd/05_填报模块.md",
+     "title": "填报模块",
+     "summary": "填报控件、提交配置、校验、导入、去重",
+     "lines": 96
+    },
+    {
+     "id": "lc/01_填报提交",
+     "path": "ckzl/lc/01_填报提交.md",
+     "title": "Stage 5 · 填报提交",
+     "summary": "填报提交配置：Insert/Delete/IntelliDML、delete_flag 先删后插、审计字段、智能提交",
+     "lines": 166
+    },
+    {
+     "id": "lc/02_JS交互与回调",
+     "path": "ckzl/lc/02_JS交互与回调.md",
+     "title": "Stage 5 · JS 交互回调与单元格控件联动",
+     "summary": "JS 回调 / 提交后事件 / callback 回调函数、填报单元格控件联动与自动默认值、自定义提交按钮",
+     "lines": 354
+    },
+    {
+     "id": "lc/03_预览_图表联动_移动端上报",
+     "path": "ckzl/lc/03_预览_图表联动_移动端上报.md",
+     "title": "Stage 5 · 预览模式 / 图表联动 / 移动端填报 / 多级上报",
+     "summary": "op 预览参数、图表联动交互（超链传参+自动刷新）、移动端填报入口、多级上报工作流",
+     "lines": 153
+    },
+    {
+     "id": "lc/04_填报页面设置与数据校验",
+     "path": "ckzl/lc/04_填报页面设置与数据校验.md",
+     "title": "Stage 5 · 填报页面设置与数据校验",
+     "summary": "填报页面单独设置（禁用工具栏）、强制数据校验（校验不通过不允许提交）、填报选型前置检查",
+     "lines": 249
+    },
+    {
+     "id": "lc/05_填报与交互",
+     "path": "ckzl/lc/05_填报与交互.md",
+     "title": "Stage 5: 填报与交互（导航）",
+     "summary": "导航页：原单文件已按既有章节边界拆分为 5 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。",
+     "lines": 52
+    },
+    {
+     "id": "lc/05_复选批量_Excel导入_暂存",
+     "path": "ckzl/lc/05_复选批量_Excel导入_暂存.md",
+     "title": "Stage 5 · 复选批量 / Excel 导入 / 暂存",
+     "summary": "复选框全选与批量操作、Excel 标记导入插件、显示值转换（形态数据字典）、填报暂存（自动/手动/清空）",
+     "lines": 87
+    },
+    {
+     "id": "zsk/csff/README",
+     "path": "ckzl/zsk/csff/README.md",
+     "title": "ckzl/zsk/csff",
+     "summary": "FR 模板开发全流程测试与验证方法：交付前必查清单、浏览器预览流程、填报/导入功能测试",
+     "lines": 64
+    },
+    {
+     "id": "zsk/csff/模板验证清单",
+     "path": "ckzl/zsk/csff/模板验证清单.md",
+     "title": "模板验证清单",
+     "summary": "FR 模板交付前的标准化验证清单，覆盖 XML/结构/功能/样式四层检查",
+     "lines": 81
+    },
+    {
+     "id": "zsk/tbcw/README",
+     "path": "ckzl/zsk/tbcw/README.md",
+     "title": "ckzl/zsk/tbcw — 错误案例索引",
+     "summary": "填报开发错误案例索引表：现象→原因→解法，排错时先查此表再搜全库；2026-09-04 夜间批新增静默类专节（历史脚本教训 30 条，其中静默 14 条：XML/SQL 合法≠功能正确）；2026-09-15 夜间批次 批新增误报类专节（fr_check doc-299/template_param 误报面已修复 + 残留真实缺陷判读法）",
+     "lines": 199
+    },
+    {
+     "id": "zsk/tbcw/事件环递归-Maximum call stack size exceeded",
+     "path": "ckzl/zsk/tbcw/事件环递归-Maximum call stack size exceeded.md",
+     "title": "事件环递归致Maximum call stack size exceeded分析",
+     "summary": "FR 的 widget.setValue() 会触发目标控件自身的编辑后(afteredit)事件；多控件互清构成环(para_legal↔para_bu↔para_region)时链式点火直至爆栈 RangeError: Maximum call stack size exceeded；node --check 只查语法、fr_check 无事件调用图规则，两道校验都检不出；含堆栈帧特征、静态调用图环检测工具(check_cpt_events.py)、'先判值再清'护栏样板与 fr_check 待补规则建议(2026-09-06 示例实际表/预算 实战)",
+     "lines": 140
+    },
+    {
+     "id": "zsk/tbcw/填报报表开发错误分析",
+     "path": "ckzl/zsk/tbcw/填报报表开发错误分析.md",
+     "title": "填报报表开发错误分析",
+     "summary": "典型填报开发错误：ORDER BY 出现在 ${if()} 前的 SQL 语法错误、数据集参数过滤引用不存在字段（埋雷）等",
+     "lines": 154
+    },
+    {
+     "id": "zsk/xqfx/填报报表设计决策清单",
+     "path": "ckzl/zsk/xqfx/填报报表设计决策清单.md",
+     "title": "填报报表设计决策清单",
+     "summary": "创建填报报表前必须确认的设计决策：主键/提交逻辑/控件顺序/格式化/分页",
+     "lines": 191
+    }
+   ]
+  },
+  "practice_glm_excel": {
+   "key": "practice_glm_excel",
+   "dim": "practice",
+   "name": "GLM-in-Excel 逆向借鉴",
+   "desc": "pending_write_token 两阶段写入 / 公式风险预检的设计理念借鉴页",
+   "rules_summary": "显式路径×2",
+   "external": [
+    "设计理念: pending_write_token 两阶段写入（先占位后提交）+ 公式风险预检（写前校验公式合法性，失败走降级路径）",
+    "lc/10 铁律节: openpyxl 合并区域「先 merge 后样式」（--page lc/10_Excel骨架正向工艺 看 L77 章节）",
+    "零件: python ckzl/zsk/gczsk/query_kb.py part P-9835（ExcelReportImporter）/ part P-9836（ExcelReportImporterFactory）"
+   ],
+   "count": 2,
+   "pages": [
+    {
+     "id": "lc/10_Excel骨架正向工艺",
+     "path": "ckzl/lc/10_Excel骨架正向工艺.md",
+     "title": "流程F: Excel骨架正向工艺(示例数据→xlsx→cpt→数据集→图表)",
+     "summary": "示例数据+业务需求→Excel表样骨架(gen_skeleton)→无头转cpt(Excel2007ReportImporter,52ms实证)→SQL/参数(NODE-02/03)→数据集替换示例行;图表管线1280×768抽取(extract_charts)→hbfa容器JSON→cpt CC/frm网页框。含openpyxl合并区『先merge后样式』铁律与importer选型表(全反射+反编译实证2026-09-29)",
+     "lines": 128
+    },
+    {
+     "id": "zsk/gczsk/README",
+     "path": "ckzl/zsk/gczsk/README.md",
+     "title": "ckzl/zsk/gczsk（SQLite）— 人机料法环5M1E 零件表/BOM表/工艺表",
+     "summary": "人机料法环(5M1E)ckzl/zsk/gczsk:personnel人(2)/materials料(43)/machines机(52)/environments环(11)/parts零件(14588)/bom关系(3589)/routing工艺(13条路线75道工序已机械化26道)。查询用 query_kb.py",
+     "lines": 130
+    }
+   ]
+  }
+ }
+}

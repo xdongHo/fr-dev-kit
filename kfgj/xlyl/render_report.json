@@ -1,0 +1,326 @@
+{
+  "target": "C:\\Program Files\\FineReport_10.0\\webapps\\webroot\\WEB-INF\\reportlets\\test2026年9月29日\\HFM统计驾驶舱.cpt",
+  "backend": "injected",
+  "ts": "2026-09-29T16:37:24",
+  "total": 1,
+  "pass": 0,
+  "warn": 1,
+  "fail": 0,
+  "env": 0,
+  "entries": [
+    {
+      "file": "..\\..\\..\\..\\Program Files\\FineReport_10.0\\webapps\\webroot\\WEB-INF\\reportlets\\test2026年9月29日\\HFM统计驾驶舱.cpt",
+      "backend": "injected",
+      "manifest": {
+        "file": "HFM统计驾驶舱.cpt",
+        "root_tag": "WorkBook",
+        "kind": "cpt",
+        "sheet_names": [
+          "六宫格(底行加高)"
+        ],
+        "datasets": [
+          {
+            "name": "ds_c0",
+            "class": "com.fr.data.impl.DBTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "ds_c1",
+            "class": "com.fr.data.impl.DBTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "ds_c2",
+            "class": "com.fr.data.impl.DBTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "ds_c3",
+            "class": "com.fr.data.impl.DBTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "ds_c4",
+            "class": "com.fr.data.impl.DBTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "ds_c5",
+            "class": "com.fr.data.impl.DBTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "ds_year",
+            "class": "com.fr.data.impl.DBTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "ds_period",
+            "class": "com.fr.data.impl.DBTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          },
+          {
+            "name": "",
+            "class": "com.fr.data.impl.NameTableData",
+            "embedded": false,
+            "embedded_payload_bytes": 0
+          }
+        ],
+        "grid": {
+          "cell_count": 12,
+          "max_col": 120,
+          "max_row": 60,
+          "static_texts": [
+            {
+              "cell": "0,0",
+              "text": "核心财务 KPI（YTD：本年 vs 上年同期）"
+            },
+            {
+              "cell": "60,0",
+              "text": "工时 KPI（YTD：本年 vs 上年同期）"
+            },
+            {
+              "cell": "0,15",
+              "text": "EBITMI 月度 YTD 趋势"
+            },
+            {
+              "cell": "60,15",
+              "text": "CAPEX 构成（YTD）"
+            },
+            {
+              "cell": "0,30",
+              "text": "科目金额 Top10（Base 行）"
+            },
+            {
+              "cell": "60,30",
+              "text": "实体金额 Top10（Base 行）"
+            }
+          ]
+        },
+        "charts": {
+          "charts": [
+            {
+              "container": "Chart",
+              "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+              "name": "默认"
+            },
+            {
+              "container": "Chart",
+              "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+              "name": null
+            },
+            {
+              "container": "Chart",
+              "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+              "name": "默认"
+            },
+            {
+              "container": "Chart",
+              "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+              "name": null
+            },
+            {
+              "container": "Chart",
+              "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+              "name": "默认"
+            },
+            {
+              "container": "Chart",
+              "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+              "name": null
+            },
+            {
+              "container": "Chart",
+              "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+              "name": "默认"
+            },
+            {
+              "container": "Chart",
+              "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+              "name": null
+            },
+            {
+              "container": "Chart",
+              "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+              "name": "默认"
+            },
+            {
+              "container": "Chart",
+              "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+              "name": null
+            },
+            {
+              "container": "Chart",
+              "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+              "name": "默认"
+            },
+            {
+              "container": "Chart",
+              "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+              "name": null
+            }
+          ],
+          "chart_total": 12,
+          "frm_chart_editors": 0
+        },
+        "params": {
+          "parameter_ui": true,
+          "parameters": []
+        }
+      },
+      "render_ms": 7797,
+      "assert_mode": "json",
+      "render": {
+        "ok": true,
+        "product": "kfgj\\xlyl\\out\\HFM统计驾驶舱.json"
+      },
+      "asserts": {
+        "pass": [
+          "J1 非空渲染: 1 sheet / 12 cell",
+          "J2 静态文本命中: 核心财务 KPI（YTD：本年  @渲染(0,0)",
+          "J2 静态文本命中: 工时 KPI（YTD：本年 vs @渲染(60,0)",
+          "J2 静态文本命中: EBITMI 月度 YTD 趋势 @渲染(0,15)",
+          "J2 静态文本命中: CAPEX 构成（YTD） @渲染(60,15)",
+          "J2 静态文本命中: 科目金额 Top10（Base  @渲染(0,30)",
+          "J2 静态文本命中: 实体金额 Top10（Base  @渲染(60,30)",
+          "J3 图表已渲染: 6 格(声明 12)",
+          "J4 非空格 12"
+        ],
+        "warn": [
+          "J5 渲染器 sheet 名降级(['sheet0']),无法精确比对声明 ['六宫格(底行加高)']",
+          "PERF execMs=5477ms 超阈值 5000ms(慢模板候选)"
+        ],
+        "fail": []
+      },
+      "status": "WARN",
+      "timing": {
+        "loadMs": 32,
+        "execMs": 5477,
+        "extractMs": 82,
+        "totalMs": 5591
+      }
+    }
+  ]
+}

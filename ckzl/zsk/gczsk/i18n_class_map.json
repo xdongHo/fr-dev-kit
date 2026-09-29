@@ -1,0 +1,3590 @@
+{
+ "com.fr.report.web.button.write.Submit": [
+  {
+   "key": "FIne-Design_Basic_Submit",
+   "zh": "提交"
+  },
+  {
+   "key": "Fine-Design_Basic_Button_Type_Parameter_Submit",
+   "zh": "参数提交按钮"
+  },
+  {
+   "key": "Fine-Design_Basic_CommitTab_Submit",
+   "zh": "提交"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_After_Submit",
+   "zh": "提交后"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_Before_Submit",
+   "zh": "提交前"
+  },
+  {
+   "key": "Fine-Design_Basic_JavaScript_Form_Submit",
+   "zh": "表单提交"
+  },
+  {
+   "key": "Fine-Design_Basic_Write_Delete_Submit",
+   "zh": "删除提交"
+  },
+  {
+   "key": "Fine-Design_Basic_Write_Insert_Submit",
+   "zh": "插入提交"
+  },
+  {
+   "key": "Fine-Design_Basic_Write_Smart_Submit",
+   "zh": "智能提交"
+  },
+  {
+   "key": "Fine-Design_Basic_Write_Update_Submit",
+   "zh": "更新提交"
+  },
+  {
+   "key": "Fine-Design_Prompt_When_Leave_Without_Submit",
+   "zh": "数据未提交离开提示"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_Utils_Submit",
+   "zh": "提交"
+  },
+  {
+   "key": "Fine-Design_Report_JavaScript_Custom_Submit",
+   "zh": "自定义提交"
+  },
+  {
+   "key": "Fine-Design_Report_JavaScript_Form_Submit",
+   "zh": "表单提交"
+  },
+  {
+   "key": "Fine-Design_Report_Utils_Submit",
+   "zh": "提交"
+  },
+  {
+   "key": "Fine-Design_Report_Verify_Fail_Still_Submit",
+   "zh": "校验失败仍然提交"
+  }
+ ],
+ "com.fr.design.designer.beans.location.Right": [
+  {
+   "key": "FIne-Design_Report_Utils_Left_To_Right",
+   "zh": "横向"
+  },
+  {
+   "key": "Fine-Design_Basic_Right",
+   "zh": "右"
+  },
+  {
+   "key": "Fine-Design_Basic_StyleAlignment_Right",
+   "zh": "靠右"
+  },
+  {
+   "key": "Fine-Design_Basic_Style_Alignment_Left_To_Right",
+   "zh": "从左向右"
+  },
+  {
+   "key": "Fine-Design_Basic_Style_Alignment_Tooltips_Right",
+   "zh": "靠右"
+  },
+  {
+   "key": "Fine-Design_Basic_Style_Indent_Right",
+   "zh": "右缩进（PT）"
+  },
+  {
+   "key": "Fine-Design_Chart_At_The_Right",
+   "zh": "居右"
+  },
+  {
+   "key": "Fine-Design_Form_Base_Right",
+   "zh": "右"
+  },
+  {
+   "key": "Fine-Design_Form_Right",
+   "zh": "右"
+  },
+  {
+   "key": "Fine-Design_Form_StyleAlignment_Right",
+   "zh": "靠右"
+  },
+  {
+   "key": "Fine-Design_Mobile_Collapse_Show_Button_On_Right",
+   "zh": "在标题右侧显示按钮"
+  },
+  {
+   "key": "Fine-Design_Report_HF_Move_Right",
+   "zh": "右移"
+  },
+  {
+   "key": "Fine-Design_Report_PageSetup_Left_To_Right",
+   "zh": "先行后列"
+  },
+  {
+   "key": "Fine-Design_Report_Slope_Line_Lower_Left_To_Upper_Right",
+   "zh": "从左下到右上发散"
+  },
+  {
+   "key": "Fine-Design_Report_Slope_Line_Upper_Left_To_Lower_Right",
+   "zh": "从左上到右下发散"
+  },
+  {
+   "key": "Fine-Design_Chart_Alert_Right",
+   "zh": "居右"
+  },
+  {
+   "key": "Fine-Design_Chart_Align_Right",
+   "zh": "居右"
+  },
+  {
+   "key": "Fine-Design_Chart_Layout_Right",
+   "zh": "右侧"
+  },
+  {
+   "key": "Fine-Design_Chart_Style_Alignment_Right",
+   "zh": "靠右"
+  },
+  {
+   "key": "Fine-Design_Report_Utils_Left_To_Right",
+   "zh": "横向"
+  }
+ ],
+ "com.fr.design.designer.beans.location.Add": [
+  {
+   "key": "Fine-Design_Basic_Action_Add",
+   "zh": "增加"
+  },
+  {
+   "key": "Fine-Design_Basic_Add",
+   "zh": "增加"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_Node_Add",
+   "zh": "节点生成"
+  },
+  {
+   "key": "Fine-Design_Share_Add",
+   "zh": "添加组件"
+  },
+  {
+   "key": "Fine-Design_Share_Group_Add",
+   "zh": "添加分组"
+  },
+  {
+   "key": "Fine-Design_Chart_Add",
+   "zh": "添加"
+  }
+ ],
+ "com.fr.base.Key": [
+  {
+   "key": "Fine-Design_Basic_Activation_Key",
+   "zh": "设计器编号："
+  },
+  {
+   "key": "Fine-Design_Basic_Base_RWA_Key",
+   "zh": "主键"
+  },
+  {
+   "key": "Fine-Design_Basic_Copy_Activation_Key",
+   "zh": "双击设计器编号可复制到剪贴板"
+  },
+  {
+   "key": "Fine-Design_Basic_Key",
+   "zh": "键"
+  },
+  {
+   "key": "Fine-Design_Basic_Remote_Env_Https_Secret_Key",
+   "zh": "https秘钥:"
+  },
+  {
+   "key": "Fine-Design_Report_Confusion_Key",
+   "zh": "混淆关键字"
+  },
+  {
+   "key": "Fine-Design_Report_Exchange_Key",
+   "zh": "点击互换快捷键"
+  },
+  {
+   "key": "Fine-Design_Chart_Waring_Input_Key",
+   "zh": "请输入对应地图使用的key"
+  }
+ ],
+ "com.fr.stable.fun.Service": [
+  {
+   "key": "Fine-Design_Basic_AlphaFine_Intelligent_Customer_Service",
+   "zh": "智能客服"
+  }
+ ],
+ "com.fr.general.Background": [
+  {
+   "key": "Fine-Design_Basic_Background",
+   "zh": "背景"
+  },
+  {
+   "key": "Fine-Design_Basic_Utils_Background",
+   "zh": "背景"
+  },
+  {
+   "key": "Fine-Design_Form_Output_Default_Background",
+   "zh": "默认背景"
+  },
+  {
+   "key": "Fine-Design_Form_Widget-Style_Body_Background",
+   "zh": "主体背景"
+  },
+  {
+   "key": "Fine-Design_Form_Widget_Style_Title_Background",
+   "zh": "标题填充"
+  },
+  {
+   "key": "Fine-Design_Mobile_Tab_Button_Background",
+   "zh": "按钮背景"
+  },
+  {
+   "key": "Fine-Design_Mobile_Widget_Background",
+   "zh": "组件背景"
+  },
+  {
+   "key": "Fine-Design_Predefined_Template_Background",
+   "zh": "模板背景"
+  },
+  {
+   "key": "Fine-Design_Report_Background",
+   "zh": "纸张背景"
+  },
+  {
+   "key": "Fine-Design_Report_Base_Background",
+   "zh": "背景"
+  },
+  {
+   "key": "Fine-Design_Report_Browser_Background",
+   "zh": "浏览器背景"
+  },
+  {
+   "key": "Fine-Design_Report_CellWrite_Print_Background",
+   "zh": "打印/导出单元格背景"
+  },
+  {
+   "key": "Fine-Design_Report_Default_Background",
+   "zh": "默认背景"
+  },
+  {
+   "key": "Fine-Design_Report_Export_Background",
+   "zh": "导出报表背景"
+  },
+  {
+   "key": "Fine-Design_Report_Print_Background",
+   "zh": "打印报表背景"
+  },
+  {
+   "key": "Fine-Design_Report_ReportGUI_Print_Background",
+   "zh": "打印/导出报表背景"
+  },
+  {
+   "key": "Fine-Design_Report_Set_Background",
+   "zh": "背景设置"
+  },
+  {
+   "key": "Fine-Design_Report_Set_Face_Write_Current_Edit_Row_Background",
+   "zh": "当前编辑行背景设置"
+  },
+  {
+   "key": "Fine-Design_Chart_Background",
+   "zh": "背景"
+  },
+  {
+   "key": "Fine-Design_Chart_Color_Background",
+   "zh": "背景颜色"
+  },
+  {
+   "key": "Fine-Design_Chart_Custom_Interval_Background",
+   "zh": "自定义间隔"
+  },
+  {
+   "key": "Fine-Design_Chart_Hinge_Background",
+   "zh": "枢纽背景"
+  },
+  {
+   "key": "Fine-Design_Chart_Inner_Pane_Background",
+   "zh": "内底盘背景"
+  },
+  {
+   "key": "Fine-Design_Chart_Interval_Background",
+   "zh": "间隔背景"
+  },
+  {
+   "key": "Fine-Design_Chart_Pane_Background",
+   "zh": "底盘背景"
+  },
+  {
+   "key": "Fine-Design_Chart_Slot_Background",
+   "zh": "刻度槽"
+  }
+ ],
+ "com.fr.report.web.button.write.Clear": [
+  {
+   "key": "Fine-Design_Basic_Background_Clear",
+   "zh": "清除"
+  },
+  {
+   "key": "Fine-Design_Basic_Clear",
+   "zh": "清除"
+  },
+  {
+   "key": "Fine-Design_Report_Double_Click_Edit_OR_Clear",
+   "zh": "双击进行编辑或清除"
+  },
+  {
+   "key": "Fine-Design_Report_Engine-Write_Clear",
+   "zh": "清空"
+  },
+  {
+   "key": "Fine-Design_Report_M_Edit_Clear",
+   "zh": "清除(A)"
+  }
+ ],
+ "com.fr.report.web.button.Image": [
+  {
+   "key": "Fine-Design_Basic_Background_Image",
+   "zh": "图片"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_After_To_Image",
+   "zh": "导出图片后"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_Before_To_Image",
+   "zh": "导出图片前"
+  },
+  {
+   "key": "Fine-Design_Basic_Export_JS_Image",
+   "zh": "图片"
+  },
+  {
+   "key": "Fine-Design_Basic_Image",
+   "zh": "图片"
+  },
+  {
+   "key": "Fine-Design_Form_Widget_Style_Border_Image",
+   "zh": "自定义图片"
+  },
+  {
+   "key": "Fine-Design_Report_CellWrite_Show_As_Image",
+   "zh": "用图片显示内容"
+  },
+  {
+   "key": "Fine-Design_Report_Image",
+   "zh": "图片"
+  },
+  {
+   "key": "Fine-Design_Report_Insert_Image",
+   "zh": "插入图片"
+  },
+  {
+   "key": "Fine-Design_Report_M_Insert_Image",
+   "zh": "插入图片"
+  },
+  {
+   "key": "Fine-Design_Chart_Export_Image",
+   "zh": "导出图片"
+  },
+  {
+   "key": "Fine-Design_Chart_Filled_With_Image",
+   "zh": "图片填充"
+  }
+ ],
+ "com.fr.design.designer.properties.items.Item": [
+  {
+   "key": "Fine-Design_Basic_Base_sure_remove_item",
+   "zh": "你确实决定删除选中的项"
+  },
+  {
+   "key": "Fine-Design_Basic_Utils_Are_You_Sure_To_Remove_The_Selected_Item",
+   "zh": "你确实决定删除选中的项"
+  },
+  {
+   "key": "Fine-Design_Form_Remove_Item",
+   "zh": "删除选中"
+  },
+  {
+   "key": "Fine-Design_Report_AlphaFine_Relation_Item",
+   "zh": "相关问题"
+  },
+  {
+   "key": "Fine-Design_Report_Alpha_Hot_No_Item",
+   "zh": "该栏目下暂无热点问题"
+  }
+ ],
+ "com.fr.base.Icon": [
+  {
+   "key": "Fine-Design_Basic_Button_Icon",
+   "zh": "按钮图标"
+  },
+  {
+   "key": "Fine-Design_Basic_Style_Add_Icon",
+   "zh": "添加图标"
+  },
+  {
+   "key": "Fine-Design_Form_Icon",
+   "zh": "图标"
+  },
+  {
+   "key": "Fine-Design_Form_Widget_Icon",
+   "zh": "控件图标"
+  },
+  {
+   "key": "Fine-Design_Mobile_Initial_Icon",
+   "zh": "初始图标"
+  },
+  {
+   "key": "Fine-Design_Mobile_Select_Icon",
+   "zh": "选中图标"
+  },
+  {
+   "key": "Fine-Design_Report_Icon",
+   "zh": "图标"
+  },
+  {
+   "key": "Fine-Design_Report_Show_Icon",
+   "zh": "显示按钮图标"
+  },
+  {
+   "key": "Fine-Design_Report_Widget_Icon",
+   "zh": "控件图标"
+  }
+ ],
+ "com.fr.base.Style": [
+  {
+   "key": "Fine-Design_Basic_Button_Style",
+   "zh": "按钮样式"
+  },
+  {
+   "key": "Fine-Design_Basic_FR_Font_Style",
+   "zh": "字形"
+  },
+  {
+   "key": "Fine-Design_Basic_M_Format_Style",
+   "zh": "样式"
+  },
+  {
+   "key": "Fine-Design_Basic_Predefined_Applicate_Style",
+   "zh": "应用样式"
+  },
+  {
+   "key": "Fine-Design_Basic_Style",
+   "zh": "样式"
+  },
+  {
+   "key": "Fine-Design_Basic_StyleAlignment_Text_Style",
+   "zh": "文本控制"
+  },
+  {
+   "key": "Fine-Design_Basic_Style_Alignment_Text_Style",
+   "zh": "文本控制"
+  },
+  {
+   "key": "Fine-Design_Basic_Submit_Style",
+   "zh": "提交方式"
+  },
+  {
+   "key": "Fine-Design_Chart_Alignment_Style",
+   "zh": "对齐方式"
+  },
+  {
+   "key": "Fine-Design_Chart_Bar_Style",
+   "zh": "条形"
+  },
+  {
+   "key": "Fine-Design_Chart_Border_Line_Style",
+   "zh": "边框线型"
+  },
+  {
+   "key": "Fine-Design_Chart_Content_Style",
+   "zh": "内容样式"
+  },
+  {
+   "key": "Fine-Design_Chart_Line_Style",
+   "zh": "线型"
+  },
+  {
+   "key": "Fine-Design_Chart_Set_Title_Style",
+   "zh": "设置标题样式"
+  },
+  {
+   "key": "Fine-Design_Chart_Style",
+   "zh": "风格"
+  },
+  {
+   "key": "Fine-Design_Chart_Widget_Style",
+   "zh": "样式"
+  },
+  {
+   "key": "Fine-Design_Form_FRFont_Line_Style",
+   "zh": "线型"
+  },
+  {
+   "key": "Fine-Design_Form_Layout_Style",
+   "zh": "布局样式"
+  },
+  {
+   "key": "Fine-Design_Form_Style",
+   "zh": "样式"
+  },
+  {
+   "key": "Fine-Design_Form_Title_Style",
+   "zh": "标题样式"
+  },
+  {
+   "key": "Fine-Design_Form_Widget-Style_Background_Style",
+   "zh": "背景样式"
+  },
+  {
+   "key": "Fine-Design_Form_Widget_Style",
+   "zh": "样式"
+  },
+  {
+   "key": "Fine-Design_Form_Widget_Style_Frame_Style",
+   "zh": "背景样式"
+  },
+  {
+   "key": "Fine-Design_Form_Widget_Style_Render_Style",
+   "zh": "渲染风格"
+  },
+  {
+   "key": "Fine-Design_Mobile_BookMark_Style",
+   "zh": "导航样式"
+  },
+  {
+   "key": "Fine-Design_Mobile_BookMark_Style_Sidebar_Button_Style",
+   "zh": "按钮导航样式"
+  },
+  {
+   "key": "Fine-Design_Mobile_BookMark_Style_Sidebar_Normal_Style",
+   "zh": "默认样式"
+  },
+  {
+   "key": "Fine-Design_Mobile_BookMark_Style_Sidebar_Selected_Style",
+   "zh": "选中样式"
+  },
+  {
+   "key": "Fine-Design_Mobile_None_BookMark_Style",
+   "zh": "无"
+  },
+  {
+   "key": "Fine-Design_Mobile_Param_Style",
+   "zh": "样式模板"
+  },
+  {
+   "key": "Fine-Design_Mobile_Tab_Style",
+   "zh": "tab样式"
+  },
+  {
+   "key": "Fine-Design_Predefined_Cell_New_Style",
+   "zh": "新样式"
+  },
+  {
+   "key": "Fine-Design_Predefined_Cell_Style",
+   "zh": "单元格样式"
+  },
+  {
+   "key": "Fine-Design_Predefined_Chart_Style",
+   "zh": "图表样式"
+  },
+  {
+   "key": "Fine-Design_Predefined_Component_Style",
+   "zh": "组件样式"
+  },
+  {
+   "key": "Fine-Design_Predefined_Create_Parttern_Style",
+   "zh": "创建"
+  },
+  {
+   "key": "Fine-Design_Predefined_Server_Style",
+   "zh": "服务器预定义样式"
+  },
+  {
+   "key": "Fine-Design_Predefined_Template_Style",
+   "zh": "模板预定义样式"
+  },
+  {
+   "key": "Fine-Design_Report_Column_Style",
+   "zh": "分栏样式"
+  },
+  {
+   "key": "Fine-Design_Report_Custom_Style",
+   "zh": "自定义样式"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_Style",
+   "zh": "样式"
+  },
+  {
+   "key": "Fine-Design_Report_Input_The_Name_Of_Gloabel_Style",
+   "zh": "输入所保存的全局格式名称"
+  },
+  {
+   "key": "Fine-Design_Report_Predefined_Style",
+   "zh": "预定义样式"
+  },
+  {
+   "key": "Fine-Design_Report_Properties_Mobile_To_Get_More_Style",
+   "zh": "以获得更多样式"
+  },
+  {
+   "key": "Fine-Design_Report_Save_As_Global_Style",
+   "zh": "保存为全局格式"
+  },
+  {
+   "key": "Fine-Design_Share_Filter_Style",
+   "zh": "风格"
+  },
+  {
+   "key": "Fine-Design_Share_Local_Filter_Dark_Style",
+   "zh": "深色"
+  },
+  {
+   "key": "Fine-Design_Share_Local_Filter_Light_Style",
+   "zh": "浅色"
+  },
+  {
+   "key": "Fine-Design_Share_Local_Filter_Item_Other_Style",
+   "zh": "其他风格"
+  },
+  {
+   "key": "Fine-Design_Chart_Arrow_Style",
+   "zh": "轮播箭头"
+  },
+  {
+   "key": "Fine-Design_Chart_Axis_Line_Style",
+   "zh": "轴线样式"
+  },
+  {
+   "key": "Fine-Design_Chart_Axis_Style",
+   "zh": "轴样式"
+  },
+  {
+   "key": "Fine-Design_Chart_Button_Style",
+   "zh": "按钮"
+  },
+  {
+   "key": "Fine-Design_Chart_Carousel_Style",
+   "zh": "轮播"
+  },
+  {
+   "key": "Fine-Design_Chart_Change_Style",
+   "zh": "切换方式"
+  },
+  {
+   "key": "Fine-Design_Chart_Choose_Style",
+   "zh": "样式选择"
+  },
+  {
+   "key": "Fine-Design_Chart_Color_Style",
+   "zh": "配色风格"
+  },
+  {
+   "key": "Fine-Design_Chart_Gradient_Style",
+   "zh": "渐变风格"
+  },
+  {
+   "key": "Fine-Design_Chart_Point_Style",
+   "zh": "点样式"
+  },
+  {
+   "key": "Fine-Design_Chart_Polyline_Style",
+   "zh": "折线样式"
+  },
+  {
+   "key": "Fine-Design_Chart_Trend_Line_Style",
+   "zh": "趋势线型"
+  }
+ ],
+ "com.fr.report.cell.Cell": [
+  {
+   "key": "Fine-Design_Basic_Cell",
+   "zh": "单元格"
+  },
+  {
+   "key": "Fine-Design_Basic_Hyperlink_Chart_Cell",
+   "zh": "图表超链-联动单元格"
+  },
+  {
+   "key": "Fine-Design_Basic_M_Edit_Merge_Cell",
+   "zh": "合并单元格"
+  },
+  {
+   "key": "Fine-Design_Basic_M_Edit_Unmerge_Cell",
+   "zh": "取消合并单元格"
+  },
+  {
+   "key": "Fine-Design_Basic_M_Insert_Cell",
+   "zh": "单元格元素"
+  },
+  {
+   "key": "Fine-Design_Chart_Cell",
+   "zh": "图表超链-联动单元格"
+  },
+  {
+   "key": "Fine-Design_Report_Des_Merger_Cell",
+   "zh": "选择的区域包含多个数据，合并单元格后将只保留编辑过的所有单元格中最左上角的数值."
+  },
+  {
+   "key": "Fine-Design_Report_ExpandD_Up_Father_Cell",
+   "zh": "上父格"
+  },
+  {
+   "key": "Fine-Design_Report_Specify_Cell",
+   "zh": "指定单元格"
+  },
+  {
+   "key": "Fine-Design_Report_Utils_Current_Cell",
+   "zh": "当前格子"
+  },
+  {
+   "key": "Fine-Design_Report_Utils_Merge_Cell",
+   "zh": "合并单元格"
+  },
+  {
+   "key": "Fine-Design_Chart_Hyper_Related_Cell",
+   "zh": "联动单元格"
+  },
+  {
+   "key": "Fine-Design_Chart_Link_Cell",
+   "zh": "图表超链-联动单元格"
+  },
+  {
+   "key": "Fine-Design_Chart_Not_Support_Img_And_Cell",
+   "zh": "不支持图片形式和单元格数据源"
+  }
+ ],
+ "com.fr.report.cell.CellElement": [
+  {
+   "key": "Fine-Design_Basic_Cell_Element",
+   "zh": "单元格元素"
+  },
+  {
+   "key": "Fine-Design_Report_Insert_Cell_Element",
+   "zh": "插入元素"
+  }
+ ],
+ "com.fr.data.impl.Group": [
+  {
+   "key": "Fine-Design_Basic_Cell_Group",
+   "zh": "单元格组"
+  },
+  {
+   "key": "Fine-Design_Basic_Widget_Type_Checkbox_Group",
+   "zh": "复选按钮组控件"
+  },
+  {
+   "key": "Fine-Design_Basic_Widget_Type_Radio_Group",
+   "zh": "单选按钮组控件"
+  },
+  {
+   "key": "Fine-Design_Form_Radio_Group",
+   "zh": "单选按钮组"
+  },
+  {
+   "key": "Fine-Design_Report_Bind_Column_Group",
+   "zh": "分组"
+  },
+  {
+   "key": "Fine-Design_Report_Condition_Group",
+   "zh": "条件分组"
+  },
+  {
+   "key": "Fine-Design_Report_Form_CheckBox_Group",
+   "zh": "复选框组"
+  },
+  {
+   "key": "Fine-Design_Report_Formula_Group",
+   "zh": "公式分组"
+  },
+  {
+   "key": "Fine-Design_Report_RWA_Smart_Add_Cell_Group",
+   "zh": "智能添加单元格组"
+  },
+  {
+   "key": "Fine-Design_Report_SpecifiedG-Force_Group",
+   "zh": "强制分组"
+  },
+  {
+   "key": "Fine-Design_Report_SpecifiedG_Specified_Group",
+   "zh": "自定义分组"
+  },
+  {
+   "key": "Fine-Design_Share_Local_Group",
+   "zh": "本地分组："
+  }
+ ],
+ "com.fr.form.ui.Button": [
+  {
+   "key": "Fine-Design_Basic_Click_this_button",
+   "zh": "点击此按钮进行路径选择"
+  },
+  {
+   "key": "Fine-Design_Basic_Scale_Custom_Button",
+   "zh": "自定义"
+  },
+  {
+   "key": "Fine-Design_Basic_Scale_Self_Adapt_Button",
+   "zh": "恰好容纳选定区域"
+  },
+  {
+   "key": "Fine-Design_Basic_Widget_Type_Button",
+   "zh": "按钮控件"
+  },
+  {
+   "key": "Fine-Design_Form_Query_Button",
+   "zh": "查询按钮"
+  },
+  {
+   "key": "Fine-Design_Form_Toolbar_Custom_Button",
+   "zh": "自定义按钮"
+  },
+  {
+   "key": "Fine-Design_Mobile_Collapse_Button",
+   "zh": "展开收起按钮"
+  },
+  {
+   "key": "Fine-Design_Mobile_Collapse_Show_Button",
+   "zh": "显示按钮："
+  },
+  {
+   "key": "Fine-Design_Report_Choose_One_Button",
+   "zh": "请选择一个控件后再添加"
+  },
+  {
+   "key": "Fine-Design_Report_Custom_Form_Button",
+   "zh": "自定义按钮"
+  },
+  {
+   "key": "Fine-Design_Report_Form_Button",
+   "zh": "按钮"
+  },
+  {
+   "key": "Fine-Design_Report_Remove_All_Button",
+   "zh": "清除所有按钮"
+  },
+  {
+   "key": "Fine-Design_Report_Toolbar_Button",
+   "zh": "工具栏按钮"
+  }
+ ],
+ "com.fr.plugin.chart.base.Position": [
+  {
+   "key": "Fine-Design_Basic_Component_Position",
+   "zh": "组件位置"
+  },
+  {
+   "key": "Fine-Design_Basic_Hyperlink_Dialog_Show_Position",
+   "zh": "显示位置"
+  },
+  {
+   "key": "Fine-Design_Basic_Widget_Position",
+   "zh": "控件位置"
+  },
+  {
+   "key": "Fine-Design_CurReport_Variable_Fine_Position",
+   "zh": "使用权限时，$fine_position就是部门角色，格式如：{\"jobTitle\":\"销售经理\",\"departments\":\"销售\"}，部门角色是以部门和职务组成的数组。"
+  },
+  {
+   "key": "Fine-Design_Form_Tab_Display_Position",
+   "zh": "显示位置"
+  },
+  {
+   "key": "Fine-Design_Form_Widget_Display_Position",
+   "zh": "显示位置"
+  },
+  {
+   "key": "Fine-Design_Report_Sheet_Label_Page_Display_Position",
+   "zh": "sheet标签页显示位置："
+  },
+  {
+   "key": "Fine-Design_Chart_Axis_Label_Position",
+   "zh": "轴标签位置"
+  },
+  {
+   "key": "Fine-Design_Chart_Custom_Float_Position",
+   "zh": "自定义悬浮位置"
+  },
+  {
+   "key": "Fine-Design_Chart_Layout_Position",
+   "zh": "位置"
+  }
+ ],
+ "com.fr.design.widget.Operator": [
+  {
+   "key": "Fine-Design_Basic_ConditionB_Operator",
+   "zh": "操作符"
+  },
+  {
+   "key": "Fine-Design_Report_ConditionB_Operator",
+   "zh": "操作符"
+  }
+ ],
+ "com.fr.base.Formula": [
+  {
+   "key": "Fine-Design_Basic_Conditions_Formula",
+   "zh": "条件公式"
+  },
+  {
+   "key": "Fine-Design_Basic_Edit_String_To_Formula",
+   "zh": "是否将字符串编辑为公式"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Parameter_Formula",
+   "zh": "公式"
+  },
+  {
+   "key": "Fine-Design_Basic_Export_Save_Formula",
+   "zh": "导出/编辑结果时,保留公式"
+  },
+  {
+   "key": "Fine-Design_Basic_Formula",
+   "zh": "公式"
+  },
+  {
+   "key": "Fine-Design_Basic_FormulaD_Invalid_Formula",
+   "zh": "非法的公式"
+  },
+  {
+   "key": "Fine-Design_Basic_FormulaD_Valid_Formula",
+   "zh": "合法的公式"
+  },
+  {
+   "key": "Fine-Design_Basic_Lite_Condition_Formula",
+   "zh": "公式"
+  },
+  {
+   "key": "Fine-Design_Basic_Multi_Nam_Formula",
+   "zh": "数据集名:                       数据集条件:"
+  },
+  {
+   "key": "Fine-Design_Basic_Parameter_Formula",
+   "zh": "公式"
+  },
+  {
+   "key": "Fine-Design_Basic_Write_Save_Formula",
+   "zh": "填报/分析时，保留公式用于计算"
+  },
+  {
+   "key": "Fine-Design_Report_Formula",
+   "zh": "公式"
+  },
+  {
+   "key": "Fine-Design_Report_Insert_Formula",
+   "zh": "插入公式"
+  },
+  {
+   "key": "Fine-Design_Report_M_Insert_Formula",
+   "zh": "插入公式"
+  },
+  {
+   "key": "Fine-Design_Report_Parameter_Formula",
+   "zh": "公式"
+  },
+  {
+   "key": "Fine-Design_Report_Support_String_To_Formula",
+   "zh": "支持字符串编辑为公式"
+  },
+  {
+   "key": "Fine-Design_Chart_Formula",
+   "zh": "公式"
+  }
+ ],
+ "com.fr.web.core.Line": [
+  {
+   "key": "Fine-Design_Basic_Currency_Line",
+   "zh": "金额线"
+  },
+  {
+   "key": "Fine-Design_Basic_Line",
+   "zh": "线条"
+  },
+  {
+   "key": "Fine-Design_Basic_StyleAlignment_Single_Line",
+   "zh": "单行显示"
+  },
+  {
+   "key": "Fine-Design_Basic_Style_Alignment_Single_Line",
+   "zh": "单行显示"
+  },
+  {
+   "key": "Fine-Design_Chart_Alert_Line",
+   "zh": "警戒线"
+  },
+  {
+   "key": "Fine-Design_Chart_Analysis_Line",
+   "zh": "分析线"
+  },
+  {
+   "key": "Fine-Design_Chart_Second_Graduation_Line",
+   "zh": "次要刻度线"
+  },
+  {
+   "key": "Fine-Design_Chart_Set_Analysis_Line",
+   "zh": "设置分析线"
+  },
+  {
+   "key": "Fine-Design_Form_Widget_Style_Border_Line",
+   "zh": "边框"
+  },
+  {
+   "key": "Fine-Design_Mobile_Spit_Line",
+   "zh": "分割线"
+  },
+  {
+   "key": "Fine-Design_Mobile_Under_Line",
+   "zh": "下划线"
+  },
+  {
+   "key": "Fine-Design_Report_All_Border_Line",
+   "zh": "所有框线"
+  },
+  {
+   "key": "Fine-Design_Report_Bottom_Border_Line",
+   "zh": "下框线"
+  },
+  {
+   "key": "Fine-Design_Report_HF_New_Line",
+   "zh": "换行符"
+  },
+  {
+   "key": "Fine-Design_Report_Left_Border_Line",
+   "zh": "左框线"
+  },
+  {
+   "key": "Fine-Design_Report_No_Border_Line",
+   "zh": "无框线"
+  },
+  {
+   "key": "Fine-Design_Report_Out_Border_Line",
+   "zh": "外侧框线"
+  },
+  {
+   "key": "Fine-Design_Report_Out_Thick_Border_Line",
+   "zh": "粗匣框线"
+  },
+  {
+   "key": "Fine-Design_Report_Right_Border_Line",
+   "zh": "右框线"
+  },
+  {
+   "key": "Fine-Design_Report_Slope_Line",
+   "zh": "斜线"
+  },
+  {
+   "key": "Fine-Design_Report_Thick_Bottom_Border_Line",
+   "zh": "粗底框线"
+  },
+  {
+   "key": "Fine-Design_Report_Top_And_Double_Bottom_Border_Line",
+   "zh": "上框线和双下框线"
+  },
+  {
+   "key": "Fine-Design_Report_Top_And_Thick_Bottom_Border_Line",
+   "zh": "上框线和粗下框线"
+  },
+  {
+   "key": "Fine-Design_Report_Top_Bottom_Border_Line",
+   "zh": "上下框线"
+  },
+  {
+   "key": "Fine-Design_Share_Type_Chart_Fold_Line",
+   "zh": "折线图"
+  },
+  {
+   "key": "Fine-Design_Chart_Add_Alert_Line",
+   "zh": "添加警戒线"
+  },
+  {
+   "key": "Fine-Design_Chart_Add_Line",
+   "zh": "添加"
+  },
+  {
+   "key": "Fine-Design_Chart_Curve_Line",
+   "zh": "光滑曲线"
+  },
+  {
+   "key": "Fine-Design_Chart_Grid_Line",
+   "zh": "网格线"
+  },
+  {
+   "key": "Fine-Design_Chart_Label_OverlapMulti_Line",
+   "zh": "换行显示"
+  },
+  {
+   "key": "Fine-Design_Chart_Line",
+   "zh": "线"
+  },
+  {
+   "key": "Fine-Design_Chart_Link_Line",
+   "zh": "关联线"
+  },
+  {
+   "key": "Fine-Design_Chart_Main_Graduation_Line",
+   "zh": "主要刻度线"
+  },
+  {
+   "key": "Fine-Design_Chart_New_Column_Line",
+   "zh": "柱形图-折线图"
+  },
+  {
+   "key": "Fine-Design_Chart_New_Line",
+   "zh": "折线图"
+  },
+  {
+   "key": "Fine-Design_Chart_New_StackColumn_Line",
+   "zh": "堆积柱形图-折线图"
+  },
+  {
+   "key": "Fine-Design_Chart_Normal_Line",
+   "zh": "普通"
+  },
+  {
+   "key": "Fine-Design_Chart_Series_New_Line",
+   "zh": "系列换行"
+  },
+  {
+   "key": "Fine-Design_Chart_Stacked_Line",
+   "zh": "堆积折线图"
+  },
+  {
+   "key": "Fine-Design_Chart_Type_Line",
+   "zh": "折线图--旧版本"
+  },
+  {
+   "key": "Fine-Engine_Chart_New_Line",
+   "zh": "折线图"
+  }
+ ],
+ "com.fr.base.TableData": [
+  {
+   "key": "Fine-Design_Basic_DS_Class_TableData",
+   "zh": "程序数据集"
+  },
+  {
+   "key": "Fine-Design_Basic_DS_Embedded_TableData",
+   "zh": "内置数据集"
+  },
+  {
+   "key": "Fine-Design_Basic_DS_Relation_TableData",
+   "zh": "关联数据集"
+  },
+  {
+   "key": "Fine-Design_Basic_DS_Report_TableData",
+   "zh": "模板数据集"
+  },
+  {
+   "key": "Fine-Design_Basic_DS_Server_TableData",
+   "zh": "服务器数据集"
+  },
+  {
+   "key": "Fine-Design_Basic_DS_Table_Data",
+   "zh": "数据集"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_No_TableData",
+   "zh": "没有返回数据集"
+  },
+  {
+   "key": "Fine-Design_Basic_Parameter_Source_Type_Tabledata",
+   "zh": "数据集参数"
+  },
+  {
+   "key": "Fine-Design_Basic_TableData",
+   "zh": "数据集"
+  },
+  {
+   "key": "Fine-Design_Chart_DS_TableData",
+   "zh": "数据集"
+  },
+  {
+   "key": "Fine-Design_Chart_Tabledata",
+   "zh": "数据集"
+  },
+  {
+   "key": "Fine-Design_Report_TableData",
+   "zh": "数据集"
+  },
+  {
+   "key": "Fine-Design_Chart_TableData",
+   "zh": "数据集数据"
+  },
+  {
+   "key": "Fine-Design_Chart_Table_Data",
+   "zh": "数据集"
+  }
+ ],
+ "com.fr.report.cell.cellattr.core.group.DSColumn": [
+  {
+   "key": "Fine-Design_Basic_DS_Column",
+   "zh": "数据列"
+  }
+ ],
+ "com.fr.data.Dictionary": [
+  {
+   "key": "Fine-Design_Basic_DS_Dictionary",
+   "zh": "数据字典"
+  },
+  {
+   "key": "Fine-Design_Form_DS_Dictionary",
+   "zh": "数据字典"
+  }
+ ],
+ "com.fr.general.data.index.Index": [
+  {
+   "key": "Fine-Design_Basic_Datasource_Column_Index",
+   "zh": "列序号"
+  },
+  {
+   "key": "Fine-Design_Basic_Layer_Index",
+   "zh": "依赖的层数"
+  },
+  {
+   "key": "Fine-Design_Report_Layout_Index",
+   "zh": "索引"
+  }
+ ],
+ "com.fr.data.impl.Connection": [
+  {
+   "key": "Fine-Design_Basic_Datasource_Test_Connection",
+   "zh": "测试连接"
+  },
+  {
+   "key": "Fine-Design_Basic_Plugin_DataBase_Connection",
+   "zh": "数据库连接"
+  },
+  {
+   "key": "Fine-Design_Basic_Remote_Env_Test_Connection",
+   "zh": "测试连接"
+  },
+  {
+   "key": "Fine-Design_Basic_Server_Define_Data_Connection",
+   "zh": "定义数据连接"
+  },
+  {
+   "key": "Fine-Design_Basic_Utils_Now_Create_Connection",
+   "zh": "正在建立数据连接"
+  },
+  {
+   "key": "Fine-Design_Description_Of_Test_Connection",
+   "zh": "=请在日志中查询连接失败详情或升级版本即可在对话框中查看"
+  }
+ ],
+ "com.fr.report.report.Report": [
+  {
+   "key": "Fine-Design_Basic_Decision_Report",
+   "zh": "决策报表"
+  },
+  {
+   "key": "Fine-Design_Basic_FormulaD_Report",
+   "zh": "报表函数"
+  },
+  {
+   "key": "Fine-Design_Basic_M_Open_Report",
+   "zh": "打开..."
+  },
+  {
+   "key": "Fine-Design_Basic_Plain_Report",
+   "zh": "普通报表"
+  },
+  {
+   "key": "Fine-Design_Error_Fall_Back_Report",
+   "zh": "设计器闪退报告"
+  },
+  {
+   "key": "Fine-Design_Error_Start_Report",
+   "zh": "启动失败报告"
+  },
+  {
+   "key": "Fine-Design_Form_Engine_Report",
+   "zh": "报表"
+  },
+  {
+   "key": "Fine-Design_Form_Report",
+   "zh": "报表块"
+  },
+  {
+   "key": "Fine-Design_Report_Insert_Sub_Report",
+   "zh": "插入子报表"
+  },
+  {
+   "key": "Fine-Design_Report_M_Insert_Sub_Report",
+   "zh": "插入子报表"
+  },
+  {
+   "key": "Fine-Design_Report_M_New_Multi_Report",
+   "zh": "新建聚合报表(M)"
+  },
+  {
+   "key": "Fine-Design_Report_Report",
+   "zh": "报表"
+  },
+  {
+   "key": "Fine-Design_Share_Type_Report",
+   "zh": "综合应用"
+  },
+  {
+   "key": "Fine-Design_Share_Local_Filter_Item_Write_Report",
+   "zh": "填报"
+  }
+ ],
+ "com.fr.chart.chartattr.Title": [
+  {
+   "key": "Fine-Design_Basic_Dialog_Message_Title",
+   "zh": "消息"
+  },
+  {
+   "key": "Fine-Design_Basic_Hyperlink_Dialog_Title",
+   "zh": "对话框标题"
+  },
+  {
+   "key": "Fine-Design_Basic_ProgressBar_Title",
+   "zh": "进度..."
+  },
+  {
+   "key": "Fine-Design_Basic_Sync_JAR_Check_title",
+   "zh": "JAR包版本一致性检测"
+  },
+  {
+   "key": "Fine-Design_Basic_Sync_Plugin_Check_title",
+   "zh": "插件一致性检测"
+  },
+  {
+   "key": "Fine-Design_Chart_Area_Title",
+   "zh": "区域标题"
+  },
+  {
+   "key": "Fine-Design_Chart_Axis_Title",
+   "zh": "轴标题"
+  },
+  {
+   "key": "Fine-Design_Form_ConfirmDialog_Title",
+   "zh": "FineReport 8.0"
+  },
+  {
+   "key": "Fine-Design_Form_Title",
+   "zh": "标题"
+  },
+  {
+   "key": "Fine-Design_Form_Widget_Style_Title",
+   "zh": "标题样式"
+  },
+  {
+   "key": "Fine-Design_Mobile_Slider_Title",
+   "zh": "这是标题"
+  },
+  {
+   "key": "Fine-Design_Mobile_Tab_Show_Title",
+   "zh": "显示标题"
+  },
+  {
+   "key": "Fine-Design_Plugin_Error_Remind_Title",
+   "zh": "以下插件与JAR包版本不匹配，已被禁用"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_Tab_Layout_Title",
+   "zh": "标题"
+  },
+  {
+   "key": "Fine-Design_Report_Title",
+   "zh": "标题"
+  },
+  {
+   "key": "Fine-Design_Share_Type_Title",
+   "zh": "标题头"
+  },
+  {
+   "key": "Fine-Design_Update_Info_Title",
+   "zh": "更新提示"
+  },
+  {
+   "key": "Fine-Design_Vcs_Revert_Title",
+   "zh": "版本还原"
+  },
+  {
+   "key": "Fine-Design_Vcs_Title",
+   "zh": "版本管理"
+  },
+  {
+   "key": "Fine-Design_Vcs_Version_Revert_Title",
+   "zh": "回退"
+  },
+  {
+   "key": "Fine-Designer_Guide_Login_Success_Title",
+   "zh": "模板开发没思路？借鉴一下"
+  },
+  {
+   "key": "Fine-Design_Report_AlphaFine_Search_Title",
+   "zh": "请在上方搜索框中输入检索词"
+  },
+  {
+   "key": "Fine-Design_Basic_Service_Platform_Title",
+   "zh": "服务平台"
+  }
+ ],
+ "com.fr.report.web.button.Edit": [
+  {
+   "key": "Fine-Design_Basic_Edit",
+   "zh": "编辑"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_After_Edit",
+   "zh": "编辑后"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_Before_Edit",
+   "zh": "编辑前"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_Stop_Edit",
+   "zh": "编辑结束"
+  },
+  {
+   "key": "Fine-Design_Basic_Not_Support_Authority_Edit",
+   "zh": "该元素不支持权限控制"
+  },
+  {
+   "key": "Fine-Design_Basic_Polyblock_Edit",
+   "zh": "聚合块编辑"
+  },
+  {
+   "key": "Fine-Design_Form_Allow_Edit",
+   "zh": "允许直接编辑"
+  },
+  {
+   "key": "Fine-Design_Form_Authority_Edit",
+   "zh": "决策报表权限编辑"
+  },
+  {
+   "key": "Fine-Design_Predefined_Style_Edit",
+   "zh": "预定义样式编辑"
+  },
+  {
+   "key": "Fine-Design_Report_Edit",
+   "zh": "编辑"
+  },
+  {
+   "key": "Fine-Design_Report_Permissions_Edit",
+   "zh": "权限编辑"
+  },
+  {
+   "key": "Fine-Design_Report_Privilege_Poly_Block_Edit",
+   "zh": "聚合块权限编辑"
+  },
+  {
+   "key": "Fine-Design_Share_Edit",
+   "zh": "编辑"
+  },
+  {
+   "key": "Fine-Design_Vcs_Edit",
+   "zh": "编辑此版本"
+  },
+  {
+   "key": "Fine-Design_Chart_Filed_Name_Edit",
+   "zh": "编辑区域名称"
+  },
+  {
+   "key": "Fine-Design_Chart_Rich_Text_Edit",
+   "zh": "富文本编辑"
+  }
+ ],
+ "com.fr.report.web.button.Email": [
+  {
+   "key": "Fine-Design_Basic_Email",
+   "zh": "邮件"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_After_Email",
+   "zh": "Email后"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_Before_Email",
+   "zh": "Email前"
+  },
+  {
+   "key": "Fine-Design_Basic_Support_Email",
+   "zh": "支持邮箱："
+  },
+  {
+   "key": "Fine-Design_Report_Email_Sent_Email",
+   "zh": "发送邮件"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_Email",
+   "zh": "邮件"
+  }
+ ],
+ "com.fr.report.web.button.Print": [
+  {
+   "key": "Fine-Design_Basic_Engine_Event_After_Applet_Print",
+   "zh": "Applet打印后"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_After_Flash_Print",
+   "zh": "Flash打印后"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_After_Pdf_Print",
+   "zh": "PDF打印后"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_After_Print",
+   "zh": "打印后"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_Before_Applet_Print",
+   "zh": "Applet打印前"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_Before_Flash_Print",
+   "zh": "Flash打印前"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_Before_Pdf_Print",
+   "zh": "PDF打印前"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_Before_Print",
+   "zh": "打印前"
+  },
+  {
+   "key": "Fine-Design_Double_Side_Print",
+   "zh": "双面打印"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_Applet_Print",
+   "zh": "Applet打印"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_Native_Print",
+   "zh": "本地软件打印"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_No_Client_Print",
+   "zh": "零客户端打印"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_Print",
+   "zh": "打印"
+  }
+ ],
+ "com.fr.form.web.button.Excel": [
+  {
+   "key": "Fine-Design_Basic_Engine_Event_After_Import_Excel",
+   "zh": "Excel导入后"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_After_To_Excel",
+   "zh": "Excel导出后"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_Before_Import_Excel",
+   "zh": "Excel导入前"
+  },
+  {
+   "key": "Fine-Design_Basic_M_File_Export_Excel",
+   "zh": "Excel格式"
+  },
+  {
+   "key": "Fine-Design_Report_Export_Excel",
+   "zh": "Excel格式"
+  },
+  {
+   "key": "Fine-Design_basic_Engine_Event_Before_To_Excel",
+   "zh": "Excel导出前"
+  }
+ ],
+ "com.fr.report.web.button.PDF": [
+  {
+   "key": "Fine-Design_Basic_Engine_Event_After_To_Pdf",
+   "zh": "PDF导出后"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_Before_To_Pdf",
+   "zh": "PDF导出前"
+  },
+  {
+   "key": "Fine-Design_Basic_Export_JS_PDF",
+   "zh": "PDF输出"
+  },
+  {
+   "key": "Fine-Design_Basic_Import_Export_PDF",
+   "zh": "PDF格式"
+  },
+  {
+   "key": "Fine-Design_Basic_M_File_Export_PDF",
+   "zh": "PDF格式"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_ReportServerP_PDF",
+   "zh": "PDF"
+  },
+  {
+   "key": "Fine-Design_Report_Export_PDF",
+   "zh": "PDF格式"
+  },
+  {
+   "key": "Fine-Design_Report_Output_PDF",
+   "zh": "PDF输出"
+  }
+ ],
+ "com.fr.report.web.button.Word": [
+  {
+   "key": "Fine-Design_Basic_Engine_Event_After_To_Word",
+   "zh": "Word导出后"
+  },
+  {
+   "key": "Fine-Design_Basic_Engine_Event_Before_To_Word",
+   "zh": "Word导出前"
+  },
+  {
+   "key": "Fine-Design_Basic_Export_JS_Word",
+   "zh": "Word输出"
+  },
+  {
+   "key": "Fine-Design_Basic_Import_Export_Word",
+   "zh": "Word格式"
+  },
+  {
+   "key": "Fine-Design_Basic_M_File_Export_Word",
+   "zh": "Word格式"
+  },
+  {
+   "key": "Fine-Design_Predefined_Cell_Test_Word",
+   "zh": "测试文本"
+  },
+  {
+   "key": "Fine-Design_Report_Alert_Word",
+   "zh": "选择不固定行高导出时, 编辑导出的word, 单元格行高会随着内容自动拉伸, 此情况下导出结果分页位置与预览结果可能会不再一致."
+  },
+  {
+   "key": "Fine-Design_Report_Export_Word",
+   "zh": "Word格式"
+  },
+  {
+   "key": "Fine-Design_Report_Output_Word",
+   "zh": "Word输出"
+  }
+ ],
+ "com.fr.report.web.button.write.Verify": [
+  {
+   "key": "Fine-Design_Basic_Engine_Event_After_Verify",
+   "zh": "校验后"
+  },
+  {
+   "key": "Fine-Design_Report_BuildIn_Verify",
+   "zh": "内置校验"
+  },
+  {
+   "key": "Fine-Design_Report_Custom_Verify",
+   "zh": "自定义校验"
+  },
+  {
+   "key": "Fine-Design_Report_Formula_Verify",
+   "zh": "校验公式"
+  },
+  {
+   "key": "Fine-Design_Report_Verify_Data_Verify",
+   "zh": "数据校验"
+  }
+ ],
+ "com.fr.data.dao.page.Page": [
+  {
+   "key": "Fine-Design_Basic_Engine_Export_Excel_Page",
+   "zh": "分页导出"
+  },
+  {
+   "key": "Fine-Design_Basic_Export_JS_Excel_Page",
+   "zh": "Excel输出（分页导出）"
+  },
+  {
+   "key": "Fine-Design_Form_Output_Excel_Page",
+   "zh": "Excel输出(分页导出)"
+  },
+  {
+   "key": "Fine-Design_Report_Current_Page",
+   "zh": "当前页"
+  },
+  {
+   "key": "Fine-Design_Report_Export_Excel_Page",
+   "zh": "Excel(分页导出)"
+  },
+  {
+   "key": "Fine-Design_Report_Face_Write_Page",
+   "zh": "填报页面"
+  },
+  {
+   "key": "Fine-Design_Report_HF_Default_Page",
+   "zh": "默认页"
+  },
+  {
+   "key": "Fine-Design_Report_HF_Even_Page",
+   "zh": "偶数页"
+  },
+  {
+   "key": "Fine-Design_Report_HF_First_Page",
+   "zh": "首页"
+  },
+  {
+   "key": "Fine-Design_Report_HF_Number_of_Page",
+   "zh": "总页数"
+  },
+  {
+   "key": "Fine-Design_Report_HF_Odd_Page",
+   "zh": "奇数页"
+  },
+  {
+   "key": "Fine-Design_Report_Is_Paint_Page",
+   "zh": "以图片方式显示"
+  },
+  {
+   "key": "Fine-Design_Report_PageSetup_Page",
+   "zh": "页面"
+  },
+  {
+   "key": "Fine-Design_Report_PageSetup_Placement_Center_On_Page",
+   "zh": "居中方式"
+  },
+  {
+   "key": "Fine-Design_Report_Utils_Last_Page",
+   "zh": "最后一页"
+  }
+ ],
+ "com.fr.base.Parameter": [
+  {
+   "key": "Fine-Design_Basic_Engine_Schedule_Template_Parameter",
+   "zh": "模板参数"
+  },
+  {
+   "key": "Fine-Design_Basic_Hyperlink_Use_CJK_To_Encode_Parameter",
+   "zh": "使用CJK处理参数"
+  },
+  {
+   "key": "Fine-Design_Basic_M_Report_Report_Parameter",
+   "zh": "模板参数"
+  },
+  {
+   "key": "Fine-Design_Basic_Parameter",
+   "zh": "参数"
+  },
+  {
+   "key": "Fine-Design_Basic_ParameterD_Report_Parameter",
+   "zh": "报表参数"
+  },
+  {
+   "key": "Fine-Design_Basic_Tabledata_Default_Parameter",
+   "zh": "数据集默认参数"
+  },
+  {
+   "key": "Fine-Design_Basic_Template_Parameter",
+   "zh": "模板参数"
+  },
+  {
+   "key": "Fine-Design_Basic_Type_Parameter",
+   "zh": "<html> <body> 您可以键入${abc}作为一个参数，这里abc是参数的名称。例如：<br>"
+  },
+  {
+   "key": "Fine-Design_Report_Datasource_Parameter",
+   "zh": "数据源参数"
+  },
+  {
+   "key": "Fine-Design_Report_Dynamic_Parameter",
+   "zh": "动态参数"
+  },
+  {
+   "key": "Fine-Design_Report_ReportServerP_Report_Server_Parameter",
+   "zh": "服务器配置"
+  },
+  {
+   "key": "Fine-Design_Report_Server_Datasource_Parameter",
+   "zh": "服务器数据源参数"
+  },
+  {
+   "key": "Fine-Design_Report_Set_Delivery_Parameter",
+   "zh": "设置传递参数"
+  }
+ ],
+ "com.fr.design.expand.Expand": [
+  {
+   "key": "Fine-Design_Basic_ExpandD_Sort_After_Expand",
+   "zh": "扩展后"
+  },
+  {
+   "key": "Fine-Design_Mobile_Collapse_Expand",
+   "zh": "展开收起"
+  },
+  {
+   "key": "Fine-Design_Report_Expand",
+   "zh": "扩展"
+  }
+ ],
+ "com.fr.form.web.button.Export": [
+  {
+   "key": "Fine-Design_Basic_Export",
+   "zh": "输出"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_Export",
+   "zh": "导出"
+  },
+  {
+   "key": "Fine-Design_Report_Finish_Export",
+   "zh": "导出完毕"
+  },
+  {
+   "key": "Fine-Design_Report_IS_TD_HEAVY_EXPORT",
+   "zh": "重方式输出格子"
+  },
+  {
+   "key": "Fine-Design_Report_Prepare_Export",
+   "zh": "开始导出，请稍候"
+  },
+  {
+   "key": "Fine-Design_Report_ReportD_Excel_Export",
+   "zh": "模板导出属性"
+  },
+  {
+   "key": "Fine-Design_Report_Universal_Export",
+   "zh": "通用"
+  }
+ ],
+ "com.fr.chart.base.Shadow": [
+  {
+   "key": "Fine-Design_Basic_FR_Font_Shadow",
+   "zh": "阴影"
+  },
+  {
+   "key": "Fine-Design_Basic_Font_Shadow",
+   "zh": "阴影"
+  },
+  {
+   "key": "Fine-Design_Form_Widget_Style_Shadow",
+   "zh": "阴影"
+  },
+  {
+   "key": "Fine-Design_Chart_Shadow",
+   "zh": "阴影"
+  }
+ ],
+ "com.fr.base.FeedBackInfo": [
+  {
+   "key": "Fine-Design_Basic_Feedback_Info",
+   "zh": "欢迎您提出宝贵的意见和建议，请将信息填写得尽量详细，我们会尽快联系您"
+  }
+ ],
+ "com.fr.report.cell.FloatElement": [
+  {
+   "key": "Fine-Design_Basic_Float_Element",
+   "zh": "悬浮元素"
+  },
+  {
+   "key": "Fine-Design_Report_Add_FloatElement",
+   "zh": "添加元素"
+  }
+ ],
+ "com.fr.report.web.button.HTML": [
+  {
+   "key": "Fine-Design_Basic_Formula_Dictionary_Display_Examples_Html",
+   "zh": "<html>提示：实际值范围为 =range(100),对实际值范围内的每个$$$的显示公式为 =0 - $$$，则最终的结果实际值为1, 2, ..., 100,显示值为-1, -2, ... , -100。<br>&nbsp;</html>"
+  },
+  {
+   "key": "Fine-Design_Report_CellWrite_Show_As_HTML",
+   "zh": "用HTML显示内容"
+  },
+  {
+   "key": "Fine-Design_Chart_Html",
+   "zh": "使用html解析文本内容"
+  }
+ ],
+ "com.fr.design.designer.beans.location.Direction": [
+  {
+   "key": "Fine-Design_Basic_Gradient_Direction",
+   "zh": "渐变方向"
+  },
+  {
+   "key": "Fine-Design_Report_ExpandD_Expand_Direction",
+   "zh": "扩展方向"
+  },
+  {
+   "key": "Fine-Design_Chart_Gradient_Direction",
+   "zh": "渐变方向"
+  },
+  {
+   "key": "Fine-Design_Chart_Rotation_Direction",
+   "zh": "旋转方向"
+  },
+  {
+   "key": "Fine-Design_Chart_X_Direction",
+   "zh": "x方向"
+  },
+  {
+   "key": "Fine-Design_Chart_Y_Direction",
+   "zh": "y方向"
+  },
+  {
+   "key": "Fine-Design_Chart_Zoom_Direction",
+   "zh": "缩放方向"
+  }
+ ],
+ "com.fr.design.designer.beans.location.Left": [
+  {
+   "key": "Fine-Design_Basic_Hyperlink_Dialog_Position_Left",
+   "zh": "距左"
+  },
+  {
+   "key": "Fine-Design_Basic_Left",
+   "zh": "左"
+  },
+  {
+   "key": "Fine-Design_Basic_Plugin_Designer_Left",
+   "zh": "剩余"
+  },
+  {
+   "key": "Fine-Design_Basic_StyleAlignment_Left",
+   "zh": "靠左"
+  },
+  {
+   "key": "Fine-Design_Basic_Style_Alignment_Right_To_Left",
+   "zh": "从右向左"
+  },
+  {
+   "key": "Fine-Design_Basic_Style_Alignment_Tooltips_Left",
+   "zh": "靠左"
+  },
+  {
+   "key": "Fine-Design_Basic_Style_Indent_Left",
+   "zh": "左缩进（PT）"
+  },
+  {
+   "key": "Fine-Design_Chart_At_The_Left",
+   "zh": "居左"
+  },
+  {
+   "key": "Fine-Design_Form_Base_Left",
+   "zh": "左"
+  },
+  {
+   "key": "Fine-Design_Form_StyleAlignment_Left",
+   "zh": "靠左"
+  },
+  {
+   "key": "Fine-Design_Report_HF_Move_Left",
+   "zh": "左移"
+  },
+  {
+   "key": "Fine-Design_Report_Left",
+   "zh": "左"
+  },
+  {
+   "key": "Fine-Design_Report_Utils_Right_to_Left",
+   "zh": "从右到左"
+  },
+  {
+   "key": "Fine-Design_Chart_Alert_Left",
+   "zh": "居左"
+  },
+  {
+   "key": "Fine-Design_Chart_Align_Left",
+   "zh": "居左"
+  },
+  {
+   "key": "Fine-Design_Chart_Layout_Left",
+   "zh": "左侧"
+  },
+  {
+   "key": "Fine-Design_Chart_Style_Alignment_Left",
+   "zh": "靠左"
+  }
+ ],
+ "com.fr.design.designer.beans.location.Top": [
+  {
+   "key": "Fine-Design_Basic_Hyperlink_Dialog_Position_Top",
+   "zh": "距上"
+  },
+  {
+   "key": "Fine-Design_Basic_StyleAlignment_Top",
+   "zh": "靠上"
+  },
+  {
+   "key": "Fine-Design_Basic_Style_Alignment_Tooltips_Top",
+   "zh": "靠上"
+  },
+  {
+   "key": "Fine-Design_Chart_Right_Top",
+   "zh": "右上"
+  },
+  {
+   "key": "Fine-Design_Form_Base_Top",
+   "zh": "上"
+  },
+  {
+   "key": "Fine-Design_Form_Move_To_Top",
+   "zh": "置于顶层(T)"
+  },
+  {
+   "key": "Fine-Design_Report_ToolBar_Top",
+   "zh": "顶部工具栏"
+  },
+  {
+   "key": "Fine-Design_Report_Top",
+   "zh": "上"
+  },
+  {
+   "key": "Fine-Design_Report_Utils_Bottom_To_Top",
+   "zh": "从下到上"
+  },
+  {
+   "key": "Fine-Design_Chart_Alert_Top",
+   "zh": "居上"
+  },
+  {
+   "key": "Fine-Design_Chart_Axis_Top",
+   "zh": "上方"
+  },
+  {
+   "key": "Fine-Design_Chart_Style_Alignment_Top",
+   "zh": "靠上"
+  }
+ ],
+ "com.fr.web.core.Reportlet": [
+  {
+   "key": "Fine-Design_Basic_Hyperlink_Please_Select_Reportlet",
+   "zh": "请选择网络报表"
+  },
+  {
+   "key": "Fine-Design_Basic_Hyperlink_Reportlet",
+   "zh": "网络报表"
+  },
+  {
+   "key": "Fine-Design_Basic_Reportlet",
+   "zh": "网络报表"
+  },
+  {
+   "key": "Fine-Design_Basic_Utils_Switch_To_Class_Reportlet",
+   "zh": "切换到程序网络报表"
+  },
+  {
+   "key": "Fine-Design_Basic_Utils_Switch_To_Template_Reportlet",
+   "zh": "切换到模板网络报表"
+  },
+  {
+   "key": "Fine-Design_Chart_Link_Reportlet",
+   "zh": "网络报表"
+  }
+ ],
+ "com.fr.data.impl.DBTableData": [
+  {
+   "key": "Fine-Design_Basic_Is_Share_DBTableData",
+   "zh": "共享数据集"
+  }
+ ],
+ "com.fr.general.data.Condition": [
+  {
+   "key": "Fine-Design_Basic_Lite_Condition_Common_Condition",
+   "zh": "普通条件"
+  },
+  {
+   "key": "Fine-Design_Basic_Lite_Condition_Formula_Condition",
+   "zh": "公式条件"
+  },
+  {
+   "key": "Fine-Design_Basic_Set_Submit_Condition",
+   "zh": "设置提交条件"
+  },
+  {
+   "key": "Fine-Design_Basic_Submit_Condition",
+   "zh": "提交条件"
+  },
+  {
+   "key": "Fine-Design_Report_Add_Condition",
+   "zh": "添加条件"
+  },
+  {
+   "key": "Fine-Design_Report_Condition",
+   "zh": "条件"
+  }
+ ],
+ "com.fr.design.designer.beans.location.Location": [
+  {
+   "key": "Fine-Design_Basic_Location",
+   "zh": "位置"
+  },
+  {
+   "key": "Fine-Design_Form_Widget_Style_Title_Inset_Relative_Location",
+   "zh": "图案相对位置"
+  },
+  {
+   "key": "Fine-Design_Report_Show_Location",
+   "zh": "报表显示位置"
+  },
+  {
+   "key": "Fine-Design_Report_Url_Location",
+   "zh": "绝对路径"
+  },
+  {
+   "key": "Fine-Design_Chart_Location",
+   "zh": "定位"
+  }
+ ],
+ "com.fr.report.web.button.write.Redo": [
+  {
+   "key": "Fine-Design_Basic_M_Edit_Redo",
+   "zh": "重做"
+  }
+ ],
+ "com.fr.report.web.button.write.Undo": [
+  {
+   "key": "Fine-Design_Basic_M_Edit_Undo",
+   "zh": "撤销"
+  },
+  {
+   "key": "Fine-Design_Basic_Preference_Support_Undo",
+   "zh": "支持撤销"
+  },
+  {
+   "key": "Fine-Design_Basic_Undo",
+   "zh": "撤销"
+  }
+ ],
+ "com.fr.design.preview.PagePreview": [
+  {
+   "key": "Fine-Design_Basic_M_Page_Preview",
+   "zh": "分页预览"
+  }
+ ],
+ "com.fr.report.web.button.PageSetup": [
+  {
+   "key": "Fine-Design_Basic_M_Page_Setup",
+   "zh": "页面设置"
+  },
+  {
+   "key": "Fine-Design_Report_PageSetup_Page_Setup",
+   "zh": "页面设置"
+  },
+  {
+   "key": "Fine-Design_Report_Page_Setup",
+   "zh": "页面设置"
+  }
+ ],
+ "com.fr.design.preview.WritePreview": [
+  {
+   "key": "Fine-Design_Basic_M_Write_Preview",
+   "zh": "填报预览"
+  }
+ ],
+ "com.fr.form.web.button.page.Next": [
+  {
+   "key": "Fine-Design_Basic_Next",
+   "zh": "下一步"
+  },
+  {
+   "key": "Fine-Design_Form_Move_Tab_Next",
+   "zh": "往后移动"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_ReportServerP_Next",
+   "zh": "下一页"
+  },
+  {
+   "key": "Fine-Design_Share_Next",
+   "zh": "下一个"
+  }
+ ],
+ "com.fr.design.notification.Notification": [
+  {
+   "key": "Fine-Design_Basic_Notification",
+   "zh": "通知"
+  },
+  {
+   "key": "Fine-Design_Basic_Show_Notification",
+   "zh": "显示通知"
+  }
+ ],
+ "com.fr.form.ui.Password": [
+  {
+   "key": "Fine-Design_Basic_Password",
+   "zh": "密码"
+  },
+  {
+   "key": "Fine-Design_Basic_Remote_Design_Modify_PassWord",
+   "zh": "修改密码"
+  },
+  {
+   "key": "Fine-Design_Basic_Remote_Design_Update_Password",
+   "zh": "当前密码已失效<br/>请联系管理员或在决策平台中"
+  },
+  {
+   "key": "Fine-Design_Basic_Remote_Design_Weak_Password",
+   "zh": "当前密码不符合密码强度要求<br/>请联系管理员或在决策平台中"
+  },
+  {
+   "key": "Fine-Design_Basic_Remote_Env_Account_Password",
+   "zh": "密码:"
+  },
+  {
+   "key": "Fine-Design_Basic_Remote_Env_Remember_Password",
+   "zh": "记住密码"
+  },
+  {
+   "key": "Fine-Design_Basic_Widget_Type_Password",
+   "zh": "密码控件"
+  },
+  {
+   "key": "Fine-Design_Report_BBSLogin_Password",
+   "zh": "密码"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_ECP_Error_Password",
+   "zh": "密码错误"
+  },
+  {
+   "key": "Fine-Design_Report_File_Password",
+   "zh": "文件密码"
+  },
+  {
+   "key": "Fine-Design_Report_Form_Password",
+   "zh": "密码"
+  },
+  {
+   "key": "Fine-Design_Report_IS_Need_Password",
+   "zh": "需要密码"
+  },
+  {
+   "key": "Fine-Design_Report_Protected_Password",
+   "zh": "保护密码"
+  },
+  {
+   "key": "Fine-Design_Report_Sheet_Password",
+   "zh": "工作表密码"
+  }
+ ],
+ "com.fr.form.web.button.page.First": [
+  {
+   "key": "Fine-Design_Basic_Performance_First",
+   "zh": "性能优先"
+  },
+  {
+   "key": "Fine-Design_Form_Move_Tab_First",
+   "zh": "移动到首位"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_Please_Set_Repeat_First",
+   "zh": "请先设置重复标题行和列"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_ReportServerP_First",
+   "zh": "首页"
+  },
+  {
+   "key": "Fine-Design_Share_Empty_First",
+   "zh": "尝试添加组件，"
+  },
+  {
+   "key": "Fine-Design_Chart_Data_Function_First",
+   "zh": "首个"
+  },
+  {
+   "key": "Fine-Design_Chart_Latitude_First",
+   "zh": "纬度在前"
+  },
+  {
+   "key": "Fine-Design_Chart_Longitude_First",
+   "zh": "经度在前"
+  }
+ ],
+ "com.fr.chart.chartattr.Axis": [
+  {
+   "key": "Fine-Design_Basic_Plugin_Column_Axis",
+   "zh": "列轴"
+  },
+  {
+   "key": "Fine-Design_Basic_X_Axis",
+   "zh": "X轴"
+  },
+  {
+   "key": "Fine-Design_Basic_Y_Axis",
+   "zh": "Y轴"
+  },
+  {
+   "key": "Fine-Design_Chart_Radar_Axis",
+   "zh": "值轴"
+  },
+  {
+   "key": "Fine-Design_Chart_Second_Axis",
+   "zh": "次坐标轴"
+  },
+  {
+   "key": "Fine-Design_Chart_Second_Value_Axis",
+   "zh": "第二值轴"
+  },
+  {
+   "key": "Fine-Design_Report_Main_Value_Axis",
+   "zh": "主值轴"
+  },
+  {
+   "key": "Fine-Design_Chart_Axis",
+   "zh": "坐标轴"
+  },
+  {
+   "key": "Fine-Design_Chart_Category_Axis",
+   "zh": "分类坐标轴"
+  },
+  {
+   "key": "Fine-Design_Chart_Custom_Axis",
+   "zh": "自定义坐标轴"
+  },
+  {
+   "key": "Fine-Design_Chart_Date_Time_Axis",
+   "zh": "时间坐标轴"
+  },
+  {
+   "key": "Fine-Design_Chart_Horial_Time_Axis",
+   "zh": "水平(时间)轴"
+  },
+  {
+   "key": "Fine-Design_Chart_Main_Axis",
+   "zh": "主坐标轴"
+  },
+  {
+   "key": "Fine-Design_Chart_Project_Axis",
+   "zh": "项目轴"
+  },
+  {
+   "key": "Fine-Design_Chart_Radar_Value_Axis",
+   "zh": "值轴"
+  },
+  {
+   "key": "Fine-Design_Chart_Scale_Axis",
+   "zh": "缩放轴"
+  },
+  {
+   "key": "Fine-Design_Chart_Text_Axis",
+   "zh": "文本坐标轴"
+  },
+  {
+   "key": "Fine-Design_Chart_Time_Axis",
+   "zh": "时间轴"
+  },
+  {
+   "key": "Fine-Design_Chart_Value_Axis",
+   "zh": "数值坐标轴"
+  },
+  {
+   "key": "Fine-Design_Chart_XY_Axis",
+   "zh": "XY轴"
+  },
+  {
+   "key": "Fine-Design_Chart_X_Axis",
+   "zh": "X轴"
+  },
+  {
+   "key": "Fine-Design_Chart_Y_Axis",
+   "zh": "Y轴"
+  }
+ ],
+ "com.fr.form.ui.WidgetValue": [
+  {
+   "key": "Fine-Design_Basic_Plugin_Estate_Widget_Value",
+   "zh": "控件值"
+  },
+  {
+   "key": "Fine-Design_Form_Estate_Widget_Value",
+   "zh": "控件值"
+  },
+  {
+   "key": "Fine-Design_Form_Widget_Value",
+   "zh": "控件值"
+  },
+  {
+   "key": "Fine-Design_Report_Widget_Value",
+   "zh": "控件值"
+  }
+ ],
+ "com.fr.base.present.Present": [
+  {
+   "key": "Fine-Design_Basic_Present_Formula_Present",
+   "zh": "公式形态"
+  },
+  {
+   "key": "Fine-Design_Basic_Present_No_Present",
+   "zh": "取消形态设置"
+  },
+  {
+   "key": "Fine-Design_Report_Other_Present",
+   "zh": "其他形态"
+  },
+  {
+   "key": "Fine-Design_Report_Present",
+   "zh": "形态"
+  },
+  {
+   "key": "Fine-Design_Chart_Style_Present",
+   "zh": "形态"
+  }
+ ],
+ "com.fr.form.web.button.page.Previous": [
+  {
+   "key": "Fine-Design_Basic_Previous",
+   "zh": "上一步"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_ReportServerP_Previous",
+   "zh": "上一页"
+  }
+ ],
+ "com.fr.design.gui.icombobox.filter.Filter": [
+  {
+   "key": "Fine-Design_Basic_Schedule_The_Selected_File_Must_Be_End_With_Filter",
+   "zh": "选择的文件必须以.cpt或者.class或者.frm结尾。"
+  },
+  {
+   "key": "Fine-Design_Chart_Data_Filter",
+   "zh": "数据筛选"
+  },
+  {
+   "key": "Fine-Design_CurReport_Variable_No_Filter",
+   "zh": "NOFILTER是一个与任意值比较都为true的参数。"
+  },
+  {
+   "key": "Fine-Design_Report_Bind_Column_Results_Filter",
+   "zh": "结果集筛选"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_List_Filter",
+   "zh": "列表筛选"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_Selection_Filter",
+   "zh": "条件筛选"
+  },
+  {
+   "key": "Fine-Design_Report_Filter",
+   "zh": "过滤"
+  },
+  {
+   "key": "Fine-Design_Share_Online_Clear_Filter",
+   "zh": "清除筛选条件"
+  },
+  {
+   "key": "Fine-Design_Share_Online_No_Filter",
+   "zh": "无筛选条件"
+  }
+ ],
+ "com.fr.design.designer.beans.location.Bottom": [
+  {
+   "key": "Fine-Design_Basic_StyleAlignment_Bottom",
+   "zh": "靠下"
+  },
+  {
+   "key": "Fine-Design_Basic_Style_Alignment_Tooltips_Bottom",
+   "zh": "靠下"
+  },
+  {
+   "key": "Fine-Design_Form_Base_Bottom",
+   "zh": "下"
+  },
+  {
+   "key": "Fine-Design_Form_Move_To_Bottom",
+   "zh": "置于底层(K)"
+  },
+  {
+   "key": "Fine-Design_Report_Bottom",
+   "zh": "下"
+  },
+  {
+   "key": "Fine-Design_Report_PageSetup_Top_To_Bottom",
+   "zh": "先列后行"
+  },
+  {
+   "key": "Fine-Design_Report_ToolBar_Bottom",
+   "zh": "底部工具栏"
+  },
+  {
+   "key": "Fine-Design_Report_Utils_Top_To_Bottom",
+   "zh": "纵向"
+  },
+  {
+   "key": "Fine-Design_Chart_Alert_Bottom",
+   "zh": "居下"
+  },
+  {
+   "key": "Fine-Design_Chart_Axis_Bottom",
+   "zh": "下方"
+  },
+  {
+   "key": "Fine-Design_Chart_Style_Alignment_Bottom",
+   "zh": "靠下"
+  }
+ ],
+ "com.fr.design.extra.After": [
+  {
+   "key": "Fine-Design_Basic_Style_Spacing_After",
+   "zh": "段后"
+  },
+  {
+   "key": "Fine-Design_Report_ReportColumns_Columns_After",
+   "zh": "超过"
+  }
+ ],
+ "com.fr.design.menu.ShortCut": [
+  {
+   "key": "Fine-Design_Basic_Support_Auto_Complete_Shortcut",
+   "zh": "自动补全快捷键"
+  },
+  {
+   "key": "Fine-Design_Basic_Support_Current_Auto_Complete_Shortcut",
+   "zh": "当前快捷键"
+  },
+  {
+   "key": "Fine-Design_Report_AlphaFine_Short_Cut",
+   "zh": "使用{}快速呼出面板"
+  }
+ ],
+ "com.fr.general.FRFont": [
+  {
+   "key": "Fine-Design_Basic_Sytle_FRFont",
+   "zh": "字体"
+  },
+  {
+   "key": "Fine-Design_Form_FR_Font",
+   "zh": "字体"
+  },
+  {
+   "key": "Fine-Design_Report_Sytle_FRFont",
+   "zh": "字体"
+  }
+ ],
+ "com.fr.data.impl.Tree": [
+  {
+   "key": "Fine-Design_Basic_Tabledata_Type_Tree",
+   "zh": "树数据集"
+  },
+  {
+   "key": "Fine-Design_Form_Hierarchy_Tree",
+   "zh": "结构树"
+  },
+  {
+   "key": "Fine-Design_Report_Create_Tree",
+   "zh": "构建树"
+  },
+  {
+   "key": "Fine-Design_Report_View_Tree",
+   "zh": "视图树"
+  },
+  {
+   "key": "Fine-Design_Chart_Layer_Tree",
+   "zh": "钻取层级关系"
+  }
+ ],
+ "com.fr.report.LockedFile": [
+  {
+   "key": "Fine-Design_Basic_Unable_Delete_Locked_File",
+   "zh": "被锁定模板无法删除。"
+  },
+  {
+   "key": "Fine-Design_Basic_Unable_Rename_Locked_File",
+   "zh": "被锁定模板无法重命名。"
+  }
+ ],
+ "com.fr.design.editor.editor.Editor": [
+  {
+   "key": "Fine-Design_Basic_Values_Editor",
+   "zh": "值编辑器"
+  },
+  {
+   "key": "Fine-Design_Report_Widget_User_Defined_Editor",
+   "zh": "预定义编辑器，该编辑器只能在控件管理菜单里更改其属性"
+  }
+ ],
+ "com.fr.form.ui.Widget": [
+  {
+   "key": "Fine-Design_Basic_Widget",
+   "zh": "控件"
+  },
+  {
+   "key": "Fine-Design_Component_Reuse_Apply_Widget",
+   "zh": "套用组件"
+  },
+  {
+   "key": "Fine-Design_Form_Edit_Widget",
+   "zh": "编辑组件"
+  },
+  {
+   "key": "Fine-Design_Form_Local_Widget",
+   "zh": "本地组件库"
+  },
+  {
+   "key": "Fine-Design_Form_ToolBar_Widget",
+   "zh": "控件"
+  },
+  {
+   "key": "Fine-Design_Report_Select_Widget",
+   "zh": "选择控件"
+  },
+  {
+   "key": "Fine-Design_Report_Use_Widget",
+   "zh": "使用控件"
+  },
+  {
+   "key": "Fine-Design_Report_Widget",
+   "zh": "控件"
+  },
+  {
+   "key": "Fine-Design_Share_Local_Widget",
+   "zh": "本地组件"
+  },
+  {
+   "key": "Fine-Design_Share_Type_Basic_Widget",
+   "zh": "基础控件"
+  },
+  {
+   "key": "Fine-Design_Share_Local_Filter_Item_Basic_Widget",
+   "zh": "基础控件"
+  },
+  {
+   "key": "Fine-Design_Chart_Zoom_Widget",
+   "zh": "缩放控件"
+  }
+ ],
+ "com.fr.form.ui.WidgetConfig": [
+  {
+   "key": "Fine-Design_Basic_Widget_Chart_Widget_Config",
+   "zh": "图表控件"
+  },
+  {
+   "key": "Fine-Design_Basic_Widget_Comb_Widget_Config",
+   "zh": "组合控件"
+  },
+  {
+   "key": "Fine-Design_Basic_Widget_Custom_Widget_Config",
+   "zh": "自定义控件"
+  },
+  {
+   "key": "Fine-Design_Basic_Widget_Default_Widget_Config",
+   "zh": "基本控件"
+  },
+  {
+   "key": "Fine-Design_Basic_Widget_Form_Widget_Config",
+   "zh": "表单控件"
+  },
+  {
+   "key": "Fine-Design_Basic_Widget_User_Defined_Widget_Config",
+   "zh": "预定义控件"
+  }
+ ],
+ "com.fr.form.ui.CheckBox": [
+  {
+   "key": "Fine-Design_Basic_Widget_Type_Checkbox",
+   "zh": "复选按钮控件"
+  },
+  {
+   "key": "Fine-Design_Basic_Widget_Type_Combo_Checkbox",
+   "zh": "下拉复选框控件"
+  },
+  {
+   "key": "Fine-Design_Report_Form_CheckBox",
+   "zh": "复选框"
+  }
+ ],
+ "com.fr.form.ui.ComboBox": [
+  {
+   "key": "Fine-Design_Basic_Widget_Type_Combo_Box",
+   "zh": "下拉框控件"
+  },
+  {
+   "key": "Fine-Design_Report_ComboBox",
+   "zh": "下拉框"
+  },
+  {
+   "key": "Fine-Design_Report_Tree_ComboBox",
+   "zh": "下拉树"
+  }
+ ],
+ "com.fr.form.ui.Label": [
+  {
+   "key": "Fine-Design_Basic_Widget_Type_Label",
+   "zh": "标签控件"
+  },
+  {
+   "key": "Fine-Design_Chart_Data_Label",
+   "zh": "标签"
+  },
+  {
+   "key": "Fine-Design_Chart_Set_Data_Label",
+   "zh": "设置标签"
+  },
+  {
+   "key": "Fine-Design_Chart_Utils_Label",
+   "zh": "标签"
+  },
+  {
+   "key": "Fine-Design_Chart_Axis_Label",
+   "zh": "轴标签"
+  },
+  {
+   "key": "Fine-Design_Chart_Category_Label",
+   "zh": "分类标签"
+  },
+  {
+   "key": "Fine-Design_Chart_Label",
+   "zh": "标签"
+  },
+  {
+   "key": "Fine-Design_Chart_More_Label",
+   "zh": "后台检测"
+  },
+  {
+   "key": "Fine-Design_Chart_Percent_Label",
+   "zh": "百分比标签"
+  },
+  {
+   "key": "Fine-Design_Chart_Tick_Label",
+   "zh": "刻度标签"
+  },
+  {
+   "key": "Fine-Design_Chart_Use_Label",
+   "zh": "使用标签"
+  },
+  {
+   "key": "Fine-Design_Chart_Value_Label",
+   "zh": "值标签"
+  }
+ ],
+ "com.fr.form.ui.TextArea": [
+  {
+   "key": "Fine-Design_Basic_Widget_Type_Textarea",
+   "zh": "文本域控件"
+  },
+  {
+   "key": "Fine-Design_Report_Form_TextArea",
+   "zh": "文本域"
+  }
+ ],
+ "com.fr.stable.unit.UNIT": [
+  {
+   "key": "Fine-Design_Chart_Custom_Main_Graduation_Unit",
+   "zh": "自定义主要刻度单位"
+  },
+  {
+   "key": "Fine-Design_Chart_Custom_Second_Graduation_Unit",
+   "zh": "自定义次要刻度单位"
+  },
+  {
+   "key": "Fine-Design_Chart_Main_Graduation_Unit",
+   "zh": "主要刻度单位"
+  }
+ ],
+ "com.fr.chart.chartattr.Chart": [
+  {
+   "key": "Fine-Design_Chart_Float_Chart",
+   "zh": "图表超链-悬浮窗图表"
+  },
+  {
+   "key": "Fine-Design_Form_ToolBar_Chart",
+   "zh": "图表"
+  },
+  {
+   "key": "Fine-Design_Report_Insert_Chart",
+   "zh": "插入图表"
+  },
+  {
+   "key": "Fine-Design_Report_M_Insert_Auto_Chart",
+   "zh": "插入自动推荐图表"
+  },
+  {
+   "key": "Fine-Design_Report_M_Insert_Chart",
+   "zh": "插入图表"
+  },
+  {
+   "key": "Fine-Design_Share_Local_Filter_Item_Bar_Chart",
+   "zh": "柱形图/条形图"
+  },
+  {
+   "key": "Fine-Design_Share_Local_Filter_Item_Line_Chart",
+   "zh": "折线图"
+  },
+  {
+   "key": "Fine-Design_Share_Local_Filter_Item_Combination_Chart",
+   "zh": "组合图"
+  },
+  {
+   "key": "Fine-Design_Share_Local_Filter_Item_Pie_Chart",
+   "zh": "饼图"
+  },
+  {
+   "key": "Fine-Design_Share_Local_Filter_Item_Dashboard_Chart",
+   "zh": "仪表盘"
+  },
+  {
+   "key": "Fine-Design_Share_Local_Filter_Item_Other_Chart",
+   "zh": "其他图表"
+  },
+  {
+   "key": "Fine-Design_Chart_At_Least_One_Chart",
+   "zh": "至少选择一种图表"
+  },
+  {
+   "key": "Fine-Design_Chart_Auto_Recommended_Chart",
+   "zh": "自动推荐图表"
+  },
+  {
+   "key": "Fine-Design_Chart_Bar3D_Chart",
+   "zh": "三维柱形图"
+  },
+  {
+   "key": "Fine-Design_Chart_Bar3D_Stack_Chart",
+   "zh": "三维堆积柱形图"
+  },
+  {
+   "key": "Fine-Design_Chart_Bar_NormalStack_Chart",
+   "zh": "堆积柱形图"
+  },
+  {
+   "key": "Fine-Design_Chart_Bubble_Chart",
+   "zh": "气泡图"
+  },
+  {
+   "key": "Fine-Design_Chart_Chart",
+   "zh": "图表"
+  },
+  {
+   "key": "Fine-Design_Chart_Column_Chart",
+   "zh": "柱形图"
+  },
+  {
+   "key": "Fine-Design_Chart_Combine_Chart",
+   "zh": "组合图"
+  },
+  {
+   "key": "Fine-Design_Chart_Donut_Chart",
+   "zh": "圆环图"
+  },
+  {
+   "key": "Fine-Design_Chart_Gantt_Chart",
+   "zh": "甘特图"
+  },
+  {
+   "key": "Fine-Design_Chart_Generate_Recommended_Chart",
+   "zh": "正在生成推荐图表"
+  },
+  {
+   "key": "Fine-Design_Chart_Line_Chart",
+   "zh": "折线图"
+  },
+  {
+   "key": "Fine-Design_Chart_MultiPie_Chart",
+   "zh": "多层饼图"
+  },
+  {
+   "key": "Fine-Design_Chart_Pop_Chart",
+   "zh": "悬浮窗图表"
+  },
+  {
+   "key": "Fine-Design_Chart_Radar_Chart",
+   "zh": "雷达图"
+  },
+  {
+   "key": "Fine-Design_Chart_Range_Chart",
+   "zh": "全距图"
+  },
+  {
+   "key": "Fine-Design_Chart_Recommended_Chart",
+   "zh": "推荐图表"
+  },
+  {
+   "key": "Fine-Design_Chart_Stock_Chart",
+   "zh": "股价图"
+  },
+  {
+   "key": "Fine-Design_Chart_Switch_Chart",
+   "zh": "图表切换"
+  },
+  {
+   "key": "Fine-Design_Chart_TreeMap_Chart",
+   "zh": "矩形树图"
+  }
+ ],
+ "com.fr.report.cell.cellattr.highlight.Highlight": [
+  {
+   "key": "Fine-Design_Chart_Gradient_HighLight",
+   "zh": "渐变高亮"
+  },
+  {
+   "key": "Fine-Design_Chart_Highlight",
+   "zh": "高亮"
+  }
+ ],
+ "com.fr.chart.chartglyph.Marker": [
+  {
+   "key": "Fine-Design_Chart_I_XYScatterStyle_Marker",
+   "zh": "散点图"
+  },
+  {
+   "key": "Fine-Design_Chart_Edit_Image_Marker",
+   "zh": "编辑图片标记"
+  },
+  {
+   "key": "Fine-Design_Chart_Gannt_Marker",
+   "zh": "里程碑"
+  },
+  {
+   "key": "Fine-Design_Chart_Marker",
+   "zh": "标记点"
+  }
+ ],
+ "com.fr.plugin.chart.marker.type.MarkerType": [
+  {
+   "key": "Fine-Design_Chart_Marker_Type",
+   "zh": "标记类型"
+  }
+ ],
+ "com.fr.chart.base.ChartPreStyle": [
+  {
+   "key": "Fine-Design_Chart_PreStyle",
+   "zh": "图表预定义配色"
+  }
+ ],
+ "com.fr.chart.chartattr.Plot": [
+  {
+   "key": "Fine-Design_Chart_Set_Plot",
+   "zh": "设置绘图区"
+  }
+ ],
+ "com.fr.design.extra.Process": [
+  {
+   "key": "Fine-Design_End_Occupied_Process",
+   "zh": "结束进程"
+  },
+  {
+   "key": "Fine-Design_Chart_Process",
+   "zh": "进度"
+  }
+ ],
+ "com.fr.data.condition.Result": [
+  {
+   "key": "Fine-Design_Error_Finedb_Backup_Reset_Result",
+   "zh": "备份重置失败，请手动将{}文件夹备份至其他目录并删除"
+  },
+  {
+   "key": "Fine-Design_Report_AlphaFine_NO_Result",
+   "zh": "无搜索结果"
+  },
+  {
+   "key": "Fine-Design_Report_No_Result",
+   "zh": "暂不支持显示"
+  },
+  {
+   "key": "Fine-Design_Share_No_Match_Result",
+   "zh": "无匹配结果"
+  }
+ ],
+ "com.fr.plugin.chart.type.LayoutType": [
+  {
+   "key": "Fine-Design_Form_Attr_Layout_Type",
+   "zh": "布局方式"
+  }
+ ],
+ "com.fr.base.Margin": [
+  {
+   "key": "Fine-Design_Form_Base_Margin",
+   "zh": "边距"
+  },
+  {
+   "key": "Fine-Design_Report_Margin",
+   "zh": "边距"
+  },
+  {
+   "key": "Fine-Design_Report_PageSetup_Margin",
+   "zh": "页边距"
+  },
+  {
+   "key": "Fine-Design_Report_Tip_Use_Default_Print_Margin",
+   "zh": "提示：若不勾选，则使用如下默认设置中的打印边距。"
+  }
+ ],
+ "com.fr.design.gui.icombobox.ComboCheckBox": [
+  {
+   "key": "Fine-Design_Form_ComboCheckBox",
+   "zh": "下拉复选框"
+  }
+ ],
+ "com.fr.report.web.button.Frozen": [
+  {
+   "key": "Fine-Design_Form_Component_Frozen",
+   "zh": "组件冻结"
+  },
+  {
+   "key": "Fine-Design_Report_Engine_Frozen",
+   "zh": "冻结"
+  },
+  {
+   "key": "Fine-Design_Report_Face_Write_Frozen",
+   "zh": "填报冻结"
+  }
+ ],
+ "com.fr.report.web.button.Scale": [
+  {
+   "key": "Fine-Design_Form_Component_Scale",
+   "zh": "组件缩放"
+  },
+  {
+   "key": "Fine-Design_Report_IS_Auto_Scale",
+   "zh": "iframe嵌入时自动缩放"
+  }
+ ],
+ "com.fr.form.ui.ToolBar": [
+  {
+   "key": "Fine-Design_Form_EC_Toolbar",
+   "zh": "报表块工具栏"
+  },
+  {
+   "key": "Fine-Design_Form_Edit_Button_ToolBar",
+   "zh": "编辑按钮所在工具栏"
+  },
+  {
+   "key": "Fine-Design_Form_Remove_Button_ToolBar",
+   "zh": "移除按钮所在工具栏"
+  },
+  {
+   "key": "Fine-Design_Function_Form_Widget_Edit_Toolbar",
+   "zh": "表单组件编辑(工具栏)"
+  },
+  {
+   "key": "Fine-Design_Report_Edit_Button_ToolBar",
+   "zh": "编辑按钮所在工具栏"
+  },
+  {
+   "key": "Fine-Design_Report_Mobile_ToolBar",
+   "zh": "工具栏"
+  },
+  {
+   "key": "Fine-Design_Report_Remove_Button_ToolBar",
+   "zh": "移除按钮所在工具栏"
+  },
+  {
+   "key": "Fine-Design_Report_Set_Toolbar",
+   "zh": "工具栏设置"
+  },
+  {
+   "key": "Fine-Design_Report_Use_Default_ToolBar",
+   "zh": "使用默认工具栏"
+  },
+  {
+   "key": "Fine-Design_Report_Use_ToolBar",
+   "zh": "使用工具栏"
+  },
+  {
+   "key": "Fine-Design_Chart_ToolBar",
+   "zh": "工具栏"
+  }
+ ],
+ "com.fr.design.preview.FormPreview": [
+  {
+   "key": "Fine-Design_Form_M_Form_Preview",
+   "zh": "表单预览"
+  }
+ ],
+ "com.fr.form.ui.WaterMark": [
+  {
+   "key": "Fine-Design_Form_WaterMark",
+   "zh": "水印"
+  }
+ ],
+ "com.fr.plugin.chart.type.TextAlign": [
+  {
+   "key": "Fine-Design_Form_Widget_Style_Title_Text_Align",
+   "zh": "位置"
+  }
+ ],
+ "com.fr.form.ui.concept.Visible": [
+  {
+   "key": "Fine-Design_Form_Widget_Style_Title_Visible",
+   "zh": "标题可见"
+  },
+  {
+   "key": "Fine-Design_Form_Widget_Visible",
+   "zh": "可见"
+  },
+  {
+   "key": "Fine-Design_Report_Cell_Visible",
+   "zh": "单元格可见"
+  },
+  {
+   "key": "Fine-Design_Report_Float_Visible",
+   "zh": "悬浮元素可见"
+  },
+  {
+   "key": "Fine-Design_Report_Preference_Horizontal_Scroll_Bar_Visible",
+   "zh": "水平滚动条可见"
+  },
+  {
+   "key": "Fine-Design_Report_Preference_Horizou200Bu200Bntal_Scroll_Bar_Visible",
+   "zh": "Fine-Design_Report_Preference_Vertical_Scroll_Bar_Visible=竖直滚动条可见"
+  },
+  {
+   "key": "Fine-Design_Report_Visible",
+   "zh": "可见"
+  },
+  {
+   "key": "Fine-Design_Report_Widget_Visible",
+   "zh": "可见"
+  },
+  {
+   "key": "Fine-Design_Chart_Legend_Visible",
+   "zh": "图例可见"
+  },
+  {
+   "key": "Fine-Design_Chart_Title_Visible",
+   "zh": "标题可见"
+  }
+ ],
+ "com.fr.form.ui.mobile.MobileBookMark": [
+  {
+   "key": "Fine-Design_Mobile_BookMark",
+   "zh": "导航"
+  }
+ ],
+ "com.fr.design.gui.syntax.ui.rsyntaxtextarea.folding.Fold": [
+  {
+   "key": "Fine-Design_Mobile_Collapse_Fold",
+   "zh": "收起"
+  },
+  {
+   "key": "Fine-Design_Mobile_Collapse_Row_To_Fold",
+   "zh": "行开始收起"
+  }
+ ],
+ "com.fr.design.preview.MobilePreview": [
+  {
+   "key": "Fine-Design_Mobile_Preview",
+   "zh": "移动端预览"
+  }
+ ],
+ "com.fr.design.utils.DesignerPort": [
+  {
+   "key": "Fine-Design_Modify_Designer_Port",
+   "zh": "更改端口"
+  }
+ ],
+ "com.fr.report.worksheet.WorkSheet": [
+  {
+   "key": "Fine-Design_Report_At_Least_One_Visual_Worksheet",
+   "zh": "工作簿中至少要有一张可视化工作表,如果想要删除，请先插入一张新工作表"
+  },
+  {
+   "key": "Fine-Design_Report_Des_Remove_Work_Sheet",
+   "zh": "要删除的表可能存在数据,如果要永久删除这些数据,请按'确定'按钮."
+  }
+ ],
+ "com.fr.design.widget.Appearance": [
+  {
+   "key": "Fine-Design_Report_Bind_Column_Custom_Data_Appearance",
+   "zh": "自定义显示"
+  }
+ ],
+ "com.fr.form.web.button.page.Last": [
+  {
+   "key": "Fine-Design_Report_Engine_ReportServerP_Last",
+   "zh": "末页"
+  },
+  {
+   "key": "Fine-Design_Chart_Data_Function_Last",
+   "zh": "最后一个"
+  }
+ ],
+ "com.fr.report.web.button.page.SetPrinterOffset": [
+  {
+   "key": "Fine-Design_Report_Engine_SetPrinterOffset",
+   "zh": "打印机偏移"
+  }
+ ],
+ "com.fr.design.preview.ViewPreview": [
+  {
+   "key": "Fine-Design_Report_Engine_ViewPreview",
+   "zh": "数据分析"
+  }
+ ],
+ "com.fr.form.main.Form": [
+  {
+   "key": "Fine-Design_Report_Finis_Start_Column_Form",
+   "zh": "重复结尾列从第"
+  },
+  {
+   "key": "Fine-Design_Report_Finis_Start_Row_Form",
+   "zh": "重复结尾行从第"
+  },
+  {
+   "key": "Fine-Design_Report_Form",
+   "zh": "表单"
+  },
+  {
+   "key": "Fine-Design_Report_Title_Start_Column_Form",
+   "zh": "重复标题列从第"
+  },
+  {
+   "key": "Fine-Design_Report_Title_Start_Row_Form",
+   "zh": "重复标题行从第"
+  },
+  {
+   "key": "Fine-Design_Chart_Data_Form",
+   "zh": "数据形式"
+  },
+  {
+   "key": "Fine-Design_Chart_Legend_Form",
+   "zh": "形态"
+  },
+  {
+   "key": "Fine-Design_Chart_Link_Form",
+   "zh": "当前表单对象"
+  }
+ ],
+ "com.fr.design.designer.beans.location.Inner": [
+  {
+   "key": "Fine-Design_Report_Inner",
+   "zh": "内部"
+  }
+ ],
+ "com.fr.stable.fun.Level": [
+  {
+   "key": "Fine-Design_Report_Level",
+   "zh": "级"
+  },
+  {
+   "key": "Fine-Design_Chart_Gradual_Level",
+   "zh": "层次渐变"
+  },
+  {
+   "key": "Fine-Design_Chart_Initial_Level",
+   "zh": "初始等级"
+  },
+  {
+   "key": "Fine-Design_Chart_Level",
+   "zh": "层次"
+  },
+  {
+   "key": "Fine-Design_Chart_Map_Drill_Level",
+   "zh": "钻取层级"
+  },
+  {
+   "key": "Fine-Design_Chart_Show_All_Level",
+   "zh": "显示所有层级"
+  }
+ ],
+ "com.fr.base.ConfigManager": [
+  {
+   "key": "Fine-Design_Report_M_Server_Server_Config_Manager",
+   "zh": "服务器配置"
+  }
+ ],
+ "com.fr.base.PaperSize": [
+  {
+   "key": "Fine-Design_Report_PageSetup_Paper_Size",
+   "zh": "纸张大小"
+  },
+  {
+   "key": "Fine-Design_Report_Print_To_Fit_Paper_Size",
+   "zh": "根据纸张大小缩放打印"
+  }
+ ],
+ "com.fr.stable.unit.MM": [
+  {
+   "key": "Fine-Design_Report_PageSetup_mm",
+   "zh": "毫米"
+  },
+  {
+   "key": "Fine-Design_Report_Unit_MM",
+   "zh": "毫米"
+  }
+ ],
+ "com.fr.report.block.Block": [
+  {
+   "key": "Fine-Design_Report_Poly_Report_Block",
+   "zh": "报表类型聚合块"
+  }
+ ],
+ "com.fr.report.web.button.PrintPreview": [
+  {
+   "key": "Fine-Design_Report_PrintP_Print_Preview",
+   "zh": "打印预览"
+  }
+ ],
+ "com.fr.report.web.Printer": [
+  {
+   "key": "Fine-Design_Report_Printer",
+   "zh": "打印机"
+  },
+  {
+   "key": "Fine-Design_Report_ReportServerP_Add_Printer",
+   "zh": "增加打印机"
+  },
+  {
+   "key": "Fine-Design_Report_ReportServerP_Are_You_Sure_To_Delete_The_Selected_Printer",
+   "zh": "你确实想删除选中的打印机吗"
+  },
+  {
+   "key": "Fine-Design_Report_ReportServerP_Edit_Printer",
+   "zh": "编辑打印机"
+  }
+ ],
+ "com.fr.report.cell.cellattr.core.RichText": [
+  {
+   "key": "Fine-Design_Report_RichText",
+   "zh": "插入富文本"
+  },
+  {
+   "key": "Fine-Design_Chart_Rich_Text",
+   "zh": "富文本"
+  }
+ ],
+ "com.fr.form.ui.WidgetManager": [
+  {
+   "key": "Fine-Design_Report_ServerM_Widget_Manager",
+   "zh": "控件管理"
+  }
+ ],
+ "com.fr.data.util.SortOrder": [
+  {
+   "key": "Fine-Design_Report_Sort_Sort_Order",
+   "zh": "排列顺序"
+  }
+ ],
+ "com.fr.stable.unit.CM": [
+  {
+   "key": "Fine-Design_Report_Unit_CM",
+   "zh": "厘米"
+  }
+ ],
+ "com.fr.stable.unit.INCH": [
+  {
+   "key": "Fine-Design_Report_Unit_INCH",
+   "zh": "英寸"
+  }
+ ],
+ "com.fr.stable.unit.PT": [
+  {
+   "key": "Fine-Design_Report_Unit_PT",
+   "zh": "磅"
+  }
+ ],
+ "com.fr.report.web.button.write.DeleteColumn": [
+  {
+   "key": "Fine-Design_Report_Utils_Delete_Column",
+   "zh": "删除列"
+  }
+ ],
+ "com.fr.general.Record": [
+  {
+   "key": "Fine-Design_Report_Utils_Delete_Record",
+   "zh": "删除记录"
+  },
+  {
+   "key": "Fine-Design_Report_Utils_Insert_Record",
+   "zh": "插入记录"
+  }
+ ],
+ "com.fr.report.web.button.write.SubmitForcibly": [
+  {
+   "key": "Fine-Design_Report_Utils_Submit_Forcibly",
+   "zh": "强行提交"
+  }
+ ],
+ "com.fr.io.base.layer.Component": [
+  {
+   "key": "Fine-Design_Share_Component",
+   "zh": "复用组件"
+  },
+  {
+   "key": "Fine-Design_Share_Download_All_Component",
+   "zh": "下载全部组件"
+  },
+  {
+   "key": "Fine-Design_Share_Drag_And_Make_Component",
+   "zh": "丰富组件资源，轻松拼出模板"
+  }
+ ],
+ "com.fr.form.web.button.Composite": [
+  {
+   "key": "Fine-Design_Share_Composite",
+   "zh": "最近热门"
+  }
+ ],
+ "com.fr.design.mainframe.errorinfo.ErrorInfo": [
+  {
+   "key": "Fine-Design_Share_Drag_Error_Info",
+   "zh": "该组件已被删除，可刷新组件库并重新安装"
+  },
+  {
+   "key": "Fine-Design_Share_Drag_Component_Error_Info",
+   "zh": "组件文件已损坏，请选择其他组件"
+  },
+  {
+   "key": "Fine_Design_Basic_Detail_Error_Info",
+   "zh": "错误详情: {}"
+  }
+ ],
+ "com.fr.general.Encrypt": [
+  {
+   "key": "Fine-Design_Share_Encrypt",
+   "zh": "为保护您的著作权，组件加密中"
+  }
+ ],
+ "com.fr.design.gui.syntax.ui.rsyntaxtextarea.Theme": [
+  {
+   "key": "Fine-Design_Share_Style_Theme",
+   "zh": "样式风格："
+  }
+ ],
+ "com.fr.chart.chartglyph.Meter": [
+  {
+   "key": "Fine-Design_Share_Type_Chart_Meter",
+   "zh": "仪表盘"
+  },
+  {
+   "key": "Fine-Design_Chart_Type_Meter",
+   "zh": "仪表盘--旧版本"
+  }
+ ],
+ "com.fr.design.mainframe.alphafine.model.ProductNews": [
+  {
+   "key": "Fine-Design_Report_AlphaFine_Product_News",
+   "zh": "动态"
+  }
+ ],
+ "com.fr.form.ui.Interactive": [
+  {
+   "key": "Fine-Design_Chart_Axis_Interactive",
+   "zh": "坐标轴交互属性"
+  },
+  {
+   "key": "Fine-Design_Chart_Interactive",
+   "zh": "交互属性"
+  }
+ ],
+ "com.fr.plugin.chart.type.AxisType": [
+  {
+   "key": "Fine-Design_Chart_Axis_Type",
+   "zh": "轴类型"
+  }
+ ],
+ "com.fr.chart.chartglyph.Bubble": [
+  {
+   "key": "Fine-Design_Chart_Bubble",
+   "zh": "气泡"
+  },
+  {
+   "key": "Fine-Design_Chart_Map_Bubble",
+   "zh": "气泡图地图--旧版本"
+  },
+  {
+   "key": "Fine-Design_Chart_New_Bubble",
+   "zh": "气泡图"
+  },
+  {
+   "key": "Fine-Design_Chart_New_Force_Bubble",
+   "zh": "力学气泡图"
+  },
+  {
+   "key": "Fine-Engine_Chart_New_Bubble",
+   "zh": "气泡图"
+  }
+ ],
+ "com.fr.plugin.chart.type.ControlType": [
+  {
+   "key": "Fine-Design_Chart_Control_Type",
+   "zh": "控件类型"
+  }
+ ],
+ "com.fr.chart.chartglyph.DataSheet": [
+  {
+   "key": "Fine-Design_Chart_Data_Sheet",
+   "zh": "数据表"
+  },
+  {
+   "key": "Fine-Design_Chart_Set_Data_Sheet",
+   "zh": "设置数据表"
+  },
+  {
+   "key": "Fine-Design_Chart_Show_Data_Sheet",
+   "zh": "显示数据表"
+  }
+ ],
+ "com.fr.general.data.DataSource": [
+  {
+   "key": "Fine-Design_Chart_Data_Source",
+   "zh": "数据来源"
+  }
+ ],
+ "com.fr.chart.base.TrendLine": [
+  {
+   "key": "Fine-Design_Chart_Edit_Trendline",
+   "zh": "编辑趋势线"
+  },
+  {
+   "key": "Fine-Design_Chart_TrendLine",
+   "zh": "趋势线"
+  }
+ ],
+ "com.fr.stable.fun.mark.Layer": [
+  {
+   "key": "Fine-Design_Chart_Gis_Layer",
+   "zh": "GIS图层"
+  },
+  {
+   "key": "Fine-Design_Chart_Index_Layer",
+   "zh": "层"
+  },
+  {
+   "key": "Fine-Design_Chart_Zoom_Layer",
+   "zh": "缩放等级"
+  }
+ ],
+ "com.fr.plugin.chart.vanchart.LargeModel": [
+  {
+   "key": "Fine-Design_Chart_Large_Model",
+   "zh": "大数据模式"
+  }
+ ],
+ "com.fr.form.ui.tree.LayerData": [
+  {
+   "key": "Fine-Design_Chart_Layer_Data",
+   "zh": "底层数据"
+  }
+ ],
+ "com.fr.plugin.chart.type.MapType": [
+  {
+   "key": "Fine-Design_Chart_Layer_Map_Type",
+   "zh": "展示类型"
+  }
+ ],
+ "com.fr.chart.chartattr.Legend": [
+  {
+   "key": "Fine-Design_Chart_Legend",
+   "zh": "图例"
+  }
+ ],
+ "com.fr.data.impl.Node": [
+  {
+   "key": "Fine-Design_Chart_Node",
+   "zh": "节点"
+  }
+ ],
+ "com.fr.general.data.DataModel": [
+  {
+   "key": "Fine-Design_Chart_Open_Large_Data_Model",
+   "zh": "开启大数据优化"
+  }
+ ],
+ "com.fr.chartx.config.info.SeriesConfig": [
+  {
+   "key": "Fine-Design_Chart_Series_Config",
+   "zh": "系列设置"
+  }
+ ],
+ "com.fr.plugin.chart.base.ViewCenter": [
+  {
+   "key": "Fine-Design_Chart_View_Center",
+   "zh": "中心点"
+  }
+ ]
+}

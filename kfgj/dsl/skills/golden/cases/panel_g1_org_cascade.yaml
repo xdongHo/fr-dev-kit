@@ -1,0 +1,33 @@
+# golden: panel ① org 四级联 + entity 只读公式 + lock_js（panel_org 原型全量）
+# allow_zero_rows: dict_plant 设计即"父级为空→无选项"（semantic cascade_js：plant 依赖 legal/bu/region），
+# G5 冒烟空参下 0 行是级联语义而非缺陷。
+skill: panel
+name: panel_g1_org_cascade
+expect: ok
+allow_zero_rows: true
+spec:
+  widgets:
+    - {type: label, name: lb_legal,  text: "法人："}
+    - {type: combo, name: para_legal,  dict: dict_legal}
+    - {type: label, name: lb_bu,     text: "BU："}
+    - {type: combo, name: para_bu,     dict: dict_bu,     dict_deps: [para_legal]}
+    - {type: label, name: lb_region, text: "区域："}
+    - {type: combo, name: para_region, dict: dict_region, dict_deps: [para_legal, para_bu]}
+    - {type: label, name: lb_plant,  text: "工厂："}
+    - {type: combo, name: para_plant,  dict: dict_plant,  dict_deps: [para_legal, para_bu, para_region]}
+    - {type: label, name: lb_entity, text: "Entity："}
+    - {type: combo, name: para_entity, readonly_formula: true}
+  lock_js: true
+assert_contains:
+  - '<WidgetName name="para_legal"/>'
+  - '<WidgetName name="para_entity"/>'
+  - 'BoundsAttr x="8" y="12" width="45" height="26"'      # 首标签：起点 8，45px 槽
+  - 'BoundsAttr x="59" y="12" width="100" height="26"'    # 首控件：label 后 +51px
+  - 'BoundsAttr x="173" y="12"'                           # 第二组回到 165px 栅格（8+165）
+  - "IF(LEN($para_plant)>0,$para_plant"                   # entity 只读公式（semantic）
+  - "var __w = this;"                                     # lock_js（修 context 版）
+  - 'name="dict_legal"'                                   # 四字典集自动补齐
+  - 'name="dict_plant"'
+  - "fin_demo_auth_base_user_map"                     # 字典集带 PERM
+assert_not_contains:
+  - "${{"

@@ -1,0 +1,11 @@
+# 坏 spec: 事实集(permission=full)无 numeric_cols —— G3 numeric_cast 硬闸必挂，技能须前置拒绝
+skill: dataset
+name: dataset_b1_no_numeric
+expect: reject
+reject_contains: "numeric_cols"
+spec:
+  name: ds_bad
+  source: org_sum_actual
+  fields: [account, entity]
+  filters: ["view = 'YTD'"]
+  permission: full

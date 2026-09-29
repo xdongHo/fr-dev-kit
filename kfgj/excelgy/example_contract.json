@@ -1,0 +1,30 @@
+{
+  "report": {
+    "name": "销售订单明细表",
+    "type": "detail",
+    "sheet": "表样_销售订单明细",
+    "ds_name": "ds1"
+  },
+  "params": [
+    { "name": "start_date", "label": "开始日期", "widget": "date", "example": "2026-09-01" },
+    { "name": "end_date", "label": "结束日期", "widget": "date", "example": "2026-09-29" },
+    { "name": "cust_name", "label": "客户名称", "widget": "combobox", "example": "华创科技（集团）有限公司" }
+  ],
+  "columns": [
+    { "title": "订单号", "field": "order_no", "width": 18 },
+    { "title": "客户名称", "field": "cust_name", "width": 26 },
+    { "title": "商品名称", "field": "goods_name", "width": 16 },
+    { "title": "数量", "field": "qty", "width": 10, "numfmt": "0" },
+    { "title": "单价", "field": "unit_price", "width": 12, "numfmt": "#,##0.00" },
+    { "title": "折扣", "field": "discount", "width": 10, "numfmt": "0%" },
+    { "title": "金额", "field": "amount", "width": 14, "numfmt": "#,##0.00" }
+  ],
+  "sample_rows": [
+    ["SO-20260929-001", "华创科技（集团）有限公司", "智能网关 X200", 121, 899.0, 0.95, 103340.05],
+    ["SO-20260929-002", "蓝海制造", "工业传感器 S7", 450, 156.5, 0.92, 64791.0]
+  ],
+  "summary": { "label": "合计", "col": 7, "formula": "=SUM(G8:G9)" },
+  "charts": [
+    { "name": "客户金额对比", "fr_type": "柱形图", "row": 12, "col": 1, "cs": 4, "rs": 8 }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+ "id": "frm_form_2tables",
+ "name": "FRM表单双表",
+ "engine": "frm",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "2占位网页框(RHIframe)",
+ "containers": [
+  {
+   "title": "明细表",
+   "type": "form",
+   "x": 0,
+   "y": 0,
+   "w": 50,
+   "h": 100,
+   "components": "表"
+  },
+  {
+   "title": "汇总表",
+   "type": "form",
+   "x": 50,
+   "y": 0,
+   "w": 50,
+   "h": 100,
+   "components": "表"
+  }
+ ],
+ "file": "frm_form_2tables.frm",
+ "note": "自适应: BodyLayoutType=0 等比 | 表表并排",
+ "structure": "frm(占位壳): Center内RHIframe占位网格(空RHIframeAttr), 设计器里选组件路径即挂 组件模板/图表组件-*.cpt"
+}

@@ -1,0 +1,1009 @@
+[
+ {
+  "class": "com.fr.base.ColumnRow",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3577"
+  ]
+ },
+ {
+  "class": "com.fr.base.Constants.LINE_THIN",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-217"
+  ]
+ },
+ {
+  "class": "com.fr.base.Formula",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3577"
+  ]
+ },
+ {
+  "class": "com.fr.base.Parameter",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-2394"
+  ]
+ },
+ {
+  "class": "com.fr.base.background.Background",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-217"
+  ]
+ },
+ {
+  "class": "com.fr.base.background.ColorBackground",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-217"
+  ]
+ },
+ {
+  "class": "com.fr.chart.chartattr.Chart",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3556"
+  ]
+ },
+ {
+  "class": "com.fr.chart.form.ChartEditor",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-651"
+  ]
+ },
+ {
+  "class": "com.fr.chart.web.ChartHyperlink",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3556"
+  ]
+ },
+ {
+  "class": "com.fr.data.FormulaDictionary",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-608"
+  ]
+ },
+ {
+  "class": "com.fr.data.TableData",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-996"
+  ]
+ },
+ {
+  "class": "com.fr.data.TableDataDictionary",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1284",
+   "doc-1285",
+   "doc-608"
+  ]
+ },
+ {
+  "class": "com.fr.data.TreeTableData",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1042"
+  ]
+ },
+ {
+  "class": "com.fr.data.core.db.Query",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-2394"
+  ]
+ },
+ {
+  "class": "com.fr.data.impl.DBTableData",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1042",
+   "doc-158",
+   "doc-2394",
+   "doc-3309",
+   "doc-3556",
+   "doc-651",
+   "doc-897",
+   "doc-903",
+   "doc-996"
+  ]
+ },
+ {
+  "class": "com.fr.data.impl.DatabaseConnection",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1042",
+   "doc-903"
+  ]
+ },
+ {
+  "class": "com.fr.data.impl.EmbeddedTableData",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3622"
+  ]
+ },
+ {
+  "class": "com.fr.data.impl.SQLTableData",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1284",
+   "doc-1285",
+   "doc-608"
+  ]
+ },
+ {
+  "class": "com.fr.data.impl.TableTreeData",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1042"
+  ]
+ },
+ {
+  "class": "com.fr.data.impl.TreeDictionary",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1990"
+  ]
+ },
+ {
+  "class": "com.fr.data.impl.TreeLayer",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1990"
+  ]
+ },
+ {
+  "class": "com.fr.form.main.Form",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-651"
+  ]
+ },
+ {
+  "class": "com.fr.form.ui.CheckBoxGroup",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1285"
+  ]
+ },
+ {
+  "class": "com.fr.form.ui.ComboBox",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1284",
+   "doc-2394",
+   "doc-608"
+  ]
+ },
+ {
+  "class": "com.fr.form.ui.TableDataDict",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1042"
+  ]
+ },
+ {
+  "class": "com.fr.form.ui.TextEditor",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-157"
+  ]
+ },
+ {
+  "class": "com.fr.form.ui.TreeComboBox",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1042",
+   "doc-260"
+  ]
+ },
+ {
+  "class": "com.fr.form.ui.TreeComboBoxEditor",
+  "methods": [
+   "addWidget",
+   "setAllowBlank",
+   "setAllowCreateValue",
+   "setAllowEdit",
+   "setAsyncLoad",
+   "setDictionary",
+   "setEnabled",
+   "setErrorMsg",
+   "setFontSize",
+   "setMultipleSelection",
+   "setReturnFullPath",
+   "setReturnLeafNodeOnly",
+   "setVisible",
+   "setWatermark",
+   "setWidget",
+   "setWidgetName"
+  ],
+  "core_docs": [
+   "doc-260"
+  ],
+  "all_docs": [
+   "doc-1990",
+   "doc-260"
+  ]
+ },
+ {
+  "class": "com.fr.form.ui.TreeDictionary",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-260"
+  ]
+ },
+ {
+  "class": "com.fr.form.ui.Widget",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-2394",
+   "doc-651"
+  ]
+ },
+ {
+  "class": "com.fr.form.ui.parameter.ReportParameterUI",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-157",
+   "doc-1990",
+   "doc-260"
+  ]
+ },
+ {
+  "class": "com.fr.general.ReportConstants.SORT_ASC",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3717"
+  ]
+ },
+ {
+  "class": "com.fr.general.data.Dictionary",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-2394"
+  ]
+ },
+ {
+  "class": "com.fr.io.TemplateWorkBookIO",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1128",
+   "doc-1130",
+   "doc-1141",
+   "doc-140",
+   "doc-157",
+   "doc-158",
+   "doc-1822",
+   "doc-1990",
+   "doc-217",
+   "doc-225",
+   "doc-2394",
+   "doc-2528",
+   "doc-260",
+   "doc-2684",
+   "doc-3309",
+   "doc-3321",
+   "doc-3622",
+   "doc-368",
+   "doc-608",
+   "doc-611",
+   "doc-897",
+   "doc-947",
+   "doc-996"
+  ]
+ },
+ {
+  "class": "com.fr.io.exporter.ExcelExporter",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3321"
+  ]
+ },
+ {
+  "class": "com.fr.io.exporter.Exporter",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1130"
+  ]
+ },
+ {
+  "class": "com.fr.io.exporter.WordExporter",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1130"
+  ]
+ },
+ {
+  "class": "com.fr.js.ChartHyperlink",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-651"
+  ]
+ },
+ {
+  "class": "com.fr.js.FormHyperlink",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-651"
+  ]
+ },
+ {
+  "class": "com.fr.js.Hyperlink",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3321"
+  ]
+ },
+ {
+  "class": "com.fr.js.HyperlinkGroup",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-947"
+  ]
+ },
+ {
+  "class": "com.fr.js.JavaScriptHyperlink",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-947"
+  ]
+ },
+ {
+  "class": "com.fr.js.NetworkReportLink",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-947"
+  ]
+ },
+ {
+  "class": "com.fr.js.ReportletHyperlink",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3321"
+  ]
+ },
+ {
+  "class": "com.fr.js.WebHyperlink",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3321"
+  ]
+ },
+ {
+  "class": "com.fr.js.parameter.Parameter",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-651"
+  ]
+ },
+ {
+  "class": "com.fr.main.impl.Form",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-651"
+  ]
+ },
+ {
+  "class": "com.fr.main.impl.WorkBook",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-140",
+   "doc-157",
+   "doc-158",
+   "doc-1822",
+   "doc-1990",
+   "doc-217",
+   "doc-225",
+   "doc-260",
+   "doc-2684",
+   "doc-3309",
+   "doc-368",
+   "doc-3717",
+   "doc-897",
+   "doc-947",
+   "doc-996"
+  ]
+ },
+ {
+  "class": "com.fr.main.workbook.WorkBook",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1118",
+   "doc-1128",
+   "doc-1141",
+   "doc-2394",
+   "doc-2528",
+   "doc-2684",
+   "doc-3622",
+   "doc-4202",
+   "doc-611"
+  ]
+ },
+ {
+  "class": "com.fr.report.TemplateWorkBook",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-368"
+  ]
+ },
+ {
+  "class": "com.fr.report.cell.CellExpand",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-2528"
+  ]
+ },
+ {
+  "class": "com.fr.report.cell.CellExpandAttr",
+  "methods": [
+   "setCellExpand",
+   "setExtendDirection"
+  ],
+  "core_docs": [
+   "doc-140"
+  ],
+  "all_docs": [
+   "doc-140",
+   "doc-3309",
+   "doc-897"
+  ]
+ },
+ {
+  "class": "com.fr.report.cell.CellGUIAttr",
+  "methods": [
+   "setCellGUIAttr",
+   "setExportCellContent",
+   "setExportFillBackground",
+   "setPageShowContent",
+   "setPrintCellContent",
+   "setPrintFillBackground"
+  ],
+  "core_docs": [
+   "doc-225"
+  ],
+  "all_docs": [
+   "doc-225"
+  ]
+ },
+ {
+  "class": "com.fr.report.cell.DSColumn",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-2394"
+  ]
+ },
+ {
+  "class": "com.fr.report.cell.DefaultCellElement",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-608"
+  ]
+ },
+ {
+  "class": "com.fr.report.cell.DefaultCellExpand",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-2528"
+  ]
+ },
+ {
+  "class": "com.fr.report.cell.DefaultTemplateCellElement",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-140",
+   "doc-217",
+   "doc-225",
+   "doc-2684",
+   "doc-3309",
+   "doc-3717",
+   "doc-4202",
+   "doc-897",
+   "doc-947"
+  ]
+ },
+ {
+  "class": "com.fr.report.cell.TemplateCellElement",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-140",
+   "doc-217",
+   "doc-225",
+   "doc-2394",
+   "doc-2528",
+   "doc-260",
+   "doc-3309",
+   "doc-3622",
+   "doc-4202",
+   "doc-897",
+   "doc-947"
+  ]
+ },
+ {
+  "class": "com.fr.report.cell.cellattr.CellExpandAttr",
+  "methods": [
+   "setCellExpandAttr",
+   "setExtendSortFormula",
+   "setExtendSortType",
+   "setSortFormula",
+   "setSortType",
+   "setTemplateCellElement"
+  ],
+  "core_docs": [
+   "doc-3717"
+  ],
+  "all_docs": [
+   "doc-2684",
+   "doc-3622",
+   "doc-3717"
+  ]
+ },
+ {
+  "class": "com.fr.report.cell.cellattr.core.group.Filter",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-157"
+  ]
+ },
+ {
+  "class": "com.fr.report.core.ExcelExportAttr",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1118"
+  ]
+ },
+ {
+  "class": "com.fr.report.core.PDFExportAttr",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1141"
+  ]
+ },
+ {
+  "class": "com.fr.report.core.ParameterPanel",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1284",
+   "doc-1285"
+  ]
+ },
+ {
+  "class": "com.fr.report.core.ReportExportAttr",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1118",
+   "doc-1128",
+   "doc-1141"
+  ]
+ },
+ {
+  "class": "com.fr.report.core.ReportPageAttr",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-368"
+  ]
+ },
+ {
+  "class": "com.fr.report.core.WordExportAttr",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1128"
+  ]
+ },
+ {
+  "class": "com.fr.report.elementcase.TemplateCellElement",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3717"
+  ]
+ },
+ {
+  "class": "com.fr.report.elementcase.TemplateElementCase",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-2684"
+  ]
+ },
+ {
+  "class": "com.fr.report.io.TemplateWorkBookIO",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3717"
+  ]
+ },
+ {
+  "class": "com.fr.report.parameter.Parameter",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1284",
+   "doc-1285",
+   "doc-157",
+   "doc-158",
+   "doc-1990",
+   "doc-651",
+   "doc-897",
+   "doc-903"
+  ]
+ },
+ {
+  "class": "com.fr.report.report.Report",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1130"
+  ]
+ },
+ {
+  "class": "com.fr.report.stable.ExpandType",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-140"
+  ]
+ },
+ {
+  "class": "com.fr.report.stable.ExpandType.TOP_TO_BOTTOM",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-2528",
+   "doc-3309",
+   "doc-897"
+  ]
+ },
+ {
+  "class": "com.fr.report.stable.ReportPageAttr",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-1130"
+  ]
+ },
+ {
+  "class": "com.fr.report.stable.TemplateWorkBook",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-611",
+   "doc-996"
+  ]
+ },
+ {
+  "class": "com.fr.report.stable.WebAttr",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-611"
+  ]
+ },
+ {
+  "class": "com.fr.report.structure.TreeTableData",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-260"
+  ]
+ },
+ {
+  "class": "com.fr.report.style.BorderAttr",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-217"
+  ]
+ },
+ {
+  "class": "com.fr.report.style.BorderLine",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-217"
+  ]
+ },
+ {
+  "class": "com.fr.report.style.Style",
+  "methods": [
+   "createBackground",
+   "setBackground",
+   "setBorder",
+   "setFont",
+   "setForeground",
+   "setFormat",
+   "setHorizontalAlignment",
+   "setStrikeLine",
+   "setStyle",
+   "setTopBorder",
+   "setUnderline",
+   "setVerticalAlignment",
+   "setWrapText"
+  ],
+  "core_docs": [
+   "doc-217"
+  ],
+  "all_docs": [
+   "doc-217"
+  ]
+ },
+ {
+  "class": "com.fr.report.worksheet.PageRWorkSheet",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-2684"
+  ]
+ },
+ {
+  "class": "com.fr.report.worksheet.WorkBook",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-608"
+  ]
+ },
+ {
+  "class": "com.fr.report.worksheet.WorkSheet",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-140",
+   "doc-217",
+   "doc-225",
+   "doc-2528",
+   "doc-3309",
+   "doc-3717",
+   "doc-4202",
+   "doc-897",
+   "doc-947"
+  ]
+ },
+ {
+  "class": "com.fr.report.write.BuiltInSQLSubmiter",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3577"
+  ]
+ },
+ {
+  "class": "com.fr.report.write.ReportWriteAttr",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3577"
+  ]
+ },
+ {
+  "class": "com.fr.script.Calculator",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-2394"
+  ]
+ },
+ {
+  "class": "com.fr.script.core.Function",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3556"
+  ]
+ },
+ {
+  "class": "com.fr.stable.Constants.ASC",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3622"
+  ]
+ },
+ {
+  "class": "com.fr.stable.Constants.TABLEDATA",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3622"
+  ]
+ },
+ {
+  "class": "com.fr.stable.script.formula.Formula",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-947"
+  ]
+ },
+ {
+  "class": "com.fr.web.attr.ReportWebAttr",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-135",
+   "doc-1822"
+  ]
+ },
+ {
+  "class": "com.fr.web.attr.WriteAttr",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-136"
+  ]
+ },
+ {
+  "class": "com.fr.web.core.Hyperlink",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-4202"
+  ]
+ },
+ {
+  "class": "com.fr.web.core.HyperlinkList",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-4202"
+  ]
+ },
+ {
+  "class": "com.fr.web.core.ReportWebAttr",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-611"
+  ]
+ },
+ {
+  "class": "com.fr.web.core.widget.Button",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-135"
+  ]
+ },
+ {
+  "class": "com.fr.web.core.widget.ReportWebToolbar",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-135",
+   "doc-136"
+  ]
+ },
+ {
+  "class": "com.fr.write.config.ColumnConfig",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3577"
+  ]
+ },
+ {
+  "class": "com.fr.write.config.DMLConfig",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3577"
+  ]
+ },
+ {
+  "class": "com.fr.write.config.DeleteConfig",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3577"
+  ]
+ },
+ {
+  "class": "com.fr.write.config.InsertConfig",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3577"
+  ]
+ },
+ {
+  "class": "com.fr.write.config.IntelliDMLConfig",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3577"
+  ]
+ },
+ {
+  "class": "com.fr.write.config.Table",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3577"
+  ]
+ },
+ {
+  "class": "com.fr.write.config.UpdateConfig",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-3577"
+  ]
+ },
+ {
+  "class": "com.fr.write.extension.DynamicParamHyperlink",
+  "methods": [],
+  "core_docs": [],
+  "all_docs": [
+   "doc-4202"
+  ]
+ }
+]

@@ -1,0 +1,54 @@
+{
+ "id": "frma_side_nav_left",
+ "name": "绝对·左窄边栏",
+ "engine": "frm",
+ "frm_mode": "absolute",
+ "canvas": {
+  "width": 1280,
+  "height": 720,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "4占位网页框(RHIframe)",
+ "containers": [
+  {
+   "title": "筛选导航",
+   "type": "form",
+   "x": 0,
+   "y": 0,
+   "w": 20,
+   "h": 100,
+   "components": "表"
+  },
+  {
+   "title": "主图",
+   "type": "chart_group",
+   "x": 20,
+   "y": 0,
+   "w": 80,
+   "h": 50,
+   "components": "地图"
+  },
+  {
+   "title": "辅图-饼",
+   "type": "chart",
+   "x": 20,
+   "y": 50,
+   "w": 40,
+   "h": 50,
+   "components": "饼图"
+  },
+  {
+   "title": "辅图-条",
+   "type": "chart",
+   "x": 60,
+   "y": 50,
+   "w": 40,
+   "h": 50,
+   "components": "条形图"
+  }
+ ],
+ "file": "frma_side_nav_left.frm",
+ "note": "绝对: BodyLayoutType=1, px=%×1920×1080 | 绝对布局: BoundsWidget 像素 = 百分比 × 1920×1080",
+ "structure": "frm(绝对v8/API构建): Center=WFitLayout > absolute0(WAbsoluteLayout+DesignResolution 1280×720) > RHIframe占位(用户权威样本同构)"
+}

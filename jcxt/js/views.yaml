@@ -1,0 +1,144 @@
+# --------------------------------------------------------------------------
+# views.yaml — 知识库多维视图维度规则配置（外置可改，2026-09-29）
+#
+# 三个维度：scenario 场景 / temperature 冷热 / practice 实战链路。
+# 每个视图 = 一条选择规则（可组合），build_views.py 读本文件 + _tree_index.json
+# 生成 jcxt/data/_views.json；改完本文件重跑: python jcxt/js/build_views.py
+#
+# 本文件格式为极简自绘子集（build_views.py 内置 parser，无需 pyyaml）：
+#   - 顶层 `视图key:` 定义一个视图；下一层 `字段: 值` 为规则字段
+#   - 字段值可为标量 / 行内列表 [a, b, c]；`字段:` 后跟 `- 条目` 块列表
+#   - `#` 开头为注释（仅整行）；缩进只用空格，最多两层
+#
+# 可用规则字段（全部为「并集」组合）：
+#   dirs           目录前缀列表，命中该目录子树全部页（如 lc/fr11_knowledge/mobile移动端）
+#   paths          显式页列表，支持页 id / 路径 / 路径后缀（如 gf/yspj）
+#   path_regex     正则，对页 path 与 id 匹配（如 ^lc/0[0-6]_）
+#   keywords_regex 正则（忽略大小写），对 title+summary+keywords+tags 匹配
+#   tags           标签列表，页 tags 含任一即命中
+#   referenced_by  源文件列表（如 AGENTS.md），其直链/路径引用的页全部命中
+#   top_refs       整数 N，全库被引用次数 top N（引用数=ckzl 内相对链接指向该页的次数）
+#   min_refs       整数 N，被引用次数 >= N 的页
+#   complement_of  视图 key 列表，取全库减去这些视图的补集（temperature/warm 用）
+#   exclude_paths  从结果中剔除的页（同 paths 写法）
+#   external       块列表，非 ckzl 的外置指针（仅展示，不参与页选择）
+#
+# 视图 key 命名：维度前缀_短名（scenario_ops / temperature_hot / practice_flow_f）；
+# --view 支持：完整 key、中文名、短名（ops / hot / flow_f）。
+# --------------------------------------------------------------------------
+
+# ================================ scenario 场景视图（7） ================================
+
+scenario_ops:
+  dim: scenario
+  name: 运维维护
+  desc: 部署/集群/性能/权限/调度/备份/监控/升级/迁移与运行期治理
+  dirs: [lc/fr11_knowledge/deploy-cluster部署集群, lc/fr11_knowledge/performance性能优化, lc/fr11_knowledge/permission权限, lc/fr11_knowledge/mobile移动端]
+  paths: [lc/08_技术选型与调试, zsk/csff/设计器重启预检, lc/04_自检API与部署治理]
+  keywords_regex: 部署|集群|性能优化|权限|定时调度|备份|监控|升级|迁移|平台配置
+
+scenario_build:
+  dim: scenario
+  name: 新构建
+  desc: 从零建模板：流程A/F 全链路（需求判定→数据建模→参数面板→主体样式→填报→Web 呈现）
+  path_regex: ^lc/0[0-6]_
+  dirs: [gzjd, hbfa, zsk/xqfx]
+  paths: [gf/bjys, lc/10_Excel骨架正向工艺, lc/README]
+  keywords_regex: 流程A|流程F
+
+scenario_modify:
+  dim: scenario
+  name: 修改改造
+  desc: 已有模板修改/格式化/复杂改造（通配脚本优先，勿手写）
+  path_regex: ^lc/0[34]_
+  paths: [zsk/xtgt/patterns/复杂模板改造协议, gf/bjys]
+  keywords_regex: 改造|格式化|通配
+  external:
+    - kfgj/tygs/ 格式化通配脚本索引目录（改样式先查此处，通配脚本优先）
+
+scenario_debug:
+  dim: scenario
+  name: 排错
+  desc: 报错排查：tbcw 错误案例全库 + 调试方法 + 无头铁律
+  dirs: [zsk/tbcw]
+  tags: [错误案例]
+  paths: [lc/08_技术选型与调试, gf/FR_HEADLESS_GUIDE, lc/02_调试技巧, zsk/csff/设计器重启预检]
+  keywords_regex: 报错|排查|排错
+
+scenario_api:
+  dim: scenario
+  name: API查询
+  desc: Java API / 包名速查 / 零件库结构化查询 / 官方文档入口
+  dirs: [frapi, zsk/gczsk]
+  paths: [lc/01_Java_API包名速查, zsk/frwd/资源索引]
+  keywords_regex: Java.?API|包名速查|API清单
+  external:
+    - P-\d+ 零件编号与 com.fr.* 全限定类名不入向量/FTS 索引，走: python ckzl/zsk/gczsk/query_kb.py part <编号或关键字>
+
+scenario_accept:
+  dim: scenario
+  name: 验收交付
+  desc: 交付验收断言/判级/验证清单/预览体检
+  dirs: [zsk/csff]
+  paths: [gf/yspj, gf/FR_HEADLESS_GUIDE, gzjd/10_预览与验证, lc/03_产物分类_体检与无头上下文]
+  keywords_regex: 验收|判级|交付
+
+scenario_data:
+  dim: scenario
+  name: 数据开发
+  desc: 数据建模/数据集 SQL/级联参数/数仓（DWS）/数据分析
+  dirs: [zsk/dwc, zsk/sjfx]
+  paths: [lc/02_数据建模, lc/01_数据集构建, lc/02_级联参数与参数选型, lc/03_排序联动_连接权限_模板转换, gzjd/01_需求与数据判定, gzjd/02_数据集, frapi/doc/设计器建表SQL执行]
+  keywords_regex: 数据集|SQL|数仓|级联参数
+
+# ================================ temperature 冷热视图（3） ================================
+
+temperature_hot:
+  dim: temperature
+  name: 热视图
+  desc: AGENTS.md 与铁律主路由直链页 + 全库引用 top30 + 零件库/JavaAPI速查/铁律六件
+  referenced_by: [AGENTS.md, ckzl/gf/FR_HEADLESS_GUIDE.md]
+  top_refs: 30
+  min_refs: 0
+  paths: [zsk/gczsk/README, frapi/doc/JavaAPI构建速查, gf/FR_HEADLESS_GUIDE, gf/bjys, gf/jcfz, gf/xjqx, gf/yspj, gf/zxzt]
+
+temperature_warm:
+  dim: temperature
+  name: 温视图
+  desc: 其余主题参考页（引用不多但常态可查：fr11 references、tbcw、qdjk 等）
+  complement_of: [temperature_hot, temperature_cold]
+
+temperature_cold:
+  dim: temperature
+  name: 冷视图
+  desc: 低频深水区（fvs/i18n/print/skin/mobile 小众主题、bb 变更与归档声明、fr10_deep_learn 深水页）
+  dirs: [bb, lc/fr10_deep_learn, lc/fr11_knowledge/fvs-dashboard大屏, lc/fr11_knowledge/i18n国际化, lc/fr11_knowledge/print打印, lc/fr11_knowledge/skin-theme主题样式, lc/fr11_knowledge/mobile移动端]
+
+# ================================ practice 实战链路（3） ================================
+# 来自用户私有实践记录的显式映射（硬编码，物理文件零移动）。
+
+practice_flow_f:
+  dim: practice
+  name: 流程F实战
+  desc: 2026-09-29 Excel 骨架正向工艺实战链（示例数据→xlsx 骨架→cpt→数据集→图表）
+  paths: [lc/10_Excel骨架正向工艺, zsk/xtgt/patterns/复杂模板改造协议, frapi/doc/JavaAPI构建速查, hbfa/README]
+  external:
+    - kfgj/excelgy/ 三件套: gen_skeleton.py（示例数据→xlsx 表样骨架）/ excel2cpt.js（无头转 cpt，Excel2007ReportImporter 52ms 实证）/ extract_charts.py（图表管线 1280x768 抽取）
+    - kfgj/excelgy/README.md 为三件套用法说明；JavaAPI构建速查 内查 Excel2007ReportImporter 段
+    - lc/10 铁律节: openpyxl 合并区域必须「先 merge 后样式」（--page lc/10_Excel骨架正向工艺 看 L77 章节）
+
+practice_hfm_v2:
+  dim: practice
+  name: HFM V2 改造实战
+  desc: HFM V2 填报改造链：填报模块→填报交互与校验→填报类错误→验收
+  paths: [gzjd/05_填报模块, lc/05_填报与交互, lc/01_填报提交, lc/02_JS交互与回调, lc/03_预览_图表联动_移动端上报, lc/04_填报页面设置与数据校验, lc/05_复选批量_Excel导入_暂存, zsk/xqfx/填报报表设计决策清单, zsk/tbcw/填报报表开发错误分析, zsk/tbcw/事件环递归-Maximum call stack size exceeded, zsk/tbcw/README, zsk/csff/模板验证清单, zsk/csff/README]
+
+practice_glm_excel:
+  dim: practice
+  name: GLM-in-Excel 逆向借鉴
+  desc: pending_write_token 两阶段写入 / 公式风险预检的设计理念借鉴页
+  paths: [lc/10_Excel骨架正向工艺, zsk/gczsk/README]
+  external:
+    - 设计理念: pending_write_token 两阶段写入（先占位后提交）+ 公式风险预检（写前校验公式合法性，失败走降级路径）
+    - lc/10 铁律节: openpyxl 合并区域「先 merge 后样式」（--page lc/10_Excel骨架正向工艺 看 L77 章节）
+    - 零件: python ckzl/zsk/gczsk/query_kb.py part P-9835（ExcelReportImporter）/ part P-9836（ExcelReportImporterFactory）

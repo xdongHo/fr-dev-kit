@@ -1,0 +1,636 @@
+{
+ "total_clusters": 3593,
+ "matched": 924,
+ "gap_clusters": [
+  {
+   "cluster": "Fine-Design_Basic",
+   "words": [
+    "配置",
+    "自定义",
+    "失败",
+    "信息",
+    "名字",
+    "文本",
+    "类型",
+    "值"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Series",
+   "words": [
+    "系列名",
+    "系列宽度",
+    "系列",
+    "系列设置",
+    "系列设置",
+    "值"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Area",
+   "words": [
+    "区域名",
+    "区域标题",
+    "区域值",
+    "面积",
+    "区域大小"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Action_Copy",
+   "words": [
+    "复制",
+    "将当前选择复制到剪贴板.",
+    "C",
+    "复制"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Report_Event",
+   "words": [
+    "事件",
+    "事件名",
+    "事件名字和类型",
+    "事件类型"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Action_CollapseAllFolds",
+   "words": [
+    "取消所有代码折叠.",
+    "O",
+    "取消所有代码折叠"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Action_CollapseCommentFolds",
+   "words": [
+    "取消注释代码折叠.",
+    "C",
+    "取消注释代码折叠"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Action_Cut",
+   "words": [
+    "将当前选择复制到剪贴板并从文本区域删除.",
+    "T",
+    "剪切"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Action_Delete",
+   "words": [
+    "删除当前选择区域.",
+    "D",
+    "删除"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Action_ExpandAllFolds",
+   "words": [
+    "打开所有代码折叠.",
+    "E",
+    "打开所有代码折叠"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Action_Paste",
+   "words": [
+    "将当前剪贴板内容复制到文本区域.",
+    "P",
+    "粘贴"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Action_SelectAll",
+   "words": [
+    "选择当前文档中全部内容.",
+    "A",
+    "全选"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Action_ToggleCurrentFold",
+   "words": [
+    "折叠/开启插入符所在位置.",
+    "F",
+    "折叠/开启本区段"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Export_JS_Filename",
+   "words": [
+    "导出文件名",
+    "自定义",
+    "默认"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Hyperlink_Dialog",
+   "words": [
+    "对话框",
+    "对话框大小",
+    "对话框标题"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Alert",
+   "words": [
+    "提示文字",
+    "警戒值",
+    "提示文字"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Form_Min",
+   "words": [
+    "最小高度",
+    "最小值",
+    "最小宽度"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Report_Auto_Adjust",
+   "words": [
+    "自动调整行高",
+    "自动调整",
+    "自动调整列宽"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Share",
+   "words": [
+    "组件",
+    "组件名称：",
+    "标题头"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Share_Group_Remove",
+   "words": [
+    "删除",
+    "删除分组失败",
+    "删除分组会同时删除它包含的组件，是否删除？"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Share_Remove",
+   "words": [
+    "删除",
+    "组件删除失败",
+    "是否删除所选组件？"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Drill",
+   "words": [
+    "钻取",
+    "钻取地图",
+    "下层钻取设置"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Region",
+   "words": [
+    "区域",
+    "区域地图",
+    "区域值"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Data",
+   "words": [
+    "数据",
+    "数据类型"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Delete",
+   "words": [
+    "删除",
+    "删除失败"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Export_JS",
+   "words": [
+    "导出设置",
+    "导出方式"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Feedback",
+   "words": [
+    "欢迎您提出宝贵的意见和建议，请将信息填写得尽量详细，我们会尽快联系您",
+    "请输入不超过400个字的问题描述"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Plugin_Install",
+   "words": [
+    "安装",
+    "安装失败"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Plugin_Plugin",
+   "words": [
+    "插件",
+    "插件名称"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Plugin_Update",
+   "words": [
+    "插件更新",
+    "插件更新失败"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Preference_Caching_Template",
+   "words": [
+    "模板内存优化",
+    "设置为0表示关闭该功能；重启设计器后生效"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Preview_Performed_Sql",
+   "words": [
+    "查看执行SQL",
+    "已生成执行SQL，并自动复制到剪切板"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Remote_Env",
+   "words": [
+    "远程环境",
+    "远程服务器配置"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Remote_Env_Server",
+   "words": [
+    "远程服务器",
+    "提示：主机位置是主机名、端口、Web应用、Servlet的组合，填写主机名、端口、Web应用、Servlet后自动生成主机位置，或输入主机位置后自动生成其他四项。"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Rename",
+   "words": [
+    "重命名",
+    "重命名失败"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Style_Alignment_Vertical",
+   "words": [
+    "垂直对齐",
+    "文字竖排"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Sync_To_Local",
+   "words": [
+    "同步至本地",
+    "同步本地的jar包和插件,使其与远程服务器保持一致。"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Web_Preview_Port",
+   "words": [
+    "端口号",
+    "端口设置"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Widget_Property",
+   "words": [
+    "属性名",
+    "属性值"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Category",
+   "words": [
+    "分类名",
+    "分类"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Color",
+   "words": [
+    "颜色",
+    "颜色类型"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Enable_Field",
+   "words": [
+    "使用字段名",
+    "使用字段值"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Field",
+   "words": [
+    "字段值",
+    "字段名"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Log_Base",
+   "words": [
+    "底数",
+    "对数底数"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Error_Remote_No_Response",
+   "words": [
+    "远程设计服务器无响应",
+    "远程连接时间过长是否继续等待？"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Form_Adaptive_Property_Auto_Match",
+   "words": [
+    "自适应属性自动匹配",
+    "为提升手机端模板效果，在使用保留布局功能时，设置自适应布局方式下的组件缩放逻辑为\"横向自适应\""
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Form_Font",
+   "words": [
+    "字体",
+    "字体大小"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Mobile",
+   "words": [
+    "自定义",
+    "默认"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Mobile_Tab_Show_Indicator",
+   "words": [
+    "显示圆点指示器",
+    "显示方式"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Multi_Selection_Auto_Spacing",
+   "words": [
+    "自动间距",
+    "仅支持给2个以上的组件自动分布间距"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Needle_Printer_Optimize",
+   "words": [
+    "针式打印优化",
+    "提示：将文字字体替换为黑体以优化打印效果。"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Predefined_Style_Manager",
+   "words": [
+    "样式管理",
+    "选择样式作为新建模板的默认样式"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Report_BBSLogin_Logout",
+   "words": [
+    "退出登录",
+    "退出后不会删除历史数据，但是无法使用新的帆软生态资源"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Report_Engine_Tab_Layout",
+   "words": [
+    "标题",
+    "宽度"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Report_Font",
+   "words": [
+    "字体",
+    "大小"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Report_Insert",
+   "words": [
+    "插入",
+    "插入普通文本"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Report_M_Insert",
+   "words": [
+    "插入",
+    "插入普通文本"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Report_Pagination",
+   "words": [
+    "分页",
+    "分页预览设置"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Report_Poly",
+   "words": [
+    "聚合报表",
+    "聚合块名"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Report_Properties_Mobile",
+   "words": [
+    "手机属性",
+    "提示："
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Share_Group_Rename",
+   "words": [
+    "重命名",
+    "重命名失败"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Share_Package_Downloading",
+   "words": [
+    "下载中",
+    "在此期间您可正常进行其他操作"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Share_Price_Charge",
+   "words": [
+    "收费",
+    "请输入两位小数的价格"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Share_Sort",
+   "words": [
+    "排序",
+    "组件名称"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Share_Upload_Meanwhile",
+   "words": [
+    "同时上传至组件商城",
+    "上传后可进行有偿销售，我们将对上传的组件进行数据脱敏以保证数据安全"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Update",
+   "words": [
+    "更新失败",
+    "更新提示"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Vcs_Revert",
+   "words": [
+    "还原此版本",
+    "版本还原"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Vcs_Version_Revert",
+   "words": [
+    "Fine-Design_Vcs_Version_Revert_Confirm=是否还原此版本？",
+    "回退"
+   ]
+  },
+  {
+   "cluster": "Fine-Designer_Login_Quit",
+   "words": [
+    "退出",
+    "确定退出登录吗？\n退出后将无法激活更多功能和模板开发资源"
+   ]
+  },
+  {
+   "cluster": "Check_Font",
+   "words": [
+    "字体缺失检测",
+    "检测到存在服务器不支持的字体，导出和打印效果与预览会<br>存在差异，建议更换字体或在"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Report_AlphaFine_Search",
+   "words": [
+    "搜索",
+    "请在上方搜索框中输入检索词"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Report_Universal_Export_Special_Character",
+   "words": [
+    "特殊字符导出优化",
+    "提示：开启后，若所选字体无法正常显示，默认以系系统自带备用字体导出。"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Basic_Service_Platform",
+   "words": [
+    "服务平台：",
+    "服务平台"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Address",
+   "words": [
+    "地址",
+    "地址名称"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Animation",
+   "words": [
+    "动画",
+    "运动方式"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Border",
+   "words": [
+    "边框",
+    "边框宽度"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Change",
+   "words": [
+    "可调整",
+    "变化值"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Define",
+   "words": [
+    "定义名称",
+    "指定大小"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Link",
+   "words": [
+    "连线",
+    "关联类型"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Max",
+   "words": [
+    "最大",
+    "最大值"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Min",
+   "words": [
+    "最小",
+    "最小值"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Project",
+   "words": [
+    "项目",
+    "项目名称"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Scatter",
+   "words": [
+    "散点",
+    "散点"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Step",
+   "words": [
+    "步骤",
+    "步骤"
+   ]
+  },
+  {
+   "cluster": "Fine-Design_Chart_Use",
+   "words": [
+    "名字",
+    "值"
+   ]
+  }
+ ]
+}

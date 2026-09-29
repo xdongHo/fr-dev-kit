@@ -1,0 +1,54 @@
+{
+ "id": "frma_quad",
+ "name": "绝对·四宫格",
+ "engine": "frm",
+ "frm_mode": "absolute",
+ "canvas": {
+  "width": 1280,
+  "height": 720,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "4占位网页框(RHIframe)",
+ "containers": [
+  {
+   "title": "地图",
+   "type": "chart_group",
+   "x": 0,
+   "y": 0,
+   "w": 50,
+   "h": 50,
+   "components": "地图"
+  },
+  {
+   "title": "柱形",
+   "type": "chart",
+   "x": 50,
+   "y": 0,
+   "w": 50,
+   "h": 50,
+   "components": "柱形图"
+  },
+  {
+   "title": "饼图",
+   "type": "chart",
+   "x": 0,
+   "y": 50,
+   "w": 50,
+   "h": 50,
+   "components": "饼图"
+  },
+  {
+   "title": "条形",
+   "type": "chart",
+   "x": 50,
+   "y": 50,
+   "w": 50,
+   "h": 50,
+   "components": "条形图"
+  }
+ ],
+ "file": "frma_quad.frm",
+ "note": "绝对: BodyLayoutType=1, px=%×1920×1080 | 绝对布局: BoundsWidget 像素 = 百分比 × 1920×1080",
+ "structure": "frm(绝对v8/API构建): Center=WFitLayout > absolute0(WAbsoluteLayout+DesignResolution 1280×720) > RHIframe占位(用户权威样本同构)"
+}

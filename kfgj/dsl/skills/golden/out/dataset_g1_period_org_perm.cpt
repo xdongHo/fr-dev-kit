@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkBook xmlVersion="20211223" releaseVersion="10.0.0">
+<ReportWebAttr><ServerPrinter/></ReportWebAttr>
+<ReportFitAttr fitStateInPC="2" fitFont="false"/>
+<Report class="com.fr.report.worksheet.WorkSheet" name="detail">
+<ReportPageAttr><HR/><FR/><HC/><FC/></ReportPageAttr>
+<ColumnPrivilegeControl/><RowPrivilegeControl/>
+<RowHeight defaultValue="1150000"><![CDATA[]]></RowHeight>
+<ColumnWidth defaultValue="2743200"><![CDATA[]]></ColumnWidth>
+<CellElementList></CellElementList>
+<ReportAttrSet>
+<ReportSettings headerHeight="0" footerHeight="0">
+<PaperSetting><PaperSize width="42768000" height="60480000"/>
+<Margin top="576000" left="0" bottom="0" right="0"/></PaperSetting>
+<Background name="ColorBackground" color="-1"/></ReportSettings>
+<Header reportPageType="0"><Background name="NullBackground"/><LeftList/><CenterList/><RightList/></Header>
+<Footer reportPageType="0"><Background name="NullBackground"/><LeftList/><CenterList/><RightList/></Footer>
+</ReportAttrSet>
+<PrivilegeControl/>
+</Report>
+<TableDataMap><TableData name="ds_fs_month" class="com.fr.data.impl.DBTableData"><Parameters><Parameter><Attributes name="para_year"/><O><![CDATA[]]></O></Parameter></Parameters><Attributes maxMemRowCount="-1"/><Connection class="com.fr.data.impl.NameDatabaseConnection"><DatabaseName><![CDATA[demo_connection]]></DatabaseName></Connection><Query><![CDATA[SELECT t.account AS account, t.entity AS entity, t.period AS period, COALESCE(NULLIF(t.data,'')::numeric,0) AS data
+FROM demo_dws.demo_rates_hfm_sum_actual t
+WHERE view = 'YTD' AND value = 'CNY'
+  AND t.period = (CASE upper('${para_month}') WHEN 'JAN' THEN '1' WHEN 'FEB' THEN '2' WHEN 'MAR' THEN '3' WHEN 'APR' THEN '4' WHEN 'MAY' THEN '5' WHEN 'JUN' THEN '6' WHEN 'JUL' THEN '7' WHEN 'AUG' THEN '8' WHEN 'SEP' THEN '9' WHEN 'OCT' THEN '10' WHEN 'NOV' THEN '11' WHEN 'DEC' THEN '12' END)
+  AND (EXISTS(SELECT 1 FROM demo_ads.fin_demo_config_user_role WHERE role_id IN ('0','1') AND user_gid='${fine_username}') OR t.entity IN (SELECT plant_code FROM demo_ads.fin_demo_auth_base_user_map WHERE user_gid='${fine_username}'))
+  AND t.entity IN (
+    SELECT legal_code FROM demo_ads.fin_demo_auth_base_info f WHERE ('${para_legal}'='' OR f.legal_code='${para_legal}') AND ('${para_bu}'='' OR f.bu='${para_bu}') AND ('${para_region}'='' OR f.region='${para_region}') AND ('${para_plant}'='' OR f.plant_code='${para_plant}')
+    UNION ALL SELECT bu FROM demo_ads.fin_demo_auth_base_info f WHERE ('${para_legal}'='' OR f.legal_code='${para_legal}') AND ('${para_bu}'='' OR f.bu='${para_bu}') AND ('${para_region}'='' OR f.region='${para_region}') AND ('${para_plant}'='' OR f.plant_code='${para_plant}')
+    UNION ALL SELECT region FROM demo_ads.fin_demo_auth_base_info f WHERE ('${para_legal}'='' OR f.legal_code='${para_legal}') AND ('${para_bu}'='' OR f.bu='${para_bu}') AND ('${para_region}'='' OR f.region='${para_region}') AND ('${para_plant}'='' OR f.plant_code='${para_plant}')
+    UNION ALL SELECT plant_code FROM demo_ads.fin_demo_auth_base_info f WHERE ('${para_legal}'='' OR f.legal_code='${para_legal}') AND ('${para_bu}'='' OR f.bu='${para_bu}') AND ('${para_region}'='' OR f.region='${para_region}') AND ('${para_plant}'='' OR f.plant_code='${para_plant}'))
+ORDER BY t.account]]></Query><PageQuery><![CDATA[]]></PageQuery></TableData></TableDataMap>
+<ReportParameterAttr><Attributes showWindow="true" delayPlaying="false" windowPosition="1" align="0" useParamsTemplate="true" currentIndex="0"/><PWTitle><![CDATA[参数]]></PWTitle>
+<Parameter><Attributes name="para_year"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_legal"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_bu"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_region"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_plant"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_month"/><O><![CDATA[]]></O></Parameter>
+<ParameterUI class="com.fr.form.main.parameter.FormParameterUI">
+<Parameters><Parameter><Attributes name="para_year"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_legal"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_bu"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_region"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_plant"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_month"/><O><![CDATA[]]></O></Parameter></Parameters>
+<Layout class="com.fr.form.ui.container.WParameterLayout">
+<WidgetName name="para"/>
+<WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description="">
+<MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName=""/>
+<PrivilegeControl/></WidgetAttr>
+<Margin top="0" left="0" bottom="0" right="0"/>
+<Background name="ColorBackground" color="-526086"/>
+<LCAttr vgap="0" hgap="0" compInterval="0"/>
+
+</Layout>
+</ParameterUI>
+</ReportParameterAttr>
+<StyleList></StyleList>
+<DesignerVersion DesignerVersion="KAA"/>
+<PreviewType PreviewType="1"/>
+</WorkBook>

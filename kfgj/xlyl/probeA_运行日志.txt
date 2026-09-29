@@ -1,0 +1,48 @@
+=== FR Headless Probe v3 ===
+Java: 1.8.0_202
+JVM: Java HotSpot(TM) 64-Bit Server VM
+时间: Sat Aug 22 14:09:04 CST 2026
+
+模板: <工具包根目录>(个人版)\ckzl/hbfa\cpt骨架\two_rows.cpt
+输出目录: C:\Users\<你的用户名>\AppData\Local\Temp\fr_headless_probe\out
+
+========== 初始化策略 1: WorkContext.switchTo ==========
+  SimpleWork.checkIn 成功
+  ? 初始化失败:
+    java.lang.IllegalAccessException: Class Probe3 can not access a member of class com.fr.workspace.simple.SimpleWorkspace with modifiers "public"
+    	at sun.reflect.Reflection.ensureMemberAccess(Unknown Source)
+    	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(Unknown Source)
+    	at java.lang.reflect.AccessibleObject.checkAccess(Unknown Source)
+    	at java.lang.reflect.Method.invoke(Unknown Source)
+
+========== STEP 1: 模板解析 ==========
+模板路径: <工具包根目录>(个人版)\ckzl/hbfa\cpt骨架\two_rows.cpt
+[1A] 尝试 new WorkBook().readStream(InputStream)...
+  ? readStream 失败:
+    Cause: java.lang.NullPointerException: null
+
+[1B] 尝试反射调用 WorkBook 内部读取方法...
+  WorkBook 方法:
+    void readStream(InputStream, boolean)
+    void readStream(InputStream)
+    void mainContentWriteXML(XMLPrintWriter)
+    void writeXML(XMLPrintWriter)
+    void readXML(XMLableReader)
+    String getXMLDesignerVersion()
+    XMLVersion getXmlVersion()
+    void setXmlVersion(XMLVersion)
+  尝试调用: readStream([class java.io.InputStream, boolean])
+  尝试调用: readStream([class java.io.InputStream])
+  ? readStream 失败: null
+
+[1C] 尝试 TemplateWorkBookIO.readTemplateWorkBook...
+  ? readTemplateWorkBook 失败:
+    Cause: java.lang.IllegalArgumentException: EntityDao can not be used before the ConfigurationActivator starts!
+
+========== STEP 2: 模板计算(执行) ==========
+  ? 跳过: WorkBook 为 null
+
+========== STEP 3: 导出 HTML ==========
+  ? 跳过: 无可用对象
+
+=== Probe 完成 ===

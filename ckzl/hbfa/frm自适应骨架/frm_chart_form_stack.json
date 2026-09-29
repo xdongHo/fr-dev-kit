@@ -1,0 +1,36 @@
+{
+ "id": "frm_chart_form_stack",
+ "name": "FRM图表组+表单",
+ "engine": "frm",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "2占位网页框(RHIframe)",
+ "containers": [
+  {
+   "title": "分析图",
+   "type": "chart_group",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 60,
+   "components": "柱形图"
+  },
+  {
+   "title": "明细表",
+   "type": "form",
+   "x": 0,
+   "y": 60,
+   "w": 100,
+   "h": 40,
+   "components": "表"
+  }
+ ],
+ "file": "frm_chart_form_stack.frm",
+ "note": "自适应: BodyLayoutType=0 等比 | 上图下表",
+ "structure": "frm(占位壳): Center内RHIframe占位网格(空RHIframeAttr), 设计器里选组件路径即挂 组件模板/图表组件-*.cpt"
+}

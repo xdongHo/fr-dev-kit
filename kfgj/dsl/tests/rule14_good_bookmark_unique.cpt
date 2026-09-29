@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkBook xmlVersion="20211223" releaseVersion="10.0.0">
+<Report class="com.fr.report.worksheet.WorkSheet" name="rule14_good">
+<CellElementList>
+<C c="0" r="0" s="0"><O t="DSColumn"><Attributes dsName="ds_main" columnName="acc"/><Complex/><Parameters/></O><PrivilegeControl/><Expand/></C>
+<C c="1" r="0" s="0"><O t="DSColumn"><Attributes dsName="ds_main" columnName="amt"/><Complex/><Parameters/></O><PrivilegeControl/><Expand/></C>
+</CellElementList>
+</Report>
+<StyleList><Style imageLayout="1"><Format class="com.fr.base.TextFormat"/><FRFont name="微软雅黑" style="1" size="96" foreground="-723724"/><Background name="ColorBackground" color="-10773547"/></Style></StyleList>
+<TableDataMap>
+<TableData name="ds_main" class="com.fr.data.impl.DBTableData"><Parameters/><Query><![CDATA[SELECT t.account AS acc, round(sum(COALESCE(NULLIF(t.data,'')::numeric,0)),2) AS amt
+FROM demo_dws.demo_rates_hfm_sum_actual t
+WHERE t.view='YTD'
+AND t.entity IN (
+    SELECT legal_code FROM demo_ads.fin_demo_auth_base_info f WHERE ('${para_plant}'='' OR f.plant_code='${para_plant}')
+    UNION ALL SELECT plant_code FROM demo_ads.fin_demo_auth_base_info f WHERE ('${para_plant}'='' OR f.plant_code='${para_plant}'))
+AND ((EXISTS(SELECT 1 FROM demo_ads.fin_demo_config_user_role WHERE role_id IN ('0','1') AND user_gid='${fine_username}'))
+     OR t.entity IN (SELECT plant_code FROM demo_ads.fin_demo_auth_base_user_map WHERE user_gid='${fine_username}'))]]></Query></TableData>
+</TableDataMap>
+<ReportParameterAttr>
+<Attributes showWindow="true" delayPlaying="false" windowPosition="1" align="0" useParamsTemplate="true" currentIndex="0"/><PWTitle><![CDATA[参数]]></PWTitle>
+<Parameters><Parameter><Attributes name="para_plant"/><O><![CDATA[]]></O></Parameter></Parameters>
+<ParameterUI class="com.fr.form.main.parameter.FormParameterUI">
+<Parameters><Parameter><Attributes name="para_plant"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_year"/><O><![CDATA[]]></O></Parameter></Parameters>
+<Layout class="com.fr.form.ui.container.WParameterLayout">
+<WidgetName name="para"/>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget"><InnerWidget class="com.fr.form.ui.ComboBox"><WidgetName name="para_plant"/><WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description=""><MobileBookMark useBookMark="false" bookMarkName="bm_a" frozen="false" index="-1" oldWidgetName=""/><PrivilegeControl/></WidgetAttr><LabelName name="lb_plant"/><widgetValue><O><![CDATA[]]></O></widgetValue></InnerWidget><BoundsAttr x="59" y="12" width="100" height="26"/></Widget><Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget"><InnerWidget class="com.fr.form.ui.Label"><WidgetName name="lb_plant"/><WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description=""><MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName=""/><PrivilegeControl/></WidgetAttr><widgetValue><O><![CDATA[工厂：]]></O></widgetValue></InnerWidget><BoundsAttr x="8" y="12" width="45" height="26"/></Widget><Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget"><InnerWidget class="com.fr.form.ui.ComboBox"><WidgetName name="para_year"/><WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description=""><MobileBookMark useBookMark="false" bookMarkName="bm_b" frozen="false" index="-1" oldWidgetName=""/><PrivilegeControl/></WidgetAttr><LabelName name="lb_year"/><widgetValue><O><![CDATA[]]></O></widgetValue></InnerWidget><BoundsAttr x="200" y="12" width="100" height="26"/></Widget><Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget"><InnerWidget class="com.fr.form.ui.Label"><WidgetName name="lb_year"/><WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description=""><MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName=""/><PrivilegeControl/></WidgetAttr><widgetValue><O><![CDATA[年份：]]></O></widgetValue></InnerWidget><BoundsAttr x="160" y="12" width="45" height="26"/></Widget>
+</Layout>
+</ParameterUI>
+</ReportParameterAttr>
+</WorkBook>

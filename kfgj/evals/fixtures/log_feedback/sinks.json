@@ -1,0 +1,6 @@
+{
+ "confirmed": [
+  {"path": "evals/fixtures/log_feedback/demo.log", "note": "合成小日志: 覆盖 log4j/方括号/日期管道/裸时间四种格式 + 堆栈继承 + 会话层 + 窗口外行"}
+ ],
+ "candidates": []
+}

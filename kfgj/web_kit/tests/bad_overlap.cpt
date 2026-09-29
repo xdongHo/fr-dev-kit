@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkBook xmlVersion="20211223" releaseVersion="10.0.0">
+<Report class="com.fr.report.worksheet.WorkSheet" name="bad_overlap">
+<CellElementList>
+<C c="0" r="0" s="0"><O t="DSColumn"><Attributes dsName="ds_ok" columnName="v"/><Complex/><Parameters/></O><PrivilegeControl/><Expand/></C>
+</CellElementList>
+</Report>
+<TableDataMap>
+<TableData name="ds_ok" class="com.fr.data.impl.DBTableData"><Attributes maxMemRowCount="-1"/><Connection class="com.fr.data.impl.NameDatabaseConnection"><DatabaseName><![CDATA[demo_connection]]></DatabaseName></Connection><Parameters/><Query><![CDATA[SELECT 1 AS v]]></Query></TableData>
+</TableDataMap>
+<ReportParameterAttr>
+<Attributes showWindow="true" delayPlaying="false" windowPosition="1" align="0" useParamsTemplate="true" currentIndex="0"/><PWTitle><![CDATA[参数]]></PWTitle>
+<Parameters><Parameter><Attributes name="para_region"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_subject"/><O><![CDATA[]]></O></Parameter></Parameters>
+<ParameterUI class="com.fr.form.main.parameter.FormParameterUI">
+<Parameters><Parameter><Attributes name="para_region"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_subject"/><O><![CDATA[]]></O></Parameter></Parameters>
+<Layout class="com.fr.form.ui.container.WParameterLayout">
+<WidgetName name="para"/>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget">
+<InnerWidget class="com.fr.form.ui.ComboBox"><WidgetName name="para_region"/><LabelName name="lb_region"/></InnerWidget>
+<BoundsAttr x="59" y="12" width="100" height="26"/>
+</Widget>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget">
+<InnerWidget class="com.fr.form.ui.ComboBox"><WidgetName name="para_subject"/><LabelName name="lb_subject"/></InnerWidget>
+<BoundsAttr x="59" y="12" width="100" height="26"/>
+</Widget>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget">
+<InnerWidget class="com.fr.form.ui.Label"><WidgetName name="lb_region"/><widgetValue><O><![CDATA[区域：]]></O></widgetValue></InnerWidget>
+<BoundsAttr x="8" y="12" width="45" height="26"/>
+</Widget>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget">
+<InnerWidget class="com.fr.form.ui.Label"><WidgetName name="lb_subject"/><widgetValue><O><![CDATA[科目：]]></O></widgetValue></InnerWidget>
+<BoundsAttr x="8" y="12" width="45" height="26"/>
+</Widget>
+</Layout>
+</ParameterUI>
+</ReportParameterAttr>
+</WorkBook>

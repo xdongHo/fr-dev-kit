@@ -1,0 +1,54 @@
+{
+ "id": "frm_side_nav_left",
+ "name": "FRM左窄边栏",
+ "engine": "frm",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "4占位网页框(RHIframe)",
+ "containers": [
+  {
+   "title": "筛选导航",
+   "type": "form",
+   "x": 0,
+   "y": 0,
+   "w": 20,
+   "h": 100,
+   "components": "表"
+  },
+  {
+   "title": "主图",
+   "type": "chart_group",
+   "x": 20,
+   "y": 0,
+   "w": 80,
+   "h": 50,
+   "components": "地图"
+  },
+  {
+   "title": "辅图-饼",
+   "type": "chart",
+   "x": 20,
+   "y": 50,
+   "w": 40,
+   "h": 50,
+   "components": "饼图"
+  },
+  {
+   "title": "辅图-条",
+   "type": "chart",
+   "x": 60,
+   "y": 50,
+   "w": 40,
+   "h": 50,
+   "components": "条形图"
+  }
+ ],
+ "file": "frm_side_nav_left.frm",
+ "note": "自适应: BodyLayoutType=0 等比 | 20%边栏+80%内容",
+ "structure": "frm(占位壳): Center内RHIframe占位网格(空RHIframeAttr), 设计器里选组件路径即挂 组件模板/图表组件-*.cpt"
+}

@@ -1,0 +1,36 @@
+# baseline.yaml — WebKit 页面体检误报豁免基线
+# ---------------------------------------------------------------
+# 用途: 已知噪声（FR10 固有 console 告警/埋点请求失败等）按正则登记豁免，
+#       probe 对命中的 console 类 finding 降级为 info 并标注 "baseline 豁免"。
+# 结构:
+#   global:            # 对所有页面生效
+#     - match: "<正则>"   # 对 console 消息原文(message/evidence)做 re.search
+#       reason: "<说明>"  # 为什么豁免（审计必需）
+#   pages:             # 仅对指定页面生效；键 = 页面名（cpt 去扩展名 / URL 页名）
+#     "页面名":
+#       - match: ...
+#         reason: ...
+# 迭代: 用户反馈页面展示问题 → 先判断是已知噪声(进本文件)还是新检测项(进 checks/)
+# ---------------------------------------------------------------
+
+global:
+  # 2026-09-04 自测登记：4 个页面（示例实际表/示例预算表/两下钻）全部出现，FR10 前端固有
+  - match: "JQMIGRATE"
+    reason: "FR10 内置 jQuery 迁移插件固有告警（unload/browser/boxModel/parseJSON deprecated），与页面功能无关"
+  - match: "GroupMarkerNotSet|Automatic fallback to software WebGL"
+    reason: "chromium 启动期告警（软件 WebGL 回退弃用），环境噪声非页面问题"
+  # 2026-09-04 夜间 L7 登记：页面卸载期 closesessionid 心跳请求失败（_runs/webprobe/20260904_215028 实测）。
+  # 会话关闭通知在浏览器关页竞态下丢包属预期行为，不影响功能；自本版起 requestfailed 类亦适用基线豁免
+  - match: "op=closesessionid"
+    reason: "FR10 页面卸载期会话关闭心跳，浏览器关页竞态下失败属预期，非功能缺陷"
+pages: {}
+
+# 示例 1（global 级）:
+# global:
+#   - match: "Fontawesome.*404"
+#     reason: "FR10 固有字体图标请求缺失，与页面功能无关"
+# 示例 2（页面级）:
+# pages:
+#   "示例实际表":
+#     - match: "detached iframe"
+#       reason: "FR10 切换 sheet 时 iframe 复用噪声，实测不影响渲染"

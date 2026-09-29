@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>插件开发工艺流水线 v1.0 — 总览</title>
+<style>
+  :root{
+    --ink:#141414; --paper:#ffffff; --accent:#E30613; --hair:#c9c9c9; --grey:#6f6f6f; --panel:#f4f4f2;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{background:var(--paper);}
+  body{
+    font-family:"Helvetica Neue",Helvetica,Arial,"Segoe UI","Microsoft YaHei",sans-serif;
+    color:var(--ink); font-size:14px; line-height:1.5;
+    max-width:1240px; margin:0 auto; padding:32px 40px 56px;
+  }
+  .rule{border:0;border-top:2px solid var(--ink);margin:0;}
+  .rule.thin{border-top:1px solid var(--hair);}
+  /* ---------- header ---------- */
+  header{display:grid;grid-template-columns:9fr 3fr;gap:24px;align-items:end;padding:8px 0 20px;}
+  h1{font-size:40px;line-height:1.06;font-weight:700;letter-spacing:-0.5px;text-transform:none;}
+  h1 .v{color:var(--accent);}
+  .sub{margin-top:10px;font-size:14px;color:var(--grey);}
+  .meta{text-align:right;font-size:12px;color:var(--grey);line-height:1.7;}
+  .meta b{color:var(--ink);font-size:20px;display:block;}
+  .metaline{display:flex;gap:0;border-top:2px solid var(--ink);border-bottom:1px solid var(--hair);}
+  .metaline div{flex:1;padding:10px 14px;border-right:1px solid var(--hair);font-size:12px;color:var(--grey);}
+  .metaline div:last-child{border-right:0;}
+  .metaline b{display:block;font-size:22px;color:var(--ink);font-weight:700;letter-spacing:-0.5px;}
+  /* ---------- sections ---------- */
+  section{margin-top:36px;}
+  .sec-head{display:grid;grid-template-columns:64px 1fr auto;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:6px;margin-bottom:0;}
+  .sec-head .no{font-size:26px;font-weight:700;color:var(--accent);}
+  .sec-head h2{font-size:18px;font-weight:700;letter-spacing:0.5px;}
+  .sec-head .tag{font-size:11px;color:var(--grey);letter-spacing:1px;}
+  /* ---------- stages ---------- */
+  .stages{display:grid;grid-template-columns:repeat(7,1fr);border-bottom:1px solid var(--hair);}
+  .stage{border-right:1px solid var(--hair);padding:14px 12px 16px;min-height:150px;position:relative;}
+  .stage:last-child{border-right:0;}
+  .stage .sn{font-size:11px;letter-spacing:1px;color:var(--accent);font-weight:700;}
+  .stage h3{font-size:15px;margin:2px 0 8px;font-weight:700;}
+  .stage ul{list-style:none;font-size:11.5px;color:var(--ink);}
+  .stage li{padding:2px 0;border-top:1px dotted var(--hair);}
+  .stage li span{color:var(--grey);}
+  .stage .gate{margin-top:8px;font-size:10.5px;color:var(--accent);}
+  /* ---------- node grid ---------- */
+  .nodes{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--hair);border-left:1px solid var(--hair);}
+  .node{border-right:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:12px 12px 10px;min-height:118px;}
+  .node .id{font-size:24px;font-weight:700;letter-spacing:-1px;color:var(--ink);}
+  .node .id em{font-style:normal;color:var(--accent);font-size:11px;letter-spacing:1px;vertical-align:middle;margin-left:6px;}
+  .node h4{font-size:13px;font-weight:700;margin:2px 0 6px;}
+  .node p{font-size:11px;color:var(--grey);margin-bottom:6px;}
+  .chips{display:flex;flex-wrap:wrap;gap:4px;}
+  .chip{font-size:10px;border:1px solid var(--ink);padding:1px 6px;letter-spacing:0.5px;}
+  .chip.m{background:var(--ink);color:#fff;border-color:var(--ink);}
+  .chip.p{border-color:var(--accent);color:var(--accent);}
+  /* ---------- repeat matrix ---------- */
+  table.matrix{width:100%;border-collapse:collapse;font-size:12px;}
+  table.matrix th{font-size:11px;letter-spacing:1px;text-align:left;color:var(--grey);border-bottom:2px solid var(--ink);padding:8px 10px;}
+  table.matrix td{border-bottom:1px solid var(--hair);padding:9px 10px;vertical-align:top;}
+  table.matrix td.pid{font-weight:700;color:var(--accent);white-space:nowrap;}
+  table.matrix td.node{font-weight:700;white-space:nowrap;}
+  table.matrix tr:nth-child(even) td{background:var(--panel);}
+  .arrow{color:var(--accent);font-weight:700;}
+  /* ---------- decisions ---------- */
+  .dec{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--hair);border-left:1px solid var(--hair);}
+  .dec div{border-right:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:12px;font-size:11.5px;}
+  .dec b{display:block;font-size:14px;margin-bottom:4px;}
+  .dec b i{font-style:normal;color:var(--accent);}
+  /* ---------- footer ---------- */
+  footer{margin-top:40px;border-top:2px solid var(--ink);padding-top:12px;display:grid;grid-template-columns:1fr auto;font-size:11px;color:var(--grey);}
+  footer .ops{font-size:12px;color:var(--ink);}
+  .note{font-size:11px;color:var(--grey);margin-top:8px;}
+  @media (max-width:900px){
+    .stages,.nodes,.dec{grid-template-columns:repeat(2,1fr);}
+    header{grid-template-columns:1fr;} .meta{text-align:left;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>插件开发工艺流水线 <span class="v">v1.0</span></h1>
+    <div class="sub">七阶段 · 十二标准节点 · 五决策点 —— 由归档盘点专业版（demo_plugin_repo v1.0→v2.1.8）与示例插件A（demo_copilot v0.3→v0.17.x）双插件实战复盘固化 · 2026-09-14</div>
+  </div>
+  <div class="meta">
+    <b>8</b>条复发链全部拦截映射<br>
+    依据 <b style="font-size:12px;display:inline;">AGENTS.md</b> 基线 · EXEC_CONTRACT 闸门哲学
+  </div>
+</header>
+<hr class="rule">
+<div class="metaline">
+  <div><b>2</b>复盘插件</div>
+  <div><b>26</b>台账问题</div>
+  <div><b>8</b>跨插件复发链</div>
+  <div><b>12</b>标准节点</div>
+  <div><b>5</b>用户决策点</div>
+  <div><b>12</b>机器检查项 C01-C12</div>
+</div>
+
+<section>
+  <div class="sec-head"><span class="no">01</span><h2>七阶段流水线</h2><span class="tag">S1 → S7 · 退出标准不过不进下一阶段</span></div>
+  <div class="stages">
+    <div class="stage"><div class="sn">S1</div><h3>需求</h3>
+      <ul><li>SN-01 <span>立项身份</span></li><li>D1 <span>范围/档位拍板</span></li></ul>
+      <div class="gate">退出：身份表唯一＋范围卡确认</div></div>
+    <div class="stage"><div class="sn">S2</div><h3>设计</h3>
+      <ul><li>SN-02 <span>架构/生命周期</span></li><li>D2 <span>形态拍板</span></li></ul>
+      <div class="gate">退出：矩阵三行＋依赖实证</div></div>
+    <div class="stage"><div class="sn">S3</div><h3>开发</h3>
+      <ul><li>SN-03 <span>骨架/四道门</span></li><li>SN-04 <span>端点契约</span></li><li>SN-05 <span>键归一化</span></li><li>SN-06 <span>构建部署</span></li><li>SN-07 <span>shell 纪律</span></li></ul>
+      <div class="gate">退出：sn_gate 0 FAIL</div></div>
+    <div class="stage"><div class="sn">S4</div><h3>自测</h3>
+      <ul><li>SN-08 <span>测试/沙箱</span></li><li>SN-09 <span>回归红线</span></li><li>SN-10 <span>生成物实测</span></li><li>D3 <span>UI 验收</span></li></ul>
+      <div class="gate">退出：单测+e2e 绿＋G-BROWSER attest</div></div>
+    <div class="stage"><div class="sn">S5</div><h3>打包</h3>
+      <ul><li>SN-06 <span>打包纪律</span></li><li>SN-11 <span>版本同步</span></li></ul>
+      <div class="gate">退出：C07 版本全等</div></div>
+    <div class="stage"><div class="sn">S6</div><h3>发布</h3>
+      <ul><li>SN-11 <span>发布/协商</span></li><li>D4 <span>窗口拍板</span></li></ul>
+      <div class="gate">退出：冒烟全绿＋回滚一步话</div></div>
+    <div class="stage"><div class="sn">S7</div><h3>归档</h3>
+      <ul><li>SN-12 <span>终闸/沉淀</span></li><li>D5 <span>归档范围</span></li></ul>
+      <div class="gate">退出：终跑 0 FAIL＋台账回写</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="no">02</span><h2>十二个标准节点</h2><span class="tag">机器 = sn_gate 可查 · 清单 = 勾选留痕 · attest = 声明留痕</span></div>
+  <div class="nodes">
+    <div class="node"><div class="id">SN-01<em>S1</em></div><h4>立项与身份规划</h4><p>身份表五项唯一＋范围卡含"不做"清单</p><div class="chips"><span class="chip p">P09</span><span class="chip p">P23</span><span class="chip">清单</span></div></div>
+    <div class="node"><div class="id">SN-02<em>S2</em></div><h4>架构与生命周期设计</h4><p>生命周期矩阵三行＋依赖 javap 实证＋Swing 红线</p><div class="chips"><span class="chip p">P08</span><span class="chip p">P11</span><span class="chip p">P14</span><span class="chip p">P22</span><span class="chip">清单</span></div></div>
+    <div class="node"><div class="id">SN-03<em>S3</em></div><h4>工程骨架与 plugin.xml 门</h4><p>四道门＋资源路径形式总表＋改名残留</p><div class="chips"><span class="chip p">P04</span><span class="chip p">P09</span><span class="chip p">P10</span><span class="chip m">C01-C06 C08</span></div></div>
+    <div class="node"><div class="id">SN-04<em>S3</em></div><h4>HTTP 端点契约</h4><p>单段路径＋参数在 URL＋认证声明＋三层 404</p><div class="chips"><span class="chip p">P01</span><span class="chip p">P09</span><span class="chip m">C09 C10</span></div></div>
+    <div class="node"><div class="id">SN-05<em>S3</em></div><h4>键与路径归一化</h4><p>唯一 normalize＋往返单测＋CACHE_VER bump</p><div class="chips"><span class="chip p">P02</span><span class="chip">单测</span></div></div>
+    <div class="node"><div class="id">SN-06<em>S3/S5</em></div><h4>构建与部署纪律</h4><p>清理白名单（jar 只留）＋mv .trash＋先停 FR</p><div class="chips"><span class="chip p">P06</span><span class="chip p">P15</span><span class="chip p">P16</span><span class="chip m">C11</span></div></div>
+    <div class="node"><div class="id">SN-07<em>S3</em></div><h4>跨 shell 执行纪律</h4><p>PS/cmd 陷阱速查卡＋三条固定命令模板</p><div class="chips"><span class="chip p">P03</span><span class="chip">清单</span></div></div>
+    <div class="node"><div class="id">SN-08<em>S4</em></div><h4>测试与沙箱</h4><p>合成 fixture＋e2e 沙箱＋G-BROWSER 浏览器闸</p><div class="chips"><span class="chip p">P01</span><span class="chip p">P13</span><span class="chip p">P18</span><span class="chip p">P20-P26</span><span class="chip m">单测</span></div></div>
+    <div class="node"><div class="id">SN-09<em>S4</em></div><h4>回归红线与基线</h4><p>字节等价基线＋双语断言＋豁免清单</p><div class="chips"><span class="chip p">P17</span><span class="chip p">P19</span><span class="chip m">基线比对</span></div></div>
+    <div class="node"><div class="id">SN-10<em>S4</em></div><h4>生成物断言与目标环境实测</h4><p>XML 结构断言＋魔数＋像素采样/双客户端</p><div class="chips"><span class="chip p">P07</span><span class="chip p">P12</span><span class="chip">attest</span></div></div>
+    <div class="node"><div class="id">SN-11<em>S5/S6</em></div><h4>发布与版本同步</h4><p>版本对全等＋版本协商＋发布冒烟</p><div class="chips"><span class="chip p">P05</span><span class="chip p">P08</span><span class="chip p">P25</span><span class="chip m">C07</span></div></div>
+    <div class="node"><div class="id">SN-12<em>S7</em></div><h4>收尾闸门与知识沉淀</h4><p>sn_gate 终跑＋台账回写＋知识定性落库</p><div class="chips"><span class="chip p">全部（总闸）</span><span class="chip m">C01-C12</span></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="no">03</span><h2>八条复发链 → 拦截点</h2><span class="tag">归档盘点首发 → 示例插件A复发 → v1.0 拦截</span></div>
+  <table class="matrix">
+    <tr><th style="width:64px;">链</th><th>归档盘点专业版（首发）</th><th>示例插件A（复发）</th><th style="width:120px;">拦截节点</th><th style="width:150px;">拦截物</th></tr>
+    <tr><td class="pid">P01</td><td>XHR text/plain 参数全丢，v2.1.3 引入 v2.1.6 炸（命令行回归测不出）</td><td>反馈 POST 被三重闸拦截，前端静默"网络异常"（v0.12.5/13）</td><td class="node">SN-08</td><td>G-BROWSER attest＋错误可见化</td></tr>
+    <tr><td class="pid">P02</td><td>血缘 finereport.x vs x 双节点（normKey）</td><td>锁定键反斜杠 vs 正斜杠，锁定静默全失效（v0.10.1）</td><td class="node">SN-05</td><td>唯一 normalize＋往返单测</td></tr>
+    <tr><td class="pid">P03</td><td>curl -Body 中文丢 CJK；@{u} 不识别</td><td>java -D 被拆（v0.9.8）；curl -d 中文 JSON 损坏（v0.12.5）</td><td class="node">SN-07</td><td>三条固定命令模板</td></tr>
+    <tr><td class="pid">P04</td><td>资源路径点/斜杠双形式互改出错；RequestMapping 漏改</td><td>getResourceAsStream 前导斜杠全 null，公仔白块（v0.14.4）</td><td class="node">SN-03</td><td>路径总表＋C05/C06 机器查</td></tr>
+    <tr><td class="pid">P05</td><td>版本三处同步纪律（README §5）</td><td>PetApp.VERSION 0.13.8 vs plugin.xml 0.13.14，协商失效</td><td class="node">SN-11</td><td>C07 版本对机器核对</td></tr>
+    <tr><td class="pid">P06</td><td>rm -rf 触发 safe-delete 中止；FR 锁 jar</td><td>清理脚本删 spawn jar，公仔消失事故（v0.13.7）</td><td class="node">SN-06</td><td>清理白名单＋C11 扫描</td></tr>
+    <tr><td class="pid">P07</td><td>pgMar 嵌 pgSz，本地 COM 正常用户端纸张回纵</td><td>透明窗合成全白，"代码正确≠合成正确"（v0.13.4）</td><td class="node">SN-10</td><td>结构断言＋目标环境 attest</td></tr>
+    <tr><td class="pid">P08</td><td>FR 重启 token 失效（有手册无闸门）</td><td>插件重载 static 清空丢草稿；旧宠物进程半好半坏</td><td class="node">SN-02/SN-11</td><td>生命周期矩阵＋版本协商</td></tr>
+  </table>
+  <div class="note">复核文档 2026-08-26 已写明 P01 待办，三天后照样复发 —— 教训没有执行点＝没有教训。本表每行末端即为执行点。</div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="no">04</span><h2>五个用户决策点</h2><span class="tag">非确定性环节 · 不拍板走默认</span></div>
+  <div class="dec">
+    <div><b><i>D1</i> 范围档位</b>单进程默认/远程不做；商业层做否；"不做"清单确认（S1 末）</div>
+    <div><b><i>D2</i> 架构形态</b>技术选型、依赖集、进程模型确认（S2 末）</div>
+    <div><b><i>D3</i> UI 验收</b>截图/录屏/实机过一遍观感与交互（S4 末）</div>
+    <div><b><i>D4</i> 发布窗口</b>上真实环境的时机；默认设计器先验证 24h（S6 前）</div>
+    <div><b><i>D5</i> 归档范围</b>哪些产物进 kit、哪些留工程仓库（S7）</div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <div class="ops">收尾闸门：<b>python kfgj/plugin_pl\scripts\sn_gate.py --config &lt;工程&gt;\sn_gate.config.json</b>　退出码 0=通过 / 1=FAIL / 2=WARN</div>
+  </div>
+  <div style="text-align:right;">pipeline_v1 · 2026-09-14<br>回滚 = 删除 pipeline_v1 目录</div>
+</footer>
+
+</body>
+</html>

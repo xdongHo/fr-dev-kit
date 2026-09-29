@@ -1,0 +1,1215 @@
+{
+ "manifest_version": 1,
+ "generated_at": "2026-09-15T10:45:32",
+ "generator": "ckzl/zsk/gczsk/build_manifest.py (P1-7)",
+ "scan_dirs": [
+  "(root)",
+  "kfgj/fzpy",
+  "ckzl/zsk/gczsk",
+  "jcxt/js",
+  "dsl",
+  "evals"
+ ],
+ "count": 121,
+ "scripts": [
+  {
+   "name": "check_refs",
+   "path": "kfgj/check_refs.py",
+   "dir": "(root)",
+   "bytes": 17139,
+   "sha256": "da965ece0b3098a9",
+   "mtime": "2026-09-15 00:50",
+   "doc": "kfgj/check_refs.py — fr_dev_kit v2 全库引用完整性检查器（G05 闸门实现件） ====================================================================== 扫描全部 .md 指南中引用的库内路径（Markdown 链接 / 反引号",
+   "has_argparse": false
+  },
+  {
+   "name": "compile",
+   "path": "dsl/compile.py",
+   "dir": "dsl",
+   "bytes": 43055,
+   "sha256": "24f96403ab370f90",
+   "mtime": "2026-09-06 20:00",
+   "doc": "compile.py — 示例项目 FS 报表 DSL 编译器（任务书 T2） 读 页面DSL(yaml) + semantic_layer.yaml(唯一事实源) → 按原型展开为完整 cpt。 写前五闸（SOP O1）：G0 clarification（NEEDS_CLARIFICATION 未消歧拒编译，2026-0",
+   "has_argparse": true
+  },
+  {
+   "name": "guardrails",
+   "path": "dsl/guardrails.py",
+   "dir": "dsl",
+   "bytes": 43690,
+   "sha256": "bcd914faaeaa66cb",
+   "mtime": "2026-09-06 20:03",
+   "doc": "guardrails.py — 示例项目 FS 报表 DSL 编译产物护栏（G1-G5 + 可选 G6 扩展闸），独立可复用模块。 公开接口 -------- check(doc_xml, semantic, sql_list, do_smoke=False, conn=None, param_values=None, e",
+   "has_argparse": true
+  },
+  {
+   "name": "rules_ext",
+   "path": "dsl/rules_ext.py",
+   "dir": "dsl",
+   "bytes": 3087,
+   "sha256": "fa4dee8172446f10",
+   "mtime": "2026-09-05 00:14",
+   "doc": "rules_ext.py — [DEPRECATED 2026-09-05] G6 扩展闸已合入 guardrails.py。 本模块由 L5 泳道（2026-09-04）产出（R01-R15 外挂 G6）；晨间收口卡 R25（2026-09-05） 已将全部 15 条规则**原样迁入** guardrails.py（",
+   "has_argparse": true
+  },
+  {
+   "name": "_common",
+   "path": "dsl/skills/_common.py",
+   "dir": "dsl",
+   "bytes": 16073,
+   "sha256": "d40fde04a93678d7",
+   "mtime": "2026-09-05 00:01",
+   "doc": "_common.py — dsl/skills 三生成器共享底座（R39 标准组件技能库）。 职责 ---- 1. semantic_layer.yaml 装载（唯一事实源，口径一律从这里取，禁止硬编码） 2. SQL 织入片段（numeric 转换 / period CASE / ORG+PERM）——全部由 sem",
+   "has_argparse": false
+  },
+  {
+   "name": "chart_skill",
+   "path": "dsl/skills/chart_skill.py",
+   "dir": "dsl",
+   "bytes": 21708,
+   "sha256": "726dac2192bb373c",
+   "mtime": "2026-09-04 23:46",
+   "doc": "chart_skill.py — FR 图表生成器（echarts 类型 spec → FR 图表 XML / 整页 cpt）。 R39 标准组件技能库 ③。FR 图表本质是 ECharts 的 XML 配置（VanChart 容器 + Plot 类 + ChartDefinition 数据绑定）。 证据链（三条，缺一",
+   "has_argparse": false
+  },
+  {
+   "name": "dataset_skill",
+   "path": "dsl/skills/dataset_skill.py",
+   "dir": "dsl",
+   "bytes": 3633,
+   "sha256": "29579264e6d725f0",
+   "mtime": "2026-09-04 23:35",
+   "doc": "dataset_skill.py — 标准数据集生成器（spec → DBTableData XML / 整页 cpt）。 R39 标准组件技能库 ①。spec 契约见 _common.build_fact_sql docstring； 硬约束（不可绕过）: - numeric 转换: 事实集必须 ≥1 个 numer",
+   "has_argparse": true
+  },
+  {
+   "name": "run_golden",
+   "path": "dsl/skills/golden/run_golden.py",
+   "dir": "dsl",
+   "bytes": 7021,
+   "sha256": "a704af0b407007d3",
+   "mtime": "2026-09-04 23:54",
+   "doc": "run_golden.py — R39 三生成器 golden 用例运行器。 每用例流程: spec → 技能构建 → guardrails G1-G4 独立复核（0 错）→ ET 合法 → 回读断言 （assert_contains / assert_not_contains / assert_regex）→ 产物落",
+   "has_argparse": false
+  },
+  {
+   "name": "panel_skill",
+   "path": "dsl/skills/panel_skill.py",
+   "dir": "dsl",
+   "bytes": 13019,
+   "sha256": "d81e3a5cad3f33a4",
+   "mtime": "2026-09-04 23:36",
+   "doc": "panel_skill.py — 标准参数面板生成器（控件清单 spec → 参数面板 XML / 整页 cpt）。 R39 标准组件技能库 ②。全部口径取自 semantic_layer.yaml: - para_* 命名铁律（conventions.control_param_rule；G2(c) widget_p",
+   "has_argparse": false
+  },
+  {
+   "name": "test_needs_clarification",
+   "path": "dsl/tests/test_needs_clarification.py",
+   "dir": "dsl",
+   "bytes": 5163,
+   "sha256": "d6817b5b97796f8d",
+   "mtime": "2026-09-06 11:54",
+   "doc": "test_needs_clarification.py — CAR-012 G0 前置闸测试（独立可跑，零网络零服务器） 运行: python dsl/tests/test_needs_clarification.py # 全过退出码 0，有 FAIL 退出码 1 覆盖: T1 无标记正常编译（rc=0 且产物落盘） ",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_doc",
+   "path": "evals/fixtures/auto_retry/fix_doc.py",
+   "dir": "evals",
+   "bytes": 1072,
+   "sha256": "590fd50cc7ff350f",
+   "mtime": "2026-09-06 13:12",
+   "doc": "E-AUTORETRY-001 的 --redo 修复脚本：给 doc_target.md 补 KB_INDEX 元数据头。 guard 的 run_redo 以仓库根为 cwd 执行本脚本；路径基于 __file__ 推导，与 cwd 无关。 幂等：无论目标当前处于何状态，重写后必含 KB_INDEX 头。",
+   "has_argparse": false
+  },
+  {
+   "name": "noop_redo",
+   "path": "evals/fixtures/auto_retry/noop_redo.py",
+   "dir": "evals",
+   "bytes": 525,
+   "sha256": "c0d9ce499625046d",
+   "mtime": "2026-09-15 00:32",
+   "doc": "夜间批次(A8_eval) auto-retry 失败路径夹具: 故意\"修复但不修复\"的 redo 命令。 E-夜间批次-AUTORETRY-NOFIX 用它验证 --auto-retry 1 的失败半程: redo 正常执行(退出码 0、输出被回显)但 G06 依旧 FAIL → 复检仍 FAIL → 转待裁决。",
+   "has_argparse": false
+  },
+  {
+   "name": "bom_dang4_check",
+   "path": "evals/fixtures/w915/bom_dang4_check.py",
+   "dir": "evals",
+   "bytes": 2144,
+   "sha256": "911fe1e0741dda55",
+   "mtime": "2026-09-15 00:37",
+   "doc": "E-夜间批次-BOM-DANG4 助手: FS408 扩展夹具的四形态悬挂断言（夜间批次 泳道 A8_eval）。 夹具 evals/fixtures/bom/fs408_w915.cpt 每类悬挂恰好埋一处: cell->dataset(ds_cell_ghost) / chart->dataset(ds_chart",
+   "has_argparse": true
+  },
+  {
+   "name": "desc13_qc4_check",
+   "path": "evals/fixtures/w915/desc13_qc4_check.py",
+   "dir": "evals",
+   "bytes": 1830,
+   "sha256": "1b7f05481c394be4",
+   "mtime": "2026-09-15 00:33",
+   "doc": "E-夜间批次-DESC13-QC4 助手: desc13 emit 产物的 QC 四查要素断言（夜间批次 泳道 A8_eval）。 对 desc13.py emit 落盘的 <outdir>/2.md 断言四查要素在文档级可见: ①事件三要素 ②SQL 全文零截断 ③壳层穷举断言 ④字数声明 兼容 L0 常规档与密度档",
+   "has_argparse": true
+  },
+  {
+   "name": "et_spotcheck5",
+   "path": "evals/fixtures/w915/et_spotcheck5.py",
+   "dir": "evals",
+   "bytes": 1778,
+   "sha256": "f4883d9decd359f3",
+   "mtime": "2026-09-15 00:33",
+   "doc": "E-夜间批次-ET-SPOT5 助手: 重建产物 XML 抽检加强版——5 件分位点抽样（夜间批次 A8_eval）。 与 evals/helpers/et_spotcheck.py(3 件: 首/中/末)互补: 对 .cpt/.frm 按名排序取 第 1 / 25% / 50% / 75% / 末位 共 5 个分位点",
+   "has_argparse": true
+  },
+  {
+   "name": "frchk_lesion_matrix",
+   "path": "evals/fixtures/w915/frchk_lesion_matrix.py",
+   "dir": "evals",
+   "bytes": 1757,
+   "sha256": "00632f272b47d8f9",
+   "mtime": "2026-09-15 00:33",
+   "doc": "E-夜间批次-FRCHK-4LESION 助手: fr_check L1 前置闸四病灶矩阵回归（夜间批次 泳道 A8_eval）。 对 evals/fixtures/fr_check/ 下四类病灶夹具逐个跑 fr_check, 断言每件: rc=1 且输出命中对应病灶关键词—— 0 字节空文件 / 裸&断裂实体(病灶行",
+   "has_argparse": false
+  },
+  {
+   "name": "ledger_json_check",
+   "path": "evals/fixtures/w915/ledger_json_check.py",
+   "dir": "evals",
+   "bytes": 2769,
+   "sha256": "673084664e58416b",
+   "mtime": "2026-09-15 00:37",
+   "has_argparse": true
+  },
+  {
+   "name": "chk_w915",
+   "path": "evals/fixtures/w915_a64/chk_w915.py",
+   "dir": "evals",
+   "bytes": 18394,
+   "sha256": "b31013af07917ff3",
+   "mtime": "2026-09-15 03:38",
+   "doc": "chk_w915.py — 夜间批次 战果回归用例统一校验器（A64_eval_cases 泳道夹具, 仓库工具只读）。 10 个子命令 = 10 条回归用例的验收逻辑, 全部 rc 0 = PASS / rc 1 = FAIL。 被测对象（只读）: - _runs/night/campaign/w915/A57_bo",
+   "has_argparse": false
+  },
+  {
+   "name": "bom_fixture_check",
+   "path": "evals/helpers/bom_fixture_check.py",
+   "dir": "evals",
+   "bytes": 5769,
+   "sha256": "df679866e91c738d",
+   "mtime": "2026-09-15 01:39",
+   "doc": "E-BOM-* 助手: build_template_bom 悬挂检测/计数口径/高频统计 夹具回归。 三种模式(均确定性, 只读原库代码不建库): dangling <cpt> 用 ckzl/zsk/gczsk/build_template_bom.py 的 TemplateParser 求悬挂, 断言 FS408 形态(cell->",
+   "has_argparse": false
+  },
+  {
+   "name": "et_spotcheck",
+   "path": "evals/helpers/et_spotcheck.py",
+   "dir": "evals",
+   "bytes": 1618,
+   "sha256": "de3d527da9a31b88",
+   "mtime": "2026-09-06 13:19",
+   "doc": "E-REBUILD-ET-SPOT: 重建产物 XML 抽检（确定性抽样 3 件, ET 解析全过才放行）。 抽样规则（确定性, 不随机）: 对目录下 .cpt/.frm 按文件名排序, 取第 1 件、中间 1 件、 最后 1 件。任何一件解析失败或目录不足 3 件 → 退出码 1。 用法: python evals/",
+   "has_argparse": true
+  },
+  {
+   "name": "kb_doc_check",
+   "path": "evals/helpers/kb_doc_check.py",
+   "dir": "evals",
+   "bytes": 1339,
+   "sha256": "11645dc7fd731e28",
+   "mtime": "2026-09-15 08:24",
+   "doc": "知识回归检查: 指定文档必须包含全部给定关键词。 用法: python evals/helpers/kb_doc_check.py <doc_path> <关键词1> <关键词2> ... 退出码: 0=全部命中 1=有缺失 2=文档读取异常 P0-1 主线补位(2026-09-14): 把\"错误案例知识仍在库、结论未",
+   "has_argparse": true
+  },
+  {
+   "name": "router_ledger_check",
+   "path": "evals/helpers/router_ledger_check.py",
+   "dir": "evals",
+   "bytes": 1792,
+   "sha256": "f0d5ecfb466cca50",
+   "mtime": "2026-09-06 13:19",
+   "has_argparse": true
+  },
+  {
+   "name": "run_evals",
+   "path": "evals/run_evals.py",
+   "dir": "evals",
+   "bytes": 6614,
+   "sha256": "ad8074e5ae174fe7",
+   "mtime": "2026-09-15 08:22",
+   "doc": "evals/run_evals.py — fr_dev_kit 内部评估集顺序执行 runner（CAR-019 起步版）。 用法（仓库根执行）: python evals/run_evals.py # 全量(以 cases.jsonl 实际条数为准), PASS/FAIL 矩阵 + 汇总 python evals/r",
+   "has_argparse": true
+  },
+  {
+   "name": "guard",
+   "path": "kfgj/guard.py",
+   "dir": "(root)",
+   "bytes": 29893,
+   "sha256": "32d54aa4c0dd5f57",
+   "mtime": "2026-09-15 04:33",
+   "doc": "kfgj/guard.py — fr_dev_kit v2 执行契约闸门执行器 ================================================ 背景（为什么需要它）: v1 指南的强制项全部以自然语言散落在 128 个 md 的 1000+ 处\"必须/禁止\"里， 依赖大模型自觉执行 → 实际频繁",
+   "has_argparse": true
+  },
+  {
+   "name": "sync_kb_index",
+   "path": "kfgj/sync_kb_index.py",
+   "dir": "(root)",
+   "bytes": 11545,
+   "sha256": "6a0bb825bc1f7e3e",
+   "mtime": "2026-09-11 19:21",
+   "has_argparse": false
+  },
+  {
+   "name": "watchdog",
+   "dir": "(root)",
+   "bytes": 7609,
+   "sha256": "702a9ee40f571f77",
+   "mtime": "2026-09-11 19:21",
+   "has_argparse": true
+  },
+  {
+   "name": "build_fts_index",
+   "path": "jcxt/js/build_fts_index.py",
+   "dir": "jcxt/js",
+   "bytes": 11143,
+   "sha256": "65cd6773603f7c47",
+   "mtime": "2026-09-15 08:28",
+   "doc": "build_fts_index.py — 独立 FTS5 关键词索引库构建器（P0-2 hybrid 检索配套，2026-09-14） 用途: 从知识库既有向量索引库 jcxt/data/_kb_vector.db（kit 根目录）**只读**抽取全部 chunk 文本， 以与 build_vector_index.py 完全相同的中文 ",
+   "has_argparse": false
+  },
+  {
+   "name": "build_vector_index",
+   "path": "jcxt/js/build_vector_index.py",
+   "dir": "jcxt/js",
+   "bytes": 24696,
+   "sha256": "bbeab39f2e3a590e",
+   "mtime": "2026-09-13 01:13",
+   "doc": "build_vector_index.py — 知识库章节级向量索引 + FTS5 关键词索引构建器（零依赖，纯标准库） 用法: python build_vector_index.py # 增量构建（只重嵌有变化的文件，省 API 额度） python build_vector_index.py --force # ",
+   "has_argparse": false
+  },
+  {
+   "name": "query_kb",
+   "path": "jcxt/js/query_kb.py",
+   "dir": "jcxt/js",
+   "bytes": 17913,
+   "sha256": "ce0cb2eb91e6a5d9",
+   "mtime": "2026-09-15 08:28",
+   "has_argparse": true
+  },
+  {
+   "name": "query_kb_origin",
+   "path": "jcxt/js/query_kb_origin.py",
+   "dir": "jcxt/js",
+   "bytes": 11522,
+   "sha256": "3a755184945ca10a",
+   "mtime": "2026-09-13 00:56",
+   "doc": "query_kb.py — 知识库混合检索（向量语义 + FTS5 关键词，RRF 融合；零依赖，纯标准库） 用法: python query_kb.py \"冻结表头怎么配置\" # 混合检索（默认） python query_kb.py \"G05 断链\" --mode keyword # 纯关键词（精确 token 场",
+   "has_argparse": true
+  },
+  {
+   "name": "_add_embed_cols",
+   "path": "ckzl/zsk/gczsk/_add_embed_cols.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 1672,
+   "sha256": "32e3edbf76381e31",
+   "mtime": "2026-08-24 11:01",
+   "doc": "parts/materials 表加 embedding 列（float32 BLOB）",
+   "has_argparse": false
+  },
+  {
+   "name": "_add_routing",
+   "path": "ckzl/zsk/gczsk/_add_routing.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 7420,
+   "sha256": "21a6217316c4d982",
+   "mtime": "2026-08-24 11:01",
+   "doc": "追加 示例驾驶舱工艺路线 R-006~R-009 到 build_kb.py，挂脚本到 build_5m1e.py",
+   "has_argparse": false
+  },
+  {
+   "name": "_add_semantic",
+   "path": "ckzl/zsk/gczsk/_add_semantic.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 2651,
+   "sha256": "db3f195b47f25fe3",
+   "mtime": "2026-08-24 11:01",
+   "doc": "query_kb.py 加 semantic 命令：自然语言语义检索 parts/materials",
+   "has_argparse": false
+  },
+  {
+   "name": "_export_i18n",
+   "path": "ckzl/zsk/gczsk/_export_i18n.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 3033,
+   "sha256": "dc6ec1b520e5f7ae",
+   "mtime": "2026-08-24 11:01",
+   "doc": "导出 i18n 词汇表（分类组织，供用户审阅）",
+   "has_argparse": false
+  },
+  {
+   "name": "_gen_extra_parts",
+   "path": "ckzl/zsk/gczsk/_gen_extra_parts.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 3715,
+   "sha256": "264ca3d020cd487e",
+   "mtime": "2026-08-24 11:01",
+   "doc": "从 _overnight_extract.json 生成 overnight_parts.py（增量零件 EXTRA_PARTS）",
+   "has_argparse": false
+  },
+  {
+   "name": "_parse_overnight",
+   "path": "ckzl/zsk/gczsk/_parse_overnight.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 2772,
+   "sha256": "7f74d5dfe8092007",
+   "mtime": "2026-08-24 11:01",
+   "doc": "v3 精准提取：识别文档核心类，方法只归属核心类，顺带类仅登记 产出 _overnight_extract.json",
+   "has_argparse": false
+  },
+  {
+   "name": "_stats_i18n",
+   "path": "ckzl/zsk/gczsk/_stats_i18n.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 2225,
+   "sha256": "e0517fe1daba2ff3",
+   "mtime": "2026-08-24 11:01",
+   "doc": "统计 i18n 词典 → API 映射覆盖率",
+   "has_argparse": false
+  },
+  {
+   "name": "api_classes_parts",
+   "path": "ckzl/zsk/gczsk/api_classes_parts.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 1483030,
+   "sha256": "5d3b009e065365e3",
+   "mtime": "2026-08-24 11:01",
+   "doc": "全量 FR 业务类零件（自动生成自 collect_classes，勿手改）",
+   "has_argparse": false
+  },
+  {
+   "name": "api_reflect_parts",
+   "path": "ckzl/zsk/gczsk/api_reflect_parts.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 1059194,
+   "sha256": "d2da49477e98d232",
+   "mtime": "2026-08-24 11:01",
+   "doc": "fr-agent 反射枚举的 FR API 细粒度零件（自动生成自 reflect_api.py，勿手改）",
+   "has_argparse": false
+  },
+  {
+   "name": "build_5m1e",
+   "path": "ckzl/zsk/gczsk/build_5m1e.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 34174,
+   "sha256": "063f11616a9d2e4b",
+   "mtime": "2026-09-02 10:56",
+   "doc": "人机料法环(5M1E)ckzl/zsk/gczsk扩展建库脚本 用法: python build_5m1e.py # 在 api_kb.sqlite 基础上建 人/料/机/环 表 + 工艺挂脚本 python build_5m1e.py --rebuild # 删除 api_kb.sqlite 全量重建(需先 build_kb.py) ",
+   "has_argparse": false
+  },
+  {
+   "name": "build_bom_methods",
+   "path": "ckzl/zsk/gczsk/build_bom_methods.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 2120,
+   "sha256": "e566e1f64a79924e",
+   "mtime": "2026-08-24 11:01",
+   "doc": "生成 类→方法 BOM 关系（METHOD_OF）： 对每个类级零件（name==class 短名），关联同 class_name 的所有方法零件 用法: python build_bom_methods.py [--rebuild] # --rebuild 先清空 METHOD_OF 重建",
+   "has_argparse": true
+  },
+  {
+   "name": "build_class_map",
+   "path": "ckzl/zsk/gczsk/build_class_map.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 4723,
+   "sha256": "5119505967770d13",
+   "mtime": "2026-08-24 11:01",
+   "doc": "完整闭环: 7033 业务类零件 + i18n key→类 全量匹配 1. 收集所有业务类（designer+核心jar） 2. 生成 api_classes_parts.py（类级零件） 3. i18n key 末段匹配类短名 → 建立映射词典 4. 输出: parts 类覆盖 + 词汇映射率",
+   "has_argparse": false
+  },
+  {
+   "name": "build_kb",
+   "path": "ckzl/zsk/gczsk/build_kb.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 32359,
+   "sha256": "88774e0958c443e7",
+   "mtime": "2026-09-12 23:22",
+   "has_argparse": false
+  },
+  {
+   "name": "build_manifest",
+   "path": "ckzl/zsk/gczsk/build_manifest.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 7055,
+   "sha256": "024b89a17b836f35",
+   "mtime": "2026-09-15 08:25",
+   "doc": "build_manifest.py — kit 脚本工具清单(registry 式 manifest)生成器（P1-7）。 背景（07-审计启示 P1-7）: 对齐 MCP Registry 思路, 为 kit 内 python 脚本工具建立 机器可读清单: 名称/路径/用途/哈希/大小/mtime, 供 kernel",
+   "has_argparse": true
+  },
+  {
+   "name": "build_template_bom",
+   "path": "ckzl/zsk/gczsk/build_template_bom.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 31799,
+   "sha256": "ce9f81087029a6a0",
+   "mtime": "2026-09-15 00:50",
+   "doc": "模板构件 BOM 构建工具：从夜战 campaign/rebuild 产物提实体+关系 → template_bom.sqlite 背景(CAR-014 / R-0002): 旧 api_kb.sqlite bom 表 99% 是 METHOD_OF 归属, 已判沉睡; 本脚本用「模板域活数据」重造其 装配查询+高频统",
+   "has_argparse": false
+  },
+  {
+   "name": "chart_parts",
+   "path": "ckzl/zsk/gczsk/chart_parts.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 4662,
+   "sha256": "d2470bad1d87c04e",
+   "mtime": "2026-08-24 11:01",
+   "doc": "图表类型零件（16 种设计器用户可见图表类型 + VanChart 支撑类）",
+   "has_argparse": false
+  },
+  {
+   "name": "embed_parts",
+   "path": "ckzl/zsk/gczsk/embed_parts.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 3551,
+   "sha256": "503f16476534ae70",
+   "mtime": "2026-08-24 11:01",
+   "doc": "embed_parts.py v2: 断点续传 + 重试增强 - 已嵌入的零件跳过（embed_model 匹配当前模型） - 每批失败自动重试（指数退避） - 中断后重跑只补缺失",
+   "has_argparse": true
+  },
+  {
+   "name": "fill_cn_name",
+   "path": "ckzl/zsk/gczsk/fill_cn_name.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 4297,
+   "sha256": "47ba0ed646cfdb96",
+   "mtime": "2026-08-24 11:01",
+   "doc": "重建后重填 cn_name（类级 + 方法级 i18n 映射） 集成进 build_bom_methods.py 类似流程: build_kb.py rebuild 后自动调用",
+   "has_argparse": false
+  },
+  {
+   "name": "i18n_dict_parts",
+   "path": "ckzl/zsk/gczsk/i18n_dict_parts.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 553025,
+   "sha256": "618f70b1c37059a1",
+   "mtime": "2026-08-24 11:01",
+   "doc": "i18n 词典零件（自动生成，中文口语名索引）",
+   "has_argparse": false
+  },
+  {
+   "name": "overnight_parts",
+   "path": "ckzl/zsk/gczsk/overnight_parts.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 28816,
+   "sha256": "752ea358346f165e",
+   "mtime": "2026-09-12 23:46",
+   "has_argparse": false
+  },
+  {
+   "name": "query_kb",
+   "path": "ckzl/zsk/gczsk/query_kb.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 5680,
+   "sha256": "ed8b27c89b0291f9",
+   "mtime": "2026-09-04 15:43",
+   "has_argparse": true
+  },
+  {
+   "name": "query_kb_origin",
+   "path": "ckzl/zsk/gczsk/query_kb_origin.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 14533,
+   "sha256": "bb9e4ea7f5e26997",
+   "mtime": "2026-08-24 11:01",
+   "doc": "ckzl/zsk/gczsk查询工具：api_kb.sqlite（人机料法环 5M1E） 用法: python query_kb.py part <关键词> # 按 类名/方法名/说明 查零件 python query_kb.py class <类名> # 查某个类的所有方法 python query_kb.py cat <类别> # ",
+   "has_argparse": false
+  },
+  {
+   "name": "query_template_bom",
+   "path": "ckzl/zsk/gczsk/query_template_bom.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 9431,
+   "sha256": "62cff25004437560",
+   "mtime": "2026-09-06 12:13",
+   "doc": "模板构件 BOM 查询工具：template_bom.sqlite（模板域装配图, CAR-014） 数据源: campaign/rebuild 产物 ET 解析(由 build_template_bom.py 建库), 承接旧 api_kb bom 表的 装配查询+高频统计 职能(R-0002 旧表沉睡后由模板域活数",
+   "has_argparse": false
+  },
+  {
+   "name": "reflect_all_classes",
+   "path": "ckzl/zsk/gczsk/reflect_all_classes.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 2026,
+   "sha256": "be0addc1522e20b3",
+   "mtime": "2026-08-24 11:01",
+   "doc": "Python zipfile 全量扫描 FR jar 的 com.fr 类 → 类级零件 （不依赖 fr-agent，直接读文件系统）",
+   "has_argparse": true
+  },
+  {
+   "name": "reflect_api",
+   "path": "ckzl/zsk/gczsk/reflect_api.py",
+   "dir": "ckzl/zsk/gczsk",
+   "bytes": 6894,
+   "sha256": "da48c4dfb20fa4fb",
+   "mtime": "2026-08-24 11:01",
+   "doc": "fr-agent 反射枚举 FR API → 生成细粒度零件（api_reflect_parts.py） 用法: python reflect_api.py [--dry-run] 通过 fr-agent /exec 在设计器 JVM 内 Class.forName + getMethods 枚举真实方法",
+   "has_argparse": true
+  },
+  {
+   "name": "add_para_init_event",
+   "path": "kfgj/fzpy/add_para_init_event.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 1953,
+   "sha256": "03a56192bb5bdf3d",
+   "mtime": "2026-09-11 19:21",
+   "doc": "替换 示例实际表.cpt 中 afterinit 事件的占位符为实际 CSS 注入代码。",
+   "has_argparse": false
+  },
+  {
+   "name": "add_year_bu_controls",
+   "path": "kfgj/fzpy/add_year_bu_controls.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 22942,
+   "sha256": "e79500f07a65550c",
+   "mtime": "2026-09-11 19:21",
+   "doc": "为 6 个 CPT 文件批量添加 Year/BU/Region/Plant/Program 5 个 ComboCheckBox 参数控件 包括级联配置（BU→Region→Plant），并新建必要的 DBTableData 数据集。 使用方法：python add_year_bu_controls.py",
+   "has_argparse": false
+  },
+  {
+   "name": "apply_bak2",
+   "path": "kfgj/fzpy/apply_bak2.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 3243,
+   "sha256": "ce78289d00ee23fa",
+   "mtime": "2026-09-11 19:21",
+   "doc": "直接基于 bak2 修改: 水印 + 隔行换色",
+   "has_argparse": false
+  },
+  {
+   "name": "build_doc_id_registry",
+   "path": "kfgj/fzpy/build_doc_id_registry.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 11757,
+   "sha256": "b7b85a3ce262727e",
+   "mtime": "2026-09-11 19:21",
+   "doc": "build_doc_id_registry.py — L3 白名单构建器（doc_id_registry） ============================================================= 设计依据：设计A-事前门禁.md §2 件3/件4＋铁律改造清单-A.md §3（白名单",
+   "has_argparse": true
+  },
+  {
+   "name": "check_cpt",
+   "path": "kfgj/fzpy/check_cpt.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 1521,
+   "sha256": "2a2c8bed56f9413e",
+   "mtime": "2026-09-11 19:21",
+   "doc": "",
+   "has_argparse": false
+  },
+  {
+   "name": "check_cpt_events",
+   "path": "kfgj/fzpy/check_cpt_events.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 20641,
+   "sha256": "b428e58683fa4417",
+   "mtime": "2026-09-11 19:21",
+   "doc": "check_cpt_events.py — cpt 事件环静态检测（setValue→afteredit 递归 → Maximum call stack size exceeded） 背景：FR 的 widget.setValue() 会触发目标控件自身的编辑后(afteredit)事件；多个控件互相清值 构成环（如 ",
+   "has_argparse": false
+  },
+  {
+   "name": "check_cpt_integrity",
+   "path": "kfgj/fzpy/check_cpt_integrity.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 24133,
+   "sha256": "1aef3412b45c496a",
+   "mtime": "2026-09-11 19:21",
+   "doc": "check_cpt_integrity.py — cpt 三合一完整性体检（数据集引用 / 公式函数白名单 / 超链目标存在性） 背景（2026-09-06/07 三次实战事故的工具化，见 ckzl/zsk/tbcw/ 两篇条目）： 检查1 DSColumn 悬空数据集引用：格子 <O t=\"DSColumn\"> 绑定的 dsNam",
+   "has_argparse": false
+  },
+  {
+   "name": "check_env",
+   "path": "kfgj/fzpy/check_env.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 8921,
+   "sha256": "cf7daea12d72c5c4",
+   "mtime": "2026-09-11 19:21",
+   "doc": "FR Headless 开发环境检测脚本 检测 FineReport 10.0 Headless 模板开发所需的全部组件。",
+   "has_argparse": false
+  },
+  {
+   "name": "contract_check",
+   "path": "kfgj/fzpy/contract_check.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 24575,
+   "sha256": "6fa16eca47528be0",
+   "mtime": "2026-09-11 19:21",
+   "doc": "contract_check.py — 994 收口链三查脚本（闸门2 裁决 §2 落地 · Z2 收口链实施役交付物） 设计依据（公式的解释权归契约，不从 prose 重推）: - ckzl/lc/_contracts/c3_contract.json 契约单源（B 40 字段骨架 ∪ A 独有 hidden_re",
+   "has_argparse": true
+  },
+  {
+   "name": "convert_excel_formula",
+   "path": "kfgj/fzpy/convert_excel_formula.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 24216,
+   "sha256": "b33dee0c6cb7aa58",
+   "mtime": "2026-09-11 19:21",
+   "doc": "Excel 公式 → FineReport 公式转换器 =================================== 用于 Excel 导入 CPT 前批量转换公式，尽可能自动完成兼容层转换， 对无法自动转换的复杂场景生成警告报告供人工处理。 用法: # 转换单个公式字符串 python convert_ex",
+   "has_argparse": true
+  },
+  {
+   "name": "db_schema",
+   "path": "kfgj/fzpy/db_schema.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 8339,
+   "sha256": "1f36ac3c497ecbba",
+   "mtime": "2026-09-11 19:21",
+   "doc": "db_schema.py — 数据库/数据集结构探查（借鉴 FR AI 助手 DatasetTools/DataSetFetcherTools） AI 助手工具能力（逆向）： getTables(conn) → 数据连接中所有表 getColNames(conn, table) → 指定表所有字段名+类型 getCol",
+   "has_argparse": true
+  },
+  {
+   "name": "export_gate",
+   "path": "kfgj/fzpy/export_gate.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 26477,
+   "sha256": "deb14d1744328e32",
+   "mtime": "2026-09-11 19:21",
+   "doc": "FR 导出产物自动校验闸门（export_gate）— ENH-1 Lane K1 新增（2026-09-11）。 编码来源: ckzl/gf/yspj.md「收尾产物校验」条款—— 「导出类任务必做产物魔数校验——HTTP 200 / 文件非空 ≠ 成功，必须校验产物真实文件类型（doc-1120）」 验收断言 ",
+   "has_argparse": true
+  },
+  {
+   "name": "export_gate_selftest",
+   "path": "kfgj/fzpy/export_gate_selftest.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 15598,
+   "sha256": "f53fac4482b17e4a",
+   "mtime": "2026-09-11 19:21",
+   "doc": "export_gate 自检 — ENH-1 Lane K1（≥10 例，覆盖任务书规定场景）。 场景清单: T01 xlsx 正例(魔数+行数+水印, 退出码 0) T02 docx 正例(document.xml 水印) T03 pdf 正例(未压缩流+页数) T04 pdf 压缩流(FlateDecode)水印 ",
+   "has_argparse": false
+  },
+  {
+   "name": "file_lock",
+   "path": "kfgj/fzpy/file_lock.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 4771,
+   "sha256": "94cf848194e44b97",
+   "mtime": "2026-09-11 19:21",
+   "doc": "advisory 文件锁 —— 跨会话/跨 Agent 的线上 cpt 写入协调（AGENTS.md §7 文件锁纪律，2026-09-07 用户裁决增补） 用法（任意目录执行）: python kfgj/fzpy/file_lock.py acquire <目标文件> --holder <会话/agent标识> [",
+   "has_argparse": true
+  },
+  {
+   "name": "final_verify",
+   "path": "kfgj/fzpy/final_verify.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2419,
+   "sha256": "d9b8f28a3b3cbbd9",
+   "mtime": "2026-09-11 19:21",
+   "doc": "",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_bar_width",
+   "path": "kfgj/fzpy/fix_bar_width.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 1488,
+   "sha256": "26cf1eee58833b67",
+   "mtime": "2026-09-11 19:21",
+   "doc": "示例驾驶舱_v3.frm 柱形图柱宽：固定(30px) → 自动宽度",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_budget",
+   "path": "kfgj/fzpy/fix_budget.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2503,
+   "sha256": "a156048c319b67d3",
+   "mtime": "2026-09-11 19:21",
+   "doc": "示例预算表.cpt: 添加 ReportWebAttr + WebWriteContent（填报页面单独设置，无工具栏）",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_cascade_sql",
+   "path": "kfgj/fzpy/fix_cascade_sql.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 1844,
+   "sha256": "7a12f2022a6ce0a3",
+   "mtime": "2026-09-11 19:21",
+   "doc": "将级联参数从 ${para_xxx} 直写改为 FR 公式形式： ${if(len(控件名)==0,\"\",\"and 字段 in ('\"+控件名+\"')\")}",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_cdata_quotes",
+   "path": "kfgj/fzpy/fix_cdata_quotes.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 1482,
+   "sha256": "e94ad4aaad2ae5cf",
+   "mtime": "2026-09-11 19:21",
+   "doc": "修复 CDATA 内多余的 \\\" 转义符 → \"",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_chart_program_axis",
+   "path": "kfgj/fzpy/fix_chart_program_axis.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 4648,
+   "sha256": "c6958699b8dca75f",
+   "mtime": "2026-09-11 19:21",
+   "doc": "示例驾驶舱_v3.frm chart_program 横向条形图：交换 X/Y 轴（数值轴→X横轴, 分类轴→Y纵轴）",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_chart_program_horizontal",
+   "path": "kfgj/fzpy/fix_chart_program_horizontal.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2531,
+   "sha256": "54aad01abd60d969",
+   "mtime": "2026-09-11 19:21",
+   "doc": "示例驾驶舱_v3.frm Program Top20(chart_program) 改为横向条形图：isBar=false -> true",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_ci_ds",
+   "path": "kfgj/fzpy/fix_ci_ds.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2056,
+   "sha256": "9b5c8cc6dc655ed1",
+   "mtime": "2026-09-11 19:21",
+   "doc": "修复 CI查看.cpt：所有 DSColumn 改为纵向扩展 + 列表展示",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_ci_query",
+   "path": "kfgj/fzpy/fix_ci_query.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2306,
+   "sha256": "2bbc03cc96deb8d8",
+   "mtime": "2026-09-11 19:21",
+   "doc": "修复 持续改进项目查询",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_deep_learn_templates",
+   "path": "kfgj/fzpy/fix_deep_learn_templates.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 6349,
+   "sha256": "ef8c9cb9ebb9817b",
+   "mtime": "2026-09-11 19:21",
+   "doc": "批量修复深化学习目录下的错误 CPT 模板 问题：子 agent 生成的模板用了错误的 XML Schema（DataSets/TableDataList 而非 TableDataMap） 修复：将 DataSets/TableDataList/EmbeddedTableData 结构转换为 TableDataMap/",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_div_zero",
+   "path": "kfgj/fzpy/fix_div_zero.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2641,
+   "sha256": "7684ed59c62c1031",
+   "mtime": "2026-09-11 19:21",
+   "doc": "示例实际表.cpt: 所有除法公式添加除零保护 = numerator / divisor → =if(len(divisor)=0||divisor=0,'',numerator/divisor)",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_div_zero_all",
+   "path": "kfgj/fzpy/fix_div_zero_all.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2341,
+   "sha256": "0e70c0171a43bdca",
+   "mtime": "2026-09-11 19:21",
+   "doc": "批量：目录下所有非backup CPT文件添加除零保护",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_formulas",
+   "path": "kfgj/fzpy/fix_formulas.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 1953,
+   "sha256": "4eef29446426c761",
+   "mtime": "2026-09-11 19:21",
+   "doc": "修正: 插入 r=1,r=2 行后，公式中的大写列引用行号 +2 规则: 只调整全大写列字母的行引用 (A1→A3, AA1→AA3) 小写列 (a1) 不动 → FR 认为是绝对引用",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_kpi_scroll",
+   "path": "kfgj/fzpy/fix_kpi_scroll.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2459,
+   "sha256": "c5df7e2495786c38",
+   "mtime": "2026-09-11 19:21",
+   "doc": "示例驾驶舱_v3.frm KPI 卡片滚动条修复：行高/列宽适配组件尺寸 组件 313x90, margin 5x4 → 可用 303x80 行高: 38.1/38.1/35.6 (总111.8) → 26/28/26 (总80) px = 780000/840000/780000 列宽: 344.2/50.8 ",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_lta",
+   "path": "kfgj/fzpy/fix_lta.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2425,
+   "sha256": "7da8d99a1cfd055d",
+   "mtime": "2026-09-11 19:21",
+   "doc": "修复 LTA分月明细表 — 正确控件名",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_pact",
+   "path": "kfgj/fzpy/fix_pact.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2258,
+   "sha256": "c4dad0f2cb528b60",
+   "mtime": "2026-09-11 19:21",
+   "doc": "修复 PACT分月明细表",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_program_rotation_bu",
+   "path": "kfgj/fzpy/fix_program_rotation_bu.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 3566,
+   "sha256": "37ea7b82a3e641a8",
+   "mtime": "2026-09-11 19:21",
+   "doc": "示例驾驶舱_v3.frm 修复： 1. Program Top20 图表 isAxisRotation=true -> false（分类从左到右，竖向柱形） 2. chart0_bu 分类 CategoryName abp1 -> bu（BU 维度分类）",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_program_scroll",
+   "path": "kfgj/fzpy/fix_program_scroll.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2375,
+   "sha256": "232b0d4abe2869fc",
+   "mtime": "2026-09-11 19:21",
+   "doc": "示例驾驶舱_v3.frm Program Top20：加滚动条(展示10个) + 柱宽固定20",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_program_second_chart",
+   "path": "kfgj/fzpy/fix_program_second_chart.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 1368,
+   "sha256": "198c830ace3028f4",
+   "mtime": "2026-09-11 19:21",
+   "doc": "修复残留的 Program 横向图：isBar=true -> false（轴已是竖向配置）",
+   "has_argparse": false
+  },
+  {
+   "name": "fix_program_series_case",
+   "path": "kfgj/fzpy/fix_program_series_case.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2083,
+   "sha256": "7c0f4c8804e60b7e",
+   "mtime": "2026-09-11 19:21",
+   "doc": "示例驾驶舱_v3.frm Program Top20 系列名大写：customName abp1/obp/act -> ABP1/OBP/ACT（name字段名不动）",
+   "has_argparse": false
+  },
+  {
+   "name": "format_sql",
+   "path": "kfgj/fzpy/format_sql.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2438,
+   "sha256": "b2578a9c982176a8",
+   "mtime": "2026-09-11 19:21",
+   "doc": "使用 sqlglot 格式化所有 CPT 文件数据集中的 SQL 查询。",
+   "has_argparse": false
+  },
+  {
+   "name": "fr_check",
+   "path": "kfgj/fzpy/fr_check.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 21499,
+   "sha256": "42f2b122aa094365",
+   "mtime": "2026-09-11 19:21",
+   "doc": "FR 报表全局错误检测工具 — 三层检测（离线→在线→浏览器）。 用法: python fr_check.py <cpt_path> # 默认：离线XML检查 python fr_check.py <cpt_path> --online # 离线 + 在线HTTP检查（需FR服务器运行） python fr_check",
+   "has_argparse": false
+  },
+  {
+   "name": "fr_lint_write",
+   "path": "kfgj/fzpy/fr_lint_write.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 17766,
+   "sha256": "395a62538b86d9e9",
+   "mtime": "2026-09-11 19:21",
+   "doc": "fr_lint_write.py — L2 条件驱动写前审计执行器（规则表驱动，乙形态一期） ===================================================================== 设计依据：设计A-事前门禁.md §1/§2（件1/件2）＋设计A-事前门禁-B竞标.",
+   "has_argparse": true
+  },
+  {
+   "name": "fr_preview",
+   "path": "kfgj/fzpy/fr_preview.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 9776,
+   "sha256": "c905ab4d8d5a8b36",
+   "mtime": "2026-09-11 19:21",
+   "doc": "FR 报表预览工具 — 轻量级 API 登录 + 报表数据获取（不开浏览器）。 用法: python fr_preview.py login # 登录获取 token python fr_preview.py panel <cpt_path> # 离线解析参数面板布局（最轻量） python fr_preview.py",
+   "has_argparse": false
+  },
+  {
+   "name": "fr_rules_doc",
+   "path": "kfgj/fzpy/fr_rules_doc.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 191800,
+   "sha256": "56049b02634ad769",
+   "mtime": "2026-09-15 02:28",
+   "doc": "fr_rules_doc.py — 帆软模板静态校验规则库(源自 105 篇官方帮助文档学习沉淀) ================================================================================ 来源: C:\\\\Users\\\\Admin\\\\Desktop",
+   "has_argparse": false
+  },
+  {
+   "name": "fr_rules_export",
+   "path": "kfgj/fzpy/fr_rules_export.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 157767,
+   "sha256": "28425e9586275194",
+   "mtime": "2026-09-15 02:09",
+   "doc": "fr_rules_export.py —— 导出 / 定时调度 / 权限 / 数据连接 / 移动端 / 环境类静态校验规则集 ========================================================================================= 来源: C:\\",
+   "has_argparse": false
+  },
+  {
+   "name": "frm_apply_style",
+   "path": "kfgj/fzpy/frm_apply_style.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 10045,
+   "sha256": "49b72f32eae3312d",
+   "mtime": "2026-09-11 19:21",
+   "doc": "FRM 驾驶舱默认样式一键格式化脚本（v1） 依据: ckzl/gf/bjys.md（最终版） 分工(遵循用户铁律): 组件级样式用 FR Java API(fr-agent /exec), 属性值修改用 Python XML。 用法: python frm_apply_style.py <frm路径> # 指定文件 p",
+   "has_argparse": true
+  },
+  {
+   "name": "gen_fs2",
+   "path": "kfgj/fzpy/gen_fs2.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 16439,
+   "sha256": "230111987fc5c249",
+   "mtime": "2026-09-11 19:21",
+   "doc": "生成 示例实际表2.cpt 参数面板 根据 Excel 需求: Entity, 查询层级, 对比列(上年/预算/当年/其他1-5), 单位, 币种, ADJ 数据连接: demo_connection",
+   "has_argparse": false
+  },
+  {
+   "name": "gen_lta_detail",
+   "path": "kfgj/fzpy/gen_lta_detail.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 41985,
+   "sha256": "0655dbc3b0e7cdd4",
+   "mtime": "2026-09-11 19:21",
+   "doc": "Generate LTA Detail fill-in + import CPT templates (v2 — PK-based IntelliDML). Table: demo_ads.fin_demo_input_lta_detail PK: month + bu + region + plant_code",
+   "has_argparse": false
+  },
+  {
+   "name": "gen_demo_ci",
+   "path": "kfgj/fzpy/gen_demo_ci.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 30202,
+   "sha256": "e8bd41cf665bf7c1",
+   "mtime": "2026-09-11 19:21",
+   "doc": "生成 demo_input_demob_ci 项目下3个 CPT 报表模板：查看、填报、导入 级联筛选：year_start → bu → region → plant → currency",
+   "has_argparse": false
+  },
+  {
+   "name": "jar_class_probe",
+   "path": "kfgj/fzpy/jar_class_probe.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 4734,
+   "sha256": "6f20449a5ba3f6e7",
+   "mtime": "2026-09-11 19:23",
+   "doc": "jar_class_probe.py — FR jar 类探针（2026-09-11 补齐: NODE-10「版本/jar 归属判据」既有引用的工具本体） 用途: NoClassDefFoundError / NoSuchMethod 排查时,判断一个类到底在不在本地 jar 集、在哪个 jar—— 0 命中 = 版本",
+   "has_argparse": true
+  },
+  {
+   "name": "kb_keyword_audit",
+   "path": "kfgj/fzpy/kb_keyword_audit.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 16501,
+   "sha256": "724b5a34d6f07f8d",
+   "mtime": "2026-09-11 19:21",
+   "has_argparse": true
+  },
+  {
+   "name": "layout_grid",
+   "path": "kfgj/fzpy/layout_grid.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 6269,
+   "sha256": "87ed2d05281e8832",
+   "mtime": "2026-09-11 19:21",
+   "doc": "layout_grid.py — 栅格布局计算器（借鉴 FR AI 助手 dashboard_analyze_plan 的栅格化布局法） AI 助手提示词原文（dashboard_analyze_plan.txt §6 布局规则）： - 无缝填充整张画布，不留任何空白；任意组件之间不得重叠 - 根据组件数量N，选取行列",
+   "has_argparse": true
+  },
+  {
+   "name": "link_check",
+   "path": "kfgj/fzpy/link_check.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 11826,
+   "sha256": "d994ef40cf0a8872",
+   "mtime": "2026-09-11 19:21",
+   "doc": "link_check.py — fr_dev_kit 知识库断链扫描器（CAR-011, 出处 R65/T14 lychee 等价实现） ==================================================================================== 职责: 扫全",
+   "has_argparse": true
+  },
+  {
+   "name": "llm_call_logger",
+   "path": "kfgj/fzpy/llm_call_logger.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 8754,
+   "sha256": "849a589346d702fd",
+   "mtime": "2026-09-15 08:26",
+   "has_argparse": true
+  },
+  {
+   "name": "llm_trace_report",
+   "path": "kfgj/fzpy/llm_trace_report.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 12991,
+   "sha256": "e653ae802966a572",
+   "mtime": "2026-09-14 15:02",
+   "doc": "llm_trace_report.py — LLM 调用日志周期复盘分析器（fr_dev_kit SOP 提速方案 · 方案四原型） 六个分析维度（对应方案 §5.3 判读表; 6) 为 P2-1/P2-2 增补）: 1) 节点健康表 —— 每节点调用数/失败率/重试率/均耗时 → 短板节点 2) 动作 n-gram ",
+   "has_argparse": true
+  },
+  {
+   "name": "merge_fs",
+   "path": "kfgj/fzpy/merge_fs.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2367,
+   "sha256": "2cce93156b00b398",
+   "mtime": "2026-09-11 19:21",
+   "doc": "Merge 示例实际表2 param panel into 示例实际表",
+   "has_argparse": false
+  },
+  {
+   "name": "node_gate",
+   "path": "kfgj/fzpy/node_gate.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 13434,
+   "sha256": "1b76a44d9ef81b8e",
+   "mtime": "2026-09-15 08:26",
+   "doc": "node_gate.py — 节点出口门禁执行器 v0.1（fr_dev_kit SOP 提速方案 · 方案一原型） 单一事实源: ckzl/gzjd/node_gates.yaml（防 10 处复制漂移）。 职责: 1. 输入契约校验: 上游产物存在且必填字段齐 → 不过禁入（\"增强下一节点输入质量\"的第一断言） 2. 出口",
+   "has_argparse": true
+  },
+  {
+   "name": "optimize_param_panel",
+   "path": "kfgj/fzpy/optimize_param_panel.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2375,
+   "sha256": "4f7033c5ff52dcb1",
+   "mtime": "2026-09-11 19:21",
+   "doc": "示例驾驶舱_v3.frm 参数栏面板布局优化：垂直对齐统一 + 筛选/按钮右对齐 + 间距统一",
+   "has_argparse": false
+  },
+  {
+   "name": "post_apply_gate",
+   "path": "kfgj/fzpy/post_apply_gate.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 6170,
+   "sha256": "c1bf5a422c279f4b",
+   "mtime": "2026-09-15 08:25",
+   "doc": "post_apply_gate.py — patches 提案应用后统一验收闸门（P0-P2 优化执行收口）。 用法（仓库根执行）: python kfgj/fzpy/post_apply_gate.py 退出码: 0=全过 1=有 FAIL 断言清单对应 8 份 patches 提案的落地锚点（AGENTS/接口规",
+   "has_argparse": false
+  },
+  {
+   "name": "receipt_screen",
+   "path": "kfgj/fzpy/receipt_screen.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 7022,
+   "sha256": "de8fac576e2098dc",
+   "mtime": "2026-09-15 08:50",
+   "doc": "receipt_screen.py — 外部回执/网页正文/外部文档的\"数据与指令分离\"筛查器（P1-6）。 背景（07-审计启示 P1-6 / 08-复核记录）: 外部子 agent 回执、网页正文等外部内容 一律视为不可信数据；其中出现的指令性文本不得直接执行。本脚本做第一道机器筛查: 扫描文本中的\"指使型句式 /",
+   "has_argparse": true
+  },
+  {
+   "name": "restore_chart_program_vertical",
+   "path": "kfgj/fzpy/restore_chart_program_vertical.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2935,
+   "sha256": "48a969bb7e467842",
+   "mtime": "2026-09-11 19:21",
+   "doc": "恢复 Program Top20（第3组图表）为竖向柱形图：从备份恢复段，保留 fixedWidth=false 自动宽度",
+   "has_argparse": false
+  },
+  {
+   "name": "gen_template",
+   "path": "kfgj/fzpy/scripts/gen_template.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 33348,
+   "sha256": "fb4d8dd821b92e19",
+   "mtime": "2026-08-24 11:01",
+   "doc": "示例 CI 模板 — 修复版 - 参数面板 5列紧凑布局，高度<300 - 冻结字段名行(F1)，仅冻结不重复标题 - 字典命名 dict001_ ~ dict026_ - 级联参数 SQL 注入正确",
+   "has_argparse": false
+  },
+  {
+   "name": "set_write_web_attr",
+   "path": "kfgj/fzpy/set_write_web_attr.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2532,
+   "sha256": "ea4b2544143997d2",
+   "mtime": "2026-09-11 19:21",
+   "doc": "修改 示例实际表.cpt：填报页面单独设置，不使用工具栏。",
+   "has_argparse": false
+  },
+  {
+   "name": "submit_config_check",
+   "path": "kfgj/fzpy/submit_config_check.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 14986,
+   "sha256": "6756096602175986",
+   "mtime": "2026-09-12 10:41",
+   "doc": "submit_config_check.py — 填报提交配置内容校验器 v1.1（2026-09-12 P1，用户确认） 补 NODE-05 最大覆盖缺口: fr_check 只识别\"提交配置存在+类型\"，本工具做内容级断言。 规格依据: ckzl/gzjd/05填报模块.md + ckzl/lc/05 §9/§22 + ",
+   "has_argparse": true
+  },
+  {
+   "name": "template_snapshot",
+   "path": "kfgj/fzpy/template_snapshot.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 12303,
+   "sha256": "8d83b0ad9556328f",
+   "mtime": "2026-09-11 19:21",
+   "doc": "template_snapshot.py — 模板结构快照提取器（借鉴 FR AI 助手 DesignerLLMContext/FineAIEnvProvider） AI 助手做法：实时把「当前模板结构信息、数据库表字段信息」注入 LLM 上下文，避免幻觉。 我们落地：开发/修改模板前先跑本脚本，拿到当前模板的结构 J",
+   "has_argparse": true
+  },
+  {
+   "name": "unify_panel_y10",
+   "path": "kfgj/fzpy/unify_panel_y10.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 5269,
+   "sha256": "b19f44789c9c9353",
+   "mtime": "2026-09-11 19:21",
+   "doc": "参数面板首行控件 y 统一为 10：取 ReportParameterAttr 块内全部 BoundsAttr 的 y 最小值 min_y， delta = 10 - min_y，块内所有 BoundsAttr 的 y 统一 += delta（label 与控件同步平移）。 - 只动 ReportParameterAt",
+   "has_argparse": true
+  },
+  {
+   "name": "update_css",
+   "path": "kfgj/fzpy/update_css.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2590,
+   "sha256": "79a8d5345f563992",
+   "mtime": "2026-09-11 19:21",
+   "doc": "更新所有 CPT 文件的 afterinit CSS 注入内容。 如果已有 afterinit 则替换 CDATA 内容，否则调用 add_para_init_event.py 逻辑注入。",
+   "has_argparse": false
+  },
+  {
+   "name": "v",
+   "path": "kfgj/fzpy/v.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 1609,
+   "sha256": "6ac215a9acde0667",
+   "mtime": "2026-09-11 19:21",
+   "doc": "",
+   "has_argparse": false
+  },
+  {
+   "name": "verify_cpt",
+   "path": "kfgj/fzpy/verify_cpt.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 2524,
+   "sha256": "cb8deb20d4150a0a",
+   "mtime": "2026-09-11 19:21",
+   "doc": "",
+   "has_argparse": false
+  },
+  {
+   "name": "verify_results",
+   "path": "kfgj/fzpy/verify_results.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 3215,
+   "sha256": "4c91c5a3fef25e2c",
+   "mtime": "2026-09-11 19:21",
+   "doc": "验证修改结果 v2",
+   "has_argparse": false
+  },
+  {
+   "name": "verify_sql",
+   "path": "kfgj/fzpy/verify_sql.py",
+   "dir": "kfgj/fzpy",
+   "bytes": 8164,
+   "sha256": "26505da83e47ffca",
+   "mtime": "2026-09-11 19:21",
+   "doc": "verify_sql.py — SQL 生成验证闭环工具（借鉴 FR AI 助手 copilot_plan 的强制验证原则） AI 助手规则原文：\"SQL 必须验证确保执行没问题才能进行下一步，验证SQL时将参数替换为静态值 进行验证，否则就尝试重新进行上面的步骤最多三次，如果最终没有数据就返回尝试生成失败。\" 用法：",
+   "has_argparse": true
+  }
+ ]
+}

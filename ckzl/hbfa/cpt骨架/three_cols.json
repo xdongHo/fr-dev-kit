@@ -1,0 +1,45 @@
+{
+ "id": "three_cols",
+ "name": "宽窄三栏",
+ "engine": "cpt",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1200,
+  "height": 800,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "120列×60行×5px格, 合并单元格布局",
+ "containers": [
+  {
+   "title": "主桑基",
+   "type": "chart_group",
+   "x": 0,
+   "y": 0,
+   "w": 40,
+   "h": 100,
+   "components": "桑基图"
+  },
+  {
+   "title": "趋势折线",
+   "type": "chart_group",
+   "x": 40,
+   "y": 0,
+   "w": 30,
+   "h": 100,
+   "components": "折线图"
+  },
+  {
+   "title": "结构饼图",
+   "type": "chart_group",
+   "x": 70,
+   "y": 0,
+   "w": 30,
+   "h": 100,
+   "components": "饼图"
+  }
+ ],
+ "file": "three_cols.cpt",
+ "note": "40/30/30 三竖栏: 栅格10×1",
+ "structure": "cpt(可导出): 120×60细网格(5px格,格值190500=FU.valueOfPix(5,96))合并单元格布局, 每容器=标题带6行+图表区, 剩余细格可加元素"
+}

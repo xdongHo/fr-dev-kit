@@ -1,0 +1,27 @@
+# golden: dataset ① 事实集全织入（numeric + period CASE + ORG+PERM）
+skill: dataset
+name: dataset_g1_period_org_perm
+expect: ok
+spec:
+  name: ds_fs_month
+  source: org_sum_actual            # semantic datasources 键（74 科目 ACTUAL 正式表）
+  fields: [account, entity, period, data]
+  numeric_cols: [data]              # varchar 数值 → COALESCE(NULLIF(...,'')::numeric,0)
+  filters: ["view = 'YTD'", "value = 'CNY'"]
+  params: [para_year]
+  period_param: para_month          # 'Sep'→'9' CASE 自动织入
+  permission: full                  # ORG 四段并集 + PERM 角色旁路/用户映射
+  order_by: [account]
+assert_contains:
+  - "demo_dws.demo_rates_org_sum_actual"            # schema 前缀防同名副本
+  - "COALESCE(NULLIF(t.data,'')::numeric,0) AS data"
+  - "t.period = (CASE upper('${para_month}')"
+  - "fin_demo_auth_base_info"
+  - "UNION ALL"
+  - "fin_demo_config_user_role"
+  - "fin_demo_auth_base_user_map"
+  - "ORDER BY t.account"
+  - "<Parameter><Attributes name=\"para_legal\"/>"    # ORG 级联参数自动并入声明
+  - "<Parameter><Attributes name=\"para_month\"/>"
+assert_not_contains:
+  - "${{"

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkBook xmlVersion="20211223" releaseVersion="10.0.0">
+<Report class="com.fr.report.report.WorkSheet" name="main">
+<CellElementList>
+<C c="0" r="0" s="0"><O t="DSColumn"><Attributes dsName="ds_ok" columnName="id"/></O></C>
+</CellElementList>
+<TableDataMap>
+<TableData name="ds_ok" class="com.fr.data.impl.DBTableData">
+<Query databaseName="env_fixtures"><![CDATA[select id from t2 where ok='${p_declared}']]></Query>
+</TableData>
+</TableDataMap>
+</Report>
+<ReportParameterAttr>
+<Parameter>
+<Attributes name="p_declared"/>
+<O><![CDATA[]]></O>
+</Parameter>
+</ReportParameterAttr>
+<StyleList/>
+</WorkBook>

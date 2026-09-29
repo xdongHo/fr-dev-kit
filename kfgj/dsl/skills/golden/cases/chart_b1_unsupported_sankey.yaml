@@ -1,0 +1,17 @@
+# 坏 spec: 映射缺失类型（sankey 桑基图）—— 必须明确"暂不支持"，绝不编造 XML
+skill: chart
+name: chart_b1_unsupported_sankey
+expect: reject
+reject_contains: "暂不支持"
+spec:
+  echarts_type: sankey
+  variant: 桑基图
+  dataset:
+    name: ds_sales
+    source: org_sum_actual
+    fields: [entity, data]
+    numeric_cols: [data]
+    permission: full
+  binding:
+    category: entity
+    values: [{field: data, name: 金额}]

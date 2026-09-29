@@ -1,0 +1,90 @@
+{
+ "id": "frm_dashboard_8",
+ "name": "FRM八宫格",
+ "engine": "frm",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "8占位网页框(RHIframe)",
+ "containers": [
+  {
+   "title": "柱形",
+   "type": "chart",
+   "x": 0,
+   "y": 0,
+   "w": 25,
+   "h": 50,
+   "components": "柱形图"
+  },
+  {
+   "title": "饼图",
+   "type": "chart",
+   "x": 25,
+   "y": 0,
+   "w": 25,
+   "h": 50,
+   "components": "饼图"
+  },
+  {
+   "title": "条形",
+   "type": "chart",
+   "x": 50,
+   "y": 0,
+   "w": 25,
+   "h": 50,
+   "components": "条形图"
+  },
+  {
+   "title": "折线",
+   "type": "chart",
+   "x": 75,
+   "y": 0,
+   "w": 25,
+   "h": 50,
+   "components": "折线图"
+  },
+  {
+   "title": "地图",
+   "type": "chart_group",
+   "x": 0,
+   "y": 50,
+   "w": 25,
+   "h": 50,
+   "components": "地图"
+  },
+  {
+   "title": "桑基",
+   "type": "chart_group",
+   "x": 25,
+   "y": 50,
+   "w": 25,
+   "h": 50,
+   "components": "桑基图"
+  },
+  {
+   "title": "雷达",
+   "type": "chart",
+   "x": 50,
+   "y": 50,
+   "w": 25,
+   "h": 50,
+   "components": "雷达图"
+  },
+  {
+   "title": "漏斗",
+   "type": "chart",
+   "x": 75,
+   "y": 50,
+   "w": 25,
+   "h": 50,
+   "components": "漏斗图"
+  }
+ ],
+ "file": "frm_dashboard_8.frm",
+ "note": "自适应: BodyLayoutType=0 等比 | 4×2",
+ "structure": "frm(占位壳): Center内RHIframe占位网格(空RHIframeAttr), 设计器里选组件路径即挂 组件模板/图表组件-*.cpt"
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkBook version="8.0">
+  <!-- 双通道判定表夹具: 4 个悬挂候选 × (通道A,通道B) 组合 -->
+  <TableDataMap>
+    <TableData name="ds_q" class="com.fr.data.impl.DBTableData">
+      <Query class="com.fr.data.impl.DBTableData$Query" databaseName="FRDemo"><![CDATA[select * from t_q where 1=1 and a='${p_sbonly}' and b='${p_sghost}' and c='${p_sql_declared_ds}']]></Query>
+    </TableData>
+    <TableData name="ds_d" class="com.fr.data.impl.DBTableData">
+      <Parameters>
+        <Parameter name="p_sql_declared_ds">
+          <O><![CDATA[]]></O>
+        </Parameter>
+      </Parameters>
+      <Query class="com.fr.data.impl.DBTableData$Query" databaseName="FRDemo"><![CDATA[select 1]]></Query>
+    </TableData>
+  </TableDataMap>
+  <ReportParameterAttr class="com.fr.report.report.ReportParameterAttr">
+    <Parameters/>
+  </ReportParameterAttr>
+  <ParameterUI>
+    <Widget class="com.fr.form.ui.TextEditor">
+      <InnerWidget class="com.fr.form.ui.TextEditor">
+        <WidgetName name="p_bonly"/>
+      </InnerWidget>
+    </Widget>
+    <Widget class="com.fr.form.ui.TextEditor">
+      <InnerWidget class="com.fr.form.ui.TextEditor">
+        <WidgetName name="p_ghost"/>
+      </InnerWidget>
+    </Widget>
+    <Widget class="com.fr.form.ui.TextEditor">
+      <InnerWidget class="com.fr.form.ui.TextEditor">
+        <WidgetName name="p_sql_declared_ds"/>
+      </InnerWidget>
+    </Widget>
+  </ParameterUI>
+  <Report class="com.fr.report.report.WorkSheet" name="sheet1">
+    <CellElementList>
+      <!-- 排除位: 单元格块内声明(通道A不收), 但通道B会命中 p_bonly / p_sbonly -->
+      <C c="0" r="0">
+        <Parameters>
+          <Parameter>
+            <Attributes name="p_bonly"/>
+            <O><![CDATA[]]></O>
+          </Parameter>
+          <Parameter>
+            <Attributes name="p_sbonly"/>
+            <O><![CDATA[]]></O>
+          </Parameter>
+        </Parameters>
+      </C>
+      <C c="1" r="0">
+        <O t="DSColumn">
+          <Attributes dsName="ds_q" columnName="a"/>
+        </O>
+      </C>
+    </CellElementList>
+  </Report>
+</WorkBook>

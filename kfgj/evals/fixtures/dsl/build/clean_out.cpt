@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkBook xmlVersion="20211223" releaseVersion="10.0.0">
+<ReportWebAttr><ServerPrinter/></ReportWebAttr>
+<ReportFitAttr fitStateInPC="2" fitFont="false"/>
+<Report class="com.fr.report.worksheet.WorkSheet" name="组织面板演示">
+<ReportPageAttr><HR/><FR/><HC/><FC/></ReportPageAttr>
+<ColumnPrivilegeControl/><RowPrivilegeControl/>
+<RowHeight defaultValue="1150000"><![CDATA[]]></RowHeight>
+<ColumnWidth defaultValue="2743200"><![CDATA[]]></ColumnWidth>
+<CellElementList><C c="0" r="0" s="0"><O><![CDATA[组织面板页（panel_org 原型：四级联 + Entity 只读 + URL 带值锁定）]]></O><PrivilegeControl/><Expand/></C></CellElementList>
+<ReportAttrSet>
+<ReportSettings headerHeight="0" footerHeight="0">
+<PaperSetting><PaperSize width="42768000" height="60480000"/>
+<Margin top="576000" left="0" bottom="0" right="0"/></PaperSetting>
+<Background name="ColorBackground" color="-1"/></ReportSettings>
+<Header reportPageType="0"><Background name="NullBackground"/><LeftList/><CenterList/><RightList/></Header>
+<Footer reportPageType="0"><Background name="NullBackground"/><LeftList/><CenterList/><RightList/></Footer>
+</ReportAttrSet>
+<PrivilegeControl/>
+</Report>
+<TableDataMap></TableDataMap>
+<ReportParameterAttr><Attributes showWindow="true" delayPlaying="false" windowPosition="1" align="0" useParamsTemplate="true" currentIndex="0"/><PWTitle><![CDATA[参数]]></PWTitle>
+<Parameter><Attributes name="p_code"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="p_name"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_legal"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_bu"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_region"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_plant"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_entity"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_year"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_month"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_month_bud"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_scn_py"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_scn_bud"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_scn_cur"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_adj"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_curr"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_unit"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_ext1"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_ext2"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_ext3"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_ext4"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_ext5"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_ver"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_data_year"/><O><![CDATA[]]></O></Parameter>
+<ParameterUI class="com.fr.form.main.parameter.FormParameterUI">
+<Parameters><Parameter><Attributes name="p_code"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="p_name"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_legal"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_bu"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_region"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_plant"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_entity"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_year"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_month"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_month_bud"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_scn_py"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_scn_bud"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_scn_cur"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_adj"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_curr"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_unit"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_ext1"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_ext2"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_ext3"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_ext4"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_ext5"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_ver"/><O><![CDATA[]]></O></Parameter><Parameter><Attributes name="para_data_year"/><O><![CDATA[]]></O></Parameter></Parameters>
+<Layout class="com.fr.form.ui.container.WParameterLayout">
+<WidgetName name="para"/>
+<WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description="">
+<MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName=""/>
+<PrivilegeControl/></WidgetAttr>
+<Margin top="0" left="0" bottom="0" right="0"/>
+<Background name="ColorBackground" color="-526086"/>
+<LCAttr vgap="0" hgap="0" compInterval="0"/>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget"><InnerWidget class="com.fr.form.ui.Label"><WidgetName name="lb_legal"/><WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description=""><MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName=""/><PrivilegeControl/></WidgetAttr><widgetValue><O><![CDATA[法人：]]></O></widgetValue><LabelAttr verticalcenter="true" textalign="0" autoline="true"/><FRFont name="微软雅黑" style="1" size="80" foreground="-13421773"/><border style="0" color="-723724"/></InnerWidget><BoundsAttr x="8" y="12" width="45" height="26"/></Widget>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget"><InnerWidget class="com.fr.form.ui.ComboBox"><WidgetName name="para_legal"/><LabelName name="法人："/><WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description=""><MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName=""/><PrivilegeControl/></WidgetAttr><allowBlank><![CDATA[true]]></allowBlank><DirectEdit><![CDATA[false]]></DirectEdit><CustomData><![CDATA[false]]></CustomData><Dictionary class="com.fr.data.impl.TableDataDictionary"><FormulaDictAttr ki="0" vi="1"/><TableDataDictAttr><TableData class="com.fr.data.impl.NameTableData"><Name><![CDATA[dict_legal]]></Name></TableData></TableDataDictAttr></Dictionary><widgetValue>
+<O>
+<![CDATA[]]></O>
+</widgetValue></InnerWidget><BoundsAttr x="59" y="12" width="100" height="26"/></Widget>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget"><InnerWidget class="com.fr.form.ui.Label"><WidgetName name="lb_bu"/><WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description=""><MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName=""/><PrivilegeControl/></WidgetAttr><widgetValue><O><![CDATA[BU：]]></O></widgetValue><LabelAttr verticalcenter="true" textalign="0" autoline="true"/><FRFont name="微软雅黑" style="1" size="80" foreground="-13421773"/><border style="0" color="-723724"/></InnerWidget><BoundsAttr x="173" y="12" width="45" height="26"/></Widget>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget"><InnerWidget class="com.fr.form.ui.ComboBox"><WidgetName name="para_bu"/><LabelName name="BU："/><WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description=""><MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName=""/><PrivilegeControl/></WidgetAttr><allowBlank><![CDATA[true]]></allowBlank><DirectEdit><![CDATA[false]]></DirectEdit><CustomData><![CDATA[false]]></CustomData><Dictionary class="com.fr.data.impl.TableDataDictionary"><FormulaDictAttr ki="0" vi="1"/><TableDataDictAttr><TableData class="com.fr.data.impl.NameTableData"><Name><![CDATA[dict_bu]]></Name><Parameters><Parameter name="para_legal" CustomData="false"><O><![CDATA[]]></O></Parameter></Parameters></TableData></TableDataDictAttr></Dictionary><widgetValue>
+<O>
+<![CDATA[]]></O>
+</widgetValue></InnerWidget><BoundsAttr x="224" y="12" width="100" height="26"/></Widget>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget"><InnerWidget class="com.fr.form.ui.Label"><WidgetName name="lb_region"/><WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description=""><MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName=""/><PrivilegeControl/></WidgetAttr><widgetValue><O><![CDATA[区域：]]></O></widgetValue><LabelAttr verticalcenter="true" textalign="0" autoline="true"/><FRFont name="微软雅黑" style="1" size="80" foreground="-13421773"/><border style="0" color="-723724"/></InnerWidget><BoundsAttr x="338" y="12" width="45" height="26"/></Widget>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget"><InnerWidget class="com.fr.form.ui.ComboBox"><WidgetName name="para_region"/><LabelName name="区域："/><WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description=""><MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName=""/><PrivilegeControl/></WidgetAttr><allowBlank><![CDATA[true]]></allowBlank><DirectEdit><![CDATA[false]]></DirectEdit><CustomData><![CDATA[false]]></CustomData><Dictionary class="com.fr.data.impl.TableDataDictionary"><FormulaDictAttr ki="0" vi="1"/><TableDataDictAttr><TableData class="com.fr.data.impl.NameTableData"><Name><![CDATA[dict_region]]></Name><Parameters><Parameter name="para_bu" CustomData="false"><O><![CDATA[]]></O></Parameter></Parameters></TableData></TableDataDictAttr></Dictionary><widgetValue>
+<O>
+<![CDATA[]]></O>
+</widgetValue></InnerWidget><BoundsAttr x="389" y="12" width="100" height="26"/></Widget>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget"><InnerWidget class="com.fr.form.ui.Label"><WidgetName name="lb_plant"/><WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description=""><MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName=""/><PrivilegeControl/></WidgetAttr><widgetValue><O><![CDATA[工厂：]]></O></widgetValue><LabelAttr verticalcenter="true" textalign="0" autoline="true"/><FRFont name="微软雅黑" style="1" size="80" foreground="-13421773"/><border style="0" color="-723724"/></InnerWidget><BoundsAttr x="503" y="12" width="45" height="26"/></Widget>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget"><InnerWidget class="com.fr.form.ui.ComboBox"><WidgetName name="para_plant"/><LabelName name="工厂："/><WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description=""><MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName=""/><PrivilegeControl/></WidgetAttr><allowBlank><![CDATA[true]]></allowBlank><DirectEdit><![CDATA[false]]></DirectEdit><CustomData><![CDATA[false]]></CustomData><Dictionary class="com.fr.data.impl.TableDataDictionary"><FormulaDictAttr ki="0" vi="1"/><TableDataDictAttr><TableData class="com.fr.data.impl.NameTableData"><Name><![CDATA[dict_plant]]></Name><Parameters><Parameter name="para_legal" CustomData="false"><O><![CDATA[]]></O></Parameter><Parameter name="para_bu" CustomData="false"><O><![CDATA[]]></O></Parameter><Parameter name="para_region" CustomData="false"><O><![CDATA[]]></O></Parameter></Parameters></TableData></TableDataDictAttr></Dictionary><widgetValue>
+<O>
+<![CDATA[]]></O>
+</widgetValue></InnerWidget><BoundsAttr x="554" y="12" width="100" height="26"/></Widget>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget"><InnerWidget class="com.fr.form.ui.Label"><WidgetName name="lb_entity"/><WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description=""><MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName=""/><PrivilegeControl/></WidgetAttr><widgetValue><O><![CDATA[Entity：]]></O></widgetValue><LabelAttr verticalcenter="true" textalign="0" autoline="true"/><FRFont name="微软雅黑" style="1" size="80" foreground="-13421773"/><border style="0" color="-723724"/></InnerWidget><BoundsAttr x="668" y="12" width="45" height="26"/></Widget>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget"><InnerWidget class="com.fr.form.ui.ComboBox"><WidgetName name="para_entity"/><LabelName name="Entity："/><WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description=""><MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName=""/><PrivilegeControl/></WidgetAttr><allowBlank><![CDATA[true]]></allowBlank><DirectEdit><![CDATA[false]]></DirectEdit><CustomData><![CDATA[false]]></CustomData><widgetValue>
+<O t="XMLable" class="com.fr.base.Formula">
+<Attributes>
+<![CDATA[=IF(LEN($para_plant)>0,$para_plant,IF(LEN($para_region)>0,$para_region,IF(LEN($para_bu)>0,$para_bu,IF(LEN($para_legal)>0,$para_legal,""))))]]>
+</Attributes>
+</O>
+</widgetValue></InnerWidget><BoundsAttr x="719" y="12" width="100" height="26"/></Widget>
+<Listener event="afterinit" name="init1">
+<JavaScript class="com.fr.js.JavaScriptImpl">
+<Parameters/>
+<Content>
+<![CDATA[var __w = this;
+setTimeout(function() {
+var f = __w.options.form;
+['para_legal','para_bu','para_region','para_plant'].forEach(function(n){
+var w = f.getWidgetByName(n);
+try { if (w.getValue() != null && w.getValue() != "") w.setEnable(false); } catch(e) {}
+});
+try { f.getWidgetByName("para_entity").setEnable(false); } catch(e) {}
+}, 500);]]></Content>
+</JavaScript>
+</Listener>
+</Layout>
+</ParameterUI>
+</ReportParameterAttr>
+<StyleList></StyleList>
+<DesignerVersion DesignerVersion="KAA"/>
+<PreviewType PreviewType="1"/>
+</WorkBook>

@@ -1,0 +1,27 @@
+{
+  "_说明": "sn_gate.py 配置样例。两份预填：aicopilot（本机实测过）与通用骨架。字段见 scripts/sn_gate.py 头注释。",
+  "aicopilot_实测配置": {
+    "plugin_root": "<你的插件工程根目录>",
+    "src": "src",
+    "web": "src/com/fr/plugin/aicopilot",
+    "plugin_xml": "plugin.xml",
+    "build_scripts": [],
+    "version_pairs": [
+      ["src/com/fr/plugin/aicopilot/PetApp.java", "VERSION\\s*=\\s*\"([^\"]+)\""]
+    ],
+    "residual_greps": [
+      {"pattern": "demo_copilot", "scope": ["src"], "note": "旧包名/旧ID残留（0.7 前的命名）"}
+    ],
+    "env_path_markers": ["C:\\Program Files\\FineReport", "C:\\frjars", "fr_dev_kit_v2.1"]
+  },
+  "通用骨架_默认配置": {
+    "plugin_root": ".",
+    "src": "src",
+    "web": "web",
+    "plugin_xml": "plugin.xml",
+    "build_scripts": ["build.cmd", "build.sh"],
+    "version_pairs": [["build.cmd", "VER=([0-9][^\\s]*)"]],
+    "residual_greps": [{"pattern": "旧插件名", "scope": ["src"]}],
+    "env_path_markers": ["C:\\Program Files\\FineReport", "C:\\frjars"]
+  }
+}

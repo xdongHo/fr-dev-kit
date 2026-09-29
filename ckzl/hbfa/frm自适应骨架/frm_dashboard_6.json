@@ -1,0 +1,72 @@
+{
+ "id": "frm_dashboard_6",
+ "name": "FRM六宫格",
+ "engine": "frm",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "6占位网页框(RHIframe)",
+ "containers": [
+  {
+   "title": "KPI-1",
+   "type": "kpi",
+   "x": 0,
+   "y": 0,
+   "w": 50,
+   "h": 25,
+   "components": "指标卡×2"
+  },
+  {
+   "title": "KPI-2",
+   "type": "kpi",
+   "x": 50,
+   "y": 0,
+   "w": 50,
+   "h": 25,
+   "components": "指标卡×2"
+  },
+  {
+   "title": "柱形",
+   "type": "chart",
+   "x": 0,
+   "y": 25,
+   "w": 50,
+   "h": 25,
+   "components": "柱形图"
+  },
+  {
+   "title": "饼图",
+   "type": "chart",
+   "x": 50,
+   "y": 25,
+   "w": 50,
+   "h": 25,
+   "components": "饼图"
+  },
+  {
+   "title": "地图",
+   "type": "chart_group",
+   "x": 0,
+   "y": 50,
+   "w": 50,
+   "h": 50,
+   "components": "地图"
+  },
+  {
+   "title": "桑基",
+   "type": "chart_group",
+   "x": 50,
+   "y": 50,
+   "w": 50,
+   "h": 50,
+   "components": "桑基图"
+  }
+ ],
+ "file": "frm_dashboard_6.frm",
+ "note": "自适应: BodyLayoutType=0 等比 | 上指标+中辅+底大图",
+ "structure": "frm(占位壳): Center内RHIframe占位网格(空RHIframeAttr), 设计器里选组件路径即挂 组件模板/图表组件-*.cpt"
+}

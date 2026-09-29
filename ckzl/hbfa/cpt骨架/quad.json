@@ -1,0 +1,54 @@
+{
+ "id": "quad",
+ "name": "四宫格",
+ "engine": "cpt",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1200,
+  "height": 800,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "120列×60行×5px格, 合并单元格布局",
+ "containers": [
+  {
+   "title": "区域地图",
+   "type": "chart_group",
+   "x": 0,
+   "y": 0,
+   "w": 50,
+   "h": 50,
+   "components": "地图"
+  },
+  {
+   "title": "月度柱形",
+   "type": "chart",
+   "x": 50,
+   "y": 0,
+   "w": 50,
+   "h": 50,
+   "components": "柱形图"
+  },
+  {
+   "title": "结构饼图",
+   "type": "chart",
+   "x": 0,
+   "y": 50,
+   "w": 50,
+   "h": 50,
+   "components": "饼图"
+  },
+  {
+   "title": "排名条形",
+   "type": "chart",
+   "x": 50,
+   "y": 50,
+   "w": 50,
+   "h": 50,
+   "components": "条形图"
+  }
+ ],
+ "file": "quad.cpt",
+ "note": "经典2×2",
+ "structure": "cpt(可导出): 120×60细网格(5px格,格值190500=FU.valueOfPix(5,96))合并单元格布局, 每容器=标题带6行+图表区, 剩余细格可加元素"
+}

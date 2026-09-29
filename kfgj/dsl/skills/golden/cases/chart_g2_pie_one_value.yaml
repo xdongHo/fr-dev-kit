@@ -1,0 +1,31 @@
+# golden: chart ② echarts pie → PiePlot4VanChart + OneValueCDDefinition 绑定（E1 map8 + E2 饼图模板）
+skill: chart
+name: chart_g2_pie_one_value
+expect: ok
+spec:
+  echarts_type: pie
+  variant: 饼图
+  title: 预算构成
+  dataset:
+    name: ds_budget
+    source: org_sum_budget
+    fields: [scenario, data]
+    numeric_cols: [data]
+    filters: ["view = 'YTD'", "value = 'CNY'"]
+    permission: full
+    perm_form: entity              # semantic 缺 org_sum_budget columns 事实；库上实测 entity 在列（2026-09-04 information_schema）
+  binding:
+    category: scenario
+    values:
+      - {field: data, name: 预算, function: sum}
+assert_contains:
+  - '<Plot class="com.fr.plugin.chart.PiePlot4VanChart">'
+  - 'OneValueCDDefinition seriesName="预算" valueName="data" function="com.fr.data.util.function.SumFunction"'
+  - '<![CDATA[ds_budget]]>'
+  - '<CategoryName value="scenario"/>'
+  - "<![CDATA[预算构成]]>"
+  - "demo_dws.demo_rates_org_sum_budget"
+assert_not_contains:
+  - "ds_c0"
+  - "科室访问次数占比"              # 饼图模板旧演示标题不得残留
+  - "${{"

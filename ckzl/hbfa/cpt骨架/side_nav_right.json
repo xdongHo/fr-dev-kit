@@ -1,0 +1,45 @@
+{
+ "id": "side_nav_right",
+ "name": "右侧窄栏",
+ "engine": "cpt",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1200,
+  "height": 800,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "120列×60行×5px格, 合并单元格布局",
+ "containers": [
+  {
+   "title": "主看板",
+   "type": "chart_group",
+   "x": 0,
+   "y": 0,
+   "w": 75,
+   "h": 100,
+   "components": "地图"
+  },
+  {
+   "title": "关键指标",
+   "type": "kpi",
+   "x": 75,
+   "y": 0,
+   "w": 25,
+   "h": 30,
+   "components": "指标卡×3"
+  },
+  {
+   "title": "筛选明细",
+   "type": "form",
+   "x": 75,
+   "y": 30,
+   "w": 25,
+   "h": 70,
+   "components": "表"
+  }
+ ],
+ "file": "side_nav_right.cpt",
+ "note": "主区75%+右窄栏25%: 栅格4×10",
+ "structure": "cpt(可导出): 120×60细网格(5px格,格值190500=FU.valueOfPix(5,96))合并单元格布局, 每容器=标题带6行+图表区, 剩余细格可加元素"
+}

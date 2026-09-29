@@ -1,0 +1,63 @@
+{
+ "id": "frm_cross",
+ "name": "FRM十字布局",
+ "engine": "frm",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "5占位网页框(RHIframe)",
+ "containers": [
+  {
+   "title": "顶-趋势",
+   "type": "chart",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 25,
+   "components": "折线图"
+  },
+  {
+   "title": "左-指标",
+   "type": "kpi",
+   "x": 0,
+   "y": 25,
+   "w": 25,
+   "h": 50,
+   "components": "指标卡×3"
+  },
+  {
+   "title": "中心主图",
+   "type": "chart_group",
+   "x": 25,
+   "y": 25,
+   "w": 50,
+   "h": 50,
+   "components": "桑基图"
+  },
+  {
+   "title": "右-排名",
+   "type": "chart",
+   "x": 75,
+   "y": 25,
+   "w": 25,
+   "h": 50,
+   "components": "条形图"
+  },
+  {
+   "title": "底-对比",
+   "type": "chart",
+   "x": 0,
+   "y": 75,
+   "w": 100,
+   "h": 25,
+   "components": "柱形图"
+  }
+ ],
+ "file": "frm_cross.frm",
+ "note": "自适应: BodyLayoutType=0 等比 | 中心主图+四臂",
+ "structure": "frm(占位壳): Center内RHIframe占位网格(空RHIframeAttr), 设计器里选组件路径即挂 组件模板/图表组件-*.cpt"
+}

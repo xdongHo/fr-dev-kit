@@ -1,0 +1,63 @@
+{
+ "id": "cross",
+ "name": "十字布局",
+ "engine": "cpt",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1200,
+  "height": 800,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "120列×60行×5px格, 合并单元格布局",
+ "containers": [
+  {
+   "title": "顶-趋势",
+   "type": "chart",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 25,
+   "components": "折线图"
+  },
+  {
+   "title": "左-指标",
+   "type": "kpi",
+   "x": 0,
+   "y": 25,
+   "w": 25,
+   "h": 50,
+   "components": "指标卡×3"
+  },
+  {
+   "title": "中心主图",
+   "type": "chart_group",
+   "x": 25,
+   "y": 25,
+   "w": 50,
+   "h": 50,
+   "components": "桑基图"
+  },
+  {
+   "title": "右-排名",
+   "type": "chart",
+   "x": 75,
+   "y": 25,
+   "w": 25,
+   "h": 50,
+   "components": "条形图"
+  },
+  {
+   "title": "底-对比",
+   "type": "chart",
+   "x": 0,
+   "y": 75,
+   "w": 100,
+   "h": 25,
+   "components": "柱形图"
+  }
+ ],
+ "file": "cross.cpt",
+ "note": "中心主图+四臂: 栅格4×4",
+ "structure": "cpt(可导出): 120×60细网格(5px格,格值190500=FU.valueOfPix(5,96))合并单元格布局, 每容器=标题带6行+图表区, 剩余细格可加元素"
+}

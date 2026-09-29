@@ -1,0 +1,45 @@
+{
+ "id": "frm_three_cols",
+ "name": "FRM宽窄三栏",
+ "engine": "frm",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "3占位网页框(RHIframe)",
+ "containers": [
+  {
+   "title": "桑基",
+   "type": "chart_group",
+   "x": 0,
+   "y": 0,
+   "w": 40,
+   "h": 100,
+   "components": "桑基图"
+  },
+  {
+   "title": "折线",
+   "type": "chart_group",
+   "x": 40,
+   "y": 0,
+   "w": 30,
+   "h": 100,
+   "components": "折线图"
+  },
+  {
+   "title": "饼图",
+   "type": "chart_group",
+   "x": 70,
+   "y": 0,
+   "w": 30,
+   "h": 100,
+   "components": "饼图"
+  }
+ ],
+ "file": "frm_three_cols.frm",
+ "note": "自适应: BodyLayoutType=0 等比 | 40/30/30",
+ "structure": "frm(占位壳): Center内RHIframe占位网格(空RHIframeAttr), 设计器里选组件路径即挂 组件模板/图表组件-*.cpt"
+}

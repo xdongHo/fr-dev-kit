@@ -1,0 +1,7180 @@
+[
+  {
+    "file": "big_top_3small.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "大图上+三小下"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c2",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c3",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 8,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "主图-地图"
+        },
+        {
+          "cell": "0,36",
+          "text": "柱形"
+        },
+        {
+          "cell": "48,36",
+          "text": "饼图"
+        },
+        {
+          "cell": "84,36",
+          "text": "条形"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 8,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "chart_form_stack.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组+表单"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 4,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "示例项目达成"
+        },
+        {
+          "cell": "0,36",
+          "text": "明细数据"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 4,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "chart_left_form_right.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表左+表单右"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 4,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "分析图"
+        },
+        {
+          "cell": "72,0",
+          "text": "汇总表"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 4,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "cross.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "十字布局"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c2",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c3",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c4",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 10,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "顶-趋势"
+        },
+        {
+          "cell": "0,15",
+          "text": "左-指标"
+        },
+        {
+          "cell": "30,15",
+          "text": "中心主图"
+        },
+        {
+          "cell": "90,15",
+          "text": "右-排名"
+        },
+        {
+          "cell": "0,45",
+          "text": "底-对比"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 10,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "dashboard_6.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "六宫格(底行加高)"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c2",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c3",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c4",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c5",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 12,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "KPI-1"
+        },
+        {
+          "cell": "60,0",
+          "text": "KPI-2"
+        },
+        {
+          "cell": "0,15",
+          "text": "小图-柱"
+        },
+        {
+          "cell": "60,15",
+          "text": "小图-饼"
+        },
+        {
+          "cell": "0,30",
+          "text": "主图-地图"
+        },
+        {
+          "cell": "60,30",
+          "text": "主图-桑基"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 12,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "form_left_chart_right.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "表单左+图表右"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 4,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "明细表"
+        },
+        {
+          "cell": "48,0",
+          "text": "分析图"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 4,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "form_two_tables.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "表单双表"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 4,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "明细表"
+        },
+        {
+          "cell": "60,0",
+          "text": "汇总表"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 4,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "full_single.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "单容器全屏"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "主图区"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "kpi_band_2charts.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "指标带+双图"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c2",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 6,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "核心KPI"
+        },
+        {
+          "cell": "0,12",
+          "text": "达成情况"
+        },
+        {
+          "cell": "60,12",
+          "text": "趋势走向"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 6,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "kpi_band_quad.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "指标带+四宫格"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c2",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c3",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c4",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 10,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "核心KPI"
+        },
+        {
+          "cell": "0,12",
+          "text": "地图"
+        },
+        {
+          "cell": "60,12",
+          "text": "柱形"
+        },
+        {
+          "cell": "0,36",
+          "text": "饼图"
+        },
+        {
+          "cell": "60,36",
+          "text": "条形"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 10,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "left1_right2.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "左主右双"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c2",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 6,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "销售地图"
+        },
+        {
+          "cell": "60,0",
+          "text": "品类占比"
+        },
+        {
+          "cell": "60,30",
+          "text": "趋势对比"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 6,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "left2_right1.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "左双右主"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c2",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 6,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "辅图-饼"
+        },
+        {
+          "cell": "60,0",
+          "text": "主图-地图"
+        },
+        {
+          "cell": "0,30",
+          "text": "辅图-条"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 6,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "map_side_2.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "地图+侧栏双图"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c2",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 6,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "全球流向"
+        },
+        {
+          "cell": "72,0",
+          "text": "区域占比"
+        },
+        {
+          "cell": "72,30",
+          "text": "TOP排名"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 6,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "mixed_dashboard.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "综合看板"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c2",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c3",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c4",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 10,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "核心KPI"
+        },
+        {
+          "cell": "0,12",
+          "text": "地图"
+        },
+        {
+          "cell": "72,12",
+          "text": "品类占比"
+        },
+        {
+          "cell": "72,27",
+          "text": "排名"
+        },
+        {
+          "cell": "0,42",
+          "text": "明细"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 10,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "quad.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "四宫格"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c2",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c3",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 8,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "区域地图"
+        },
+        {
+          "cell": "60,0",
+          "text": "月度柱形"
+        },
+        {
+          "cell": "0,30",
+          "text": "结构饼图"
+        },
+        {
+          "cell": "60,30",
+          "text": "排名条形"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 8,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "side_nav_right.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "右侧窄栏"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c2",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 6,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "主看板"
+        },
+        {
+          "cell": "90,0",
+          "text": "关键指标"
+        },
+        {
+          "cell": "90,18",
+          "text": "筛选明细"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 6,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "three_cols.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "宽窄三栏"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c2",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 6,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "主桑基"
+        },
+        {
+          "cell": "48,0",
+          "text": "趋势折线"
+        },
+        {
+          "cell": "84,0",
+          "text": "结构饼图"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 6,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "top_banner_3charts.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "横幅+三图"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c2",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c3",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 8,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "品牌横幅"
+        },
+        {
+          "cell": "0,12",
+          "text": "柱形"
+        },
+        {
+          "cell": "48,12",
+          "text": "饼图"
+        },
+        {
+          "cell": "84,12",
+          "text": "条形"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 8,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "two_cols.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "左右双栏"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 4,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "左图"
+        },
+        {
+          "cell": "60,0",
+          "text": "右图"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 4,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "two_rows.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "上下分栏"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "ds_c1",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 81
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 4,
+      "max_col": 120,
+      "max_row": 60,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "上图"
+        },
+        {
+          "cell": "0,30",
+          "text": "下图"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 4,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": []
+    }
+  },
+  {
+    "file": "FR绝对骨架.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 13,
+      "widgets": [
+        {
+          "class": "ui.TreeComboBoxEditor",
+          "full_class": "com.fr.form.ui.TreeComboBoxEditor",
+          "name": "treeComboBoxEditor0",
+          "bounds": {
+            "x": 817,
+            "y": 15,
+            "width": 80,
+            "height": 21
+          },
+          "plugin": null
+        },
+        {
+          "class": "ui.NumberEditor",
+          "full_class": "com.fr.form.ui.NumberEditor",
+          "name": "numberEditor0",
+          "bounds": {
+            "x": 701,
+            "y": 19,
+            "width": 80,
+            "height": 21
+          },
+          "plugin": null
+        },
+        {
+          "class": "ui.DateEditor",
+          "full_class": "com.fr.form.ui.DateEditor",
+          "name": "dateEditor0",
+          "bounds": {
+            "x": 582,
+            "y": 19,
+            "width": 80,
+            "height": 21
+          },
+          "plugin": null
+        },
+        {
+          "class": "ui.ComboCheckBox",
+          "full_class": "com.fr.form.ui.ComboCheckBox",
+          "name": "comboCheckBox0",
+          "bounds": {
+            "x": 456,
+            "y": 24,
+            "width": 80,
+            "height": 21
+          },
+          "plugin": null
+        },
+        {
+          "class": "ui.FreeButton",
+          "full_class": "com.fr.form.ui.FreeButton",
+          "name": "button0",
+          "bounds": {
+            "x": 260,
+            "y": 13,
+            "width": 80,
+            "height": 21
+          },
+          "plugin": null
+        },
+        {
+          "class": "ui.ComboBox",
+          "full_class": "com.fr.form.ui.ComboBox",
+          "name": "comboBox0",
+          "bounds": {
+            "x": 364,
+            "y": 21,
+            "width": 80,
+            "height": 21
+          },
+          "plugin": null
+        },
+        {
+          "class": "ui.Label",
+          "full_class": "com.fr.form.ui.Label",
+          "name": "label0",
+          "bounds": {
+            "x": 160,
+            "y": 18,
+            "width": 80,
+            "height": 21
+          },
+          "plugin": null
+        },
+        {
+          "class": "ui.TextEditor",
+          "full_class": "com.fr.form.ui.TextEditor",
+          "name": "textEditor0",
+          "bounds": {
+            "x": 30,
+            "y": 17,
+            "width": 80,
+            "height": 21
+          },
+          "plugin": null
+        },
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1024,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 755,
+            "y": 70,
+            "width": 160,
+            "height": 80
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 560,
+            "y": 67,
+            "width": 160,
+            "height": 80
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 351,
+            "y": 62,
+            "width": 160,
+            "height": 80
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 107,
+            "y": 69,
+            "width": 160,
+            "height": 80
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 4,
+        "ui.TreeComboBoxEditor": 1,
+        "ui.NumberEditor": 1,
+        "ui.DateEditor": 1,
+        "ui.ComboCheckBox": 1,
+        "ui.FreeButton": 1,
+        "ui.ComboBox": 1,
+        "ui.Label": 1,
+        "ui.TextEditor": 1,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_banner_grid.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 6,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe4",
+          "bounds": {
+            "x": 640,
+            "y": 432,
+            "width": 640,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 0,
+            "y": 432,
+            "width": 640,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 640,
+            "y": 144,
+            "width": 640,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 144,
+            "width": 640,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 144
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 5,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_big_top_3small.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 5,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 896,
+            "y": 432,
+            "width": 384,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 512,
+            "y": 432,
+            "width": 384,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 432,
+            "width": 512,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 432
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 4,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_chart_form_stack.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 3,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 432,
+            "width": 1280,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 432
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 2,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_cross.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 6,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe4",
+          "bounds": {
+            "x": 0,
+            "y": 540,
+            "width": 1280,
+            "height": 180
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 960,
+            "y": 180,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 320,
+            "y": 180,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 180,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 180
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 5,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_dashboard_6.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 7,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe5",
+          "bounds": {
+            "x": 640,
+            "y": 360,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe4",
+          "bounds": {
+            "x": 0,
+            "y": 360,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 640,
+            "y": 180,
+            "width": 640,
+            "height": 180
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 0,
+            "y": 180,
+            "width": 640,
+            "height": 180
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 640,
+            "y": 0,
+            "width": 640,
+            "height": 180
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 640,
+            "height": 180
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 6,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_dashboard_8.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 9,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe7",
+          "bounds": {
+            "x": 960,
+            "y": 360,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe6",
+          "bounds": {
+            "x": 640,
+            "y": 360,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe5",
+          "bounds": {
+            "x": 320,
+            "y": 360,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe4",
+          "bounds": {
+            "x": 0,
+            "y": 360,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 960,
+            "y": 0,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 640,
+            "y": 0,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 320,
+            "y": 0,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 8,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_executive.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 5,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 768,
+            "y": 432,
+            "width": 512,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 768,
+            "y": 144,
+            "width": 512,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 144,
+            "width": 768,
+            "height": 576
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 144
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 4,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_form_2tables.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 3,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 640,
+            "y": 0,
+            "width": 640,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 640,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 2,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_full.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 2,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "container.WAbsoluteLayout": 1,
+        "core.RHIframe": 1
+      }
+    }
+  },
+  {
+    "file": "frma_hero_right_list.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 5,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 768,
+            "y": 504,
+            "width": 512,
+            "height": 216
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 768,
+            "y": 252,
+            "width": 512,
+            "height": 252
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 768,
+            "y": 0,
+            "width": 512,
+            "height": 252
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 768,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 4,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_kpi_band_2charts.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 4,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 640,
+            "y": 144,
+            "width": 640,
+            "height": 576
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 144,
+            "width": 640,
+            "height": 576
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 144
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 3,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_kpi_form_chart.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 4,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 512,
+            "y": 144,
+            "width": 768,
+            "height": 576
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 144,
+            "width": 512,
+            "height": 576
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 144
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 3,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_kpi_quad.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 6,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe4",
+          "bounds": {
+            "x": 640,
+            "y": 432,
+            "width": 640,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 0,
+            "y": 432,
+            "width": 640,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 640,
+            "y": 144,
+            "width": 640,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 144,
+            "width": 640,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 144
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 5,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_left1_right2.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 4,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 640,
+            "y": 360,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 640,
+            "y": 0,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 640,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 3,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_map_side_2.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 4,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 768,
+            "y": 360,
+            "width": 512,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 768,
+            "y": 0,
+            "width": 512,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 768,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 3,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_quad.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 5,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 640,
+            "y": 360,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 0,
+            "y": 360,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 640,
+            "y": 0,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 4,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_side_nav_left.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 5,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 768,
+            "y": 360,
+            "width": 512,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 256,
+            "y": 360,
+            "width": 512,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 256,
+            "y": 0,
+            "width": 1024,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 256,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 4,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_three_cols.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 4,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 896,
+            "y": 0,
+            "width": 384,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 512,
+            "y": 0,
+            "width": 384,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 512,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 3,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_two_cols.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 3,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 640,
+            "y": 0,
+            "width": 640,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 640,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 2,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frma_two_rows.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 3,
+      "widgets": [
+        {
+          "class": "container.WAbsoluteLayout",
+          "full_class": "com.fr.form.ui.container.WAbsoluteLayout",
+          "name": "absolute0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": null
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 360,
+            "width": 1280,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 2,
+        "container.WAbsoluteLayout": 1
+      }
+    }
+  },
+  {
+    "file": "frm_banner_grid.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 5,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe4",
+          "bounds": {
+            "x": 640,
+            "y": 432,
+            "width": 640,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 0,
+            "y": 432,
+            "width": 640,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 640,
+            "y": 144,
+            "width": 640,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 144,
+            "width": 640,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 144
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 5
+      }
+    }
+  },
+  {
+    "file": "frm_big_top_3small.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 4,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 896,
+            "y": 432,
+            "width": 384,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 512,
+            "y": 432,
+            "width": 384,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 432,
+            "width": 512,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 432
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 4
+      }
+    }
+  },
+  {
+    "file": "frm_chart_form_stack.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 2,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 432,
+            "width": 1280,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 432
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 2
+      }
+    }
+  },
+  {
+    "file": "frm_cross.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 5,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe4",
+          "bounds": {
+            "x": 0,
+            "y": 540,
+            "width": 1280,
+            "height": 180
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 960,
+            "y": 180,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 320,
+            "y": 180,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 180,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 180
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 5
+      }
+    }
+  },
+  {
+    "file": "frm_dashboard_6.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 6,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe5",
+          "bounds": {
+            "x": 640,
+            "y": 360,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe4",
+          "bounds": {
+            "x": 0,
+            "y": 360,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 640,
+            "y": 180,
+            "width": 640,
+            "height": 180
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 0,
+            "y": 180,
+            "width": 640,
+            "height": 180
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 640,
+            "y": 0,
+            "width": 640,
+            "height": 180
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 640,
+            "height": 180
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 6
+      }
+    }
+  },
+  {
+    "file": "frm_dashboard_8.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 8,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe7",
+          "bounds": {
+            "x": 960,
+            "y": 360,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe6",
+          "bounds": {
+            "x": 640,
+            "y": 360,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe5",
+          "bounds": {
+            "x": 320,
+            "y": 360,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe4",
+          "bounds": {
+            "x": 0,
+            "y": 360,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 960,
+            "y": 0,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 640,
+            "y": 0,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 320,
+            "y": 0,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 8
+      }
+    }
+  },
+  {
+    "file": "frm_executive.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 4,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 768,
+            "y": 432,
+            "width": 512,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 768,
+            "y": 144,
+            "width": 512,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 144,
+            "width": 768,
+            "height": 576
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 144
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 4
+      }
+    }
+  },
+  {
+    "file": "frm_form_2tables.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 2,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 640,
+            "y": 0,
+            "width": 640,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 640,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 2
+      }
+    }
+  },
+  {
+    "file": "frm_full.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 1,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 1
+      }
+    }
+  },
+  {
+    "file": "frm_hero_right_list.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 4,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 768,
+            "y": 504,
+            "width": 512,
+            "height": 216
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 768,
+            "y": 252,
+            "width": 512,
+            "height": 252
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 768,
+            "y": 0,
+            "width": 512,
+            "height": 252
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 768,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 4
+      }
+    }
+  },
+  {
+    "file": "frm_kpi_band_2charts.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 3,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 640,
+            "y": 144,
+            "width": 640,
+            "height": 576
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 144,
+            "width": 640,
+            "height": 576
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 144
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 3
+      }
+    }
+  },
+  {
+    "file": "frm_kpi_form_chart.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 3,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 512,
+            "y": 144,
+            "width": 768,
+            "height": 576
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 144,
+            "width": 512,
+            "height": 576
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 144
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 3
+      }
+    }
+  },
+  {
+    "file": "frm_kpi_quad.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 5,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe4",
+          "bounds": {
+            "x": 640,
+            "y": 432,
+            "width": 640,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 0,
+            "y": 432,
+            "width": 640,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 640,
+            "y": 144,
+            "width": 640,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 144,
+            "width": 640,
+            "height": 288
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 144
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 5
+      }
+    }
+  },
+  {
+    "file": "frm_left1_right2.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 3,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 640,
+            "y": 360,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 640,
+            "y": 0,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 640,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 3
+      }
+    }
+  },
+  {
+    "file": "frm_map_side_2.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 3,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 768,
+            "y": 360,
+            "width": 512,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 768,
+            "y": 0,
+            "width": 512,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 768,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 3
+      }
+    }
+  },
+  {
+    "file": "frm_quad.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 4,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 640,
+            "y": 360,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 0,
+            "y": 360,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 640,
+            "y": 0,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 640,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 4
+      }
+    }
+  },
+  {
+    "file": "frm_side_nav_left.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 4,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe3",
+          "bounds": {
+            "x": 768,
+            "y": 360,
+            "width": 512,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 256,
+            "y": 360,
+            "width": 512,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 256,
+            "y": 0,
+            "width": 1024,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 256,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 4
+      }
+    }
+  },
+  {
+    "file": "frm_three_cols.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 3,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe2",
+          "bounds": {
+            "x": 896,
+            "y": 0,
+            "width": 384,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 512,
+            "y": 0,
+            "width": 384,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 512,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 3
+      }
+    }
+  },
+  {
+    "file": "frm_two_cols.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 2,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 640,
+            "y": 0,
+            "width": 640,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 640,
+            "height": 720
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 2
+      }
+    }
+  },
+  {
+    "file": "frm_two_rows.frm",
+    "root_tag": "Form",
+    "kind": "frm",
+    "sheet_names": [],
+    "datasets": [],
+    "grid": {
+      "cell_count": 0,
+      "max_col": 0,
+      "max_row": 0,
+      "static_texts": []
+    },
+    "charts": {
+      "charts": [],
+      "chart_total": 0,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": false,
+      "parameters": []
+    },
+    "frm": {
+      "widget_count": 2,
+      "widgets": [
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe1",
+          "bounds": {
+            "x": 0,
+            "y": 360,
+            "width": 1280,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        },
+        {
+          "class": "core.RHIframe",
+          "full_class": "com.fr.plugin.form.widget.core.RHIframe",
+          "name": "rHIframe0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 360
+          },
+          "plugin": "com.fr.solution.plugin.form.widget.rh.iframe.v10"
+        }
+      ],
+      "class_histogram": {
+        "core.RHIframe": 2
+      }
+    }
+  },
+  {
+    "file": "图表组件-仪表盘.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-仪表盘"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 78
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-仪表盘"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-地图.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-地图"
+    ],
+    "datasets": [
+      {
+        "name": "ds_area",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 101
+      },
+      {
+        "name": "ds_point",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 66
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-地图"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-多层饼.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-多层饼"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 78
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-多层饼"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-折线.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-折线"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 79
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-折线"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-散点.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-散点"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 78
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-散点"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-柱形.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-柱形"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 78
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-柱形"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-气泡.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-气泡"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 78
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-气泡"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-漏斗.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-漏斗"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 78
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-漏斗"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-热力图.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-热力图"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 113
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-热力图"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "省"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-甘特.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-甘特"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 78
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-甘特"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-矩形树图.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-矩形树图"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 78
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-矩形树图"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-箱线.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-箱线"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 78
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-箱线"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-组合.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-组合"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 65
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-组合"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-结构树.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-结构树"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 78
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-结构树"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-词云.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-词云"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 78
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-词云"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-钻取地图.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-钻取地图"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 68
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-钻取地图"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-雷达.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-雷达"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 78
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-雷达"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-面积.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-面积"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 78
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-面积"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  },
+  {
+    "file": "图表组件-饼图.cpt",
+    "root_tag": "WorkBook",
+    "kind": "cpt",
+    "sheet_names": [
+      "图表组件-饼图"
+    ],
+    "datasets": [
+      {
+        "name": "ds_c0",
+        "class": "com.fr.data.impl.EmbeddedTableData",
+        "embedded": true,
+        "embedded_payload_bytes": 78
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      },
+      {
+        "name": "",
+        "class": "com.fr.data.impl.NameTableData",
+        "embedded": false,
+        "embedded_payload_bytes": 0
+      }
+    ],
+    "grid": {
+      "cell_count": 2,
+      "max_col": 21,
+      "max_row": 50,
+      "static_texts": [
+        {
+          "cell": "0,0",
+          "text": "图表组件-饼图"
+        }
+      ]
+    },
+    "charts": {
+      "charts": [
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": "默认"
+        },
+        {
+          "container": "Chart",
+          "chart_class": "com.fr.plugin.chart.vanchart.VanChart",
+          "name": null
+        }
+      ],
+      "chart_total": 2,
+      "frm_chart_editors": 0
+    },
+    "params": {
+      "parameter_ui": true,
+      "parameters": [
+        "region"
+      ]
+    }
+  }
+]

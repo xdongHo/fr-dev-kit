@@ -1,0 +1,63 @@
+{
+ "id": "frma_cross",
+ "name": "绝对·十字布局",
+ "engine": "frm",
+ "frm_mode": "absolute",
+ "canvas": {
+  "width": 1280,
+  "height": 720,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "5占位网页框(RHIframe)",
+ "containers": [
+  {
+   "title": "顶-趋势",
+   "type": "chart",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 25,
+   "components": "折线图"
+  },
+  {
+   "title": "左-指标",
+   "type": "kpi",
+   "x": 0,
+   "y": 25,
+   "w": 25,
+   "h": 50,
+   "components": "指标卡×3"
+  },
+  {
+   "title": "中心主图",
+   "type": "chart_group",
+   "x": 25,
+   "y": 25,
+   "w": 50,
+   "h": 50,
+   "components": "桑基图"
+  },
+  {
+   "title": "右-排名",
+   "type": "chart",
+   "x": 75,
+   "y": 25,
+   "w": 25,
+   "h": 50,
+   "components": "条形图"
+  },
+  {
+   "title": "底-对比",
+   "type": "chart",
+   "x": 0,
+   "y": 75,
+   "w": 100,
+   "h": 25,
+   "components": "柱形图"
+  }
+ ],
+ "file": "frma_cross.frm",
+ "note": "绝对: BodyLayoutType=1, px=%×1920×1080 | 绝对布局: BoundsWidget 像素 = 百分比 × 1920×1080",
+ "structure": "frm(绝对v8/API构建): Center=WFitLayout > absolute0(WAbsoluteLayout+DesignResolution 1280×720) > RHIframe占位(用户权威样本同构)"
+}

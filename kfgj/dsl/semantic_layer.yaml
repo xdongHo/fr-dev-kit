@@ -1,0 +1,586 @@
+# =============================================================================
+# FS 报表 DSL 解释器 · 语义层（唯一事实源 / system facts card）
+# 开源 demo 版（2026-09-28）
+# 结构沿用原项目语义层，业务名全部脱敏
+# 口径变更流程: 只改本文件 → 重编译（dsl/README.md），禁止直接改 cpt
+# 行数/类型快照: 2026-09-02（核对脚本 _runs/t1_verify_facts.py）
+# =============================================================================
+
+meta:
+  version: '1.1'
+  generated: '2026-09-04'
+  merge_log:
+    - '2026-09-28 开源裁剪：由项目语义层脱敏生成中性 demo 版（业务叙事已删除，原件归档于套件主人本机）'
+  fr_connection_name: demo_connection
+  sources:
+    - '（开源 demo 语义层：连接 demo_connection / 表 fin_demo_* / demo_dws.demo_rates_org_*）'
+  verify_script: ''
+  snapshot_policy: 'inventory_main.cells / fr_check_baseline 计数 / compare_main.facts 等实测快照字段统一随行标注 snapshot_at 日期，复审时先对日期再对数字（ST-03，R12 审计建议，R26 2026-09-05 合入；存量字段补标 snapshot_at 留待后续）'
+  db_verified: '2026-09-04 19/19（行数与快照逐字一致；data 空串=0 已降级为报告项；auth_base_info 实为视图）'
+  paths:
+    reportlets_dir: 'C:/Program Files/FineReport_10.0/webapps/webroot/WEB-INF/reportlets/示例报表工程/明细报表'
+    fr_check: 'kfgj/fzpy/fr_check.py'
+  db:
+    host: YOUR_DWS_HOST
+    port: 8000
+    dbname: demo_db
+    user: demo_db_user
+    password: <你的数据库密码——首次使用自行填写，切勿提交>
+    note: 只读账号 + demo_ads 可写；按你的环境填写
+
+# ────────────────────────── 数据源（转接文档 §四）──────────────────────────
+datasources:
+  # ---- demo_dws 后端正式表（只读）----
+  org_account_map:
+    schema: demo_dws
+    table: demo_rates_org_account_map
+    role: 叶子→汇整科目映射
+    rows_approx: 30
+  org_sum_actual:
+    schema: demo_dws
+    table: demo_rates_org_sum_actual
+    role: 74 科目 ACTUAL 正式表
+    rows_approx: 1793466
+    data_cast: "COALESCE(NULLIF(data,'')::numeric,0)"
+    period_format: "numeric_str '1'~'12'"
+    view_values: [YTD, Periodic]
+    value_values: [CNY]
+    columns: {account: varchar, entity: varchar, scenario: varchar, year: varchar, period: varchar, view: varchar, value: varchar, data: varchar}
+    warnings:
+      - data 列 varchar：sum() 可隐式转但乘法会炸 bigint，取数一律显式 numeric 转换
+      - 2026-09-04 库上实测 data=''=0（后端已无空串），COALESCE(NULLIF(...)) 保留为防御
+      - ⚠ demo_ads 存在同名列副本 demo_rates_org_sum_actual（data 已 numeric、币种列名 currency 而非 value、
+        行数 1,137,900 口径不同）——取数必须带 demo_dws. 前缀，防止解析到副本
+  hfm_detail_actual:
+    schema: demo_dws
+    table: demo_rates_org_detail_actual
+    role: 30 叶子明细（已补 sum_account_parent，与 map 零差异）
+    rows_approx: 291608
+    data_cast: "COALESCE(NULLIF(data,'')::numeric,0)"
+    period_format: "numeric_str '1'~'12'"
+  org_sum_budget:
+    schema: demo_dws
+    table: demo_rates_org_sum_budget
+    role: 74 科目 BUDGET 正式表
+    rows_approx: 325720
+    data_cast: "COALESCE(NULLIF(data,'')::numeric,0)"
+    period_format: "numeric_str '1'~'12'"
+    warnings:
+      - 仅 PPL_R2@2026 场景有数，2027~2031 缺（预算页 bud/cur/ext/fy 全 0 的根因，等后端）
+  hfm_detail_budget:
+    schema: demo_dws
+    table: demo_rates_org_detail_budget
+    role: 预算明细（已补 sum_account_parent）
+    rows_approx: 42200
+    data_cast: "COALESCE(NULLIF(data,'')::numeric,0)"
+  # ---- demo_ads 可写区 ----
+  adj_actual_vt:
+    schema: demo_ads
+    table: demo_rates_org_detail_actual_adj_vt
+    kind: view
+    role: 实时 ADJ（sum_actual Periodic 聚合 + coalesce(fin_a_adj) + YTD 窗口；sum_account 来自 detail.sum_account_parent）
+    adj_columns: {ytd_orig: numeric, ytd_post: numeric, year_version: varchar, period: varchar}
+  adj_budget_vt:
+    schema: demo_ads
+    table: demo_rates_org_detail_budget_adj_vt
+    kind: view
+    role: 预算侧同构
+  adj_input_fin_a:
+    schema: demo_ads
+    table: fin_demo_input_fin_a_adj
+    kind: table_writable
+    role: 实际 ADJ 填报宽键表（HFM实际维护.cpt 提交目标），ADJ 链路以此为准
+    cols: 24
+  adj_input_fin_b:
+    schema: demo_ads
+    table: fin_demo_input_fin_b_adj
+    kind: table_writable
+    role: 预算 ADJ 填报宽键表（HFM预算维护.cpt 提交目标）
+    cols: 24
+  auth_base_info:
+    schema: demo_ads
+    table: fin_demo_auth_base_info
+    role: 组织架构（entity = 四字段并集）
+    columns: {legal_code: varchar, bu: varchar, region: varchar, plant_code: varchar}
+  auth_base_user_map:
+    schema: demo_ads
+    table: fin_demo_auth_base_user_map
+    role: 用户→plant_code 数据权限
+    columns: {user_gid: varchar, plant_code: varchar}
+  config_user_role:
+    schema: demo_ads
+    table: fin_demo_config_user_role
+    role: 角色表（role_id 0/1 = 管理员全量）
+    columns: {role_id: varchar, user_gid: varchar}
+    admin_roles: ['0', '1']
+  scenario_mapping:
+    schema: demo_ads
+    table: fin_demo_input_scenario_mapping
+    role: FR 场景参数 ↔ HFM 场景（16 行 2025~2031；2026 OBP1→PPL_R2）
+    rows_approx: 16
+  demo_fx_rate:
+    schema: demo_ads
+    table: fin_demo_demo_fx_rate
+    role: 汇率（demo，正式源等后端）
+  # ---- 明细页族口径（Sustainability/示例模块，L10 实测 2026-09-04；MIS-11，R26 合入）----
+  detail_pages:
+    note: 明细页族信息块（非单表登记；成员表以各自条目为准）
+    ds_sus_sources: [fin_demo_view_lta_entity, fin_demo_view_pact_entity, stg_costudio.v_vave_project, fin_demo_view_entity_demob_ci, stg_bpc.ztbdp01]
+    bpc_version_semantics: {keys: [z_version, calyear, z_currency], note: BPC 版本口径键（stg_bpc.ztbdp01）}
+    ds_sus_note: 'ds_sus = 11 段 UNION ALL 汇五源（Sustainability.cpt）；全 SQL 无 ORG/PERM——豁免状态见 org.perm_variants.sustainability（待业务裁决）'
+  # ---- 导入链 input 表（R34 移交补登；2026-09-05 库上实测列名/行数，证据 _runs/night/R26/probe_8tables.json）----
+  input_ci_lane_mapping:
+    schema: demo_ads
+    table: fin_demo_input_ci_lane_mapping
+    kind: table_writable
+    role: CI 泳道指标映射（导入_示例映射A.cpt 提交目标，先删后插）
+    rows_approx: 95
+  input_lta_detail:
+    schema: demo_ads
+    table: fin_demo_input_lta_detail
+    kind: table_writable
+    role: LTA 明细导入（导入_LTA明细表.cpt 提交目标）
+    rows_approx: 13
+  input_pact_detail:
+    schema: demo_ads
+    table: fin_demo_input_pact_detail
+    kind: table_writable
+    role: PACT 明细导入（导入_PACT明细表.cpt 提交目标）
+    rows_approx: 12
+  input_demob_plant_map:
+    schema: demo_ads
+    table: fin_demo_input_demob_plant_map
+    kind: table_writable
+    role: DemoB 工厂→Entity 映射（导入_DemoB工厂Entity映射.cpt 提交目标；src_plant→entity_id/entity_desc）；entity_desc=组织架构表中文描述（2026-09-12 由英文 CI 值回滚复原，勿再改英文）；src_plant 口径=CI 英文 sub_region 簇代表制（见 conventions.plant_map_entity_desc）
+    rows_approx: 119
+  input_vave_plant_map:
+    schema: demo_ads
+    table: fin_demo_input_vave_plant_map
+    kind: table_writable
+    role: 示例模块 plant→entity_desc 映射（导入_示例模块工厂Entity映射.cpt 提交目标；示例模块 权限变体 COALESCE(pm.entity_desc,...) 的数据源）
+    delete_flag: '1=有效'
+    rows_approx: 72
+  input_vave_detail:
+    schema: demo_ads
+    table: fin_demo_input_vave_detail
+    kind: table_writable
+    role: 示例模块 项目明细导入（导入_示例明细表B.cpt 提交目标；data_year+act/budget_m01~m12 宽月列）
+    rows_approx: 999
+  input_pline:
+    schema: demo_ads
+    table: fin_demo_input_pline
+    kind: table_writable
+    role: 示例项目 Pline 维护（导入_示例项目Pline维护表.cpt 提交目标；当前 0 行）
+    rows_approx: 0
+  input_demob_ci:
+    schema: demo_ads
+    table: fin_demo_input_demob_ci
+    kind: table_writable
+    role: 持续改进项目 CI 导入（导入_持续改进项目查询.cpt 提交目标；hard1~24/soft1~24 宽键月列）
+    rows_approx: 13
+
+# ────────────────────────── 组织与权限（§五.1/§五.2）──────────────────────────
+org:
+  cascade_fields: [legal_code, bu, region, plant_code]
+  cascade_params: [para_legal, para_bu, para_region, para_plant]
+  entity_note: entity = legal_code/bu/region/plant_code 四字段并集；entity 控件只读公式=最细颗粒度
+  cascade_cond_template: |
+    ('${para_legal}'='' OR f.legal_code='${para_legal}') AND ('${para_bu}'='' OR f.bu='${para_bu}') AND ('${para_region}'='' OR f.region='${para_region}') AND ('${para_plant}'='' OR f.plant_code='${para_plant}')
+  entity_union_template: |
+    entity IN (
+        SELECT legal_code FROM demo_ads.fin_demo_auth_base_info f WHERE {cascade_cond}
+        UNION ALL SELECT bu FROM demo_ads.fin_demo_auth_base_info f WHERE {cascade_cond}
+        UNION ALL SELECT region FROM demo_ads.fin_demo_auth_base_info f WHERE {cascade_cond}
+        UNION ALL SELECT plant_code FROM demo_ads.fin_demo_auth_base_info f WHERE {cascade_cond})
+  dsfs_org_whitelist:   # T2-CI-ORG 新增（2026-09-07 用户口径②）：ds_fs 专用无条件 ORG 白名单，用户 SQL 原文收录
+    snapshot_at: '2026-09-07'
+    note: '与 entity_union_template 的区别：无 cascade_cond（不受 para_legal/bu/region/plant 级联影响），纯四列并集；作为独立 AND 加在 ds_fs 各含 entity 的 CTE 的 WHERE 顶层（管理员亦受限=组织数据域边界，非用户权限）'
+    sql: |
+      AND entity IN (
+        SELECT legal_code FROM demo_ads.fin_demo_auth_base_info
+        UNION ALL SELECT bu FROM demo_ads.fin_demo_auth_base_info
+        UNION ALL SELECT region FROM demo_ads.fin_demo_auth_base_info
+        UNION ALL SELECT plant_code FROM demo_ads.fin_demo_auth_base_info
+      )
+    applied: '示例预算表.cpt ds_fs 14 CTE（py/cur/cur_bud/bud/ext1-5/fy1-5）+ 示例实际表.cpt ds_fs 4 CTE（py/cur/bud/ext1）；主查询 account 骨架子查询无 entity 维度未加（D2 披露）'
+  perm_template: |
+    (EXISTS(SELECT 1 FROM demo_ads.fin_demo_config_user_role WHERE role_id IN ('0','1') AND user_gid='${fine_username}') OR entity IN (SELECT plant_code FROM demo_ads.fin_demo_auth_base_user_map WHERE user_gid='${fine_username}'))
+  perm_on_alias_template: |
+    (EXISTS(SELECT 1 FROM demo_ads.fin_demo_config_user_role WHERE role_id IN ('0','1') AND user_gid='${fine_username}') OR {alias}.entity IN (SELECT plant_code FROM demo_ads.fin_demo_auth_base_user_map WHERE user_gid='${fine_username}'))
+  perm_exists_alias_template: |
+    ((EXISTS(SELECT 1 FROM demo_ads.fin_demo_config_user_role WHERE role_id IN ('0','1') AND user_gid='${fine_username}')) OR EXISTS(SELECT 1 FROM demo_ads.fin_demo_auth_base_user_map m WHERE m.user_gid='${fine_username}' AND m.plant_code={alias}.plant_code))
+  perm_variants:   # 权限家族变体（MIS-10；G3/G4 豁免裁决状态=待业务裁决，见 R12/R26 REPORT 待问题）
+    standard: 'perm_template（EXISTS 角色 OR entity 四段并集）——FS 主表/下钻族'
+    vave: 'EXISTS(角色0/1) OR EXISTS(user_map.plant_code=COALESCE(pm.entity_desc, v.production_plant))；无 auth_base_info 四段并集（G3 org_markers 拦点，基线 示例模块 1~3）'
+    sustainability: 'ds_sus 全 SQL 无 ORG/PERM（基线 Sustainability 1~3）；BPC 取数页是否豁免权限闸待业务裁决（L10 待问题2）'
+    gate_policy: 豁免裁决定性前，G3/G4 对非标准族报 WARN 不阻断
+  dict_dependencies:
+    dict_legal: []
+    dict_bu: [para_legal]
+    # S6 修正（R33 2026-09-05，R26 执行）：原断言 [para_legal, para_bu] 被线上证伪——全部 dict_region SQL 只依赖
+    # para_bu（R33 dict_sql_extracted.txt 8 页逐条核对），legal→region 直联级联实际不存在。按"改知识"方向修正；
+    # 是否改线上 SQL 补 para_legal 属另一向裁决（R33 待问题7）。compile.py dict_region 片段 WHERE 本就只滤 para_bu，
+    # 但其 dict_block 声明仍硬编码 ['para_legal','para_bu']——编译器侧对齐留作改进项（见 R26 REPORT 发现节）。
+    dict_region: [para_bu]
+    dict_plant: [para_legal, para_bu, para_region]
+
+# ────────────────────── 约定（§五.3~§五.6 + §六 + §七）─────────────────────
+conventions:
+  needs_clarification:   # G0 前置闸约定（T11 spec-kit 内联歧义标记；2026-09-06 CAR-012 合入）
+    declaration_note: 本节点=约定声明非实例，扫描器按路径 conventions.needs_clarification 跳过，勿在此节点下放真实待澄清槽位
+    rule: |
+      任意槽位可标歧义：page DSL 或本语义层的任意映射内加同级键（键名见下方 sibling_key 形态），
+      值为澄清问题（接受 str / {question,context} / 列表）；或在任意字符串值内写 spec-kit 内联式标记（见 inline_value）。
+      compile.py 装载两份 yaml 后、grounding 之前扫描：存在任一标记→拒绝产出 cpt、列澄清问题清单、
+      退出码 3（既有 0=成功/1=编译失败/2=缺依赖 语义不变）。语义=歧义显式化前置闸：未消歧不得实现
+      （clarify 未过不能 plan）；消歧后删除标记重编译。
+    forms:
+      sibling_key: 'needs_clarification（键）: 澄清问题文本'
+      inline_value: '任意字符串值内 [NEEDS CLARIFICATION: 澄清问题文本]'
+  control_param_rule: FR 控件 WidgetName 必须等于模板参数名（para_xxx），否则值不绑定（踩过坑）
+  widget_name_xml_rule: |
+    控件名必须落子元素 <Widget class="..."><WidgetName name="para_x"/></Widget>；
+    widgetName="x" 属性写法 FR 解析器静默丢弃且不报错（L2 2026-09-04 实测，base_填报_ScenarioMapping.cpt）。
+    compile.py 控件模板按子元素生成；guardrails 应对属性写法出 ERROR（新检项候选）。
+    （MIS-02 P0，R26 2026-09-05 合入）
+  control_param_fact: |
+    主表合规（控件全 para_*）。下钻页 v2 生成器违例：控件名 legal/bu/region/plant/entity（无 para_ 前缀），
+    锁定 JS 却引用 para_legal 等且被 try/catch 静默吞掉 → 锁定失效、面板选择不回灌 ${para_*}，页面取值全靠主表超链 URL 继承。
+    fr_check doc-157 对此的报错是真阳性（曾被当基线误报）。compile.py 产物一律 para_* 控件名（修复项，对拍时为可接受差异）。
+  param_registration_forms:   # 参数注册三形态（MIS-01，Sustainability.cpt 实测 2026-09-04；R26 合入）
+    declared: ReportParameterAttr 声明（FS 主表形态）
+    widget_binding: 控件 WidgetName=参数名（panel_org 形态）
+    param_guard_dataset: |
+      无面板页面注册通道：SELECT ${para_ver} AS v, ${para_year} AS y, ${para_month} AS m
+      （FR 以数据集形式在会话内注册参数供其他数据集引用；Sustainability.cpt 实测 2026-09-04）
+      豁免前缀 param_guard 已在 sql_exceptions，其参数名 para_ver 已同步补入 standard_params（随 MIS-11）
+  standard_params: [p_code, p_name, para_legal, para_bu, para_region, para_plant, para_entity,
+                    para_year, para_month, para_month_bud, para_scn_py, para_scn_bud, para_scn_cur,
+                    para_adj, para_curr, para_unit, para_ext1, para_ext2, para_ext3, para_ext4, para_ext5,
+                    para_ver, para_data_year]   # para_ver=Sustainability param_guard 注册；para_data_year=示例模块 面板（MIS-11，R26 补）
+  main_table_notes:   # 2026-09-04 主表实测（Agent-1 结构卡）
+    - para_adj 有控件且被 ds_fs 引用，但未在 ReportParameterAttr 声明（运行期靠控件名补参）
+    - 列显隐用 HighlightList + ColWidthHighlightAction（2932 条 Condition），非 ConditionAttr
+    - RowHeight defaultValue=723900（887 项），r0~r4=1440000；转接文档"r3 表头 508000"已过时
+    - ds_fs = 4 CTE（py/cur/bud/ext1），权限子句逐字重复 4 次；EXISTS(角色) OR entity IN(用户映射) AND entity IN(四段并集)
+      —— 按 precedence 即 管理员旁路组织过滤，普通用户需 同时命中用户映射与组织并集
+  listener_event: change        # 控件编辑事件；若不触发再试 afteredit
+  period_rule: dws 表 period 存数字串 '1'~'12'，FR 参数是 'Sep' 之类，SQL 必须 CASE upper() 转换
+  period_case_template: |
+    (CASE upper('${para_month}') WHEN 'JAN' THEN '1' WHEN 'FEB' THEN '2' WHEN 'MAR' THEN '3' WHEN 'APR' THEN '4' WHEN 'MAY' THEN '5' WHEN 'JUN' THEN '6' WHEN 'JUL' THEN '7' WHEN 'AUG' THEN '8' WHEN 'SEP' THEN '9' WHEN 'OCT' THEN '10' WHEN 'NOV' THEN '11' WHEN 'DEC' THEN '12' END)
+  numeric_cast_template: "COALESCE(NULLIF({col},'')::numeric,0)"
+  column_criteria:
+    budget_cur: 读 sum_budget 且 scenario=upper('${para_scn_cur}')（预测/滚动，非实际）
+    actual_cur: 走 ADJ 视图，CASE '${para_adj}' WHEN 'ADJ后' THEN ytd_post ELSE ytd_orig END
+    actual_bud_period: "'12'"          # 示例实际表页预算列固定 Dec
+    budget_bud_period_param: para_month_bud
+    standard_filters: "view='YTD' AND value='CNY'"
+  ci_project_view_scope: |
+    2026-09-09 起 demo_ads.fin_demo_view_demob_ci 视图口径收窄：原定义(UNION体)外包一层
+    SELECT * FROM (...) t WHERE t.special_initiatives LIKE '%影响PL%'，行数 9919→4664，
+    65 列名/顺序/类型零变化。影响面：明细报表/CI Project.cpt 全部 6 个引用该视图的数据集
+    （ds0 主取数 WITH v AS (SELECT * FROM 视图)、ds1 明细、ds7/9/10/11 字典）随视图同步收窄；
+    页面渲染实测 312 页×~15 行≈4664。改前原定义备份=_runs/t2demob_view_original.sql，
+    回滚=直接执行该文件的 CREATE OR REPLACE VIEW。
+  plant_map_entity_desc: |
+    口径事实（2026-09-12 二次纠偏，zcode-agent30；推翻同日 zcode-agent29 的 entity_desc 英文化）：
+    ① entity_desc = 组织架构表中文描述（回滚已执行：104 行恢复原值，119/119 与改前备份
+    _runs/t2pmap_backup_20260909.csv 逐行一致，0 行残留英文 CI 值；其中泰国×4/印度/MTY×2
+    共 7 行原值本就是英文，属组织架构原状）。entity_desc 为纯显示列，不参与任何 join。
+    ② src_plant = CI 英文 sub_region（stg_bdp.v_demob_ci_tmp2_zhs.sub_region 值域），作用=让
+    fin_demo_view_demob_ci 的 map join（map.src_plant=CI.sub_region + auth.plant_code=map.entity_id）
+    命中。⚠ 表上有部分唯一索引 ux_demob_plant_map_plant ON(src_plant) WHERE delete_flag=1——
+    每个英文 sub_region 全表只能一行持有，城市簇（如 Changsha/Shenyang 多个 org entity）必须选
+    唯一代表行，落选行保留原中文值待人工。
+    代表行规则（t2pmap2）：类型匹配 sub_region 名 token（Foam/HR/Trim/Metal/Rod）> JIT/总装 >
+    裸城市名（无 OEM 后缀；sub_region 名含 OEM 例外，如 Lingang Tesla）> 最小 entity_id。
+    已改 44 行（update_by=zcode-agent30，44 个互异英文值，含 23 簇代表 + 21 单行簇；
+    2352 'YZ Trim' 本就持有未动）；效果：CI 视图 legal_code 命中 3→4561（97.7%），视图总数
+    4668 不变、项目数 4668 不变（无乘积），auth 1066 / copa 34177 不变。
+    落选待人工 74 行=58 簇落选+2352_b(YZ Trim 被 2352 占)+15 CI 域无城市（泰国/印度/南京×6/
+    廊坊/无锡/调角器/滑道）+4610 天津小米vs北京小米冲突；逐行依据见 _runs/t2pmap2_src_fixlist.csv。
+    CPT 侧 DemoB工厂Entity映射.cpt m_data(ORDER BY src_plant) 探活正常：119 行，src_plant 英文
+    45 行，entity_desc 中文 112 行（7 行原英文）。
+  lock_js_template: |
+    var __w = this;
+    setTimeout(function() {
+    var f = __w.options.form;
+    ['para_legal','para_bu','para_region','para_plant'].forEach(function(n){
+    var w = f.getWidgetByName(n);
+    try { if (w.getValue() != null && w.getValue() != "") w.setEnable(false); } catch(e) {}
+    });
+    try { f.getWidgetByName("para_entity").setEnable(false); } catch(e) {}
+    }, 500);
+  lock_js_note: 2026-09-04 修复——原模板 setTimeout 内 this 丢失上下文致 'reading form' 未捕获异常（存量页同病，webkit pageerror 探针抓到）；编译产物以 __w 捕获上下文为有意差异
+  entity_formula: '=IF(LEN($para_plant)>0,$para_plant,IF(LEN($para_region)>0,$para_region,IF(LEN($para_bu)>0,$para_bu,IF(LEN($para_legal)>0,$para_legal,""))))'
+  frontend_patterns:   # （MIS-07，示例明细表B.cpt 双模式实测 2026-09-04；XML 片段见 L10 REPORT 附录A提案3）
+    highlight_list:
+      zebra: 'row()%2=0 → BackgroundHighlightAction color=-657929（隔行换色）'
+      page_break: '(row()-2)%100=0 → PageHighlightAction P=1（每 100 行分页）'
+      composable: 两模式可叠在同一数据行单元格（示例模块 实测）
+  refresh_pattern:   # （MIS-13，reportRefresh 1.5.15 逆向 L9 精炼#5）
+    metadata_channel: 'IOFileAttrMark = 模板级自定义元数据标准通道（getAttrMark("Refresh")；readXML 嗅探旧属性名做版本迁移）'
+    js_skeleton: 'AFTERLOAD → op=form_refresh&cmd=config → op=clear_pdl 清分页缓存 → widget.gotoPage 刷新（经典 cpt 栈）'
+    session_expired_code: '会话失效错误码 12400004-7；官方 refresh.js 有 indexOf(...)>0 应为 >=0 的漏判 bug——自研判断用 >=0'
+    server_eval_env: 'HTTP 线程内求值四件：Calculator.createCalculator() + pushNameSpace(ParameterMapNameSpace.create(paraMap)) + setAttribute(TableDataSource.KEY, form) + pushNameSpace(SessionIDInfo.asNameSpace(sessionID))，然后 calculator.eval(new Formula("=report0~A1"))'
+  grouper_choice: |
+    固定行汇总卡 = DSColumn + JoinCondition(行白名单) + SummaryGrouper(SumFunction)，行数固定不随数据膨胀；
+    明细列表 = FunctionGrouper divideMode=1 + Expand dir=0，随数据扩展（示例模块 实测）。
+    archetype 选型分水岭：summary_card（JoinCondition+SummaryGrouper）vs detail_list（FunctionGrouper）。
+    （MIS-08，Sustainability r4~r13 与 示例模块 数据行对照实测；R26 2026-09-05 合入）
+  hyperlink:
+    structure: |
+      主表单元格超链 = <PrivilegeControl/> 后挂 <NameJavaScriptGroup><NameJavaScript name="...">
+      → <JavaScript class="com.fr.js.ReportletHyperlink"> → 再嵌一层同 class <JavaScript>（双嵌套，Parameters 在内层）
+      —— 不是 <Hyperlink>/ReportletHyperlink 元素（2026-09-04 主表实测，修正转接文档表述）
+    inventory_main:   # snapshot_at 2026-09-06 复核（线上 17:02 版）：下钻明细族已不存在（目标 cpt 缺失且 0 挂载）；实际/预算分布见 archetypes.compare_main.facts
+      填写Comments: {cells_actual: 204, cells_budget: 306, target: '/示例报表工程/填报报表/FS Comments填报.cpt'}  # snapshot_at 2026-09-07 目录上移（原 示例需求目录/）
+      科目下钻: {cells: 51, target_actual: '/示例报表工程/明细报表/示例实际表-科目下钻.cpt', target_budget: '/示例报表工程/明细报表/示例预算表-科目下钻.cpt'}
+      调整ADJ: {cells: 21, only: actual, target: '/示例报表工程/填报报表/FS ADJ填报.cpt'}
+    drill_params: p_code/p_name 静态值 + 全部 para_* 以 =$para_* 公式传参；TargetFrame=_dialog；Features 1050x700；ReportletName byPost=true；DialogAttr Location center
+    comments_extra_params: [p_report, p_year, p_entity(=A5), p_account, p_colno, p_ri, p_ci, op=write]
+    features: {drill_dialog: '1050x700', comments_dialog: '760x620'}
+  global_params: [fine_username]       # 平台登录参数，无控件不报错（fr_check GLOBAL_PARAMS 白名单）
+  sql_hygiene:
+    numeric_cast_marker: "NULLIF("     # 空串防护；numeric 判定 = NULLIF + 显式转换（::numeric / AS numeric / CAST..AS numeric 均可）
+    numeric_cast_cast: ["::numeric", " AS numeric"]
+    period_case_marker: "CASE upper('"
+    org_markers: ["fin_demo_auth_base_info", "UNION ALL"]
+    perm_markers: ["fin_demo_config_user_role", "fine_username"]
+    forbidden_residue: "${{"
+    values_union_marker: "UNION ALL"
+  sql_exceptions: ["param_guard", "dict_"]   # G4 权限强制豁免前缀：守护集无业务表；字典集仅 PERM 无 ORG
+  known_deviations:   # T2-2b 最小豁免通道（2026-09-06）：线上主表既有缺陷照实复现的护栏豁免登记
+    snapshot_at: '2026-09-06'   # 实测对象：示例实际表.cpt / 示例预算表.cpt（线上 2026-09-04 17:02 版）
+    note: |
+      照实复现的既有缺陷（修复=待用户裁决项，编译器禁止顺手修复）。豁免仅跳过所列条目，
+      其余判定照旧 FAIL（fail-closed：编译器侧另有未知偏差核对闸，未登记偏差拒编译）。
+      各条目线上证据（guardrails 全量跑线上的错误清单归并）：
+        ds_undefined_refs: 预算页 408 处 DSColumn 引用 ds_cr_ci/lta/pact/vave 基础名，
+          表内实为 _bud/_fy 变体（列显隐遮蔽未暴露）；派单书"2175 处"为旧快照口径。
+        params_undeclared: 实际页 para_adj 有控件且被 ds_fs 引用但未声明（运行期控件补参）。
+        widgets_nonparam: query/formSubmit3 为动作按钮非参数控件（G6 R04 豁免族同源）；
+          实际页 para_adj 控件未声明（同一缺陷的控件侧表现，一并豁免）。
+        ds_no_orgperm_prefix: ds_cr_* / ds_comments 全族无 ORG 四段并集与 PERM 权限子句（CR 含金额）。
+        dict_no_perm: dict_* 字典集 DISTINCT 单查询无 PERM（与 sql_exceptions 的 dict_ 前缀叠加）。
+        ds_no_numeric: ds_fs/ds_comments 无 NULLIF+numeric 保护形态；实际页 ds_cr_lta/pact/ci 基础名族亦缺
+          （ds_cr_vave 有 CAST 形态故不在列）。
+        ds_no_period_case: 实际页 ds_cr_ci/lta/pact/vave 引用月份参数无 period CASE。
+        ds_sql_broken: 'G5 库上执行失败族（2026-09-06 实测，线上与编译产物同败=照实复现证据）：ds_cr_ci_fy
+          column "calyear" does not exist。另：派单书记 ds_cr_lta(实际)/ds_cr_lta_fy(预算) syntax error at or near "AS" 位置 353——
+          G5 冒烟参数集（para_year=2026）下两数据集执行 OK 未复现，条目保留为休眠登记待用户裁决口径。'
+    ds_undefined_refs: [ds_cr_ci, ds_cr_lta, ds_cr_pact, ds_cr_vave]
+    params_undeclared: [para_adj]
+    widgets_nonparam: [query, formSubmit3, para_adj]
+    ds_no_orgperm_prefix: [ds_cr_, ds_comments]
+    dict_no_perm: [dict_]
+    ds_no_numeric: [ds_fs, ds_comments, ds_cr_lta, ds_cr_pact, ds_cr_ci,
+                    ds_cr_lta_py, ds_cr_pact_py, ds_cr_ci_py, ds_cr_lta_cur, ds_cr_pact_cur, ds_cr_ci_cur]
+    ds_no_period_case: [ds_cr_ci, ds_cr_lta, ds_cr_pact, ds_cr_vave,
+                        ds_cr_lta_py, ds_cr_pact_py, ds_cr_vave_py, ds_cr_ci_py,
+                        ds_cr_lta_cur, ds_cr_pact_cur, ds_cr_vave_cur, ds_cr_ci_cur]
+    ds_sql_broken: [ds_cr_ci_fy, ds_cr_lta, ds_cr_lta_fy]
+  t2ci_ci_known_remap:   # T2-CI 临时口径登记（2026-09-07，任务：CI_Kaizen/CI_Sigma → 64059998）
+    snapshot_at: '2026-09-07'
+    scope: '仅 示例预算表.cpt（budget 页）；示例实际表.cpt 未动；py/cur 列归属仍走 mapping 表未变'
+    known_remap: "ds_cr_ci_bud / ds_cr_ci_fy known 段 SELECT 'PLH3300'→'64059998'（各 1 处，共 2 处）；unknown 段与 fin_demo_view_mapping_page_account 未动"
+    page_binding: '新行 r=28「主营业务成本-变动制造费用-其他-HNT」c=42 绑 ds_cr_ci_bud(pageshow_account=64059998)、c=61/68/75/82/89 绑 ds_cr_ci_fy 同条件（fy 输出无 yr 列）；r=28~55 平移+1（2551 格/162 处 p_ri/1067 公式格/RowHeight[28]）'
+    whitelist_note: '本卡曾增补 ds_fs 白名单 64059998（防御性，demo_rates_org_sum_actual 无该 account 输出不变）；11:21-11:35 并行会话重写 ds_fs（删 IN 白名单改全表 DISTINCT、org 并集改 para_entity 直滤）将其覆盖——known/新行/绑定/平移四项核心改动逐项复核仍存活，白名单项作废无业务影响'
+    no_double_count: 'PLH3300 显示路径仅 r=39(示例项目差) 的 ds_fs ListCondition(PLH3100 OR PLH3300)（数据源 demo_rates_org_sum_actual，非 CI 数据集）；CI known 原无任何页面绑定（c=42/61 族原为空格），改后仅 64059998 新行一处绑定，无重复计数；r=39 结构成本公式(黄色相加)不含新行'
+    db_evidence: 'MARFOR@2026(→ABP2) ds_cr_ci_bud 输出 (64059998, 67118091.6408334)，改前同参数输出 (PLH3300, 67118091.6408334)；PPL_R2@2026(→OBP1) ztbdp01 无 CI 数据故 known=NULL（数据态非 SQL 缺陷）；ds_cr_ci_fy 恒空=WORKFOR@2027-2031 mapping 未配置（既有库态）'
+    page_evidence: 'probe by-post(MARFOR) 渲染：64059998 行位于 质量外包/其他管理费用 之间，BUD 组 CI 列显示 67118091.64（_runs/t2ci_page_row.png + _runs/webprobe/20260907_112532_FS_预算/）'
+    parallel_conflict: '⚠ 2026-09-07 11:21-11:35 有另一会话同窗写 示例预算表.cpt（非本派单书的汇率表 Agent；bak_112203/bak_112431 两备份+多轮写盘，mtime 11:24:32→11:35:20）。本卡随即停写线上文件；线上现状=本卡改动×并行会话改动混合体，逐格对比 0 不可解释变化。后续任何会话动此文件前先对 mtime/备份序核对'
+    rollback: 恢复 示例预算表.cpt.bak_20260907_105800 并还原本节+facts.counts.budget 即可（注意并行会话改动会一并回滚，需与对方协调）
+  t2adj_del_adj_cols:      # T2-ADJ 删列登记（2026-09-07 12:49-13:0x，任务：标题动态化+删 ADJ/ADJ后 两列）
+    snapshot_at: '2026-09-07'
+    scope: '仅 示例预算表.cpt；示例实际表.cpt 探查确认无标题无 ADJ/ADJ后 列，未改动'
+    title_formula: 'c=4 r=3 静态文本→公式 ="数据逻辑（HFM直取）:" + IF($para_adj = "ADJ后", "After ADJ", "Before ADJ")（para_adj 空/未传时走 else=Before ADJ；ds_fs cur CTE 原有 CASE 切换不变，数据口径与标题一致由同一参数驱动）'
+    deleted_cols: 'c=6(ADJ)/c=7(ADJ后) 全行删除 114 格（r0~r56，仅 r3 列头有文本，其余空格，无超链/高亮/DSColumn/合并跨列）；ColumnWidth 无逐列元素仅 defaultValue 不需改'
+    shift_stats: '4739 格 c≥8 平移 -2；公式 A1 列字母重映射 4758 处（I..CP→G..CN，全文件 0 处引用被删列 G/H，无 D1 待裁；超链明文参数 p_code=PLHxxx/PPL_R1 等业务串未误伤）'
+    ci_binding_shift: 'T2-CI 所记绑定列 c=42/61/68/75/82/89 → 现 c=40/59/66/73/80/87（r=28，dsName ds_cr_ci_bud/ds_cr_ci_fy×5 实测核对）'
+    comments_links: '306 填写Comments+51 科目下钻全数平移存活（挂载列 16/18/30/54/56/93→14/16/28/52/54/91，c=2 不动）；路径 /示例报表工程/填报报表/FS Comments填报.cpt 未动'
+    verify: '对拍备份 vs 现件逐格 0 白名单外差异；fr_check 2错+42警=基线（doc-157/1284 族）；render_assert para_adj=ADJ后/ADJ前 双分支 PASS（标题 After/Before ADJ 各自命中，57 行 5249 td，无 #NAME?/#REF!）；probe 服务器会话 93 columns；links 357/357 声明完整'
+    backup: '示例预算表.cpt.bak_20260907_124930（md5 bea10145...同改前线上件）；本节回滚=还原该备份+还原本节+facts.counts.budget 即可'
+  t2corg_ver_org:   # T2-CI-ORG 登记卡（2026-09-07 14:54-15:1x，任务：CI ver 兜底 + ds_fs ORG 白名单 + 库映射 A1/A2）
+    snapshot_at: '2026-09-07'
+    ver_fallback: "仅 示例预算表.cpt ds_cr_ci_bud：ver CTE 改 SELECT COALESCE((SELECT scenario_bpc ... LIMIT 1),'ABP2') AS zv（映射优先,无映射兜底 ABP2=CI 数据所在场景；注释 -- ver:场景映射优先,无映射时兜底ABP2(CI数据所在,2026-09-07临时口径)）；示例实际表.cpt 无 ds_cr_ci_bud/ds_cr_ci_fy 同构体（其 ds_cr_ci 走 entity_demob_ci 实际视图不用 scenario 映射）——派单书'两表同构'预判与实际不符，仅改预算表（D2 披露）"
+    db_a2: "demo_ads.fin_demo_input_scenario_mapping 实插 5 行：scenario_org='WORKFOR'×year_version 2027~2031→scenario_bpc='ABP2'，delete_flag=1，create_by/update_by='admin'（对齐现有行默认）；注意与既有混合大小写 'Workfor'×2026/2027→OBP2 共存——cpt 侧 ver 匹配大小写敏感（scenario_org='WORKFOR' 字面 / upper(param) vs 列原值），互不干扰"
+    db_a1_blocked: "fin_demo_view_mapping_page_account 是视图非表（relkind=v），GaussDB 拒绝 INSERT（cannot insert into view）；视图=lane_mapping account_name×HFM 层级爬升派生，无显式 (account_label→pageshow) 底表可写。防重确认 0 同键行后放弃，未做任何绕写（升级判据②类，待用户裁决：如改投 lane_mapping 或建底表+触发器属未授权 DDL/DML）。运行期零影响：input_ci_lane_mapping 0 行 account_name IN (CI_Kaizen,CI_Sigma)，且 ds_cr_ci_bud known 段已硬编码 64059998"
+    db_a1_d1_stop: "2026-09-07 用户授权方案(a)（往底表 fin_demo_input_ci_lane_mapping 插 CI_Kaizen/CI_Sigma 行使视图出 64059998）实测不可达，按 D1 停手 0 INSERT：①底表 13 列无 pageshow 列，仅 account_name 进入视图 src；pageshow 全派生——递归爬升只经 label~'^PLH' 父节点、落点限 page73 白名单（PLH*+固定科目码数组，position('64059998' in definition)=False）、CASE 仅出 PLH3300/PLH3100/最近page73 → 视图对任何底表行都不可能输出 pageshow='64059998'；②CI_Kaizen HFM 祖先链 CI_Kaizen→CI→RE_Operation→Recoveries→Sustainability 无 PLH 节点、CI_Sigma 无 HFM 节点，插后 pageshow=NULL；③无插入仿真：通配行会把全量 CI（2026 Aug YTD 1,852,584,177.50）吸入 pageshow=NULL 组，页面不可见、现有各页数值不变、但数据集被污染（无过滤聚合将双计）。py/cur 归 64059998 仅剩 cpt SQL CASE（同 bud known 段款）或视图 DDL page73 增码，均越权待裁。证据：_runs/t2a1_receipt.md + _runs/t2a1_*.py"
+    dsfs_org: "见 org.dsfs_org_whitelist（用户 SQL 原文）；预算 14 CTE+实际 4 CTE，独立 AND 加在权限块之后、GROUP BY 之前，para_entity/权限子句原样保留"
+    g3_note: "ds_fs 缺 ORG 原为 guardrails 实时报错（非 known_deviations 登记条目）：改前备份跑 guardrails 各报 G3 org_markers+G4 org_missing 2 错，改后两表 0 错——偏差消减属护栏改善，known_deviations 无需撤销条目（ds_no_orgperm_prefix 覆盖的 ds_cr_*/ds_comments 仍维持）"
+    incident_note: "14:54 首轮写入脚本替换锚点吞掉 para_entity 过滤行与权限块闭括号（ds_fs 全 CTE 括号失衡），14:56 即从备份还原（还原后 md5 与改前快照逐一相符）并修正脚本重写；坏中件留痕 *.corrupt_t2corg，改后库上执行+fr_check+probe 全验通过"
+    verify: "库上：ds_cr_ci_bud(PPL_R1@2026,Jun,admin) 输出 (64059998,14498811.975)=ABP2 兜底铁证；对照 PPL_R2@2026(→OBP1) 输出 (64059998,NULL)=映射优先；fy ver 解析 5×ABP2。ds_fs ORG 前后（para_year=2026,Jun,admin,场景 ACTUAL/PPL_R2）：两表 64→64 行、0 科目值变化、各列合计分毫不变（auth_base_info 1066 行 0 NULL/0 空串，现网实体全在白名单内）。fr_check 预算 2错+42警/实际 2错+37警=基线持平；guardrails 两表 0 错；probe 两页渲染出数正常（无运行时异常，exception 串均为 FR 内置 JS 框架代码）"
+    backup_lock: '备份 示例预算表.cpt.bak_20260907_145717 / 示例实际表.cpt.bak_20260907_145717（另有 145400/145456/145502 序列与 .corrupt_t2corg 留痕）；两表 file_lock holder=zcode-agent12 领放齐备；yaml 备份 semantic_layer.yaml.bak_20260907_t2corg'
+  dev_note_20260907: |
+    基线漂移披露：2026-09-07 上午会话接线 ds_cr_{lta,pact,ci}_{py,cur} 六数据集+CR 列组（live 28 数据集/5047→5138 格），
+    未同步本语义层与 dsl/build 产物（t2b 对拍基线 30/30 已失效）；本卡 T2-CI 按"以线上现件为准"更新
+    facts.counts.budget 并补 known_deviations 的 _py/_cur 变体豁免。compile.build_compare_main 行高闸
+    （硬编码 startswith 1440000×4）与线上 9-07 行高族(1152000×4+r4=1440000)冲突——编译器逻辑禁改，
+    T2-CI 按 STANDBY 披露，待行高口径裁决或基线重建。
+  fr_check_false_positives:              # 已定性基线误报，勿再修（§八）
+    - {rule: doc-157/158, family: fine_username, reason: 平台登录参数（用户确认）；doc-157 已加 GLOBAL_PARAMS 白名单}
+    - {rule: doc-1284, family: DBTableDataParameters, reason: 检查器读的元素名全服务器 0 例；house 格式用 <Parameters>，FR 正常解析}
+    - {rule: doc-1839, family: remote_evaluate, reason: 规则针对超链；plant→legal 反填是控件监听 JS}
+  fr_check_baseline: {FS实际: 2, FS预算: 3, 下钻页各: 3, Sustainability: '1~3', 示例模块: '1~3'}
+  frontend_api:   # 前端 API 方言（L6 真机实测 119 断言为准；R26 2026-09-05 合入 MIS-15 P0）
+    widgets:
+      view_page_access: 'contentPane.parameterEl.getWidgetByName(name) 是唯一验证路径；contentPane.getWidgetByName 在 cpt 查看页不存在（PM11R2）'
+      enumerate: 'Object.keys(parameterEl.name_widgets||{}) 枚举全部控件名；getWidgetsAll() 在 FR10 不存在（PM13，web_kit _JS_VALIDATION 需改）'
+      anonymous_cell_widget: '填报页匿名控件唯一途径 contentPane.getWidgetByCell("C6")——只收列字母+1基行号字符串，传数字抛 str.match TypeError（TOP1）'
+      name_case: '科目下钻页控件名大写 PARA_LEGAL，getWidgetByName("para_legal") 可命中——FR 前端按大小写不敏感匹配（PM02/PM04；大小写形态是否追溯整改=CF-01 待裁决）'
+      parameter_el_not_jquery: 'parameterEl 是参数容器对象非 jQuery，无 .width()；面板坐标走 DOM .parameter-container（TOP3）'
+    dialog:   # （MIS-16；无头+有头双验 MSG03R2/DLG03R2/DLG04R2）
+      msg_alert_family: 'FR.Msg.alert/confirm/prompt 本构建静默无效（无窗口无回调无 JS 错）——轻提示用 FR.Msg.toast（可用），弹窗用 new FR.Dialog({title,contentHtml})+setVisible(true)'
+      dialog_content: 'FR.Dialog.setContent 首次与重新 setVisible 后均不生效——内容走构造参数 contentHtml 一次给足（DLG03R2）'
+      dialog_close: 'doClose 后根节点仍 display=block——关闭用 setVisible(false)，移除用 element.remove()（DLG04R2）'
+    timing:   # （MIS-17；PM06R2/PM14/WR05R2）
+      parameter_commit: 'parameterCommit() 干净态可用；对控件编程 setText/setValue 后立刻调用抛 TypeError——赋值后延迟一拍或统一走查询按钮事件（PM14，生产 JS 建议）'
+      combo_setvalue: '参数 ComboBox.setValue(任意值) 不可靠（old/after 均 undefined）——自动化填参走 URL 传参或 setText 后走查询（PM06R2）'
+      set_cell_value: 'setCellValue 只对含控件/可编辑格生效（静态格 no-op），写入仅内存不提交不落库——自动化写值先定位控件格（TOP6/WR05R2）'
+    doc_conflict_policy: '前端方言一律以 ckzl/zsk/qdjk/references/verified_20260904.md 实测为准（api_*.md 6 处矛盾清单见该文件：_g 语境/getTDCell 类型/FR.Msg 家族/CheckBoxGroup/deSelectAll/isStringTypeNumber）；文档回写由晨间收口与 R11 卡接口裁决（CF-03，RESOLVED_BY_VERIFIED_DOC，R26 合入）'
+    export_print:   # （MIS-18；WR24/WR25/WR26/WR31 + CP02）
+      export_methods: 'exportReportToExcel/PDF/Word/Image/Html/OffineHtml/emailReport 存在；exportReportToWriteOfflineHtml=false'
+      excel_simple: '_g().exportReportToExcel("simple") 实测触发 .xlsx 下载（WR31；示例模块 导出按钮同款）'
+      g_scope: 'cpt 查看页 _g() 存在且 ===contentPane（CP02 实测，修正文档"仅 frm 语境"说法，另见 CF-03）'
+      print_import: 'flash/applet/serverPrint/SetPrinterOffset、importExcel/initExcelButton 存在（实调开对话框，跳过实调）'
+
+# ──────────────── 主题（§六；2026-09-04 从下钻页 cpt StyleList/RowHeight 实测，两下钻页一致）────────────────
+theme:
+  scope: 'fs_drill 族专用（两下钻页实测）；主表=723900 族见 conventions.main_table_notes，明细页=1153643 族见 families（ST-02，R26 2026-09-05 补声明）'
+  font: {name: 微软雅黑}
+  # 下钻页 StyleList 实为 5 个样式（s0~s4）；行→s 映射：r0→s0, r2→s1, r3→s2, r5→s1, r6→s1, r7→s4, r8→s3
+  styles:
+    title:     {size: 96, fg: '-723724',    bg: '-10773547'}   # s0 r0 标题（深蓝底金黄字）
+    header:    {size: 80, fg: '-13421773', bg: '-1'}          # s1 r2/r5/r6 表头（白底深灰字）
+    data:      {size: 80, fg: '-723724',    bg: '-10773547'}   # s2 r3 单科目行（深蓝金字 hero 行）
+    total:     {size: 80, fg: '-13421773', bg: '-2500135'}    # s3 r8 构成合计（浅黄）
+    component: {size: 80, fg: '-13421773', bg: '-1579290'}    # s4 r7 构成组件行（浅色）
+  border: -5973270                     # 五样式四边统一
+  row_height_list: '1200000,1000000,1150000,1000000,1150000,1000000,1150000,1000000'   # r0~r7 实测
+  row_height: {default: 1150000, title: 1200000, header: 1150000, data: 1000000, compose_title: 1000000, compose_header: 1150000, compose_data: 1000000, total: 1150000}
+  column_width_list: '4572000,3660000,3660000,3660000,3200400,3200400'
+  panel_bg: -526086
+  percent_bg: -4144960
+  families:   # 行高列宽三口径族谱（MIS-09，R26 2026-09-05 合入）
+    fs_drill: {row_height_default: 1150000, column_width_list: '4572000,3660000,3660000,3660000,3200400,3200400', scope: 本 theme 节现有字段即此族}
+    fs_main: {row_height_default: 723900, r0_r4: 1440000, source: 主表实测（conventions.main_table_notes）}
+    detail_pages: {row_height: 1153643, column_width: 2200000, seen_in: 'Sustainability/示例模块（L10 实测 2026-09-04）'}
+  note: 任务书草稿"header -10773547/-723724、data -1"实为 标题/表头 的张冠李戴；以上以交付 cpt 实测为准
+
+# ────────────────────────── 页面原型（模板库指针）──────────────────────────
+# ST-01 复核（R26 2026-09-05）: generator 指针所指 _runs/tmp_gen_drill_v2.py 已回归本仓（24,718B），
+# 三处 archetypes.generator 指针可达（test -e EXISTS），断链 CLOSED，指针无需改动。
+archetypes:
+  panel_org:
+    structure: legal/bu/region/plant 四级联 + entity 只读(公式) + lock_js(URL 带值锁定)
+    generator: '_runs/tmp_gen_drill_v2.py 之 combo()/label()/LOCK_JS'
+    dict_datasets: [dict_legal, dict_bu, dict_region, dict_plant]
+    cascade_js: §七（legal 清 bu/region/plant 禁 region/bu 仅 plant 可选；bu 清 legal/region/plant 启 region；region 清 plant；plant 反填 legal 用 FR.remoteEvaluate）
+  compare_main:
+    structure: 对比主表：数据行 r4 起（actual 51 行 / budget 52 行）× 54 列（actual）/ 93 列（budget，2026-09-07 T2-ADJ 删 ADJ/ADJ后 两列后 95→93），列组=Entity/Pline/Account/动态标题列(c4=数据逻辑（HFM直取）:Before/After ADJ 公式)/数据直取/公式计算/当年 YTD+%+分母+Var%+Comments+ext1+CR 四源(LTA/PACT/示例模块/CI)+bdec+ext 块 + HighlightList 列显隐（ColWidthHighlightAction）
+    generator: '_runs/tmp_gen_drill_v2.py 之 analyze_source()（从主表 cpt 提科目行 c4 公式）+ 主表 cpt 自身（模板基座：compile.build_compare_main 解析→结构模型→DSL/kind/选项驱动重序列化）'
+    optional_modules: [Before-CR, Comments超链, ext(CTE ext1), fy]
+    ds_fs_shape: 4 CTE py/cur/bud/ext1 → 主查询 LEFT JOIN 固定科目白名单（43 DISTINCT account）
+    facts:
+      snapshot_at: '2026-09-07（T2-ADJ 删 ADJ/ADJ后 两列：cells 5138→5024、95→93 列；此前 T2-CI 复核口径已并入）'
+      counts:   # 编译器 facts 闸消费（compile.build_compare_main 结构核对）
+        actual: {datasets: 23, data_rows: 51, cells: 2942, links_comments: 204, links_drill: 51, links_adj: 21}
+        budget: {datasets: 28, data_rows: 53, cells: 5024, links_comments: 306, links_drill: 51, links_adj: 0}
+      超链分布_实际: '填写Comments×204 / 科目下钻×51 / 调整ADJ×21（无下钻明细族；inventory_main 旧条目"下钻明细×172"所指 FS 钻取明细.cpt 已不存在于线上目录）'
+      超链分布_预算: '填写Comments×306 / 科目下钻×51（无调整ADJ、无下钻明细）'
+      数据集_实际: '23 个（dict_×10/param_guard/ds_fs/ds_comments/ds_cr_{lta,pact,vave,ci}+{_bdec×3,_ext×3}）'
+      数据集_预算: '20 个（dict_×9 无 dict_level/param_guard/ds_fs/ds_comments/ds_cr_{lta,pact,vave}_{bud,fy}+ds_cr_ci_{bud,fy}）'
+      数据行: 'actual r4~r54=51 行（其中 8 个合计行 c6 为公式）/ budget r4~r55=52 行（c6 无公式行）'
+      row_height: 'defaultValue=723900, r0~r4=1440000'
+      column_show_hide: 'HighlightList + ColWidthHighlightAction（逐格挂载；年块显隐/ext无隐藏 条件族）'
+      参数声明: 'RPA 零声明；ParameterUI 直属 Parameters：actual 15 个（含 para_level/para_lpvc，无 para_adj）/ budget 20 个（含 para_month_bud/para_ext2~5/para_lpvc）'
+      面板控件: 'actual 28 / budget 36（lb_* 标签 + para_* 编辑器 + query/formSubmit3 动作按钮；para_lpvc 为 CheckBoxGroup）'
+      已知缺陷: '见 conventions.known_deviations（snapshot_at 2026-09-06）：预算页 408 处未定义 ds 引用、para_adj 未声明(实际)、ds_cr_*/ds_comments 无 ORG/PERM、ds_cr_lta(_fy) SQL 执行失败'
+  account_drill:
+    structure: 单科目行(ds_account leaf/COALESCE 公式标量) + 构成区域(ds_compose 组件小计+sgn+构成合计) + 标题
+    generator: '_runs/tmp_gen_drill_v2.py'
+    fragments: [parse_expr, leaf_sum, leaf_adj, comp_total, comp_adj_total, comp_row_sum, comp_row_adj]
+    inputs: 主表 cpt 作科目源（c4 公式列离线解析成 (expr,comp,sgn) VALUES）
+    formula_rows: {actual: 49, budget: 56}
+    validated_samples:
+      - '边际贡献 PLH01−PLH05：单行 110,681,655,651.67 = PLH01(110,346,075,821.33) −(−335,579,830.34)'
+      - '0-PLH3102-(64020901+64011104) = 91,426,055,148.18'
+  panel_widgets:
+    layout: 'label(45px) + combo(100px) 一组，组间距 165px，y=12 h=26；面板背景 -526086'
+    plugins:   # （MIS-06；示例明细表B.cpt 面板解析 2026-09-04，R26 合入）
+      year_control: {class: com.fr.plugin.widget.year.YearControl, plugin_id: com.fr.plugin.widget.year.all, version: '3.2.6.6', seen_in: 示例明细表B.cpt}
+      export_button: 'FreeButton Listener click → _g().exportReportToExcel("simple")（L6 WR31 实测触发 .xlsx 下载）'
+      mobile_mirror: 'MobileWidgetList 另含 search 名（移动端镜像控件，示例模块 实测）'
+
+# ──────────────── 控件目录（L2 jar 实测直查表；R26 2026-09-05 合入 MIS-03/04/05）────────────────
+# compile.py 可选消费做 xtype 白名单（消费与否待晨会裁决，R12 待问题5）
+widget_catalog:
+  source: '_runs/night/20260904/L2/widget_facts.md（JDK1.8 反射+序列化 roundtrip+minicpt 三重断言；171 探针类 PASS 115/SKIP 53/FAIL 3，57 控件类中 50 个过 XML 全链路断言）'
+  naming_rule: 类名以 L2 jar 实测为准（KB 的 TreeComboBox/TreeDictionary/TableDataDict 三类名已证伪，实际 TreeComboBoxEditor/TableDataDictionary——详见 CF-02 待裁决记录）
+  core:
+    combo: com.fr.form.ui.ComboBox
+    tagcombocheckbox: com.fr.form.ui.ComboCheckBox
+    datetime: com.fr.form.ui.DateEditor
+    label: com.fr.form.ui.Label
+    text: com.fr.form.ui.TextEditor
+    number: com.fr.form.ui.NumberEditor
+    button: com.fr.form.ui.FreeButton
+    formsubmit: com.fr.form.parameter.FormSubmitButton
+    tree: com.fr.form.ui.TreeEditor
+    treecombobox: com.fr.form.ui.TreeComboBoxEditor
+    file: com.fr.form.ui.FileEditor
+    iframe: com.fr.form.ui.IframeEditor
+    multifile: com.fr.form.ui.MultiFileEditor
+    password: com.fr.form.ui.Password
+    textarea: com.fr.form.ui.TextArea
+    checkbox: com.fr.form.ui.CheckBox
+    radio: com.fr.form.ui.Radio
+  layouts:
+    fit: com.fr.form.ui.container.WFitLayout
+    parameter: com.fr.form.ui.container.WParameterLayout
+    absolute: com.fr.form.ui.container.WAbsoluteLayout
+    border: com.fr.form.ui.container.WBorderLayout
+    grid: com.fr.form.ui.container.WGridLayout
+    cardlayout: com.fr.form.ui.container.WCardLayout
+  defaults:   # （MIS-04；L2 反射 getter 默认值——编译器生成控件的默认口径）
+    ComboBox: {delayTime: 200, fontSize: 12}
+    ComboCheckBox: {delimiter: ',', delayTime: 200, fontSize: 12}
+    WParameterLayout: {design_width: 960, background: ColorBackground, disableAction: 'this.setEnable(false);'}
+    Label: {labelAttr: 'autoline/textalign/verticalcenter', backgroundOpacity: 1.0}
+    FreeButton: {warning: 只有 setText 无 setWidgetValue, button_width_height_default: 0}
+    FormSubmitButton: 'setWidgetName("formSubmit0") 即可（L2 实测注记）'
+  serialization_warnings:   # （MIS-05；L2 坑点2-5 实测）
+    - 'ChartEditor/ChartAutoEditor 默认实例不可序列化（chartCollections 空→writeXMLableAsString NPE），必须先 setChartCollection 再落 XML'
+    - 'ChartEditor/ChartAutoEditor/ToolBar 隔离解析不回读 <WidgetName>，其 widgetName 由布局容器(WAbsoluteLayout BoundsWidget)侧管理'
+    - 'ElementCaseEditor 静态初始化触发 FR 配置系统可拖垮无头 JVM——批处理须 -Xmx1g + 单类隔离'
+    - 'WidgetManager/配置类需服务器上下文（EntityDao 未初始化即抛错），无头验证止步类级/方法级'
+
+# ──────────────── 填报提交约定（write.debug 逆向；R26 2026-09-05 合入 MIS-14）────────────────
+submit_conventions:
+  targets: [adj_input_fin_a, adj_input_fin_b]
+  value_space: [cell, cell_group, parameter, bool, date, double, formula, int, string]
+  checker: 'DataTypeCheckerFactory 七个 Checker（填报值类型校验链，write.debug 2.1.7 逆向）'
+  submit_response: '[{"fr_submitinfo":{"success":bool,"failinfo":...}}]——与原生提交回包一致（附件双通道同协议）'
+  file_upload_caveat: 文件提交无事务回滚（失败留半成品）——需同名覆盖或事后清理策略
+  debug_recipe: '提交预演 = RowDataCalculator 影子类抓"将提交值"（全行入缓存含被条件过滤行）+ Checker 链定位类型不符'
+
+# ──────────────── 模板级性能开关与 SQL 调优边界（L9 逆向；R26 2026-09-05 合入 MIS-12）────────────────
+perf_options:
+  calculator_attr_mark:
+    switches: {calculateEnd: true, queryCache: true, sqlPage: true, treeAsyncQuery: false, useMultiSourceMode: false}
+    source: enginex 1.9.14 逆向（L9 精炼#3，六布尔一 int 即新引擎全部模板级开关）
+    use_case: 大数据量明细表（示例项目 29 万行级）sqlPage/queryCache 提速评估
+  parallel_load_warning: 并行取数是事故之王（13+ 修复：改变取数全局时序，联动/调度/行式引擎全是雷区）——启用须按模板灰度+模板级开关
+  sql_auto_tuning: '模板助手 soar 硬编码 jdbc:mysql:// 前缀——示例项目 GaussDB/DWS 天然不命中，SQL 优化只走 Calcite/verify_sql.py 闭环（L9 精炼#4）'
+
+# ──────────────── 集成能力与边界注记（L9/L10；R26 2026-09-05 合入 MIS-19，落点=语义层新顶层节）────────────────
+# 注: 集成事实是否属语义层范围曾为边界问题（R12 待问题3），本卡按派单书指示以新顶层节收编；
+#     L10 三条"非语义层"裁决维持原判，仅作边界注记留痕。
+integrations:
+  data_sentinel: '指标越限预警不自研：/sentinel/task/create 等 22 REST 端点 + 钉钉/HTTP 通知 + 待办闭环；SessionRunner 无头取数=离线取值参考实现（L9#8）'
+  excel_stream_export: '大数据导出配方 = AbstractExcelExportAppProvider + createLargeDataExportCollection + SXSSFWorkbook(10000) 滑窗 + MAX_ROWS_2007 分片 + finally wb.dispose；2003 格式显式拒绝（L9#13）'
+  headless_eval: '无头取渲染值服务端闭环存在：SessionRunner + RepositoryDeal(req, TemplateSessionIDInfo, 96) + executeLazyElements 触发懒加载块（R13 可行性高评级旁证，L9#5/R13§3.3）'
+  boundary_notes:   # L10 种子 #10/#11/#12 维持原判（不入语义层正文，此处留痕）
+    ai_report_patterns: 维持 L10 裁决——patterns.json XPath 提取面入 dsl/ 改进 backlog（反推器参照）
+    url_login: 维持 L10 裁决——fine_auth_token URL 登录契约（validity=-2=14 天）作 web_kit 登录通道备选，不入语义层

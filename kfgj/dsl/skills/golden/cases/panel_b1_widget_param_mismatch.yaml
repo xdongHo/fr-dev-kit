@@ -1,0 +1,9 @@
+# 坏 spec: 控件名缺 para_ 前缀 —— conventions.control_param_rule 铁律（下钻页 v2 真实事故复现）
+skill: panel
+name: panel_b1_widget_param_mismatch
+expect: reject
+reject_contains: "para_"
+spec:
+  widgets:
+    - {type: label, name: lb_legal, text: "法人："}
+    - {type: combo, name: legal}      # 违例：控件名=legal（无 para_ 前缀）

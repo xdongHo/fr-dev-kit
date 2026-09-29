@@ -1,0 +1,63 @@
+{
+ "id": "frm_banner_grid",
+ "name": "FRM横幅+四图网格",
+ "engine": "frm",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "5占位网页框(RHIframe)",
+ "containers": [
+  {
+   "title": "横幅指标",
+   "type": "kpi",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 20,
+   "components": "指标卡×4"
+  },
+  {
+   "title": "地图",
+   "type": "chart_group",
+   "x": 0,
+   "y": 20,
+   "w": 50,
+   "h": 40,
+   "components": "地图"
+  },
+  {
+   "title": "柱形",
+   "type": "chart",
+   "x": 50,
+   "y": 20,
+   "w": 50,
+   "h": 40,
+   "components": "柱形图"
+  },
+  {
+   "title": "饼图",
+   "type": "chart",
+   "x": 0,
+   "y": 60,
+   "w": 50,
+   "h": 40,
+   "components": "饼图"
+  },
+  {
+   "title": "折线",
+   "type": "chart",
+   "x": 50,
+   "y": 60,
+   "w": 50,
+   "h": 40,
+   "components": "折线图"
+  }
+ ],
+ "file": "frm_banner_grid.frm",
+ "note": "自适应: BodyLayoutType=0 等比 | KPI横幅+2×2",
+ "structure": "frm(占位壳): Center内RHIframe占位网格(空RHIframeAttr), 设计器里选组件路径即挂 组件模板/图表组件-*.cpt"
+}

@@ -1,0 +1,12 @@
+# 组织面板原型页 · DSL 示例（panel_org 可独立成页，也是 account_drill 的面板模块）
+# 编译: python dsl/compile.py dsl/examples/panel_org_demo.yaml
+page: 组织面板演示
+archetype: panel_org
+filters:
+  org: {cascade: [legal, bu, region, plant]}
+  entity: readonly
+  hfm: hidden_url_params
+blocks: []
+options: {}
+output: 组织面板演示.cpt
+note: 组织面板页（panel_org 原型：四级联 + Entity 只读 + URL 带值锁定）

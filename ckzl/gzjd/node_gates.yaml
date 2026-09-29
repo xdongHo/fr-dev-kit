@@ -1,0 +1,194 @@
+# node_gates.yaml — 节点出口闸门矩阵（单一事实源, v0.1 原型）
+# 设计: 方案一 §2.2。节点文件的"验证清单"节只留指针到这里, 防止 10 处复制漂移（R1 教训）。
+# 执行: python kfgj/fzpy/node_gate.py --node 02 --task-dir _runs/tasks/<task> [--cpt <模板>] [--offline]
+# 约定: deps 不满足时该门禁 SKIP 并留痕（--offline 等价于全部按 offline 策略处理）。
+# 占位: enabled=false 的条目 = 方案规划中的新工具, 落地后打开即可（不参与本轮判定）。
+
+common:
+  artifacts_dir: "_runs/tasks/{task_dir}"     # 节点产物契约落盘点
+  report_dir:    "_runs/tasks/{task_dir}/gates"
+  tools_dir:     "kfgj/fzpy"
+
+nodes:
+  "01":
+    name: 需求与数据判定
+    inputs: []                                 # 工作流起点
+    outputs:
+      artifact: "{artifacts_dir}/01_requirement.yaml"
+      required_fields: [report_type, data_connections, tables, fields, params, acceptance]
+    gates:
+      - id: N01-SCHEMA          # 产物契约完整性（增强下一节点输入质量的第一断言）
+        cmd: "python {tools_dir}/node_gate.py check-artifact {artifacts_dir}/01_requirement.yaml --fields report_type,data_connections,tables,fields,params,acceptance"
+      - id: N01-TABLES          # 数据可得性: 01 引用表抽查存在性（抽查前 3 张）
+        cmd: "python {tools_dir}/db_schema.py --search {table}"
+        deps: [dws]
+        offline: warn
+    next: "02"
+    fallback_out: []
+
+  "02":
+    name: 数据集
+    inputs:
+      - artifact: "{artifacts_dir}/01_requirement.yaml"
+        required_fields: [report_type, tables, params]
+    outputs:
+      artifact: "{artifacts_dir}/02_datasets.yaml"
+      required_fields: [datasets]
+    gates:
+      - id: G08                 # 现有: 真库 0 行判死（0 行/异常=FAIL）
+        cmd: "python {tools_dir}/verify_sql.py -s {sql_file} {params}"
+        deps: [dws]
+        offline: dry            # 降级: verify_sql --dry 只做宏替换
+      - id: G11                 # 现有: 写 SQL 前 db_schema 探表（attest, 由执行记录核对）
+        cmd: "python {tools_dir}/db_schema.py --search {table}"
+        deps: [dws]
+        offline: warn
+      - id: N02-PARAMSET        # 新工具占位: SQL ${} 参数 ⊆ 01.params ∪ 内置
+        cmd: "python {tools_dir}/param_set_diff.py --sql {sql_file} --req {artifacts_dir}/01_requirement.yaml"
+        enabled: false
+    next: "03"
+    fallback_in: []
+
+  "03":
+    name: 参数面板
+    inputs:
+      - artifact: "{artifacts_dir}/02_datasets.yaml"
+        required_fields: [datasets]
+    outputs:
+      artifact: "{artifacts_dir}/03_panel.yaml"
+      required_fields: [widgets]
+    gates:
+      - id: G03-FR_CHECK        # 现有: 静态全检（WidgetName 唯一/级联格式/98 规则）
+        cmd: "python {tools_dir}/fr_check.py {cpt} --no-online"
+      - id: N03-GUARDRAILS_G2   # 可选增强: 控件名=参数名（guardrails G2; 非 DSL 链仅取通用子集, 需 semantic_layer.yaml）
+        cmd: "python dsl/guardrails.py {cpt} --semantic dsl/semantic_layer.yaml"
+        enabled: false
+      - id: N03-WIDGET_PARAM    # 新工具占位: WidgetName ↔ 02.params 双向 diff
+        cmd: "python {tools_dir}/widget_param_match.py --cpt {cpt} --req {artifacts_dir}/01_requirement.yaml"
+        enabled: false
+    next: "04"
+    fallback_out: [{ to: "02", on: "级联参数调不通" }]   # 已有回退边, 收编进矩阵
+
+  "04":
+    name: 报表主体明细
+    inputs:
+      - artifact: "{artifacts_dir}/02_datasets.yaml"
+      - artifact: "{artifacts_dir}/03_panel.yaml"
+    outputs:
+      artifact: "{artifacts_dir}/04_body.yaml"
+      required_fields: [cells, formulas]
+    gates:
+      - id: G03-FR_CHECK
+        cmd: "python {tools_dir}/fr_check.py {cpt} --no-online"
+      - id: G09                 # 现有: 公式三态（attest; 新公式）
+        cmd: "curl -s http://localhost:19000/exec -d @{formulas_script}"
+        deps: [designer]
+        offline: warn
+    next: "05|06|07|08|10 分支池"
+    fallback_out: [{ to: "02", on: "缺字段/口径错" }]
+
+  "05":
+    name: 填报模块
+    inputs:
+      - artifact: "{artifacts_dir}/02_datasets.yaml"
+    outputs:
+      artifact: "{artifacts_dir}/05_submit.yaml"
+      required_fields: [submit_targets, primary_keys]
+    gates:
+      - id: G03-FR_CHECK
+        cmd: "python {tools_dir}/fr_check.py {cpt} --no-online"
+      - id: N05-SUBMIT_CHECK    # 已入库(2026-09-11): DMLConfig 目标表/主键 WHERE/绑定单元格/库级列断言
+        cmd: "python {tools_dir}/submit_config_check.py {cpt}"
+      - id: N05-PROBE_WRITE     # 运行期: 填报态体检
+        cmd: "python web_kit/probe.py {cpt} --op write"
+        deps: [fr_server]
+        offline: skip
+    next: "08|07|10 分支池"
+
+  "06":
+    name: 图表模块
+    inputs:
+      - artifact: "{artifacts_dir}/04_body.yaml"
+    outputs:
+      artifact: "{artifacts_dir}/06_charts.yaml"
+    gates:
+      - id: G03-FR_CHECK
+        cmd: "python {tools_dir}/fr_check.py {cpt} --no-online"
+      - id: N06-CHART_PROBE     # P2 新工具: 图表数据集独立执行 + series 点数断言
+        cmd: "python {tools_dir}/chart_probe.py --cpt {cpt}"
+        enabled: false
+    next: "08|10 分支池"
+
+  "07":
+    name: 导入导出
+    inputs:
+      - artifact: "{artifacts_dir}/04_body.yaml"
+    outputs:
+      artifact: "{artifacts_dir}/07_export.yaml"
+      required_fields: [exports]
+    gates:
+      - id: N07-EXPORT_GATE     # 现有: 产物魔数/行数/水印/页数（产物文件生成后跑; 调用以脚本实码为准, AGENTS §3 的 --task export 写法待核）
+        cmd: "python {tools_dir}/export_gate.py --file {export_file}"
+      - id: G03-FR_CHECK
+        cmd: "python {tools_dir}/fr_check.py {cpt} --no-online"
+    next: "10"
+
+  "08":
+    name: 交互联动
+    inputs:
+      - artifact: "{artifacts_dir}/04_body.yaml"
+    outputs:
+      artifact: "{artifacts_dir}/08_links.yaml"
+    gates:
+      - id: G03-FR_CHECK
+        cmd: "python {tools_dir}/fr_check.py {cpt} --no-online"
+      - id: N08-EVENTS          # 现有: 控件事件环静态检测
+        cmd: "python {tools_dir}/check_cpt_events.py {cpt}"
+      - id: N08-LINKS           # 运行期: 超链/联动
+        cmd: "python web_kit/probe.py {cpt} --links"
+        deps: [fr_server]
+        offline: skip
+    next: "10"
+    fallback_out: [{ to: "06", on: "跨块刷新失败" }]
+
+  "09":
+    name: FRM 决策报表
+    inputs:
+      - artifact: "{artifacts_dir}/01_requirement.yaml"
+        assert: "report_type == 'FRM'"         # 分流前置断言
+      - artifact: "{artifacts_dir}/02_datasets.yaml"
+    outputs:
+      artifact: "{artifacts_dir}/09_frm.yaml"
+    gates:
+      - id: G03-FR_CHECK        # fr_check×.frm 适用性待核验（方案 §6）
+        cmd: "python {tools_dir}/fr_check.py {frm} --no-online"
+        offline: warn
+      - id: N09-PROBE           # 已支持 .frm(2026-09-11): derive_viewlet 扩展 + fr10_view_form 路由
+        cmd: "python web_kit/probe.py {frm}"
+        deps: [fr_server]
+    next: "08|10 分支池"
+    fallback_out: [{ to: "04", on: "组件挂错" }, { to: "06", on: "图表绑定断" }]
+
+  "10":
+    name: 预览与验证（集成验证节点）
+    inputs:
+      - artifact: "{artifacts_dir}/02_datasets.yaml"
+      - artifact: "{artifacts_dir}/04_body.yaml"
+    outputs:
+      artifact: "{artifacts_dir}/10_verify.yaml"
+      required_fields: [conclusion, reports]
+    gates:
+      - id: N10-FR_CHECK_ONLINE
+        cmd: "python {tools_dir}/fr_check.py {cpt} --online"
+        deps: [fr_server]
+        offline: skip
+      - id: N10-PROBE           # 交付前运行期体检: 退出码 0 且 error=0
+        cmd: "python web_kit/probe.py {cpt}"
+        deps: [fr_server]
+        offline: skip
+        # 注意: probe 的 --layout 为未交付占位参数（web_kit 无 layout 模块），不可依赖；
+        # 布局断言待 web_kit 补 layout 模块后加回（方案 §2.2 P2 / §6 P0）
+      - id: G12                 # 收尾闸门（render/roundtrip 机器通道优先于人工）
+        cmd: "python kfgj/guard.py --task {task_type} --cpt {cpt} --attest {attests}"
+    next: "交付"
+    fallback_out: [{ to: "02-09", on: "按错误类型回对应节点", rerun: "目标节点门禁 + 10 全量复验" }]

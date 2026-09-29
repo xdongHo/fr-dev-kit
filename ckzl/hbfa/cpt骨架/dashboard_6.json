@@ -1,0 +1,72 @@
+{
+ "id": "dashboard_6",
+ "name": "六宫格(底行加高)",
+ "engine": "cpt",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1400,
+  "height": 900,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "120列×60行×5px格, 合并单元格布局",
+ "containers": [
+  {
+   "title": "KPI-1",
+   "type": "kpi",
+   "x": 0,
+   "y": 0,
+   "w": 50,
+   "h": 25,
+   "components": "指标卡×2"
+  },
+  {
+   "title": "KPI-2",
+   "type": "kpi",
+   "x": 50,
+   "y": 0,
+   "w": 50,
+   "h": 25,
+   "components": "指标卡×2"
+  },
+  {
+   "title": "小图-柱",
+   "type": "chart",
+   "x": 0,
+   "y": 25,
+   "w": 50,
+   "h": 25,
+   "components": "柱形图"
+  },
+  {
+   "title": "小图-饼",
+   "type": "chart",
+   "x": 50,
+   "y": 25,
+   "w": 50,
+   "h": 25,
+   "components": "饼图"
+  },
+  {
+   "title": "主图-地图",
+   "type": "chart_group",
+   "x": 0,
+   "y": 50,
+   "w": 50,
+   "h": 50,
+   "components": "地图"
+  },
+  {
+   "title": "主图-桑基",
+   "type": "chart_group",
+   "x": 50,
+   "y": 50,
+   "w": 50,
+   "h": 50,
+   "components": "桑基图"
+  }
+ ],
+ "file": "dashboard_6.cpt",
+ "note": "上指标+中辅图+底大图: 栅格2×4",
+ "structure": "cpt(可导出): 120×60细网格(5px格,格值190500=FU.valueOfPix(5,96))合并单元格布局, 每容器=标题带6行+图表区, 剩余细格可加元素"
+}

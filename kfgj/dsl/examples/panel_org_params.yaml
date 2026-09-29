@@ -1,0 +1,40 @@
+# =============================================================================
+# panel_org 带参变体（夜间作战 L10 · Tier2 练习 · 2026-09-04）
+# 目的：在 panel_org 原型（四级联+Entity 只读+锁定 JS）之上，声明 hidden_url_params
+#   的具体参数清单与联调测试值——现 schema 里这些参数只出现在 schema.md §4/§5 的
+#   注释文字里，DSL 无法机读；本变体提出 params: 扩展字段（[提案P1]）。
+# 基线: dsl/examples/panel_org_demo.yaml（无参版）；本文件是其带参超集。
+# ⚠ 练习件：除 params: 字段外全部 schema 合法；params: 为提案字段，
+#   现 compile.py 会因未知顶层字段报错或忽略（以实现为准），卡点已标注。
+# =====================================================================
+
+page: 组织面板带参演示
+archetype: panel_org
+
+filters:
+  org: {cascade: [legal, bu, region, plant]}   # dict_legal~dict_plant 逐级依赖（语义层 org.dict_dependencies）
+  entity: readonly                             # 只读公式=最细颗粒（conventions.entity_formula）
+  hfm: hidden_url_params                       # 无控件、纯 URL 传入的 HFM 族参数
+
+params:                          # [提案P1] schema §1 无 params 顶层字段——建议语义化为
+                                 #   filters.hfm.params: 列表；每项 name 必须能被
+                                 #   conventions.standard_params 校验（grounding 同源）
+  - {name: para_year,      value: '2026'}    # 测试联调默认值；正式使用由 URL 覆盖
+  - {name: para_month,     value: Sep}       # 月份枚举 JAN..DEC（period_case_template 消费方）
+  - {name: para_month_bud, value: Dec}       # 预算期末（conventions.column_criteria.budget_bud_period_param）
+  - {name: para_scn_py,    value: ACTUAL}    # 上年场景（scenario_mapping 表域）
+  - {name: para_scn_bud,   value: OBP1}      # 预算场景
+  - {name: para_scn_cur,   value: PPL_R2}    # 当年预测场景（2026 唯一有数的场景，语义层 org_sum_budget.warning）
+  - {name: para_adj,       value: ADJ后}     # ADJ 口径（actual_cur CASE 分支：ADJ后→ytd_post）
+  - {name: para_curr,      value: CNY}       # 币种（standard_filters value='CNY' 配套）
+  - {name: para_unit,      value: '1'}       # 单位换算系数
+# [卡点P1a] 上列 value 在现 DSL 无落点：hidden_url_params 展开只声明不赋值，
+#   赋值能力应与「URL 参数模拟」联调功能（compile --param 已有）对齐，避免两套语义
+# [卡点P1b] para_adj 在线上主表是「有控件未声明」的违例参数（conventions.main_table_notes），
+#   本变体把它归入纯 URL 组——如日后主表修复面板，此行需上移到控件区
+
+blocks: []
+options:
+  title_block: true              # 页内标题块（schema §1 options 示例字段）
+
+output: 组织面板带参演示.cpt      # 产物落 dsl/build/，确认后再放线上

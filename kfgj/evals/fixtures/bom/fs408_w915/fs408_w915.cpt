@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- W915 泳道(A8_eval)新增夹具: FS408 扩展形态, 四类悬挂各一(仅供水离线解析, 勿在 Designer 打开) -->
+<WorkBook xmlVersion="20211223" releaseVersion="10.0.0">
+<Report class="com.fr.report.report.WorkSheet" name="main">
+<CellElementList>
+<C c="0" r="0" s="0"><O t="DSColumn"><Attributes dsName="ds_ok" columnName="id"/></O></C>
+<C c="1" r="0" s="0"><O t="DSColumn"><Attributes dsName="ds_cell_ghost" columnName="id"/></O></C>
+</CellElementList>
+<TableDataMap>
+<TableData name="ds_ok" class="com.fr.data.impl.DBTableData">
+<Query databaseName="env_fixtures"><![CDATA[select * from t1 where status='${p_sqlghost}' and owner='${p_declared}']]></Query>
+</TableData>
+</TableDataMap>
+</Report>
+<Chart name="chart1" chartClass="com.fr.chart.charttypes.ColumnIndependentChart">
+<Plot class="com.fr.chart.chartattr.Plot"/>
+<TableData name="chart_ds" class="com.fr.data.impl.EmbeddedTableData"><Name>ds_chart_ghost</Name></TableData>
+</Chart>
+<ParameterUI class="com.fr.report.web.ui.ParameterUI">
+<Layout class="com.fr.form.ui.container.WAbsoluteLayout">
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget">
+<InnerWidget class="com.fr.form.ui.TextEditor">
+<WidgetName name="p_wghost"/>
+</InnerWidget>
+</Widget>
+</Layout>
+</ParameterUI>
+<ReportParameterAttr>
+<Parameters>
+<Parameter>
+<Attributes name="p_declared"/>
+<O><![CDATA[]]></O>
+</Parameter>
+</Parameters>
+</ReportParameterAttr>
+<StyleList/>
+</WorkBook>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkBook xmlVersion="20211223" releaseVersion="10.0.0">
+<Report class="com.fr.report.report.WorkSheet" name="main">
+<CellElementList>
+<C c="0" r="0" s="0"><O t="DSColumn"><Attributes dsName="ds_ok" columnName="id"/></O></C>
+<C c="1" r="0" s="0"><O t="DSColumn"><Attributes dsName="ds_ghost" columnName="id"/></O></C>
+</CellElementList>
+<TableDataMap>
+<TableData name="ds_ok" class="com.fr.data.impl.DBTableData">
+<Query databaseName="env_fixtures"><![CDATA[select * from t1 where 1=1 ${if(len(p_declared)=0,"","and t1.col_ghost in ('" + p_declared + "')")} and status='${p_ghost}']]></Query>
+</TableData>
+</TableDataMap>
+</Report>
+<ReportParameterAttr>
+<Parameters>
+<Parameter>
+<Attributes name="p_declared"/>
+<O><![CDATA[]]></O>
+</Parameter>
+</Parameters>
+</ReportParameterAttr>
+<StyleList/>
+</WorkBook>

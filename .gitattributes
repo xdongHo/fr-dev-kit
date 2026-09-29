@@ -1,0 +1,5 @@
+# 2026-09-15 起生效: md/py/json 统一 LF 行尾 (修复 BG-DC-04 换行混用缺陷)
+# 存量 CRLF 文件不强制批量回改, 随下次 touch/重写时按 eol=lf 规范化
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf

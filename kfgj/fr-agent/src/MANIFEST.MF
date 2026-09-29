@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Premain-Class: fr.agent.FrAgent
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+Agent-Class: fr.agent.FrAgent

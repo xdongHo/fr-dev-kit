@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkBook version="8.0">
+  <!-- 形态1: 块C 模板级根直系 Parameters + 载体i(name属性) + 载体ii兜底value属性 -->
+  <Parameters>
+    <Parameter name="p_root_attr" value="1">
+      <O><![CDATA[]]></O>
+    </Parameter>
+    <Parameter name="p_root_oval">
+      <O><![CDATA[ROOTV]]></O>
+    </Parameter>
+  </Parameters>
+  <TableDataMap>
+    <!-- 形态4(块A): 数据集级 TableData 直系 Parameters + 载体ii(Attributes 子元素) -->
+    <TableData name="ds_main" class="com.fr.data.impl.DBTableData">
+      <Parameters>
+        <Parameter>
+          <Attributes name="p_dslevel"/>
+          <O><![CDATA[1]]></O>
+        </Parameter>
+      </Parameters>
+      <Query class="com.fr.data.impl.DBTableData$Query" databaseName="FRDemo" needVer="1"><![CDATA[select * from t_main where 1=1 ${if(len(p_dslevel)==0,""," and x='"+p_dslevel+"'")}]]></Query>
+    </TableData>
+  </TableDataMap>
+  <!-- 形态2(块B): RPA 内 <Parameters> 包装 + 载体ii; 形态3(块B): 裸 <Parameter> 直挂 + 载体ii -->
+  <ReportParameterAttr class="com.fr.report.report.ReportParameterAttr">
+    <Parameters>
+      <Parameter>
+        <Attributes name="p_rpa_wrap"/>
+        <O><![CDATA[WRAPV]]></O>
+      </Parameter>
+    </Parameters>
+    <Parameter>
+      <Attributes name="p_rpa_bare"/>
+      <O><![CDATA[BAREV]]></O>
+    </Parameter>
+    <Parameter name="p_rpa_bare_nameattr">
+      <O><![CDATA[]]></O>
+    </Parameter>
+  </ReportParameterAttr>
+  <Report class="com.fr.report.report.WorkSheet" name="sheet1">
+    <CellElementList>
+      <C c="0" r="0">
+        <O t="DSColumn">
+          <Attributes dsName="ds_main" columnName="col_a"/>
+        </O>
+      </C>
+      <!-- 排除位1: 单元格块内( O>C>CellElementList )带名 Parameter —— 不收不判, 落盲区日志 -->
+      <C c="1" r="0">
+        <Parameters>
+          <Parameter>
+            <Attributes name="p_excl_cell"/>
+            <O><![CDATA[]]></O>
+          </Parameter>
+        </Parameters>
+      </C>
+    </CellElementList>
+  </Report>
+  <ReportWebAttr class="com.fr.web.ReportWebAttr">
+    <!-- 排除位2: JavaScript>Listener 内带名 Parameter —— 不收不判, 落盲区日志 -->
+    <JavaScript class="com.fr.js.JavaScriptCollector">
+      <Listener event="afterinit">
+        <Parameters>
+          <Parameter name="p_excl_js">
+            <O><![CDATA[]]></O>
+          </Parameter>
+        </Parameters>
+      </Listener>
+    </JavaScript>
+  </ReportWebAttr>
+</WorkBook>

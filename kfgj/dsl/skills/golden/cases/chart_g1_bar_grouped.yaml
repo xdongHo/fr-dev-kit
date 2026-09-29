@@ -1,0 +1,38 @@
+# golden: chart ① echarts bar/分组柱状 → VanChartColumnPlot（E1 map1 + E2 柱形模板改写）
+skill: chart
+name: chart_g1_bar_grouped
+expect: ok
+spec:
+  echarts_type: bar
+  variant: 分组柱状
+  title: 销售构成
+  dataset:
+    name: ds_sales
+    source: org_sum_actual
+    fields: [entity, data]
+    numeric_cols: [data]
+    filters: ["view = 'YTD'", "value = 'CNY'"]
+    permission: full
+  binding:
+    category: entity
+    values:
+      - {field: data, name: 金额, function: sum}
+assert_contains:
+  - '<Plot class="com.fr.plugin.chart.column.VanChartColumnPlot">'   # E1 map1/E2 实测 plot 类
+  - 'chartClass="com.fr.plugin.chart.vanchart.VanChart"'
+  - 'vanChartPlotType="normal"'
+  - 'isBar="false"'
+  - '<![CDATA[ds_sales]]>'                                           # NameTableData 绑定改写
+  - '<CategoryName value="entity"/>'
+  - '<ChartSummaryColumn name="data" function="com.fr.data.util.function.SumFunction" customName="金额"/>'
+  - '<TitleVisible value="true"'                                     # 标题已启用
+  - "<![CDATA[销售构成]]>"
+  - "COALESCE(NULLIF(t.data,'')::numeric,0)"                         # 数据集硬约束继承
+  - "fin_demo_config_user_role"
+assert_not_contains:
+  - "ds_c0"                        # 模板演示数据集引用必须清除
+  - "FirstFunction"                # 演示绑定（CategoryPresent 等）不得残留
+  - "position: relative"           # 旧演示标题公式 HTML 不得残留（标题已整体改写）
+  - "${{"
+assert_regex:
+  - '<Title>\s*(?:<GI>.*?</GI>)?\s*<O>\s*<!\[CDATA\[销售构成\]\]>'   # 标题落在 Title 区首位

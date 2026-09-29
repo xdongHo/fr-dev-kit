@@ -1,0 +1,8150 @@
+{
+ "schema_version": "3-c3",
+ "generated_at": "2026-09-02T00:41:32",
+ "source_fingerprint": {
+  "inputs": [
+   {
+    "name": "logs/injection_run1.json",
+    "sha256": "7203651560a29c19c76ca3f63aecd7beaa6edf1e1f041ba8408aef46c37f0086"
+   },
+   {
+    "name": "manifest_injected.json",
+    "sha256": "8b513e9cb9d4c98bfc9081918afa1e964a685c0e0df804fd24b584bdf0a915f1"
+   },
+   {
+    "name": "flat_targets.json",
+    "sha256": "f364fb3a81c7f23235bd801e3a198142aa004d50b27fe2d63e9aa4ea4017b0ca"
+   },
+   {
+    "name": "_c3_targets.json",
+    "sha256": "2e9fffbd582ae60b198cdc10e57c397ee9ede04b8588e7ede872c2a1d85b9d2f"
+   }
+  ],
+  "derived_from": "ckzl/lc/fr10_deep_learn/docs/_c3_rehearsal（Wave5 彩排产物，2026-09-01）",
+  "derived_by": "Z2 收口链实施役：%TEMP% 派生脚本自 run1 日志 rects + injected\\*.cpt XML 真值提取（collect_widgets 同口径），零编造"
+ },
+ "constants": {
+  "widget_w": 180,
+  "widget_h": 26,
+  "gap": 20,
+  "button_w": 60,
+  "tolerance_px": 2,
+  "max_per_row_formula": "floor((panel_w-2*12-button_w-gap)/(widget_w+gap))"
+ },
+ "targets": [
+  {
+   "did": 157,
+   "file": "157_模板参数.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 158,
+   "file": "158_数据集参数.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 159,
+   "file": "159_全局参数.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 164,
+   "file": "164_模糊查询.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 165,
+   "file": "165_动态数据表和动态条件.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 166,
+   "file": "166_参数查询示例.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 250,
+   "file": "250_系统参数.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 321,
+   "file": "321_自由报表填报.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 370,
+   "file": "370_选择年月后进行年月数据的汇总.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 406,
+   "file": "406_JS实现参数面板显示对应数据.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 407,
+   "file": "407_根据参数查看不同报表.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 408,
+   "file": "408_动态切换年月日查询报表.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 409,
+   "file": "409_JS实现无需点击查询按钮即可自动查询.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 421,
+   "file": "421_查询某个日期前后指定天数的数据.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 422,
+   "file": "422_查询某个日期所在季的季报.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 423,
+   "file": "423_查询某个日期所在周的周报.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 424,
+   "file": "424_根据开始时间_结束时间查询数据.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 534,
+   "file": "534_根据控件值自动匹配数据.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 536,
+   "file": "536_插入和删除行列.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 539,
+   "file": "539_内置SQL提交的值处理.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 542,
+   "file": "542_主从表填报.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 545,
+   "file": "545_JS实现填报自动生成序号并排序.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 546,
+   "file": "546_插入行策略.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 550,
+   "file": "550_跨sheet联动.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 551,
+   "file": "551_简单多sheet填报.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 553,
+   "file": "553_填报分页.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 559,
+   "file": "559_JS实现对控件输入值的及时校验.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 564,
+   "file": "564_自定义校验.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 566,
+   "file": "566_与数据库中数据对比校验.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 567,
+   "file": "567_内置校验.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 595,
+   "file": "595_JS自定义插入和删除行按钮.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 596,
+   "file": "596_JS自定义提交按钮.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 599,
+   "file": "599_文件上传至数据库并下载.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 605,
+   "file": "605_智能添加单元格组.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 608,
+   "file": "608_填报控件数据字典联动.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 611,
+   "file": "611_填报冻结.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 613,
+   "file": "613_填报常用技巧.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 624,
+   "file": "624_JS实现批量选择数据并打印.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 625,
+   "file": "625_实时统计填报页面的有效记录条数.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 761,
+   "file": "761_地产行业通用单选按钮组控件插件.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 768,
+   "file": "768_上传下载文件插件.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1008,
+   "file": "1008_控件默认值.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1010,
+   "file": "1010_复选按钮_复选按钮组控件默认值.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1012,
+   "file": "1012_单选按钮组设置默认值.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1013,
+   "file": "1013_控件动态默认值.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1014,
+   "file": "1014_日期控件动态默认值.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1022,
+   "file": "1022_下拉复选框默认选中全部值.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1024,
+   "file": "1024_下拉复选框实现多值查询.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1026,
+   "file": "1026_单元格控件填报后保留显示值.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1029,
+   "file": "1029_下拉框实现数据字典联动.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1030,
+   "file": "1030_JS对于下拉框数据量大的解决方案.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1031,
+   "file": "1031_下拉框显示多列.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1035,
+   "file": "1035_根据下拉复选框选中个数返回不同值.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1042,
+   "file": "1042_下拉树控件自动构建示例.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1044,
+   "file": "1044_单元格下拉树返回显示值.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1047,
+   "file": "1047_下拉树实现数据集过滤.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1048,
+   "file": "1048_多选下拉树实现不同级别之间的查询.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1050,
+   "file": "1050_下拉树控件普通分层构建示例.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1059,
+   "file": "1059_获取上传文件的名称_类型和大小.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1061,
+   "file": "1061_单选按钮组控制实现是否显示全部.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1083,
+   "file": "1083_双向扩展格导入.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1086,
+   "file": "1086_根据单元格位置匹配.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1089,
+   "file": "1089_根据标题匹配.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1091,
+   "file": "1091_根据位置匹配.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1098,
+   "file": "1098_Excel批量导入插件.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1194,
+   "file": "1194_JS实现参数控件赋值.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1195,
+   "file": "1195_JS根据条件显示参数控件.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1196,
+   "file": "1196_JS实现清空控件内容.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1197,
+   "file": "1197_JS实现日期控件校验.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1199,
+   "file": "1199_JS给参数控件添加水印文字.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1206,
+   "file": "1206_JS实现起始日期编辑后结束日期增加7天.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1207,
+   "file": "1207_JS获取填报单元格值或给单元格赋值.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1210,
+   "file": "1210_JS给文本框赋多个值.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1211,
+   "file": "1211_JS实现点击单选按钮弹出对话框输入值.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1212,
+   "file": "1212_JS限制复选框选中个数.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1213,
+   "file": "1213_JS获取当前编辑行单元格行号.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1215,
+   "file": "1215_JS实现复选按钮控件全选和批量操作.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1218,
+   "file": "1218_JS实现填报校验后返回错误信息.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1219,
+   "file": "1219_JS实现回调函数中自定义提示.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1273,
+   "file": "1273_填报上传图片.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1284,
+   "file": "1284_SQL语句实现下拉框参数联动.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1285,
+   "file": "1285_SQL语句实现下拉复选框参数联动.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1287,
+   "file": "1287_数据集参数的多值查询.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1288,
+   "file": "1288_使用函数实现动态列.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1289,
+   "file": "1289_数据集参数实现动态列.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1394,
+   "file": "1394_JS实现当前页刷新.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1552,
+   "file": "1552_不预览直接后台提交入库.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1554,
+   "file": "1554_决策报表填报.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1608,
+   "file": "1608_Excel导入逻辑设置插件.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1715,
+   "file": "1715_文件数据集参数过滤.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1740,
+   "file": "1740_JS隐藏sheet页.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1754,
+   "file": "1754_JS实现关闭子页面时刷新父页面.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1757,
+   "file": "1757_JS实现点击单选按钮组切换sheet.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1768,
+   "file": "1768_JS实现插入自定义行数.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1781,
+   "file": "1781_JS设置控件焦点.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1796,
+   "file": "1796_JS实现只提交修改过的数据.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1800,
+   "file": "1800_下拉复选框动态多Sheet显示.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1816,
+   "file": "1816_JS实现限制文本框控件文本长度.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1825,
+   "file": "1825_JS实现点击参数面板按钮显示或隐藏数据.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1828,
+   "file": "1828_JS实现使用填报页面的控件查询.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1834,
+   "file": "1834_JS实现报表加载结束后自动滚动到最下方最右侧.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1844,
+   "file": "1844_JS实现子窗口填报后刷新父页面.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1856,
+   "file": "1856_复选框选中行求和.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1862,
+   "file": "1862_下拉框联动之默认选择列表中第1个值.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1863,
+   "file": "1863_JS实现填报数据逻辑删除.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1868,
+   "file": "1868_JS实现填报联动自动生成默认值.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1893,
+   "file": "1893_导入Excel提交前清空数据库表.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1899,
+   "file": "1899_JS实现点击任意位置展现下拉框列表.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1935,
+   "file": "1935_复选控件多值入库不正确.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1939,
+   "file": "1939_下拉树控件默认全选.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1976,
+   "file": "1976_JS实现通过sql一次性获取多个字段.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1980,
+   "file": "1980_JS实现页面加载后默认显示指定sheet页.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 1992,
+   "file": "1992_JS实现自定义按钮快速给参数赋指定范围值.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2025,
+   "file": "2025_关于参数面板不显示的解决方案.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2062,
+   "file": "2062_下拉复选框控件联动并实现动态列.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2066,
+   "file": "2066_Oracle多值查询参数个数限制.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2079,
+   "file": "2079_根据参数值显示不同的列.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2100,
+   "file": "2100_JS获取扩展控件的所有值.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2116,
+   "file": "2116_JS实现自定义选项弹窗.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2129,
+   "file": "2129_自定义插入删除列按钮.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2228,
+   "file": "2228_Excel自定义导入.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2230,
+   "file": "2230_模板常用参数组合.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2231,
+   "file": "2231_JS自定义按钮提交当前行.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2279,
+   "file": "2279_JS实现删除时二次确认.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2310,
+   "file": "2310_日期控件默认值为空.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2311,
+   "file": "2311_Excel多次导入.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2377,
+   "file": "2377_多选下拉树实现多值查询.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2381,
+   "file": "2381_跨sheet数据筛选和联动.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2385,
+   "file": "2385_自定义填报提交按钮并使其变大.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2386,
+   "file": "2386_JS实现点击按钮切换Sheet页.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2394,
+   "file": "2394_下拉框参数为空选择全部.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2395,
+   "file": "2395_下拉复选框参数为空选择全部.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2399,
+   "file": "2399_校验填报页面的数据是否重复.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2498,
+   "file": "2498_下拉框控件实现跳转到指定行.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2499,
+   "file": "2499_下拉复选框多值模糊查询.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2502,
+   "file": "2502_文本控件模糊查询关键字高亮显示.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2511,
+   "file": "2511_JS实现点击按钮打开对话框报表.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2602,
+   "file": "2602_参数控件_Tab_顺序设置插件.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2674,
+   "file": "2674_参数面板位置调整.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2869,
+   "file": "2869_使用UUID自动生成主键.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2930,
+   "file": "2930_选开始时间和结束时间的日周月报.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 2938,
+   "file": "2938_JS_实现动态隐藏参数以及控制参数面板高度.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3014,
+   "file": "3014_查询某个月份的所有日期和星期.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3024,
+   "file": "3024_参数查询数据库任一表.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3032,
+   "file": "3032_联立多字段校验是否与数据库中数据重复.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3060,
+   "file": "3060_JS实现日期控件查询天数控制.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3085,
+   "file": "3085_年份选择控件.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3120,
+   "file": "3120_JS实现参数联动层级限制弹出提示框.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3121,
+   "file": "3121_新多选下拉树控件插件.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3127,
+   "file": "3127_JS实现弹窗后数据回填.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3164,
+   "file": "3164_单张报表内中英文切换.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3244,
+   "file": "3244_参数查询任意数据连接下的任意表.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3246,
+   "file": "3246_定制展示列.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3258,
+   "file": "3258_根据账号控制查询数据权限.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3262,
+   "file": "3262_文本框实现范围查询.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3282,
+   "file": "3282_JS_获取单元格字符串中的数字.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3291,
+   "file": "3291_下拉框模糊搜索精确匹配方案.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3432,
+   "file": "3432_JS实现动态数据库表获取.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3434,
+   "file": "3434_JS实现一键清除填报内容.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3437,
+   "file": "3437_单选按钮组控件的打印_导出.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3458,
+   "file": "3458_无穷区间参数查询.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3491,
+   "file": "3491_网页框控件.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3499,
+   "file": "3499_条件属性实现动态列.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3500,
+   "file": "3500_JS实现按钮文字竖排显示.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3512,
+   "file": "3512_JS实现下拉框选择后复选框默认全选.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3533,
+   "file": "3533_倒计时消息提示框.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3561,
+   "file": "3561_填报常见报错.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3575,
+   "file": "3575_选择月份后获取日期差.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3595,
+   "file": "3595_JS实现填报控件只能填写一次.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3596,
+   "file": "3596_JS实现填报长时间未操作关闭窗口.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3632,
+   "file": "3632_日期控件填报时自动匹配.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3634,
+   "file": "3634_公式实现下拉框参数联动.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3673,
+   "file": "3673_填报时一次插入多行.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3695,
+   "file": "3695_防止填报第一行数据被删除.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3702,
+   "file": "3702_使用公式实现动态行列互转表.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3703,
+   "file": "3703_自定义提交.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3735,
+   "file": "3735_文本域控件实现多值查询.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3749,
+   "file": "3749_数据分析模式动态表头.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3767,
+   "file": "3767_Excel导入建表维护.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3768,
+   "file": "3768_悦享版文件上传下载.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3783,
+   "file": "3783_JS实现下拉复选框默认全选.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3809,
+   "file": "3809_Excel导入显示值转换.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3830,
+   "file": "3830_JS实现动态选择列并查询值.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3839,
+   "file": "3839_JS实现复选按钮组控件默认全选.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3870,
+   "file": "3870_血缘分析.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 3982,
+   "file": "3982_JS实现钻取到子页面进行填报.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4011,
+   "file": "4011_页面交互接口.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4025,
+   "file": "4025_下拉复选框多值提交.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4043,
+   "file": "4043_JS实现填报只校验修改行数据.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4045,
+   "file": "4045_JS实现限制最大插入行数.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4046,
+   "file": "4046_JS实现动态选择数据表提交.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4048,
+   "file": "4048_JS实现记录填报操作.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4049,
+   "file": "4049_JS实现防止重复点击提交.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4053,
+   "file": "4053_JS实现控制提交时间段.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4055,
+   "file": "4055_JS控制单元格控件是否可用_可见.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4056,
+   "file": "4056_JS实现固定插入和删除最后一行_多行.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4058,
+   "file": "4058_填报提交条件.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4061,
+   "file": "4061_JS实现根据控件值自动匹配数据.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4071,
+   "file": "4071_JS实现根据控件值动态插入行.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4105,
+   "file": "4105_JS实现根据当前sheet隐藏参数面板.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4110,
+   "file": "4110_多人填报时如何防止内容覆盖.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4111,
+   "file": "4111_插入删除行后公式失效.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4123,
+   "file": "4123_利用标记字段实现上报审核流程.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4137,
+   "file": "4137_填报调试插件.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4143,
+   "file": "4143_JS实现下拉框悬浮显示实际值.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4148,
+   "file": "4148_下拉框模糊搜索慢的解决方案.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4169,
+   "file": "4169_填报插入数据时自动生成流水号.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4181,
+   "file": "4181_公式实现下拉复选框参数联动.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4196,
+   "file": "4196_Excel增量导入时实现序号自增.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4238,
+   "file": "4238_Excel标记导入.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4245,
+   "file": "4245_JS填报自定义页面校验.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4262,
+   "file": "4262_JS实现防止恶意填报.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4294,
+   "file": "4294_JS实现自定义按钮提交前校验.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4300,
+   "file": "4300_按钮控件过多导致填报页面加载慢.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4331,
+   "file": "4331_单元格下拉树实际值和显示值转化失效.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4450,
+   "file": "4450_图标管理工具.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4498,
+   "file": "4498_控件性能优化插件.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4509,
+   "file": "4509_JS实现一键展开或收起视图树所有节点.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4571,
+   "file": "4571_文本控件校验国际化.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4589,
+   "file": "4589_JS实现下拉框自动展开.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4590,
+   "file": "4590_填报动态隐藏行.cpt",
+   "mode": "row",
+   "n": 2,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 2,
+   "widgets": [
+    {
+     "name": "BUMEN",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "BUMEN"
+    },
+    {
+     "name": "XINGMING",
+     "type": "TextEditor",
+     "row": 1,
+     "col": 2,
+     "param_name": "XINGMING"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4596,
+   "file": "4596_参数赋值规则.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4620,
+   "file": "4620_隐藏参数面板的小箭头.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4627,
+   "file": "4627_控件以711版本的外观展示.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  },
+  {
+   "did": 4629,
+   "file": "4629_参数为空查询特定日期的数据.cpt",
+   "mode": "row",
+   "n": 3,
+   "panel_w": 780,
+   "max_per_row": 3,
+   "first_row_count": 3,
+   "widgets": [
+    {
+     "name": "DIQU",
+     "type": "ComboBox",
+     "row": 1,
+     "col": 1,
+     "param_name": "DIQU"
+    },
+    {
+     "name": "CHANPIN",
+     "type": "ComboCheckBox",
+     "row": 1,
+     "col": 2,
+     "param_name": "CHANPIN"
+    },
+    {
+     "name": "RIQI",
+     "type": "DateEditor",
+     "row": 1,
+     "col": 3,
+     "param_name": "RIQI"
+    }
+   ],
+   "button": {
+    "name": "search",
+    "edge_x": 768,
+    "n_in_label": 0
+   },
+   "hidden_refs": [],
+   "exemption": null
+  }
+ ],
+ "assertions": [
+  {
+   "id": "A0",
+   "expr": "targets[] 必填字段齐且类型对（did:int; file:string; mode:enum; n:int≥1; panel_w:int; max_per_row:int; first_row_count:int; widgets[]:5子段; button:3子段; hidden_refs[]:string; exemption:null|4子段对象）",
+   "violation": "缺失/类型错→契约非法，拒绝派生 targets 产物",
+   "level": "FAIL",
+   "description": "结构合法性（schema 层拦截），对应 B 断言层前置"
+  },
+  {
+   "id": "A1",
+   "expr": "mode ∈ {row, expand, dialog}",
+   "violation": "非法枚举→契约非法，拒绝派生 targets 产物",
+   "level": "FAIL",
+   "description": "mode 枚举合法性"
+  },
+  {
+   "id": "A2",
+   "expr": "n≤max_per_row→row；max_per_row<n≤8→expand；n>8→dialog（max_per_row=constants.max_per_row_formula 对 panel_w 求值，检查器禁自带公式，只做等式复核）",
+   "violation": "违反排布范围→WARN（留人工改判口）",
+   "level": "WARN",
+   "description": "排布范围断言（B:MODE_N），与 QA C3 mode↔n 提示同源"
+  },
+  {
+   "id": "A3",
+   "expr": "∀w∈targets[].widgets[]: w.param_name == w.name",
+   "violation": "双向不一致→FAIL",
+   "level": "FAIL",
+   "description": "同名绑定（§C.3.1-12 / doc-157 §22.1；B:A3_BINDING）"
+  },
+  {
+   "id": "A4",
+   "expr": "button.n_in_label == n − first_row_count（缺失→WARN，写错→FAIL）",
+   "violation": "缺 n_in_label→WARN；等式不成立→FAIL",
+   "level": "WARN/FAIL",
+   "description": "A17 N 公式（§C.3.1-15；B:A17_N），隐藏控件数、JS 引用名数三者同源此式"
+  },
+  {
+   "id": "A5",
+   "expr": "|targets[].hidden_refs| == button.n_in_label == 隐藏控件数（invisible=true 且被展开/弹层 JS 引用）",
+   "violation": "三者不同源→FAIL",
+   "level": "FAIL",
+   "description": "三同源断言（A 独有，expand/dialog 生效；row 全 0 恒真）"
+  },
+  {
+   "id": "A6",
+   "expr": "button.edge_x == 全场最大右缘 ± constants.tolerance_px",
+   "violation": "偏移超容差→FAIL",
+   "level": "FAIL",
+   "description": "按钮右缘断言（§C.3.1-10；B:BTN_EDGE）"
+  },
+  {
+   "id": "A7",
+   "expr": "mode∈{expand,dialog} ⇒ exemption ≠ null 且 exemption.rule_id ∈ {EXPAND_DEFAULT_HIDDEN, MOREFILTER_DIALOG}",
+   "violation": "缺豁免或白名单外 rule_id→FAIL",
+   "level": "FAIL",
+   "description": "豁免完备断言（A 独有；闸门2 §2-7 认可白名单，规则侧按契约条目豁免、不改检查器硬编码，修 A10 豁免缺口）"
+  }
+ ],
+ "qa_semantics": {
+  "levels": {
+   "PASS": "断言成立，记录即可",
+   "WARN": "文案缺 N；mode↔n 违反排布范围；环境假设类警告（17-21 条/件）——不阻塞",
+   "FAIL": "文案 N 写错；A3 声明名≠控件名；按钮偏移>2px；XML 不可解析等门禁破坏类",
+   "SKIP": "非目标件（769 件 C3/C4 口径）"
+  },
+  "exit_codes": {
+   "0": "contract_check 三查全过（准予开工）",
+   "1": "查1 违规：计划先行失效（计划缺失/晚于脚本/plan_sha256 失配）",
+   "2": "查2 违规：合同不完整（字段缺失/空值/拒绝动作枚举非法/断言外键不命中）",
+   "3": "查3 违规：指纹不一致或 QA 语义失配（frozen_inputs 现算≠声明/契约指纹失配/did 集漂移/CONTRACT-SEMANTICS 失配）",
+   "4": "仅存在 WARN（多错并列取最高码；--strict 时 WARN 升为对应查的码）"
+  },
+  "qa_script_exit_codes": {
+   "0": "仅 PASS/SKIP（全过）",
+   "1": "含 FAIL",
+   "2": "仅 WARN"
+  },
+  "disposition": {
+   "routes": [
+    "none",
+    "appendix",
+    "auto_fix",
+    "ask_user",
+    "block"
+   ],
+   "grade_route_map": {
+    "PASS→none": "记录即可",
+    "WARN→appendix": "折叠报告附录，不阻塞",
+    "FAIL(文案N写错/A3/几何偏移)→auto_fix": "即修不升级：修生成器重注入，修后重跑门禁自证并标 resolved",
+    "FAIL(A10豁免缺口类规则争议)→ask_user": "进回收报告「需验收方裁决」清单，echo ≤25 行分组含 file:line，每批 ≤2",
+    "FAIL(破坏门禁的 ERROR，非豁免类)→block": "修复→重跑门禁，禁带病入 manifest_injected"
+   },
+   "fallback": "缺 disposition/不可解析→全按 ask_user",
+   "reclassify_forbidden": true,
+   "auto_fix_escalation": "auto_fix 失败 ≥2 轮→升级独立复核/即停（同错误再现即停）"
+  }
+ },
+ "_field_docs": {
+  "schema_version": "契约版本，const \"3-c3\"（沿 D3 数据契约 v2；B 顶层 1/7）",
+  "generated_at": "契约生成时刻（ISO 秒级），供查1「计划先于脚本」时序参照",
+  "source_fingerprint": "契约派生输入清单＋各自 sha256（可追溯、离线复算）；子字段 inputs[]/derived_from/derived_by",
+  "constants": "布局常量块——04_参数面板.md / LAYOUT_SPEC.md 同名常量的唯一机器源，两份 markdown 降级为注释文档标注「以契约为准」",
+  "constants.widget_w": "控件宽 180px",
+  "constants.widget_h": "控件高 26px",
+  "constants.gap": "控件组间横向间距 20px",
+  "constants.button_w": "查询按钮宽 60px",
+  "constants.tolerance_px": "几何判定容差 ±2px（A6 按钮/越界共用）",
+  "constants.max_per_row_formula": "每行上限公式（B 原文），对 panel_w 求值后写入 targets[].max_per_row，检查器禁自带公式只做等式复核",
+  "targets": "目标数组，225 目标每目标一条（did 68..4652 无重复）；与 flat_targets/_c3_targets did 集 1:1",
+  "targets[].did": "文档 ID，整数（主键）",
+  "targets[].file": "文件名（<did>_<标题>.cpt），string",
+  "targets[].mode": "注入模式，enum {row, expand, dialog}（A1）",
+  "targets[].n": "控件组数＝非按钮命名控件数，int ≥1（A0）",
+  "targets[].panel_w": "面板宽：DesignAttr@width，退 Design_Width@design_width，int",
+  "targets[].max_per_row": "每行上限＝常量公式对 panel_w 求值结果，int（A2 用）",
+  "targets[].first_row_count": "首行控件组数＝y 最小(±1px)非按钮集合数，int（A4 用）",
+  "targets[].widgets": "控件组数组，长度应 == n（A0）；元素 5 子段见 widgets[].*",
+  "targets[].widgets[].name": "控件名（widgetName），全大写唯一（QA C3 同口径）",
+  "targets[].widgets[].type": "控件类型＝XML class 短名（如 ComboBox/DateEditor），由 injected 实件提取",
+  "targets[].widgets[].row": "行号，从 1 起（y ±1px 同行聚类）",
+  "targets[].widgets[].col": "行内列号，从 1 起（x 升序）",
+  "targets[].widgets[].param_name": "声明参数名，必须 == name（A3 同名绑定）",
+  "targets[].button": "查询按钮块，3 子段见 button.*",
+  "targets[].button.name": "语义名，const \"search\"",
+  "targets[].button.edge_x": "按钮右缘 x＝按钮 x+w（全场最右，A6 ±2px）",
+  "targets[].button.n_in_label": "按钮文案声明的展开/弹层引用数＝n − first_row_count（A4/A5 用）",
+  "targets[].hidden_refs": "展开/弹层 JS 引用名数组（getWidgetByName 实参，A 独有），|hidden_refs|==n_in_label==隐藏控件数（A5）",
+  "targets[].exemption": "null=无豁免；对象=豁免条目，4 子段见 exemption.*（A7）",
+  "targets[].exemption.rule_id": "豁免规则 ID，enum {EXPAND_DEFAULT_HIDDEN, MOREFILTER_DIALOG}（闸门2 §2-7 认可白名单）",
+  "targets[].exemption.basis": "豁免依据（条款/备案号），string",
+  "targets[].exemption.approved_by": "批准方，string",
+  "targets[].exemption.expires": "有效期（ISO 日期），string",
+  "assertions": "全局断言集，A0-A7 共 8 条（B 4 条∪A 独有 4 条）；公式的解释权归契约，不从 prose 重推",
+  "assertions[].id": "断言标识 A0..A7（gates[].assertion_ids 外键引用此处）",
+  "assertions[].expr": "断言表达式（机器可校验口径）",
+  "assertions[].violation": "违反后果（档位/动作）",
+  "assertions[].level": "违反档位：FAIL / WARN / WARN-FAIL 双档（A4）",
+  "assertions[].description": "断言的人类可读说明与出处",
+  "qa_semantics": "QA 语义块（B:qa_semantics∪A 五码）：档位/退出码/disposition 语义的唯一契约源；QA 脚本头 CONTRACT-SEMANTICS 注释块自报须与此一致（查3 校验）",
+  "qa_semantics.levels": "档位集 {PASS, WARN, FAIL, SKIP} 及语义（SKIP=非目标 769 件 C3/C4 口径）",
+  "qa_semantics.exit_codes": "contract_check 五码 0-4（闸门2 §2-3 采 A 五码；多错取最高并在 stdout 全列）",
+  "qa_semantics.qa_script_exit_codes": "c3_qa_check.py 自身退出码 0/1/2（沿 fr_check 约定），查3 与脚本头 CONTRACT-SEMANTICS 自报比对",
+  "qa_semantics.disposition": "disposition 五 route（闸门2 §2-4）：grade→route 映射、兜底 ask_user、禁执行方重分类、auto_fix 升级条款"
+ }
+}

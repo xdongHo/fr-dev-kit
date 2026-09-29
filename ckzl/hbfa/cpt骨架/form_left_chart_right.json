@@ -1,0 +1,36 @@
+{
+ "id": "form_left_chart_right",
+ "name": "表单左+图表右",
+ "engine": "cpt",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1200,
+  "height": 800,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "120列×60行×5px格, 合并单元格布局",
+ "containers": [
+  {
+   "title": "明细表",
+   "type": "form",
+   "x": 0,
+   "y": 0,
+   "w": 40,
+   "h": 100,
+   "components": "表"
+  },
+  {
+   "title": "分析图",
+   "type": "chart_group",
+   "x": 40,
+   "y": 0,
+   "w": 60,
+   "h": 100,
+   "components": "柱形图"
+  }
+ ],
+ "file": "form_left_chart_right.cpt",
+ "note": "40/60: 栅格5×1",
+ "structure": "cpt(可导出): 120×60细网格(5px格,格值190500=FU.valueOfPix(5,96))合并单元格布局, 每容器=标题带6行+图表区, 剩余细格可加元素"
+}

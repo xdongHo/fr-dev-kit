@@ -1,0 +1,15 @@
+needs_clarification: "W915评估: 页面主指标聚合口径未消歧(测 G0 拒编译-根级键形态)"
+# W915 泳道(A8_eval)新增夹具: 与 clarify_page.yaml 同构, 差异化断言两点——
+#   1) 澄清问题清单把根级 needs_clarification 的原文透传打印
+#   2) 值内联 [NEEDS CLARIFICATION: ...] 第二形态同样被 G0 扫出
+# 编译应 rc=3 且产物不落盘; 本文件只增不改, 原始 examples 零接触
+page: 组织面板演示
+archetype: panel_org
+filters:
+  org: {cascade: [legal, bu, region, plant]}
+  entity: readonly
+  hfm: hidden_url_params
+blocks: []
+options: {}
+output: 组织面板演示.cpt
+note: "组织面板页（W915 内联形态: [NEEDS CLARIFICATION: W915评估-内联标记-口径来源未定]）"

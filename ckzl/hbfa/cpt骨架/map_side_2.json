@@ -1,0 +1,45 @@
+{
+ "id": "map_side_2",
+ "name": "地图+侧栏双图",
+ "engine": "cpt",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1400,
+  "height": 900,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "120列×60行×5px格, 合并单元格布局",
+ "containers": [
+  {
+   "title": "全球流向",
+   "type": "chart_group",
+   "x": 0,
+   "y": 0,
+   "w": 60,
+   "h": 100,
+   "components": "地图"
+  },
+  {
+   "title": "区域占比",
+   "type": "chart",
+   "x": 60,
+   "y": 0,
+   "w": 40,
+   "h": 50,
+   "components": "饼图"
+  },
+  {
+   "title": "TOP排名",
+   "type": "chart",
+   "x": 60,
+   "y": 50,
+   "w": 40,
+   "h": 50,
+   "components": "条形图"
+  }
+ ],
+ "file": "map_side_2.cpt",
+ "note": "大图60%+右栏40%: 栅格5×2",
+ "structure": "cpt(可导出): 120×60细网格(5px格,格值190500=FU.valueOfPix(5,96))合并单元格布局, 每容器=标题带6行+图表区, 剩余细格可加元素"
+}

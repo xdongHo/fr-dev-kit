@@ -1,0 +1,54 @@
+{
+ "id": "frm_big_top_3small",
+ "name": "FRM大图上三小下",
+ "engine": "frm",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "4占位网页框(RHIframe)",
+ "containers": [
+  {
+   "title": "主图",
+   "type": "chart_group",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 60,
+   "components": "地图"
+  },
+  {
+   "title": "柱形",
+   "type": "chart",
+   "x": 0,
+   "y": 60,
+   "w": 40,
+   "h": 40,
+   "components": "柱形图"
+  },
+  {
+   "title": "饼图",
+   "type": "chart",
+   "x": 40,
+   "y": 60,
+   "w": 30,
+   "h": 40,
+   "components": "饼图"
+  },
+  {
+   "title": "条形",
+   "type": "chart",
+   "x": 70,
+   "y": 60,
+   "w": 30,
+   "h": 40,
+   "components": "条形图"
+  }
+ ],
+ "file": "frm_big_top_3small.frm",
+ "note": "自适应: BodyLayoutType=0 等比 | 60/40",
+ "structure": "frm(占位壳): Center内RHIframe占位网格(空RHIframeAttr), 设计器里选组件路径即挂 组件模板/图表组件-*.cpt"
+}

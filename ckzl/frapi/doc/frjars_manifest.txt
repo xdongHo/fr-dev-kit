@@ -1,0 +1,19 @@
+# FR 10.0 依赖 JAR 列表
+# 从 FineReport_10.0/lib/ 下收集，以下为必需 jar：
+
+# ── 核心引擎 ──
+1_fine-report-engine-10.0.jar
+2_fine-core-10.0.jar
+3_fine-third-10.0.jar
+4_fine-accumulator-10.0.jar
+
+# ── 其他依赖（classpath 通配符 C:/frjars/* 自动加载）──
+# 所有 jar 需硬链接或复制到 C:/frjars/ 扁平目录
+
+# ── 准备方法 ──
+# Windows (PowerShell, 管理员):
+#   cd "C:\Program Files\FineReport_10.0\lib"
+#   Get-ChildItem *.jar | ForEach-Object { New-Item -ItemType HardLink -Path "C:\frjars\$($_.Name)" -Target $_.FullName }
+
+# 验证:
+#   ls C:/frjars/*.jar | Measure-Object | Select-Object Count

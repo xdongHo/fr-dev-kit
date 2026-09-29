@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report class="com.fr.report.report.WorkSheet" version="3.5.5">
+<ReportWebAttr>
+<WebPageContent value=""/>
+</ReportWebAttr>
+<ReportParameterAttr class="com.fr.report.report.ReportParameterAttr">
+<Parameters>
+<Parameter name="p_wrap" class="com.fr.parameters.parameter"><Attributes name="p_wrap"/><O><![CDATA[1]]></O></Parameter>
+</Parameters>
+<Parameter name="p_bare" class="com.fr.parameters.parameter"><Attributes name="p_bare"/><O><![CDATA[2]]></O></Parameter>
+<Attributes showWidget="true"/>
+<ParameterUI class="com.fr.form.parameter.ParameterUI">
+<Layout class="com.fr.form.ui.container.WParameterLayout">
+<Widget class="com.fr.form.ui.ComboBox" name="p_wrap">
+<WidgetName name="p_wrap"/>
+</Widget>
+<Widget class="com.fr.form.ui.ComboBox" name="p_bare">
+<WidgetName name="p_bare"/>
+</Widget>
+<Widget class="com.fr.form.ui.FreeButton" name="btn_import">
+<WidgetName name="btn_import"/>
+<WidgetAttr widgetName="btn_import"/>
+</Widget>
+<Widget class="com.fr.form.ui.FreeButton" name="Search">
+<WidgetName name="Search"/>
+</Widget>
+<Widget class="com.fr.form.ui.FreeButton" name="btn_submit">
+<WidgetName name="btn_submit"/>
+</Widget>
+</Layout>
+</ParameterUI>
+</ReportParameterAttr>
+<TableData name="ds_1" class="com.fr.data.impl.DBTableData">
+<Parameters>
+<Parameter name="ds_p" class="com.fr.parameters.parameter"><Attributes name="ds_p"/><O><![CDATA[a]]></O></Parameter>
+<Parameter class="com.fr.parameters.parameter"><Attributes name="ds_p2"/><O><![CDATA[b]]></O></Parameter>
+</Parameters>
+<Attributes maxMemRowCount="-1"/>
+<Connection class="com.fr.data.impl.NameDatabaseConnection"><DatabaseName>conn_x</DatabaseName></Connection>
+<Query><![CDATA[select * from t where 1=1 ${if(len(ds_p)==0,"","and c1='"+ds_p+"'")} ${if(len(ds_p2)==0,"","and c2='"+ds_p2+"'")} ${if(len(p_wrap)==0,"","and c3='"+p_wrap+"'")} ${if(len(p_bare)==0,"","and c4='"+p_bare+"'")} ${if(LEN(ds_p)==0,"","and c5>0")}]]></Query>
+</TableData>
+<Report class="com.fr.report.report.WorkSheet">
+<Widget class="com.fr.form.ui.ComboBox" name="p_wrap"><WidgetName name="p_wrap"/></Widget>
+</Report>
+<StyleCollection/>
+</Report>

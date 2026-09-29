@@ -1,0 +1,36 @@
+{
+ "id": "frma_two_cols",
+ "name": "绝对·左右双栏",
+ "engine": "frm",
+ "frm_mode": "absolute",
+ "canvas": {
+  "width": 1280,
+  "height": 720,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "2占位网页框(RHIframe)",
+ "containers": [
+  {
+   "title": "左图",
+   "type": "chart_group",
+   "x": 0,
+   "y": 0,
+   "w": 50,
+   "h": 100,
+   "components": "柱形图"
+  },
+  {
+   "title": "右图",
+   "type": "chart_group",
+   "x": 50,
+   "y": 0,
+   "w": 50,
+   "h": 100,
+   "components": "折线图"
+  }
+ ],
+ "file": "frma_two_cols.frm",
+ "note": "绝对: BodyLayoutType=1, px=%×1920×1080 | 绝对布局: BoundsWidget 像素 = 百分比 × 1920×1080",
+ "structure": "frm(绝对v8/API构建): Center=WFitLayout > absolute0(WAbsoluteLayout+DesignResolution 1280×720) > RHIframe占位(用户权威样本同构)"
+}

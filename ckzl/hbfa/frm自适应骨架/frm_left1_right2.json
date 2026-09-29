@@ -1,0 +1,45 @@
+{
+ "id": "frm_left1_right2",
+ "name": "FRM左主右双",
+ "engine": "frm",
+ "frm_mode": "adaptive",
+ "canvas": {
+  "width": 1920,
+  "height": 1080,
+  "margin": 12,
+  "gap": 8
+ },
+ "grid": "3占位网页框(RHIframe)",
+ "containers": [
+  {
+   "title": "地图",
+   "type": "chart_group",
+   "x": 0,
+   "y": 0,
+   "w": 50,
+   "h": 100,
+   "components": "地图"
+  },
+  {
+   "title": "饼图",
+   "type": "chart",
+   "x": 50,
+   "y": 0,
+   "w": 50,
+   "h": 50,
+   "components": "饼图"
+  },
+  {
+   "title": "条形",
+   "type": "chart",
+   "x": 50,
+   "y": 50,
+   "w": 50,
+   "h": 50,
+   "components": "条形图"
+  }
+ ],
+ "file": "frm_left1_right2.frm",
+ "note": "自适应: BodyLayoutType=0 等比 | 大图+右侧双辅",
+ "structure": "frm(占位壳): Center内RHIframe占位网格(空RHIframeAttr), 设计器里选组件路径即挂 组件模板/图表组件-*.cpt"
+}

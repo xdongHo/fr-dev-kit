@@ -1,0 +1,4685 @@
+# 知识库索引 — 由 kfgj/sync_kb_index.py 自动生成，请勿手动编辑
+# 最后同步: 2026-09-29 16:58:12
+# 大模型读取此文件来定位知识，不要直接读取细节文件
+
+version: "2026-09-29"
+total_files: 517
+total_lines: 81778
+total_bytes: 6379869
+
+stages:
+  api: 1
+  api-reference: 3
+  canvas-skeleton: 1
+  ckzl: 1
+  collaboration: 3
+  data-analysis: 1
+  deep-learn: 235
+  dsl: 1
+  error-analysis: 12
+  external-resources: 1
+  formatting: 6
+  fr11-knowledge: 67
+  frontend: 13
+  fvs-dashboard大屏: 1
+  gui-tracing: 1
+  i18n: 7
+  iron-rules: 1
+  java-examples: 1
+  jcxt: 1
+  kfgj: 9
+  output: 1
+  pipeline: 55
+  pipeline-node: 12
+  render-preview: 5
+  report-building: 2
+  requirements: 2
+  root: 8
+  template: 1
+  testing: 4
+  tool: 50
+  tools: 1
+  workflow-node: 10
+
+nodes:
+  - path: "AGENTS.md"
+    title: "AGENTS.md — FR 报表模板开发工具包（comm 版）"
+    stage: root
+    tags: []
+    keywords: ["版", "FR", "AGENTS", "报表模板开发工具包"]
+    summary: "1. **初始化用户环境**：`python kfgj/init_user_env.py` —— 检测 `%USERPROFILE%\\.fr_dev_kit\\`"
+    lines: 197
+
+  - path: "README.md"
+    title: "fr_dev_kit v3.0 comm README(共享版导航入口)"
+    stage: root
+    tags: ["README", "导航", "共享版", "快速开始", "目录速览"]
+    keywords: ["comm版", "共享版", "快速开始", "自检", "guard.py", "混合检索", "目录结构", "AGENTS.md", "收尾闸门"]
+    summary: "共享版工具包的 README 导航入口：三步快速开始(配环境/配检索/selftest)、标准工作循环、4 分类目录速览、常用命令速查与维护流程。权威入口仍是 AGENTS.md，两者不一致以 AGENTS.md 为准。"
+    lines: 88
+    has_kb_index: true
+
+  - path: "ckzl/bb/CHANGELOG.md"
+    title: "CHANGELOG — fr_dev_kit 能力面变更日志"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["kfgj", "ckzl", "jcxt", "AGENTS", "evals", "key"]
+    summary: "> 本文件管**能力面变更**（新增/变更/废弃/兼容声明/实验能力），每版一节，节标题用日期版号。 > 版本号规则：v<大版本>-<YYYYMMDD>；实验能力连续两个版本无变更且通过周体检 → 转 stable。"
+    lines: 169
+    has_kb_index: true
+
+  - path: "ckzl/bb/外部依赖与归档声明.md"
+    title: "外部依赖与归档声明（开源版）"
+    stage: ckzl
+    tags: []
+    keywords: ["开源版", "外部依赖与归档声明"]
+    summary: "KB_INDEX: 外部依赖与归档声明 — 开源版哪些引用指向套件外的历史工作区"
+    lines: 45
+
+  - path: "ckzl/frapi/doc/API验证记录_2026-07-31.md"
+    title: "FR 10.0 API 验证记录（2026-07-31）"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["返回", "API", "String", "TemplateWorkBook", "TemplateWorkBookIO", "writeTemplateWorkBook"]
+    summary: "| 条目 | 结论 | |------|------| | `JavaScriptImpl.getContent()` | ✅ 返回 `String` | | `Button.getText()` | ✅ 继承自 `Button`，返回 `"
+    lines: 52
+    has_kb_index: true
+
+  - path: "ckzl/frapi/doc/ChartPainter图表画笔_API条目.md"
+    title: "ChartPainter 图表画笔 API 条目"
+    stage: api
+    tags: ["Java API", "ChartPainter", "图表", "com.fr.chart"]
+    keywords: ["ChartPainter", "图表画笔", "绘图", "chart"]
+    summary: "ChartPainter（图表画笔）API 零件条目：类名/方法签名/坑位与验证标记，供查询 com.fr 图表绘制 API 时命中。"
+    lines: 62
+    has_kb_index: true
+
+  - path: "ckzl/frapi/doc/JavaAPI构建速查.md"
+    title: "Java API 构建速查"
+    stage: report-building
+    tags: ["JavaAPI", "速查", "com.fr"]
+    keywords: ["Java", "API", "构建", "com.fr"]
+    summary: "FR Java API 构建要点速查:类名 com.fr.* / 方法签名 / 与 .cpt/.frm XML 的对应关系,按 doc 分节"
+    lines: 881
+    has_kb_index: true
+
+  - path: "ckzl/frapi/doc/README.md"
+    title: "ckzl/frapi/doc"
+    stage: api-reference
+    tags: ["API", "Java", "包名速查"]
+    keywords: ["包名速查", "TemplateWorkBookIO", "DBTableData", "ConfigurationActivator"]
+    summary: "FR 10.0 Java API 文档索引：包名速查表、验证记录、参数面板格式化 API 清单、设计器建表 SQL 执行"
+    lines: 81
+    has_kb_index: true
+
+  - path: "ckzl/frapi/doc/参数面板格式化API清单.md"
+    title: "FR 10.0 Java API — 参数面板格式化脚本参考"
+    stage: api-reference
+    tags: ["API清单", "参数面板", "格式化", "Java"]
+    keywords: ["ParameterUI", "BoundsAttr", "setDesignWidth", "控件定位", "保存"]
+    summary: "参数面板格式化的 FR Java API 清单：读取→重排 bounds→设置面板尺寸→保存的完整方法签名"
+    lines: 350
+    has_kb_index: true
+
+  - path: "ckzl/frapi/doc/参数面板格式化器/README.md"
+    title: "参数面板格式化器（FR Java API 版）"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["ParamPanelFormatter", "java", "Designer", "API", "XML", "lib"]
+    summary: "> 2026-08-05 新增。目的：用 FR Java API 操作模板对象完成参数面板格式化， > 替代 Python 正则脚本（正则改 XML 易损坏模板完整性）。"
+    lines: 59
+    has_kb_index: true
+
+  - path: "ckzl/frapi/doc/设计器建表SQL执行.md"
+    title: "设计器内执行 SQL（含建表）的 UI 路径与 Java API"
+    stage: api-reference
+    tags: ["建表", "SQL执行", "DBTableData", "extra session"]
+    keywords: ["SQLEditPane", "PreviewPerformedSqlPane", "DBTableData", "NameDatabaseConnection", "extra session"]
+    summary: "数据连接→SQL 编辑器→预览执行建表的 GUI 路径与对应 Java API 链路，以及 extra session 自动化的硬限制"
+    lines: 90
+    has_kb_index: true
+
+  - path: "ckzl/frapi/ex/README.md"
+    title: "ckzl/frapi/ex"
+    stage: java-examples
+    tags: ["Java", "示例代码", "编译"]
+    keywords: ["AltRowTest", "CptStyleOptimizer", "示例"]
+    summary: "FR Java API 可编译示例代码（AltRowTest/CptStyleOptimizer），含编译与运行说明"
+    lines: 30
+    has_kb_index: true
+
+  - path: "ckzl/gf/FR_HEADLESS_GUIDE.md"
+    title: "FR Headless 模板开发指南 — 主路由"
+    stage: root
+    tags: ["主路由", "铁律", "任务路由表", "流水线全景"]
+    keywords: ["铁律A-AD", "任务路由表", "水印式布局", "一键格式化", "DeleteConfig", "级联SQL"]
+    summary: "FR 模板开发知识库总入口：全局铁律 A-AH（A-K 核心 + L-AH 专项）+ 任务路由表 + 流水线全景；收尾强制项见 kfgj/EXEC_CONTRACT.md"
+    lines: 182
+    has_kb_index: true
+
+  - path: "ckzl/gf/bjys.md"
+    title: "布局样式美化-统一规范(最终版)"
+    stage: root
+    tags: ["样式", "布局", "美化", "FRM", "CPT", "配色", "定稿"]
+    keywords: ["画布1280x720", "微软雅黑", "配色", "标题块", "KPI卡片", "参数面板布局", "单元格样式", "列宽", "圆角", "隔行变色"]
+    summary: "FRM驾驶舱+CPT报表的布局/样式/美化统一规范,收敛散落各处的样式定稿。开发前期专注功能,样式收尾阶段按本规范统一应用。默认样式已落地为脚本(见kfgj/fzpy/frm_apply_style)。"
+    lines: 130
+    has_kb_index: true
+
+  - path: "ckzl/gf/jcfz.md"
+    title: "任务决策树-扩展分支(官方文档沉淀)"
+    stage: root
+    tags: ["非核心", "决策树", "官方文档沉淀"]
+    keywords: ["排序", "打印", "权限", "图表", "定时调度", "联动", "公式", "扩展图表"]
+    summary: "从 AGENTS.md §2 拆出的官方文档持续学习沉淀的决策分支:排序/打印/权限/图表/定时调度/联动/公式/扩展图表等。日常开发按需查对应分支。"
+    lines: 166
+    has_kb_index: true
+
+  - path: "ckzl/gf/xjqx.md"
+    title: "行级数据权限控制模式"
+    stage: error-analysis
+    tags: ["权限", "行级数据隔离", "实战验证"]
+    keywords: ["行级权限", "plant", "plant_code", "fine_username", "TopVerifier", "FormulaCondition", "auth_base", "权限映射表", "is_admin", "inarray", "value函数"]
+    summary: "按登录用户工厂(plant)授权的行级数据权限三层防护模式（原 AGENTS.md §2.1，2026-08-12 实战验证，2026-08-20 v3 拆出）：SQL WHERE 权限子查询 + FormulaCondition 提交条件 + TopVerifier 校验提示"
+    lines: 148
+    has_kb_index: true
+
+  - path: "ckzl/gf/yspj.md"
+    title: "官方文档沉淀增补-验收与判级"
+    stage: error-analysis
+    tags: ["官方文档", "验收", "判级"]
+    keywords: ["魔数校验", "导出校验", "插件清单", "plugin_manifest", "JS控件名校验", "getWidget", "验收断言", "无JavaAPI", "四步全0", "文档消化", "图缺口"]
+    summary: "官方文档持续学习沉淀的验收断言与判级强化细则（原 AGENTS.md §1.2 2026-08 增补块，2026-08-20 v3 拆出）。创建/导出/插件交付任务验收前必读"
+    lines: 84
+    has_kb_index: true
+
+  - path: "ckzl/gf/zxzt.md"
+    title: "任务路由-专项主题"
+    stage: root
+    tags: ["路由", "专项主题", "边界外"]
+    keywords: ["定时调度", "排序", "联动", "邮件", "集群", "自定义函数", "移动端", "插件", "皮肤", "画布", "边界外", "理解级", "专项路由"]
+    summary: "专项主题路由表+kit边界外主题清单+非核心目录速查（原 AGENTS.md §3 后半+§3.1+§6 非核心行，2026-08-20 v3 拆出）。查专项功能路由或判定主题是否 kit 边界外时读"
+    lines: 201
+    has_kb_index: true
+
+  - path: "ckzl/gf/铁律速查.md"
+    title: "全局铁律速查（A-K核心档 + L-AH专项档）"
+    stage: iron-rules
+    tags: ["铁律", "⭐高频", "全局强制", "拆分自主路由"]
+    keywords: ["铁律", "全局铁律", "iron rules", "文件操作安全", "DSColumn", "字体样式", "备份验证"]
+    summary: "全局铁律唯一权威正文（自 FR_HEADLESS_GUIDE.md 拆出 2026-09-29）：A-K 核心档每任务必读 + L-AH 专项档按主题命中；主路由保留分节速查目录"
+    lines: 403
+    has_kb_index: true
+
+  - path: "ckzl/gzjd/00_工作流节点导航.md"
+    title: "ckzl/gzjd导航(操作指南入口)"
+    stage: root
+    tags: ["入口", "路由", "决策树", "节点式工作流"]
+    keywords: ["ckzl/gzjd", "判定题", "选择题", "路由", "懒加载"]
+    summary: "报表开发按ckzl/gzjd加载知识:判定题定向 → 节点自包含(知识点/Java API/错误/验证) → 弱关联按需加载,不一次性关联无关知识"
+    lines: 102
+    has_kb_index: true
+
+  - path: "ckzl/gzjd/01_需求与数据判定.md"
+    title: "需求与数据判定"
+    stage: workflow-node
+    tags: ["ckzl/gzjd", "需求", "数据", "字段", "判定"]
+    keywords: ["想要什么", "字段清单", "报表类型", "业务形态"]
+    summary: "判断报表类型与业务形态,理清数据/字段/想要什么"
+    lines: 95
+    has_kb_index: true
+
+  - path: "ckzl/gzjd/02_数据集.md"
+    title: "数据集"
+    stage: workflow-node
+    tags: ["ckzl/gzjd", "数据集", "SQL", "级联", "数据字典"]
+    keywords: ["DBTableData", "EmbeddedTableData", "SQL", "级联参数"]
+    summary: "SQL 设计、级联参数、数据字典、数据集类型选型"
+    lines: 109
+    has_kb_index: true
+
+  - path: "ckzl/gzjd/03_参数面板.md"
+    title: "参数面板"
+    stage: workflow-node
+    tags: ["ckzl/gzjd", "参数面板", "控件", "布局"]
+    keywords: ["ComboBox", "DateEditor", "YearControl", "参数面板布局", "默认值"]
+    summary: "控件选型、布局、默认值、标签宽度、级联控件"
+    lines: 110
+    has_kb_index: true
+
+  - path: "ckzl/gzjd/04_报表主体_明细展示.md"
+    title: "报表主体-明细展示"
+    stage: workflow-node
+    tags: ["ckzl/gzjd", "单元格", "样式", "行高", "分页", "冻结"]
+    keywords: ["单元格", "样式", "FU换算", "冻结窗格", "排序"]
+    summary: "单元格构建、样式、行高、冻结、分页、排序"
+    lines: 119
+    has_kb_index: true
+
+  - path: "ckzl/gzjd/05_填报模块.md"
+    title: "填报模块"
+    stage: workflow-node
+    tags: ["ckzl/gzjd", "填报", "提交", "校验", "导入"]
+    keywords: ["BuiltInSQLSubmiter", "填报控件", "数据校验", "导入Excel"]
+    summary: "填报控件、提交配置、校验、导入、去重"
+    lines: 97
+    has_kb_index: true
+
+  - path: "ckzl/gzjd/06_图表模块.md"
+    title: "图表模块"
+    stage: workflow-node
+    tags: ["ckzl/gzjd", "图表", "Chart", "数据绑定"]
+    keywords: ["图表", "数据绑定", "图表样式", "图表联动"]
+    summary: "图表类型选型、数据绑定、样式、联动"
+    lines: 159
+    has_kb_index: true
+
+  - path: "ckzl/gzjd/07_导入导出.md"
+    title: "导入导出"
+    stage: workflow-node
+    tags: ["ckzl/gzjd", "导出", "导入", "Excel", "Word"]
+    keywords: ["导出", "Excel", "Word", "大数据导出", "分页"]
+    summary: "Excel/Word/PDF 导出、大数据导出、导入"
+    lines: 113
+    has_kb_index: true
+
+  - path: "ckzl/gzjd/08_交互联动.md"
+    title: "交互联动"
+    stage: workflow-node
+    tags: ["ckzl/gzjd", "超链", "JS", "联动", "交互"]
+    keywords: ["超级链接", "JavaScript", "联动", "动态参数", "op参数"]
+    summary: "超链、JS 回调、单元格/图表联动、动态参数"
+    lines: 118
+    has_kb_index: true
+
+  - path: "ckzl/gzjd/09_FRM决策报表.md"
+    title: "FRM 决策报表"
+    stage: workflow-node
+    tags: ["ckzl/gzjd", "FRM", "决策报表", "组件"]
+    keywords: ["决策报表", "组件", "布局", "跨块联动"]
+    summary: "组件化布局、跨块联动、决策报表对象"
+    lines: 117
+    has_kb_index: true
+
+  - path: "ckzl/gzjd/10_预览与验证.md"
+    title: "预览与验证"
+    stage: workflow-node
+    tags: ["ckzl/gzjd", "验证", "预览", "错误", "移动端"]
+    keywords: ["fr_check", "验证清单", "移动端", "错误排查"]
+    summary: "验证清单、错误排查、移动端适配"
+    lines: 115
+    has_kb_index: true
+
+  - path: "ckzl/hbfa/README.md"
+    title: "ckzl/hbfa(报表骨架库)"
+    stage: canvas-skeleton
+    tags: ["画布布局", "骨架", "模板", "导航"]
+    keywords: ["骨架", "cpt模板", "frm模板", "画布布局", "布局方案", "WTitleLayout", "合并单元格", "dashboard", "驾驶舱"]
+    summary: "60套可视化报表骨架(cpt20+frm自适应20+frm绝对20)+配置JSON:agent开发可视化报表/图表/驾驶舱时从此选骨架,标题用表格/标题栏承载(非图表自身标题)"
+    lines: 159
+    has_kb_index: true
+
+  - path: "ckzl/lc/00_需求分析流水线.md"
+    title: "Stage 0: 需求分析流水线 (Excel 需求确认清单)"
+    stage: pipeline
+    tags: ["需求分析", "需求确认", "Excel", "req_workbook", "表样", "流水线"]
+    keywords: ["需求确认清单", "req_workbook", "物料信息", "示例数据", "SQL逻辑", "表样", "参数面板5行", "frm画布式表样", "数据集字段引用", "ds.field", "公式引用", "逆向生成", "单一事实源"]
+    summary: "开发工艺流程(Stage 1-11)前置的需求分析流水线: Excel 需求确认清单为单一事实源, 且是运维交付文档(frdoc 归档盘点)的种子(交付反推矩阵§1.2)。结构: 需求总览九区(项目与责任三方/报表清单/表资源表结构实测/数据集/参数/填报交互权限/业务口径/运行运维要素/确认记录) + 实体表样例页T_(字段类型+原始数据) + 数据集示例数据页 + SQL逻辑页 + 表样页(cpt=网格+顶部5行参数面板; frm=画布式合并单元格)。req_workbook.py 逆向生成: FS预算940公式引用+352905行实测/detail填报主键超链提取/dashboard 63组件 实证。"
+    lines: 140
+    has_kb_index: true
+
+  - path: "ckzl/lc/01_Java_API包名速查.md"
+    title: "Stage 3 · Java API 正确包名速查"
+    stage: pipeline
+    tags: ["单元格", "样式", "行高", "冻结"]
+    keywords: ["Java API", "包名", "类名", "报表构建"]
+    summary: "验证过的 Java API 正确包名速查表（报表构建选型第一步）"
+    lines: 175
+    has_kb_index: true
+
+  - path: "ckzl/lc/01_Web属性.md"
+    title: "Stage 6 · Web 属性"
+    stage: pipeline
+    tags: ["CSS", "Web", "工具栏", "注入"]
+    keywords: ["Web属性", "ReportWebAttr", "工具栏", "分页预览", "页面框架"]
+    summary: "Web 属性配置（ReportWebAttr）：分页预览/填报页面/数据分析三态设置、工具栏按钮、页面框架"
+    lines: 287
+    has_kb_index: true
+
+  - path: "ckzl/lc/01_参数面板基础与布局.md"
+    title: "Stage 4 · 参数面板基础与布局自动化"
+    stage: pipeline
+    tags: ["参数面板", "控件", "布局", "级联"]
+    keywords: ["参数面板", "水印式", "YearControl", "LAYOUT_SPEC", "面板加宽", "widen_all"]
+    summary: "参数面板结构（水印无 Label 默认方案、Label 分支、YearControl 模板）与 LAYOUT_SPEC 布局自动化规范"
+    lines: 208
+    has_kb_index: true
+
+  - path: "ckzl/lc/01_填报提交.md"
+    title: "Stage 5 · 填报提交"
+    stage: pipeline
+    tags: ["填报", "提交", "JS交互", "工具栏"]
+    keywords: ["填报提交", "Insert", "Delete", "IntelliDML", "delete_flag", "审计字段", "智能提交"]
+    summary: "填报提交配置：Insert/Delete/IntelliDML、delete_flag 先删后插、审计字段、智能提交"
+    lines: 167
+    has_kb_index: true
+
+  - path: "ckzl/lc/01_开发环境搭建.md"
+    title: "Stage 1 · 开发环境搭建"
+    stage: pipeline
+    tags: ["环境", "工具链", "编译", "FR安装"]
+    keywords: ["开发环境", "JDK", "classpath", "设计器", "工具链", "jxbrowser"]
+    summary: "FR 安装目录、JDK、编译 Java 扩展的 classpath 与常用工具链"
+    lines: 249
+    has_kb_index: true
+
+  - path: "ckzl/lc/01_数据集构建.md"
+    title: "Stage 2 · 数据集构建"
+    stage: pipeline
+    tags: ["数据集", "SQL", "级联", "参数"]
+    keywords: ["数据集", "EmbeddedTableData", "DBTableData", "SQL", "字段映射"]
+    summary: "EmbeddedTableData/DBTableData 数据集构建、字段映射、SQL 数据集规范"
+    lines: 169
+    has_kb_index: true
+
+  - path: "ckzl/lc/01_环境与工具链.md"
+    title: "Stage 1: 环境与工具链（导航）"
+    stage: pipeline
+    tags: ["环境", "工具链", "编译", "FR安装"]
+    keywords: ["环境搭建", "编译FR Java", "javac", "classpath", "FineReport10", "连接名契约", "数据连接权限", "jxbrowser", "GLIBC", "Excel导出环境"]
+    summary: "导航页：原单文件已按既有章节边界拆分为 4 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。"
+    lines: 41
+    has_kb_index: true
+
+  - path: "ckzl/lc/01_选型矩阵与定时调度.md"
+    title: "Stage 8 · 技术选型矩阵与定时调度边界"
+    stage: pipeline
+    tags: ["调试", "选型", "diff"]
+    keywords: ["能力矩阵", "技术选型", "定时调度", "schedule", "FTP", "外部依赖"]
+    summary: "Java API vs Python XML 能力矩阵、定时调度生成边界与约束（模板侧vs平台侧/公式判断/通道约束/FTP）、模板外部依赖清单"
+    lines: 239
+    has_kb_index: true
+
+  - path: "ckzl/lc/02_JS交互与回调.md"
+    title: "Stage 5 · JS 交互回调与单元格控件联动"
+    stage: pipeline
+    tags: ["填报", "提交", "JS交互", "工具栏"]
+    keywords: ["JS回调", "callback", "提交后事件", "控件联动", "自动默认值", "自定义提交按钮"]
+    summary: "JS 回调 / 提交后事件 / callback 回调函数、填报单元格控件联动与自动默认值、自定义提交按钮"
+    lines: 355
+    has_kb_index: true
+
+  - path: "ckzl/lc/02_单元格构建_基础.md"
+    title: "Stage 3 · 单元格构建（基础与条件属性）"
+    stage: pipeline
+    tags: ["单元格", "样式", "行高", "冻结"]
+    keywords: ["单元格构建", "通配规则", "条件属性", "父子格", "隔行换色", "冻结表头", "单元格形态"]
+    summary: "通配规则总纲、Java API / Python XML 双路单元格构建、隔行换色、条件属性动作族与运行期语义、权限超链、明细格式化、冻结表头、预览打印导出开关、单元格形态与权限锚点"
+    lines: 386
+    has_kb_index: true
+
+  - path: "ckzl/lc/02_参数面板CSS注入.md"
+    title: "Stage 6 · 参数面板 CSS 注入"
+    stage: pipeline
+    tags: ["CSS", "Web", "工具栏", "注入"]
+    keywords: ["CSS注入", "CSSImport", "afterinit", "参数面板样式"]
+    summary: "CSSImport 注入位置、afterinit 事件、参数面板样式覆盖"
+    lines: 136
+    has_kb_index: true
+
+  - path: "ckzl/lc/02_控件类型规范.md"
+    title: "Stage 4 · 控件类型规范（年/日期控件与标签宽度）"
+    stage: pipeline
+    tags: ["参数面板", "控件", "布局", "级联"]
+    keywords: ["DateEditor", "年月控件", "水印式", "标签宽度自适应", "控件类型"]
+    summary: "年/日期控件类型规范（Ver0.3）、标签宽度自适应（Ver0.3）：控件选型与布局规格"
+    lines: 184
+    has_kb_index: true
+
+  - path: "ckzl/lc/02_数据建模.md"
+    title: "Stage 2: 数据建模（导航）"
+    stage: pipeline
+    tags: ["数据集", "SQL", "级联", "参数"]
+    keywords: ["EmbeddedTableData", "DBTableData", "级联参数SQL", "动态表头", "数据集SQL", "分页SQL", "PageQuery", "排序", "模板参数", "数据连接", "方言约束"]
+    summary: "导航页：原单文件已按既有章节边界拆分为 3 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。"
+    lines: 41
+    has_kb_index: true
+
+  - path: "ckzl/lc/02_环境前置与外部依赖.md"
+    title: "Stage 1 · 环境前置与外部依赖"
+    stage: pipeline
+    tags: ["环境", "工具链", "编译", "FR安装"]
+    keywords: ["连接名契约", "Excel导出环境", "扩展图表", "账号权限", "时区链", "FineDB", "contextPath"]
+    summary: "连接名契约、Excel 导出环境前提、扩展图表工程硬前置、自动化账号权限、模板外部依赖（数据连接分册）、Linux 图表导出门槛、四层时区链、FineDB 外接库、contextPath 常量"
+    lines: 203
+    has_kb_index: true
+
+  - path: "ckzl/lc/02_级联参数与参数选型.md"
+    title: "Stage 2 · 级联参数与参数选型"
+    stage: pipeline
+    tags: ["数据集", "SQL", "级联", "参数"]
+    keywords: ["级联参数", "模板参数", "数据集参数", "分页SQL", "行式引擎", "动态表头"]
+    summary: "级联参数 SQL 规范（WHERE 1=1 + ${if()}）、数据集参数 vs 模板参数选型、分页 SQL / 行式引擎"
+    lines: 286
+    has_kb_index: true
+
+  - path: "ckzl/lc/02_调试技巧.md"
+    title: "Stage 8 · 调试技巧"
+    stage: pipeline
+    tags: ["调试", "选型", "diff"]
+    keywords: ["调试", "diff", "常见问题", "回退策略"]
+    summary: "diff 定位、常见问题表（§16.2）、回退策略等调试方法论"
+    lines: 296
+    has_kb_index: true
+
+  - path: "ckzl/lc/03_Java导出与平台配置.md"
+    title: "Stage 8 · Java API 导出与平台类配置"
+    stage: pipeline
+    tags: ["调试", "选型", "diff"]
+    keywords: ["Java导出", "无头", "运行前提", "Configuration", "平台配置"]
+    summary: "Java API 导出（无头产物落盘）、Java API 运行前提、平台类配置的 Java 写法（Configuration 类）"
+    lines: 102
+    has_kb_index: true
+
+  - path: "ckzl/lc/03_产物分类_体检与无头上下文.md"
+    title: "Stage 1 · 产物分类 / 运行体检 / 无头上下文"
+    stage: pipeline
+    tags: ["环境", "工具链", "编译", "FR安装"]
+    keywords: ["产物分类", "运行体检", "Workspace", "无头运行", "PID", "幂等", "Java编译"]
+    summary: "产物分类（模板/平台实体/配置项）、运行环境体检、无头运行上下文与 Workspace、classpath 官方定义、PID 标记与幂等、Java 编译时机、架构与 OS 判定口径"
+    lines: 204
+    has_kb_index: true
+
+  - path: "ckzl/lc/03_单元格构建_公式与进阶.md"
+    title: "Stage 3 · 单元格构建（公式与进阶）"
+    stage: pipeline
+    tags: ["单元格", "样式", "行高", "冻结"]
+    keywords: ["公式分组", "公式槽", "动态列", "富文本", "条形码", "二维码", "可伸展性", "插入行列"]
+    summary: "公式分组、公式构建铁律、公式槽与多条件赋值、内置公式函数、Excel 导入匹配、单元格元素 8 类、可伸展性、固定行数页内合计、条码二维码、富文本、控件装配、动态列"
+    lines: 204
+    has_kb_index: true
+
+  - path: "ckzl/lc/03_导出下载与定时刷新.md"
+    title: "Stage 6 · 导出下载与决策报表定时刷新"
+    stage: pipeline
+    tags: ["CSS", "Web", "工具栏", "注入"]
+    keywords: ["导出", "下载", "分Sheet", "sessionID", "ShortCut", "定时刷新"]
+    summary: "导出/下载（URL/分Sheet/大数据集/sessionID 复用）、ShortCut 按钮对照、决策报表定时刷新（表单级事件）"
+    lines: 192
+    has_kb_index: true
+
+  - path: "ckzl/lc/03_报表构建.md"
+    title: "Stage 3: 报表构建（导航）"
+    stage: pipeline
+    tags: ["单元格", "样式", "行高", "冻结"]
+    keywords: ["Java API包名", "单元格构建", "字体颜色样式", "行高FU换算", "冻结窗格", "预览打印导出开关", "权限锚点", "格式符铁律", "扩展后排序", "单元格排序公式", "图表数据源", "图表样式", "Excel导出", "Word导出", "超级链接", "动态参数超链", "定时调度结果单元格"]
+    summary: "导航页：原单文件已按既有章节边界拆分为 9 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。"
+    lines: 56
+    has_kb_index: true
+
+  - path: "ckzl/lc/03_排序联动_连接权限_模板转换.md"
+    title: "Stage 2 · 排序 / 联动 / 连接权限 / 模板转换"
+    stage: pipeline
+    tags: ["数据集", "SQL", "级联", "参数"]
+    keywords: ["排序选型", "ORDER BY", "联动", "连接名", "权限", "方言约束", "模板转换"]
+    summary: "排序选型与 ORDER BY 安全构造、联动场景数据集分工与参数双声明、数据连接名与权限、方言级 SQL 约束、模板转换管道"
+    lines: 265
+    has_kb_index: true
+
+  - path: "ckzl/lc/03_级联_事件_作用域.md"
+    title: "Stage 4 · 参数面板级联 / 控件事件 / 参数三层作用域"
+    stage: pipeline
+    tags: ["参数面板", "控件", "布局", "级联"]
+    keywords: ["参数级联", "控件事件", "三层作用域", "全局参数", "模板参数"]
+    summary: "参数面板级联（模板参数驱动）、控件事件（doc-3120/doc-1434/doc-1197）、参数三层作用域与模板参数定义"
+    lines: 253
+    has_kb_index: true
+
+  - path: "ckzl/lc/03_预览_图表联动_移动端上报.md"
+    title: "Stage 5 · 预览模式 / 图表联动 / 移动端填报 / 多级上报"
+    stage: pipeline
+    tags: ["填报", "提交", "JS交互", "工具栏"]
+    keywords: ["op参数", "预览模式", "图表联动", "移动端填报", "多级上报"]
+    summary: "op 预览参数、图表联动交互（超链传参+自动刷新）、移动端填报入口、多级上报工作流"
+    lines: 154
+    has_kb_index: true
+
+  - path: "ckzl/lc/04_参数面板.md"
+    title: "Stage 4: 参数面板（导航）"
+    stage: pipeline
+    tags: ["参数面板", "控件", "布局", "级联"]
+    keywords: ["ComboCheckBox", "YearControl", "DateEditor", "水印式", "标签宽度自适应", "布局规格", "控件事件", "全局参数", "报表路由", "多选导出"]
+    summary: "导航页：原单文件已按既有章节边界拆分为 6 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。"
+    lines: 46
+    has_kb_index: true
+
+  - path: "ckzl/lc/04_填报页面设置与数据校验.md"
+    title: "Stage 5 · 填报页面设置与数据校验"
+    stage: pipeline
+    tags: ["填报", "提交", "JS交互", "工具栏"]
+    keywords: ["填报页面", "禁用工具栏", "数据校验", "强制校验", "选型前置检查"]
+    summary: "填报页面单独设置（禁用工具栏）、强制数据校验（校验不通过不允许提交）、填报选型前置检查"
+    lines: 250
+    has_kb_index: true
+
+  - path: "ckzl/lc/04_多选_路由_移动端_附录B.md"
+    title: "Stage 4 · 多选控件 / 路由面板 / 移动端样式 / 附录B"
+    stage: pipeline
+    tags: ["参数面板", "控件", "布局", "级联"]
+    keywords: ["ComboCheckBox", "多选控件", "多选导出", "报表路由", "移动端样式插件", "附录B", "布局引擎"]
+    summary: "多选控件字符串返回值+分隔符铁律、报表路由面板、移动端样式插件作用范围、参数面板标准布局引擎（G2 双段式）与批量处理脚本"
+    lines: 140
+    has_kb_index: true
+
+  - path: "ckzl/lc/04_样式_行高_冻结.md"
+    title: "Stage 3 · 样式 / 行高列宽 / 冻结窗格"
+    stage: pipeline
+    tags: ["单元格", "样式", "行高", "冻结"]
+    keywords: ["样式构建", "fix_styles", "行高", "FU换算", "列宽", "冻结窗格"]
+    summary: "样式构建 fix_styles、行高 FU 换算、冻结窗格构建"
+    lines: 219
+    has_kb_index: true
+
+  - path: "ckzl/lc/04_移动端H5_集成与前端JS.md"
+    title: "Stage 6 · 移动端 H5 / 集成 / 前端 JS"
+    stage: pipeline
+    tags: ["CSS", "Web", "工具栏", "注入"]
+    keywords: ["移动端", "H5预览", "iframe集成", "URL参数", "超链装配", "图表JS", "FR.ajax"]
+    summary: "移动端与 H5 预览、嵌入与被嵌入（集成）、集成 URL 参数字典、超链接装配补充、图表 JS 接口速查、FR.ajax 前端请求"
+    lines: 220
+    has_kb_index: true
+
+  - path: "ckzl/lc/04_自检API与部署治理.md"
+    title: "Stage 1 · 环境自检 API 与部署治理"
+    stage: pipeline
+    tags: ["环境", "工具链", "编译", "FR安装"]
+    keywords: ["环境自检", "FD纪律", "外联治理", "FSConfig", "Passport", "集群", "共享存储"]
+    summary: "环境自检 API 面、绕开 Workspace 读模板的 FD 纪律、离线/内网外联治理、平台账号与身份认证（FSConfig/Passport）、集群与共享存储"
+    lines: 108
+    has_kb_index: true
+
+  - path: "ckzl/lc/05_下拉树_联动_默认值_按钮.md"
+    title: "Stage 4 · 下拉树 / 控件联动 / 默认值 / 动作按钮"
+    stage: pipeline
+    tags: ["参数面板", "控件", "布局", "级联"]
+    keywords: ["下拉树", "TreeComboBoxEditor", "树数据集", "控件联动", "WidgetValue", "默认值", "FreeButton", "动作按钮"]
+    summary: "下拉树控件与树数据集自动构建、构建方式对照、控件间赋值联动、WidgetValue 默认值配方、FreeButton 动作按钮"
+    lines: 141
+    has_kb_index: true
+
+  - path: "ckzl/lc/05_填报与交互.md"
+    title: "Stage 5: 填报与交互（导航）"
+    stage: pipeline
+    tags: ["填报", "提交", "JS交互", "工具栏"]
+    keywords: ["BuiltInSQLSubmiter", "IntelliDMLConfig", "DeleteConfig", "delete_flag", "填报校验", "工具栏", "内置SQL提交铁律", "skipUnmodified", "读写单元格", "控件交互注入器", "填报控件联动", "联动自动默认值", "自定义提交按钮", "预览模式op", "图表联动", "移动端填报", "Import按钮统一", "LabelName清理"]
+    summary: "导航页：原单文件已按既有章节边界拆分为 5 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。"
+    lines: 53
+    has_kb_index: true
+
+  - path: "ckzl/lc/05_复选批量_Excel导入_暂存.md"
+    title: "Stage 5 · 复选批量 / Excel 导入 / 暂存"
+    stage: pipeline
+    tags: ["填报", "提交", "JS交互", "工具栏"]
+    keywords: ["复选框全选", "批量操作", "Excel导入", "标记导入插件", "显示值转换", "暂存"]
+    summary: "复选框全选与批量操作、Excel 标记导入插件、显示值转换（形态数据字典）、填报暂存（自动/手动/清空）"
+    lines: 88
+    has_kb_index: true
+
+  - path: "ckzl/lc/05_扩展后排序.md"
+    title: "Stage 3 · 扩展后排序"
+    stage: pipeline
+    tags: ["单元格", "样式", "行高", "冻结"]
+    keywords: ["扩展后排序", "排序公式", "ORDER BY", "动态排序"]
+    summary: "扩展后排序 doc-897 基础与多变体、单元格高级排序公式（排序交给公式而非 SQL ORDER BY）"
+    lines: 221
+    has_kb_index: true
+
+  - path: "ckzl/lc/06_Web呈现层.md"
+    title: "Stage 6: Web 呈现层（导航）"
+    stage: pipeline
+    tags: ["CSS", "Web", "工具栏", "注入"]
+    keywords: ["CSSImport", "afterinit", "WebWriteContent", "ReportWebAttr"]
+    summary: "导航页：原单文件已按既有章节边界拆分为 4 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。"
+    lines: 35
+    has_kb_index: true
+
+  - path: "ckzl/lc/06_图表与导出.md"
+    title: "Stage 3 · 图表与导出"
+    stage: pipeline
+    tags: ["单元格", "样式", "行高", "冻结"]
+    keywords: ["图表数据源", "图表样式", "Excel导出", "Word导出", "导出硬约束"]
+    summary: "图表配置正交三分 + 数据绑定 + 样式总纲；Excel / Word 导出硬约束"
+    lines: 357
+    has_kb_index: true
+
+  - path: "ckzl/lc/06_面板行为与控件杂项.md"
+    title: "Stage 4 · 面板折叠 / 显示隐藏 / 控件杂项"
+    stage: pipeline
+    tags: ["参数面板", "控件", "布局", "级联"]
+    keywords: ["折叠", "显示隐藏", "单元格控件", "属性对照", "复选框", "哨兵值", "全选"]
+    summary: "参数面板折叠与高度联动、显示/隐藏两条路径、单元格控件查询、控件属性三方对照、GUI 复选框哨兵值、下拉框全选默认"
+    lines: 135
+    has_kb_index: true
+
+  - path: "ckzl/lc/07_FRM决策报表.md"
+    title: "Stage 7: FRM 决策报表"
+    stage: pipeline
+    tags: ["FRM", "决策报表", "驾驶舱"]
+    keywords: ["FRM", "决策报表", "驾驶舱", "frm"]
+    summary: "FRM 决策报表/驾驶舱的构建要点与与普通 CPT 的差异、图表轮播联动、组件间联动(FormHyperlink/DynamicParamHyperlink)、扩展图表数据绑定、组件级导出、导出与定时调度约束"
+    lines: 377
+    has_kb_index: true
+
+  - path: "ckzl/lc/07_超级链接_调度_移动端.md"
+    title: "Stage 3 · 超级链接 / 定时调度 / 移动端属性"
+    stage: pipeline
+    tags: ["单元格", "样式", "行高", "冻结"]
+    keywords: ["超级链接", "动态参数超链", "JavaScript超链", "定时调度结果单元格", "移动端属性", "手机端模板"]
+    summary: "六类超级链接总表 + 动态参数 / JavaScript 详解、定时调度结果单元格、模板级与报表级移动端属性"
+    lines: 286
+    has_kb_index: true
+
+  - path: "ckzl/lc/08_层级坐标_平台配置.md"
+    title: "Stage 3 · 层级坐标 / JS 契约 / 平台配置"
+    stage: pipeline
+    tags: ["单元格", "样式", "行高", "冻结"]
+    keywords: ["层级坐标", "JS契约", "CacheConfig", "样式规范", "数据类型"]
+    summary: "层级坐标构建、JS 契约（名字与常量由生成器供给）、CacheConfig 平台类配置单例、单元格样式按数据类型规范"
+    lines: 132
+    has_kb_index: true
+
+  - path: "ckzl/lc/08_技术选型与调试.md"
+    title: "Stage 8: 技术选型与调试（导航）"
+    stage: pipeline
+    tags: ["调试", "选型", "diff"]
+    keywords: ["Java vs Python选型", "diff调试", "常见问题", "debug"]
+    summary: "导航页：原单文件已按既有章节边界拆分为 3 个分篇（单篇 ≤400 行，2026-09-29 断链治理）；原路径保留导航，按分篇表进入。"
+    lines: 33
+    has_kb_index: true
+
+  - path: "ckzl/lc/09_GUI操作追踪.md"
+    title: "Stage 9: GUI 操作追踪"
+    stage: pipeline
+    tags: ["GUI", "AWT", "JavaAgent", "事件"]
+    keywords: ["AWT事件", "注入Agent", "组件路径", "事件JSON"]
+    summary: "通过动态注入 Java Agent 捕获 Designer AWT 事件并映射到 Java API 的方法论（fr-agent 配套）"
+    lines: 123
+    has_kb_index: true
+
+  - path: "ckzl/lc/09_附录A_决策报表构建.md"
+    title: "Stage 3 · 附录A 完整示例与决策报表构建补充"
+    stage: pipeline
+    tags: ["单元格", "样式", "行高", "冻结"]
+    keywords: ["附录A", "完整示例", "决策报表", "frm", "组件树", "重叠模式"]
+    summary: "完整 Java API 示例（附录A）、决策报表(.frm) 组件树约束 / 允许全屏 / 重叠模式"
+    lines: 129
+    has_kb_index: true
+
+  - path: "ckzl/lc/10_Excel骨架正向工艺.md"
+    title: "流程F: Excel骨架正向工艺(示例数据→xlsx→cpt→数据集→图表)"
+    stage: pipeline
+    tags: ["⭐高频", "正向工艺", "Excel转cpt", "骨架生成", "示例数据驱动"]
+    keywords: ["流程F", "Excel骨架", "gen_skeleton", "excel2cpt", "Excel2007ReportImporter", "extract_charts", "示例数据", "ds.field", "表样", "1280×768", "图表管线", "正向生成", "openpyxl合并", "NPE", "转换清源"]
+    summary: "示例数据+业务需求→Excel表样骨架(gen_skeleton)→无头转cpt(Excel2007ReportImporter,52ms实证)→SQL/参数(NODE-02/03)→数据集替换示例行;图表管线1280×768抽取(extract_charts)→hbfa容器JSON→cpt CC/frm网页框。含openpyxl合并区『先merge后样式』铁律与importer选型表(全反射+反编译实证2026-09-29)"
+    lines: 129
+    has_kb_index: true
+
+  - path: "ckzl/lc/10_前端滚动与焦点恢复.md"
+    title: "前端滚动与焦点恢复"
+    stage: pipeline
+    tags: ["滚动", "焦点", "冻结表头", "slimScroll", "scrollIntoView", "script标签"]
+    keywords: ["frozen-center", "frozen-west", "scrollTop", "scrollLeft", "CF2", "add_show", "滚动恢复", "焦点恢复"]
+    summary: "FR 冻结表头报表的前端滚动/焦点恢复终极方案：底部隐藏行 script 标签 + 按钮唯一 id + 单元格前缀匹配"
+    lines: 165
+    has_kb_index: true
+
+  - path: "ckzl/lc/11_感知与自动化.md"
+    title: "Stage 11: 感知与自动化地图 (工艺流程自动化三档分类)"
+    stage: pipeline
+    tags: ["感知层", "自动化", "工艺流程", "校正", "报警", "数据收集"]
+    keywords: ["完全自动化", "默认自动化", "参数配置自动化", "感知脚本", "布局断言", "明细表生成器", "build_detail_cpt", "流水线自动化", "机械自动化类比", "工艺走查"]
+    summary: "以机械自动化(校正/报警/数据收集)类比, 模拟真实报表开发走查 10 阶段工艺流程, 产出自动化三档分类地图: 完全自动(骨架初始化/生成自检/环境探针)、默认自动(参数面板排布/SQL美化/冻结表头/隔行变色/CSS注入)、参数配置(SkinStudio schema/明细表生成器缺口P0)。含感知脚本挂载表与缺口优先级清单。"
+    lines: 121
+    has_kb_index: true
+
+  - path: "ckzl/lc/README.md"
+    title: "Pipeline — 流水线知识库"
+    stage: pipeline
+    tags: ["流水线", "11阶段", "开发流程"]
+    keywords: ["环境工具链", "数据建模", "报表构建", "参数面板", "填报交互", "Web呈现", "FRM", "调试", "GUI追踪", "感知与自动化"]
+    summary: "流水线知识库总览：11 个阶段文档的索引与读取顺序（创建报表按 01→06 顺序读，调试/追踪按需跳读；11=工艺流程感知与自动化地图）"
+    lines: 105
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/FineReport企业级应用架构设计模式与最佳实践.md"
+    title: "FineReport 企业级应用架构设计模式与最佳实践"
+    stage: pipeline
+    tags: ["FR10"]
+    keywords: ["FineReport", "企业级应用架构设", "计模式与最佳实践", "企业级报表架构设", "计模式", "数据权限实现方案", "多数据源整合最佳", "实践", "移动端报表与响应", "式设计"]
+    summary: "1. 从LDAP/AD/HR系统同步用户组织架构2. 字段映射：外部字段 → FR平台字段"
+    lines: 556
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/00_拆分图谱与来源.md"
+    title: "FR10 拆分图谱与来源"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐权威单一来源"]
+    keywords: ["拆分图谱", "溯源", "batch1", "归档", "学习笔记", "来源", "FR10 帮助文档"]
+    summary: "FR10 深度学习笔记拆分波次的权威单一来源页：16 个分类目录 ← 原 batch1 学习笔记 ← 归档位置（kit_archive/removed_kb_20260929）完整映射；各分页头部溯源指针统一指向本页。"
+    lines: 60
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/README.md"
+    title: "fr10 官方文档分页库 导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["FR10 帮助文档", "导航", "deep-learn", "分页", "二次开发", "决策报表应用", "参数应用", "图表应用", "场景应用", "填报应用"]
+    summary: "fr10_deep_learn/docs 导航：原 15 个 batch1 官方文档学习笔记与 1 个最佳实践整理已按主题拆为 16 个子目录共 217 页；本页列出各子目录链接与内容摘要。"
+    lines: 48
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/二次开发/01_概述.md"
+    title: "二次开发 - 概述"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["二次开发", "概述"]
+    summary: "「二次开发」分页：概述（约 1 篇条目）；FR10 帮助文档「二次开发」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 38
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/二次开发/02_前端开发.md"
+    title: "二次开发 - 前端开发"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["二次开发", "前端开发"]
+    summary: "「二次开发」分页：前端开发（约 2 篇条目）；FR10 帮助文档「二次开发」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 57
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/二次开发/03_前端开发JSAPI手册.md"
+    title: "二次开发 - 前端开发JSAPI手册"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["二次开发", "JS API手册", "前端开发"]
+    summary: "「二次开发」分页：JS API手册（约 9 篇条目）；FR10 帮助文档「二次开发」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 211
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/二次开发/04_前端开发JavaScript实例_上.md"
+    title: "二次开发 - 前端开发JavaScript实例_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["二次开发", "JavaScript实例", "前端开发"]
+    summary: "「二次开发」分页：JavaScript实例（约 28 篇条目）；FR10 帮助文档「二次开发」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 366
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/二次开发/05_前端开发JavaScript实例_中.md"
+    title: "二次开发 - 前端开发JavaScript实例_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["二次开发", "JavaScript实例", "前端开发"]
+    summary: "「二次开发」分页：JavaScript实例（约 28 篇条目）；FR10 帮助文档「二次开发」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 220
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/二次开发/06_FineReport事件与前端常用知识.md"
+    title: "二次开发 - FineReport事件与前端常用知识"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["二次开发", "FineReport事件", "前端常用知识", "前端开发"]
+    summary: "「二次开发」分页：FineReport事件、前端常用知识（约 15 篇条目）；FR10 帮助文档「二次开发」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 288
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/二次开发/07_引擎API.md"
+    title: "二次开发 - 引擎API"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["二次开发", "引擎API"]
+    summary: "「二次开发」分页：引擎API（约 1 篇条目）；FR10 帮助文档「二次开发」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 38
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/二次开发/08_引擎API程序数据源.md"
+    title: "二次开发 - 引擎API程序数据源"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["二次开发", "程序数据源", "引擎API"]
+    summary: "「二次开发」分页：程序数据源（约 10 篇条目）；FR10 帮助文档「二次开发」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 221
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/二次开发/09_引擎API报表调用.md"
+    title: "二次开发 - 引擎API报表调用"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["二次开发", "报表调用", "引擎API"]
+    summary: "「二次开发」分页：报表调用（约 12 篇条目）；FR10 帮助文档「二次开发」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 268
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/二次开发/10_引擎API自定义函数.md"
+    title: "二次开发 - 引擎API自定义函数"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["二次开发", "自定义函数", "引擎API"]
+    summary: "「二次开发」分页：自定义函数（约 12 篇条目）；FR10 帮助文档「二次开发」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 229
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/二次开发/11_导出API与帮助工具（必看）.md"
+    title: "二次开发 - 导出API与帮助工具（必看）"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["二次开发", "导出API", "帮助工具（必看）", "引擎API"]
+    summary: "「二次开发」分页：导出API、帮助工具（必看）（约 9 篇条目）；FR10 帮助文档「二次开发」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 232
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/二次开发/12_插件开发帆软市场.md"
+    title: "二次开发 - 插件开发帆软市场"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["二次开发", "帆软市场", "插件开发"]
+    summary: "「二次开发」分页：帆软市场（约 2 篇条目）；FR10 帮助文档「二次开发」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 51
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/二次开发/13_插件开发.md"
+    title: "二次开发 - 插件开发"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["二次开发", "插件开发"]
+    summary: "「二次开发」分页：插件开发（约 1 篇条目）；FR10 帮助文档「二次开发」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 38
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/二次开发/14_WebAPI.md"
+    title: "二次开发 - Web API"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["二次开发", "Web API"]
+    summary: "「二次开发」分页：Web API（约 2 篇条目）；FR10 帮助文档「二次开发」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 56
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/二次开发/README.md"
+    title: "二次开发 目录导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["二次开发", "导航", "FR10 帮助文档", "概述", "前端开发", "前端开发JSAPI手册", "前端开发JavaScript实例_上", "前端开发JavaScript实例_中", "FineReport事件与前端常用知识", "引擎API"]
+    summary: "二次开发 目录导航：原学习笔记（14 页/约 2120 行）按主题拆分，本页列出各子页链接、章节与篇数摘要。"
+    lines: 96
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/决策报表应用/01_决策报表入门.md"
+    title: "决策报表应用 - 决策报表入门"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["决策报表应用", "决策报表入门"]
+    summary: "「决策报表应用」分页：决策报表入门（约 8 篇条目）；FR10 帮助文档「决策报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 125
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/决策报表应用/02_空白块与控件与决策报表控件插件.md"
+    title: "决策报表应用 - 空白块与控件与决策报表控件插件"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["决策报表应用", "空白块", "控件", "决策报表控件插件", "决策报表组件"]
+    summary: "「决策报表应用」分页：空白块、控件、决策报表控件插件（约 8 篇条目）；FR10 帮助文档「决策报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 144
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/决策报表应用/03_决策报表组件.md"
+    title: "决策报表应用 - 决策报表组件"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["决策报表应用", "决策报表组件"]
+    summary: "「决策报表应用」分页：决策报表组件（约 6 篇条目）；FR10 帮助文档「决策报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 98
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/决策报表应用/04_决策报表设计示例.md"
+    title: "决策报表应用 - 决策报表设计示例"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["决策报表应用", "决策报表设计示例"]
+    summary: "「决策报表应用」分页：决策报表设计示例（约 7 篇条目）；FR10 帮助文档「决策报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 134
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/决策报表应用/05_决策报表JS实例_上.md"
+    title: "决策报表应用 - 决策报表JS实例_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["决策报表应用", "决策报表JS实例"]
+    summary: "「决策报表应用」分页：决策报表JS实例（约 34 篇条目）；FR10 帮助文档「决策报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 354
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/决策报表应用/06_决策报表JS实例_中.md"
+    title: "决策报表应用 - 决策报表JS实例_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["决策报表应用", "决策报表JS实例"]
+    summary: "「决策报表应用」分页：决策报表JS实例（约 34 篇条目）；FR10 帮助文档「决策报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 370
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/决策报表应用/07_决策报表JS实例_下.md"
+    title: "决策报表应用 - 决策报表JS实例_下"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["决策报表应用", "决策报表JS实例"]
+    summary: "「决策报表应用」分页：决策报表JS实例（约 34 篇条目）；FR10 帮助文档「决策报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 69
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/决策报表应用/08_决策报表设计示例决策报表查询.md"
+    title: "决策报表应用 - 决策报表设计示例决策报表查询"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["决策报表应用", "决策报表查询", "决策报表设计示例"]
+    summary: "「决策报表应用」分页：决策报表查询（约 3 篇条目）；FR10 帮助文档「决策报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 86
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/决策报表应用/09_决策报表新自适应.md"
+    title: "决策报表应用 - 决策报表新自适应"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["决策报表应用", "决策报表新自适应"]
+    summary: "「决策报表应用」分页：决策报表新自适应（约 4 篇条目）；FR10 帮助文档「决策报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 96
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/决策报表应用/README.md"
+    title: "决策报表应用 目录导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["决策报表应用", "导航", "FR10 帮助文档", "决策报表入门", "空白块与控件与决策报表控件插件", "决策报表组件", "决策报表设计示例", "决策报表JS实例_上", "决策报表JS实例_中", "决策报表JS实例_下"]
+    summary: "决策报表应用 目录导航：原学习笔记（9 页/约 1355 行）按主题拆分，本页列出各子页链接、章节与篇数摘要。"
+    lines: 81
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/参数应用/01_参数入门.md"
+    title: "参数应用 - 参数入门"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["参数应用", "参数入门"]
+    summary: "「参数应用」分页：参数入门（约 4 篇条目）；FR10 帮助文档「参数应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 80
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/参数应用/02_参数分类与参数面板.md"
+    title: "参数应用 - 参数分类与参数面板"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["参数应用", "参数分类", "参数面板", "参数入门"]
+    summary: "「参数应用」分页：参数分类、参数面板（约 14 篇条目）；FR10 帮助文档「参数应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 244
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/参数应用/03_模糊查询与范围查询.md"
+    title: "参数应用 - 模糊查询与范围查询"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["参数应用", "模糊查询", "范围查询", "参数控件基础"]
+    summary: "「参数应用」分页：模糊查询、范围查询（约 16 篇条目）；FR10 帮助文档「参数应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 325
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/参数应用/04_参数控件基础控件默认值.md"
+    title: "参数应用 - 参数控件基础控件默认值"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["参数应用", "控件默认值", "参数控件基础"]
+    summary: "「参数应用」分页：控件默认值（约 11 篇条目）；FR10 帮助文档「参数应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 196
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/参数应用/05_参数控件基础简单筛选查询.md"
+    title: "参数应用 - 参数控件基础简单筛选查询"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["参数应用", "简单筛选查询", "参数控件基础"]
+    summary: "「参数应用」分页：简单筛选查询（约 10 篇条目）；FR10 帮助文档「参数应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 211
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/参数应用/06_控件选项联动与参数为空查询全部.md"
+    title: "参数应用 - 控件选项联动与参数为空查询全部"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["参数应用", "控件选项联动", "参数为空查询全部", "参数控件基础"]
+    summary: "「参数应用」分页：控件选项联动、参数为空查询全部（约 13 篇条目）；FR10 帮助文档「参数应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 294
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/参数应用/07_动态表与控件联动.md"
+    title: "参数应用 - 动态表与控件联动"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["参数应用", "动态表", "控件联动", "参数控件进阶"]
+    summary: "「参数应用」分页：动态表、控件联动（约 17 篇条目）；FR10 帮助文档「参数应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 374
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/参数应用/08_控件查询与控件校验.md"
+    title: "参数应用 - 控件查询与控件校验"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["参数应用", "控件查询", "控件校验", "参数控件进阶"]
+    summary: "「参数应用」分页：控件查询、控件校验（约 11 篇条目）；FR10 帮助文档「参数应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 273
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/参数应用/09_控件样式与动态列.md"
+    title: "参数应用 - 控件样式与动态列"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["参数应用", "控件样式", "动态列", "参数控件进阶"]
+    summary: "「参数应用」分页：控件样式、动态列（约 18 篇条目）；FR10 帮助文档「参数应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 364
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/参数应用/10_控件入门控件类型_上.md"
+    title: "参数应用 - 控件入门控件类型_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["参数应用", "控件类型", "控件入门"]
+    summary: "「参数应用」分页：控件类型（约 33 篇条目）；FR10 帮助文档「参数应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 363
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/参数应用/11_控件入门控件类型_中.md"
+    title: "参数应用 - 控件入门控件类型_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["参数应用", "控件类型", "控件入门"]
+    summary: "「参数应用」分页：控件类型（约 33 篇条目）；FR10 帮助文档「参数应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 121
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/参数应用/12_控件入门控件属性.md"
+    title: "参数应用 - 控件入门控件属性"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["参数应用", "控件属性", "控件入门"]
+    summary: "「参数应用」分页：控件属性（约 3 篇条目）；FR10 帮助文档「参数应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 66
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/参数应用/13_控件入门.md"
+    title: "参数应用 - 控件入门"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["参数应用", "控件入门"]
+    summary: "「参数应用」分页：控件入门（约 1 篇条目）；FR10 帮助文档「参数应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 38
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/参数应用/14_参数控件进阶.md"
+    title: "参数应用 - 参数控件进阶"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["参数应用", "参数控件进阶"]
+    summary: "「参数应用」分页：参数控件进阶（约 1 篇条目）；FR10 帮助文档「参数应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 48
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/参数应用/15_常见问题排查.md"
+    title: "参数应用 - 常见问题排查"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["参数应用", "常见问题排查"]
+    summary: "「参数应用」分页：常见问题排查（约 1 篇条目）；FR10 帮助文档「参数应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 38
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/参数应用/README.md"
+    title: "参数应用 目录导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["参数应用", "导航", "FR10 帮助文档", "参数入门", "参数分类与参数面板", "模糊查询与范围查询", "参数控件基础控件默认值", "参数控件基础简单筛选查询", "控件选项联动与参数为空查询全部", "动态表与控件联动"]
+    summary: "参数应用 目录导航：原学习笔记（15 页/约 2823 行）按主题拆分，本页列出各子页链接、章节与篇数摘要。"
+    lines: 104
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/01_图表入门.md"
+    title: "图表应用 - 图表入门"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "图表入门"]
+    summary: "「图表应用」分页：图表入门（约 6 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 102
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/02_图表数据.md"
+    title: "图表应用 - 图表数据"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "图表数据"]
+    summary: "「图表应用」分页：图表数据（约 4 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 81
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/03_图表系列与图表坐标轴与图表背景.md"
+    title: "图表应用 - 图表系列与图表坐标轴与图表背景"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "图表系列", "图表坐标轴", "图表背景", "图表样式"]
+    summary: "「图表应用」分页：图表系列、图表坐标轴、图表背景（约 19 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 307
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/04_图表样式等4章.md"
+    title: "图表应用 - 图表样式等4章"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "图表提示", "图表标题", "大数据优化", "图表图例", "图表样式"]
+    summary: "「图表应用」分页：图表提示、图表标题、大数据优化、图表图例（约 14 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 254
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/05_图表样式图表标签.md"
+    title: "图表应用 - 图表样式图表标签"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "图表标签", "图表样式"]
+    summary: "「图表应用」分页：图表标签（约 10 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 202
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/06_其他与新手FAQ.md"
+    title: "图表应用 - 其他与新手FAQ"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "其他", "新手FAQ", "常见问题"]
+    summary: "「图表应用」分页：其他、新手FAQ（约 8 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 149
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/07_基础图表等5章.md"
+    title: "图表应用 - 基础图表等5章"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "饼图", "柱形图", "面积图", "仪表盘", "雷达图", "基础图表"]
+    summary: "「图表应用」分页：饼图、柱形图、面积图、仪表盘、雷达图（约 22 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 357
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/08_基础图表等4章.md"
+    title: "图表应用 - 基础图表等4章"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "折线图", "气泡图", "组合图", "多层饼图", "基础图表"]
+    summary: "「图表应用」分页：折线图、气泡图、组合图、多层饼图（约 14 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 238
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/09_地图与钻取地图.md"
+    title: "图表应用 - 地图与钻取地图"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "地图", "钻取地图", "基础图表"]
+    summary: "「图表应用」分页：地图、钻取地图（约 24 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 347
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/10_基础图表等4章.md"
+    title: "图表应用 - 基础图表等4章"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "词云图", "甘特图", "条形图", "箱形图", "基础图表"]
+    summary: "「图表应用」分页：词云图、甘特图、条形图、箱形图（约 12 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 199
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/11_基础图表ECharts图表.md"
+    title: "图表应用 - 基础图表ECharts图表"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "ECharts图表", "基础图表"]
+    summary: "「图表应用」分页：ECharts图表（约 13 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 296
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/12_图表交互属性与图表条件显示.md"
+    title: "图表应用 - 图表交互属性与图表条件显示"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "图表交互属性", "图表条件显示", "图表特效"]
+    summary: "「图表应用」分页：图表交互属性、图表条件显示（约 13 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 230
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/13_基础图表.md"
+    title: "图表应用 - 基础图表"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "基础图表"]
+    summary: "「图表应用」分页：基础图表（约 6 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 101
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/14_图表示例.md"
+    title: "图表应用 - 图表示例"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "图表示例"]
+    summary: "「图表应用」分页：图表示例（约 14 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 274
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/15_图表样式.md"
+    title: "图表应用 - 图表样式"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "图表样式"]
+    summary: "「图表应用」分页：图表样式（约 3 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 67
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/16_图表特效.md"
+    title: "图表应用 - 图表特效"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "图表特效"]
+    summary: "「图表应用」分页：图表特效（约 1 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 38
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/17_图表示例创意图表.md"
+    title: "图表应用 - 图表示例创意图表"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "创意图表", "图表示例"]
+    summary: "「图表应用」分页：创意图表（约 7 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 139
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/18_图表接口.md"
+    title: "图表应用 - 图表接口"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "图表接口"]
+    summary: "「图表应用」分页：图表接口（约 12 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 277
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/19_常见问题.md"
+    title: "图表应用 - 常见问题"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "常见问题"]
+    summary: "「图表应用」分页：常见问题（约 1 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 41
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/20_插件图表_上.md"
+    title: "图表应用 - 插件图表_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "插件图表"]
+    summary: "「图表应用」分页：插件图表（约 28 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 364
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/21_插件图表_中.md"
+    title: "图表应用 - 插件图表_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "插件图表"]
+    summary: "「图表应用」分页：插件图表（约 28 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 40
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/22_扩展图表.md"
+    title: "图表应用 - 扩展图表"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "扩展图表"]
+    summary: "「图表应用」分页：扩展图表（约 4 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 74
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/23_扩展图表等7章.md"
+    title: "图表应用 - 扩展图表等7章"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "扩展图表-指标卡", "扩展图表-其余", "扩展图表-轮播地图", "扩展图表-轮播仪表盘", "扩展图表-柱形图", "扩展图表应用", "扩展图表-场景地图", "扩展图表"]
+    summary: "「图表应用」分页：扩展图表-指标卡、扩展图表-其余、扩展图表-轮播地图、扩展图表-轮播仪表盘、扩展图表-柱形图、扩展图表应用等（约 19 篇条目）；FR10 帮助文档「图表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 336
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/图表应用/README.md"
+    title: "图表应用 目录导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["图表应用", "导航", "FR10 帮助文档", "图表入门", "图表数据", "图表系列与图表坐标轴与图表背景", "图表样式等4章", "图表样式图表标签", "其他与新手FAQ", "基础图表等5章"]
+    summary: "图表应用 目录导航：原学习笔记（23 页/约 4178 行）按主题拆分，本页列出各子页链接、章节与篇数摘要。"
+    lines: 130
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/场景应用/01_大屏美化与大屏数据实例方案与大屏制作.md"
+    title: "场景应用 - 大屏美化与大屏数据实例方案与大屏制作"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["场景应用", "大屏美化", "大屏数据实例方案", "大屏制作", "大屏应用"]
+    summary: "「场景应用」分页：大屏美化、大屏数据实例方案、大屏制作（约 12 篇条目）；FR10 帮助文档「场景应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 218
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/场景应用/02_大屏应用大屏特效背景方案.md"
+    title: "场景应用 - 大屏应用大屏特效背景方案"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["场景应用", "大屏特效背景方案", "大屏应用"]
+    summary: "「场景应用」分页：大屏特效背景方案（约 9 篇条目）；FR10 帮助文档「场景应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 268
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/场景应用/03_疫情场景应用.md"
+    title: "场景应用 - 疫情场景应用"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["场景应用", "疫情场景应用"]
+    summary: "「场景应用」分页：疫情场景应用（约 1 篇条目）；FR10 帮助文档「场景应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 38
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/场景应用/04_库存周转分析.md"
+    title: "场景应用 - 库存周转分析"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["场景应用", "库存周转分析"]
+    summary: "「场景应用」分页：库存周转分析（约 1 篇条目）；FR10 帮助文档「场景应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 41
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/场景应用/05_复购率分析.md"
+    title: "场景应用 - 复购率分析"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["场景应用", "复购率分析"]
+    summary: "「场景应用」分页：复购率分析（约 1 篇条目）；FR10 帮助文档「场景应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 41
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/场景应用/06_留存分析.md"
+    title: "场景应用 - 留存分析"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["场景应用", "留存分析"]
+    summary: "「场景应用」分页：留存分析（约 1 篇条目）；FR10 帮助文档「场景应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 49
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/场景应用/07_波士顿矩阵图.md"
+    title: "场景应用 - 波士顿矩阵图"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["场景应用", "波士顿矩阵图"]
+    summary: "「场景应用」分页：波士顿矩阵图（约 1 篇条目）；FR10 帮助文档「场景应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 48
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/场景应用/08_人事场景应用.md"
+    title: "场景应用 - 人事场景应用"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["场景应用", "人事场景应用"]
+    summary: "「场景应用」分页：人事场景应用（约 2 篇条目）；FR10 帮助文档「场景应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 50
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/场景应用/09_销售场景应用.md"
+    title: "场景应用 - 销售场景应用"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["场景应用", "销售场景应用"]
+    summary: "「场景应用」分页：销售场景应用（约 1 篇条目）；FR10 帮助文档「场景应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 38
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/场景应用/10_报表开发高手养成记.md"
+    title: "场景应用 - 报表开发高手养成记"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["场景应用", "报表开发高手养成记"]
+    summary: "「场景应用」分页：报表开发高手养成记（约 7 篇条目）；FR10 帮助文档「场景应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 170
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/场景应用/11_需求沟通场景.md"
+    title: "场景应用 - 需求沟通场景"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["场景应用", "需求沟通场景"]
+    summary: "「场景应用」分页：需求沟通场景（约 1 篇条目）；FR10 帮助文档「场景应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 41
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/场景应用/README.md"
+    title: "场景应用 目录导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["场景应用", "导航", "FR10 帮助文档", "大屏美化与大屏数据实例方案与大屏制作", "大屏应用大屏特效背景方案", "疫情场景应用", "库存周转分析", "复购率分析", "留存分析", "波士顿矩阵图"]
+    summary: "场景应用 目录导航：原学习笔记（11 页/约 855 行）按主题拆分，本页列出各子页链接、章节与篇数摘要。"
+    lines: 87
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/填报应用/01_填报入门等6章.md"
+    title: "填报应用 - 填报入门等6章"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["填报应用", "填报提交", "填报入门示例", "填报联动", "插入和删除", "数据校验", "填报页面设置", "填报入门"]
+    summary: "「填报应用」分页：填报提交、填报入门示例、填报联动、插入和删除、数据校验、填报页面设置（约 20 篇条目）；FR10 帮助文档「填报应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 359
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/填报应用/02_填报入门Excel导入.md"
+    title: "填报应用 - 填报入门Excel导入"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["填报应用", "Excel导入", "填报入门"]
+    summary: "「填报应用」分页：Excel导入（约 4 篇条目）；FR10 帮助文档「填报应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 78
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/填报应用/03_填报进阶页面交互_上.md"
+    title: "填报应用 - 填报进阶页面交互_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["填报应用", "页面交互", "填报进阶"]
+    summary: "「填报应用」分页：页面交互（约 21 篇条目）；FR10 帮助文档「填报应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 368
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/填报应用/04_填报进阶页面交互_中.md"
+    title: "填报应用 - 填报进阶页面交互_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["填报应用", "页面交互", "填报进阶"]
+    summary: "「填报应用」分页：页面交互（约 21 篇条目）；FR10 帮助文档「填报应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 110
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/填报应用/05_填报进阶填报提交_上.md"
+    title: "填报应用 - 填报进阶填报提交_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["填报应用", "填报提交", "填报进阶"]
+    summary: "「填报应用」分页：填报提交（约 19 篇条目）；FR10 帮助文档「填报应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 355
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/填报应用/06_填报进阶填报提交_中.md"
+    title: "填报应用 - 填报进阶填报提交_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["填报应用", "填报提交", "填报进阶"]
+    summary: "「填报应用」分页：填报提交（约 19 篇条目）；FR10 帮助文档「填报应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 68
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/填报应用/07_填报进阶插入和删除.md"
+    title: "填报应用 - 填报进阶插入和删除"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["填报应用", "插入和删除", "填报进阶"]
+    summary: "「填报应用」分页：插入和删除（约 10 篇条目）；FR10 帮助文档「填报应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 231
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/填报应用/08_填报进阶数据校验.md"
+    title: "填报应用 - 填报进阶数据校验"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["填报应用", "数据校验", "填报进阶"]
+    summary: "「填报应用」分页：数据校验（约 8 篇条目）；FR10 帮助文档「填报应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 176
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/填报应用/09_填报进阶填报控件.md"
+    title: "填报应用 - 填报进阶填报控件"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["填报应用", "填报控件", "填报进阶"]
+    summary: "「填报应用」分页：填报控件（约 18 篇条目）；FR10 帮助文档「填报应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 365
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/填报应用/10_Excel导入与填报联动.md"
+    title: "填报应用 - Excel导入与填报联动"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["填报应用", "Excel导入", "填报联动", "填报进阶"]
+    summary: "「填报应用」分页：Excel导入、填报联动（约 13 篇条目）；FR10 帮助文档「填报应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 240
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/填报应用/11_接口应用与填报JS接口汇总.md"
+    title: "填报应用 - 接口应用与填报JS接口汇总"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["填报应用", "接口应用", "填报JS接口汇总", "填报接口"]
+    summary: "「填报应用」分页：接口应用、填报JS接口汇总（约 9 篇条目）；FR10 帮助文档「填报应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 227
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/填报应用/12_常用插件.md"
+    title: "填报应用 - 常用插件"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["填报应用", "常用插件"]
+    summary: "「填报应用」分页：常用插件（约 7 篇条目）；FR10 帮助文档「填报应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 135
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/填报应用/13_填报入门.md"
+    title: "填报应用 - 填报入门"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["填报应用", "填报入门"]
+    summary: "「填报应用」分页：填报入门（约 3 篇条目）；FR10 帮助文档「填报应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 65
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/填报应用/14_问题排查常见问题.md"
+    title: "填报应用 - 问题排查常见问题"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["填报应用", "常见问题", "问题排查"]
+    summary: "「填报应用」分页：常见问题（约 9 篇条目）；FR10 帮助文档「填报应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 180
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/填报应用/15_问题排查.md"
+    title: "填报应用 - 问题排查"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["填报应用", "问题排查"]
+    summary: "「填报应用」分页：问题排查（约 2 篇条目）；FR10 帮助文档「填报应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 53
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/填报应用/README.md"
+    title: "填报应用 目录导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["填报应用", "导航", "FR10 帮助文档", "填报入门等6章", "填报入门Excel导入", "填报进阶页面交互_上", "填报进阶页面交互_中", "填报进阶填报提交_上", "填报进阶填报提交_中", "填报进阶插入和删除"]
+    summary: "填报应用 目录导航：原学习笔记（15 页/约 2796 行）按主题拆分，本页列出各子页链接、章节与篇数摘要。"
+    lines: 100
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/复杂问题最佳实践/01_层次坐标与条件属性.md"
+    title: "复杂问题最佳实践 - 层次坐标与条件属性"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["复杂问题最佳实践", "一、层次坐标高级用法", "二、条件属性与动态样式", "三、填报性能优化", "四、图表交互与联动"]
+    summary: "「复杂问题最佳实践」分页：一、层次坐标高级用法、二、条件属性与动态样式、三、填报性能优化、四、图表交互与联动（约 22 篇条目）；FR10 深度学习笔记 + Demo 模板逆向分析整理 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 335
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/复杂问题最佳实践/02_调度性能与大屏规范.md"
+    title: "复杂问题最佳实践 - 调度性能与大屏规范"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["复杂问题最佳实践", "五、定时调度与自动化", "六、性能优化总纲", "七、故障排查速查表", "八、决策报表(.frm)铁律", "九、.frm 大屏设计规范", "十、交付前检查清单", "十一、XML 颜色值速查", "十二、汇总索引", "十、论坛高频问答补充（batch10 来源）"]
+    summary: "「复杂问题最佳实践」分页：五、定时调度与自动化、六、性能优化总纲、七、故障排查速查表、八、决策报表(.frm)铁律、九、.frm 大屏设计规范、十、交付前检查清单等（约 24 篇条目）；FR10 深度学习笔记 + Demo 模板逆向分析整理 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 321
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/复杂问题最佳实践/README.md"
+    title: "复杂问题最佳实践 目录导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["复杂问题最佳实践", "导航", "FR10 帮助文档", "层次坐标与条件属性", "调度性能与大屏规范"]
+    summary: "复杂问题最佳实践 目录导航：原学习笔记（2 页/约 619 行）按主题拆分，本页列出各子页链接、章节与篇数摘要。"
+    lines: 29
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/性能优化/01_FR性能测试注意事项.md"
+    title: "性能优化 - FR性能测试注意事项"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["性能优化", "FR性能测试注意事项"]
+    summary: "「性能优化」分页：FR性能测试注意事项（约 1 篇条目）；FR10 帮助文档「性能优化」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 42
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/性能优化/02_性能优化指导手册.md"
+    title: "性能优化 - 性能优化指导手册"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["性能优化", "性能优化指导手册"]
+    summary: "「性能优化」分页：性能优化指导手册（约 1 篇条目）；FR10 帮助文档「性能优化」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 44
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/性能优化/03_行式引擎与新计算引擎插件.md"
+    title: "性能优化 - 行式引擎与新计算引擎插件"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["性能优化", "行式引擎", "新计算引擎插件", "分页展示数据"]
+    summary: "「性能优化」分页：行式引擎、新计算引擎插件（约 11 篇条目）；FR10 帮助文档「性能优化」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 226
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/性能优化/04_读取缓存数据.md"
+    title: "性能优化 - 读取缓存数据"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["性能优化", "读取缓存数据"]
+    summary: "「性能优化」分页：读取缓存数据（约 2 篇条目）；FR10 帮助文档「性能优化」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 57
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/性能优化/05_格间运算优化与数据查询优化.md"
+    title: "性能优化 - 格间运算优化与数据查询优化"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["性能优化", "格间运算优化", "数据查询优化", "优化模板"]
+    summary: "「性能优化」分页：格间运算优化、数据查询优化（约 4 篇条目）；FR10 帮助文档「性能优化」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 99
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/性能优化/06_模板耗时分析.md"
+    title: "性能优化 - 模板耗时分析"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["性能优化", "模板耗时分析"]
+    summary: "「性能优化」分页：模板耗时分析（约 3 篇条目）；FR10 帮助文档「性能优化」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 68
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/性能优化/07_内存与并发数.md"
+    title: "性能优化 - 内存与并发数"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["性能优化", "内存", "并发数", "服务器性能优化"]
+    summary: "「性能优化」分页：内存、并发数（约 8 篇条目）；FR10 帮助文档「性能优化」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 153
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/性能优化/08_模板加载慢.md"
+    title: "性能优化 - 模板加载慢"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["性能优化", "模板加载慢"]
+    summary: "「性能优化」分页：模板加载慢（约 5 篇条目）；FR10 帮助文档「性能优化」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 104
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/性能优化/09_模板加载慢大数据量模板优化.md"
+    title: "性能优化 - 模板加载慢大数据量模板优化"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["性能优化", "大数据量模板优化", "模板加载慢"]
+    summary: "「性能优化」分页：大数据量模板优化（约 4 篇条目）；FR10 帮助文档「性能优化」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 78
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/性能优化/10_读取缓存数据抽数缓存插件.md"
+    title: "性能优化 - 读取缓存数据抽数缓存插件"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["性能优化", "抽数缓存插件", "读取缓存数据"]
+    summary: "「性能优化」分页：抽数缓存插件（约 4 篇条目）；FR10 帮助文档「性能优化」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 93
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/性能优化/11_服务器性能优化.md"
+    title: "性能优化 - 服务器性能优化"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["性能优化", "服务器性能优化"]
+    summary: "「性能优化」分页：服务器性能优化（约 1 篇条目）；FR10 帮助文档「性能优化」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 42
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/性能优化/README.md"
+    title: "性能优化 目录导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["性能优化", "导航", "FR10 帮助文档", "FR性能测试注意事项", "性能优化指导手册", "行式引擎与新计算引擎插件", "读取缓存数据", "格间运算优化与数据查询优化", "模板耗时分析", "内存与并发数"]
+    summary: "性能优化 目录导航：原学习笔记（11 页/约 855 行）按主题拆分，本页列出各子页链接、章节与篇数摘要。"
+    lines: 90
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/01_条件属性.md"
+    title: "报表专题 - 条件属性"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "条件属性"]
+    summary: "「报表专题」分页：条件属性（约 3 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 62
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/02_超级链接概念.md"
+    title: "报表专题 - 超级链接概念"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "概念", "超级链接"]
+    summary: "「报表专题」分页：概念（约 2 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 54
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/03_超级链接应用_上.md"
+    title: "报表专题 - 超级链接应用_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "应用", "超级链接"]
+    summary: "「报表专题」分页：应用（约 28 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 365
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/04_超级链接应用_中.md"
+    title: "报表专题 - 超级链接应用_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "应用", "超级链接"]
+    summary: "「报表专题」分页：应用（约 28 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 192
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/05_类型与问题.md"
+    title: "报表专题 - 类型与问题"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "类型", "问题", "超级链接"]
+    summary: "「报表专题」分页：类型、问题（约 11 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 210
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/06_函数函数概念.md"
+    title: "报表专题 - 函数函数概念"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "函数概念", "函数"]
+    summary: "「报表专题」分页：函数概念（约 4 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 103
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/07_函数函数列表_上.md"
+    title: "报表专题 - 函数函数列表_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "函数列表", "函数"]
+    summary: "「报表专题」分页：函数列表（约 35 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 359
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/08_函数函数列表_中.md"
+    title: "报表专题 - 函数函数列表_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "函数列表", "函数"]
+    summary: "「报表专题」分页：函数列表（约 35 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 316
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/09_函数函数应用_上.md"
+    title: "报表专题 - 函数函数应用_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "函数应用", "函数"]
+    summary: "「报表专题」分页：函数应用（约 34 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 362
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/10_函数函数应用_中.md"
+    title: "报表专题 - 函数函数应用_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "函数应用", "函数"]
+    summary: "「报表专题」分页：函数应用（约 34 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 284
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/11_函数函数FAQ.md"
+    title: "报表专题 - 函数函数FAQ"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "函数FAQ", "函数"]
+    summary: "「报表专题」分页：函数FAQ（约 3 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 85
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/12_层次坐标应用_上.md"
+    title: "报表专题 - 层次坐标应用_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "应用", "层次坐标"]
+    summary: "「报表专题」分页：应用（约 26 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 361
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/13_层次坐标应用_中.md"
+    title: "报表专题 - 层次坐标应用_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "应用", "层次坐标"]
+    summary: "「报表专题」分页：应用（约 26 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 127
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/14_层次坐标概念.md"
+    title: "报表专题 - 层次坐标概念"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "概念", "层次坐标"]
+    summary: "「报表专题」分页：概念（约 5 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 90
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/15_普通报表导出与大数据导出.md"
+    title: "报表专题 - 普通报表导出与大数据导出"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "普通报表导出", "大数据导出", "导出"]
+    summary: "「报表专题」分页：普通报表导出、大数据导出（约 23 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 348
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/16_导出常见问题与自定义导出与批量导出.md"
+    title: "报表专题 - 导出常见问题与自定义导出与批量导出"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "导出常见问题", "自定义导出", "批量导出", "导出"]
+    summary: "「报表专题」分页：导出常见问题、自定义导出、批量导出（约 14 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 289
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/17_排序.md"
+    title: "报表专题 - 排序"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "排序"]
+    summary: "「报表专题」分页：排序（约 3 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 79
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/18_排序等5章.md"
+    title: "报表专题 - 排序等5章"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "多列排序", "自定义排序", "排序入门", "其他", "扩展后排序", "排序"]
+    summary: "「报表专题」分页：多列排序、自定义排序、排序入门、其他、扩展后排序（约 17 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 358
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/19_排序分组排序.md"
+    title: "报表专题 - 排序分组排序"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "分组排序", "排序"]
+    summary: "「报表专题」分页：分组排序（约 2 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 63
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/20_条件属性等3章.md"
+    title: "报表专题 - 条件属性等3章"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "条件属性-背景", "条件属性-行高", "条件属性-新值", "条件属性"]
+    summary: "「报表专题」分页：条件属性-背景、条件属性-行高、条件属性-新值（约 15 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 297
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/21_打印等4章.md"
+    title: "报表专题 - 打印等4章"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "JS调用FR打印方法", "打印典型应用", "批量打印", "打印FAQ", "打印"]
+    summary: "「报表专题」分页：JS调用FR打印方法、打印典型应用、批量打印、打印FAQ（约 16 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 351
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/22_导出.md"
+    title: "报表专题 - 导出"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "导出"]
+    summary: "「报表专题」分页：导出（约 2 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 50
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/23_编码专题.md"
+    title: "报表专题 - 编码专题"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "编码专题"]
+    summary: "「报表专题」分页：编码专题（约 5 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 105
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/24_打印.md"
+    title: "报表专题 - 打印"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "打印"]
+    summary: "「报表专题」分页：打印（约 3 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 62
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/25_层次坐标.md"
+    title: "报表专题 - 层次坐标"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "层次坐标"]
+    summary: "「报表专题」分页：层次坐标（约 2 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 54
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/26_超级链接.md"
+    title: "报表专题 - 超级链接"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "超级链接"]
+    summary: "「报表专题」分页：超级链接（约 1 篇条目）；FR10 帮助文档「报表专题」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 38
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表专题/README.md"
+    title: "报表专题 目录导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表专题", "导航", "FR10 帮助文档", "条件属性", "超级链接概念", "超级链接应用_上", "超级链接应用_中", "类型与问题", "函数函数概念", "函数函数列表_上"]
+    summary: "报表专题 目录导航：原学习笔记（26 页/约 4694 行）按主题拆分，本页列出各子页链接、章节与篇数摘要。"
+    lines: 122
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/01_报表类型与报表预览模式与单元格设置.md"
+    title: "报表应用 - 报表类型与报表预览模式与单元格设置"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "报表类型", "报表预览模式", "单元格设置", "报表入门"]
+    summary: "「报表应用」分页：报表类型、报表预览模式、单元格设置（约 14 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 225
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/02_行式报表.md"
+    title: "报表应用 - 行式报表"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "行式报表"]
+    summary: "「报表应用」分页：行式报表（约 6 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 118
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/03_分组报表.md"
+    title: "报表应用 - 分组报表"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "分组报表"]
+    summary: "「报表应用」分页：分组报表（约 2 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 61
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/04_分组报表示例与动态分组报表示例.md"
+    title: "报表应用 - 分组报表示例与动态分组报表示例"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "分组报表示例", "动态分组报表示例", "分组报表"]
+    summary: "「报表应用」分页：分组报表示例、动态分组报表示例（约 11 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 206
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/05_分页报表.md"
+    title: "报表应用 - 分页报表"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "分页报表"]
+    summary: "「报表应用」分页：分页报表（约 3 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 74
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/06_常见应用示例.md"
+    title: "报表应用 - 常见应用示例"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "常见应用示例"]
+    summary: "「报表应用」分页：常见应用示例（约 6 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 111
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/07_多数据源报表.md"
+    title: "报表应用 - 多数据源报表"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "多数据源报表"]
+    summary: "「报表应用」分页：多数据源报表（约 5 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 110
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/08_报表分页示例与分页合计示例.md"
+    title: "报表应用 - 报表分页示例与分页合计示例"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "报表分页示例", "分页合计示例", "分页报表"]
+    summary: "「报表应用」分页：报表分页示例、分页合计示例（约 12 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 221
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/09_主子报表.md"
+    title: "报表应用 - 主子报表"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "主子报表"]
+    summary: "「报表应用」分页：主子报表（约 2 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 59
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/10_分栏报表.md"
+    title: "报表应用 - 分栏报表"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "分栏报表"]
+    summary: "「报表应用」分页：分栏报表（约 6 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 121
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/11_组织树报表与折叠树报表.md"
+    title: "报表应用 - 组织树报表与折叠树报表"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "组织树报表", "折叠树报表", "树报表"]
+    summary: "「报表应用」分页：组织树报表、折叠树报表（约 10 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 213
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/12_树报表.md"
+    title: "报表应用 - 树报表"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "树报表"]
+    summary: "「报表应用」分页：树报表（约 1 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 41
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/13_常见的数据处理方式.md"
+    title: "报表应用 - 常见的数据处理方式"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "常见的数据处理方式"]
+    summary: "「报表应用」分页：常见的数据处理方式（约 16 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 297
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/14_用HTML显示内容示例.md"
+    title: "报表应用 - 用HTML显示内容示例"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "用HTML显示内容示例"]
+    summary: "「报表应用」分页：用HTML显示内容示例（约 9 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 165
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/15_报表FAQ.md"
+    title: "报表应用 - 报表FAQ"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "报表FAQ"]
+    summary: "「报表应用」分页：报表FAQ（约 13 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 196
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/16_报表入门.md"
+    title: "报表应用 - 报表入门"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "报表入门"]
+    summary: "「报表应用」分页：报表入门（约 2 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 56
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/17_单元格与报表刷新.md"
+    title: "报表应用 - 单元格与报表刷新"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "单元格", "报表刷新", "普通报表JS示例"]
+    summary: "「报表应用」分页：单元格、报表刷新（约 14 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 313
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/18_跑马灯与报表工具栏与隐藏滚动条.md"
+    title: "报表应用 - 跑马灯与报表工具栏与隐藏滚动条"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "跑马灯", "报表工具栏", "隐藏滚动条", "普通报表JS示例"]
+    summary: "「报表应用」分页：跑马灯、报表工具栏、隐藏滚动条（约 14 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 331
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/19_普通报表JS示例.md"
+    title: "报表应用 - 普通报表JS示例"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "普通报表JS示例"]
+    summary: "「报表应用」分页：普通报表JS示例（约 2 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 66
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/20_常用插件.md"
+    title: "报表应用 - 常用插件"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "常用插件"]
+    summary: "「报表应用」分页：常用插件（约 10 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 153
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/21_Word报告.md"
+    title: "报表应用 - Word报告"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "Word报告"]
+    summary: "「报表应用」分页：Word报告（约 4 篇条目）；FR10 帮助文档「报表应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 94
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/报表应用/README.md"
+    title: "报表应用 目录导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["报表应用", "导航", "FR10 帮助文档", "报表类型与报表预览模式与单元格设置", "行式报表", "分组报表", "分组报表示例与动态分组报表示例", "分页报表", "常见应用示例", "多数据源报表"]
+    summary: "报表应用 目录导航：原学习笔记（21 页/约 2944 行）按主题拆分，本页列出各子页链接、章节与篇数摘要。"
+    lines: 118
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/01_管理系统注册管理.md"
+    title: "数据决策系统 - 管理系统注册管理"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "注册管理", "管理系统"]
+    summary: "「数据决策系统」分页：注册管理（约 14 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 230
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/02_管理系统多级上报.md"
+    title: "数据决策系统 - 管理系统多级上报"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "多级上报", "管理系统"]
+    summary: "「数据决策系统」分页：多级上报（约 13 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 228
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/03_管理系统外观配置.md"
+    title: "数据决策系统 - 管理系统外观配置"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "外观配置", "管理系统"]
+    summary: "「数据决策系统」分页：外观配置（约 16 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 246
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/04_管理系统系统管理.md"
+    title: "数据决策系统 - 管理系统系统管理"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "系统管理", "管理系统"]
+    summary: "「数据决策系统」分页：系统管理（约 23 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 350
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/05_管理系统定时调度_上.md"
+    title: "数据决策系统 - 管理系统定时调度_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "定时调度", "管理系统"]
+    summary: "「数据决策系统」分页：定时调度（约 29 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 365
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/06_管理系统定时调度_中.md"
+    title: "数据决策系统 - 管理系统定时调度_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "定时调度", "管理系统"]
+    summary: "「数据决策系统」分页：定时调度（约 29 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 122
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/07_目录管理与用户管理与模板认证.md"
+    title: "数据决策系统 - 目录管理与用户管理与模板认证"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "目录管理", "用户管理", "模板认证", "管理系统"]
+    summary: "「数据决策系统」分页：目录管理、用户管理、模板认证（约 23 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 362
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/08_管理系统权限管理_上.md"
+    title: "数据决策系统 - 管理系统权限管理_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "权限管理", "管理系统"]
+    summary: "「数据决策系统」分页：权限管理（约 29 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 366
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/09_管理系统权限管理_中.md"
+    title: "数据决策系统 - 管理系统权限管理_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "权限管理", "管理系统"]
+    summary: "「数据决策系统」分页：权限管理（约 29 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 38
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/10_管理系统权限应用.md"
+    title: "数据决策系统 - 管理系统权限应用"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "权限应用", "管理系统"]
+    summary: "「数据决策系统」分页：权限应用（约 16 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 293
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/11_管理系统智能运维.md"
+    title: "数据决策系统 - 管理系统智能运维"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "智能运维", "管理系统"]
+    summary: "「数据决策系统」分页：智能运维（约 22 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 330
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/12_管理系统等4章.md"
+    title: "数据决策系统 - 管理系统等4章"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "数据连接", "安全管理", "插件管理", "平台插件", "管理系统"]
+    summary: "「数据决策系统」分页：数据连接、安全管理、插件管理、平台插件（约 19 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 305
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/13_数据决策系统入门.md"
+    title: "数据决策系统 - 数据决策系统入门"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "数据决策系统入门"]
+    summary: "「数据决策系统」分页：数据决策系统入门（约 6 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 98
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/14_数据决策系统FAQ.md"
+    title: "数据决策系统 - 数据决策系统FAQ"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "数据决策系统FAQ"]
+    summary: "「数据决策系统」分页：数据决策系统FAQ（约 4 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 97
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/15_管理平台应用FineDB数据库.md"
+    title: "数据决策系统 - 管理平台应用FineDB数据库"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "FineDB 数据库", "管理平台应用"]
+    summary: "「数据决策系统」分页：FineDB 数据库（约 19 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 318
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/16_LogDB数据库与WebSocket.md"
+    title: "数据决策系统 - LogDB 数据库与WebSocket"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "LogDB 数据库", "WebSocket", "管理平台应用"]
+    summary: "「数据决策系统」分页：LogDB 数据库、WebSocket（约 10 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 199
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/17_管理系统.md"
+    title: "数据决策系统 - 管理系统"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "管理系统"]
+    summary: "「数据决策系统」分页：管理系统（约 1 篇条目）；FR10 帮助文档「数据决策系统」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 38
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据决策系统/README.md"
+    title: "数据决策系统 目录导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据决策系统", "导航", "FR10 帮助文档", "管理系统注册管理", "管理系统多级上报", "管理系统外观配置", "管理系统系统管理", "管理系统定时调度_上", "管理系统定时调度_中", "目录管理与用户管理与模板认证"]
+    summary: "数据决策系统 目录导航：原学习笔记（17 页/约 3744 行）按主题拆分，本页列出各子页链接、章节与篇数摘要。"
+    lines: 113
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据准备/01_数据连接.md"
+    title: "数据准备 - 数据连接"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据准备", "数据连接"]
+    summary: "「数据准备」分页：数据连接（约 2 篇条目）；FR10 帮助文档「数据准备」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 61
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据准备/02_数据连接JDBC数据连接_上.md"
+    title: "数据准备 - 数据连接JDBC数据连接_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据准备", "JDBC数据连接", "数据连接"]
+    summary: "「数据准备」分页：JDBC数据连接（约 55 篇条目）；FR10 帮助文档「数据准备」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 363
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据准备/03_数据连接JDBC数据连接_中.md"
+    title: "数据准备 - 数据连接JDBC数据连接_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据准备", "JDBC数据连接", "数据连接"]
+    summary: "「数据准备」分页：JDBC数据连接（约 55 篇条目）；FR10 帮助文档「数据准备」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 363
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据准备/04_数据连接JDBC数据连接_下.md"
+    title: "数据准备 - 数据连接JDBC数据连接_下"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据准备", "JDBC数据连接", "数据连接"]
+    summary: "「数据准备」分页：JDBC数据连接（约 55 篇条目）；FR10 帮助文档「数据准备」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 257
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据准备/05_JNDI数据连接与其他数据库.md"
+    title: "数据准备 - JNDI数据连接与其他数据库"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据准备", "JNDI数据连接", "其他数据库", "数据连接"]
+    summary: "「数据准备」分页：JNDI数据连接、其他数据库（约 13 篇条目）；FR10 帮助文档「数据准备」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 236
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据准备/06_数据连接数据连接FAQ.md"
+    title: "数据准备 - 数据连接数据连接FAQ"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据准备", "数据连接FAQ", "数据连接"]
+    summary: "「数据准备」分页：数据连接FAQ（约 14 篇条目）；FR10 帮助文档「数据准备」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 234
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据准备/07_数据集.md"
+    title: "数据准备 - 数据集"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据准备", "数据集"]
+    summary: "「数据准备」分页：数据集（约 4 篇条目）；FR10 帮助文档「数据准备」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 82
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据准备/08_数据集等5章.md"
+    title: "数据准备 - 数据集等5章"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据准备", "数据库查询", "SAP数据集", "多维数据库", "关联数据集", "文件数据集", "数据集"]
+    summary: "「数据准备」分页：数据库查询、SAP数据集、多维数据库、关联数据集、文件数据集（约 17 篇条目）；FR10 帮助文档「数据准备」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 297
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据准备/09_数据集数据集插件.md"
+    title: "数据准备 - 数据集数据集插件"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据准备", "数据集插件", "数据集"]
+    summary: "「数据准备」分页：数据集插件（约 6 篇条目）；FR10 帮助文档「数据准备」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 112
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/数据准备/README.md"
+    title: "数据准备 目录导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["数据准备", "导航", "FR10 帮助文档", "数据连接", "数据连接JDBC数据连接_上", "数据连接JDBC数据连接_中", "数据连接JDBC数据连接_下", "JNDI数据连接与其他数据库", "数据连接数据连接FAQ", "数据集"]
+    summary: "数据准备 目录导航：原学习笔记（9 页/约 1876 行）按主题拆分，本页列出各子页链接、章节与篇数摘要。"
+    lines: 90
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/移动端应用/01_移动平台管理与HTML5配置.md"
+    title: "移动端应用 - 移动平台管理与HTML5配置"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["移动端应用", "移动平台管理", "HTML5配置", "移动端管理"]
+    summary: "「移动端应用」分页：移动平台管理、HTML5配置（约 13 篇条目）；FR10 帮助文档「移动端应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 232
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/移动端应用/02_移动端管理移动端集成.md"
+    title: "移动端应用 - 移动端管理移动端集成"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["移动端应用", "移动端集成", "移动端管理"]
+    summary: "「移动端应用」分页：移动端集成（约 19 篇条目）；FR10 帮助文档「移动端应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 314
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/移动端应用/03_移动端管理App打包（OEM）.md"
+    title: "移动端应用 - 移动端管理App打包（OEM）"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["移动端应用", "App打包（OEM）", "移动端管理"]
+    summary: "「移动端应用」分页：App打包（OEM）（约 15 篇条目）；FR10 帮助文档「移动端应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 231
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/移动端应用/04_移动端使用.md"
+    title: "移动端应用 - 移动端使用"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["移动端应用", "移动端使用"]
+    summary: "「移动端应用」分页：移动端使用（约 4 篇条目）；FR10 帮助文档「移动端应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 89
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/移动端应用/05_移动端模板制作移动端模板属性_上.md"
+    title: "移动端应用 - 移动端模板制作移动端模板属性_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["移动端应用", "移动端模板属性", "移动端模板制作"]
+    summary: "「移动端应用」分页：移动端模板属性（约 41 篇条目）；FR10 帮助文档「移动端应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 372
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/移动端应用/06_移动端模板制作移动端模板属性_中.md"
+    title: "移动端应用 - 移动端模板制作移动端模板属性_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["移动端应用", "移动端模板属性", "移动端模板制作"]
+    summary: "「移动端应用」分页：移动端模板属性（约 41 篇条目）；FR10 帮助文档「移动端应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 200
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/移动端应用/07_移动端模板制作移动端二次开发_上.md"
+    title: "移动端应用 - 移动端模板制作移动端二次开发_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["移动端应用", "移动端二次开发", "移动端模板制作"]
+    summary: "「移动端应用」分页：移动端二次开发（约 19 篇条目）；FR10 帮助文档「移动端应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 363
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/移动端应用/08_移动端模板制作移动端二次开发_中.md"
+    title: "移动端应用 - 移动端模板制作移动端二次开发_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["移动端应用", "移动端二次开发", "移动端模板制作"]
+    summary: "「移动端应用」分页：移动端二次开发（约 19 篇条目）；FR10 帮助文档「移动端应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 86
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/移动端应用/09_移动端模板制作移动端应用示例.md"
+    title: "移动端应用 - 移动端模板制作移动端应用示例"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["移动端应用", "移动端应用示例", "移动端模板制作"]
+    summary: "「移动端应用」分页：移动端应用示例（约 12 篇条目）；FR10 帮助文档「移动端应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 191
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/移动端应用/10_［App］设置与App使用与移动端访问.md"
+    title: "移动端应用 - ［App］设置与App使用与移动端访问"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["移动端应用", "［App］设置", "App使用", "移动端访问", "移动端使用"]
+    summary: "「移动端应用」分页：［App］设置、App使用、移动端访问（约 18 篇条目）；FR10 帮助文档「移动端应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 266
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/移动端应用/11_移动端管理.md"
+    title: "移动端应用 - 移动端管理"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["移动端应用", "移动端管理"]
+    summary: "「移动端应用」分页：移动端管理（约 2 篇条目）；FR10 帮助文档「移动端应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 53
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/移动端应用/12_移动端简介.md"
+    title: "移动端应用 - 移动端简介"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["移动端应用", "移动端简介"]
+    summary: "「移动端应用」分页：移动端简介（约 4 篇条目）；FR10 帮助文档「移动端应用」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 77
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/移动端应用/README.md"
+    title: "移动端应用 目录导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["移动端应用", "导航", "FR10 帮助文档", "移动平台管理与HTML5配置", "移动端管理移动端集成", "移动端管理App打包（OEM）", "移动端使用", "移动端模板制作移动端模板属性_上", "移动端模板制作移动端模板属性_中", "移动端模板制作移动端二次开发_上"]
+    summary: "移动端应用 目录导航：原学习笔记（12 页/约 2306 行）按主题拆分，本页列出各子页链接、章节与篇数摘要。"
+    lines: 92
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/设计器简介/01_设计器安装升级.md"
+    title: "设计器简介 - 设计器安装升级"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["设计器简介", "设计器安装升级"]
+    summary: "「设计器简介」分页：设计器安装升级（约 13 篇条目）；FR10 帮助文档「设计器简介」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 218
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/设计器简介/02_设计器概览.md"
+    title: "设计器简介 - 设计器概览"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["设计器简介", "设计器概览"]
+    summary: "「设计器简介」分页：设计器概览（约 1 篇条目）；FR10 帮助文档「设计器简介」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 38
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/设计器简介/03_单元格与文件.md"
+    title: "设计器简介 - 单元格与文件"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["设计器简介", "单元格", "文件", "操作指南"]
+    summary: "「设计器简介」分页：单元格、文件（约 26 篇条目）；FR10 帮助文档「设计器简介」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 358
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/设计器简介/04_操作指南等6章.md"
+    title: "设计器简介 - 操作指南等6章"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["设计器简介", "模板", "服务器", "设计器导入字体", "插入", "社区", "帮助", "操作指南"]
+    summary: "「设计器简介」分页：模板、服务器、设计器导入字体、插入、社区、帮助（约 25 篇条目）；FR10 帮助文档「设计器简介」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 384
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/设计器简介/05_快捷键与字体缺失检测.md"
+    title: "设计器简介 - 快捷键与字体缺失检测"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["设计器简介", "快捷键", "字体缺失检测", "操作指南"]
+    summary: "「设计器简介」分页：快捷键、字体缺失检测（约 2 篇条目）；FR10 帮助文档「设计器简介」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 59
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/设计器简介/06_设计器常见问题.md"
+    title: "设计器简介 - 设计器常见问题"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["设计器简介", "设计器常见问题"]
+    summary: "「设计器简介」分页：设计器常见问题（约 10 篇条目）；FR10 帮助文档「设计器简介」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 149
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/设计器简介/07_国际化.md"
+    title: "设计器简介 - 国际化"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["设计器简介", "国际化"]
+    summary: "「设计器简介」分页：国际化（约 6 篇条目）；FR10 帮助文档「设计器简介」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 113
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/设计器简介/README.md"
+    title: "设计器简介 目录导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["设计器简介", "导航", "FR10 帮助文档", "设计器安装升级", "设计器概览", "单元格与文件", "操作指南等6章", "快捷键与字体缺失检测", "设计器常见问题", "国际化"]
+    summary: "设计器简介 目录导航：原学习笔记（7 页/约 1218 行）按主题拆分，本页列出各子页链接、章节与篇数摘要。"
+    lines: 82
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/辅助分类/01_更新动态版本更新日志_上.md"
+    title: "辅助分类 - 更新动态版本更新日志_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["辅助分类", "版本更新日志", "更新动态"]
+    summary: "「辅助分类」分页：版本更新日志（约 21 篇条目）；FR10 帮助文档「辅助分类」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 359
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/辅助分类/02_更新动态版本更新日志_中.md"
+    title: "辅助分类 - 更新动态版本更新日志_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["辅助分类", "版本更新日志", "更新动态"]
+    summary: "「辅助分类」分页：版本更新日志（约 21 篇条目）；FR10 帮助文档「辅助分类」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 60
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/辅助分类/03_更新动态等4章.md"
+    title: "辅助分类 - 更新动态等4章"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["辅助分类", "文档月刊", "新功能实验室", "Demo上新日志", "停售与维护公告", "更新动态"]
+    summary: "「辅助分类」分页：文档月刊、新功能实验室、Demo上新日志、停售与维护公告（约 9 篇条目）；FR10 帮助文档「辅助分类」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 191
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/辅助分类/04_快速入门等3章.md"
+    title: "辅助分类 - 快速入门等3章"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["辅助分类", "第一张报表系列", "快速入门指南", "新手 FAQ", "快速入门"]
+    summary: "「辅助分类」分页：第一张报表系列、快速入门指南、新手 FAQ（约 8 篇条目）；FR10 帮助文档「辅助分类」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 194
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/辅助分类/05_产品简介等6章.md"
+    title: "辅助分类 - 产品简介等6章"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["辅助分类", "产品简介", "配置推荐", "资源分享", "购买指南", "支持与服务平台", "联系我们"]
+    summary: "「辅助分类」分页：产品简介、配置推荐、资源分享、购买指南、支持与服务平台、联系我们（约 11 篇条目）；FR10 帮助文档「辅助分类」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 265
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/辅助分类/06_FVS大屏编辑模式插件公测.md"
+    title: "辅助分类 - FVS大屏编辑模式插件公测"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["辅助分类", "FVS大屏编辑模式插件公测"]
+    summary: "「辅助分类」分页：FVS大屏编辑模式插件公测（约 1 篇条目）；FR10 帮助文档「辅助分类」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 48
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/辅助分类/README.md"
+    title: "辅助分类 目录导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["辅助分类", "导航", "FR10 帮助文档", "更新动态版本更新日志_上", "更新动态版本更新日志_中", "更新动态等4章", "快速入门等3章", "产品简介等6章", "FVS大屏编辑模式插件公测"]
+    summary: "辅助分类 目录导航：原学习笔记（6 页/约 1025 行）按主题拆分，本页列出各子页链接、章节与篇数摘要。"
+    lines: 80
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/01_服务器部署部署简介.md"
+    title: "部署集成 - 服务器部署部署简介"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "部署简介", "服务器部署"]
+    summary: "「部署集成」分页：部署简介（约 6 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 111
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/02_服务器部署部署问题排查_上.md"
+    title: "部署集成 - 服务器部署部署问题排查_上"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "部署问题排查", "服务器部署"]
+    summary: "「部署集成」分页：部署问题排查（约 33 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 361
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/03_服务器部署部署问题排查_中.md"
+    title: "部署集成 - 服务器部署部署问题排查_中"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "部署问题排查", "服务器部署"]
+    summary: "「部署集成」分页：部署问题排查（约 33 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 202
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/04_服务器部署等5章.md"
+    title: "部署集成 - 服务器部署等5章"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "WebLogic 服务器", "WebSphere 服务器", "Tomcat 服务器", "部署后操作", "部署前需知", "服务器部署"]
+    summary: "「部署集成」分页：WebLogic 服务器、WebSphere 服务器、Tomcat 服务器、部署后操作、部署前需知（约 13 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 243
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/05_服务器部署.md"
+    title: "部署集成 - 服务器部署"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "服务器部署"]
+    summary: "「部署集成」分页：服务器部署（约 3 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 68
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/06_跨域访问与常用方案.md"
+    title: "部署集成 - 跨域访问与常用方案"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "跨域访问", "常用方案", "Web 页面集成"]
+    summary: "「部署集成」分页：跨域访问、常用方案（约 8 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 219
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/07_自定义按钮与Web页面集成问题.md"
+    title: "部署集成 - 自定义按钮与Web 页面集成问题"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "自定义按钮", "Web 页面集成问题", "Web 页面集成"]
+    summary: "「部署集成」分页：自定义按钮、Web 页面集成问题（约 13 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 299
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/08_单点登录.md"
+    title: "部署集成 - 单点登录"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "单点登录"]
+    summary: "「部署集成」分页：单点登录（约 2 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 60
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/09_前台单点登录与CAS单点登录.md"
+    title: "部署集成 - 前台单点登录与CAS 单点登录"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "前台单点登录", "CAS 单点登录", "单点登录"]
+    summary: "「部署集成」分页：前台单点登录、CAS 单点登录（约 15 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 341
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/10_单点常见问题与后台单点登录.md"
+    title: "部署集成 - 单点常见问题与后台单点登录"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "单点常见问题", "后台单点登录", "单点登录"]
+    summary: "「部署集成」分页：单点常见问题、后台单点登录（约 6 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 131
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/11_Web页面集成.md"
+    title: "部署集成 - Web 页面集成"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "Web 页面集成"]
+    summary: "「部署集成」分页：Web 页面集成（约 3 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 78
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/12_session.md"
+    title: "部署集成 - session"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "session"]
+    summary: "「部署集成」分页：session（约 8 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 171
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/13_部署集成插件.md"
+    title: "部署集成 - 部署集成插件"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "部署集成插件"]
+    summary: "「部署集成」分页：部署集成插件（约 2 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 56
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/14_Web集群配置平台操作.md"
+    title: "部署集成 - Web集群配置平台操作"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "平台操作", "Web 集群配置"]
+    summary: "「部署集成」分页：平台操作（约 3 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 63
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/15_Web集群配置集群相关组件.md"
+    title: "部署集成 - Web集群配置集群相关组件"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "集群相关组件", "Web 集群配置"]
+    summary: "「部署集成」分页：集群相关组件（约 21 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 343
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/16_方案解析与具体步骤与集群FAQ文档.md"
+    title: "部署集成 - 方案解析与具体步骤与集群FAQ文档"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "方案解析", "具体步骤", "集群FAQ文档", "Web 集群配置"]
+    summary: "「部署集成」分页：方案解析、具体步骤、集群FAQ文档（约 12 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 214
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/17_Web集群配置集群运维手册.md"
+    title: "部署集成 - Web集群配置集群运维手册"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "集群运维手册", "Web 集群配置"]
+    summary: "「部署集成」分页：集群运维手册（约 13 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 253
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/18_FineReport与FineBI集成.md"
+    title: "部署集成 - FineReport与FineBI集成"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "FineReport与FineBI集成"]
+    summary: "「部署集成」分页：FineReport与FineBI集成（约 2 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 54
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/19_Web集群配置.md"
+    title: "部署集成 - Web 集群配置"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "Web 集群配置"]
+    summary: "「部署集成」分页：Web 集群配置（约 1 篇条目）；FR10 帮助文档「部署集成」分类 压缩提取，条目型检索语料（deep-learn 分页）。"
+    lines: 38
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr10_deep_learn/docs/部署集成/README.md"
+    title: "部署集成 目录导航"
+    stage: deep-learn
+    tags: ["FR10", "deep-learn", "⭐分页"]
+    keywords: ["部署集成", "导航", "FR10 帮助文档", "服务器部署部署简介", "服务器部署部署问题排查_上", "服务器部署部署问题排查_中", "服务器部署等5章", "服务器部署", "跨域访问与常用方案", "自定义按钮与Web 页面集成问题"]
+    summary: "部署集成 目录导航：原学习笔记（19 页/约 3036 行）按主题拆分，本页列出各子页链接、章节与篇数摘要。"
+    lines: 128
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/README.md"
+    title: "FR11 知识库索引（2289 篇离线文档 → 21 篇笔记）"
+    stage: fr11-knowledge
+    tags: ["FR11", "知识库", "索引", "离线文档"]
+    keywords: ["FR11", "FineReport 11", "知识库", "离线文档", "doc-view", "图表", "填报", "权限"]
+    summary: "FR11 离线文档（D:\\fr11_docs，2289 篇 doc-view HTML）解析重建的 21 篇知识笔记索引：15 分类 + 5 专题补充 + 本索引。"
+    lines: 78
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/_standardize_report.md"
+    title: "fr11_knowledge SKILL.md frontmatter 标准化报告"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["compatibility", "fr11", "name", "ADD", "chart", "i18n"]
+    summary: "# fr11_knowledge SKILL.md frontmatter 标准化报告"
+    lines: 145
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/chart图表/SKILL.md"
+    title: "FR11 图表 核心结论"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["chart", "实测", "ECharts", "getChart", "图表", "标题"]
+    summary: "--- name: fr11-chart description: FR11 图表/chart 开发时使用：选择图表类型、配置图表样式（标题/图例/标签/坐标轴）、地图钻取、ECharts/扩展图表、图表特效与超级链接联动时查阅。 keyw"
+    lines: 69
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/chart图表/references/01_图表类型.md"
+    title: "FR11 · 图表 · 图表类型"
+    stage: fr11-knowledge
+    tags: ["FR11", "图表"]
+    keywords: ["图表类型", "柱形图", "折线图", "饼图", "仪表盘", "甘特图"]
+    summary: "柱形/条形/折线/饼图/面积/散点/气泡/雷达/仪表/甘特/矩形树/漏斗/词云等类型条目（70 条 doc-view 条目，ID 776~4867）；chart_summary.md 拆分页 1/6，条目原样保留。"
+    lines: 278
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/chart图表/references/02_地图.md"
+    title: "FR11 · 图表 · 地图与 GIS"
+    stage: fr11-knowledge
+    tags: ["FR11", "图表"]
+    keywords: ["地图", "GIS", "3D", "地球", "边界"]
+    summary: "地图类型、钻取地图、GIS 点地图、3D 地球与边界条目（43 条 doc-view 条目，ID 1583~5011）；chart_summary.md 拆分页 2/6，条目原样保留。"
+    lines: 183
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/chart图表/references/03_图表样式与属性.md"
+    title: "FR11 · 图表 · 图表样式与属性"
+    stage: fr11-knowledge
+    tags: ["FR11", "图表"]
+    keywords: ["图表样式", "图例", "标签", "坐标轴", "提示", "特效", "条件显示"]
+    summary: "图表样式、图例标签标题、坐标轴、颜色背景、提示与特效、条件显示条目（44 条 doc-view 条目，ID 922~4792）；chart_summary.md 拆分页 3/6，条目原样保留。"
+    lines: 192
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/chart图表/references/04_数据与交互.md"
+    title: "FR11 · 图表 · 图表数据与交互"
+    stage: fr11-knowledge
+    tags: ["FR11", "图表"]
+    keywords: ["图表数据源", "数据绑定", "刷新", "联动", "钻取", "图表接口"]
+    summary: "图表数据源与数据绑定、刷新、联动钻取、切换排序、图表对象与 JS 接口条目（37 条 doc-view 条目，ID 175~5016）；chart_summary.md 拆分页 4/6，条目原样保留。"
+    lines: 180
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/chart图表/references/05_扩展图表与轮播组件.md"
+    title: "FR11 · 图表 · 扩展图表 / ECharts / 轮播组件"
+    stage: fr11-knowledge
+    tags: ["FR11", "图表"]
+    keywords: ["扩展图表", "ECharts", "轮播", "插件"]
+    summary: "扩展图表插件、ECharts、轮播器与轮播类组件条目（3 条 doc-view 条目，ID 2474~4425）；chart_summary.md 拆分页 5/6，条目原样保留。"
+    lines: 40
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/chart图表/references/06_综合与其他.md"
+    title: "FR11 · 图表 · 综合与其他"
+    stage: fr11-knowledge
+    tags: ["FR11", "图表"]
+    keywords: ["综合", "其他"]
+    summary: "未归入上述主题的条目（含大屏实例、H5 图表影响等）（43 条 doc-view 条目，ID 173~5116）；chart_summary.md 拆分页 6/6，条目原样保留。"
+    lines: 180
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/chart图表/references/README.md"
+    title: "图表 references 导航"
+    stage: fr11-knowledge
+    tags: ["FR11", "图表"]
+    keywords: ["references", "导航", "chart_summary"]
+    summary: "chart图表/references 目录导航：chart_summary.md 已按主题拆为 6 页；原文件保留为导航页。SKILL.md 为核心结论入口。"
+    lines: 33
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/chart图表/references/chart_summary.md"
+    title: "FR11 知识库 · 图表总结（导航）"
+    stage: fr11-knowledge
+    tags: ["FR11", "图表"]
+    keywords: ["图表", "地图", "图表样式", "扩展图表"]
+    summary: "chart_summary.md（240 条）主题拆分导航页：主题速览 + 6 个分页入口 + 总结（全量 doc-view ID 清单）。"
+    lines: 69
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/data-source数据源/SKILL.md"
+    title: "FR11 数据源 核心结论"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["SQL", "数据集", "data", "FR11", "FineDB", "连接"]
+    summary: "--- name: fr11-data-source description: FR11 数据源/data source 场景使用：定义数据连接（JDBC/JNDI/ODBC）、创建数据集（SQL/内置/文件/程序/树数据集）、驱动管理、F"
+    lines: 51
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/data-source数据源/references/01_数据连接基础.md"
+    title: "FR11 · 数据源 · 数据连接基础（JDBC/JNDI/连接池）"
+    stage: fr11-knowledge
+    tags: ["FR11", "数据源", "数据连接"]
+    keywords: ["数据连接", "JDBC", "JNDI", "ODBC", "连接池", "驱动"]
+    summary: "数据连接概述与定义、JDBC/JNDI/ODBC、连接池与驱动、连接高级设置条目（16 条 doc-view 条目，ID 100~4439）；data_source_summary.md 拆分页 1/5，条目原样保留。"
+    lines: 88
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/data-source数据源/references/02_数据集类型.md"
+    title: "FR11 · 数据源 · 数据集类型（SQL/程序/文件等）"
+    stage: fr11-knowledge
+    tags: ["FR11", "数据源", "数据连接"]
+    keywords: ["数据集", "SQL数据集", "树数据集", "程序数据源", "文件数据集"]
+    summary: "SQL 数据集、内置/关联/树/服务器数据集、程序数据源、文件与 JSON 等数据集条目（68 条 doc-view 条目，ID 103~5130）；data_source_summary.md 拆分页 2/5，条目原样保留。"
+    lines: 277
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/data-source数据源/references/03_各数据库连接.md"
+    title: "FR11 · 数据源 · 各数据库数据连接"
+    stage: fr11-knowledge
+    tags: ["FR11", "数据源", "数据连接"]
+    keywords: ["Oracle", "MySQL", "SQL Server", "达梦", "GaussDB", "数据连接"]
+    summary: "Oracle/MySQL/SQL Server/达梦/华为云等各数据库数据连接条目（46 条 doc-view 条目，ID 290~4905）；data_source_summary.md 拆分页 3/5，条目原样保留。"
+    lines: 193
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/data-source数据源/references/04_FineDB与专项插件.md"
+    title: "FR11 · 数据源 · FineDB / LogDB / 专项数据库插件"
+    stage: fr11-knowledge
+    tags: ["FR11", "数据源", "数据连接"]
+    keywords: ["FineDB", "LogDB", "MongoDB", "SAP", "多维数据库", "身份验证"]
+    summary: "FineDB 外接、LogDB、MongoDB/SAP/多维等专项数据库插件与身份验证条目（5 条 doc-view 条目，ID 120~2944）；data_source_summary.md 拆分页 4/5，条目原样保留。"
+    lines: 51
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/data-source数据源/references/05_综合与其他.md"
+    title: "FR11 · 数据源 · 综合与其他"
+    stage: fr11-knowledge
+    tags: ["FR11", "数据源", "数据连接"]
+    keywords: ["综合", "其他"]
+    summary: "未归入上述主题的条目（含通用报表、单元格扩展等）（44 条 doc-view 条目，ID 129~5068）；data_source_summary.md 拆分页 5/5，条目原样保留。"
+    lines: 201
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/data-source数据源/references/README.md"
+    title: "数据源 references 导航"
+    stage: fr11-knowledge
+    tags: ["FR11", "数据源", "数据连接"]
+    keywords: ["references", "导航", "data_source_summary"]
+    summary: "data-source数据源/references 目录导航：data_source_summary.md 已按主题拆为 5 页；原文件保留为导航页。SKILL.md 为核心结论入口。"
+    lines: 33
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/data-source数据源/references/data_source_summary.md"
+    title: "FR11 知识库 · 数据源总结（导航）"
+    stage: fr11-knowledge
+    tags: ["FR11", "数据源"]
+    keywords: ["数据连接", "数据集", "JDBC", "FineDB"]
+    summary: "data_source_summary.md（179 条）主题拆分导航页：主题速览 + 5 个分页入口 + 总结（全量 doc-view ID 清单）。"
+    lines: 68
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/SKILL.md"
+    title: "FR11 部署与集群 核心结论"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["Tomcat", "FR11", "references", "deploy", "cluster", "WebLogic"]
+    summary: "--- name: fr11-deploy-cluster description: 何时使用：需要在服务器上部署（deploy）FR11 报表工程、配置 Tomcat/WebLogic/Nginx/Redis 集群（cluster）、负载"
+    lines: 47
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/01_集群与负载均衡.md"
+    title: "FR11 · 部署与集群 · 集群 / 负载均衡 / 会话与文件服务器"
+    stage: fr11-knowledge
+    tags: ["FR11", "部署", "集群"]
+    keywords: ["集群", "负载均衡", "Nginx", "Redis", "状态服务器", "文件服务器"]
+    summary: "集群方案、Nginx/Redis/Keepalived/Traefik、状态与文件服务器、智能运维条目（49 条 doc-view 条目，ID 2221~5073）；deploy_cluster_summary.md 拆分页 1/6，条目原样保留。"
+    lines: 192
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/02_服务器部署与安装.md"
+    title: "FR11 · 部署与集群 · 服务器部署与安装升级"
+    stage: fr11-knowledge
+    tags: ["FR11", "部署", "集群"]
+    keywords: ["部署", "安装", "Tomcat", "WebLogic", "WebSphere", "JBoss", "Resin", "TongWeb", "迁移", "升级"]
+    summary: "独立部署/嵌入式部署、Tomcat/WebLogic/WebSphere/JBoss/Resin/TongWeb、迁移升级与端口条目（87 条 doc-view 条目，ID 69~5120）；deploy_cluster_summary.md 拆分页 2/6，条目原样保留。"
+    lines: 328
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/03_运维配置与日志.md"
+    title: "FR11 · 部署与集群 · 运维配置 / 内存 / 日志"
+    stage: fr11-knowledge
+    tags: ["FR11", "部署", "集群"]
+    keywords: ["运维", "内存", "日志", "JVM", "备份还原", "Linux", "Windows"]
+    summary: "服务器配置、内存与线程、日志、编码字体、备份还原、Linux/Windows/云运维条目（57 条 doc-view 条目，ID 361~5133）；deploy_cluster_summary.md 拆分页 3/6，条目原样保留。"
+    lines: 242
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/04_安全与认证.md"
+    title: "FR11 · 部署与集群 · 安全 / SSL / CAS 认证"
+    stage: fr11-knowledge
+    tags: ["FR11", "部署", "集群"]
+    keywords: ["SSL", "HTTPS", "CAS", "安全防护", "加密", "license"]
+    summary: "SSL 证书与 HTTPS、CAS 单点、加密与注册、安全防护条目（19 条 doc-view 条目，ID 275~4833）；deploy_cluster_summary.md 拆分页 4/6，条目原样保留。"
+    lines: 97
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/05_平台管理与工程.md"
+    title: "FR11 · 部署与集群 · 平台管理 / 工程与数据连接"
+    stage: fr11-knowledge
+    tags: ["FR11", "部署", "集群"]
+    keywords: ["平台管理", "数据决策系统", "工程", "访问路径", "Servlet", "FineDB"]
+    summary: "数据决策系统与平台管理、目录、用户、工程访问路径、Servlet、FineDB 与平台数据连接条目（32 条 doc-view 条目，ID 195~4998）；deploy_cluster_summary.md 拆分页 5/6，条目原样保留。"
+    lines: 141
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/06_综合与其他.md"
+    title: "FR11 · 部署与集群 · 综合与其他"
+    stage: fr11-knowledge
+    tags: ["FR11", "部署", "集群"]
+    keywords: ["综合", "其他"]
+    summary: "未归入上述主题的条目（含通用报错、浏览器配置等）（71 条 doc-view 条目，ID 66~5001）；deploy_cluster_summary.md 拆分页 6/6，条目原样保留。"
+    lines: 295
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/README.md"
+    title: "部署与集群 references 导航"
+    stage: fr11-knowledge
+    tags: ["FR11", "部署", "集群"]
+    keywords: ["references", "导航", "deploy_cluster_summary"]
+    summary: "deploy-cluster部署集群/references 目录导航：deploy_cluster_summary.md 已按主题拆为 6 页；原文件保留为导航页。SKILL.md 为核心结论入口。"
+    lines: 35
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/deploy_cluster_summary.md"
+    title: "FR11 知识库 · 部署与集群总结（导航）"
+    stage: fr11-knowledge
+    tags: ["FR11", "部署", "集群"]
+    keywords: ["部署", "集群", "Nginx", "Tomcat", "迁移"]
+    summary: "deploy_cluster_summary.md（315 条）主题拆分导航页：主题速览 + 6 个分页入口 + 总结（全量 doc-view ID 清单）。"
+    lines: 71
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/deploy-cluster部署集群/references/fr11_install_survey_report.md"
+    title: "FR11 安装调研报告（基于离线文档）"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["doc", "view", "安装", "Linux", "去重收敛", "Windows"]
+    summary: "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：21 篇（标题含 安装/部署环境/环境准备/系统要求/配置要求） > 生成时间：2026-08-26"
+    lines: 136
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/export导出/SKILL.md"
+    title: "FR11 导出 核心结论"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["Excel", "导出", "PDF", "Word", "实测", "CSV"]
+    summary: "--- name: fr11-export description: FR11 导出/export 场景使用：Excel/PDF/Word/图片/CSV 导出、大数据量导出、分页分 sheet、URL 直接导出、导出水印与密码、导出异常（0"
+    lines: 69
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/export导出/references/export_summary.md"
+    title: "FR11 知识库 · 导出总结"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["view", "doc", "Excel", "公式", "核心概念", "导出"]
+    summary: "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：48 篇 > 生成时间：2026-08-26 > 主题范围：Excel导出/PDF导出/Word导出/图片导出"
+    lines: 275
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/fill-submit填报提交/SKILL.md"
+    title: "FR11 填报与提交 核心结论"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["Excel", "提交", "submit", "FR11", "填报", "SQL"]
+    summary: "--- name: fr11-fill-submit description: FR11 填报/提交（fill/submit）场景使用：设计填报报表、内置 SQL/智能/自定义提交、数据校验、Excel 导入、填报暂存、多级上报、填报性能与"
+    lines: 52
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/fill-submit填报提交/references/fill_submit_summary.md"
+    title: "FR11 知识库 · 填报与提交总结"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["doc", "view", "公式", "核心概念", "代码", "关键"]
+    summary: "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：103 篇 > 生成时间：2026-08-26 > 主题范围：填报/提交/智能提交/数据校验/Excel导入/"
+    lines: 546
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/formula公式函数/SKILL.md"
+    title: "FR11 公式与函数 核心结论"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["formula", "FR11", "公式", "层次坐标", "value", "references"]
+    summary: "--- name: fr11-formula description: 何时使用：编写 FR11 公式（formula）与函数（function）、层次坐标、动态格间运算、自定义函数，或排查公式报错、环比同比累计占比计算时使用。触发词：函数"
+    lines: 47
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/formula公式函数/references/01_层次坐标与累计排名.md"
+    title: "FR11 · 公式与函数 · 层次坐标 / 累计 / 排名"
+    stage: fr11-knowledge
+    tags: ["FR11", "公式", "函数"]
+    keywords: ["层次坐标", "累计", "排名", "序号", "环比", "占比"]
+    summary: "层次坐标概念与绝对相对引用、累计逐层跨层汇总、环比占比排名序号条目（31 条 doc-view 条目，ID 149~4580）；formula_summary.md 拆分页 1/5，条目原样保留。"
+    lines: 156
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/formula公式函数/references/02_自定义函数与引擎.md"
+    title: "FR11 · 公式与函数 · 自定义函数 / 计算引擎"
+    stage: fr11-knowledge
+    tags: ["FR11", "公式", "函数"]
+    keywords: ["自定义函数", "AbstractFunction", "计算引擎", "函数管理器"]
+    summary: "自定义函数开发（AbstractFunction）、函数管理器、新计算引擎与公式编辑器条目（16 条 doc-view 条目，ID 236~5089）；formula_summary.md 拆分页 2/5，条目原样保留。"
+    lines: 96
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/formula公式函数/references/03_日期与字符串处理.md"
+    title: "FR11 · 公式与函数 · 日期时间与字符串处理"
+    stage: fr11-knowledge
+    tags: ["FR11", "公式", "函数"]
+    keywords: ["日期函数", "字符串", "截取", "拼接", "大小写", "数字转中文"]
+    summary: "日期函数应用、星期与工作日、字符串截取拼接、大小写与数字转中文条目（27 条 doc-view 条目，ID 422~4855）；formula_summary.md 拆分页 3/5，条目原样保留。"
+    lines: 144
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/formula公式函数/references/04_函数速查.md"
+    title: "FR11 · 公式与函数 · 函数速查（各类函数概述与用法）"
+    stage: fr11-knowledge
+    tags: ["FR11", "公式", "函数"]
+    keywords: ["函数概述", "函数", "公式", "运算符", "正则"]
+    summary: "各函数概述（文本/数学/逻辑/数组/报表等）、具体函数用法、公式形态与运算符条目（48 条 doc-view 条目，ID 116~5040）；formula_summary.md 拆分页 4/5，条目原样保留。"
+    lines: 234
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/formula公式函数/references/05_公式应用综合.md"
+    title: "FR11 · 公式与函数 · 公式应用综合"
+    stage: fr11-knowledge
+    tags: ["FR11", "公式", "函数"]
+    keywords: ["公式应用", "综合"]
+    summary: "未归入上述主题的公式应用条目（报表过程、页面展示等）（42 条 doc-view 条目，ID 152~4869）；formula_summary.md 拆分页 5/5，条目原样保留。"
+    lines: 194
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/formula公式函数/references/README.md"
+    title: "公式与函数 references 导航"
+    stage: fr11-knowledge
+    tags: ["FR11", "公式", "函数"]
+    keywords: ["references", "导航", "formula_summary"]
+    summary: "formula公式函数/references 目录导航：formula_summary.md 已按主题拆为 5 页；原文件保留为导航页。SKILL.md 为核心结论入口。"
+    lines: 33
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/formula公式函数/references/formula_summary.md"
+    title: "FR11 知识库 · 公式与函数总结（导航）"
+    stage: fr11-knowledge
+    tags: ["FR11", "公式", "函数"]
+    keywords: ["公式", "函数", "层次坐标", "自定义函数"]
+    summary: "formula_summary.md（164 条）主题拆分导航页：主题速览 + 5 个分页入口 + 公式×Word 报告跨域节 + 总结（全量 doc-view ID 清单）。"
+    lines: 78
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/fr11_knowledge_复核报告_2026-08-22.md"
+    title: "fr11_knowledge 复核报告（i18n 记录问题 + FR11 探针落地）"
+    stage: fr11-knowledge
+    tags: ["FR11", "复核", "i18n", "fr-agent", "探针", "质量闸门"]
+    keywords: ["复核", "i18n", "臆造类名", "LocaleFinder", "inject_fr11", "fr-agent", "探针", "attach", "getLocText", "验证", "实践验证"]
+    summary: "2026-08-22 对其他机器生成的 fr11_knowledge（i18n 线）做本机双 FR 实证复核：键数基本属实，17 个新增类名全部臆造，LocaleFinder 论断被推翻；同时补齐 FR11 fr-agent 探针（inject_fr11.py）并完成注入+运行时 getLocText 实证。"
+    lines: 108
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/frm-decision决策报表/SKILL.md"
+    title: "FR11 决策报表 核心结论"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["frm", "Tab", "实测", "body", "决策报表", "报表块"]
+    summary: "--- name: fr11-frm-decision description: 何时使用：制作 FR11 决策报表（FRM）大屏/驾驶舱/移动端看板、处理 body 布局与 PC 端自适应、组件（报表块/图表块/Tab块）联动、JS 接口"
+    lines: 66
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/frm-decision决策报表/references/01_基础与布局自适应.md"
+    title: "FR11 · 决策报表 · 决策报表基础与布局自适应"
+    stage: fr11-knowledge
+    tags: ["FR11", "决策报表", "FRM"]
+    keywords: ["决策报表", "布局", "自适应", "body", "聚合报表"]
+    summary: "决策报表简介与入门、body 与布局方式、自适应属性、重复冻结、新旧版本说明条目（22 条 doc-view 条目，ID 132~5022）；frm_decision_summary.md 拆分页 1/5，条目原样保留。"
+    lines: 110
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/frm-decision决策报表/references/02_FVS与大屏组件.md"
+    title: "FR11 · 决策报表 · FVS 与大屏"
+    stage: fr11-knowledge
+    tags: ["FR11", "决策报表", "FRM"]
+    keywords: ["FVS", "大屏", "轮播器", "3D", "Unity", "画布"]
+    summary: "FVS 画布/分页/组件与轮播器、3D/Unity、大屏常见问题条目（20 条 doc-view 条目，ID 1652~5059）；frm_decision_summary.md 拆分页 2/5，条目原样保留。"
+    lines: 115
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/frm-decision决策报表/references/03_组件与报表块.md"
+    title: "FR11 · 决策报表 · 组件 / 报表块 / Tab 块"
+    stage: fr11-knowledge
+    tags: ["FR11", "决策报表", "FRM"]
+    keywords: ["组件", "报表块", "Tab块", "网页框", "日历", "轮播器", "组件接口"]
+    summary: "决策报表组件操作与属性、报表块工具栏与分页、Tab 块接口与轮播、网页框/日历/图片等组件条目（51 条 doc-view 条目，ID 633~5121）；frm_decision_summary.md 拆分页 3/5，条目原样保留。"
+    lines: 234
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/frm-decision决策报表/references/04_交互JS与接口.md"
+    title: "FR11 · 决策报表 · 交互联动 / JS / 接口 / 导出"
+    stage: fr11-knowledge
+    tags: ["FR11", "决策报表", "FRM"]
+    keywords: ["JS", "联动", "刷新", "隐藏", "排序", "导出", "超链"]
+    summary: "JS 实现系列（刷新/隐藏/排序/定时翻页）、组件联动、超链、导出与参数条目（9 条 doc-view 条目，ID 1457~5091）；frm_decision_summary.md 拆分页 4/5，条目原样保留。"
+    lines: 68
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/frm-decision决策报表/references/05_综合与其他.md"
+    title: "FR11 · 决策报表 · 综合与其他"
+    stage: fr11-knowledge
+    tags: ["FR11", "决策报表", "FRM"]
+    keywords: ["综合", "其他"]
+    summary: "未归入上述主题的条目（含模板预览调试、跨报表块过滤等）（21 条 doc-view 条目，ID 223~5017）；frm_decision_summary.md 拆分页 5/5，条目原样保留。"
+    lines: 99
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/frm-decision决策报表/references/README.md"
+    title: "决策报表 references 导航"
+    stage: fr11-knowledge
+    tags: ["FR11", "决策报表", "FRM"]
+    keywords: ["references", "导航", "frm_decision_summary"]
+    summary: "frm-decision决策报表/references 目录导航：frm_decision_summary.md 已按主题拆为 5 页；原文件保留为导航页。SKILL.md 为核心结论入口。"
+    lines: 33
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/frm-decision决策报表/references/frm_decision_summary.md"
+    title: "FR11 知识库 · 决策报表总结（导航）"
+    stage: fr11-knowledge
+    tags: ["FR11", "决策报表", "FRM"]
+    keywords: ["决策报表", "FVS", "报表块", "自适应"]
+    summary: "frm_decision_summary.md（123 条）主题拆分导航页：主题速览 + 5 个分页入口 + 总结（全量 doc-view ID 清单）。"
+    lines: 69
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/fvs-dashboard大屏/FVS图表空数据自定义提示.md"
+    title: "FVS/图表空数据自定义提示（暂无数据文案）"
+    stage: fvs-dashboard大屏
+    tags: ["FVS", "空数据提示", "暂无数据", "条件属性", "ROWCOUNT"]
+    keywords: ["FVS 图表没数据提示", "空数据自定义提示", "暂无数据文案", "图表无数据显示什么", "ROWCOUNT 判空", "空数据提示不生效"]
+    summary: "图表空数据提示两条正解：全局（设计器菜单>服务器>图表空数据提示，自定义提示图片，作用于所有图表）；单个图表/自定义文字（条件属性控制图表与提示组件显隐 + ROWCOUNT(\"ds1\")==0 判空）。FVS 图表组件设置项与普通报表基本一致，思路同适用；不生效排查走 ckzl/lc/08 §16.6 四步判定序。"
+    lines: 58
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/fvs-dashboard大屏/SKILL.md"
+    title: "FR11 FVS 可视化看板（大屏）核心结论"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["FVS", "doc", "view", "实测", "大屏", "轮播器"]
+    summary: "--- name: fr11-fvs description: FR11 FVS 大屏/可视化看板开发时使用。触发词：FVS、大屏、可视化看板、三维城市、自定义模型、轮播器、分页、组件动画、FVS 插件、大屏接口。 keywords: [三"
+    lines: 63
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/fvs-dashboard大屏/references/fvs_dashboard_summary.md"
+    title: "FR11 知识库 · FVS 可视化看板（大屏）总结"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["FVS", "doc", "view", "大屏编辑模式", "核心概念", "插件的用户"]
+    summary: "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：65 篇（标题含 FVS，独立于 15 分类的专题篇） > 生成时间：2026-08-26"
+    lines: 359
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/i18n国际化/SKILL.md"
+    title: "FR11 国际化（i18n）核心结论"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["doc", "view", "i18n", "已验证", "fr_locale", "i18nText"]
+    summary: "--- name: fr11-i18n description: 何时使用：FR11 报表国际化/多语言问题——报表中英文等多语言切换、i18n 键值映射、前端文字国际化、fr_locale 语言参数、平台语言配置、海外场景本地化公式与控件"
+    lines: 53
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/i18n国际化/references/fr10_i18n_verification_report.md"
+    title: "FR11 离线文档 i18n 验证报告"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["doc", "view", "i18n", "FR11", "Java", "API"]
+    summary: "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，共 2289 篇） > 生成时间：2026-08-26 > 验证方法：全量 2289 篇正文扫描关键词 i18n / 国际化 / 多语言 "
+    lines: 59
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/i18n国际化/references/fr11_i18n_api_optimization.md"
+    title: "FR11 i18n 优化建议（基于离线文档实际约束）"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["doc", "view", "FR11", "zh_TW", "手机", "邮编"]
+    summary: "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档） > 生成时间：2026-08-26 > 纪律：每条建议均标注依据的文档 ID 与原文约束，不做文档之外的推测。"
+    lines: 58
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/i18n国际化/references/fr11_java_api_i18n.md"
+    title: "FR11 Java API 国际化（i18n）接口整理"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["doc", "view", "i18n", "locale", "App", "fr_locale"]
+    summary: "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 生成时间：2026-08-26 > 文档范围：全量 2289 篇中命中 i18n 关键词（i18n/国际化/多语言/语"
+    lines: 157
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/js-api二次开发/SKILL.md"
+    title: "FR11 二次开发与 JS API 核心结论"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["doc", "view", "新增", "API", "实测", "本文件"]
+    summary: "--- name: fr11-js-api description: 何时使用：FR11 报表二次开发与前端 JS API 问题——写 JS 事件、调用 _g()/FR/FS 接口、填报提交与插删行、单元格取值赋值、工具栏/参数面板/Tab"
+    lines: 73
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/js-api二次开发/references/01_填报与提交接口.md"
+    title: "FR11 · 二次开发与JS API · 填报 / 提交 / 插删行 / 校验"
+    stage: fr11-knowledge
+    tags: ["FR11", "JS API", "二次开发"]
+    keywords: ["填报", "提交", "writeReport", "插删行", "校验"]
+    summary: "填报提交接口、插删行、暂存、填报校验与上报类条目（31 条 doc-view 条目，ID 526~4817）；js_api_summary.md 拆分页 1/10，条目原样保留。"
+    lines: 155
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/js-api二次开发/references/02_单元格与表格接口.md"
+    title: "FR11 · 二次开发与JS API · 单元格与表格接口"
+    stage: fr11-knowledge
+    tags: ["FR11", "JS API", "二次开发"]
+    keywords: ["单元格接口", "表格接口", "折叠树", "分页", "sheet"]
+    summary: "单元格取值赋值、表格对象三级接口、折叠树/视图树、分页与 sheet 条目（52 条 doc-view 条目，ID 928~5125）；js_api_summary.md 拆分页 2/10，条目原样保留。"
+    lines: 276
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/js-api二次开发/references/03_控件参数面板与工具栏.md"
+    title: "FR11 · 二次开发与JS API · 控件 / 参数面板 / 工具栏"
+    stage: fr11-knowledge
+    tags: ["FR11", "JS API", "二次开发"]
+    keywords: ["参数面板", "控件", "工具栏", "按钮"]
+    summary: "参数面板与控件 JS、工具栏自定义、按钮与菜单条目（36 条 doc-view 条目，ID 910~5102）；js_api_summary.md 拆分页 3/10，条目原样保留。"
+    lines: 181
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/js-api二次开发/references/04_图表与大屏FVS.md"
+    title: "FR11 · 二次开发与JS API · 图表 / 大屏 / FVS"
+    stage: fr11-knowledge
+    tags: ["FR11", "JS API", "二次开发"]
+    keywords: ["图表接口", "FVS", "duchamp", "轮播", "跑马灯"]
+    summary: "图表 JS 接口、FVS(duchamp) 大屏、轮播与跑马灯条目（35 条 doc-view 条目，ID 1741~5131）；js_api_summary.md 拆分页 4/10，条目原样保留。"
+    lines: 193
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/js-api二次开发/references/05_打印与导出.md"
+    title: "FR11 · 二次开发与JS API · 打印 / 导出 / 导入"
+    stage: fr11-knowledge
+    tags: ["FR11", "JS API", "二次开发"]
+    keywords: ["打印", "导出", "Excel导入", "directExportToExcel"]
+    summary: "JS 打印调用、导出（Excel/CSV/PDF）、Excel 导入条目（15 条 doc-view 条目，ID 624~4488）；js_api_summary.md 拆分页 5/10，条目原样保留。"
+    lines: 86
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/js-api二次开发/references/06_Web集成与安全.md"
+    title: "FR11 · 二次开发与JS API · Web 集成 / 单点登录 / 安全"
+    stage: fr11-knowledge
+    tags: ["FR11", "JS API", "二次开发"]
+    keywords: ["iframe", "单点登录", "跨域", "session", "Security Headers"]
+    summary: "iframe 集成、跨域与乱码、单点登录、cookie/session、防盗链条目（49 条 doc-view 条目，ID 602~5086）；js_api_summary.md 拆分页 6/10，条目原样保留。"
+    lines: 225
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/js-api二次开发/references/07_插件与自定义.md"
+    title: "FR11 · 二次开发与JS API · 插件与自定义开发"
+    stage: fr11-knowledge
+    tags: ["FR11", "JS API", "二次开发"]
+    keywords: ["插件", "自定义", "插件管理"]
+    summary: "官方/功能插件、自定义按钮与自定义开发条目（65 条 doc-view 条目，ID 113~5014）；js_api_summary.md 拆分页 7/10，条目原样保留。"
+    lines: 262
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/js-api二次开发/references/08_Java引擎与平台.md"
+    title: "FR11 · 二次开发与JS API · Java 引擎与平台 API"
+    stage: fr11-knowledge
+    tags: ["FR11", "JS API", "二次开发"]
+    keywords: ["引擎API", "Java", "AbstractFunction", "调度", "FTP"]
+    summary: "引擎 API、Java 编译与 classpath、上传 FTP、定时调度平台侧条目（18 条 doc-view 条目，ID 597~5076）；js_api_summary.md 拆分页 8/10，条目原样保留。"
+    lines: 99
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/js-api二次开发/references/09_综合与其他.md"
+    title: "FR11 · 二次开发与JS API · 综合与其他"
+    stage: fr11-knowledge
+    tags: ["FR11", "JS API", "二次开发"]
+    keywords: ["综合", "其他"]
+    summary: "未归入上述主题的条目（含通用报错、产品说明等）（84 条 doc-view 条目，ID 386~3713）；js_api_summary.md 拆分页 9/10，条目原样保留。"
+    lines: 387
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/js-api二次开发/references/09_综合与其他_2.md"
+    title: "FR11 · 二次开发与JS API · 综合与其他"
+    stage: fr11-knowledge
+    tags: ["FR11", "JS API", "二次开发"]
+    keywords: ["综合", "其他"]
+    summary: "未归入上述主题的条目（含通用报错、产品说明等）（51 条 doc-view 条目，ID 3727~5104）；js_api_summary.md 拆分页 10/10，条目原样保留。"
+    lines: 230
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/js-api二次开发/references/README.md"
+    title: "二次开发与JS API references 导航"
+    stage: fr11-knowledge
+    tags: ["FR11", "JS API", "二次开发"]
+    keywords: ["references", "导航", "js_api_summary"]
+    summary: "js-api二次开发/references 目录导航：js_api_summary.md 已按主题拆为 10 页；原文件保留为导航页。SKILL.md 为核心结论入口。"
+    lines: 38
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/js-api二次开发/references/js_api_summary.md"
+    title: "FR11 知识库 · 二次开发与JS API总结（导航）"
+    stage: fr11-knowledge
+    tags: ["FR11", "JS API", "二次开发"]
+    keywords: ["JS API", "插件", "自定义", "引擎API"]
+    summary: "js_api_summary.md（436 条）主题拆分导航页：主题速览 + 10 个分页入口 + 总结（全量 doc-view ID 清单）；条目正文在各分页。"
+    lines: 74
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/mobile移动端/SKILL.md"
+    title: "FR11 移动端 核心结论"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["doc", "view", "App", "mobile_summary", "FR11", "移动端"]
+    summary: "--- name: fr11-mobile description: FR11 移动端开发/预览问题时使用。触发词：移动端、App、HTML5/H5、微信、钉钉、企业微信、小程序、OEM/Custom App 打包、NFC 读卡、移动端填报"
+    lines: 50
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/mobile移动端/references/01_App客户端.md"
+    title: "FR11 · 移动端 · App 客户端"
+    stage: fr11-knowledge
+    tags: ["FR11", "移动端"]
+    keywords: ["App", "打包", "iOS", "Android", "客户端"]
+    summary: "[App] 系列接口与功能、App 打包与证书、iOS/Android 专项条目（55 条 doc-view 条目，ID 563~5025）；mobile_summary.md 拆分页 1/6，条目原样保留。"
+    lines: 220
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/mobile移动端/references/02_微信钉钉集成.md"
+    title: "FR11 · 移动端 · 微信 / 钉钉 / 小程序集成"
+    stage: fr11-knowledge
+    tags: ["FR11", "移动端"]
+    keywords: ["微信", "钉钉", "小程序", "企业号"]
+    summary: "企业微信、钉钉、微信小程序集成与推送条目（10 条 doc-view 条目，ID 1981~5018）；mobile_summary.md 拆分页 2/6，条目原样保留。"
+    lines: 64
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/mobile移动端/references/03_HTML5与H5.md"
+    title: "FR11 · 移动端 · HTML5 / H5"
+    stage: fr11-knowledge
+    tags: ["FR11", "移动端"]
+    keywords: ["HTML5", "H5", "悬浮工具栏"]
+    summary: "[H5] 系列与 HTML5 端预览、H5 悬浮工具栏等条目（9 条 doc-view 条目，ID 1649~4574）；mobile_summary.md 拆分页 3/6，条目原样保留。"
+    lines: 56
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/mobile移动端/references/04_移动端填报与交互.md"
+    title: "FR11 · 移动端 · 移动端填报与交互"
+    stage: fr11-knowledge
+    tags: ["FR11", "移动端"]
+    keywords: ["移动填报", "JS", "图表", "控件", "超链"]
+    summary: "移动端填报、JS 交互、图表控件超链在移动端的适配条目（6 条 doc-view 条目，ID 942~3781）；mobile_summary.md 拆分页 4/6，条目原样保留。"
+    lines: 53
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/mobile移动端/references/05_移动端平台与通用.md"
+    title: "FR11 · 移动端 · 移动端平台管理与通用方案"
+    stage: fr11-knowledge
+    tags: ["FR11", "移动端"]
+    keywords: ["移动平台", "设备绑定", "单点登录", "定时调度", "通用"]
+    summary: "移动平台管理、设备绑定、单点登录、定时调度到移动端、[通用] 方案条目（36 条 doc-view 条目，ID 549~5043）；mobile_summary.md 拆分页 5/6，条目原样保留。"
+    lines: 154
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/mobile移动端/references/06_综合与其他.md"
+    title: "FR11 · 移动端 · 综合与其他"
+    stage: fr11-knowledge
+    tags: ["FR11", "移动端"]
+    keywords: ["综合", "其他"]
+    summary: "未归入上述主题的条目（含通用报表制作类文档）（76 条 doc-view 条目，ID 147~5078）；mobile_summary.md 拆分页 6/6，条目原样保留。"
+    lines: 313
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/mobile移动端/references/README.md"
+    title: "移动端 references 导航"
+    stage: fr11-knowledge
+    tags: ["FR11", "移动端"]
+    keywords: ["references", "导航", "mobile_summary"]
+    summary: "mobile移动端/references 目录导航：mobile_summary.md 已按主题拆为 6 页；原文件保留为导航页。SKILL.md 为核心结论入口。"
+    lines: 33
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/mobile移动端/references/mobile_summary.md"
+    title: "FR11 知识库 · 移动端总结（导航）"
+    stage: fr11-knowledge
+    tags: ["FR11", "移动端"]
+    keywords: ["移动端", "App", "H5", "微信", "钉钉"]
+    summary: "mobile_summary.md（192 条）主题拆分导航页：主题速览 + 6 个分页入口 + 总结（全量 doc-view ID 清单）。"
+    lines: 70
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/other_summary.md"
+    title: "FR11 知识库 · 其他总结"
+    stage: fr11-knowledge
+    tags: ["FR11", "summary", "索引型"]
+    keywords: ["主题速览", "标题关键词频次", "文档条目", "总结", "分页", "对象", "产品月报合集", "文档清单", "doc", "view"]
+    summary: "FR11 知识库 · 其他总结：全文 41 行、3 个 H2 章节（主题速览（标题关键词频次）、文档条目、总结），条目型检索语料。"
+    lines: 53
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/param-control参数控件/SKILL.md"
+    title: "FR11 参数与控件 核心结论"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["doc", "view", "FVS", "SQL", "FR11", "控件"]
+    summary: "--- name: fr11-param-control description: FR11 参数查询与控件问题时使用。触发词：参数、参数面板、控件、下拉框、下拉复选框、日期控件、查询按钮、参数联动、参数为空、控件接口、FVS 控件。 co"
+    lines: 45
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/param-control参数控件/references/01_参数基础与作用域.md"
+    title: "FR11 · 参数与控件 · 参数基础 / 作用域 / 传参"
+    stage: fr11-knowledge
+    tags: ["FR11", "参数", "控件"]
+    keywords: ["模板参数", "数据集参数", "全局参数", "作用域", "传参"]
+    summary: "参数分类与作用域、模板/数据集/全局参数、URL 与跨模板传参条目（27 条 doc-view 条目，ID 155~5115）；param_control_summary.md 拆分页 1/5，条目原样保留。"
+    lines: 141
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/param-control参数控件/references/02_下拉与树控件.md"
+    title: "FR11 · 参数与控件 · 下拉框 / 下拉树 / 数据字典 / 单复选"
+    stage: fr11-knowledge
+    tags: ["FR11", "参数", "控件"]
+    keywords: ["下拉框", "下拉复选框", "下拉树", "视图树", "数据字典", "单选按钮组"]
+    summary: "下拉框、下拉复选框、下拉树与视图树、数据字典、单选复选条目（71 条 doc-view 条目，ID 255~4994）；param_control_summary.md 拆分页 2/5，条目原样保留。"
+    lines: 313
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/param-control参数控件/references/03_基础控件与校验.md"
+    title: "FR11 · 参数与控件 · 日期/文本/基础控件与校验"
+    stage: fr11-knowledge
+    tags: ["FR11", "参数", "控件"]
+    keywords: ["日期控件", "文本控件", "控件管理", "控件默认值", "校验", "水印"]
+    summary: "日期时间控件、文本数字控件、控件管理与默认值、控件校验与水印条目（79 条 doc-view 条目，ID 232~5107）；param_control_summary.md 拆分页 3/5，条目原样保留。"
+    lines: 341
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/param-control参数控件/references/04_按钮查询与面板交互.md"
+    title: "FR11 · 参数与控件 · 按钮 / 查询 / 面板交互"
+    stage: fr11-knowledge
+    tags: ["FR11", "参数", "控件"]
+    keywords: ["查询按钮", "参数面板", "联动", "显示隐藏", "JS"]
+    summary: "查询按钮、参数面板显示隐藏、控件联动与 JS 交互、定时任务参数条目（59 条 doc-view 条目，ID 72~5088）；param_control_summary.md 拆分页 4/5，条目原样保留。"
+    lines: 257
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/param-control参数控件/references/05_综合与其他.md"
+    title: "FR11 · 参数与控件 · 综合与其他"
+    stage: fr11-knowledge
+    tags: ["FR11", "参数", "控件"]
+    keywords: ["综合", "其他"]
+    summary: "未归入上述主题的条目（含通用报表、上报等）（51 条 doc-view 条目，ID 141~5041）；param_control_summary.md 拆分页 5/5，条目原样保留。"
+    lines: 217
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/param-control参数控件/references/README.md"
+    title: "参数与控件 references 导航"
+    stage: fr11-knowledge
+    tags: ["FR11", "参数", "控件"]
+    keywords: ["references", "导航", "param_control_summary"]
+    summary: "param-control参数控件/references 目录导航：param_control_summary.md 已按主题拆为 5 页；原文件保留为导航页。SKILL.md 为核心结论入口。"
+    lines: 33
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/param-control参数控件/references/param_control_summary.md"
+    title: "FR11 知识库 · 参数与控件总结（导航）"
+    stage: fr11-knowledge
+    tags: ["FR11", "参数", "控件"]
+    keywords: ["参数", "控件", "下拉框", "数据字典"]
+    summary: "param_control_summary.md（287 条）主题拆分导航页：主题速览 + 5 个分页入口 + 总结（全量 doc-view ID 清单）。"
+    lines: 69
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/performance性能优化/SKILL.md"
+    title: "FR11 性能优化 核心结论"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["缓存", "抽数缓存", "SQL", "performance", "FR11", "性能优化"]
+    summary: "--- name: fr11-performance description: 何时使用：排查与优化 FR11 报表性能（performance）——模板加载慢、取数慢、内存溢出（OOM/Java heap space）、并发卡顿、大数据量"
+    lines: 47
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/performance性能优化/references/performance_summary.md"
+    title: "FR11 知识库 · 性能优化总结"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["doc", "view", "核心概念", "SQL", "公式", "SELECT"]
+    summary: "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：31 篇 > 生成时间：2026-08-26 > 主题范围：性能/优化/内存/缓存/并发/大数据量"
+    lines: 188
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/permission权限/SKILL.md"
+    title: "FR11 权限 核心结论"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["doc", "view", "frontSeed", "FR11", "权限", "Oauth2"]
+    summary: "--- name: fr11-permission description: FR11 权限与认证问题时使用。触发词：权限、角色、用户管理、数据权限、认证、单点登录 SSO、Oauth2、LtpaToken、密码加密、数据脱敏、上报审核。 "
+    lines: 43
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/permission权限/references/permission_summary.md"
+    title: "FR11 知识库 · 权限总结"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["doc", "view", "核心概念", "公式", "权限", "关键"]
+    summary: "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：92 篇 > 生成时间：2026-08-26 > 主题范围：权限/角色/用户/认证/单点登录/数据权限"
+    lines: 462
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/print打印/SKILL.md"
+    title: "FR11 打印 核心结论"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["打印", "PDF", "print", "FR11", "服务器端打印", "静默打印"]
+    summary: "--- name: fr11-print description: 何时使用：实现 FR11 报表打印（print）——零客户端/本地/服务器端打印、静默打印、套打、批量或传参打印、水印控制，以及排查打印偏移与打印失败时使用。触发词：打印、"
+    lines: 46
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/print打印/references/print_summary.md"
+    title: "FR11 知识库 · 打印总结"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["view", "doc", "核心概念", "doURLPrint", "config", "公式"]
+    summary: "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：18 篇 > 生成时间：2026-08-26 > 主题范围：打印/分页预览/打印机/纸张/水印"
+    lines: 126
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/skin-theme主题样式/SKILL.md"
+    title: "FR11 主题与样式 核心结论"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["doc", "view", "FVS", "FR11", "模板主题", "主题"]
+    summary: "--- name: fr11-skin-theme description: FR11 外观样式与主题问题时使用。触发词：主题、皮肤、样式、配色、外观、单元格样式、跟随主题、FVS 模板主题、菜单主题、style 属性、控件风格。 keyw"
+    lines: 43
+    has_kb_index: true
+
+  - path: "ckzl/lc/fr11_knowledge/skin-theme主题样式/references/skin_theme_summary.md"
+    title: "FR11 知识库 · 主题与样式总结"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["doc", "view", "核心概念", "如下图所示", "公式", "FVS"]
+    summary: "> 数据源：`D:fr11_docsdoc-view-{did}.html`（FR11 离线文档，gb2312） > 文档数：58 篇 > 生成时间：2026-08-26 > 主题范围：主题/皮肤/配色/样式/外观"
+    lines: 310
+    has_kb_index: true
+
+  - path: "ckzl/zsk/csff/README.md"
+    title: "ckzl/zsk/csff"
+    stage: testing
+    tags: ["测试", "验证", "预览"]
+    keywords: ["验证清单", "浏览器预览", "填报测试", "localhost:8075"]
+    summary: "FR 模板开发全流程测试与验证方法：交付前必查清单、浏览器预览流程、填报/导入功能测试"
+    lines: 65
+    has_kb_index: true
+
+  - path: "ckzl/zsk/csff/模板验证清单.md"
+    title: "模板验证清单"
+    stage: testing
+    tags: ["验证", "清单", "交付"]
+    keywords: ["验收", "checklist", "XML", "预览", "填报", "级联"]
+    summary: "FR 模板交付前的标准化验证清单，覆盖 XML/结构/功能/样式四层检查"
+    lines: 82
+    has_kb_index: true
+
+  - path: "ckzl/zsk/csff/表单控件插件验收测试单.md"
+    title: "表单控件插件验收测试单"
+    stage: testing
+    tags: ["测试", "验证", "插件", "表单控件", "checklist"]
+    keywords: ["插件验收", "xtype", "plugin.xml", "javap", "frm往返", "双前端", "WidgetOptionProvider", "启动三前置", "currentAPILevel", "FunctionRecorder", "jartime", "running断言"]
+    summary: "自研表单控件插件的分层验收测试单 v2：静态/启动三前置/设计器/持久化/预览/移动端/运行时七层，每项标注自动化等级与脚本思路"
+    lines: 218
+    has_kb_index: true
+
+  - path: "ckzl/zsk/csff/设计器重启预检.md"
+    title: "设计器重启预检清单"
+    stage: testing
+    tags: ["测试", "验证", "插件", "重启", "checklist"]
+    keywords: ["重启预检", "running", "progressring", "notepad", "maskid", "插件管理", "启动扫描"]
+    summary: "部署 4 个复刻插件目录后首次重启设计器的 5 点验证清单：插件在列/图表类型/公式提示/管理页 console/日志无错"
+    lines: 41
+    has_kb_index: true
+
+  - path: "ckzl/zsk/frwd/报表平台BOM拆解.md"
+    title: "报表平台BOM拆解"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["BOM", "名称", "frm", "用户可见", "功能说明", "cpt"]
+    summary: "> 0 级定点 = **报表平台三大组成部分：设计器 / 服务器 / 数据库**（用户 2026-08-11 定稿）。 > 1 级分支 = 各定点的界面区域/子系统；2 级 = 面板；3 级 = 组件/功能。 > 名称一律采用**用户可见名"
+    lines: 196
+    has_kb_index: true
+
+  - path: "ckzl/zsk/frwd/资源索引.md"
+    title: "ckzl/zsk/frwd"
+    stage: external-resources
+    tags: ["官方文档", "社区", "账号", "凭据"]
+    keywords: ["帆软官方文档", "社区", "robot.fanruan.com", "SDK"]
+    summary: "帆软官方资源入口：在线文档/社区/账号凭据/SDK 链接，需要外部资料时先查此表"
+    lines: 96
+    has_kb_index: true
+
+  - path: "ckzl/zsk/gczsk/README.md"
+    title: "ckzl/zsk/gczsk（SQLite）— 人机料法环5M1E 零件表/BOM表/工艺表"
+    stage: report-building
+    tags: ["ckzl/zsk/gczsk", "SQLite", "5M1E", "人机料法环", "物料管理", "工艺管理", "JavaAPI"]
+    keywords: ["api_kb", "parts", "bom", "routing", "materials", "machines", "personnel", "environments", "工艺路线", "物料清单"]
+    summary: "人机料法环(5M1E)ckzl/zsk/gczsk:personnel人(2)/materials料(43)/machines机(52)/environments环(11)/parts零件(14588)/bom关系(3589)/routing工艺(13条路线75道工序已机械化26道)。查询用 query_kb.py"
+    lines: 131
+    has_kb_index: true
+
+  - path: "ckzl/zsk/gczsk/i18n_词汇表.md"
+    title: "FR 设计器 i18n 词汇表（3776 条·总导航）"
+    stage: i18n
+    tags: ["i18n", "词汇表", "导航"]
+    keywords: ["i18n", "词汇表", "中英文对照", "导航", "拆分"]
+    summary: "FR 设计器 i18n 词汇表总导航（原 1615 行/3776 条单文件 2026-09-29 拆分为 6 页，按分类分册）；来源 main_zh+chart_zh+dimension_zh，供界面文案比对/控件名定位；机读数据源 i18n_zh.json 不受影响"
+    lines: 65
+    has_kb_index: true
+
+  - path: "ckzl/zsk/gczsk/i18n_词汇表_1_图表与基础通用.md"
+    title: "FR设计器i18n词汇表 1/5：图表(Chart 874条)与基础通用(Basic 789条)"
+    stage: i18n
+    tags: ["i18n", "词汇表", "图表", "基础通用"]
+    keywords: ["图表", "Chart", "基础通用", "Basic", "中英文对照", "设计器词条"]
+    summary: "FR 设计器 i18n 词汇表第 1/5 页（中英对照 1663 条）：图表 Chart 分类 874 条 + 基础通用 Basic 分类 789 条，供界面文案/结构快照比对与控件名定位"
+    lines: 281
+    has_kb_index: true
+
+  - path: "ckzl/zsk/gczsk/i18n_词汇表_2_报表与其他.md"
+    title: "FR设计器i18n词汇表 2/5：报表(Report 654条)与其他(Other 382条)"
+    stage: i18n
+    tags: ["i18n", "词汇表", "报表", "其他"]
+    keywords: ["报表", "Report", "Other", "中英文对照", "设计器词条"]
+    summary: "FR 设计器 i18n 词汇表第 2/5 页（中英对照 1036 条）：报表 Report 分类 654 条 + 其他 Other 分类 382 条"
+    lines: 281
+    has_kb_index: true
+
+  - path: "ckzl/zsk/gczsk/i18n_词汇表_3_表单与控件.md"
+    title: "FR设计器i18n词汇表 3/6：表单(213条)与控件(129条)"
+    stage: i18n
+    tags: ["i18n", "词汇表", "拆分"]
+    keywords: ["表单", "Form", "Widget", "中英文对照", "设计器词条"]
+    summary: "表单 Form 213 条 + 控件 Widget 129 条（中英对照）"
+    lines: 279
+    has_kb_index: true
+
+  - path: "ckzl/zsk/gczsk/i18n_词汇表_4_样式导出与数据.md"
+    title: "FR设计器i18n词汇表 4/6：样式(126)/导出打印(100)/数据(91)"
+    stage: i18n
+    tags: ["i18n", "词汇表", "拆分"]
+    keywords: ["样式", "Style", "导出打印", "Export", "数据集", "Data", "中英文对照"]
+    summary: "样式 Style 126 条 + 导出打印 Export/Print 100 条 + 数据/数据集 Data 91 条（中英对照）"
+    lines: 356
+    has_kb_index: true
+
+  - path: "ckzl/zsk/gczsk/i18n_词汇表_5_移动背景单元格参数字体.md"
+    title: "FR设计器i18n词汇表 5/6：移动端(58)/背景(53)/单元格(48)/参数(42)/字体(42)"
+    stage: i18n
+    tags: ["i18n", "词汇表", "拆分"]
+    keywords: ["移动端", "Mobile", "背景", "Background", "单元格", "Cell", "参数", "Parameter", "字体", "Font"]
+    summary: "移动端 Mobile 58 条 + 背景 Background 53 条 + 单元格 Cell 48 条 + 参数 Parameter 42 条 + 字体 Font 42 条（中英对照）"
+    lines: 300
+    has_kb_index: true
+
+  - path: "ckzl/zsk/gczsk/i18n_词汇表_6_杂项小类.md"
+    title: "FR设计器i18n词汇表 6/6：Action/按钮/预览/超链接/边框/控件类型/布局/编辑器/工具栏/核心/菜单"
+    stage: i18n
+    tags: ["i18n", "词汇表", "拆分"]
+    keywords: ["Action", "按钮", "Button", "预览", "Preview", "超链接", "Hyperlink", "边框", "Border", "布局", "Layout", "工具栏", "Toolbar"]
+    summary: "Action 菜单动作 41 + 按钮 30 + 预览 25 + 超链接 22 + 边框 21 + 控件类型 15 + 布局 10 + 编辑器 4 + 工具栏 4 + 核心 2 + 菜单 1（中英对照 213 条）"
+    lines: 264
+    has_kb_index: true
+
+  - path: "ckzl/zsk/qdjk/README.md"
+    title: "帆软ckzl/zsk/qdjk总览"
+    stage: frontend
+    tags: ["JavaScript", "前端接口", "JS API", "jQuery", "控件"]
+    keywords: ["FR", "FS", "Widget", "Msg", "Dialog", "WritePane", "jQuery"]
+    summary: "帆软 FR 10.0 前端 JS API 文档总览：90+ 类的命名空间分类、控件/报表/窗口/布局 API 速查"
+    lines: 319
+    has_kb_index: true
+
+  - path: "ckzl/zsk/qdjk/references/FineReport前端交互高级实现指南.md"
+    title: "FineReport 前端交互高级实现指南（总导航）"
+    stage: frontend
+    tags: ["指南", "前端交互", "导航"]
+    keywords: ["指南", "导航", "拆分", "JS API", "交互模式"]
+    summary: "FineReport 前端交互高级实现指南总导航（原 729 行单文件 2026-09-29 拆分为 3 页）：JS API / 交互样式与填报 / 问题与高级主题；速查版见 ../../FineReport前端交互高级实现速查表.md（同日拆分）"
+    lines: 32
+    has_kb_index: true
+
+  - path: "ckzl/zsk/qdjk/references/api_report.md"
+    title: "帆软 FR 10.0 填报开发核心 JS API 清单（总导航）"
+    stage: frontend
+    tags: ["JS API", "填报", "导航"]
+    keywords: ["FR.WritePane", "FR.Msg", "WLGP", "导航", "拆分"]
+    summary: "FR 10.0 填报核心 JS API 总导航（原 653 行单文件 2026-09-29 拆分为 2 页）：弹窗与填报面板（Msg/Dialog/Window/WritePane，原 §1-§3）/ 报表面板与填报接口（Elementcase/PagePane/WLGP/Write/WriteEditor+附录，原 §4-§8）"
+    lines: 45
+    has_kb_index: true
+
+  - path: "ckzl/zsk/qdjk/references/api_report_1_弹窗与填报面板.md"
+    title: "FR填报JS API：消息弹窗/对话框/填报面板（FR.Msg/Dialog/Window/WritePane）"
+    stage: frontend
+    tags: ["JS API", "填报", "弹窗", "WritePane"]
+    keywords: ["FR.Msg", "FR.Dialog", "FR.Window", "FR.WritePane", "confirm", "showDialog", "verifyReport"]
+    summary: "FR 10.0 填报核心 JS API 第 1/2 页：FR.Msg（confirm/alert/prompt/toast 4 静态方法）、FR.Dialog 与 FR.Window（对话框属性/方法）、FR.WritePane 填报面板（1 属性 + 41 方法：提交/校验/单元格取值赋值等）——原 api_report.md §1-§3"
+    lines: 318
+    has_kb_index: true
+
+  - path: "ckzl/zsk/qdjk/references/api_report_2_报表面板与填报接口.md"
+    title: "FR填报JS API：报表面板与填报接口（Elementcase/PagePane/WLGP/Write/WriteEditor）"
+    stage: frontend
+    tags: ["JS API", "填报", "PagePane", "WLGP"]
+    keywords: ["FR.Elementcase", "FR.PagePane", "FR.WLGP", "FR.Write", "FR.WriteEditor", "getTDCell", "分页预览"]
+    summary: "FR 10.0 填报核心 JS API 第 2/2 页：FR.Elementcase 报表内容基类（31 方法）、FR.PagePane 分页预览（33 方法）、FR.WLGP 填报逻辑页面（getTDCell 等 19 方法）、FR.Write 填报控件管理（21 方法）、FR.WriteEditor 填报编辑器接口（36 方法）+ 通用基类方法速查附录——原 api_report.md §4-§8+附录"
+    lines: 391
+    has_kb_index: true
+
+  - path: "ckzl/zsk/qdjk/references/api_utils.md"
+    title: "帆软 FR 10.0 JS API — 通用类方法清单"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["实测", "String", "verified_20260904", "详见", "jQuery", "true"]
+    summary: "> 数据来源：http://dev.fanruan.com/jsdoc/ > 抓取范围：jQuery、String、Array、Function、FR.Keys 五个通用类的全部公开 Methods。 > 🧪 **2026-09-04 实测"
+    lines: 140
+    has_kb_index: true
+
+  - path: "ckzl/zsk/qdjk/references/api_widgets.md"
+    title: "帆软 FR 10.0 控件 JS API 方法清单（总导航）"
+    stage: frontend
+    tags: ["JS API", "控件", "导航"]
+    keywords: ["FR.Widget", "控件API", "导航", "拆分"]
+    summary: "FR 10.0 控件 JS API 方法清单总导航（原 1083 行单文件 2026-09-29 拆分为 3 页）：基类与文本编辑器 / 下拉复选控件 / 日期按钮控件+继承总览；数据来源 dev.fanruan.com/jsdoc，实测标注见 verified_20260904.md"
+    lines: 50
+    has_kb_index: true
+
+  - path: "ckzl/zsk/qdjk/references/api_widgets_1_基类与文本数字编辑器.md"
+    title: "FR控件JS API：基类与文本/数字/触发编辑器（FR.OB/Widget/TextEditor/NumberEditor/TriggerEditor）"
+    stage: frontend
+    tags: ["JS API", "控件", "FR.OB", "FR.Widget", "TextEditor"]
+    keywords: ["FR.OB", "FR.Widget", "FR.TextEditor", "FR.NumberEditor", "FR.TriggerEditor", "控件基类", "事件系统"]
+    summary: "FR 10.0 控件 JS API 第 1/3 页：观察者基类 FR.OB（事件系统 5 方法）、控件基类 FR.Widget（22 方法：getValue/setValue/setVisible/setEnabled/reset 等）、文本框 TextEditor（32 方法）、数字框 NumberEditor（31 方法）、触发编辑器 TriggerEditor（39 方法，抽象）；含 HIERARCHY/SUBCLASSES/继承方法表与 2026-09-04 实测标注"
+    lines: 386
+    has_kb_index: true
+
+  - path: "ckzl/zsk/qdjk/references/api_widgets_2_下拉框与复选控件.md"
+    title: "FR控件JS API：下拉框与复选控件（ComboBoxEditor/CheckBoxEditor/CheckBoxGroup）"
+    stage: frontend
+    tags: ["JS API", "控件", "下拉框", "复选框"]
+    keywords: ["FR.ComboBoxEditor", "FR.CheckBoxEditor", "FR.CheckBoxGroup", "下拉框", "下拉复选", "复选按钮组"]
+    summary: "FR 10.0 控件 JS API 第 2/3 页：下拉框 ComboBoxEditor（55 方法/7 配置项）、下拉复选框 CheckBoxEditor（58 方法）、复选按钮组 CheckBoxGroup（32 方法）；含 HIERARCHY/SUBCLASSES/示例/继承方法表与 2026-09-04 实测标注"
+    lines: 390
+    has_kb_index: true
+
+  - path: "ckzl/zsk/qdjk/references/api_widgets_3_日期与按钮控件.md"
+    title: "FR控件JS API：日期与按钮控件（DatePicker/DateTimeEditor/FreeButton/FormSubmitButton）+ 继承总览"
+    stage: frontend
+    tags: ["JS API", "控件", "日期", "按钮"]
+    keywords: ["FR.DatePicker", "FR.DateTimeEditor", "FR.FreeButton", "FR.FormSubmitButton", "日期选择器", "自由按钮", "查询按钮", "继承关系"]
+    summary: "FR 10.0 控件 JS API 第 3/3 页：日期选择器 DatePicker（22 方法）、日期时间 DateTimeEditor（44 方法）、自由按钮 FreeButton（36 方法/8 配置项）、查询提交按钮 FormSubmitButton；附继承关系总览图与核心通用方法速查（所有控件可用）"
+    lines: 379
+    has_kb_index: true
+
+  - path: "ckzl/zsk/qdjk/references/verified_20260904.md"
+    title: "FR10 前端 JS API 实测验证报告（verified_20260904）"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["可用", "true", "contentPane", "false", "function", "FR10"]
+    summary: "# FR10 前端 JS API 实测验证报告（verified_20260904）"
+    lines: 250
+    has_kb_index: true
+
+  - path: "ckzl/zsk/qdjk/references/前端交互指南_1_JS_API.md"
+    title: "FR前端交互指南 1/3：JavaScript API 速查（contentPane/Msg/Dialog/Widget/WritePane/PagePane/Elementcase/Chart/AJAX/工具类）"
+    stage: frontend
+    tags: ["指南", "JS API", "contentPane", "控件"]
+    keywords: ["contentPane", "FR.Msg", "FR.Dialog", "FR.Widget", "FR.WritePane", "FR.PagePane", "FR.Chart", "AJAX"]
+    summary: "FineReport 前端交互高级实现指南第 1/3 页：JavaScript API 速查——核心对象层次、contentPane 核心方法、FR.Msg 消息弹窗、FR.Dialog/FR.Window 对话框、FR.Widget 控件基类、FR.WritePane 填报面板、FR.PagePane 分页预览、FR.Elementcase 报表块、FR.Chart 图表 API、AJAX 请求、工具类扩展——原指南一章"
+    lines: 273
+    has_kb_index: true
+
+  - path: "ckzl/zsk/qdjk/references/前端交互指南_2_交互样式与填报.md"
+    title: "FR前端交互指南 2/3：交互设计模式/样式定制/填报交互优化"
+    stage: frontend
+    tags: ["指南", "交互模式", "CSS", "填报"]
+    keywords: ["钻取", "联动", "弹窗", "动态参数", "CSS注入", "自定义按钮选择器", "WebResourceProvider", "提交前校验", "Excel导入"]
+    summary: "FineReport 前端交互高级实现指南第 2/3 页：交互设计模式（钻取/联动/弹窗/动态参数排序筛选/超链跳 Sheet）、样式定制方案（CSS 注入方式/参数面板注入位置/自定义按钮 CSS 选择器/动态样式/全站资源注入 WebResourceProvider）、填报交互优化（提交前校验/填报入库/快捷键/单击编辑/Excel 导入）——原指南二~四章"
+    lines: 388
+    has_kb_index: true
+
+  - path: "ckzl/zsk/qdjk/references/前端交互指南_3_问题与高级主题.md"
+    title: "FR前端交互指南 3/3：常见交互问题排查与高级主题（.frm 对比/Web 事件/挂载点/权限参数/跨域/图表插件协议）"
+    stage: frontend
+    tags: ["指南", "常见问题", "高级主题", "Web 事件"]
+    keywords: ["事件不触发", "控件操作", "样式问题", "超链问题", "图表坑", "Web事件名", "JS挂载点", "内置权限参数", "跨域iframe", "图表插件协议"]
+    summary: "FineReport 前端交互高级实现指南第 3/3 页：常见交互问题与解决方案（事件不触发/控件操作/样式/超链/图表前端坑）、高级主题（决策报表 .frm vs 普通报表 .cpt、Web 事件名全集、JS 挂载点、内置权限参数、跨域 iframe 调 FR JS、图表插件前端协议）——原指南五~六章"
+    lines: 153
+    has_kb_index: true
+
+  - path: "ckzl/zsk/qdjk/前端交互速查卡.md"
+    title: "FR前端交互速查卡（指针页，详版见 references/前端交互指南 三篇）"
+    stage: frontend
+    tags: ["速查", "指针页", "前端交互"]
+    keywords: ["contentPane", "JS API", "事件", "填报", "超链", "样式"]
+    summary: "原《前端交互速查表》1-3 与 references/前端交互指南 1-3 为平行双写（语义相似度0.88-0.95，20260929 勘察证实），速查表已归档，本页为指针卡；权威详版=指南三篇，控件/报表面板 API 另见 api_widgets/api_report 系列"
+    lines: 22
+    has_kb_index: true
+
+  - path: "ckzl/zsk/sjfx/README.md"
+    title: "ckzl/zsk/sjfx"
+    stage: data-analysis
+    tags: ["字段映射", "SQL设计", "数据质量"]
+    keywords: ["字段映射", "SQL设计规范", "数据质量校验", "除零保护"]
+    summary: "数据设计方法论：业务字段→数据库列→数据集列的映射、SQL 设计规范、数据质量校验（知识主体在 ckzl/lc/02）"
+    lines: 76
+    has_kb_index: true
+
+  - path: "ckzl/zsk/tbcw/CPT全部打开提示无法查看该页面排查.md"
+    title: "所有CPT打开提示「非常抱歉您无法查看该页面」排查"
+    stage: error-analysis
+    tags: ["报错", "权限", "模板加密", "license", "平台配置"]
+    keywords: ["无法查看该页面", "如需访问请联系管理员", "所有cpt打不开", "报表打开被拒", "非常抱歉", "请联系管理员 报错", "全员看不到报表"]
+    summary: "报错『非常抱歉，您无法查看该页面，如需访问请联系管理员』的判位与排查链：先按全员/单人对分平台级或模板级，再查目录权限、全局权限项、模板加密(doc-863)、license。源自社区问题 231582"
+    lines: 27
+    has_kb_index: true
+
+  - path: "ckzl/zsk/tbcw/DSColumn悬空数据集引用.md"
+    title: "DSColumn悬空数据集引用与超链死链分析"
+    stage: error-analysis
+    tags: ["错误案例", "🔥新沉淀", "数据集", "超链", "完整性检查"]
+    keywords: ["DSColumn", "dsName", "悬空数据集", "TableDataMap", "列显隐遮蔽", "ReportletName", "死链", "引用完整性", "no error静默", "check_cpt_integrity.py", "数字勘误", "版本参数"]
+    summary: "格子 DSColumn 绑定的 dsName 不在 TableDataMap 定义集内即悬空数据集——被列显隐遮蔽时页面零报错，版本参数一选中列展开即整列空白（示例预算表副本版实测 403 处）；同族问题：删除目标页而主表 ReportletName 超链漏摘即死链（钻取明细 172+41 处已同步摘除的对照、FS ADJ填报.cpt 21 处历史死链实锤）；fr_check 无引用完整性检查，check_cpt_integrity.py 检查1/3 工具化 + 408/2175 等事故数字勘误（2026-09-06/07 示例实际表/预算 实战）"
+    lines: 95
+    has_kb_index: true
+
+  - path: "ckzl/zsk/tbcw/README.md"
+    title: "ckzl/zsk/tbcw — 错误案例索引"
+    stage: error-analysis
+    tags: ["错误索引", "排错", "案例"]
+    keywords: ["错误索引", "ORDER BY", "死循环", "Index 0 Size 0", "级联失败", "PageRWorkSheet", "AnalyReport"]
+    summary: "填报开发错误案例索引表：现象→原因→解法，排错时先查此表再搜全库；2026-09-04 夜间批新增静默类专节（历史脚本教训 30 条，其中静默 14 条：XML/SQL 合法≠功能正确）；2026-09-15 夜间批次 批新增误报类专节（fr_check doc-299/template_param 误报面已修复 + 残留真实缺陷判读法）"
+    lines: 200
+    has_kb_index: true
+
+  - path: "ckzl/zsk/tbcw/事件CDATA裸换行-SyntaxError.md"
+    title: "事件CDATA裸换行致页面SyntaxError分析"
+    stage: error-analysis
+    tags: ["错误案例", "🔥新沉淀", "JS注入", "程序化生成"]
+    keywords: ["SyntaxError", "Invalid or unexpected token", "CDATA", "裸换行", "字符串未闭合", "node --check", "style注入", "事件JS", "fr_check盲区", "程序化生成cpt"]
+    summary: "程序化往 cpt 事件 <Content> CDATA 写 JS 时把含 CSS 的多行文本拼进单引号字符串字面量、段间残留真实换行(0x0A/0x0D0A)→字符串未闭合，浏览器打开页面即 SyntaxError: Invalid or unexpected token 且整页不可用；XML 合法+fr_check 通过但上线即崩（两道校验都不查 JS 语法）；含 node --check 批量定位脚本、修复样板与预防三原则（2026-09-04 示例实际表/预算 实战）"
+    lines: 119
+    has_kb_index: true
+
+  - path: "ckzl/zsk/tbcw/事件环递归-Maximum call stack size exceeded.md"
+    title: "事件环递归致Maximum call stack size exceeded分析"
+    stage: error-analysis
+    tags: ["错误案例", "🔥新沉淀", "事件JS", "参数联动", "递归爆栈"]
+    keywords: ["Maximum call stack size exceeded", "RangeError", "setValue", "afteredit", "编辑后事件", "getWidgetByName", "互清环", "护栏", "先判值再清", "check_cpt_events.py", "fr_check盲区", "调用图环检测"]
+    summary: "FR 的 widget.setValue() 会触发目标控件自身的编辑后(afteredit)事件；多控件互清构成环(para_legal↔para_bu↔para_region)时链式点火直至爆栈 RangeError: Maximum call stack size exceeded；node --check 只查语法、fr_check 无事件调用图规则，两道校验都检不出；含堆栈帧特征、静态调用图环检测工具(check_cpt_events.py)、'先判值再清'护栏样板与 fr_check 待补规则建议(2026-09-06 示例实际表/预算 实战)"
+    lines: 141
+    has_kb_index: true
+
+  - path: "ckzl/zsk/tbcw/公式函数不存在-no function found.md"
+    title: "公式函数不存在致no function found刷屏分析"
+    stage: error-analysis
+    tags: ["错误案例", "🔥新沉淀", "公式", "高亮条件", "函数白名单"]
+    keywords: ["no function found", "ISNUMBER", "NVL", "公式函数", "引擎注册表", "com/fr/function", "fr_check盲区", "语法合法但函数不存在", "Excel函数迁移", "check_cpt_integrity.py", "高亮条件", "条件属性"]
+    summary: "高亮条件公式写 AND(ISNUMBER($$$),$$$>0.002)，FR10 引擎 187 个注册函数类中根本没有 ISNUMBER（Excel 思维迁移陷阱）——XML 合法+fr_check 通过但每次计算服务端刷 no function found（实测单日 6120 条），单元格高亮静默失效；三层证据定位法（jar 扫描/官方清单/日志计数）、NVL($$$,0)>0.002 替换样板与公式函数白名单检查工具化（check_cpt_integrity.py 检查2；2026-09-06/07 示例实际表/预算 各 204 处实战）"
+    lines: 115
+    has_kb_index: true
+
+  - path: "ckzl/zsk/tbcw/填报报表开发错误分析.md"
+    title: "填报报表开发错误分析"
+    stage: error-analysis
+    tags: ["错误案例", "SQL", "排序", "埋雷"]
+    keywords: ["ORDER BY", "if条件顺序", "SQL语法", "字段不存在过滤"]
+    summary: "典型填报开发错误：ORDER BY 出现在 ${if()} 前的 SQL 语法错误、数据集参数过滤引用不存在字段（埋雷）等"
+    lines: 155
+    has_kb_index: true
+
+  - path: "ckzl/zsk/tbcw/夜间提炼_历史脚本教训_20260904.md"
+    title: "夜间提炼 — 历史脚本教训 30 条（示例项目 tmp_*.py）"
+    stage: error-analysis
+    tags: ["错误案例", "示例项目", "脚本教训", "夜间提炼"]
+    keywords: ["重复属性", "RelatedFormula", "obp_qs", "Connection", "\\$残留", "前导零", "宽表长表", "叶子爬链", "row守卫", "断链公式", "静默类权威口径"]
+    summary: "2026-09-04 夜间从 _runs/ 122 个历史 tmp_*.py（示例项目取数/生成/修复脚本）批量提炼的 30 条错误案例：场景/报错/根因/正确做法/出处脚本；静默类权威口径 14 条（R31 消歧定版，见附注）"
+    lines: 342
+    has_kb_index: true
+
+  - path: "ckzl/zsk/tbcw/渲染报错-PageRWorkSheet强转AnalyReport.md"
+    title: "PageRWorkSheet cannot be cast to AnalyReport 渲染报错分析"
+    stage: error-analysis
+    tags: ["错误案例", "🔥新沉淀", "渲染报错", "程序化生成"]
+    keywords: ["PageRWorkSheet", "AnalyReport", "cannot be cast", "view_content", "CellPageAttr", "SHADOW-RUNTIME", "分页预览", "字节码定位", "enginex", "程序化生成cpt"]
+    summary: "程序化生成 cpt 时非默认单元格分页属性组合（repeat/HR 退化/冻结盖扩展行）触发 view_content 数据分析管道对分页结果 PageRWorkSheet 做 (AnalyReport) 强转失败；含字节码证据链、已验证骨架与排查方法论（2026-09-04 示例明细表B实战）"
+    lines: 128
+    has_kb_index: true
+
+  - path: "ckzl/zsk/tbcw/附-实体列名值域核对方法论-entity vs entity_code.md"
+    title: "实体列名与值域错配排查方法论(entity vs entity_code)"
+    stage: error-analysis
+    tags: ["错误案例", "🔥新沉淀", "排查方法论", "数据权限"]
+    keywords: ["entity", "entity_code", "列名错配", "值域核对", "恒不匹配", "权限门", "层级过滤", "CNAME", "空白列", "中文厂名"]
+    summary: "视图里 entity=中文厂名、entity_code=编码两列并存，权限门/层级过滤拿名字字段比编码值→恒不匹配→扩展行全空白且零报错；沉淀'空白列五步定位法'与'过滤条件两侧列名-值域核对表'方法论（2026-09-06 示例实际表 ds_cr_lta/pact 102 处引用空白实战）；供主控裁决单独成条或并入 DSColumn悬空数据集引用.md"
+    lines: 66
+    has_kb_index: true
+
+  - path: "ckzl/zsk/xqfx/README.md"
+    title: "ckzl/zsk/xqfx"
+    stage: requirements
+    tags: ["需求分析", "报表分类", "决策树"]
+    keywords: ["报表类型判定", "查看/填报/导入", "筛选条件", "提交逻辑设计"]
+    summary: "ckzl/zsk/xqfx论：用户输入→开发规格，报表类型决策树（查看/填报/导入）、字段清单、提交逻辑设计"
+    lines: 151
+    has_kb_index: true
+
+  - path: "ckzl/zsk/xqfx/填报报表设计决策清单.md"
+    title: "填报报表设计决策清单"
+    stage: requirements
+    tags: ["填报", "主键", "提交逻辑", "控件顺序", "格式化", "分页"]
+    keywords: ["PK", "IntelliDMLConfig", "flag", "__cutpage__", "隔行换色", "冻结"]
+    summary: "创建填报报表前必须确认的设计决策：主键/提交逻辑/控件顺序/格式化/分页"
+    lines: 192
+    has_kb_index: true
+
+  - path: "ckzl/zsk/xtgt/README.md"
+    title: "AI↔用户ckzl/zsk/xtgt框架"
+    stage: collaboration
+    tags: ["沟通", "需求收集", "向下管理", "问卷", "⭐高频", "在制品标注"]
+    keywords: ["沟通", "问卷", "判断", "选择", "填空", "问答", "标注", "颜色确认", "破坏性操作", "台账"]
+    summary: "AI 与用户的标准化ckzl/zsk/xtgt方式：标注/判断/选择/填空/问答五级沟通效率 + 破坏性操作三步协议 + 证据式沟通"
+    lines: 380
+    has_kb_index: true
+
+  - path: "ckzl/zsk/xtgt/patterns/复杂模板改造协议.md"
+    title: "复杂模板改造协议(标注-确认-删除实战 playbook)"
+    stage: collaboration
+    tags: ["⭐高频", "复杂模板", "Excel转换", "区域标注", "破坏性操作"]
+    keywords: ["复杂报表", "Excel转cpt", "标注", "红标删除", "依赖扫描", "静态化", "备份链"]
+    summary: "五步改造流程:转换清源→三色标注→红标确认→依赖扫描→备份执行,附示例项目 12MB 五sheet实战数据"
+    lines: 103
+    has_kb_index: true
+
+  - path: "ckzl/zsk/xtgt/questionnaires/填报报表需求问卷.md"
+    title: "填报报表需求问卷"
+    stage: collaboration
+    tags: ["问卷", "填报", "需求收集"]
+    keywords: ["问卷", "填报", "主键", "提交", "控件", "分页"]
+    summary: "填报报表开发前的标准化需求问卷，确保设计决策不被遗漏"
+    lines: 132
+    has_kb_index: true
+
+  - path: "jcxt/js/README.md"
+    title: "知识检索系统（无向量·PageIndex 版 + 多维视图）"
+    stage: jcxt
+    tags: ["检索", "无向量", "FTS5", "树索引", "PageIndex", "RAG", "多维视图"]
+    keywords: ["keyword", "FTS5", "BM25", "query_kb", "build_fts_index", "build_tree_index", "build_views", "views.yaml", "kb_common", "树导航", "页级阅读", "多维视图", "--tree", "--page", "--view", "--views", "--hot", "--cold"]
+    summary: "纯本地无向量检索与视图层：FTS5 关键词(_kb_fts.db) + 树索引导航(_tree_index.json) + 页级阅读(--page) + 多维视图(scenario 场景/temperature 冷热/practice 实战，views.yaml 规则→build_views.py→_views.json→query_kb --view/--hot/--cold)；向量路已归档至 ~/.fr_dev_kit/kit_archive/removed_kb_20260929/，零 key 零配置，物理文件零移动"
+    lines: 179
+    has_kb_index: true
+
+  - path: "kfgj/EXEC_CONTRACT.md"
+    title: "执行契约（v2 核心增量）"
+    stage: root
+    tags: ["入口", "执行契约", "闸门", "guard"]
+    keywords: ["EXEC_CONTRACT", "kfgj/guard.py", "闸门", "G01-G12", "收尾"]
+    summary: "v2 新增的执行契约层：把指南中的强制项收敛为 12 条硬闸门，由 kfgj/guard.py 强制执行，跑不过=任务未完成"
+    lines: 127
+    has_kb_index: true
+
+  - path: "kfgj/dsl/README.md"
+    title: "FS 报表 DSL 解释器 · 使用说明（dsl/）"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["dsl", "DSL", "cpt", "yaml", "compile", "guardrails"]
+    summary: "> 任务书: `C:Users<你的用户名>Desktop示例需求目录DSL解释器开发任务书-20260902.md` > 语义层 = 唯一事实源；页面 DSL = 声明式描述；compile.py = 编译器；guardrail"
+    lines: 95
+    has_kb_index: true
+
+  - path: "kfgj/dsl/schema.md"
+    title: "示例项目 FS 报表页面 DSL — schema.md"
+    stage: dsl
+    tags: ["DSL", "schema", "语义层", "guardrails", "编译器", "示例项目"]
+    keywords: ["compile.py", "semantic_layer", "archetype", "panel_org", "compare_main", "account_drill", "G1", "G2", "G3", "G4", "G5", "口径变更"]
+    summary: "示例项目 FS 页面 DSL 的语法与语义权威定义：三 archetype（panel_org/compare_main/account_drill）+ 顶层字段表 + guardrails G1-G5 编译出口闸 + 常用 SQL 片段速查；单向流=口径变更只改 semantic_layer.yaml 重编译，产物 cpt 禁止直接手改（R35 夜间互链时补挂本索引头，与 jcxt/data/_kb_index.yaml 既有登记对齐）"
+    lines: 165
+    has_kb_index: true
+
+  - path: "kfgj/dsl/skills/README.md"
+    title: "dsl/skills — 标准组件技能库（R39，MCP 技能的前置层）"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["name", "spec", "python", "type", "chart_skill", "semantic"]
+    summary: "> 夜间作战 R39 产物。三个标准生成器：**spec（纯数据 dict/yaml）→ 标准 FR XML**， > 全部口径取自 `dsl/semantic_layer.yaml`（唯一事实源），产物内建 guardrails G1-G"
+    lines: 119
+    has_kb_index: true
+
+  - path: "kfgj/env.md"
+    title: "kfgj/env.md — 环境与配置指南（comm 版）"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["kfgj", "agent", "key", "JDK", "fzpy", "jar"]
+    summary: "> 本包是'随身工具箱'：工具全部随包分发，外部依赖按需安装。 > **本包不内置任何凭据（API key / 数据库密码 / 账号）**，所有需要凭据的位置都有占位说明。"
+    lines: 70
+    has_kb_index: true
+
+  - path: "kfgj/evals/README.md"
+    title: "evals/ — fr_dev_kit 内部评估集（CAR-019 起步版，2026-09-06）"
+    stage: kfgj
+    tags: []
+    keywords: ["CAR", "起步版", "内部评估集"]
+    summary: "毕业制是活的流水：新功能上线先立 capability 条目，稳定后转 regression；评估集只增不删（见 §4）。"
+    lines: 125
+
+  - path: "kfgj/evals/fixtures/auto_retry/doc_headerless.md"
+    title: "排查笔记（fixture）"
+    stage: kfgj
+    tags: []
+    keywords: ["排查笔记"]
+    summary: "这是一份故意缺少元数据头的知识文件，用于触发 guard G06 闸门 FAIL，"
+    lines: 5
+
+  - path: "kfgj/evals/fixtures/auto_retry/doc_target.md"
+    title: "排查笔记（fixture）"
+    stage: kfgj
+    tags: []
+    keywords: ["排查笔记"]
+    summary: "这是一份故意缺少元数据头的知识文件，用于触发 guard G06 闸门 FAIL，"
+    lines: 5
+
+  - path: "kfgj/evals/fixtures/link_check/root/a.md"
+    title: "A"
+    stage: kfgj
+    tags: []
+    keywords: ["A"]
+    summary: ""
+    lines: 3
+
+  - path: "kfgj/evals/fixtures/link_check/root/b.md"
+    title: "B"
+    stage: kfgj
+    tags: []
+    keywords: ["B"]
+    summary: ""
+    lines: 3
+
+  - path: "kfgj/evals/fixtures/link_check/root/sub/c.md"
+    title: "C"
+    stage: kfgj
+    tags: []
+    keywords: ["C"]
+    summary: ""
+    lines: 2
+
+  - path: "kfgj/evals/fixtures/link_check_clean/root/a.md"
+    title: "A（W915 全链好链夹具）"
+    stage: kfgj
+    tags: []
+    keywords: ["全链好链夹具", "A", "W"]
+    summary: "全部链接有效: [b](b.md) 与 [子目录 c](sub/c.md)，无断链。"
+    lines: 3
+
+  - path: "kfgj/evals/fixtures/link_check_clean/root/b.md"
+    title: "B"
+    stage: kfgj
+    tags: []
+    keywords: ["B"]
+    summary: "被 a.md 引用，存在即可。"
+    lines: 4
+
+  - path: "kfgj/evals/fixtures/link_check_clean/root/sub/c.md"
+    title: "C"
+    stage: kfgj
+    tags: []
+    keywords: ["C"]
+    summary: "被 a.md 以 sub/c.md 引用，存在即可。"
+    lines: 4
+
+  - path: "kfgj/excelgy/README.md"
+    title: "kfgj/excelgy(Excel骨架正向工艺工具)"
+    stage: tools
+    tags: ["工具", "流程F", "Excel", "骨架", "转换"]
+    keywords: ["gen_skeleton", "excel2cpt", "extract_charts", "Excel2007ReportImporter", "契约JSON", "示例数据", "图表抽取"]
+    summary: "流程F工具模块: 契约JSON→表样xlsx(gen_skeleton.py)/无头xlsx→cpt(excel2cpt.js,经fr-agent /exec)/图表→hbfa容器JSON(extract_charts.py)。主文档见ckzl/lc/10_Excel骨架正向工艺.md"
+    lines: 24
+    has_kb_index: true
+
+  - path: "kfgj/fr-agent/README.md"
+    title: "fr-agent — GUI 操作追踪 Agent"
+    stage: gui-tracing
+    tags: ["fr-agent", "GUI追踪", "注入", "HTTP API"]
+    keywords: ["inject", "18999", "19000", "events", "exec", "AWT事件", "Java Access Bridge"]
+    summary: "fr-agent 使用手册：注入 Designer JVM、/status /events /exec API、事件流→Java API 追踪流程"
+    lines: 187
+    has_kb_index: true
+
+  - path: "kfgj/fzpy/README.md"
+    title: "辅助 Python 脚本"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["SQL", "cpt", "kfgj", "db_schema", "ckzl", "python"]
+    summary: "--- keywords: [sql 验证, SQL 执行验证, verify_sql, 参数宏替换, 验证闭环, 0 行不通过, fr_check, fr_preview, convert_excel_formula, submit_co"
+    lines: 122
+    has_kb_index: true
+
+  - path: "kfgj/fzpy/templates/task_todo_template.md"
+    title: "任务 todo 模板"
+    stage: template
+    tags: ["模板", "todo", "长任务纪律"]
+    keywords: ["todo.md", "目标复诵", "失败留痕", "P2-3", "长任务"]
+    summary: "档1+ 长任务的 todo.md 模板：目标复诵区/步骤/教训与错误三段；配合 AGENTS.md §1.2 STEP4 纪律使用；修复完成后按自我更新SOP 成对回写 correction"
+    lines: 26
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/00_README.md"
+    title: "插件开发工艺流水线 v1.0（pipeline_v1 目录索引）"
+    stage: pipeline
+    tags: ["插件开发", "工艺流水线", "标准节点", "复盘台账", "入口"]
+    keywords: ["pipeline_v1", "SN", "标准节点", "复盘", "示例插件A", "归档盘点", "demo_plugin_repo", "demo_copilot", "sn_gate", "回滚"]
+    summary: "插件开发工艺流水线 v1.0 目录索引：七阶段流程 + 12 个标准节点 + 复盘问题台账 + 闸门脚本 + 干跑报告 + 交接手册。来源 = AGENTS.md 基线 + 归档盘点专业版(demo_plugin_repo) + 示例插件A(demo_copilot) 双插件实战复盘。"
+    lines: 77
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/01_工艺流水线总纲.md"
+    title: "插件开发工艺流水线总纲 v1.0"
+    stage: pipeline
+    tags: ["插件开发", "工艺流水线", "标准节点", "主文档"]
+    keywords: ["流水线", "七阶段", "SN", "标准节点", "决策点", "拦截映射", "demo_plugin_repo", "demo_copilot", "插件开发流程"]
+    summary: "插件开发七阶段工艺流水线主文档 v1.1：需求→设计→开发→自测→打包→发布→归档；12 标准节点+5 决策点+复刻实践模式（§8）。v1.1 由 2026-09-15 五路 agent 复刻 demo_plugin_repo 实践修订（P27-P37）。"
+    lines: 145
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/03_标准节点包/SN-01_立项与身份规划.md"
+    title: "SN-01 立项与身份规划"
+    stage: pipeline-node
+    tags: ["标准节点", "需求"]
+    keywords: ["SN-01", "身份表", "范围卡", "命名空间", "D1"]
+    summary: "插件立项标准节点：身份表五项唯一性 + 范围卡（含不做清单），拦截 P09/P23。"
+    lines: 39
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/03_标准节点包/SN-02_架构与生命周期设计.md"
+    title: "SN-02 架构与生命周期设计"
+    stage: pipeline-node
+    tags: ["标准节点", "设计"]
+    keywords: ["SN-02", "生命周期矩阵", "依赖实证", "Swing", "D2"]
+    summary: "架构设计标准节点：生命周期矩阵三行必填 + 依赖 javap 实证 + Swing/前端专项清单，拦截 P08/P11/P14/P22/P23。"
+    lines: 42
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/03_标准节点包/SN-03_工程骨架与plugin_xml门.md"
+    title: "SN-03 工程骨架与 plugin.xml 门"
+    stage: pipeline-node
+    tags: ["标准节点", "开发", "plugin.xml"]
+    keywords: ["SN-03", "plugin.xml", "四道门", "资源路径", "BOM", "改名残留"]
+    summary: "工程骨架标准节点：scaffold 生成 + plugin.xml 四道门（BOM/jartime/active/FunctionRecorder）+ 资源路径形式总表 + 改名残留机器检查，拦截 P04/P09/P10。"
+    lines: 56
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/03_标准节点包/SN-04_HTTP端点契约.md"
+    title: "SN-04 HTTP 端点契约"
+    stage: pipeline-node
+    tags: ["标准节点", "开发", "端点"]
+    keywords: ["SN-04", "HttpHandler", "单段路径", "URL参数", "403", "404鉴别"]
+    summary: "端点契约标准节点：单段路径/参数全放URL/认证声明/403协议/三层404鉴别，拦截 P01(设计侧)/P09。"
+    lines: 34
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/03_标准节点包/SN-05_键与路径归一化.md"
+    title: "SN-05 键与路径归一化"
+    stage: pipeline-node
+    tags: ["标准节点", "开发", "normalize"]
+    keywords: ["SN-05", "normKey", "归一化", "往返单测", "CACHE_VER"]
+    summary: "键归一化标准节点：唯一 normalize 函数 + 往返单测 + 缓存版本 bump 纪律，拦截复发链 P02。"
+    lines: 36
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/03_标准节点包/SN-06_构建与部署纪律.md"
+    title: "SN-06 构建与部署纪律"
+    stage: pipeline-node
+    tags: ["标准节点", "开发", "构建", "部署"]
+    keywords: ["SN-06", "build", "清理白名单", "javac", "增量部署", "mv trash"]
+    summary: "构建部署标准节点：清理白名单(只删plugin.xml保留jar)/safe-delete规避/jar顶层目录/增量编译模板/停FR再构建，拦截 P06/P15/P16。"
+    lines: 43
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/03_标准节点包/SN-07_跨shell执行纪律.md"
+    title: "SN-07 跨 shell 执行纪律"
+    stage: pipeline-node
+    tags: ["标准节点", "开发", "PowerShell"]
+    keywords: ["SN-07", "PowerShell", "cmd", "中文编码", "命令模板"]
+    summary: "跨shell纪律标准节点：PS5 陷阱速查卡 + 三条固定命令模板，拦截复发链 P03。"
+    lines: 33
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/03_标准节点包/SN-08_测试与沙箱.md"
+    title: "SN-08 测试与沙箱"
+    stage: pipeline-node
+    tags: ["标准节点", "自测", "单测", "e2e", "浏览器闸门"]
+    keywords: ["SN-08", "单测", "e2e", "沙箱", "G-BROWSER", "合成fixture", "无头测试"]
+    summary: "测试标准节点：合成fixture单测+e2e沙箱隔离+G-BROWSER浏览器路径attest+前端错误可见化，拦截 P01/P13/P18/P20/P21/P24/P25/P26。"
+    lines: 42
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/03_标准节点包/SN-09_回归红线与基线.md"
+    title: "SN-09 回归红线与基线"
+    stage: pipeline-node
+    tags: ["标准节点", "自测", "回归", "基线"]
+    keywords: ["SN-09", "字节等价", "回归红线", "双语断言", "基线产物"]
+    summary: "回归红线标准节点：字节等价基线+基线产物落盘+中英双语断言，拦截 P17/P19。"
+    lines: 35
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/03_标准节点包/SN-10_生成物断言与目标环境实测.md"
+    title: "SN-10 生成物断言与目标环境实测"
+    stage: pipeline-node
+    tags: ["标准节点", "自测", "XML断言", "像素采样"]
+    keywords: ["生成物断言与目标环境实测", "SN"]
+    summary: "生成物验证标准节点：XML良构+嵌套层级断言+魔数校验+截图像素采样/双客户端实测，拦截复发链 P07 及 P12/P22(半)。"
+    lines: 34
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/03_标准节点包/SN-11_发布与版本同步.md"
+    title: "SN-11 发布与版本同步"
+    stage: pipeline-node
+    tags: ["标准节点", "打包", "发布", "版本协商"]
+    keywords: ["SN-11", "版本同步", "版本协商", "change-notes", "发布冒烟"]
+    summary: "发布标准节点：版本多处机器核对(C07)+版本协商必备+发布冒烟清单，拦截 P05/P08(半)/P25。"
+    lines: 36
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/03_标准节点包/SN-12_收尾闸门与知识沉淀.md"
+    title: "SN-12 收尾闸门与知识沉淀"
+    stage: pipeline-node
+    tags: ["标准节点", "收尾", "闸门", "知识沉淀", "归档"]
+    keywords: ["SN-12", "sn_gate", "收尾闸门", "台账回写", "知识回路", "归档"]
+    summary: "收尾标准节点：sn_gate 终跑 + attest 汇总 + 台账回写 + 知识沉淀（衔接 AGENTS.md STEP6）+ 归档产物，拦截全部（总闸）。"
+    lines: 41
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/05_AGENTS修订建议_v1.0.md"
+    title: "AGENTS.md 增量修订建议稿 v1.0（插件工艺流水线接入）"
+    stage: pipeline
+    tags: ["AGENTS", "修订建议", "路由", "闸门"]
+    keywords: ["AGENTS.md", "修订建议", "kfgj/guard.py", "task plugin", "路由表", "回滚"]
+    summary: "AGENTS.md 增量修订建议：§1.2 增流程 P、§3 增路由行、§7 侧车纪律链接、EXEC_CONTRACT 增 --task plugin 建议（P 闸门）。仅建议稿，不覆盖原文件；含版本号与回滚说明。"
+    lines: 75
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/06_交接使用手册.md"
+    title: "插件开发交接使用手册（下一个插件首跑指南）v1.0"
+    stage: pipeline
+    tags: ["交接", "手册", "流水线"]
+    keywords: ["首跑", "交接", "检查点", "决策点", "手册"]
+    summary: "下一个插件从零走流水线的按序指南：读什么、跑什么命令、在哪几个检查点停、哪五个决策点需要用户拍板、最终归档动作与回滚。"
+    lines: 88
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/07_干跑校验报告.md"
+    title: "插件工艺流水线干跑校验报告 v1.0"
+    stage: pipeline
+    tags: ["干跑", "验证", "流水线"]
+    keywords: ["干跑", "sn_gate", "aicopilot", "demo_plugin_repo", "断点修补", "映射核对"]
+    summary: "两款历史插件回顾式干跑实录：aicopilot 代码级实跑 sn_gate（真发现 1 FAIL+1 WARN+断点修补 2 处），demo_plugin_repo 文档级 12 节点走线（每节点找到历史落点），映射完整性自动核对 33/33。"
+    lines: 98
+    has_kb_index: true
+
+  - path: "kfgj/plugin_pl/08_知识沉淀判定.md"
+    title: "工作流知识沉淀判定与节点知识增改 v1.0"
+    stage: pipeline
+    tags: ["知识沉淀", "判定", "节点知识", "台账"]
+    keywords: ["知识沉淀", "强制定性", "节点知识", "增改", "CLOSED", "范例"]
+    summary: "工作流中'何时沉淀知识'的强制判定表（六选一）、工作节点知识的增改优化流程（查台账→定性→入账→绑节点→bump 版本）、两个完整范例。"
+    lines: 77
+    has_kb_index: true
+
+  - path: "kfgj/tygs/CPT模板/默认格式/2.参数面板控件布局/LAYOUT_SPEC.md"
+    title: "参数面板布局自动化规范（Ver0.7）"
+    stage: formatting
+    tags: ["布局规范", "水印式", "Label式", "LAYOUT_SPEC"]
+    keywords: ["180x26", "20px组间", "40px按钮间", "水印无Label默认", "Label分支", "1200px阈值"]
+    summary: "参数面板布局规范：水印无 Label 默认方案 + Label 分支，控件尺寸/间距/分行规则，一键格式化脚本踩坑"
+    lines: 124
+    has_kb_index: true
+
+  - path: "kfgj/tygs/CPT模板/默认格式/2.参数面板控件布局/README.md"
+    title: "参数面板控件布局 — 脚本目录"
+    stage: formatting
+    tags: ["脚本目录", "一键格式化", "fmt_panel_safe"]
+    keywords: ["run_all", "batch_optimize", "widen_all", "fmt_panel_safe", "适用边界"]
+    summary: "参数面板一键格式化脚本目录：fmt_panel_safe(推荐)/run_all/batch_optimize/widen_all 用法、踩坑与适用边界"
+    lines: 76
+    has_kb_index: true
+
+  - path: "kfgj/tygs/CPT模板/默认格式/4.模板数据集sql格式美化/README.md"
+    title: "模板数据集 SQL 格式美化"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["SQL", "自动格式化", "CPT", "python", "format_dataset_sql", "cpt"]
+    summary: "```powershell # 格式化明细报表目录下所有 CPT python format_dataset_sql.py"
+    lines: 30
+    has_kb_index: true
+
+  - path: "kfgj/tygs/README.md"
+    title: "一键格式化脚本"
+    stage: formatting
+    tags: ["格式化", "一键", "批处理"]
+    keywords: ["run_all", "batch_optimize", "widen_all", "fmt_panel_safe"]
+    summary: "一键格式化脚本入口：run_all 全套 / batch_optimize 全目录 / widen_all 精排 / fmt_panel_safe 坐标级安全格式化"
+    lines: 59
+    has_kb_index: true
+
+  - path: "kfgj/tygs/skills/INDEX.md"
+    title: "kfgj/tygs — Skills 封装索引"
+    stage: formatting
+    tags: ["skills", "格式化", "Agent Skills 标准", "渐进加载"]
+    keywords: ["SKILL.md", "触发条件", "通配脚本", "加载顺序", "frontmatter"]
+    summary: "kfgj/tygs工具包的 Agent Skills 标准化封装索引：8 个高频脚本 SKILL.md 清单+加载顺序（三级渐进加载：描述常驻→正文触发读→脚本本体执行才取）"
+    lines: 53
+    has_kb_index: true
+
+  - path: "kfgj/tygs/skills/fix_row_heights/SKILL.md"
+    title: "fix_row_heights.py — 行高自动修复"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["fix_row_heights", "cpt", "python", "参数面板控件", "布局", "表头"]
+    summary: "--- name: fix-row-heights description: 明细表行高异常/行高不统一修复时使用：表头 10mm、明细 8mm 标准行高、按 DSColumn/公式自动分类行类型时触发。关键词：行高、fix_row_hei"
+    lines: 44
+    has_kb_index: true
+
+  - path: "kfgj/tygs/skills/fmt_detail_cells/SKILL.md"
+    title: "fmt_detail_cells.py — 明细报表单元格格式化（通配规则）"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["numeric", "fmt_detail_cells", "labels", "序号", "kfgj", "tygs"]
+    summary: "--- name: fmt-detail-cells description: 明细报表单元格按列类型套样式时使用：数值/百分比/文本/序号/日期分类对齐与格式、微软雅黑9号字体、细边框时触发。关键词：单元格样式、fmt_detail_ce"
+    lines: 46
+    has_kb_index: true
+
+  - path: "kfgj/tygs/skills/fmt_panel_safe/SKILL.md"
+    title: "fmt_panel_safe.py — 参数面板坐标级安全格式化"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["Label", "fmt_panel_safe", "参数面板控件", "label", "mode", "布局"]
+    summary: "--- name: fmt-panel-safe description: 参数面板控件布局格式化时使用：控件尺寸标准化、对齐排布、水印式无 Label 面板或 Label+控件配对面板、怕正则脚本损坏模板要坐标级安全修改时触发。关键词：参"
+    lines: 43
+    has_kb_index: true
+
+  - path: "kfgj/tygs/skills/fmt_wildcard/SKILL.md"
+    title: "fmt_wildcard.py — 通配格式化器（通用版）"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["fmt_wildcard", "run", "python", "targets", "CSS", "隔行换色"]
+    summary: "--- name: fmt-wildcard description: 常规明细表（行式展示）一揽子通配格式化时使用：参数面板 CSS 注入+紧凑单行重排、单元格样式（微软雅黑9号）、列宽内容自适应、冻结表头、隔行换色一次到位时触发。关键词"
+    lines: 52
+    has_kb_index: true
+
+  - path: "kfgj/tygs/skills/format_dataset_sql/SKILL.md"
+    title: "format_dataset_sql.py — 数据集 SQL 格式美化"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["SQL", "format_dataset_sql", "cpt", "CPT", "sql", "sqlglot"]
+    summary: "--- name: format-dataset-sql description: CPT 数据集 SQL 格式美化时使用：SQL 缩进排版、sqlglot 格式化、保护 FR 参数占位符 ${...} 宏不被破坏时触发。关键词：SQL 美"
+    lines: 41
+    has_kb_index: true
+
+  - path: "kfgj/tygs/skills/freeze_header/SKILL.md"
+    title: "freeze_header.py — 冻结表头（通配规则）"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["freeze_header", "CPT", "rows", "kfgj", "tygs", "freeze"]
+    summary: "--- name: freeze-header description: CPT 冻结表头/冻结前 N 行时使用：浏览滚动时表头固定、明细表长列表交付前标配时触发。关键词：冻结、FrozenColumnRow、freeze_header、f"
+    lines: 41
+    has_kb_index: true
+
+  - path: "kfgj/tygs/skills/param_panel_style/SKILL.md"
+    title: "param_panel_style.py — 参数面板样式模板"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["CSS", "build_style_css", "param_panel_style", "style", "afterinit", "import"]
+    summary: "--- name: param-panel-style description: 参数面板按钮/CSS 样式定制时使用：生成参数面板 afterinit jQuery 注入的 style 内容、按钮蓝/灰主题与宽度、换报表复用面板样式时触发"
+    lines: 44
+    has_kb_index: true
+
+  - path: "kfgj/tygs/skills/run_defaults/SKILL.md"
+    title: "run_defaults.py — 默认自动档编排器"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["run_defaults", "cpt", "CPT", "skip", "verify", "python"]
+    summary: "--- name: run-defaults description: CPT 模板默认格式一键编排时使用：新明细表生成后的整套默认格式化（SQL 美化+明细样式+冻结表头+参数面板+CSS+按钮）、批量后处理、模板交付前统一格式化时触发。"
+    lines: 51
+    has_kb_index: true
+
+  - path: "kfgj/tygs/官方文档沉淀工具/README.md"
+    title: "官方文档沉淀工具(已降级为知识映射表)"
+    stage: formatting
+    tags: ["已归档", "官方文档", "知识映射", "doc编号"]
+    keywords: ["级联", "排序", "图表", "导出", "权限", "定时调度", "doc-编号"]
+    summary: "原 27 个官方文档沉淀脚本已删除(知识已双重沉淀进 fr_rules_doc/fr_rules_export 静态校验规则 + ckzl/lc/ckzl/gzjd)。本文件保留 doc-编号→功能 映射表作索引。"
+    lines: 58
+    has_kb_index: true
+
+  - path: "kfgj/tygs/索引目录.md"
+    title: "kfgj/tygs — 索引目录"
+    stage: formatting
+    tags: ["脚本索引", "格式化", "后处理"]
+    keywords: ["参数面板控件布局", "单元格样式", "SQL格式美化", "FRM模板"]
+    summary: "kfgj/tygs的目录索引：各子目录脚本职责速查（布局/样式/行高/SQL 美化）"
+    lines: 108
+    has_kb_index: true
+
+  - path: "kfgj/web_kit/README.md"
+    title: "web_kit — WebKit 页面快速体检（FineReport 10 运行期）"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["probe", "runtime", "console", "URL", "pageerror", "error"]
+    summary: "# web_kit — WebKit 页面快速体检（FineReport 10 运行期）"
+    lines: 165
+    has_kb_index: true
+
+  - path: "kfgj/web_kit/tests/README.md"
+    title: "web_kit/tests — 坏页夹具与验收材料"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["cpt", "error", "check", "fr_check", "web_kit", "tests"]
+    summary: "> 配套 `web_kit/方案-WebKit页面快速体检-20260904.md` 验收标准 B：构造坏页逐一被拦。 > 这两个夹具都是**静态检查全绿、只有真开页面才炸**的页——这正是 webkit 体检相对 guardrails/f"
+    lines: 60
+    has_kb_index: true
+
+  - path: "kfgj/web_kit/方案-WebKit页面快速体检-20260904.md"
+    title: "WebKit 页面快速体检工具 · 开发方案"
+    stage: tool
+    tags: ["补头20260929"]
+    keywords: ["fr_check", "console", "probe", "cpt", "ERROR", "URL"]
+    summary: "# WebKit 页面快速体检工具 · 开发方案 # 生成: 2026-09-04 · 定位: DSL 编译链路的'运行期体检层' # 状态: ✅ v1.0 已交付（P0+P1 全部 + P2 部分；坏页实弹验收 PASS；迭代日志见 RE"
+    lines: 112
+    has_kb_index: true
+
+  - path: "kfgj/xlyl/README.md"
+    title: "kfgj/xlyl — 无服务器渲染验证工具（fr_render）"
+    stage: render-preview
+    tags: ["渲染", "预览", "验证", "headless", "无服务器", "G12"]
+    keywords: ["kfgj/xlyl", "render_check", "expect_manifest", "headless", "无服务器渲染", "G12", "Layer4", "断言", "VanChart", "FRM组件", "EmbeddedTableData", "backend", "RenderCLI", "injected"]
+    summary: "脱离 FR 服务器/设计器完整环境的渲染验证工具：期望清单提取(expect_manifest) + 可插拔渲染后端(render_check: manifest/java/injected) + guard G12 headless 通道。80 样本回归基线(38cpt+41frm, 39带图表, 84内嵌数据集免DB)。"
+    lines: 134
+    has_kb_index: true
+
+  - path: "kfgj/xlyl/probeA_独立JVM渲染_否定结论.md"
+    title: "探针A: 独立JVM渲染路线否定结论"
+    stage: render-preview
+    tags: ["渲染", "探针", "否定结论", "headless", "架构决策"]
+    keywords: ["独立JVM", "headless", "FineAssist", "FinePluginBridge", "加密", "EntityDao", "ConfigurationActivator", "原子耦合", "否定结论", "AttachNotSupportedException"]
+    summary: "独立 headless JVM 渲染 cpt 三步全部不可行:三重阻断(FineAssist需Attach API无provider/加密桥magic 0x03030309/EntityDao需完整模块链)。FR10/11无差异,FR架构整体式原子耦合。java backend因此判死,主押injected路线。"
+    lines: 258
+    has_kb_index: true
+
+  - path: "kfgj/xlyl/probeB_注入渲染_肯定结论.md"
+    title: "探针B: 设计器注入渲染路线肯定结论"
+    stage: render-preview
+    tags: ["渲染", "探针", "注入", "fr-agent", "肯定结论"]
+    keywords: ["注入渲染", "ActorFactory", "page actor", "PageRWorkBook", "readStream", "Excel导出", "PDF导出", "HTMLExporter stub", "Nashorn反射", "contextClassLoader"]
+    summary: "注入式渲染全链路可行:readStream→ActorFactory.getActor('page')→execute→PageRWorkBook; PDF/Excel导出成功(46KB/39KB);内置HTMLExporter是stub('Not support yet'),HTML需手动拼单元格。单次往返~2.2s。injected backend 因此成为主路线。"
+    lines: 166
+    has_kb_index: true
+
+  - path: "kfgj/xlyl/单位换算实证.md"
+    title: "FR 单位体系实证 (FU长度/FRSize字号/frm像素坐标)"
+    stage: render-preview
+    tags: ["单位", "FU", "FRSize", "字号", "坐标", "px", "mm", "pt"]
+    keywords: ["单位换算", "FU", "FRSize", "字号单位", "像素", "毫米", "磅", "RowHeight", "ColumnWidth", "BoundsAttr", "设计器单位", "getInstanceFromFRSize", "valueOfPix"]
+    summary: "在 FR10 设计器 JVM 内用 FR 自身 API 实证的单位体系: 长度存储=FU(1px@96dpi=38100FU, 1pt=50800FU, 1mm=144000FU, 默认列宽2743200FU=54pt=19.05mm=72px); 字号存储=FRSize=pt×8(72=9pt默认,80=10,88=11,96=12,128=16); frm BoundsAttr=像素直存。双向换算闭环验证。"
+    lines: 98
+    has_kb_index: true
+
+  - path: "kfgj/xlyl/页面模板双向测试工具.md"
+    title: "页面↔模板双向自动化测试工具 (page2tpl / tpl2page / json_page)"
+    stage: render-preview
+    tags: ["逆向", "round-trip", "页面测试", "模板验证", "page2tpl", "json_page", "tpl2page", "layout_check", "布局自辅助"]
+    keywords: ["页面逆向", "逆向模板", "round-trip", "一一核对", "URL viewlet", "内嵌数据集", "页面数据", "模板损坏检测", "参数面板", "高保真页面", "tpl2page", "json_page", "frm逆向", "组件树", "guard roundtrip", "布局断言", "意外重叠", "层叠卡片", "图表区过小", "布局设计自辅助"]
+    summary: "双向测试工具+布局设计自辅助闭环: (A)page2tpl.py 页面URL/模板→真引擎渲染→逆向cpt/frm→round-trip T1-T9+L1-L4核对(L=layout_check.py布局合理性:意外重叠[层叠组/浮钮豁免]/越界/零尺寸/图表区过小); (B)tpl2page.py 一键HTML+PDF+JSON,真实列宽行高比例; (C)guard --roundtrip G12通道。生成→看效果→机器自检→调整秒级迭代闭环。"
+    lines: 135
+    has_kb_index: true
+
+  - path: "scwj/mb/README.md"
+    title: "scwj/mb"
+    stage: output
+    tags: ["产出", "落地", "reportlets"]
+    keywords: ["生成器产出", "reportlets", "部署流程"]
+    summary: "模板生成器产出的落地目录：gen_*.py 生成 .cpt 后经此复制到 FR reportlets 预览测试"
+    lines: 63
+    has_kb_index: true

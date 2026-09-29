@@ -1,0 +1,11 @@
+conventions:
+  global_params: [fine_username]
+  sql_hygiene:
+    numeric_cast_marker: "COALESCE(NULLIF("
+    numeric_cast_cast: "::numeric"
+    period_case_marker: "CASE upper('"
+    org_markers: ["fin_demo_auth_base_info", "UNION ALL"]
+    perm_markers: ["fin_demo_config_user_role", "fine_username"]
+    forbidden_residue: "${{"
+    values_union_marker: "UNION ALL"
+  sql_exceptions: ["param_guard", "dict_"]

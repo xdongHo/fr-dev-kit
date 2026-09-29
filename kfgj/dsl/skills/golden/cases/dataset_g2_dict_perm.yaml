@@ -1,0 +1,22 @@
+# golden: dataset ② 字典集（dict_ 前缀豁免 ORG、仅 PERM、DISTINCT 单查询、plant_code EXISTS 形态）
+# 注: 原拟用 scenario_mapping 作字典源，G5 真库冒烟发现该表无 entity/plant_code 列，
+#     技能按纪律拒绝（见 REPORT 返工点）；改用 auth_base_info（compile.py org 字典同源）。
+skill: dataset
+name: dataset_g2_dict_perm
+expect: ok
+spec:
+  name: dict_area
+  source: auth_base_info            # demo_ads.fin_demo_auth_base_info（组织架构，plant_code 在列）
+  fields: [plant_code]
+  distinct: true
+  permission: dict                  # dict_ 前缀豁免（G4 仅要求 PERM）
+assert_contains:
+  - "SELECT DISTINCT t.plant_code AS plant_code"
+  - "demo_ads.fin_demo_auth_base_info"
+  - "fin_demo_auth_base_user_map m"      # PERM EXISTS 形态（plant_code 对 plant_code）
+  - "m.plant_code=t.plant_code"
+  - "fin_demo_config_user_role"          # 管理员旁路仍在
+assert_not_contains:
+  - "UNION ALL"                              # dict_ 豁免 ORG：不织组织并集
+  - "COALESCE(NULLIF"                        # 字典集豁免 numeric 幅面
+  - "${{"
