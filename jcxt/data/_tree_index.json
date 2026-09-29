@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-29 16:58:14",
- "page_count": 218,
+ "generated_at": "2026-09-29 17:54:34",
+ "page_count": 219,
  "root": [
   {
    "title": "bb",
@@ -998,7 +998,7 @@
        "title": "FR11 知识库索引（2289 篇离线文档 → 21 篇笔记）",
        "path": "ckzl/lc/fr11_knowledge/README.md",
        "id": "lc/fr11_knowledge/README",
-       "lines": 77
+       "lines": 76
       },
       {
        "title": "fr11_knowledge 复核报告（i18n 记录问题 + FR11 探针落地）",
@@ -1581,6 +1581,12 @@
        "path": "ckzl/zsk/tbcw/CPT全部打开提示无法查看该页面排查.md",
        "id": "zsk/tbcw/CPT全部打开提示无法查看该页面排查",
        "lines": 27
+      },
+      {
+       "title": "注入错进程：18999/19000 被占、remote_tpl 返回空 md5 d41d8cd9",
+       "path": "ckzl/zsk/tbcw/注入错进程-端口占用-remote_tpl空md5.md",
+       "id": "zsk/tbcw/注入错进程-端口占用-remote_tpl空md5",
+       "lines": 45
       }
      ]
     },
@@ -7591,7 +7597,7 @@
     "索引",
     "离线文档"
    ],
-   "lines": 77,
+   "lines": 76,
    "sections": [
     {
      "title": "# FR11 知识库索引",
@@ -23110,6 +23116,53 @@
     {
      "title": "## 附注",
      "line": 333
+    }
+   ]
+  },
+  {
+   "id": "zsk/tbcw/注入错进程-端口占用-remote_tpl空md5",
+   "path": "ckzl/zsk/tbcw/注入错进程-端口占用-remote_tpl空md5.md",
+   "title": "注入错进程：18999/19000 被占、remote_tpl 返回空 md5 d41d8cd9",
+   "summary": "实战案例(2026-09): designer.bat 自动注入按'最新 java.exe PID'选进程错注入本地服务器进程(无窗口/WorkResource=EmptyWorkResource)占住 18999/19000 → 真设计器注不进、remote_tpl md5 静默返回空 md5 d41d8cd9 极易误判为生产文件被清空; 处置=错进程 agent 自释放端口+重注入真设计器; Attacher 只调 loadAgent 无 options → --port-base 无效",
+   "keywords": [
+    "inject",
+    "18999",
+    "19000",
+    "d41d8cd9",
+    "EmptyWorkResource",
+    "ExecServer.stop",
+    "loadAgent",
+    "port-base",
+    "远程设计"
+   ],
+   "tags": [
+    "fr-agent",
+    "注入",
+    "⭐高频",
+    "错进程",
+    "端口占用"
+   ],
+   "lines": 45,
+   "sections": [
+    {
+     "title": "# 注入错进程：端口被占 + remote_tpl 返回空 md5（d41d8cd9…）",
+     "line": 11
+    },
+    {
+     "title": "## 症状（三连）",
+     "line": 15
+    },
+    {
+     "title": "## 根因",
+     "line": 21
+    },
+    {
+     "title": "## 处置（顺序固定）",
+     "line": 27
+    },
+    {
+     "title": "## 防复发",
+     "line": 39
     }
    ]
   },

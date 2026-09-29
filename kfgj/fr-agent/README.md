@@ -84,6 +84,15 @@ Phase 4: build.cmd → 编译 AttachAgent → AttachAgent <PID> fr-agent.jar
 > - 拿不准时用 `--pid` 手动指定：`python inject.py --pid 36292`
 > - ⚠️ 旧文档写的「MainWindowTitle 含『日志』」是误判——那是日志窗口，不是主窗口
 
+### 错进程注入与端口占用（实战 · 2026-09）
+
+`inject.py` 选错进程（注进无窗口的本地服务器进程，`WorkResource=EmptyWorkResource`）会连锁出三个坑：
+占住 18999/19000 → 真设计器注不进 → 远程设计读写校验 `remote_tpl` **静默返回空 md5 `d41d8cd9…`**（像"生产文件被清空"，实为空会话）。
+**真设计器辨认**：相对路径 `jrein\java` 启动 + 窗口标题 `FineReport.*@`；`Attacher` 的 `--port-base` 无效（loadAgent 无 options），端口占用必须先由错进程 `/shutdown` 释放再重注。
+完整症状/处置/防复发 → 错误案例库 [注入错进程-端口占用-remote_tpl空md5](../../ckzl/zsk/tbcw/注入错进程-端口占用-remote_tpl空md5.md)。
+
+
+
 ## 执行 JS 探查（exec_js.py）
 
 无 GUI 读取 Designer 运行时状态（当前模板/数据集/参数面板控件数等）：

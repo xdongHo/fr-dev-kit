@@ -1,11 +1,11 @@
 # 知识库索引 — 由 kfgj/sync_kb_index.py 自动生成，请勿手动编辑
-# 最后同步: 2026-09-29 16:58:12
+# 最后同步: 2026-09-29 17:54:32
 # 大模型读取此文件来定位知识，不要直接读取细节文件
 
 version: "2026-09-29"
-total_files: 517
-total_lines: 81778
-total_bytes: 6379869
+total_files: 518
+total_lines: 81863
+total_bytes: 6385662
 
 stages:
   api: 1
@@ -17,6 +17,7 @@ stages:
   deep-learn: 235
   dsl: 1
   error-analysis: 12
+  error-case: 1
   external-resources: 1
   formatting: 6
   fr11-knowledge: 67
@@ -46,17 +47,17 @@ nodes:
     title: "AGENTS.md — FR 报表模板开发工具包（comm 版）"
     stage: root
     tags: []
-    keywords: ["版", "FR", "AGENTS", "报表模板开发工具包"]
+    keywords: ["AGENTS", "FR", "报表模板开发工具包", "版"]
     summary: "1. **初始化用户环境**：`python kfgj/init_user_env.py` —— 检测 `%USERPROFILE%\\.fr_dev_kit\\`"
     lines: 197
 
   - path: "README.md"
-    title: "fr_dev_kit v3.0 comm README(共享版导航入口)"
+    title: "FR Dev Kit — FineReport 报表开发能力基座（开源主 README）"
     stage: root
-    tags: ["README", "导航", "共享版", "快速开始", "目录速览"]
-    keywords: ["comm版", "共享版", "快速开始", "自检", "guard.py", "混合检索", "目录结构", "AGENTS.md", "收尾闸门"]
-    summary: "共享版工具包的 README 导航入口：三步快速开始(配环境/配检索/selftest)、标准工作循环、4 分类目录速览、常用命令速查与维护流程。权威入口仍是 AGENTS.md，两者不一致以 AGENTS.md 为准。"
-    lines: 88
+    tags: ["README", "开源", "快速开始", "Agent工作区"]
+    keywords: ["FineReport", "报表开发", "agent", " cpt", "frm", "知识库", "零件库", "闸门", "fr-dev-kit"]
+    summary: "开源主文档: 把 FR 10/11 报表开发变成 agent 可执行工作区(零件库+无向量知识库+六流程+12闸门); 快速开始3步+agent工作区用法+六种任务路由"
+    lines: 119
     has_kb_index: true
 
   - path: "ckzl/bb/CHANGELOG.md"
@@ -72,7 +73,7 @@ nodes:
     title: "外部依赖与归档声明（开源版）"
     stage: ckzl
     tags: []
-    keywords: ["开源版", "外部依赖与归档声明"]
+    keywords: ["外部依赖与归档声明", "开源版"]
     summary: "KB_INDEX: 外部依赖与归档声明 — 开源版哪些引用指向套件外的历史工作区"
     lines: 45
 
@@ -2881,7 +2882,7 @@ nodes:
     tags: ["FR11", "知识库", "索引", "离线文档"]
     keywords: ["FR11", "FineReport 11", "知识库", "离线文档", "doc-view", "图表", "填报", "权限"]
     summary: "FR11 离线文档（D:\\fr11_docs，2289 篇 doc-view HTML）解析重建的 21 篇知识笔记索引：15 分类 + 5 专题补充 + 本索引。"
-    lines: 78
+    lines: 77
     has_kb_index: true
 
   - path: "ckzl/lc/fr11_knowledge/_standardize_report.md"
@@ -4081,6 +4082,15 @@ nodes:
     lines: 342
     has_kb_index: true
 
+  - path: "ckzl/zsk/tbcw/注入错进程-端口占用-remote_tpl空md5.md"
+    title: "注入错进程：18999/19000 被占、remote_tpl 返回空 md5 d41d8cd9"
+    stage: error-case
+    tags: ["fr-agent", "注入", "⭐高频", "错进程", "端口占用"]
+    keywords: ["inject", "18999", "19000", "d41d8cd9", "EmptyWorkResource", "ExecServer.stop", "loadAgent", "port-base", "远程设计"]
+    summary: "实战案例(2026-09): designer.bat 自动注入按'最新 java.exe PID'选进程错注入本地服务器进程(无窗口/WorkResource=EmptyWorkResource)占住 18999/19000 → 真设计器注不进、remote_tpl md5 静默返回空 md5 d41d8cd9 极易误判为生产文件被清空; 处置=错进程 agent 自释放端口+重注入真设计器; Attacher 只调 loadAgent 无 options → --port-base 无效"
+    lines: 46
+    has_kb_index: true
+
   - path: "ckzl/zsk/tbcw/渲染报错-PageRWorkSheet强转AnalyReport.md"
     title: "PageRWorkSheet cannot be cast to AnalyReport 渲染报错分析"
     stage: error-analysis
@@ -4202,7 +4212,7 @@ nodes:
     title: "evals/ — fr_dev_kit 内部评估集（CAR-019 起步版，2026-09-06）"
     stage: kfgj
     tags: []
-    keywords: ["CAR", "起步版", "内部评估集"]
+    keywords: ["CAR", "内部评估集", "起步版"]
     summary: "毕业制是活的流水：新功能上线先立 capability 条目，稳定后转 regression；评估集只增不删（见 §4）。"
     lines: 125
 
@@ -4250,7 +4260,7 @@ nodes:
     title: "A（W915 全链好链夹具）"
     stage: kfgj
     tags: []
-    keywords: ["全链好链夹具", "A", "W"]
+    keywords: ["A", "W", "全链好链夹具"]
     summary: "全部链接有效: [b](b.md) 与 [子目录 c](sub/c.md)，无断链。"
     lines: 3
 
@@ -4285,7 +4295,7 @@ nodes:
     tags: ["fr-agent", "GUI追踪", "注入", "HTTP API"]
     keywords: ["inject", "18999", "19000", "events", "exec", "AWT事件", "Java Access Bridge"]
     summary: "fr-agent 使用手册：注入 Designer JVM、/status /events /exec API、事件流→Java API 追踪流程"
-    lines: 187
+    lines: 196
     has_kb_index: true
 
   - path: "kfgj/fzpy/README.md"
