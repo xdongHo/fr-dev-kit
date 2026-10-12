@@ -157,14 +157,14 @@ def build_reverse_cpt(rjson, manifest, base_cpt):
                '<UPFCR COLUMN="false" ROW="true"/>\n</ReportPageAttr>\n'
                "<ColumnPrivilegeControl/>\n<RowPrivilegeControl/>\n"
                '<RowHeight defaultValue="1153643">\n<![CDATA[%s]]></RowHeight>\n'
-               '<ColumnWidth defaultValue="2743200">\n<![CDATA[%s]]></ColumnWidth>\n'
+               '<ColumnWidth defaultValue="5760000">\n<![CDATA[%s]]></ColumnWidth>\n'
                "<CellElementList>\n%s</CellElementList>\n"
                "<ReportAttrSet>\n"
                '<ReportSettings headerHeight="0" footerHeight="0">\n<FrozenColumnRow columnrow="0,0"/>'
                "<PaperSetting/>\n"
                '<Background name=\"ColorBackground\" color=\"-1\"/>\n</ReportSettings>\n'
                "</ReportAttrSet>\n</Report>\n"
-               % (name, ",".join(["1153643"] * maxr), ",".join(["2743200"] * maxc), "".join(cell_xml)))
+               % (name, ",".join(["1153643"] * maxr), ",".join(["5760000"] * maxc), "".join(cell_xml)))
         report_blocks.append(one)
 
     # 基准手术: WorkBook34 只有一个 Report 块 → 整体替换为我们的 N 块

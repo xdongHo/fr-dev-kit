@@ -440,7 +440,7 @@ def build_account_drill(page, sem):
 <ReportPageAttr><HR/><FR/><HC/><FC/></ReportPageAttr>
 <ColumnPrivilegeControl/><RowPrivilegeControl/>
 <RowHeight defaultValue="{th["row_height"]["default"]}"><![CDATA[{th["row_height_list"]}]]></RowHeight>
-<ColumnWidth defaultValue="2743200"><![CDATA[{th["column_width_list"]}]]></ColumnWidth>
+<ColumnWidth defaultValue="5760000"><![CDATA[{th["column_width_list"]}]]></ColumnWidth>
 <CellElementList>{''.join(cells)}</CellElementList>
 <ReportAttrSet>
 <ReportSettings headerHeight="0" footerHeight="0">
@@ -501,7 +501,7 @@ def build_panel_org(page, sem):
 <ReportPageAttr><HR/><FR/><HC/><FC/></ReportPageAttr>
 <ColumnPrivilegeControl/><RowPrivilegeControl/>
 <RowHeight defaultValue="{th["row_height"]["default"]}"><![CDATA[]]></RowHeight>
-<ColumnWidth defaultValue="2743200"><![CDATA[]]></ColumnWidth>
+<ColumnWidth defaultValue="5760000"><![CDATA[]]></ColumnWidth>
 <CellElementList>{note}</CellElementList>
 <ReportAttrSet>
 <ReportSettings headerHeight="0" footerHeight="0">

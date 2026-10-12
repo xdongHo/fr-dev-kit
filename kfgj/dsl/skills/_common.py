@@ -269,7 +269,7 @@ def workbook_cpt(report_name, cells_xml, tabledata_xml_, sem, param_names,
 <ReportPageAttr><HR/><FR/><HC/><FC/></ReportPageAttr>
 <ColumnPrivilegeControl/><RowPrivilegeControl/>
 <RowHeight defaultValue="{th["row_height"]["default"]}"><![CDATA[]]></RowHeight>
-<ColumnWidth defaultValue="2743200"><![CDATA[]]></ColumnWidth>
+<ColumnWidth defaultValue="5760000"><![CDATA[]]></ColumnWidth>
 <CellElementList>{cells_xml}</CellElementList>
 <ReportAttrSet>
 <ReportSettings headerHeight="0" footerHeight="0">
