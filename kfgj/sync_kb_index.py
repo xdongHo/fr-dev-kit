@@ -52,7 +52,9 @@ EXTERNAL_DIRS = {}
 EXCLUDE_DIRS = {"_archive", "FR_HEADLESS_GUIDE_Ver历史备份", ".git", "node_modules", "site", "临时",
                 "_runs", "__pycache__", ".claude"}  # v2: _runs 是 guard 闸门报告留痕, 非知识
 # 排除文件
-EXCLUDE_FILES = {"jcxt/data/_kb_index.yaml", "_kb_index.json"}
+EXCLUDE_FILES = {"jcxt/data/_kb_index.yaml", "_kb_index.json",
+                 # 本地私有底稿（gitignore 同口径）：索引产物随库分发,条目元数据也不入库
+                 "申诉话术.md", "能力与商业价值描述.md", "推广方案汇总.md"}
 
 # KB_INDEX 块正则
 KB_INDEX_RE = re.compile(

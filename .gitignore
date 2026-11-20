@@ -5,3 +5,18 @@ __pycache__/
 .agent.md
 HEARTBEAT.log
 _kb_fts.db
+node_modules/
+
+# ---- 本地工具态（不入库）----
+.zcode/
+.zcodeignore
+kfgj/_runs/
+
+# ---- 本地底稿/私有（不入库：营销底稿/申诉话术/演示稿/改造测试产物）----
+scwj/营销素材/html/
+scwj/营销素材/GitHub推广方案/
+scwj/营销素材/申诉话术.md
+scwj/营销素材/能力与商业价值描述.md
+scwj/mb/demo34改造测试_*/
+scwj/sop_flow.html
+scwj/sop_flow_mini.html
