@@ -1,17 +1,18 @@
 # 知识库索引 — 由 kfgj/sync_kb_index.py 自动生成，请勿手动编辑
-# 最后同步: 2026-09-29 17:54:32
+# 最后同步: 2026-11-20 16:45:16
 # 大模型读取此文件来定位知识，不要直接读取细节文件
 
-version: "2026-09-29"
-total_files: 518
-total_lines: 81863
-total_bytes: 6385662
+version: "2026-11-20"
+total_files: 523
+total_lines: 82363
+total_bytes: 6424194
 
 stages:
+  .zcode: 1
   api: 1
   api-reference: 3
   canvas-skeleton: 1
-  ckzl: 1
+  ckzl: 2
   collaboration: 3
   data-analysis: 1
   deep-learn: 235
@@ -32,6 +33,8 @@ stages:
   output: 1
   pipeline: 55
   pipeline-node: 12
+  plugins: 2
+  reference-templates: 1
   render-preview: 5
   report-building: 2
   requirements: 2
@@ -43,22 +46,29 @@ stages:
   workflow-node: 10
 
 nodes:
+  - path: ".zcode/plans/plan-sess_4a4602fc-5712-4c94-b31f-36aac5283617.md"
+    title: "FR Dev Kit → ZCode 插件（完整 MCP App）开发方案 v0.1.0"
+    stage: .zcode
+    tags: []
+    keywords: ["插件", "完整", "开发方案", "Kit", "MCP"]
+    summary: "把套件封装为 ZCode 插件 **fr-dev-kit**：stdio MCP 服务器暴露 15 个核心工具（+2 个面板支撑工具），并带持久 UI 面板「F"
+    lines: 99
+
   - path: "AGENTS.md"
     title: "AGENTS.md — FR 报表模板开发工具包（comm 版）"
     stage: root
     tags: []
-    keywords: ["AGENTS", "FR", "报表模板开发工具包", "版"]
+    keywords: ["AGENTS", "报表模板开发工具包", "版", "FR"]
     summary: "1. **初始化用户环境**：`python kfgj/init_user_env.py` —— 检测 `%USERPROFILE%\\.fr_dev_kit\\`"
-    lines: 197
+    lines: 217
 
   - path: "README.md"
-    title: "FR Dev Kit — FineReport 报表开发能力基座（开源主 README）"
+    title: "FR 报表开发工具包（fr-dev-kit）"
     stage: root
-    tags: ["README", "开源", "快速开始", "Agent工作区"]
-    keywords: ["FineReport", "报表开发", "agent", " cpt", "frm", "知识库", "零件库", "闸门", "fr-dev-kit"]
-    summary: "开源主文档: 把 FR 10/11 报表开发变成 agent 可执行工作区(零件库+无向量知识库+六流程+12闸门); 快速开始3步+agent工作区用法+六种任务路由"
-    lines: 119
-    has_kb_index: true
+    tags: []
+    keywords: ["报表开发工具包", "FR"]
+    summary: "你说要啥，AI 照着路子把报表做出来，做完自动检查一遍，你只管看结果、提意见。项目赶工期，几张表可以同时开工。"
+    lines: 67
 
   - path: "ckzl/bb/CHANGELOG.md"
     title: "CHANGELOG — fr_dev_kit 能力面变更日志"
@@ -66,14 +76,14 @@ nodes:
     tags: ["补头20260929"]
     keywords: ["kfgj", "ckzl", "jcxt", "AGENTS", "evals", "key"]
     summary: "> 本文件管**能力面变更**（新增/变更/废弃/兼容声明/实验能力），每版一节，节标题用日期版号。 > 版本号规则：v<大版本>-<YYYYMMDD>；实验能力连续两个版本无变更且通过周体检 → 转 stable。"
-    lines: 169
+    lines: 215
     has_kb_index: true
 
   - path: "ckzl/bb/外部依赖与归档声明.md"
     title: "外部依赖与归档声明（开源版）"
     stage: ckzl
     tags: []
-    keywords: ["外部依赖与归档声明", "开源版"]
+    keywords: ["开源版", "外部依赖与归档声明"]
     summary: "KB_INDEX: 外部依赖与归档声明 — 开源版哪些引用指向套件外的历史工作区"
     lines: 45
 
@@ -319,6 +329,23 @@ nodes:
     summary: "60套可视化报表骨架(cpt20+frm自适应20+frm绝对20)+配置JSON:agent开发可视化报表/图表/驾驶舱时从此选骨架,标题用表格/标题栏承载(非图表自身标题)"
     lines: 159
     has_kb_index: true
+
+  - path: "ckzl/hbfa/官方demo34/README.md"
+    title: "官方demo34(能力域样板库)"
+    stage: reference-templates
+    tags: ["样板", "cpt", "官方demo", "能力域路由"]
+    keywords: ["分组报表", "交叉表", "分栏", "票据打印", "层次坐标", "组内排名", "累计", "条件属性", "折叠树", "三级联动", "填报校验", "分sheet导出", "内置数据集", "RowData"]
+    summary: "34个官方能力域样板cpt(全部降版本至xmlVersion=20170720/10.0.0,FR10/11均可开)+1分组骨架:做普通报表先按路由表找样板复制改写,不从零拼XML;内置数据样板免连接直接预览"
+    lines: 73
+    has_kb_index: true
+
+  - path: "ckzl/hbfa/官方demo34/官方demo-catalog.md"
+    title: "FineReport 典型 DEMO 模板库（CPT）"
+    stage: ckzl
+    tags: []
+    keywords: ["Report", "典型", "Fine", "DEMO", "模板库"]
+    summary: "34 个高覆盖率的普通报表 `.cpt` 样板，按能力域分组，每个独占一类高频能力、彼此不重叠，覆盖模板制作约 80% 的常见需求。"
+    lines: 205
 
   - path: "ckzl/lc/00_需求分析流水线.md"
     title: "Stage 0: 需求分析流水线 (Excel 需求确认清单)"
@@ -4212,7 +4239,7 @@ nodes:
     title: "evals/ — fr_dev_kit 内部评估集（CAR-019 起步版，2026-09-06）"
     stage: kfgj
     tags: []
-    keywords: ["CAR", "内部评估集", "起步版"]
+    keywords: ["内部评估集", "CAR", "起步版"]
     summary: "毕业制是活的流水：新功能上线先立 capability 条目，稳定后转 regression；评估集只增不删（见 §4）。"
     lines: 125
 
@@ -4260,7 +4287,7 @@ nodes:
     title: "A（W915 全链好链夹具）"
     stage: kfgj
     tags: []
-    keywords: ["A", "W", "全链好链夹具"]
+    keywords: ["全链好链夹具", "W", "A"]
     summary: "全部链接有效: [b](b.md) 与 [子目录 c](sub/c.md)，无断链。"
     lines: 3
 
@@ -4304,7 +4331,7 @@ nodes:
     tags: ["补头20260929"]
     keywords: ["SQL", "cpt", "kfgj", "db_schema", "ckzl", "python"]
     summary: "--- keywords: [sql 验证, SQL 执行验证, verify_sql, 参数宏替换, 验证闭环, 0 行不通过, fr_check, fr_preview, convert_excel_formula, submit_co"
-    lines: 122
+    lines: 126
     has_kb_index: true
 
   - path: "kfgj/fzpy/templates/task_todo_template.md"
@@ -4419,7 +4446,7 @@ nodes:
     title: "SN-10 生成物断言与目标环境实测"
     stage: pipeline-node
     tags: ["标准节点", "自测", "XML断言", "像素采样"]
-    keywords: ["生成物断言与目标环境实测", "SN"]
+    keywords: ["SN", "生成物断言与目标环境实测"]
     summary: "生成物验证标准节点：XML良构+嵌套层级断言+魔数校验+截图像素采样/双客户端实测，拦截复发链 P07 及 P12/P22(半)。"
     lines: 34
     has_kb_index: true
@@ -4684,6 +4711,22 @@ nodes:
     summary: "双向测试工具+布局设计自辅助闭环: (A)page2tpl.py 页面URL/模板→真引擎渲染→逆向cpt/frm→round-trip T1-T9+L1-L4核对(L=layout_check.py布局合理性:意外重叠[层叠组/浮钮豁免]/越界/零尺寸/图表区过小); (B)tpl2page.py 一键HTML+PDF+JSON,真实列宽行高比例; (C)guard --roundtrip G12通道。生成→看效果→机器自检→调整秒级迭代闭环。"
     lines: 135
     has_kb_index: true
+
+  - path: "plugins/fr-dev-kit/README.md"
+    title: "fr-dev-kit — ZCode 插件（MCP App）"
+    stage: plugins
+    tags: []
+    keywords: ["ZC", "MCP", "插件", "App"]
+    summary: "把 [FR Dev Kit](../../AGENTS.md)（FineReport 报表开发工具包）封装为 ZCode 插件："
+    lines: 63
+
+  - path: "plugins/fr-dev-kit/skills/fr-dev-kit/SKILL.md"
+    title: "FR Dev Kit 工具编排（MCP）"
+    stage: plugins
+    tags: []
+    keywords: ["Kit", "MCP", "工具编排", "Dev", "FR"]
+    summary: "name: fr-dev-kit"
+    lines: 42
 
   - path: "scwj/mb/README.md"
     title: "scwj/mb"

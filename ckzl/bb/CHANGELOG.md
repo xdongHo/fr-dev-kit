@@ -13,6 +13,42 @@ KB_INDEX: {
 > 本文件管**能力面变更**（新增/变更/废弃/兼容声明/实验能力），每版一节，节标题用日期版号。
 > 版本号规则：v<大版本>-<YYYYMMDD>；实验能力连续两个版本无变更且通过周体检 → 转 stable。
 
+## v3.3-20261119 (2026-11-19)
+
+官方 FR skill 包（finereport-template-engineer）对比借鉴落地的三件套 + RowData 编码逆向实证。
+
+### Added
+- `kfgj/fzpy/rowdata_codec.py`：EmbeddedTableData 内置数据集**全方言编解码器**。逆向实证（fine-third-10.0.jar 反编译）：FR 编码链 = TAB/LF 文本 → UTF-8 → raw DEFLATE → FR 变体 Ascii85(z 零组简写+72 换行+~ 终止) → **`]`→`]A` CDATA 转义**（XMLEncodeUtils 静态块实证）。官方 skill 包解码器缺 ]A 反转义，真实 FR 流 11/20 崩（Asci85 overflow）；本工具 34 官方 demo 30/30 全解。子命令 selftest/decode/encode/verify/element
+- `kfgj/fzpy/xml_diff_contract.py`：修改类任务**变更白名单机检**（吸收官方包 regression_contract 思路 + glob 增强：`[*]`=任意序号段）。XML 路径投影 diff，白名单外差异=越界禁交付；与 file_lock 整文件快照互补。退出码 0/1/2 对齐 fr_check
+- `ckzl/hbfa/官方demo34/`：34 官方能力域样板 + 分组骨架（含路由 README + 官方 catalog/manifest 随行）。**全部降版本适配** xmlVersion=20170720/releaseVersion=10.0.0（原包 18 个为 20211223/11.0.0，FR10 设计器报"版本过高"打不开）；入库后 XML 35/35 合法、RowData 30/30 可解
+
+### Changed
+- `kfgj/fzpy/fr_rules_doc.py` check_chart_cell_formula：扫描前剥 `<RowData>` 编码流——A85 字符域含 `=[`/`±*/` 会被公式正则误命中（官方 demo34 换数据实测踩中，demo 原数据恰好未触发）
+- `AGENTS.md` SOP：STEP 4 加「能力域样板路由 + rowdata_codec 离线造数」两行；STEP 5 加「xml_diff_contract 白名单机检」一行；流程 A 骨架起步行补官方demo34
+- `kfgj/fzpy/README.md`：三个新工具入索引（口语问法表 + 分类表）
+
+### Known-Issues（待办）
+- 官方demo34 中 19 个样板跑 fr_check 退出码 1，为 L1.5 既有规则对官方 demo 语法的系统性误报（chart_style 把颜色**属性名**当值判非法 / template_param 内置参数误判），已登记豁免口径于 demo34/README；根治需修规则本身
+
+## v3.2-20261012 (2026-10-12)
+
+ZCode 插件（MCP 集成）：套件能力面首次以 MCP 工具对外提供。
+
+### Added
+- `plugins/` 根目录：fr-dev-kit 完整 MCP App（stdio server `dist/server.mjs` + 控制台面板 `dist/console.html`）+ 本地市场 `plugins/marketplace.json`
+- 17 个 MCP 工具：kb_query / part_query / guard / kit_selftest / fr_check / template_snapshot / backup_template / db_schema / verify_sql / layout_grid / eval_formula / designer_status / designer_exec_js / dsl_build / dsl_types / list_gate_reports / read_gate_report——逐一封装既有 CLI（退出码 0/1/2 → ok/WARN/FAIL；verify_sql 沿 G08 语义：失败与 0 行均 isError）
+- 控制台面板（`ui://fr-dev-kit/console.html`）：套件自检状态灯、最近闸门报告浏览、知识检索工作台；无宿主时降级为独立预览
+- `dsl/skills` README 预告的「R29 MCP Server 首批 tools」落地为 dsl_build / dsl_types
+- 插件使用教义 `plugins/fr-dev-kit/skills/fr-dev-kit/SKILL.md`（流程 A-F → 工具序列映射）
+
+### Changed
+- AGENTS.md：根目录表加 `plugins/` 行；新增 §8「ZCode 插件（MCP 集成）」
+- `kfgj/check_refs.py`：EXCLUDE_DIRS 增加 `node_modules`（第三方依赖包 README 自引用非本库知识语料，此前 23 处误报断链）
+
+### Compatibility
+- 套件 Python 脚本零签名改动（MCP 层仅 subprocess 调用）；guard/fr_check/query_kb 等 CLI 行为不变
+- 插件运行需用户配置 kit_root（设置→插件→fr-dev-kit）；Python 3.11+ 与 Node 20+（构建期）
+
 ## v3.1-20260929 (2026-09-29)
 
 无向量库改造 + 知识库大规模治理拆页 + 归档清理（检索零 key、零配置、零网络化）。
@@ -166,3 +202,13 @@ KB_INDEX: {
 - kfgj/plugin_pl/：插件开发工艺流水线 v1.1 全套（七阶段+SN-01~12 标准节点+复盘问题台账 v1.1 共 37 条含复刻实践 D 段 P27-P37+sn_gate.py v1.1 机器闸门 C01-C13+sn_scaffold.py 骨架生成器+AGENTS 修订建议稿+交接手册+干跑校验报告+知识沉淀判定+瑞士网格总览 HTML；基线=AGENTS.md v3 kernel+归档盘点 demo_plugin_repo 四快照+示例插件A demo_copilot 交付记录）
 - kfgj/plugin_pl/flks/：流水线首跑实践（内部代码托管平台 demo_plugin_repo v2.1.12 五路并行 agent 复刻 46 类 10504 行；集成编译 0 错+jar 5.3MB+ProUnitTest 78/78；sn_gate 三跑实录 C06 断点修复+C13 新增；35 条发现收敛 P27-P37；实践报告+五路代理回执+gate 报告三份+unit-baseline.json）
 - 入库排除：复刻实践 reference/（嵌套 clone 按报告命令重取）与 replica build//test classes/（可重建产物）；CHANGELOG 本条由流水线会话追加，文件含并行会话在途修改故本会话不提交此文件
+
+### 生成器默认列宽改 40mm（5760000 FU）2026-10-12
+
+### Changed
+- kfgj/dsl/compile.py（443/504 两处）、kfgj/dsl/skills/_common.py（272）、kfgj/xlyl/page2tpl.py（defaultValue + 逐列兜底 join）：ColumnWidth 默认 2743200（72px≈19.05mm）→ 5760000（=40mm，1mm=144000 FU，纸宽 42768000=A4 横向 297mm 验证）；逐列 column_width_list 仍按 bjys.md 公式实测计算，不受影响；tag_dictionary.yaml 为存量观测统计不改
+
+### ja_check v4：]A 体质认知翻案——FR CDATA 盘上转义格式，工具改格式豁免（2026-11-04）
+
+### Added
+- kfgj/fzpy/ja_check.py（新工具，v4 起步）：CDATA 格式感知体检。核心知识：FineReport 模板的 `]A` 序列是**产品自有 CDATA 盘上转义**（`fine-third-10.0.jar` 的 `XMLEncodeUtils.cdataEncode`：写出时 `]→]A` 防内容出现 `]]>` 终结符；读回 `cdataDecode` 对称还原，`]AA→]A` 自愈），**不是文本损伤**——外部工具（python/node/grep）裸读会把转义误判为损伤。工具行为：内容检查一律在 `]A→]` 解码后进行（与 FR 引擎视角一致）；`]A` 计数降为 INFO 合规观察项；保留 `::int拆裂`（SQL 美化器真实损伤家族）与 node --check JS 语法体检；L0 XML 合法性兜底。

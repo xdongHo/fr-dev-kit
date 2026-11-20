@@ -29,6 +29,7 @@
 | `kfgj/` | 开发工具：辅助脚本(`fzpy/`)、格式化脚本(`tygs/`)、fr-agent(`fr-agent/`)、DSL 编译器(`dsl/`)、运行期体检(`web_kit/`)、渲染预览(`xlyl/`)、插件工艺流水线(`plugin_pl/`)、评测(`evals/`)、闸门(`guard.py`+`EXEC_CONTRACT.md`)、断链检查(`check_refs.py`)、索引同步(`sync_kb_index.py`)、环境指南(`env.md`) | 干活时用工具 |
 | `jcxt/` | 检索系统：无向量检索 CLI（`js/`：FTS5 关键词 + 树索引导航 + 页级阅读）、索引产物（`data/`：树索引/文件级索引） | 关键词检索/目录导航查知识 |
 | `scwj/` | 输出产物：套件内演示/临时落地（**按项目组织的产物/契约/骨架脚本放 `%USERPROFILE%\.fr_dev_kit\projects\<项目名>\`，随人走不随套件走**） | 存放产出 |
+| `plugins/` | ZCode 插件：`fr-dev-kit` MCP App（17 个 MCP 工具 + 控制台面板，封装本套件 CLI）+ 本地市场 `marketplace.json` | 在 ZCode 里以 MCP 工具用套件 / 开发安装插件 |
 
 > 检索三件套（全部可重建）：`jcxt/js/_kb_fts.db`（FTS5 关键词库）、`jcxt/data/_tree_index.json`（树索引）、`jcxt/data/_kb_index.yaml`（文件级索引）。改知识后跑 `python jcxt/js/build_fts_index.py` + `python jcxt/js/build_tree_index.py` 重建（详见 §4）。
 > 用户私有数据（模板备份/结构快照/项目经验/主人 key）在 `%USERPROFILE%\.fr_dev_kit\`，**不随套件分发**（详见 `kfgj/env.md` §6）。
@@ -51,14 +52,20 @@ STEP 2.5: 强制选型：生成模板→优先 FR Java API（fr-agent /exec）�
         优先通配脚本（kfgj/tygs/，先查索引目录）；探查/校验→Python 脚本
 STEP 3: 执行前查 ckzl/gf/铁律速查.md 全局铁律速查页（读速查即可；完整路由见 FR_HEADLESS_GUIDE.md）
 STEP 4: 执行任务（每步用工具实际执行，不要只描述意图）：
+        - 普通报表先查能力域样板：ckzl/hbfa/官方demo34/README.md 路由表（34 个官方样板，
+          已降版本 FR10/11 可开；命中后复制改写，不从零拼 XML）
         - 多组件布局坐标：python kfgj/fzpy/layout_grid.py -W <宽> -H <高> -n <组件数>
         - 改模板前先备份再取结构快照：python kfgj/fzpy/backup_template.py <模板> ；python kfgj/fzpy/template_snapshot.py [模板] --save
         - 写数据集 SQL 前先探表结构：python kfgj/fzpy/db_schema.py <schema.table>
         - 新数据集 SQL 必须过验证：python kfgj/fzpy/verify_sql.py -s "<SQL>" -p para=值
+        - 离线造内置数据集（EmbeddedTableData）：python kfgj/fzpy/rowdata_codec.py element --json '<...>'
+          （RowData 是 FR 私有 A85+DEFLATE+CDATA转义 编码，手写必坏；本工具含 ]A 反转义，真实 FR 流全可解）
         - 新公式写入前用引擎验证：python kfgj/fr-agent/exec_js.py eval_formula.js（需 Designer 已注入，/exec 19000）
 STEP 5: 验证
         - XML 合法性：python -c "import xml.etree.ElementTree as ET; ET.parse('file.cpt')"
         - 快速自检：python kfgj/fzpy/fr_check.py <cpt>  （--online 部署前全检）
+        - 修改类任务变更白名单机检：python kfgj/fzpy/xml_diff_contract.py --baseline 原.cpt
+          --candidate 改.cpt --allow "<路径glob>"（白名单外有差异=越界禁交付；与备份快照互补）
         - 页面运行期体检：python kfgj/web_kit/probe.py <cpt>
 STEP 6: 收尾闸门（不可跳过）：python kfgj/guard.py --task <create|modify|format|error> \
         --cpt <产物> [--attest G08,G09,G11] ；退出码非 0 = 任务未完成（契约见 kfgj/EXEC_CONTRACT.md）
@@ -78,7 +85,8 @@ STEP 6: 收尾闸门（不可跳过）：python kfgj/guard.py --task <create|mod
 7. 如需 CSS: ckzl/lc/06_Web呈现层.md §22
 8. ckzl/zsk/csff/README.md              → 验证流程
 ```
-骨架起步：可视化报表从 `ckzl/hbfa/`（60 套 cpt/frm 骨架+配置 JSON）选型。
+骨架起步：可视化报表从 `ckzl/hbfa/`（60 套 cpt/frm 骨架+配置 JSON）选型；
+普通报表能力实现（分组/交叉/分页/公式层次/填报写法）从 `ckzl/hbfa/官方demo34/` 按路由表选样板。
 
 **流程 B：修改/格式化已有模板**
 ```
@@ -191,6 +199,18 @@ python ckzl/zsk/gczsk/query_kb.py class <全限定类名>      # 按类查
 交付验收断言与判级见 `ckzl/gf/yspj.md`；
 布局样式统一规范见 `ckzl/gf/bjys.md`。
 
+## 8. ZCode 插件（MCP 集成）
+
+`plugins/fr-dev-kit/` 是本套件的 ZCode 插件（完整 MCP App）：**17 个 MCP 工具 + 控制台面板**，
+把 §2 SOP / §4 检索封装为 `mcp__fr-dev-kit__*` 工具（kb_query / part_query / guard / kit_selftest /
+fr_check / template_snapshot / backup_template / db_schema / verify_sql / layout_grid / eval_formula /
+designer_status / designer_exec_js / dsl_build / dsl_types / list_gate_reports / read_gate_report）。
+工具编排教义见插件内 `skills/fr-dev-kit/SKILL.md`；铁律与闸门语义与本文件 §2 完全一致（同一批 Python 脚本，退出码 0/1/2 → ok/WARN/FAIL）。
+
+- **安装**：ZCode 插件市场 → 添加 → 粘贴 `plugins/` 目录 → 安装 fr-dev-kit → 设置里填 kit_root（本仓库根）。
+- **更新纪律**：本地市场不热更新——`npm run build` 后递增 `.zcode-plugin/plugin.json` 版本并同步 `plugins/marketplace.json`，市场页刷新 → 插件详情页更新。
+- **开发**：源码 `src/`（TS + vite 单文件面板），产物 `dist/` 随 git 提交；详见 `plugins/fr-dev-kit/README.md`。
+
 ---
 
-*comm 版 v3.1 开源适配 · 2026-09-28 · 基于个人版 v3.0 kernel 裁剪重构；2026-09-29 检索无向量改造（树索引+关键词+页导航）与知识库治理拆页*
+*comm 版 v3.1 开源适配 · 2026-09-28 · 基于个人版 v3.0 kernel 裁剪重构；2026-09-29 检索无向量改造（树索引+关键词+页导航）与知识库治理拆页；2026-10-12 ZCode 插件 MCP 集成（plugins/fr-dev-kit）*

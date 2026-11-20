@@ -483,6 +483,9 @@ def check_chart_cell_formula(cpt_path):
         return [("ERROR", err)]
     out = []
     text = _ser(root, encoding="unicode")
+    # 剥掉 EmbeddedTableData 的 RowData 编码流(FR 私有 A85+DEFLATE,字符域含 =[ 与 ±*/
+    # 会被下方公式正则误命中——2026-11-19 官方demo34 换数据实测踩中,官方demo原数据恰好未触发)
+    text = re.sub(r"<RowData[^>]*>.*?</RowData>", "<RowData/>", text, flags=re.S)
 
     # ① 检测 =[...] 单元格范围公式(图表/单元格公式常用形态)
     found = 0

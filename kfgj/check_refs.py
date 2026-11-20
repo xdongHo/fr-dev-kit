@@ -74,6 +74,7 @@ EXCLUDE_DIRS = {
     "FR_HEADLESS_GUIDE_Ver历史备份", "_archive", "__pycache__", ".git",
     ".claude", "文档语料", "_runs",
     "作战工作区",  # 2026-09-11: 运行态工作目录(gitignore,不入库),子agent提案/报告为过程文本非知识语料,与 _runs 同口径
+    "node_modules",  # 2026-10-12: plugins/fr-dev-kit 等第三方依赖目录(gitignore),其 README 自引用是包内相对链接,非本库知识语料
 }
 
 # evals 断链测试夹具目录(相对库根): 内部断链是故意的, 供kfgj/fzpy/link_check.py

@@ -1,0 +1,1264 @@
+[
+ {
+  "no": "01",
+  "tag": "分组列表",
+  "file": "01-展示用列表，汇总用分组.cpt",
+  "source": "模板效果/展示用列表，汇总用分组.cpt",
+  "size": 11116,
+  "sheets": 1,
+  "cells": 32,
+  "widgets": 0,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": "Embedded1",
+    "class": "EmbeddedTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [
+   "=&E7"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "02",
+  "tag": "双向扩展合并",
+  "file": "02-双向扩展实现合并单元格.cpt",
+  "source": "模板效果/双向扩展实现合并单元格.cpt",
+  "size": 18117,
+  "sheets": 1,
+  "cells": 30,
+  "widgets": 0,
+  "events": 2,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds",
+    "class": "EmbeddedTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [
+   "='调查表'",
+   "=uniquearray(value(\"ds\", 1, 4, B14))",
+   "=value(\"ds\", 4, 2, 1)",
+   "REGEXP($$$, \"^[-.0-9_]A{0,}$\")",
+   "isnull($$$)",
+   "REGEXP($$$, \"^[-.0-9_]A{0,}$\")",
+   "isnull($$$)",
+   "REGEXP($$$, \"^[-.0-9_]A{0,}$\")"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "03",
+  "tag": "交叉表合并",
+  "file": "03-交叉表横向合并单元格.cpt",
+  "source": "模板效果/交叉表横向合并单元格.cpt",
+  "size": 12468,
+  "sheets": 2,
+  "cells": 8,
+  "widgets": 0,
+  "events": 2,
+  "params": [],
+  "datasets": [
+   {
+    "name": "Embedded2",
+    "class": "EmbeddedTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [],
+  "sheet_names": [
+   null,
+   "sheet1"
+  ]
+ },
+ {
+  "no": "04",
+  "tag": "分栏",
+  "file": "04-图表按分类扩展及报表分栏.cpt",
+  "source": "模板效果/图表按分类扩展及报表分栏.cpt",
+  "size": 36837,
+  "sheets": 1,
+  "cells": 26,
+  "widgets": 0,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": "Embedded1",
+    "class": "EmbeddedTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [
+   "=$$$",
+   "=B7",
+   "=B7",
+   "=C7",
+   "=D7",
+   "=C7"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "05",
+  "tag": "主子报表主",
+  "file": "05-主子报表下拉树联动-主模板.cpt",
+  "source": "控件联动过滤/主子报表下拉树联动/主子报表下拉树联动-主模板.cpt",
+  "size": 10957,
+  "sheets": 1,
+  "cells": 18,
+  "widgets": 2,
+  "events": 1,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": "ds2",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": "ds3",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   }
+  ],
+  "self_contained": false,
+  "chart": 0,
+  "formulas": [
+   "=$name",
+   "=replace(mid(A5, 3, len(A5) - 4), '\",\"', \",\")",
+   "=if(len($name) = 0, \"\", JOINARRAY(B5, \";\"))",
+   "=$$$"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "06",
+  "tag": "主子报表子",
+  "file": "06-主子报表下拉树联动-子模板.cpt",
+  "source": "控件联动过滤/主子报表下拉树联动/主子报表下拉树联动-子模板.cpt",
+  "size": 6655,
+  "sheets": 1,
+  "cells": 1,
+  "widgets": 2,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": "ds2",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": "ds3",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   }
+  ],
+  "self_contained": false,
+  "chart": 0,
+  "formulas": [
+   "=$name1"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "07",
+  "tag": "分组分页打印",
+  "file": "07-票据打印（按条件分组且每页固定10条）（内置数据）.cpt",
+  "source": "模板效果/票据打印（按条件分组且每页固定10条）（内置数据）.cpt",
+  "size": 31571,
+  "sheets": 1,
+  "cells": 73,
+  "widgets": 6,
+  "events": 3,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "EmbeddedTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [
+   "=FORMAT(today(), \"yyyy年MM月dd日\")",
+   "=REPLACE({C20},',','\\n')",
+   "=REPLACE({D20},',','\\n')",
+   "=REPLACE({E20},',','\\n')",
+   "=count({C20})",
+   "=SUM({E20})",
+   "=CNMONEY({C15})",
+   "=&C20",
+   "$$$%10=0"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "08",
+  "tag": "层次坐标",
+  "file": "08-层次坐标对应相减.cpt",
+  "source": "公式类/层次坐标对应相减.cpt",
+  "size": 11225,
+  "sheets": 2,
+  "cells": 42,
+  "widgets": 0,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": "Embedded1",
+    "class": "EmbeddedTableData"
+   },
+   {
+    "name": "Embedded2",
+    "class": "EmbeddedTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [
+   "=B7[!0;!0]A{B6 = $F6 && A7 = $A7} - D7[!0;!0]A{D6 = $F6 && A7 = $A7}",
+   "=B3 - D3",
+   "=eval(\"F3[;F3:\" + &G2 + \"]A\")"
+  ],
+  "sheet_names": [
+   "sheet1",
+   "sheet2"
+  ]
+ },
+ {
+  "no": "09",
+  "tag": "组内排名",
+  "file": "09-组内前五名条件汇总.cpt",
+  "source": "公式类/组内前五名条件汇总.cpt",
+  "size": 8310,
+  "sheets": 1,
+  "cells": 23,
+  "widgets": 0,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": "Embedded1",
+    "class": "EmbeddedTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [
+   "=count(D8[!0;!0]A{B8 = $B8 && D8 > $D8}) + 1",
+   "=IF(E8 > 5, 0, D8)",
+   "=SUM(F8)"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "10",
+  "tag": "累计差额",
+  "file": "10-差额累积.cpt",
+  "source": "公式类/差额累积.cpt",
+  "size": 21569,
+  "sheets": 2,
+  "cells": 34,
+  "widgets": 0,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": "利润中心",
+    "class": "EmbeddedTableData"
+   },
+   {
+    "name": "项目",
+    "class": "EmbeddedTableData"
+   },
+   {
+    "name": "科目",
+    "class": "EmbeddedTableData"
+   },
+   {
+    "name": "科目层级",
+    "class": "EmbeddedTableData"
+   },
+   {
+    "name": "收入预算",
+    "class": "EmbeddedTableData"
+   },
+   {
+    "name": "状态",
+    "class": "EmbeddedTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [
+   "='利润中心：'",
+   "=$p_company_name",
+   "='会计期间：'",
+   "=p_period",
+   "=SUM(E7)",
+   "=SUM(G7)",
+   "=sum(maparray(range(1, &I6), eval(\"e7[;e6:\" + item + \"]A\") - eval(\"g7[;g6:\" + item + \"]A\")))",
+   "=IF(B6 = '缺省', \"0\", B6)"
+  ],
+  "sheet_names": [
+   null,
+   "sheet1"
+  ]
+ },
+ {
+  "no": "11",
+  "tag": "序号重排",
+  "file": "11-列表数据按条件断开后，序号重新从1开始.cpt",
+  "source": "模板效果/列表数据按条件断开后，序号重新从1开始.cpt",
+  "size": 6450,
+  "sheets": 1,
+  "cells": 8,
+  "widgets": 0,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": "Embedded1",
+    "class": "EmbeddedTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [
+   "=if(C7 = \"是\",\"\",&C7)"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "12",
+  "tag": "条件属性编号",
+  "file": "12-横纵扩展的条件属性编号.cpt",
+  "source": "条件属性相关设置/横纵扩展的条件属性编号.cpt",
+  "size": 7213,
+  "sheets": 1,
+  "cells": 11,
+  "widgets": 0,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": "Embedded1",
+    "class": "EmbeddedTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [
+   "=seq()",
+   "col() != 1"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "13",
+  "tag": "条件属性染色",
+  "file": "13-分组排名+条件属性给最大和最小排名设置背景颜色.cpt",
+  "source": "条件属性相关设置/分组排名+条件属性给最大和最小排名设置背景颜色.cpt",
+  "size": 29292,
+  "sheets": 1,
+  "cells": 86,
+  "widgets": 2,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "EmbeddedTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [
+   "=\"营业厅双融发展效能通报\" + \"（\" + if(DAY() = 1, MONTH() - 1, MONTH()) + \"月\" + if(DAY() = 1, RIGHT(MONTHDELTA(DATEINMONTH(TODAY(), -1), -1), 2), DAY() - 1) + \"日\" + \"）\"",
+   "=T5 + U5",
+   "=D5 / E5",
+   "=V5 + W5 + X5 + Y5 * 0.5",
+   "=G5 / H5",
+   "=Z5 + AA5",
+   "=if(DAY() = 1, RIGHT(MONTHDELTA(DATEINMONTH(TODAY(), -1), -1), 2), DAY() - 1) * E5",
+   "=J5 / K5",
+   "M5==O5",
+   "M5==N5",
+   "=COUNT(L5[!0;!0]A{A5 = $A5 && L5 > $L5}) + 1",
+   "=max(M5)"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "14",
+  "tag": "动态隐藏列",
+  "file": "14-列数据全为空时隐藏列(内置数据集).cpt",
+  "source": "条件属性相关设置/列数据全为空时隐藏列(内置数据集).cpt",
+  "size": 5767,
+  "sheets": 1,
+  "cells": 5,
+  "widgets": 0,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "EmbeddedTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [
+   "C3=0",
+   "=JOINARRAY(B3,' ')"
+  ],
+  "sheet_names": [
+   "sheet2"
+  ]
+ },
+ {
+  "no": "15",
+  "tag": "折叠树",
+  "file": "15-条件属性实现扩展列折叠树.cpt",
+  "source": "报表和frm超链接/条件属性实现扩展列折叠树.cpt",
+  "size": 19251,
+  "sheets": 1,
+  "cells": 29,
+  "widgets": 0,
+  "events": 3,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "EmbeddedTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [
+   "=\"折叠\"",
+   "=IF(LEN($aaa) = 0, &A8, if(inarray(&A8, split($aaa, \",\")) > 0, joinarray(GREPARRAY(split($aaa, \",\"), item != &A8), \",\"), $aaa + \",\" + &A8))",
+   "inarray(&A8, split($aaa, \",\")) = 0",
+   "inarray(&A8, split($aaa, \",\")) > 0",
+   "inarray(&A8, split($aaa, \",\")) = 0",
+   "inarray(&A8, split($aaa, \",\")) > 0"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "16",
+  "tag": "三级联动",
+  "file": "16-一个数据集使用公式实现三级联动.cpt",
+  "source": "控件联动过滤/一个数据集使用公式实现三级联动.cpt",
+  "size": 12634,
+  "sheets": 1,
+  "cells": 22,
+  "widgets": 4,
+  "events": 2,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": "Tree1",
+    "class": "RecursionTableData"
+   }
+  ],
+  "self_contained": false,
+  "chart": 0,
+  "formulas": [
+   "=$a",
+   "=$b",
+   "=$c"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "17",
+  "tag": "控件联动",
+  "file": "17-下拉框和下拉树控件联动.cpt",
+  "source": "控件联动过滤/下拉框和下拉树控件联动.cpt",
+  "size": 12233,
+  "sheets": 1,
+  "cells": 1,
+  "widgets": 2,
+  "events": 1,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "EmbeddedTableData"
+   },
+   {
+    "name": "ds2",
+    "class": "EmbeddedTableData"
+   },
+   {
+    "name": "ds3",
+    "class": "EmbeddedTableData"
+   },
+   {
+    "name": "ds4",
+    "class": "EmbeddedTableData"
+   },
+   {
+    "name": "ds5",
+    "class": "EmbeddedTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [
+   "=EVAL(\"[\"+JOINARRAY(sql(\"FRDemo\", \"select '['||''''||货主地区||''''||','||''''||货主省份||''''||','||''''||货主城市||''''||']A' from 订单 where 货主省份 in('\"+$abc+\"')\", 1), \",\")+\"]A\")"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "18",
+  "tag": "参数面板",
+  "file": "18-年报月报日报.cpt",
+  "source": "控件联动过滤/年报月报日报.cpt",
+  "size": 20532,
+  "sheets": 1,
+  "cells": 15,
+  "widgets": 14,
+  "events": 4,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds2",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": "ds1",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   }
+  ],
+  "self_contained": false,
+  "chart": 0,
+  "formulas": [
+   "=\"时间范围请选择2010年8月至2012年6月\"",
+   "=\"2010\"",
+   "=\"2010-10\""
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "19",
+  "tag": "参数维度汇总",
+  "file": "19-根据参数进行不同维度下汇总.cpt",
+  "source": "公式类/根据参数进行不同维度下汇总.cpt",
+  "size": 9418,
+  "sheets": 1,
+  "cells": 8,
+  "widgets": 3,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": "ds2",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   }
+  ],
+  "self_contained": false,
+  "chart": 0,
+  "formulas": [
+   "=if(len($EMPID) = 0,'省份','编号')"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "20",
+  "tag": "动态列",
+  "file": "20-js结合sql实现部分动态列效果.cpt",
+  "source": "模板效果/js结合sql实现部分动态列效果.cpt",
+  "size": 13823,
+  "sheets": 1,
+  "cells": 12,
+  "widgets": 6,
+  "events": 1,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": "地区",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": "产品",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   }
+  ],
+  "self_contained": false,
+  "chart": 0,
+  "formulas": [],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "21",
+  "tag": "填报校验",
+  "file": "21-校验填报值只能填写表里面的字段.cpt",
+  "source": "控件填报校验和入库值自定义设置/校验填报值只能填写表里面的字段.cpt",
+  "size": 13414,
+  "sheets": 2,
+  "cells": 14,
+  "widgets": 1,
+  "events": 3,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ces",
+    "class": "EmbeddedTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [
+   "=INARRAY(C7, ces.group(课题情况)) > 0",
+   "=INARRAY(B7, ces.group(小组状态)) > 0",
+   "=INARRAY(A7, ces.group(坚持活动情况)) > 0"
+  ],
+  "sheet_names": [
+   null,
+   "sheet1"
+  ]
+ },
+ {
+  "no": "22",
+  "tag": "单行提交",
+  "file": "22-自定义按钮实现判断是控件是否为空不为空则实现单行提交.cpt",
+  "source": "控件填报校验和入库值自定义设置/自定义按钮实现判断是控件是否为空不为空则实现单行提交.cpt",
+  "size": 18207,
+  "sheets": 2,
+  "cells": 42,
+  "widgets": 0,
+  "events": 2,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   }
+  ],
+  "self_contained": false,
+  "chart": 0,
+  "formulas": [
+   "=col() - 1",
+   "=row() - 1"
+  ],
+  "sheet_names": [
+   null,
+   "sheet1"
+  ]
+ },
+ {
+  "no": "23",
+  "tag": "插入删除行",
+  "file": "23-分组插入行并设置首行删除行不可用.cpt",
+  "source": "模板效果/分组插入行并设置首行删除行不可用.cpt",
+  "size": 19335,
+  "sheets": 1,
+  "cells": 36,
+  "widgets": 0,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": null,
+    "class": "NameTableData"
+   }
+  ],
+  "self_contained": false,
+  "chart": 0,
+  "formulas": [
+   "1 = 1",
+   "=\"A区域插入行\"",
+   "row() = 4",
+   "&B6 = 1",
+   "=year(today())",
+   "=year(TODAY())"
+  ],
+  "sheet_names": [
+   "长期绩效目标"
+  ]
+ },
+ {
+  "no": "24",
+  "tag": "父子传参父",
+  "file": "24-子模板返回父模板-父.cpt",
+  "source": "报表和frm超链接/子模板返回父模板/子模板返回父模板-父.cpt",
+  "size": 7393,
+  "sheets": 1,
+  "cells": 6,
+  "widgets": 2,
+  "events": 1,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   }
+  ],
+  "self_contained": false,
+  "chart": 0,
+  "formulas": [
+   "=$$$",
+   "=$area"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "25",
+  "tag": "父子传参子",
+  "file": "25-子模板返回父模板-子.cpt",
+  "source": "报表和frm超链接/子模板返回父模板/子模板返回父模板-子.cpt",
+  "size": 3990,
+  "sheets": 1,
+  "cells": 5,
+  "widgets": 0,
+  "events": 1,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   }
+  ],
+  "self_contained": false,
+  "chart": 0,
+  "formulas": [
+   "=$父模板参数"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "26",
+  "tag": "URL导出",
+  "file": "26-url拼接参数导出.cpt",
+  "source": "报表和frm超链接/url拼接参数导出.cpt",
+  "size": 16357,
+  "sheets": 1,
+  "cells": 23,
+  "widgets": 7,
+  "events": 5,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds2",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": "ds1",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   }
+  ],
+  "self_contained": false,
+  "chart": 0,
+  "formulas": [],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "27",
+  "tag": "分Sheet导出",
+  "file": "27-多选展示所有数据，分sheet导出excel.cpt",
+  "source": "模板效果/多选展示所有数据，分sheet导出excel.cpt",
+  "size": 18716,
+  "sheets": 2,
+  "cells": 8,
+  "widgets": 5,
+  "events": 1,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": "ds2",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": "ds3",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   }
+  ],
+  "self_contained": false,
+  "chart": 0,
+  "formulas": [
+   "=A4 + \"地区销售概况\"",
+   "=sum(C4)"
+  ],
+  "sheet_names": [
+   null,
+   "=A4"
+  ]
+ },
+ {
+  "no": "28",
+  "tag": "图表自定义提示",
+  "file": "28-自定义提示获取数据集数据-换行显示-if判断显示颜色.cpt",
+  "source": "图表自定义标签和提示/自定义提示获取数据集数据-换行显示-if判断显示颜色.cpt",
+  "size": 31640,
+  "sheets": 1,
+  "cells": 20,
+  "widgets": 0,
+  "events": 2,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "EmbeddedTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "29",
+  "tag": "图表联动",
+  "file": "29-多分类图表点击系列获取所有小分类.cpt",
+  "source": "图表或报表联动轮播/多分类图表点击系列获取所有小分类.cpt",
+  "size": 26503,
+  "sheets": 1,
+  "cells": 20,
+  "widgets": 0,
+  "events": 3,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "EmbeddedTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 4,
+  "formulas": [
+   "=\"多层分类柱形图，点击任意柱子，返回大分类下的所有小分类名称\"",
+   "=CATEGORYARRAY"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "30",
+  "tag": "柱形标签占比",
+  "file": "30-柱形图自定义标签展示系列占比.cpt",
+  "source": "图表自定义标签和提示/柱形图自定义标签展示系列占比.cpt",
+  "size": 27369,
+  "sheets": 1,
+  "cells": 13,
+  "widgets": 0,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": "d1",
+    "class": "EmbeddedTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "31",
+  "tag": "堆积柱形分类和",
+  "file": "31-堆积柱形图展示分类和.cpt",
+  "source": "图表自定义标签和提示/堆积柱形图展示分类和.cpt",
+  "size": 32063,
+  "sheets": 1,
+  "cells": 12,
+  "widgets": 0,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   }
+  ],
+  "self_contained": false,
+  "chart": 0,
+  "formulas": [],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "32",
+  "tag": "轴标签换行",
+  "file": "32-自定义轴标签换行.cpt",
+  "source": "图表自定义标签和提示/自定义轴标签换行.cpt",
+  "size": 25499,
+  "sheets": 1,
+  "cells": 11,
+  "widgets": 0,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": "Embedded1",
+    "class": "EmbeddedTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 4,
+  "formulas": [],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "33",
+  "tag": "千分位显示",
+  "file": "33-千分位数据的汇总以及分组条件下的行高问题.cpt",
+  "source": "公式类/千分位数据的汇总以及分组条件下的行高问题.cpt",
+  "size": 13757,
+  "sheets": 1,
+  "cells": 28,
+  "widgets": 0,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "EmbeddedTableData"
+   }
+  ],
+  "self_contained": true,
+  "chart": 0,
+  "formulas": [
+   "$A8='a'",
+   "$A8='c'",
+   "=REPLACE(B8,\",\",\"\")",
+   "=sum(C8)",
+   "$a8='a'",
+   "=ds1.select(colname2, (colname1 = A10))",
+   "=MAPARRAY(B10,REPLACE(item,\",\",\"\"))",
+   "=sum(C10)"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ },
+ {
+  "no": "34",
+  "tag": "树节点按钮折叠树",
+  "file": "34-树节点按钮折叠树.cpt",
+  "source": "demo上传/效果/20233/平台目录折叠树-2023-03-27-Lucy.cpt",
+  "size": 12152,
+  "sheets": 1,
+  "cells": 26,
+  "widgets": 0,
+  "events": 0,
+  "params": [],
+  "datasets": [
+   {
+    "name": "ds1",
+    "class": "DBTableData"
+   },
+   {
+    "name": null,
+    "class": ""
+   },
+   {
+    "name": "Tree1",
+    "class": "RecursionTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   },
+   {
+    "name": null,
+    "class": "NameTableData"
+   }
+  ],
+  "self_contained": false,
+  "chart": 0,
+  "formulas": [
+   "len($$$) = 0",
+   "len($$$) = 0",
+   "len($$$) = 0",
+   "len($$$) = 0",
+   "len($$$) = 0"
+  ],
+  "sheet_names": [
+   "sheet1"
+  ]
+ }
+]

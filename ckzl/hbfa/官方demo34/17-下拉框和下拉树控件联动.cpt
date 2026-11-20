@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkBook xmlVersion="20170720" releaseVersion="10.0.0">
+<TableDataMap>
+<TableData name="ds1" class="com.fr.data.impl.EmbeddedTableData">
+<Parameters/>
+<DSName>
+<![CDATA[null]]></DSName>
+<ColumnNames>
+<![CDATA[货主地区]]></ColumnNames>
+<ColumnTypes>
+<![CDATA[java.lang.String]]></ColumnTypes>
+<RowData ColumnTypes="java.lang.String">
+<![CDATA[X]AR;u`'=Uoo6,3B2JH*e:RBDG1O2IL)(.=3+L/XqkNqdA.j8;%H`YD8=mbbPnL?05#ObSagU
+_Ugk0c/GIBh1,^>D+5-\UU58oJuY@,%tIZ+G?mGoB%F^Q*"-+0(QWIq`heH?PonV-1EJI6M2
+5/"VXTCE$a0nN.9%iDN?3!1ZF*Xq1JCVdDWY/BRD[>qcY7M2VBR)U`h\#8uFP.*7S(]A52>@K
+.n!q$FCl"oCPfhUCRd]AZm#k4';@h=--c08F"id[.KVKcksc!b&^LrT.5]AMM/AiVqrBl.t?4/
+N-+Hlt(Pj3*q8m>F>[46!Xp?^"rFb34]AJtU&Zl+>:lUPAnbg.Od=LJZ-e8s*@eVZ^Q?U-dd6
+g6e>2>+nY`6&T,CX]AfBEJ_J$,&aNd\"VUkP;m[8O;=>r5F?.hR6?!6c;@uUe'pf5=OTQ1!.4
+]A%J<,QmY@btj/>dck";&$ECkV9IbS"8GjOsRDA-6f.9aQcWZmCflnL=^`:eKuK;$t8XpWp#l
+(1kts4V!>m$-jq&H"]AQ1^PM2W<I[C:j!2A3p3(QigW)7m@"m.JDXP:3rTnp6gpQWK,0hrt!]A
+JkNV@A7kA*i:@F9b"oeH>SAe=`YQag/e`Y8lSAi0a<bJ2P/uBFm\38&!E!=8<Xao<Nc5j[)j
+*EZnEA=)i^gZ?8J#'kT8<)!!~
+]]></RowData>
+</TableData>
+<TableData name="ds2" class="com.fr.data.impl.EmbeddedTableData">
+<Parameters/>
+<DSName>
+<![CDATA[null]]></DSName>
+<ColumnNames>
+<![CDATA[货主省份]]></ColumnNames>
+<ColumnTypes>
+<![CDATA[java.lang.String]]></ColumnTypes>
+<RowData ColumnTypes="java.lang.String">
+<![CDATA[HePmcl1TC-caM&H2Ri;Rr+uE~
+]]></RowData>
+</TableData>
+<TableData name="ds3" class="com.fr.data.impl.EmbeddedTableData">
+<Parameters/>
+<DSName>
+<![CDATA[null]]></DSName>
+<ColumnNames>
+<![CDATA[货主城市]]></ColumnNames>
+<ColumnTypes>
+<![CDATA[]]></ColumnTypes>
+</TableData>
+<TableData name="ds4" class="com.fr.data.impl.EmbeddedTableData">
+<Parameters/>
+<DSName>
+<![CDATA[null]]></DSName>
+<ColumnNames>
+<![CDATA[货主省份]]></ColumnNames>
+<ColumnTypes>
+<![CDATA[java.lang.String]]></ColumnTypes>
+<RowData ColumnTypes="java.lang.String">
+<![CDATA[*K420K.muCs3JP6^(>c,`)^//.8>4\Wgh,@2S5pa2%0o26p(8KNH*DfDMk53+gYXP+f>7X)<
+B8<``L7S$dRL0ML+_@J7!?3(.SYp00#FWeaU&42Rl530kr[KOKOg<\CUi^~
+]]></RowData>
+</TableData>
+<TableData name="ds5" class="com.fr.data.impl.EmbeddedTableData">
+<Parameters/>
+<DSName>
+<![CDATA[null]]></DSName>
+<ColumnNames>
+<![CDATA['['||''''||货主地区||''''||','||''''||货主省份||''''||','||''''||货主城市||''''||']A']]></ColumnNames>
+<ColumnTypes>
+<![CDATA[java.lang.String]]></ColumnTypes>
+<RowData ColumnTypes="java.lang.String">
+<![CDATA[`E_e*'L<<.mu,sChh_%a(_F$(0eloI_*gI4&L&?<5n,KbhJmHW(HpF4VREP:HSOIaRI&2Co[
+Hoc=81LuTO-NSX0'50_;4#)5;uYN#;;Z#c%^.+gOG"!(E<&DepR8ll,ho#jS`hAp0ln^G>HQ
+J\Jr0\_"?IUGdtLBcYWCCkJJRcs1\1$@!oPon2.Pmqr+$llg_rjn*-(?"I$X3?(2)2S:5ii3
+h>uK2Ra>LjQ=)+h*;]A0XA&aI#W@a+5?ZjF2o#0CB86;!`66VUqjb&p@n4$*f+4&R=2r,e(:;
+SqG+<5-oAP#U@(Q#b#1i":^>,DVp$5P)ntY(>r#bZohRCAM$'K,nW-Qb=eb/cR`Haq,@<jSg
+^c3B9ei`'C/"JPb"9Vpg(r0Wi36US5A@-OPlHOGHpVQpq]Au/UjS]A//6NlKuNUF-E"?(QDKHT
+ne'e]AY*+!,E/oMJNYYqCkTZZt&?]A5qQ3++Pt,-Tc"nU#16Bfd>1E<]A+j$N"#'90n5jcQh7^o
+`/rar$hP1dDb%@mgBOUp/A2K&]A!%;0KJ/3b#.2"4\-1S>O:r'1g5]AQ]A,cDUhf4ENG%-.4KpO
+%?Hl)_EE45p$P,<"%1BV0Bii@1r81^E,)/OV&0WBp@BI8r[%0DOkKM)i7T.eQ<+kE_:G6Sn<
+A\dqPRVZ%Y+mq2muW9aY?d<IZS-\CCR/'<;*nm42DYUJ]A-5;E5>W0P<e3O!6W;>8s(&X'FFP
+S<54QBhG&!O_=i>IP:iX;V'"\\,I0aK=W7'B:_s.N&_35k&T:<*X$dd.eTV<m=7KDe+&AlHP
+pB82&!Y@0GQ^!cffNB0t&=G]A`^Q7.=&k$B]Ap2n%YUWDoLd5fP=e,?$M&KSWCNmD7?Z0)jUj3
+,<9aucCuU^7lL`,!*(2n]AQAFNS9b/0k$BuuB'E.g$dO%Y5SKW]A3rD`(5T)?;D'e@J5.E_(H]A
+ZqCo;Oo!,JT+Xp>PSH!ADEUg-6eHUBr2)"4.HoPoiUb7GdR#hVK-i5R$)_T(mrJ!NM&1D.To
+Aq+52aZDG<s5j&%F:Y^O3WGhJ08hQl,O(g,eb9ib_rWtt")JN&9T,N17R4G)c3)uMs<RT)\W
+'Tj<Z%3$]A:ol@Fh%R_aB69M8@A/:5p70obKTfIG,.jq88V%\)G5jcRih"hrX+&$T>"J$2+UH
++SJWfo6g;c`Qg=\=Edjfaqp;<K5_5M&=Z26FZ^>A=4%9'^!TZ5T4gRpGZ28QC8J>FS7H<g9N
+5rR5kC!_`\(XH_i[<4,LgD[2>(8n]A<W(Ec2NoASC&-YpHO.g<Lu(sRT6[tR4#Sp<2@%s5KB7
+9CrBG@9FD<%/9eehnRh#=N+=ng"fahV:jF^!^Ji&n[NJ6ia*5aYk'#9':,!lr#cR2^ALnm2/
+U#3GX4u>bTcN:?e[^#j"H([j*(HeR[NoUgIb=2SR,h-,L/S8-,r7@54""Bj.Ld91Bro'+p:1
+>S>"5b/l!0^S24W"%EZRqrD)^9pB[G0jc_;!\WAEYFH`"3`2g,Kp\TS5[Tb7*0GO,r=8(b7T
+<"->lhY;#Gt7ncB;"H:G&>#T^&GJ(R8_d.AC)"ECU[nb#:cq86)8Zb)0FBNTpSYe#ugW;I9R
+s2a<n2F#scIrg'M(n).;fa<Fa:a>2jI+u9%l/2%(nV:[_mAKDUKOrhsJ#6~
+]]></RowData>
+</TableData>
+</TableDataMap>
+<ElementCaseMobileAttr>
+<ElementCaseMobileAttrProvider horizontal="1" vertical="1" zoom="true" refresh="false" isUseHTML="false" isMobileCanvasSize="false" appearRefresh="false" allowFullScreen="false" allowDoubleClickOrZoom="true" functionalWhenUnactivated="false"/>
+</ElementCaseMobileAttr>
+<Report class="com.fr.report.worksheet.WorkSheet" name="sheet1">
+<ReportPageAttr>
+<HR/>
+<FR/>
+<HC/>
+<FC/>
+<USE REPEAT="false" PAGE="false" WRITE="false"/>
+</ReportPageAttr>
+<ColumnPrivilegeControl/>
+<RowPrivilegeControl/>
+<RowHeight defaultValue="723900">
+<![CDATA[3474720,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900]]></RowHeight>
+<ColumnWidth defaultValue="2743200">
+<![CDATA[21678900,2743200,2743200,2743200,2743200,2743200,2743200,2743200,2743200,2743200,2743200]]></ColumnWidth>
+<CellElementList>
+<C c="0" r="0">
+<O>
+<![CDATA[模板制作者：Alyssa\\n知识点：应用下拉树默认全选的方式让下拉框和值的数据集产生联动\\n适用版本：FR11/10]]></O>
+<PrivilegeControl/>
+<Expand>
+<cellSortAttr/>
+</Expand>
+</C>
+</CellElementList>
+<ReportAttrSet>
+<ReportSettings headerHeight="0" footerHeight="0">
+<PaperSetting/>
+<FollowingTheme background="false"/>
+<Background name="ColorBackground">
+<color>
+<FineColor color="-1" hor="-1" ver="-1"/>
+</color>
+</Background>
+</ReportSettings>
+</ReportAttrSet>
+<PrivilegeControl/>
+</Report>
+<ReportParameterAttr>
+<Attributes showWindow="true" delayPlaying="false" windowPosition="1" align="0" useParamsTemplate="true" currentIndex="4"/>
+<PWTitle>
+<![CDATA[参数]]></PWTitle>
+<ParameterUI class="com.fr.form.main.parameter.FormParameterUI">
+<Parameters/>
+<Layout class="com.fr.form.ui.container.WParameterLayout">
+<WidgetName name="para"/>
+<WidgetAttr aspectRatioLocked="false" aspectRatioBackup="0.0" description="">
+<MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName=""/>
+<PrivilegeControl/>
+</WidgetAttr>
+<FollowingTheme borderStyle="false"/>
+<Margin top="0" left="0" bottom="0" right="0"/>
+<Border>
+<border style="0" borderRadius="0" type="0" borderStyle="0">
+<color>
+<FineColor color="-723724" hor="-1" ver="-1"/>
+</color>
+</border>
+<WidgetTitle>
+<O>
+<![CDATA[新建标题]]></O>
+<FRFont name="SimSun" style="0" size="72"/>
+<Position pos="0"/>
+</WidgetTitle>
+<Alpha alpha="1.0"/>
+</Border>
+<Background name="ColorBackground">
+<color>
+<FineColor color="-526086" hor="-1" ver="-1"/>
+</color>
+</Background>
+<LCAttr vgap="0" hgap="0" compInterval="0"/>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget">
+<InnerWidget class="com.fr.form.ui.TreeComboBoxEditor">
+<WidgetName name="treeComboBoxEditor0"/>
+<WidgetID widgetID="77e3a2a2-b3cf-4c30-b323-eb74c94412c4"/>
+<WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description="">
+<MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName=""/>
+<PrivilegeControl/>
+</WidgetAttr>
+<TreeAttr mutiSelect="true" selectLeafOnly="true"/>
+<TreeNodeAttr>
+<Dictionary class="com.fr.data.impl.TableDataDictionary">
+<FormulaDictAttr kiName="货主地区" viName="货主地区"/>
+<TableDataDictAttr>
+<TableData class="com.fr.data.impl.NameTableData">
+<Name>
+<![CDATA[ds1]]></Name>
+</TableData>
+</TableDataDictAttr>
+</Dictionary>
+</TreeNodeAttr>
+<TreeNodeAttr>
+<Dictionary class="com.fr.data.impl.TableDataDictionary">
+<FormulaDictAttr kiName="货主省份" viName="货主省份"/>
+<TableDataDictAttr>
+<TableData class="com.fr.data.impl.NameTableData">
+<Name>
+<![CDATA[ds2]]></Name>
+</TableData>
+</TableDataDictAttr>
+</Dictionary>
+</TreeNodeAttr>
+<TreeNodeAttr>
+<Dictionary class="com.fr.data.impl.TableDataDictionary">
+<FormulaDictAttr kiName="货主城市" viName="货主城市"/>
+<TableDataDictAttr>
+<TableData class="com.fr.data.impl.NameTableData">
+<Name>
+<![CDATA[ds3]]></Name>
+</TableData>
+</TableDataDictAttr>
+</Dictionary>
+</TreeNodeAttr>
+<isLayerBuild isLayerBuild="false"/>
+<isAutoBuild autoBuild="false"/>
+<isPerformanceFirst performanceFirst="false"/>
+<widgetValue>
+<O t="XMLable" class="com.fr.base.Formula">
+<Attributes>
+<![CDATA[=EVAL("["+JOINARRAY(sql("FRDemo", "select '['||''''||货主地区||''''||','||''''||货主省份||''''||','||''''||货主城市||''''||']A' from 订单  where  货主省份 in('"+$abc+"')", 1), ",")+"]A")]]></Attributes>
+</O>
+</widgetValue>
+<ReturnTypeAttr delimiter=";" startSymbol="" endSymbol="" returnString="false"/>
+</InnerWidget>
+<BoundsAttr x="315" y="26" width="187" height="42"/>
+</Widget>
+<Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget">
+<InnerWidget class="com.fr.form.ui.ComboCheckBox">
+<Listener event="stopedit" name="编辑结束1">
+<JavaScript class="com.fr.js.JavaScriptImpl">
+<Parameters/>
+<Content>
+<![CDATA[setTimeout(function() {
+	var a = this.options.form.getWidgetByName("textEditor0").getValue();
+	var b = this.options.form.getWidgetByName("treeComboBoxEditor0");
+	b.setValue(a);
+}, 1000);]]></Content>
+</JavaScript>
+</Listener>
+<WidgetName name="abc"/>
+<WidgetID widgetID="a4d4a79a-bb0e-4333-bb5d-73d52d031f13"/>
+<WidgetAttr aspectRatioLocked="false" aspectRatioBackup="-1.0" description="">
+<MobileBookMark useBookMark="false" bookMarkName="" frozen="false" index="-1" oldWidgetName="comboCheckBox0"/>
+<PrivilegeControl/>
+</WidgetAttr>
+<Dictionary class="com.fr.data.impl.TableDataDictionary">
+<FormulaDictAttr kiName="货主省份" viName="货主省份"/>
+<TableDataDictAttr>
+<TableData class="com.fr.data.impl.NameTableData">
+<Name>
+<![CDATA[ds4]]></Name>
+</TableData>
+</TableDataDictAttr>
+</Dictionary>
+<widgetValue>
+<O>
+<![CDATA[]]></O>
+</widgetValue>
+<RAAttr delimiter="&apos;,&apos;" isArray="false"/>
+</InnerWidget>
+<BoundsAttr x="131" y="37" width="80" height="21"/>
+</Widget>
+<ShowBookmarks showBookmarks="false"/>
+<Sorted sorted="false"/>
+<MobileWidgetList>
+<Widget widgetName="treeComboBoxEditor0"/>
+<Widget widgetName="abc"/>
+</MobileWidgetList>
+<FrozenWidgets/>
+<MobileBookMarkStyle class="com.fr.form.ui.mobile.impl.DefaultMobileBookMarkStyle"/>
+<Display display="true"/>
+<DelayDisplayContent delay="false"/>
+<UseParamsTemplate use="true"/>
+<paramFireStopEdit fireEvent="false"/>
+<Position position="0"/>
+<Design_Width design_width="960"/>
+<NameTagModified/>
+<WidgetNameTagMap/>
+<ParamAttr class="com.fr.report.mobile.DefaultMobileParamStyle"/>
+<ParamStyle class="com.fr.report.mobile.EmptyMobileParamStyle"/>
+</Layout>
+<DesignAttr width="960" height="108"/>
+</ParameterUI>
+</ReportParameterAttr>
+<StyleList/>
+<DesignerVersion DesignerVersion="LAA"/>
+<PreviewType PreviewType="0"/>
+<TemplateThemeAttrMark class="com.fr.base.iofile.attr.TemplateThemeAttrMark">
+<TemplateThemeAttrMark name="兼容主题" dark="false"/>
+</TemplateThemeAttrMark>
+<StrategyConfigsAttr class="com.fr.esd.core.strategy.persistence.StrategyConfigsAttr">
+<StrategyConfigs>
+<StrategyConfig dsName="ds1" enabled="false" useGlobal="true" shouldMonitor="true" shouldEvolve="false" scheduleBySchema="false" timeToLive="1500000" timeToIdle="86400000" updateInterval="1500000" terminalTime="" updateSchema="0 0 8 * * ? *" activeInitiation="false"/>
+<StrategyConfig dsName="ds4" enabled="false" useGlobal="true" shouldMonitor="true" shouldEvolve="false" scheduleBySchema="false" timeToLive="1500000" timeToIdle="86400000" updateInterval="1500000" terminalTime="" updateSchema="0 0 8 * * ? *" activeInitiation="false"/>
+<StrategyConfig dsName="ds5" enabled="false" useGlobal="true" shouldMonitor="true" shouldEvolve="false" scheduleBySchema="false" timeToLive="1500000" timeToIdle="86400000" updateInterval="1500000" terminalTime="" updateSchema="0 0 8 * * ? *" activeInitiation="false"/>
+</StrategyConfigs>
+</StrategyConfigsAttr>
+<TemplateIdAttMark class="com.fr.base.iofile.attr.TemplateIdAttrMark">
+<TemplateIdAttMark TemplateId="30e0db25-2949-4391-b2d7-3723cfceb497"/>
+</TemplateIdAttMark>
+<TemplateCloudInfoAttrMark class="com.fr.plugin.cloud.analytics.attr.TemplateInfoAttrMark" pluginID="com.fr.plugin.cloud.analytics.v11" plugin-version="3.12.0.20230105">
+<TemplateCloudInfoAttrMark createTime="1673341277242"/>
+</TemplateCloudInfoAttrMark>
+</WorkBook>

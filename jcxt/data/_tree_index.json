@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-29 17:54:34",
- "page_count": 219,
+ "generated_at": "2026-11-20 16:43:29",
+ "page_count": 221,
  "root": [
   {
    "title": "bb",
@@ -10,7 +10,7 @@
      "title": "CHANGELOG — fr_dev_kit 能力面变更日志",
      "path": "ckzl/bb/CHANGELOG.md",
      "id": "bb/CHANGELOG",
-     "lines": 168
+     "lines": 214
     },
     {
      "title": "外部依赖与归档声明",
@@ -216,6 +216,24 @@
    "title": "hbfa",
    "path": "ckzl/hbfa",
    "children": [
+    {
+     "title": "官方demo34",
+     "path": "ckzl/hbfa/官方demo34",
+     "children": [
+      {
+       "title": "官方demo-catalog",
+       "path": "ckzl/hbfa/官方demo34/官方demo-catalog.md",
+       "id": "hbfa/官方demo34/官方demo-catalog",
+       "lines": 204
+      },
+      {
+       "title": "官方demo34(能力域样板库)",
+       "path": "ckzl/hbfa/官方demo34/README.md",
+       "id": "hbfa/官方demo34/README",
+       "lines": 72
+      }
+     ]
+    },
     {
      "title": "ckzl/hbfa(报表骨架库)",
      "path": "ckzl/hbfa/README.md",
@@ -1664,14 +1682,14 @@
    "tags": [
     "补头20260929"
    ],
-   "lines": 168,
+   "lines": 214,
    "sections": [
     {
      "title": "# CHANGELOG — fr_dev_kit 能力面变更日志",
      "line": 11
     },
     {
-     "title": "## v3.1-20260929 (2026-09-29)",
+     "title": "## v3.3-20261119 (2026-11-19)",
      "line": 16
     },
     {
@@ -1683,120 +1701,168 @@
      "line": 25
     },
     {
-     "title": "### Removed（均在用户目录 `~/.fr_dev_kit/kit_archive/`，不随套件分发）",
-     "line": 31
+     "title": "### Known-Issues（待办）",
+     "line": 30
     },
     {
-     "title": "### Compatibility",
-     "line": 36
-    },
-    {
-     "title": "## v3.1-20260928 (2026-09-28)",
-     "line": 41
+     "title": "## v3.2-20261012 (2026-10-12)",
+     "line": 33
     },
     {
      "title": "### Added",
-     "line": 45
+     "line": 37
     },
     {
      "title": "### Changed",
+     "line": 44
+    },
+    {
+     "title": "### Compatibility",
+     "line": 48
+    },
+    {
+     "title": "## v3.1-20260929 (2026-09-29)",
      "line": 52
     },
     {
-     "title": "### Removed（迁出至套件主人本机 `~/.fr_dev_kit/kit_archive/`，共 60+ 项）",
-     "line": 58
+     "title": "### Added",
+     "line": 56
+    },
+    {
+     "title": "### Changed",
+     "line": 61
+    },
+    {
+     "title": "### Removed（均在用户目录 `~/.fr_dev_kit/kit_archive/`，不随套件分发）",
+     "line": 67
     },
     {
      "title": "### Compatibility",
-     "line": 66
+     "line": 72
+    },
+    {
+     "title": "## v3.1-20260928 (2026-09-28)",
+     "line": 77
+    },
+    {
+     "title": "### Added",
+     "line": 81
+    },
+    {
+     "title": "### Changed",
+     "line": 88
+    },
+    {
+     "title": "### Removed（迁出至套件主人本机 `~/.fr_dev_kit/kit_archive/`，共 60+ 项）",
+     "line": 94
+    },
+    {
+     "title": "### Compatibility",
+     "line": 102
     },
     {
      "title": "## v3.0-20260916 (2026-09-16)",
-     "line": 71
+     "line": 107
     },
     {
      "title": "### Added",
-     "line": 75
+     "line": 111
     },
     {
      "title": "### Changed",
-     "line": 79
+     "line": 115
     },
     {
      "title": "### Compatibility",
-     "line": 87
-    },
-    {
-     "title": "## v3.0-20260915 (2026-09-15)",
-     "line": 91
-    },
-    {
-     "title": "### Added",
-     "line": 93
-    },
-    {
-     "title": "### Changed",
-     "line": 99
-    },
-    {
-     "title": "### Deprecated",
-     "line": 105
-    },
-    {
-     "title": "### Compatibility",
-     "line": 108
-    },
-    {
-     "title": "### Experimental",
-     "line": 117
-    },
-    {
-     "title": "## v3.0-20260914 (2026-09-14)",
-     "line": 121
-    },
-    {
-     "title": "### Added",
      "line": 123
     },
     {
+     "title": "## v3.0-20260915 (2026-09-15)",
+     "line": 127
+    },
+    {
+     "title": "### Added",
+     "line": 129
+    },
+    {
      "title": "### Changed",
-     "line": 134
+     "line": 135
     },
     {
      "title": "### Deprecated",
-     "line": 139
+     "line": 141
     },
     {
      "title": "### Compatibility",
-     "line": 142
+     "line": 144
     },
     {
      "title": "### Experimental",
-     "line": 146
+     "line": 153
     },
     {
-     "title": "## v3.0-20260911 (2026-09-11)",
-     "line": 150
-    },
-    {
-     "title": "### Added",
-     "line": 152
-    },
-    {
-     "title": "### Changed",
+     "title": "## v3.0-20260914 (2026-09-14)",
      "line": 157
     },
     {
-     "title": "### Compatibility",
-     "line": 160
+     "title": "### Added",
+     "line": 159
     },
     {
-     "title": "### 插件工艺流水线（pipeline_v1 v1.1 + 复刻实践首跑）2026-09-15",
-     "line": 163
+     "title": "### Changed",
+     "line": 170
+    },
+    {
+     "title": "### Deprecated",
+     "line": 175
+    },
+    {
+     "title": "### Compatibility",
+     "line": 178
+    },
+    {
+     "title": "### Experimental",
+     "line": 182
+    },
+    {
+     "title": "## v3.0-20260911 (2026-09-11)",
+     "line": 186
     },
     {
      "title": "### Added",
-     "line": 165
+     "line": 188
+    },
+    {
+     "title": "### Changed",
+     "line": 193
+    },
+    {
+     "title": "### Compatibility",
+     "line": 196
+    },
+    {
+     "title": "### 插件工艺流水线（pipeline_v1 v1.1 + 复刻实践首跑）2026-09-15",
+     "line": 199
+    },
+    {
+     "title": "### Added",
+     "line": 201
+    },
+    {
+     "title": "### 生成器默认列宽改 40mm（5760000 FU）2026-10-12",
+     "line": 206
+    },
+    {
+     "title": "### Changed",
+     "line": 208
+    },
+    {
+     "title": "### ja_check v4：]A 体质认知翻案——FR CDATA 盘上转义格式，工具改格式豁免（2026-11-04）",
+     "line": 211
+    },
+    {
+     "title": "### Added",
+     "line": 213
     }
    ]
   },
@@ -3938,6 +4004,224 @@
     {
      "title": "## 再生成 / 维护",
      "line": 151
+    }
+   ]
+  },
+  {
+   "id": "hbfa/官方demo34/README",
+   "path": "ckzl/hbfa/官方demo34/README.md",
+   "title": "官方demo34(能力域样板库)",
+   "summary": "34个官方能力域样板cpt(全部降版本至xmlVersion=20170720/10.0.0,FR10/11均可开)+1分组骨架:做普通报表先按路由表找样板复制改写,不从零拼XML;内置数据样板免连接直接预览",
+   "keywords": [
+    "分组报表",
+    "交叉表",
+    "分栏",
+    "票据打印",
+    "层次坐标",
+    "组内排名",
+    "累计",
+    "条件属性",
+    "折叠树",
+    "三级联动",
+    "填报校验",
+    "分sheet导出",
+    "内置数据集",
+    "RowData"
+   ],
+   "tags": [
+    "样板",
+    "cpt",
+    "官方demo",
+    "能力域路由"
+   ],
+   "lines": 72,
+   "sections": [
+    {
+     "title": "# ckzl/hbfa/官方demo34 — 能力域样板库（34+1）",
+     "line": 11
+    },
+    {
+     "title": "## 快速路由：需求 → 样板",
+     "line": 17
+    },
+    {
+     "title": "## 数据依赖",
+     "line": 51
+    },
+    {
+     "title": "## 配套文件",
+     "line": 56
+    },
+    {
+     "title": "## fr_check 已知误报豁免口径（2026-11-19 实测登记）",
+     "line": 61
+    },
+    {
+     "title": "## 维护注意",
+     "line": 69
+    }
+   ]
+  },
+  {
+   "id": "hbfa/官方demo34/官方demo-catalog",
+   "path": "ckzl/hbfa/官方demo34/官方demo-catalog.md",
+   "title": "官方demo-catalog",
+   "summary": "",
+   "keywords": [],
+   "tags": [],
+   "lines": 204,
+   "sections": [
+    {
+     "title": "# FineReport 典型 DEMO 模板库（CPT）",
+     "line": 1
+    },
+    {
+     "title": "## 使用约定",
+     "line": 6
+    },
+    {
+     "title": "## 快速路由：需求 → 样板",
+     "line": 13
+    },
+    {
+     "title": "## 样板明细",
+     "line": 50
+    },
+    {
+     "title": "### 01 分组与列表基础结构 — `01-展示用列表，汇总用分组.cpt`",
+     "line": 52
+    },
+    {
+     "title": "### 02 双向扩展与合并单元格 — `02-双向扩展实现合并单元格.cpt`",
+     "line": 57
+    },
+    {
+     "title": "### 03 交叉表 — `03-交叉表横向合并单元格.cpt`",
+     "line": 62
+    },
+    {
+     "title": "### 04 分栏 — `04-图表按分类扩展及报表分栏.cpt`",
+     "line": 66
+    },
+    {
+     "title": "### 05 / 06 嵌入式主子报表 — `05-主子报表下拉树联动-主模板.cpt` / `06-…子模板.cpt`",
+     "line": 70
+    },
+    {
+     "title": "### 07 分组分页与票据打印 — `07-票据打印（按条件分组且每页固定10条）（内置数据）.cpt` ★",
+     "line": 75
+    },
+    {
+     "title": "### 08 层次坐标 — `08-层次坐标对应相减.cpt`",
+     "line": 80
+    },
+    {
+     "title": "### 09 组内排名 — `09-组内前五名条件汇总.cpt`",
+     "line": 85
+    },
+    {
+     "title": "### 10 累计与差额 — `10-差额累积.cpt`",
+     "line": 89
+    },
+    {
+     "title": "### 11 序号重排 — `11-列表数据按条件断开后，序号重新从1开始.cpt`",
+     "line": 93
+    },
+    {
+     "title": "### 12 横纵扩展编号 — `12-横纵扩展的条件属性编号.cpt`",
+     "line": 97
+    },
+    {
+     "title": "### 13 条件属性染色 — `13-分组排名+条件属性给最大和最小排名设置背景颜色.cpt`",
+     "line": 101
+    },
+    {
+     "title": "### 14 动态隐藏列 — `14-列数据全为空时隐藏列(内置数据集).cpt`",
+     "line": 105
+    },
+    {
+     "title": "### 15 折叠树（条件属性 + JS 式） — `15-条件属性实现扩展列折叠树.cpt`",
+     "line": 109
+    },
+    {
+     "title": "### 34 折叠树（树节点按钮式，官方标准） — `34-树节点按钮折叠树.cpt` ★",
+     "line": 114
+    },
+    {
+     "title": "### 16 三级联动 — `16-一个数据集使用公式实现三级联动.cpt` ★",
+     "line": 121
+    },
+    {
+     "title": "### 17 控件联动 — `17-下拉框和下拉树控件联动.cpt`",
+     "line": 125
+    },
+    {
+     "title": "### 18 参数面板 — `18-年报月报日报.cpt`",
+     "line": 129
+    },
+    {
+     "title": "### 19 参数维度汇总 — `19-根据参数进行不同维度下汇总.cpt`",
+     "line": 133
+    },
+    {
+     "title": "### 20 动态列 — `20-js结合sql实现部分动态列效果.cpt`",
+     "line": 137
+    },
+    {
+     "title": "### 21 填报校验 — `21-校验填报值只能填写表里面的字段.cpt`",
+     "line": 141
+    },
+    {
+     "title": "### 22 单行提交 — `22-自定义按钮实现判断是控件是否为空不为空则实现单行提交.cpt`",
+     "line": 145
+    },
+    {
+     "title": "### 23 插入删除行 — `23-分组插入行并设置首行删除行不可用.cpt`",
+     "line": 149
+    },
+    {
+     "title": "### 24 / 25 父子模板传参 — `24-子模板返回父模板-父.cpt` / `25-…子.cpt`",
+     "line": 153
+    },
+    {
+     "title": "### 26 URL 导出 — `26-url拼接参数导出.cpt`",
+     "line": 157
+    },
+    {
+     "title": "### 27 分 Sheet 导出 — `27-多选展示所有数据，分sheet导出excel.cpt`",
+     "line": 161
+    },
+    {
+     "title": "### 28 图表自定义提示 — `28-自定义提示获取数据集数据-换行显示-if判断显示颜色.cpt`",
+     "line": 165
+    },
+    {
+     "title": "### 29 图表联动 — `29-多分类图表点击系列获取所有小分类.cpt`",
+     "line": 169
+    },
+    {
+     "title": "### 30 柱形标签占比 — `30-柱形图自定义标签展示系列占比.cpt`",
+     "line": 173
+    },
+    {
+     "title": "### 31 堆积柱形分类和 — `31-堆积柱形图展示分类和.cpt`",
+     "line": 177
+    },
+    {
+     "title": "### 32 轴标签换行 — `32-自定义轴标签换行.cpt`",
+     "line": 181
+    },
+    {
+     "title": "### 33 千分位显示 — `33-千分位数据的汇总以及分组条件下的行高问题.cpt`",
+     "line": 185
+    },
+    {
+     "title": "## 组合配方",
+     "line": 189
+    },
+    {
+     "title": "## 维护",
+     "line": 201
     }
    ]
   },

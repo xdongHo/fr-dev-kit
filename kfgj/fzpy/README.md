@@ -59,6 +59,8 @@ KB_INDEX: {
 | 改模板前先备份 | `backup_template.py <模板> [-m 备注]` | 备份到 `~/.fr_dev_kit/backup/<模板名>/<时间戳>/`；--list 查看、--prune 清理 |
 | 用户私有数据目录定位 | `userdir.py` | `~/.fr_dev_kit/`（backup/snapshot/experience/memory）；初始化向导见 `kfgj/init_user_env.py` |
 | 多会话同时改 cpt 防写冲突 | `file_lock.py` acquire/release/check/list | 劝告式文件锁；锁落 _runs/locks/（TTL 30 分钟默认）；领锁失败退出码 1，禁止强写 |
+| 修改后"改了什么"机检 | `xml_diff_contract.py --baseline 原.cpt --candidate 改.cpt --allow "<glob>"` | XML 路径投影 diff + 白名单(glob)；白名单外差异=越界禁交付；退出码 0/1/2 对齐 fr_check |
+| 离线造内置数据集 / 解码内置数据 | `rowdata_codec.py element\|decode\|verify\|selftest` | FR 私有编码(A85+DEFLATE+]A转义)编解码；官方包解码器缺 ]A 反转义会崩,本工具 34 官方 demo 30/30 全解 |
 
 ### 常见问法：查表结构/表字段/建表语句怎么看？这张表有哪些字段、类型、注释？表名记不全怎么找？
 
@@ -90,6 +92,7 @@ KB_INDEX: {
 - `node_gate.py` — 节点出口门禁执行器（--node <NN> 汇总跑 ckzl/gzjd/node_gates.yaml）
 - `file_lock.py` — 文件锁：防写冲突
 - `receipt_screen.py` — 外部回执/网页正文指令性内容筛查（防注入）
+- `xml_diff_contract.py` — 修改类任务变更白名单机检（吸收官方 skill 包 regression_contract 思路 + glob 增强）
 
 ### 修复/转换类
 - `convert_excel_formula.py` — Excel→FR 公式转换
@@ -103,6 +106,7 @@ KB_INDEX: {
 ### 数据/布局类
 - `db_schema.py` — 表结构探查（--search/--sample/--sql）
 - `layout_grid.py` — 布局坐标栅格计算器
+- `rowdata_codec.py` — EmbeddedTableData 内置数据集编解码（2026-11-19 jar 逆向实证全方言：含 ]A 反转义，修复官方 skill 包解码崩溃）
 
 ### 用户环境类
 - `userdir.py` — 用户私有数据目录（`~/.fr_dev_kit/`）路径助手
