@@ -1,0 +1,38 @@
+{
+  "name": "fr-dev-kit",
+  "version": "0.1.0",
+  "description": "FineReport 报表开发工具包 ZCode 插件：17 个 MCP 工具 + 控制台面板",
+  "description_i18n": {
+    "zh-CN": "FineReport 报表开发工具包 ZCode 插件：知识检索、闸门校验、模板检测、数据探查、布局计算、公式判定、设计器代理、DSL 生成器等 17 个 MCP 工具，附控制台面板（套件自检 / 闸门报告 / 知识检索）。",
+    "en": "ZCode plugin for the FineReport report dev kit: 17 MCP tools (KB search, gates, template checks, DB schema, layout, formula eval, designer proxy, DSL generators) plus a console panel."
+  },
+  "author": { "name": "xdongHo" },
+  "license": "MIT",
+  "keywords": ["finereport", "report", "mcp", "fr-dev-kit"],
+  "skills": "skills",
+  "userConfig": {
+    "kit_root": {
+      "title": "FR Dev Kit 根目录",
+      "description": "套件仓库根目录（含 AGENTS.md / kfgj / ckzl / jcxt），例如 D:\\repos\\fr_dev_kit_v3.0_comm。所有 MCP 工具通过该目录调用套件 Python 脚本，必填。",
+      "type": "string",
+      "required": true
+    },
+    "python_cmd": {
+      "title": "Python 命令",
+      "description": "运行套件脚本的 Python（需 3.11+），默认取 PATH 里的 python；venv 或特殊安装请填完整路径。",
+      "type": "string",
+      "default": "python"
+    }
+  },
+  "ui": {
+    "surfaces": [
+      {
+        "id": "console",
+        "title": { "zh-CN": "FR Dev Kit 控制台", "en": "FR Dev Kit Console" },
+        "server": "fr-dev-kit",
+        "resourceUri": "ui://fr-dev-kit/console.html",
+        "availability": "session"
+      }
+    ]
+  }
+}

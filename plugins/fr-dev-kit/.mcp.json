@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "fr-dev-kit": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${ZCODE_PLUGIN_ROOT}/dist/server.mjs"],
+      "env": {
+        "FR_DEV_KIT_ROOT": "${user_config.kit_root}",
+        "FR_DEV_KIT_PYTHON": "${user_config.python_cmd}",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "enabled": true,
+      "timeoutMs": 120000
+    }
+  }
+}

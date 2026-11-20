@@ -1,0 +1,24 @@
+{
+  "name": "fr-dev-kit-local",
+  "description": "FR Dev Kit 本地插件市场：FineReport 报表开发工具包的 ZCode 插件（MCP 工具 + 控制台面板）。",
+  "owner": { "name": "xdongHo" },
+  "plugins": [
+    {
+      "name": "fr-dev-kit",
+      "source": "./fr-dev-kit",
+      "version": "0.1.0",
+      "description": "FineReport 报表开发能力基座的 ZCode 插件：17 个 MCP 工具 + 控制台面板。",
+      "displayName": "FR Dev Kit",
+      "displayName_i18n": {
+        "zh-CN": "FR Dev Kit（报表开发工具包）",
+        "en": "FR Dev Kit"
+      },
+      "description_i18n": {
+        "zh-CN": "知识检索、闸门校验、模板检测、数据探查、布局计算、公式判定、设计器代理、DSL 生成器等 17 个 MCP 工具，附控制台面板（套件自检 / 闸门报告 / 知识检索）。",
+        "en": "17 MCP tools (KB search, gates, template checks, DB schema, layout, formula eval, designer proxy, DSL generators) plus a console panel."
+      },
+      "category": "developer-tools",
+      "keywords": ["finereport", "report", "mcp", "fr-dev-kit", "cpt"]
+    }
+  ]
+}

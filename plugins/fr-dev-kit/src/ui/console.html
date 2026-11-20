@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FR Dev Kit 控制台</title>
+  <link rel="stylesheet" href="./console.css" />
+</head>
+<body>
+  <header id="topbar">
+    <span id="statusLight" class="light unknown" title="套件自检状态">●</span>
+    <strong>FR Dev Kit 控制台</strong>
+    <span id="kitRoot" class="muted ellipsis">自检中…</span>
+    <span id="connBadge" class="badge">连接中…</span>
+  </header>
+
+  <main>
+    <section id="leftPane">
+      <h2>最近闸门报告</h2>
+      <ul id="reportList" class="report-list">
+        <li class="muted">（连接后加载）</li>
+      </ul>
+      <article id="reportView" class="md hidden"></article>
+    </section>
+
+    <section id="rightPane">
+      <h2>知识检索</h2>
+      <form id="searchForm" class="searchbar">
+        <input id="question" placeholder="关键词，如：参数面板 控件" autocomplete="off" />
+        <button type="submit" id="searchBtn">检索</button>
+      </form>
+      <div class="pagerow">
+        <input id="pageInput" placeholder="页 id 或 .md 路径（精读）" autocomplete="off" />
+        <button type="button" id="pageBtn">整页精读</button>
+      </div>
+      <div id="searchResult" class="result">
+        <p class="muted">工作流：关键词命中拿页 id → 整页精读。命中后只读命中块，不整文件读。</p>
+      </div>
+    </section>
+  </main>
+
+  <details id="lastToolBox" class="hidden">
+    <summary>最近工具结果（模型侧调用）</summary>
+    <pre id="lastToolText"></pre>
+  </details>
+
+  <footer id="hintbar" class="muted small"></footer>
+
+  <script type="module" src="./app.ts"></script>
+</body>
+</html>
